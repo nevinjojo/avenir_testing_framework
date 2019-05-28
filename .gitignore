@@ -1,0 +1,6 @@
+_STORE
+results
+screenshots
+*.swp
+*.swo
+.idea
