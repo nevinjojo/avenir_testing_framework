@@ -1,27 +1,36 @@
-#Avenir Testing 
-#Class that handles the logins 
-#
+######################################################################
+# Login - Handles the login to the system(s).
+# Author: Nevin Jojo
+######################################################################
+
+# Handles the login for the system(s). The login and logout
+# methods uses the WebDriver to input login detail and click on
+# logout buttons.
 class Login
 
-    def initialize(driver)
-        @driver = driver
-    end
+  def initialize(driver)
+    @driver = driver
+  end
 
-    def login(user, pass)
-        #Logging in - Typing in Username
-        username = @driver.find_element(:id, "username")
-        username.send_keys(user)
-        #Logging in - Typing in Password
-        pw = @driver.find_element(:id, "password")
-        pw.send_keys(pass)
-        #Logging in - submitting username and password
-        submit = @driver.find_element(:id, "btn-login")
-        submit.click
-    end 
+  # Logs in to the system.
+  #
+  # Enter username and password to login form and submit the form.
+  # @param [String] user
+  # @param [String] pass
+  def login(user, pass, button = 'btn-login')
+    @driver.find_element(:id, 'username').send_keys(user)
+    @driver.find_element(:id, 'password').send_keys(pass)
+    @driver.find_element(:id, button).click
+  end
 
-    def logout
-        n = @driver.find_elements(:class, 'caret')
-        n[1].click
-        out = @driver.find_element(:link_text, 'Logout').click
-    end
+  # Logs out of the system by clicking on the menu button.
+  #
+  # 1. Selects the second menu caret where logout button is situated.
+  # 2. Clicks on the logout button once drop down menu shows up.
+  def logout
+    n = @driver.find_elements(:class, 'caret')
+    n[1].click
+    @driver.find_element(:link_text, 'Logout').click
+  end
+
 end
