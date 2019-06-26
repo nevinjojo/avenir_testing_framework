@@ -26,12 +26,18 @@ class Args
 
   # Returns the list of filenames in a directory / subdirectories
   #
-  # @return [File] files
+  # @return [String] files
   def get_files
-    if ARGV[1].include? ".txt"
-      files = [] << ARGV[1]
+    if ARGV.length == 1
+      name = ARGV[0]
+    elsif ARGV.length == 2
+      name = ARGV[1]
+    end
+
+    if name.include? ".txt"
+      files = [] << name
     else
-      files = Dir.glob(ARGV[1] + "/**/*.txt")
+      files = Dir.glob(name + "/**/*.txt")
     end
     return files
   end

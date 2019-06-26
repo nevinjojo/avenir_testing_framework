@@ -1,0 +1,357 @@
+######################################################################
+# Avenir Environment details
+# Author: Nevin Jojo
+######################################################################
+
+# Dev/Settle environment details
+dev: http://avenir:avenirrules@dev.avenir-technology.com/
+dev_user1: ccp01
+dev_pass1: password
+
+# Chrome downloads directory
+downloads: chrome://downloads/
+
+dev_user2: ccp02
+dev_pass2: password
+
+# Demo/Commodity environment details
+demo: http://demo.avenir-technology.com/
+demo_user1: iain.walker
+demo_pass1: password
+
+# REG environment details
+testreg: http://irene.avenir.tech/
+testreg_user1: oper
+testreg_pass1: password
+
+testreg_user2: manager
+testreg_pass2: password
+
+testreg_newuser: http://irene.avenir.tech/en_GB/admin/user/new/REG
+
+new_participant: http://irene.avenir.tech/en_GB/admin/org/new/participant
+
+edit_url: http://irene.avenir.tech/en_GB/admin/trans/0001/edit
+
+# Settle environment details
+settle: http://avenir:avenirrules@migrate.avenir-registrars.co.uk
+settle_user1: claire.oneill@avenir-technology.com
+settle_pass1: Pa55word!
+
+settle_user2: oper
+settle_pass2: password
+
+
+# Trade environment details
+trade: http://allen.avenir.tech/
+trade_user1: trade.com
+trade_pass1: password
+
+# Environment details for Kaihu (for screenshot project)
+kaihu: http://kaihu.avenir.tech/translation/172abd3ab761cb2b171f59903a707734
+
+# Registrars?
+registrar: http://avenir:avenirrules@migrate.avenir-registrars.co.uk:81/
+registrar_user100: user100
+registrar_pass100: password
+
+# Settle Web environment details
+settle_web: http://avenir:avenirrules@migrate.avenir-registrars.co.uk:81/
+
+# (Single investment)
+settleweb_user1: user1100
+settleweb_pass1: Pa55word!
+
+user1100: user1100
+Test123!: Test123!
+
+# (Multiple investments)
+settleweb_user2: user1001
+settleweb_pass2: Pa55word!
+
+# (Single investment)
+settleweb_user3: user1111
+settleweb_pass3: Pa55word!
+
+settleweb_user4: catherineblack22@googlemail.com
+settleweb_pass4: Pa55word!
+
+settleweb_user5: cleaalber@gmail.com
+settleweb_pass5: Pa55word!
+
+settleweb_user6: paul.blenkhorn@googlemail.com
+settleweb_pass6: Pa55word!
+
+# AIX environment details
+AIX: http://35.156.75.22
+aix_user1: oper
+aix_pass1: password
+
+aix_user2: manager
+aix_pass2: password
+
+P1_BRKR1_user: PART1-U1
+P1_BRKR1_pass: Password1!
+
+P1_BRKR2_user: PART1-U2
+P1_BRKR2_pass: Password1!
+
+P2_BRKR1_user: PART2-U1
+P2_BRKR1_pass: Password1!
+
+P2_BRKR2_user: PART2-U2
+P2_BRKR2_pass: Password1!
+
+P3_BRKR1_user: PART3-U1
+P3_BRKR1_pass: Password1!
+
+P3_BRKR2_user: PART3-U2
+P3_BRKR2_pass: Password1!
+
+P4_BRKR1_user: PART4-U1
+P4_BRKR1_pass: Password1!
+
+P4_BRKR2_user: PART4-U2
+P4_BRKR2_pass: Password1!
+
+P5_BRKR1_user: PART5-U1
+P5_BRKR1_pass: Password1!
+
+P5_BRKR2_user: PART5-U2
+P5_BRKR2_pass: Password1!
+
+P6_BRKR1_user: PART6-U1
+P6_BRKR1_pass: Password1!
+
+P6_BRKR2_user: PART6-U2
+P6_BRKR2_pass: Password1!
+
+P7_BRKR1_user: PART7-U1
+P7_BRKR1_pass: Password1!
+
+P7_BRKR2_user: PART7-U2
+P7_BRKR2_pass: Password1!
+
+P8_BRKR1_user: PART8-U1
+P8_BRKR1_pass: Password1!
+
+P8_BRKR2_user: PART8-U2
+P8_BRKR2_pass: Password1!
+
+P9_BRKR1_user: PART9-U1
+P9_BRKR1_pass: Password1!
+
+P9_BRKR2_user: PART9-U2
+P9_BRKR2_pass: Password1!
+
+P10_BRKR1_user: PART10-U1
+P10_BRKR1_pass: Password1!
+
+P10_BRKR2_user: PART10-U2
+P10_BRKR2_pass: Password1!
+
+P11_BRKR1_user: PART11-U1
+P11_BRKR1_pass: Password1!
+
+P11_BRKR2_user: PART11-U2
+P11_BRKR2_pass: Password1!
+
+P12_BRKR1_user: PART12-U1
+P12_BRKR1_pass: Password1!
+
+P12_BRKR2_user: PART12-U2
+P12_BRKR2_pass: Password1!
+
+P13_BRKR1_user: PART13-U1
+P13_BRKR1_pass: Password1!
+
+P13_BRKR2_user: PART13-U2
+P13_BRKR2_pass: Password1!
+
+P14_BRKR1_user: PART14-U1
+P14_BRKR1_pass: Password1!
+
+P14_BRKR2_user: PART14-U2
+P14_BRKR2_pass: Password1!
+
+P15_BRKR1_user: PART15-U1
+P15_BRKR1_pass: Password1!
+
+P15_BRKR2_user: PART15-U2
+P15_BRKR2_pass: Password1!
+
+P16_BRKR1_user: PART16-U1
+P16_BRKR1_pass: Password1!
+
+P16_BRKR2_user: PART16-U2
+P16_BRKR2_pass: Password1!
+
+P17_BRKR1_user: PART17-U1
+P17_BRKR1_pass: Password1!
+
+P17_BRKR2_user: PART17-U2
+P17_BRKR2_pass: Password1!
+
+P18_BRKR1_user: PART18-U1
+P18_BRKR1_pass: Password1!
+
+P18_BRKR2_user: PART18-U2
+P18_BRKR2_pass: Password1!
+
+P19_BRKR1_user: PART19-U1
+P19_BRKR1_pass: Password1!
+
+P19_BRKR2_user: PART19-U2
+P19_BRKR2_pass: Password1!
+
+P20_BRKR1_user: PART20-U1
+P20_BRKR1_pass: Password1!
+
+P20_BRKR2_user: PART20-U2
+P20_BRKR2_pass: Password1!
+
+# Custodians
+
+C1_BRKR1_user: CUST1-U1
+C1_BRKR1_pass: Password1!
+
+C1_BRKR2_user: CUST1-U2
+C1_BRKR2_pass: Password1!
+
+C2_BRKR1_user: CUST2-U1
+C2_BRKR1_pass: Password1!
+
+C2_BRKR2_user: CUST2-U2
+C2_BRKR2_pass: Password1!
+
+C3_BRKR1_user: CUST3-U1
+C3_BRKR1_pass: Password1!
+
+C3_BRKR2_user: CUST3-U2
+C3_BRKR2_pass: Password1!
+
+C4_BRKR1_user: CUST4-U1
+C4_BRKR1_pass: Password1!
+
+C4_BRKR2_user: CUST4-U2
+C4_BRKR2_pass: Password1!
+
+C5_BRKR1_user: CUST5-U1
+C5_BRKR1_pass: Password1!
+
+C5_BRKR2_user: CUST5-U2
+C5_BRKR2_pass: Password1!
+
+C6_BRKR1_user: CUST6-U1
+C6_BRKR1_pass: Password1!
+
+C6_BRKR2_user: CUST6-U2
+C6_BRKR2_pass: Password1!
+
+C7_BRKR1_user: CUST7-U1
+C7_BRKR1_pass: Password1!
+
+C7_BRKR2_user: CUST7-U2
+C7_BRKR2_pass: Password1!
+
+C8_BRKR1_user: CUST8-U1
+C8_BRKR1_pass: Password1!
+
+C8_BRKR2_user: CUST8-U2
+C8_BRKR2_pass: Password1!
+
+C9_BRKR1_user: CUST9-U1
+C9_BRKR1_pass: Password1!
+
+C9_BRKR2_user: CUST9-U2
+C9_BRKR2_pass: Password1!
+
+C10_BRKR1_user: CUST10-U1
+C10_BRKR1_pass: Password1!
+
+C10_BRKR2_user: CUST10-U2
+C10_BRKR2_pass: Password1!
+
+C11_BRKR1_user: CUST11-U1
+C11_BRKR1_pass: Password1!
+
+C11_BRKR2_user: CUST11-U2
+C11_BRKR2_pass: Password1!
+
+C12_BRKR1_user: CUST12-U1
+C12_BRKR1_pass: Password1!
+
+C12_BRKR2_user: CUST12-U2
+C12_BRKR2_pass: Password1!
+
+C13_BRKR1_user: CUST13-U1
+C13_BRKR1_pass: Password1!
+
+C13_BRKR2_user: CUST13-U2
+C13_BRKR2_pass: Password1!
+
+C14_BRKR1_user: CUST14-U1
+C14_BRKR1_pass: Password1!
+
+C14_BRKR2_user: CUST14-U2
+C14_BRKR2_pass: Password1!
+
+C15_BRKR1_user: CUST15-U1
+C15_BRKR1_pass: Password1!
+
+C15_BRKR2_user: CUST15-U2
+C15_BRKR2_pass: Password1!
+
+C16_BRKR1_user: CUST16-U1
+C16_BRKR1_pass: Password1!
+
+C16_BRKR2_user: CUST16-U2
+C16_BRKR2_pass: Password1!
+
+C17_BRKR1_user: CUST17-U1
+C17_BRKR1_pass: Password1!
+
+C17_BRKR2_user: CUST17-U2
+C17_BRKR2_pass: Password1!
+
+C18_BRKR1_user: CUST18-U1
+C18_BRKR1_pass: Password1!
+
+C18_BRKR2_user: CUST18-U2
+C18_BRKR2_pass: Password1!
+
+C19_BRKR1_user: CUST19-U1
+C19_BRKR1_pass: Password1!
+
+C19_BRKR2_user: CUST19-U2
+C19_BRKR2_pass: Password1!
+
+C20_BRKR1_user: CUST20-U1
+C20_BRKR1_pass: Password1!
+
+C20_BRKR2_user: CUST20-U2
+C20_BRKR2_pass: Password1!
+
+# ARLUK environment details
+ARL_UK: http://avenir:avenirrules@migrate.avenir-registrars.co.uk/
+uk_user_1: claire.oneill@avenir-technology.com
+uk_pass_1: Pa55word!
+
+uk_user_2: oper
+uk_pass_2: password
+
+# ARLNZ environment details
+ARL_NZ: http://avenir:avenirrules@migrate.avenir-registrars.co.nz
+nz_user_1: claire.oneill@avenir-technology.com
+nz_pass_1: Pa55word!
+
+nz_user_2: oper
+nz_pass_2: password
+
+# Ethex environment details
+Ethex: http://ethex.avenir.tech/
+ethex_user1: ccp.com
+ethex_pass1: password
+
+ethex_user2: claire@atl
+ethex_pass2: Pa55word!
