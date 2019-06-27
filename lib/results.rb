@@ -35,7 +35,7 @@ class Results
     @writer.info message
   end
 
-  # Appends to the \end of the file/ console line.
+  # Appends to the \end of the file and console.
   # @param [String] message
   def append(message)
     @logger.formatter = proc do |severity, datetime, _progname, msg|
@@ -72,7 +72,7 @@ class Results
     @writer.info 'SUCCESS'
   end
 
-  # Prints success to the \end of the log.
+  # Prints failure to the \end of the log.
   def failure(exception = nil)
     @logger.formatter = proc do |severity, datetime, _progname, msg|
       " #{msg}"
@@ -83,6 +83,13 @@ class Results
     output = exception.is_a?(Exception) ? format('FAILURE: %s', exception.message.split(/\n/)[0]) : 'FAILURE'
     @writer.error output
     @logger.error output
+  end
+
+  # Increment failure count, take screenshot and report failure
+  def fail(action, exception = nil)
+    $session.failure_count += 1
+    screenshot(action)
+    failure(exception)
   end
 
   # Takes the screenshot of the webpage at time of calling the function.
