@@ -24,12 +24,11 @@ time = Time.now
 driver = args.get_driver # Browser instantiation
 files = args.get_files # File(s) instantiation
 login = Login.new(driver) # Login functions of the system
-$results = Results.new(driver, "#{files.to_s.gsub('/', '.')}_#{time.strftime('%Y-%m-%d %H.%M.%S')}.txt") # Logger
-session = Session.new(driver) # Session details
+$session = Session.new(driver) # Session details
 config = YAML.load_file("system_details.yml") # Configuration of environment details
 
 # Initialise a runner with the necessary arguments. Runner executes the scripts
-runner = Runner.new(driver, args, time, files, login, session, config)
+runner = Runner.new(driver, args, time, files, login, $session, config)
 
 # Runs all of the scripts specified in the arg
 runner.execute
