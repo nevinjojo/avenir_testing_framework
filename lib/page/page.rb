@@ -19,7 +19,7 @@ class Page
     begin
       @driver.find_element(:id, item).displayed?
     rescue Selenium::WebDriver::Error::NoSuchElementError
-      $results.print("Cannot find id / id does not exist")
+      $results.info("Cannot find id / id does not exist")
     end
   end
 
@@ -29,7 +29,7 @@ class Page
     if @driver.find_element(:link_text, 'Home').displayed?
       @driver.find_element(:link_text, 'Home')
     else
-      $results.print("Cannot find Home link")
+      $results.info("Cannot find Home link")
     end
   end
 
@@ -39,7 +39,7 @@ class Page
     if @driver.find_element(:link_text, 'Previous').displayed?
       @driver.find_element(:link_text, 'Previous')
     else
-      $results.print("Cannot find Previous link")
+      $results.info("Cannot find Previous link")
     end
   end
 
@@ -112,7 +112,7 @@ class Page
         return @driver.find_element(:class, 'navbar-brand')
       end
     rescue Selenium::WebDriver::Error::NoSuchElementError
-      $results.print("Cannot find navbar brand")
+      $results.info("Cannot find navbar brand")
     end
   end
 
@@ -124,7 +124,7 @@ class Page
         return @driver.find_element(:class, 'navbar-text')
       end
     rescue Selenium::WebDriver::Error::NoSuchElementError
-      $results.print("Cannot find navbar text")
+      $results.info("Cannot find navbar text")
     end
   end
 
@@ -136,7 +136,7 @@ class Page
         return @driver.find_element(:class, 'business-date pull-right')
       end
     rescue Selenium::WebDriver::Error::NoSuchElementError
-      $results.print("Cannot find navbar date")
+      $results.info("Cannot find navbar date")
     end
   end
 

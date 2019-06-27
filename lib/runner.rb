@@ -13,6 +13,7 @@ require_relative 'args'
 require_relative 'login'
 require_relative 'results'
 require_relative 'session'
+require_relative 'command'
 
 class Runner
 
@@ -31,10 +32,13 @@ class Runner
     execute_files
   end
 
+  # Execute test script file(s) in the files array.
+  # A new results file with the same name is created (with a timestamp at the \end).
   def execute_files
     @files.each {|filename|
       if File.exist?(filename)
-        puts filename
+        $results = Results.new(@driver, filename.gsub('/', '.') + "_" + @time.strftime('%Y-%m-%d_%H.%M.%S') + ".txt")
+        $results.log(filename)
         run_script(filename)
       end
     }
@@ -45,7 +49,6 @@ class Runner
   def run_script(filename)
     File.open(filename, 'r').each_line do |line|
       line.chomp!
-      puts line
       @session.reset
       action = get_action(line)
       params = get_params(line)
@@ -53,11 +56,12 @@ class Runner
     end
   end
 
-  #
+  # Creates a Command object and execute the command based on the actions and parameters.
   # @param [String] action - the action specified in the script
   # @param [String] params - parameters that follows each action in the script
   def parse_command(action, params)
-
+    command = Command.new(@driver, action, params)
+    command.execute
   end
 
   # Returns the action that is specified in each line of the script.

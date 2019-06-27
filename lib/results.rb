@@ -29,6 +29,7 @@ class Results
   end
 
   # Writes to the file and prints on the console.
+  # The log will be printed on a new line (unlike append method).
   # @param [String] message
   def log(message)
     @logger.info message
@@ -83,6 +84,18 @@ class Results
     output = exception.is_a?(Exception) ? format('FAILURE: %s', exception.message.split(/\n/)[0]) : 'FAILURE'
     @writer.error output
     @logger.error output
+  end
+
+  # Same as log method, but doesn't have a \n at the front.
+  def info(message)
+    @logger.formatter = proc do |severity, datetime, _progname, msg|
+      "#{msg}"
+    end
+    @writer.formatter = proc do |severity, datetime, _progname, msg|
+      "#{msg}"
+    end
+    @logger.info message
+    @writer.info message
   end
 
   # Increment failure count, take screenshot and report failure
