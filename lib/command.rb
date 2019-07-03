@@ -26,14 +26,14 @@ class Command
       refresh_page
     when 'test'
       initialise_test_script
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
+    when 'description'
+      description
+    when 'goto'
+      goto
+    when 'login'
+      login
+    when 'logout'
+      logout
     when '#'
       puts '#'
     when '#'
@@ -91,18 +91,57 @@ class Command
     end
   end
 
-  # Refreshes the current page
+  # Refreshes the current page.
   def refresh_page
     @driver.navigate.refresh
   end
 
-  #Creates a time stamp for each test.
+  # Creates a time stamp for each test.
   def initialise_test_script
     $results.log("\r" + "#### Avenir Testing: " + @params.join(' ') + " ####")
-    $results.log("####  Time: " + @time.strftime("%Y-%m-%d %H:%M:%S") + "  ####")
+    $results.log("####  Time: " + $time.strftime("%Y-%m-%d %H:%M:%S") + "  ####")
 
     #Resets the session \when a new test is run
     $session.reset
+  end
+
+  # Description records the purpose of each test.
+  def description
+    $results.log("####  Description: " + @params.join(' ') + "  ####")
+  end
+
+  # Navigates to a particular url that is stored in the yaml file.
+  def goto
+    begin
+      $results.log_action(@action)
+      @driver.navigate.to($config[@params.join(' ')])
+      $results.success
+    rescue => ex
+      $results.fail(@action, ex)
+    end
+  end
+
+  # Logs into the account using the login details provided by the yaml file.
+  def login
+    begin
+      $results.log_action(@action)
+      $login.login($config[@params[0]], $config[@params[1]])
+      $results.success
+    rescue => ex
+      $results.fail(@action, ex)
+    end
+  end
+
+  # Logs out of the account and waits /until the login page is found.
+  def logout
+    begin
+      $results.log_action(@action)
+      $login.logout
+      $session.wait_until(@driver.find_element(:id, 'username').displayed?)
+      $results.success
+    rescue => ex
+      $results.fail(@action, ex)
+    end
   end
 
 

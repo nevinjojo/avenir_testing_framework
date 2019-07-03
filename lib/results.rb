@@ -28,10 +28,27 @@ class Results
     end
   end
 
+  # Sets the writer and logger objects to have a formatter that includes \n in the beginning of the line.
+  def format_to_new_ine
+    @writer.formatter = proc do |severity, datetime, _progname, msg|
+      "\n#{msg}"
+    end
+    @logger.formatter = proc do |severity, datetime, _progname, msg|
+      "\n#{msg}"
+    end
+  end
+
+  # `log_action` performs the same function as `log` but adds a `:` at the \end.
+  # @param [String] message
+  def log_action(message)
+    log(message + ':')
+  end
+
   # Writes to the file and prints on the console.
   # The log will be printed on a new line (unlike append method).
   # @param [String] message
   def log(message)
+    format_to_new_ine
     @logger.info message
     @writer.info message
   end
