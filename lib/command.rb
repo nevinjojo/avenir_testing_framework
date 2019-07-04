@@ -4,6 +4,7 @@
 #############################################################################
 
 require 'logger'
+require_relative 'page/home'
 
 class Command
 
@@ -14,6 +15,7 @@ class Command
     @driver = driver
     @action = action
     @params = params
+    @home = Home.new(@driver)
   end
 
   def execute
@@ -34,12 +36,12 @@ class Command
       login
     when 'logout'
       logout
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
+    when 'sleep'
+      $session.sleep_for(@params.join.to_i)
+    when 'menu'
+      menu
+    when 'usermenu'
+      user_menu
     when '#'
       puts '#'
     when '#'
@@ -102,7 +104,7 @@ class Command
     $results.log("####  Time: " + $time.strftime("%Y-%m-%d %H:%M:%S") + "  ####")
 
     #Resets the session \when a new test is run
-    $session.reset
+    $session = Session.new(@driver)
   end
 
   # Description records the purpose of each test.
@@ -144,5 +146,45 @@ class Command
     end
   end
 
+  # Finds the Menu button and clicks on Menu button.
+  # This function also calls the menu_item function to click on the link within the drop down.
+  def menu
+    begin
+      item = @params.join(' ')
+      @home.menu.click
+      $results.log_action("#{@action}(#{item})")
+      @home.menu_item(item).click
+
+      # Wait for the new page to load
+      $session.wait_for_stale
+      $results.success
+    rescue => ex
+      puts ex
+      $results.fail("#{@action}(#{@params.join(' ')})", ex)
+    end
+  end
+
+  # Clicks on the user menu on the page.
+  # This function also clicks on the link within the user drop down menu.
+  def user_menu
+    begin
+      @home.user_menu.click
+    rescue
+      $results.fail(@action)
+    end
+
+    # Find and click on sub link
+    sub_link = @params.join(' ')
+    begin
+      $results.log_action("#{@action}(#{sub_link})")
+      @home.user_menu_item(sub_link).click
+
+      # Wait for the new page to load
+      $session.wait_for_stale
+      $results.success
+    rescue => ex
+      $results.fail("#{@action}(#{sub_link})", ex)
+    end
+  end
 
 end

@@ -5,6 +5,7 @@
 
 # Handles the sessions and the values required for each session
 class Session
+  attr_accessor :failure_count, :success_count
 
   # @param [WebDriver] driver - the driver that will be used in a particular thread.
   def initialize(driver)
@@ -13,9 +14,9 @@ class Session
     @date = ''
     @form = ''
     @success = ''
-    $success_count = 0
-    $failure_count = 0
     @temp_id = ''
+    @failure_count = 0
+    @success_count = 0
     @wait = Selenium::WebDriver::Wait.new(:timeout => 5)
   end
 
@@ -24,9 +25,9 @@ class Session
     @name = ''
     @date = ''
     @success = ''
-    $success_count = 0
-    $failure_count = 0
     @temp_id = ''
+    @failure_count = 0
+    @success_count = 0
     reset_form
   end
 
@@ -46,9 +47,10 @@ class Session
     end
   end
 
-  # Adds a regular wait to the session of the size `count`.
-  def sleep(count)
-    sleep count.join.to_i
+  # Adds a regular wait to the test session of the size `count`.
+  # Note: Do not use the sleep function \unless required since it could slow down the tests and cause unnecessary failures.
+  def sleep_for(count)
+    sleep count
   end
 
   # Waits /until the condition is true.

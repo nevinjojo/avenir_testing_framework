@@ -49,7 +49,7 @@ class Runner
   def run_script(filename)
     File.open(filename, 'r').each_line do |line|
       line.chomp!
-      @session.reset
+      @session = Session.new(@driver)
       action = get_action(line)
       params = get_params(line)
       parse_command(action, params)

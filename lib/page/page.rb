@@ -3,7 +3,7 @@
 # Author: Nevin Jojo
 ######################################################################
 
-require '../../lib/results'
+require_relative '../../lib/results'
 
 # Elements that
 class Page
@@ -47,26 +47,35 @@ class Page
   # @return [Selenium_Element] Menu
   def menu
     # Click on either Menu link or hamburger button based on the screen size.
+    # Note: `toggle` for normal web support, `toggler` for settle web, boot4 support
     begin
-      # Note: `toggle` for normal web support, `toggler` for settle web, boot4 support
-      if @driver.find_element(:class, 'navbar-toggle').displayed? or @driver.find_element(:class, 'navbar-toggler').displayed?
+      if @driver.find_element(:class, 'navbar-toggle').displayed?
         unless @driver.find_element(:id, 'main-menu').displayed?
           @driver.find_element(:class, 'navbar-toggle').click
         end
       end
     rescue Selenium::WebDriver::Error::NoSuchElementError
-      # Do nothing; If this button isn't visible, don't panic...
+      # If this button isn't visible, try `toggler`
+      begin
+        if @driver.find_element(:class, 'navbar-toggler').displayed?
+          unless @driver.find_element(:id, 'main-menu').displayed?
+            @driver.find_element(:class, 'navbar-toggle').click
+          end
+        end
+      rescue Selenium::WebDriver::Error::NoSuchElementError
+        # Do nothing; if this button isn't visible, don't panic...
+      end
     end
 
     begin
       if @driver.find_element(:id, 'main-menu').displayed?
-        return @driver.find_element(:id, 'main-menu')
+        @driver.find_element(:id, 'main-menu')
       elsif @driver.find_element(:link_text, 'Menu').displayed?
-        return @driver.find_element(:link_text, 'Menu')
+        @driver.find_element(:link_text, 'Menu')
       end
     rescue Selenium::WebDriver::Error::NoSuchElementError
       menus = @driver.find_elements(:class, 'dropdown-toggle')
-      return menus[0]
+      menus[0]
     end
   end
 
@@ -89,7 +98,7 @@ class Page
       end
     rescue Selenium::WebDriver::Error::NoSuchElementError
       if @driver.find_element(:class, 'navbar-toggle').displayed?
-        return @driver.find_element(:class, 'navbar-toggle').click
+        return @driver.find_element(:class, 'navbar-toggle')
       end
     end
   end

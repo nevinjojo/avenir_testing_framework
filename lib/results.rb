@@ -46,7 +46,7 @@ class Results
 
   # Writes to the file and prints on the console.
   # The log will be printed on a new line (unlike append method).
-  # @param [String] message
+  # @param [String] messagex
   def log(message)
     format_to_new_ine
     @logger.info message
@@ -119,7 +119,7 @@ class Results
   def fail(action, exception = nil)
     $session.failure_count += 1
     screenshot(action)
-    failure(exception)
+    $results.failure(exception)
   end
 
   # Takes the screenshot of the webpage at time of calling the function.
