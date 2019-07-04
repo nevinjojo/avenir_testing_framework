@@ -4,6 +4,7 @@
 #############################################################################
 
 require 'logger'
+require_relative 'page/home'
 
 class Command
 
@@ -14,6 +15,7 @@ class Command
     @driver = driver
     @action = action
     @params = params
+    @home = Home.new(@driver)
   end
 
   def execute
@@ -26,20 +28,20 @@ class Command
       refresh_page
     when 'test'
       initialise_test_script
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
+    when 'description'
+      description
+    when 'goto'
+      goto
+    when 'login'
+      login
+    when 'logout'
+      logout
+    when 'sleep'
+      $session.sleep_for(@params.join.to_i)
+    when 'menu'
+      menu
+    when 'usermenu'
+      user_menu
     when '#'
       puts '#'
     when '#'
@@ -91,19 +93,98 @@ class Command
     end
   end
 
-  # Refreshes the current page
+  # Refreshes the current page.
   def refresh_page
     @driver.navigate.refresh
   end
 
-  #Creates a time stamp for each test.
+  # Creates a time stamp for each test.
   def initialise_test_script
     $results.log("\r" + "#### Avenir Testing: " + @params.join(' ') + " ####")
-    $results.log("####  Time: " + @time.strftime("%Y-%m-%d %H:%M:%S") + "  ####")
+    $results.log("####  Time: " + $time.strftime("%Y-%m-%d %H:%M:%S") + "  ####")
 
     #Resets the session \when a new test is run
-    $session.reset
+    $session = Session.new(@driver)
   end
 
+  # Description records the purpose of each test.
+  def description
+    $results.log("####  Description: " + @params.join(' ') + "  ####")
+  end
+
+  # Navigates to a particular url that is stored in the yaml file.
+  def goto
+    begin
+      $results.log_action(@action)
+      @driver.navigate.to($config[@params.join(' ')])
+      $results.success
+    rescue => ex
+      $results.fail(@action, ex)
+    end
+  end
+
+  # Logs into the account using the login details provided by the yaml file.
+  def login
+    begin
+      $results.log_action(@action)
+      $login.login($config[@params[0]], $config[@params[1]])
+      $results.success
+    rescue => ex
+      $results.fail(@action, ex)
+    end
+  end
+
+  # Logs out of the account and waits /until the login page is found.
+  def logout
+    begin
+      $results.log_action(@action)
+      $login.logout
+      $session.wait_until(@driver.find_element(:id, 'username').displayed?)
+      $results.success
+    rescue => ex
+      $results.fail(@action, ex)
+    end
+  end
+
+  # Finds the Menu button and clicks on Menu button.
+  # This function also calls the menu_item function to click on the link within the drop down.
+  def menu
+    begin
+      item = @params.join(' ')
+      @home.menu.click
+      $results.log_action("#{@action}(#{item})")
+      @home.menu_item(item).click
+
+      # Wait for the new page to load
+      $session.wait_for_stale
+      $results.success
+    rescue => ex
+      puts ex
+      $results.fail("#{@action}(#{@params.join(' ')})", ex)
+    end
+  end
+
+  # Clicks on the user menu on the page.
+  # This function also clicks on the link within the user drop down menu.
+  def user_menu
+    begin
+      @home.user_menu.click
+    rescue
+      $results.fail(@action)
+    end
+
+    # Find and click on sub link
+    sub_link = @params.join(' ')
+    begin
+      $results.log_action("#{@action}(#{sub_link})")
+      @home.user_menu_item(sub_link).click
+
+      # Wait for the new page to load
+      $session.wait_for_stale
+      $results.success
+    rescue => ex
+      $results.fail("#{@action}(#{sub_link})", ex)
+    end
+  end
 
 end
