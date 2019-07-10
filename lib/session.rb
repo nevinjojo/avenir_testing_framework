@@ -5,7 +5,7 @@
 
 # Handles the sessions and the values required for each session
 class Session
-  attr_accessor :failure_count, :success_count
+  attr_accessor :failure_count, :success_count, :form, :date
 
   # @param [WebDriver] driver - the driver that will be used in a particular thread.
   def initialize(driver)

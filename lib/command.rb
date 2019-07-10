@@ -5,7 +5,8 @@
 
 require 'logger'
 require_relative 'page/home'
-require_relative 'button'
+require_relative 'elements/button'
+require_relative 'elements/input'
 
 class Command
 
@@ -45,18 +46,19 @@ class Command
       user_menu
     when 'button'
       button
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
+    when 'form'
+      # Stores the first common keyword of the input id that will be used to insert values to the fields.
+      $session.form = @params.join(' ') + '_'
+    when 'textInput'
+      input
+    when 'menuInput'
+      input
+    when 'checkerInput'
+      input
+    when 'select2Input'
+      input
+    when 'clearInput'
+      input
     when '#'
       puts '#'
     when '#'
@@ -202,6 +204,24 @@ class Command
       button.order
     else
       button.custom
+    end
+  end
+
+  def input
+    element = Input.new(@driver, @action, @params)
+    case @action
+    when 'textInput'
+      element.text_input
+    when 'menuInput'
+      element.menu_input
+    when 'checkerInput'
+      element.checker_input
+    when 'select2Input'
+      element.select2_input
+    when 'clearInput'
+      element.clear_input
+    else
+      $results.log("Ignoring unknown input of #{@action}.")
     end
   end
 
