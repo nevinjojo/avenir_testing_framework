@@ -5,6 +5,7 @@
 
 require 'logger'
 require_relative 'page/home'
+require_relative 'button'
 
 class Command
 
@@ -42,8 +43,8 @@ class Command
       menu
     when 'usermenu'
       user_menu
-    when '#'
-      puts '#'
+    when 'button'
+      button
     when '#'
       puts '#'
     when '#'
@@ -159,7 +160,6 @@ class Command
       $session.wait_for_stale
       $results.success
     rescue => ex
-      puts ex
       $results.fail("#{@action}(#{@params.join(' ')})", ex)
     end
   end
@@ -184,6 +184,24 @@ class Command
       $results.success
     rescue => ex
       $results.fail("#{@action}(#{sub_link})", ex)
+    end
+  end
+
+  def button
+    button = Button.new(@driver, @params)
+    case @params[0]
+    when 'new'
+      button.new_button
+    when 'cancel'
+      button.cancel
+    when 'new-user'
+      button.new_user
+    when 'download'
+      button.download
+    when 'order'
+      button.order
+    else
+      button.custom
     end
   end
 
