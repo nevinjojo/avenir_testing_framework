@@ -21,7 +21,7 @@ class Button
   # Clicks on a general New button or a specific New button allocated to an object on the webpage.
   def new_button
     begin
-      $results.log_action(@params[0..-1].join(' '))
+      $results.log_action("button(#{@params[0..-1].join(' ')})")
       if @params[1].nil?
         @driver.find_element(:link_text, 'New').click
       else
@@ -40,7 +40,7 @@ class Button
   # Finds and clicks on the cancel button present on the webpage.
   def cancel
     begin
-      $results.log_action(@params[0])
+      $results.log_action("button(#{@params[0]})")
       # Cancel button can be either a link or an actual button object
       begin
         if @driver.find_element(:id, "lnk-cancel").displayed?
@@ -54,7 +54,7 @@ class Button
         end
       end
     rescue => ex
-      $results.fail("button(#{@params[0]}", ex)
+      $results.fail("button(#{@params[0..-1].join(' ')})", ex)
     end
   end
 
@@ -62,23 +62,23 @@ class Button
   # This function is required since the new user buttons have the 'user' keyword in front of it.
   def new_user
     begin
-      $results.log_action(@params[0])
+      $results.log_action("button(#{@params[0]})")
       @driver.find_element(:id, "user-new-btn").click
       sleep 2
       $results.success
     rescue => ex
-      $results.fail("button(#{@params[0]}", ex)
+      $results.fail("button(#{@params[0]})", ex)
     end
   end
 
   # Clicks 0n the download button present on the webpage.
   def download
     begin
-      $results.log_action(@params[0])
+      $results.log_action("button(#{@params[0]})")
       @driver.find_element(:partial_link_text, "Download").click
       $results.success
     rescue => ex
-      $results.fail("button(#{@params[0]}", ex)
+      $results.fail("button(#{@params[0]})", ex)
     end
   end
 
@@ -86,7 +86,7 @@ class Button
   # The order button has Bid or Ask options. Based on the parameter provided in the script, click on the right button.
   def order
     begin
-      $results.log_action(@params[0])
+      $results.log_action("button(#{@params[0]})")
       dropdown = @driver.find_elements(:css, ".btn.btn-link.dropdown-toggle")
       dropdown[@params[1].to_i - 1].click
       sleep 1
@@ -97,7 +97,7 @@ class Button
       end
       $results.success
     rescue => ex
-      $results.fail("button(#{@params[0]}", ex)
+      $results.fail("button(#{@params[0]})", ex)
     end
   end
 
@@ -105,18 +105,18 @@ class Button
   # If the button with the id provided cannot be found, the command returns failure.
   def custom
     begin
-      $results.log_action(@params[0])
+      $results.log_action("button(#{@params[0]})")
       if @driver.find_element(:id, "btn-" + @params[0]).displayed?
         @driver.find_element(:id, "btn-" + @params[0]).click
         $results.success
       else
-        $results.fail("button(#{@params[0]}")
+        $results.fail("button(#{@params[0]})")
       end
     rescue NoMethodError => ex
       puts "\nAn error of type #{ex.class} happened in #{@params[0]}.\n"
     rescue Exception => ex
       puts "\nAn error of type #{ex.class} happened in #{@params[0]}.\n"
-      $results.fail("button(#{@params[0]}", ex)
+      $results.fail("button(#{@params[0]})", ex)
     end
   end
 end

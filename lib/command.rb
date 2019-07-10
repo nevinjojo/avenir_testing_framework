@@ -5,6 +5,7 @@
 
 require 'logger'
 require_relative 'page/home'
+require_relative 'button'
 
 class Command
 
@@ -188,14 +189,14 @@ class Command
 
   def button
     button = Button.new(@driver, @params)
-    case @params[1]
+    case @params[0]
     when 'new'
       button.new_button
     when 'cancel'
       button.cancel
     when 'new-user'
       button.new_user
-    when download
+    when 'download'
       button.download
     when 'order'
       button.order
