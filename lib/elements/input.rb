@@ -28,7 +28,7 @@ class Input
       $results.log_action("#{@action}(#{@params[0]})")
       @driver.find_element(:id, $session.form + @params[0]).clear
       # If the parameter is a date, then the stored date value will be inputted
-      element = @driver.find_element(:id, $session.form  + @params[0])
+      element = @driver.find_element(:id, $session.form + @params[0])
       if @params[1] == 'date'
         @params[1] = $session.date
       end
@@ -40,6 +40,11 @@ class Input
     end
   end
 
+  # Finds the item in a menu field and clicks on it, based on the id of the menuInput.
+  # Step 1: Find the element using the id provided in the script
+  # Step 2: Go through each option in the list and finds the option provided in the script
+  # Step 3: Clicks on the chosen option.
+  # If option not found, do nothing (this will avoid interruption of the test).
   def menu_input
     begin
       $results.log_action("#{@action}(#{@params[0]})")
@@ -52,8 +57,16 @@ class Input
     end
   end
 
+  # Finds and clicks on the checker field on the page to check/uncheck an item, based on its id.
+  # If option not found, do nothing (this will avoid interruption of the test).
   def checker_input
-
+    begin
+      $results.log_action("#{@action}(#{@params[0]})")
+      @driver.find_element(:id, $session.form + @params[0]).click
+      $results.success
+    rescue => ex
+      $results.fail("#{@action}(#{@params[0]})", ex)
+    end
   end
 
   def select2_input
