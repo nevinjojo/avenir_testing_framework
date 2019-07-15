@@ -3,7 +3,7 @@
 #
 # Version: 2.0
 # Author: Nevin Jojo
-# Last Updated: June 27, 2019
+# Last Updated: July 15, 2019
 ######################################################################
 
 # Required Gems
@@ -32,13 +32,3 @@ runner = Runner.new(driver, args, $time, files, $login, $session, $config)
 
 # Runs all of the scripts specified in the arg
 runner.execute
-
-# $results.log('log message')
-# $results.append('append message')
-# $results.write('file only message')
-# $results.print('console only message')
-# $results.success
-# $results.failure
-# $results.failure(Exception)
-# $results.screenshot('test')
-# parse_files
