@@ -5,7 +5,9 @@
 
 require 'logger'
 require_relative 'page/home'
-require_relative 'button'
+require_relative 'elements/button'
+require_relative 'elements/input'
+require_relative 'elements/table'
 
 class Command
 
@@ -45,22 +47,24 @@ class Command
       user_menu
     when 'button'
       button
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
+    when 'form'
+      # Stores the first common keyword of the input id that will be used to insert values to the fields.
+      $session.form = @params.join(' ') + '_'
+    when 'textInput'
+      input
+    when 'menuInput'
+      input
+    when 'checkerInput'
+      input
+    when 'select2Input'
+      input
+    when 'clearInput'
+      input
+    when 'tableWait'
+      # Waits /until the table data is displayed.
+      $session.table_wait
+    when 'find'
+      find_element
     when '#'
       puts '#'
     when '#'
@@ -202,6 +206,49 @@ class Command
       button.order
     else
       button.custom
+    end
+  end
+
+  def input
+    element = Input.new(@driver, @action, @params)
+    case @action
+    when 'textInput'
+      element.text_input
+    when 'menuInput'
+      element.menu_input
+    when 'checkerInput'
+      element.checker_input
+    when 'select2Input'
+      element.select2_input
+    when 'clearInput'
+      element.clear_input
+    else
+      $results.log("Ignoring unknown input of #{@action}.")
+    end
+  end
+
+  def find_element
+    begin
+      $results.log_action("#{@action}(#{sub_link})")
+      $session.success = false
+      case @params[0]
+      when 'button'
+        $session.success = Button.displayed?(@params[1])
+      when 'item'
+        $session.success = Table.content_displayed?
+      when 'textH1'
+        $session.success = Text.displayed?(@params)
+      else
+        $results.log("Ignoring unknown element.")
+      end
+      if $session.success
+        $results.success
+      else
+        $results.failure
+      end
+    rescue
+      $session.success = false
+      $results.fail("find", ex)
     end
   end
 

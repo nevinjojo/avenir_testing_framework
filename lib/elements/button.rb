@@ -119,4 +119,16 @@ class Button
       $results.fail("button(#{@params[0]})", ex)
     end
   end
+
+  # Returns a true /if a button with a particular id is displayed, and vice-versa.
+  # @param [Object] id - id of the button element searched for
+  def displayed?(id)
+    begin
+      if @driver.find_element(:id, "btn-" + id).displayed?
+        true
+      end
+    rescue
+      false
+    end
+  end
 end
