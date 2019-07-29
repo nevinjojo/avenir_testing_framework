@@ -3,23 +3,22 @@
 # Author: Nevin Jojo
 ######################################################################
 
-# Dev/Settle environment details
+#Dev/Settle environment details
 dev: http://avenir:avenirrules@dev.avenir-technology.com/
 dev_user1: ccp01
 dev_pass1: password
 
-# Chrome downloads directory
 downloads: chrome://downloads/
 
 dev_user2: ccp02
 dev_pass2: password
 
-# Demo/Commodity environment details
+#Demo/Commodity environment details
 demo: http://demo.avenir-technology.com/
 demo_user1: iain.walker
 demo_pass1: password
 
-# REG environment details
+#REG environment details
 testreg: http://irene.avenir.tech/
 testreg_user1: oper
 testreg_pass1: password
@@ -33,7 +32,8 @@ new_participant: http://irene.avenir.tech/en_GB/admin/org/new/participant
 
 edit_url: http://irene.avenir.tech/en_GB/admin/trans/0001/edit
 
-# Settle environment details
+#Settle environment details
+
 settle: http://avenir:avenirrules@migrate.avenir-registrars.co.uk
 settle_user1: claire.oneill@avenir-technology.com
 settle_pass1: Pa55word!
@@ -42,34 +42,34 @@ settle_user2: oper
 settle_pass2: password
 
 
-# Trade environment details
+#Trade environment details
 trade: http://allen.avenir.tech/
 trade_user1: trade.com
 trade_pass1: password
 
-# Environment details for Kaihu (for screenshot project)
+#environment details for kaihu (for screenshot project)
 kaihu: http://kaihu.avenir.tech/translation/172abd3ab761cb2b171f59903a707734
 
-# Registrars?
+#registrars?
 registrar: http://avenir:avenirrules@migrate.avenir-registrars.co.uk:81/
 registrar_user100: user100
 registrar_pass100: password
 
-# Settle Web environment details
+#Settle Web environment details
 settle_web: http://avenir:avenirrules@migrate.avenir-registrars.co.uk:81/
 
-# (Single investment)
+# (single investment)
 settleweb_user1: user1100
 settleweb_pass1: Pa55word!
 
 user1100: user1100
 Test123!: Test123!
 
-# (Multiple investments)
+# (multiple investments)
 settleweb_user2: user1001
 settleweb_pass2: Pa55word!
 
-# (Single investment)
+# (single investment)
 settleweb_user3: user1111
 settleweb_pass3: Pa55word!
 
@@ -82,13 +82,22 @@ settleweb_pass5: Pa55word!
 settleweb_user6: paul.blenkhorn@googlemail.com
 settleweb_pass6: Pa55word!
 
-# AIX environment details
+#Aix environment details
 AIX: http://35.156.75.22
 aix_user1: oper
 aix_pass1: password
 
 aix_user2: manager
 aix_pass2: password
+
+manager_user1: manager-user1
+manager_pass1: Password1!
+
+operator_user1: operator-user1
+operator_pass1: Password1!
+
+viewer_user1: viewer-user1
+viewer_pass1: Password1!
 
 P1_BRKR1_user: PART1-U1
 P1_BRKR1_pass: Password1!
@@ -210,7 +219,7 @@ P20_BRKR1_pass: Password1!
 P20_BRKR2_user: PART20-U2
 P20_BRKR2_pass: Password1!
 
-# Custodians
+# CUSTODIANS
 
 C1_BRKR1_user: CUST1-U1
 C1_BRKR1_pass: Password1!

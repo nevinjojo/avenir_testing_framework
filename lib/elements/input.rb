@@ -69,11 +69,46 @@ class Input
     end
   end
 
+  # Input value to field, find the appropriate result and click on a particular select2 field we are looking for.
+  #
+  # Step 1a: Find the select2Input that ends with the keyword container.
+  # Step 1b: Fallback strategy - Otherwise find the select2Input that ends with the keyword result.
+  # Step 2: Input text to select2 text field.
+  # Step 3: Once the drop down menu of select2 lists all of the potential results, click on highlighted select2Input.
   def select2_input
-
+    begin
+      $results.log_action("#{@action}(#{@params[0]})")
+      # Find the select2Input element
+      if @driver.find_element(:id, 'select2-' + $session.form + @params[0] + '-container').find_element(:xpath, '..').displayed?
+        begin
+          @driver.find_element(:id, 'select2-' + $session.form + @params[0] + '-container').find_element(:xpath, '..').click
+        rescue
+          # Do nothing. Try fallback option
+        end
+      else
+        @driver.find_element(:id, 'select2-' + $session.form + @params[0] + '-results').click
+      end
+      # Input text to select2Input
+      @driver.find_element(:class, 'select2-search__field').send_keys(@params[1..-1].join(' '))
+      sleep 1 # This sleep is required for the server to return inputs to be selected
+      $session.wait_until(@driver.find_elements(:class, 'select2-results__option--highlighted').size == 1)
+      @driver.find_element(:class, 'select2-results__option--highlighted').click
+      $results.success
+    rescue => ex
+      @driver.switch_to.active_element.send_keys(:escape)
+      $session.success = false
+      $results.fail("#{@action}(#{@params[0]})", ex)
+    end
   end
 
+  # Finds an Input element and clears its content.
   def clear_input
-
+    begin
+      $results.log_action("#{@action}(#{@params[0]})")
+      @driver.find_element(:id, $session.form + @params[0]).clear
+      $results.success
+    rescue => ex
+      $results.fail("#{@action}(#{@params[0]})", ex)
+    end
   end
 end

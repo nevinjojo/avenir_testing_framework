@@ -5,7 +5,7 @@
 
 # Handles the sessions and the values required for each session
 class Session
-  attr_accessor :failure_count, :success_count, :form, :date
+  attr_accessor :failure_count, :success_count, :form, :date, :success
 
   # @param [WebDriver] driver - the driver that will be used in a particular thread.
   def initialize(driver)
@@ -58,4 +58,18 @@ class Session
     @wait.until {condition}
   end
 
+  # Waits /until the server responses with the table data once a page is loaded.
+  def table_wait
+    begin
+      $results.log_action('tableWait')
+      data_processing = @driver.find_element(:id, 'data_processing')
+      unless data_processing.displayed?
+        $session.wait_until(data_processing.displayed?)
+      end
+      $session.wait_until(!data_processing.displayed?)
+    rescue => ex
+      $session.success = false
+      $results.fail('tableWait', ex)
+    end
+  end
 end

@@ -7,6 +7,7 @@ require 'logger'
 require_relative 'page/home'
 require_relative 'elements/button'
 require_relative 'elements/input'
+require_relative 'elements/table'
 
 class Command
 
@@ -59,10 +60,11 @@ class Command
       input
     when 'clearInput'
       input
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
+    when 'tableWait'
+      # Waits /until the table data is displayed.
+      $session.table_wait
+    when 'find'
+      find_element
     when '#'
       puts '#'
     when '#'
@@ -222,6 +224,31 @@ class Command
       element.clear_input
     else
       $results.log("Ignoring unknown input of #{@action}.")
+    end
+  end
+
+  def find_element
+    begin
+      $results.log_action("#{@action}(#{sub_link})")
+      $session.success = false
+      case @params[0]
+      when 'button'
+        $session.success = Button.displayed?(@params[1])
+      when 'item'
+        $session.success = Table.content_displayed?
+      when 'textH1'
+        $session.success = Text.displayed?(@params)
+      else
+        $results.log("Ignoring unknown element.")
+      end
+      if $session.success
+        $results.success
+      else
+        $results.failure
+      end
+    rescue
+      $session.success = false
+      $results.fail("find", ex)
     end
   end
 
