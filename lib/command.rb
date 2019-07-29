@@ -65,10 +65,10 @@ class Command
       $session.table_wait
     when 'find'
       find_element
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
+    when 'scrollto'
+      @home.scroll_to(@params)
+    when 'clickby'
+      @home.click_by(@params)
     when '#'
       puts '#'
     when '#'
@@ -246,7 +246,7 @@ class Command
       else
         $results.failure
       end
-    rescue
+    rescue => ex
       $session.success = false
       $results.fail("find", ex)
     end
