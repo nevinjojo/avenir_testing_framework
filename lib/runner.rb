@@ -28,8 +28,10 @@ class Runner
   end
 
   # Main method that triggers the framework to run every script specified by the user.
+  # Once the runner completes its functions, it will also terminate the WebDriver.
   def execute
     execute_files
+    $session.terminate
   end
 
   # Execute test script file(s) in the files array.
@@ -40,6 +42,7 @@ class Runner
         $results = Results.new(@driver, filename.gsub('/', '.') + "_" + @time.strftime('%Y-%m-%d_%H.%M.%S') + ".txt")
         $results.log(filename)
         run_script(filename)
+        $results.end_test
       end
     }
   end

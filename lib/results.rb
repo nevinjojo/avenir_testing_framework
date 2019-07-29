@@ -128,4 +128,9 @@ class Results
     @driver.save_screenshot("screenshots/#{message}.png")
   end
 
+  # Adds an \end tag to the \end of the file
+  def end_test
+    $results.log("Test Analysis: #{$session.failure_count.to_s}/#{$session.success_count.to_s} test actions failed.")
+    $results.log("#### End of Test '#{$session.name}' ####")
+  end
 end

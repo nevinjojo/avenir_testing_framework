@@ -69,8 +69,8 @@ class Command
       @home.scroll_to(@params)
     when 'clickby'
       @home.click_by(@params)
-    when '#'
-      puts '#'
+    when 'expect'
+      expect
     when '#'
       puts '#'
     when '#'
@@ -110,6 +110,7 @@ class Command
 
     #Resets the session \when a new test is run
     $session = Session.new(@driver)
+    $session.name = @params.join(' ')
   end
 
   # Description records the purpose of each test.
@@ -249,6 +250,17 @@ class Command
     rescue => ex
       $session.success = false
       $results.fail("find", ex)
+    end
+  end
+
+  def expect
+    $results.log_action("#{@action} to #{@params[0]}")
+    if $session.success and @params[0] == 'pass'
+      $results.success
+    elsif $session.success and @params[0] == 'fail'
+      $results.success
+    else
+      $results.fail(@action)
     end
   end
 

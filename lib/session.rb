@@ -5,7 +5,7 @@
 
 # Handles the sessions and the values required for each session
 class Session
-  attr_accessor :failure_count, :success_count, :form, :date, :success
+  attr_accessor :failure_count, :success_count, :form, :date, :success, :name
 
   # @param [WebDriver] driver - the driver that will be used in a particular thread.
   def initialize(driver)
@@ -71,5 +71,11 @@ class Session
       $session.success = false
       $results.fail('tableWait', ex)
     end
+  end
+
+  # Terminates the session by quitting the webdriver.
+  def terminate
+    @driver.quit
+
   end
 end
