@@ -149,4 +149,72 @@ class Page
     end
   end
 
+  # Scrolls the view to include the position of a specific element in the page (by id).
+  # The target element must be 'visible' in the sense that you could normally see \it \if you scrolled to it.
+  def scroll_to(params)
+    begin
+      $results.log_action('scrollto')
+      @driver.find_element(:id, params[0]).location_once_scrolled_into_view
+      $session.success = true
+      $results.success
+    rescue => ex
+      $session.success = false
+      $results.fail("scrollto (#{params.join(' ')})", ex)
+    end
+  end
+
+  # Clicks on the first element found by one of several search criteria.
+  # The element to be clicked could be found using its id, text, \class, or xpath
+  # The element will only be clicked \if it is displayed, \else it fails
+  #
+  # references to the element:
+  # id - clicks by id of the element
+  # \class - clicks by the list of classes that are applied to the element
+  # text - clicks by the text within element. If there are multiple similar text, specify which one to choose using the last argument
+  #
+  # Note: quotations in xpath is not supported for this function (i.e. //*[@id="data"]). This is because other arguments such as text could have quotations which are usually removed.
+  def click_by(params)
+    begin
+      $results.log_action("clickby #{params[0]}")
+      case params[0]
+      when 'id'
+        element = @driver.find_element(:id, params[1])
+      when 'class'
+        element = @driver.find_element(:css, params[1..-1].join('.').gsub(/(^(?!\.)|\.{2,})/, '.'))
+      when 'text'
+        # find the element that matches the text specified in the script. If there are two elements, then choose the one specified in the script as the last argument.
+        if params[-1].match(/\A-?\d+\Z/)
+          elements = @driver.find_elements(:xpath, "//*[contains(text(), '" + params[1..-2].join(' ') + "')]")
+          element = elements[params[-1].to_i - 1]
+          @driver.execute_script("arguments[0].click();", element)
+          $results.success
+          return
+        else # Otherwise, click on the text that contains the whole text
+          element = @driver.find_element(:xpath, "//*[contains(text(), '" + params[1..-1].join(" ") + "')]")
+        end
+      when 'xpath'
+        xpath = params[1..-1].join('')
+        element = @driver.find_element(:xpath, xpath)
+      end
+
+      #Once the element is found, check \if it is displayed on the screen and then click it.
+      if element.displayed?
+        element.click
+        $session.success = true
+        $results.success
+      else
+        $session.success = false
+        $results.fail("clickby #{params.join(' ')}")
+      end
+    rescue => ex
+      $session.success = false
+      $results.fail("clickby #{params[0]}", ex)
+    end
+  end
+
+  def smart_split
+    sa = self.split(/"/).collect {|x| x.strip}
+    return (1..sa.length).zip(sa).collect {|i, x| (i & 1).zero? ? x : x.split}.flatten
+  end
+
 end
