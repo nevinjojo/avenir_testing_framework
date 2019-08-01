@@ -28,18 +28,16 @@ class Args
   #
   # @return [String] files
   def get_files
-    if ARGV.length == 1
-      name = ARGV[0]
-    elsif ARGV.length == 2
-      name = ARGV[1]
-    end
-
-    if name.include? ".txt"
-      files = [] << name
+    if ARGV[1].include? ".txt"
+      files = [] << ARGV[1]
     else
-      files = Dir.glob(name + "/**/*.txt")
+      files = Dir.glob(ARGV[1] + "/**/*.txt")
     end
     return files
+  end
+
+  def get_results_directory
+    return ARGV[2]
   end
 
 end

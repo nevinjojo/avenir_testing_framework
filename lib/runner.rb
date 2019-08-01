@@ -14,14 +14,16 @@ require_relative 'login'
 require_relative 'results'
 require_relative 'session'
 require_relative 'command'
+require_relative 'stats'
 
 class Runner
 
-  def initialize(driver, args, time, files, login, session, config)
+  def initialize(driver, args, time, files, results_dir, login, session, config)
     @driver = driver
     @args = args
     @time = time
     @files = files
+    @results_dir = results_dir
     @login = login
     @session = session
     @config = config
@@ -32,6 +34,7 @@ class Runner
   def execute
     execute_files
     $session.terminate
+    get_test_stats
   end
 
   # Execute test script file(s) in the files array.
@@ -39,7 +42,7 @@ class Runner
   def execute_files
     @files.each {|filename|
       if File.exist?(filename)
-        $results = Results.new(@driver, filename.gsub('/', '.') + "_" + @time.strftime('%Y-%m-%d_%H.%M.%S') + ".txt")
+        $results = Results.new(@driver, @results_dir, filename.gsub('/', '.') + "_" + @time.strftime('%Y-%m-%d_%H.%M.%S') + ".txt")
         $results.log(filename)
         run_script(filename)
         $results.end_test
@@ -85,6 +88,11 @@ class Runner
       str = line.split(' ')[1..-1]
     end
     str
+  end
+
+  # Generate stats from the Results file that is created by the framework.
+  def get_test_stats
+    stats = Stats.new('results/')
   end
 
 end

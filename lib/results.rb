@@ -10,8 +10,9 @@ class Results
 
   # @param [WebDriver] driver - The driver that will be used during the process.
   # @param [File] file_name - Creates a file with the same name as the script.
-  def initialize(driver, file_name)
+  def initialize(driver, result_dir, file_name)
     @driver = driver
+    @results_dir = result_dir
     @file = file_name
     # Logger configurations
     @logger = Logger.new(STDOUT)
@@ -21,7 +22,7 @@ class Results
       "\n#{msg}"
     end
     # Writer configurations
-    @writer = Logger.new "results/#{@file}"
+    @writer = Logger.new "#{@results_dir}/#{@file}"
     @writer.level = Logger::DEBUG
     @writer.formatter = proc do |severity, datetime, _progname, msg|
       "\n#{msg}"
