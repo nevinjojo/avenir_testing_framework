@@ -37,7 +37,7 @@ class Command
       when 'description'
         description
       when 'goto'
-        goto
+        @home.go_to(@params)
       when 'login'
         login
       when 'logout'
@@ -78,8 +78,8 @@ class Command
         Search.new(@driver, @action, @params).execute
       when 'saveID'
         @home.save_id(@action)
-      when '#'
-        puts '#'
+      when 'back'
+        @home.go_back
       when '#'
         puts '#'
       when '#'
@@ -122,17 +122,6 @@ class Command
   # Description records the purpose of each test.
   def description
     $results.log("####  Description: " + @params.join(' ') + "  ####")
-  end
-
-  # Navigates to a particular url that is stored in the yaml file.
-  def goto
-    begin
-      $results.log_action(@action)
-      @driver.navigate.to($config[@params.join(' ')])
-      $results.success
-    rescue => ex
-      $results.fail(@action, ex)
-    end
   end
 
   # Logs into the account using the login details provided by the yaml file.

@@ -244,4 +244,27 @@ class Page
     return (1..sa.length).zip(sa).collect {|i, x| (i & 1).zero? ? x : x.split}.flatten
   end
 
+  # Navigates to a particular url that is stored in the yaml file.
+  def go_to(params)
+    begin
+      $results.log_action('goto')
+      @driver.navigate.to($config[params.join(' ')])
+      $results.success
+    rescue => ex
+      $results.fail('goto', ex)
+    end
+  end
+
+  # Navigates back to the page driver was before.
+  def go_back
+    begin
+      $results.log_action('back')
+      @driver.navigate.back
+      #wait for the new page to load
+      $session.wait_for_stale
+      $results.success
+    rescue => ex
+      $results.failure(ex)
+    end
+  end
 end
