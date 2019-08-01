@@ -5,7 +5,7 @@
 
 # Handles the sessions and the values required for each session
 class Session
-  attr_accessor :failure_count, :success_count, :form, :date, :success, :name
+  attr_accessor :failure_count, :action_count, :form, :date, :success, :name, :temp_id
 
   # @param [WebDriver] driver - the driver that will be used in a particular thread.
   def initialize(driver)
@@ -16,7 +16,7 @@ class Session
     @success = ''
     @temp_id = ''
     @failure_count = 0
-    @success_count = 0
+    @action_count = 0
     @wait = Selenium::WebDriver::Wait.new(:timeout => 5)
   end
 
@@ -27,7 +27,7 @@ class Session
     @success = ''
     @temp_id = ''
     @failure_count = 0
-    @success_count = 0
+    @action_count = 0
     reset_form
   end
 

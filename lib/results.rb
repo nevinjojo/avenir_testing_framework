@@ -98,7 +98,7 @@ class Results
     @writer.formatter = proc do |severity, datetime, _progname, msg|
       " #{msg}"
     end
-    output = exception.is_a?(Exception) ? format('FAILURE: %s', exception.message.split(/\n/)[0]) : 'FAILURE'
+    output = exception.is_a?(Exception) ? format('FAILURE: "%s" %s method : line %s', exception.message.split(/\n/)[0], exception.backtrace[0].split(":").last, exception.backtrace[0].split(":")[-2]) : 'FAILURE'
     @writer.error output
     @logger.error output
   end
@@ -130,7 +130,7 @@ class Results
 
   # Adds an \end tag to the \end of the file
   def end_test
-    $results.log("Test Analysis: #{$session.failure_count.to_s}/#{$session.success_count.to_s} test actions failed.")
+    $results.log("Test Analysis: #{$session.failure_count.to_s}/#{$session.action_count.to_s} test actions failed.")
     $results.log("#### End of Test '#{$session.name}' ####")
   end
 end

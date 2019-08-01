@@ -65,6 +65,7 @@ class Runner
   def parse_command(action, params)
     command = Command.new(@driver, action, params)
     command.execute
+    $session.action_count += 1
   end
 
   # Returns the action that is specified in each line of the script.

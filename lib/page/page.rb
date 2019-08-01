@@ -149,6 +149,33 @@ class Page
     end
   end
 
+  #Finds the id displayed for a particular object created in the system and saving the id to `temp_id` variable.
+  def save_id(action)
+    begin
+      $results.log_action(action)
+      if @driver.find_element(:css, 'h1 > small')
+        h1_string = @driver.find_element(:css, 'h1 > small').attribute('innerText')
+        extracted_id = h1_string[/\(([^()]*)\)/] # Fetch the string inside the brackets
+        if extracted_id.nil?
+          extracted_id = h1_string
+        end
+        if h1_string.include? ')'
+          h1_string = extracted_id[1..-1].chomp(')')
+        end
+        if h1_string.include? '('
+          h1_string = h1_string.split(/\(([^()]*)\)/)
+          $results.success
+        end
+        $session.temp_id = h1_string
+        $results.append($session.temp_id)
+        $results.success
+      end
+    rescue => ex
+      $results.info("#{ex.class}: #{ex.message}")
+      $results.fail(action, ex)
+    end
+  end
+
   # Scrolls the view to include the position of a specific element in the page (by id).
   # The target element must be 'visible' in the sense that you could normally see \it \if you scrolled to it.
   def scroll_to(params)

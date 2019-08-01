@@ -64,17 +64,17 @@ class Command
       # Waits /until the table data is displayed.
       $session.table_wait
     when 'find'
-      find_element
+      find_elem
     when 'scrollto'
       @home.scroll_to(@params)
     when 'clickby'
       @home.click_by(@params)
     when 'expect'
       expect
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
+    when 'search'
+      search
+    when 'saveID'
+      @home.save_id(@action)
     when '#'
       puts '#'
     when '#'
@@ -228,9 +228,9 @@ class Command
     end
   end
 
-  def find_element
+  def find_elem
     begin
-      $results.log_action("#{@action}(#{sub_link})")
+      $results.log_action("#{@action}(#{@params.join(' ')})")
       $session.success = false
       case @params[0]
       when 'button'
@@ -254,14 +254,25 @@ class Command
   end
 
   def expect
-    $results.log_action("#{@action} to #{@params[0]}")
-    if $session.success and @params[0] == 'pass'
-      $results.success
-    elsif $session.success and @params[0] == 'fail'
-      $results.success
-    else
-      $results.fail(@action)
+    begin
+      $results.log_action("#{@action} to #{@params[0]}")
+      if $session.success and @params[0] == 'pass'
+        $results.success
+      elsif $session.success and @params[0] == 'fail'
+        $results.success
+      else
+        $results.fail(@action)
+      end
+    rescue => ex
+      $results.fail(@action, ex)
     end
   end
 
+  def search
+    begin
+      $results.log_action("#{@action} (#{@params.join(' ')})")
+    rescue => ex
+      $results.fail("#{@action} (#{@params.join(' ')})", ex)
+    end
+  end
 end
