@@ -16,8 +16,9 @@ class Command
   # @param [String] action - action that is made on the driver
   # @param [String] params - parameter that relates to each action of the command
   # @param [WebDriver] driver - Selenium driver that is used
-  def initialize(driver, action, params)
+  def initialize(driver, results_dir, action, params)
     @driver = driver
+    @results_dir = results_dir
     @action = action
     @params = params
     @home = Home.new(@driver)
@@ -99,7 +100,7 @@ class Command
   # Sets a new Output file to write the test results to.
   def set_report_file
     if @params[0].include? '.txt'
-      $results = Results.new(@driver, @params[0])
+      $results = Results.new(@driver, @results_dir, @params[0])
       $results.print('New Output file: ' + @params[0])
     end
   end

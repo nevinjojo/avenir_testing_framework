@@ -13,6 +13,7 @@ class Results
   def initialize(driver, result_dir, file_name)
     @driver = driver
     @results_dir = result_dir
+    @results_sub_dir = mkdir
     @file = file_name
     # Logger configurations
     @logger = Logger.new(STDOUT)
@@ -22,11 +23,19 @@ class Results
       "\n#{msg}"
     end
     # Writer configurations
-    @writer = Logger.new "#{@results_dir}/#{@file}"
+    @writer = Logger.new "#{@results_dir}#{@results_sub_dir}/#{@file}"
     @writer.level = Logger::DEBUG
     @writer.formatter = proc do |severity, datetime, _progname, msg|
       "\n#{msg}"
     end
+  end
+
+  # Creates a new directory within the results directory with a timestamp as name (if it already doesn't exist).
+  # All results files will be stored in this new directory.
+  def mkdir
+    dir = "test_results_#{Time.now.strftime('%Y-%m-%d_%H.%M.%S')}"
+    Dir.mkdir("#{@results_dir}/#{dir}") unless File.exists?("#{@results_dir}/#{dir}")
+    return dir
   end
 
   # Sets the writer and logger objects to have a formatter that includes \n in the beginning of the line.
