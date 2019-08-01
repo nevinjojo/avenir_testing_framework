@@ -8,6 +8,8 @@ require_relative 'page/home'
 require_relative 'elements/button'
 require_relative 'elements/input'
 require_relative 'elements/table'
+require_relative 'elements/search'
+require_relative 'elements/text'
 
 class Command
 
@@ -22,71 +24,75 @@ class Command
   end
 
   def execute
-    case @action
-    when 'output'
-      set_report_file
-    when '#'
-      # Comments in scripts are ignored.
-    when 'refresh'
-      refresh_page
-    when 'test'
-      initialise_test_script
-    when 'description'
-      description
-    when 'goto'
-      goto
-    when 'login'
-      login
-    when 'logout'
-      logout
-    when 'sleep'
-      $session.sleep_for(@params.join.to_i)
-    when 'menu'
-      menu
-    when 'usermenu'
-      user_menu
-    when 'button'
-      button
-    when 'form'
-      # Stores the first common keyword of the input id that will be used to insert values to the fields.
-      $session.form = @params.join(' ') + '_'
-    when 'textInput'
-      input
-    when 'menuInput'
-      input
-    when 'checkerInput'
-      input
-    when 'select2Input'
-      input
-    when 'clearInput'
-      input
-    when 'tableWait'
-      # Waits /until the table data is displayed.
-      $session.table_wait
-    when 'find'
-      find_elem
-    when 'scrollto'
-      @home.scroll_to(@params)
-    when 'clickby'
-      @home.click_by(@params)
-    when 'expect'
-      expect
-    when 'search'
-      search
-    when 'saveID'
-      @home.save_id(@action)
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
-    when '#'
-      puts '#'
-    else
-      # type code here
+    begin
+      case @action
+      when 'output'
+        set_report_file
+      when '#'
+        # Comments in scripts are ignored.
+      when 'refresh'
+        refresh_page
+      when 'test'
+        initialise_test_script
+      when 'description'
+        description
+      when 'goto'
+        goto
+      when 'login'
+        login
+      when 'logout'
+        logout
+      when 'sleep'
+        $session.sleep_for(@params.join.to_i)
+      when 'menu'
+        menu
+      when 'usermenu'
+        user_menu
+      when 'button'
+        button
+      when 'form'
+        # Stores the first common keyword of the input id that will be used to insert values to the fields.
+        $session.form = @params.join(' ') + '_'
+      when 'textInput'
+        input
+      when 'menuInput'
+        input
+      when 'checkerInput'
+        input
+      when 'select2Input'
+        input
+      when 'clearInput'
+        input
+      when 'tableWait'
+        # Waits /until the table data is displayed.
+        $session.table_wait
+      when 'find'
+        find_elem
+      when 'scrollto'
+        @home.scroll_to(@params)
+      when 'clickby'
+        @home.click_by(@params)
+      when 'expect'
+        expect
+      when 'search'
+        Search.new(@driver, @action, @params).execute
+      when 'saveID'
+        @home.save_id(@action)
+      when '#'
+        puts '#'
+      when '#'
+        puts '#'
+      when '#'
+        puts '#'
+      when '#'
+        puts '#'
+      when '#'
+        puts '#'
+      else
+        # type code here
+      end
+    rescue => ex
+      $results.failure(ex)
     end
   end
 
@@ -234,11 +240,14 @@ class Command
       $session.success = false
       case @params[0]
       when 'button'
-        $session.success = Button.displayed?(@params[1])
+        button = Button.new(@driver, @params)
+        $session.success = button.displayed?(@params[1])
       when 'item'
-        $session.success = Table.content_displayed?
+        table = Table.new(@driver, @params)
+        $session.success = table.content_displayed?
       when 'textH1'
-        $session.success = Text.displayed?(@params)
+        text = Text.new(@driver, @params)
+        $session.success = text.displayed?(@params)
       else
         $results.log("Ignoring unknown element.")
       end
@@ -265,14 +274,6 @@ class Command
       end
     rescue => ex
       $results.fail(@action, ex)
-    end
-  end
-
-  def search
-    begin
-      $results.log_action("#{@action} (#{@params.join(' ')})")
-    rescue => ex
-      $results.fail("#{@action} (#{@params.join(' ')})", ex)
     end
   end
 end

@@ -98,7 +98,7 @@ class Results
     @writer.formatter = proc do |severity, datetime, _progname, msg|
       " #{msg}"
     end
-    output = exception.is_a?(Exception) ? format('FAILURE: "%s" %s method : line %s', exception.message.split(/\n/)[0], exception.backtrace[0].split(":").last, exception.backtrace[0].split(":")[-2]) : 'FAILURE'
+    output = exception.is_a?(Exception) ? format('FAILURE: "%s" %s : line %s', exception.message.split(/\n/)[0], exception.backtrace[0].split(":").last, exception.backtrace[0].split(":")[-2]) : 'FAILURE'
     @writer.error output
     @logger.error output
   end
