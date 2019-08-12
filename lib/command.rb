@@ -10,6 +10,7 @@ require_relative 'elements/input'
 require_relative 'elements/table'
 require_relative 'elements/search'
 require_relative 'elements/text'
+require_relative 'elements/window'
 
 class Command
 
@@ -81,16 +82,17 @@ class Command
         @home.save_id(@action)
       when 'back'
         @home.go_back
-      when '#'
-        puts '#'
-      when '#'
-        puts '#'
-      when '#'
-        puts '#'
-      when '#'
-        puts '#'
+      when 'screenshot'
+        $results.screenshot(@params)
+      when 'findAndScreenshot'
+        $results.find_and_screenshot(@params)
+      when 'date'
+        $session.set_date(@params)
+      when 'window'
+        Window.new(@driver).switch_to(@params)
       else
-        # type code here
+        # Unknown commands are reported.
+        $results.log("Error: Unable to find action '#{action}' (check for typos in the action :)")
       end
     rescue => ex
       $results.failure(ex)
@@ -188,6 +190,7 @@ class Command
     end
   end
 
+  # Calls the appropriate function within the Button /class to click on a particular button
   def button
     button = Button.new(@driver, @params)
     case @params[0]
@@ -206,6 +209,8 @@ class Command
     end
   end
 
+  # Calls the appropriate function within the Input /class to enter details on a particular text field
+  # Each text field are different, which is why separate functions are called for each input types
   def input
     element = Input.new(@driver, @action, @params)
     case @action
@@ -224,6 +229,7 @@ class Command
     end
   end
 
+  # Finds either a specific button, item, textH1 element. If the element is unknown, it is ignored.
   def find_elem
     begin
       $results.log_action("#{@action}(#{@params.join(' ')})")
@@ -252,6 +258,7 @@ class Command
     end
   end
 
+  # Checks /if the test assumption made by the tester matches with the result of the tests.
   def expect
     begin
       $results.log_action("#{@action} to #{@params[0]}")

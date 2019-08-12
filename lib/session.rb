@@ -40,7 +40,7 @@ class Session
   def wait_for_stale
     begin
       nb = @driver.find_element(:class, 'navbar')
-      @wait.until {nb}
+      @wait.until { nb }
       reset_form
     rescue
       # ignored
@@ -55,7 +55,7 @@ class Session
 
   # Waits /until the condition is true.
   def wait_until(condition)
-    @wait.until {condition}
+    @wait.until { condition }
   end
 
   # Waits /until the server responses with the table data once a page is loaded.
@@ -76,6 +76,28 @@ class Session
   # Terminates the session by quitting the webdriver.
   def terminate
     @driver.quit
+  end
 
+  def set_date(params)
+    begin
+      $results.log_action('date')
+      if @driver.find_element(:xpath, '/html/body/div[1]/div[4]/div[1]/div/p').displayed?
+        date_text = @driver.find_element(:xpath, '/html/body/div[1]/div[4]/div[1]/div/p').text
+        date = Date.parse(date_text)
+      end
+      begin
+        if params[0] == '+'
+          date += params[1].to_i
+        elsif params[0] == '-'
+          date -= params[1].to_i
+        end
+        @date = date.strftime('%d/%m/%y')
+        puts @date
+      rescue => ex
+        $results.fail("date #{params.join(' ')}", ex)
+      end
+    rescue => ex
+      $results.fail("date #{params.join(' ')}", ex)
+    end
   end
 end

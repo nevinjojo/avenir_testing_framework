@@ -78,7 +78,7 @@ class Runner
   # Returns the parameter that comes after each action line in the script.
   def get_params(line)
     if line.include? '"'
-      # Some kinda regex magic is happening here.
+      # Some kinda regex magic is happening here - courtesy: Mark Newbery
       str = line.split(/"([^\\"]+(?:\\.[^\\"]*)*)"|([^\s"]+)/)
       str -= [' ']
       str.shift(1)
@@ -92,6 +92,7 @@ class Runner
   # Generate stats from the Results file that is created by the framework.
   def get_test_stats
     stats = Stats.new(@results_dir)
+    # TODO Add test stats feature
   end
 
 end

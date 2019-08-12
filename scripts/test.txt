@@ -4,7 +4,7 @@ test New Fund 1.1
 description This test Makes a new fund instrument
 goto dev
 login dev_user1 dev_pass1
-
+screenshot
 menu instruments
 button new fund
 form admInstrument

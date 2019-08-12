@@ -56,7 +56,7 @@ class Results
 
   # Writes to the file and prints on the console.
   # The log will be printed on a new line (unlike append method).
-  # @param [String] messagex
+  # @param [String] message
   def log(message)
     format_to_new_ine
     @logger.info message
@@ -135,7 +135,42 @@ class Results
   # Takes the screenshot of the webpage at time of calling the function.
   # @param [String] message
   def screenshot(message)
-    @driver.save_screenshot("screenshots/#{message}.png")
+    begin
+      @driver.save_screenshot("screenshots/#{message}.png")
+    rescue => ex
+      $results.fail(message, ex)
+    end
+  end
+
+  # Finds element looking for and screenshot it
+  # Note: This is an action that was specifically made for handling the screenshot project.
+  #       The command might not function as expected in other projects due to the nature of the calls that
+  #       are made within this function.
+  def find_and_screenshot(params)
+    begin
+      $results.log_action("findAndScreenshot(#{params.join(' ')}")
+      links = @driver.find_elements(:xpath, '//*[@id="accordion"]/div')
+      (0..links.length - 1).each do |i|
+        # Navigate to the Kaihu url and fetch the h4 string in the page.
+        @driver.navigate.to($config['kaihu'])
+        h4 = @driver.find_element(:xpath, "//*[@id='heading#{i.to_s}']/h4/a").text
+        h4 = h4.split
+        h4 = h4[0]
+
+        if h4.include? '/'
+          puts h4 + ' - '
+          # Navigate to the new url using the h4 fetched before and take a screenshot
+          @driver.navigate.to($config['testreg'])
+          $login.login($config['testreg_user1'], $config['testreg_pass1'])
+          new_link = 'http://irene.avenir.tech/en_GB' + h4
+          @driver.navigate.to(new_link)
+          @driver.save_screenshot("screenshots/" + "irene_" + h4.delete("/") + ".png")
+        end
+      end
+      $results.success
+    rescue => ex
+      $results.fail('findAndScreenshot', ex)
+    end
   end
 
   # Adds an \end tag to the \end of the file
