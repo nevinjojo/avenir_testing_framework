@@ -1,0 +1,42 @@
+#!/bin/bash
+######################################################################
+# Avenir Technology GUI testing
+######################################################################
+SCRIPT=${@: -1}
+BROWSER=''
+DIRECTORY=''
+while getopts "b:s:d:p" opt; do
+  case $opt in
+    b)
+      BROWSER="$OPTARG"
+      # echo "-b $BROWSER was triggered!" >&2
+      ;;
+    s)
+      SCRIPT="$OPTARG"
+      # echo "-s $SCRIPT was triggered!" >&2
+      ;;
+    d)
+      DIRECTORY="$OPTARG"
+      # echo "-d $DIRECTORY was triggered!" >&2
+      ;;
+    p)
+      DIRECTORY="/Users/siennahendrikx/Dropbox\ \(Personal\)/test\ results/"
+      # echo "-p $DIRECTORY was triggered!" >&2
+      ;;
+    \?)
+      echo "Invalid flag. Examples of valid flag calls:" >&2
+      echo "-d path/to/results/directory"
+      echo "-b chrome"
+      echo "-s scripts/test.txt"
+      echo "-p <-- (sets directory to Dropbox)"
+      exit 1;
+      ;;
+  esac
+done
+if [ -z "$BROWSER" ]; then
+    BROWSER="chrome"
+fi
+if [ -z "$DIRECTORY" ]; then
+    DIRECTORY="results/"
+fi
+ruby main.rb $BROWSER $SCRIPT $DIRECTORY

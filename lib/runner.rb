@@ -14,7 +14,6 @@ require_relative 'login'
 require_relative 'results'
 require_relative 'session'
 require_relative 'command'
-require_relative 'stats'
 
 class Runner
 
@@ -92,7 +91,7 @@ class Runner
 
   # Generate stats from the Results file that is created by the framework.
   def get_test_stats
-    stats = Stats.new('results/')
+    stats = Stats.new(@results_dir)
   end
 
 end
