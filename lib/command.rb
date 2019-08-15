@@ -88,6 +88,8 @@ class Command
         $results.find_and_screenshot(@params)
       when 'date'
         $session.set_date(@params)
+      when 'time'
+        $session.set_time(@params)
       when 'window'
         Window.new(@driver).switch_to(@params)
       when 'tableClick'
@@ -249,11 +251,8 @@ class Command
       else
         $results.log("Ignoring unknown element.")
       end
-      if $session.success
-        $results.success
-      else
-        $results.failure
-      end
+      $session.success ? $results.success : $results.failure
+      $session.failure_count += $session.success ? 0 : 1
     rescue => ex
       $session.success = false
       $results.fail("find", ex)

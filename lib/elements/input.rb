@@ -28,18 +28,31 @@ class Input
       $results.log_action("#{@action}(#{@params[0]})")
       @driver.find_element(:id, $session.form + @params[0]).clear
       element = @driver.find_element(:id, $session.form + @params[0])
+      inputs = [] # The inputs that will be entered at the \end
       # If the parameter is a date, then the stored date value will be inputted.
       # You can set_date on the fly as part of this command like this: `textInput elem_id date + 3 ignore-weekends`
-      if @params[1] == 'date'
+      if @params.include? 'date'
         if @params[2] == '+'
           $session.set_date(@params[2..-1])
         elsif @params[2] == '-'
           $session.set_date(@params[2..-1])
         end
-        puts $session.date
-        @params[1] = $session.date
+        inputs.push($session.date)
       end
-      element.send_keys(@params[1..-1].join(' '))
+
+      # If the parameter has time as a factor, then set the time
+      if @params.include? 'time'
+        if @params[@params.index('time') + 1] != nil
+          $session.set_time(@params[@params.index('time') + 1])
+        else
+          $session.set_time
+        end
+        inputs.push($session.time)
+      end
+      if !@params.include? 'time' and !@params.include? 'date'
+        inputs.push(@params[1..-1])
+      end
+      element.send_keys(inputs.join(' '))
       element.send_keys :escape # escape from text field being in focus.
       $results.success
     rescue => ex

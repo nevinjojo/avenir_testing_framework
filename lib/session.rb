@@ -5,13 +5,14 @@
 
 # Handles the sessions and the values required for each session
 class Session
-  attr_accessor :failure_count, :action_count, :form, :date, :success, :name, :temp_id
+  attr_accessor :failure_count, :action_count, :form, :date, :time, :success, :name, :temp_id
 
   # @param [WebDriver] driver - the driver that will be used in a particular thread.
   def initialize(driver)
     @driver = driver
     @name = ''
     @date = ''
+    @time = ''
     @form = ''
     @success = ''
     @temp_id = ''
@@ -24,6 +25,7 @@ class Session
   def reset
     @name = ''
     @date = ''
+    @time = ''
     @success = ''
     @temp_id = ''
     @failure_count = 0
@@ -78,9 +80,10 @@ class Session
     @driver.quit
   end
 
+  # sets the date that can be used in the text field.
+  # The function allows incrementation of date, and ignore weekends /while incrementing
   def set_date(params)
     begin
-      $results.log_action('date')
       if @driver.find_element(:class, 'business-date').displayed?
         date_text = @driver.find_element(:class, 'business-date').text
         date = Date.parse(date_text)
@@ -100,7 +103,6 @@ class Session
           end
         end
         @date = date.strftime('%d/%m/%y')
-        $results.append(@date)
       rescue => ex
         $results.fail("date #{params.join(' ')}", ex)
       end
@@ -109,6 +111,7 @@ class Session
     end
   end
 
+  # Adds a specific number of days to a date (ignoring weekends) and returns it
   def add_business_days(date, num)
     d = date
     num.times do |i|
@@ -123,6 +126,7 @@ class Session
     return d
   end
 
+  # Subtracts a specific number of days to a date (ignoring weekends) and returns it
   def subtract_business_days(date, num)
     d = date
     num.times do |i|
@@ -135,5 +139,17 @@ class Session
       end
     end
     return d
+  end
+
+  # sets the time that can be used in the text field.
+  def set_time(params = Time.now.strftime('%H:%M'))
+    if params.empty?
+      params = Time.now.strftime('%H:%M')
+    end
+    begin
+      @time = params
+    rescue => ex
+      $results.fail('time', ex)
+    end
   end
 end

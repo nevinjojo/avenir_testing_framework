@@ -364,3 +364,7 @@ ethex_pass1: password
 
 ethex_user2: claire@atl
 ethex_pass2: Pa55word!
+
+arluk: http://arluk-test.avenir.tech/en_GB/admin/corpaction/new/bonus
+arluk_user: oper
+arluk_pass: password
