@@ -27,9 +27,16 @@ class Input
     begin
       $results.log_action("#{@action}(#{@params[0]})")
       @driver.find_element(:id, $session.form + @params[0]).clear
-      # If the parameter is a date, then the stored date value will be inputted
       element = @driver.find_element(:id, $session.form + @params[0])
+      # If the parameter is a date, then the stored date value will be inputted.
+      # You can set_date on the fly as part of this command like this: `textInput elem_id date + 3 ignore-weekends`
       if @params[1] == 'date'
+        if @params[2] == '+'
+          $session.set_date(@params[2..-1])
+        elsif @params[2] == '-'
+          $session.set_date(@params[2..-1])
+        end
+        puts $session.date
         @params[1] = $session.date
       end
       element.send_keys(@params[1..-1].join(' '))
@@ -50,7 +57,7 @@ class Input
       $results.log_action("#{@action}(#{@params[0]})")
       dropdown_list = @driver.find_element(:id, $session.form + @params[0])
       options = dropdown_list.find_elements(tag_name: 'option')
-      options.each {|option| option.click if option.text == @params[1..-1].join(' ')}
+      options.each { |option| option.click if option.text == @params[1..-1].join(' ') }
       $results.success
     rescue => ex
       $results.fail("#{@action}(#{@params[0]})", ex)

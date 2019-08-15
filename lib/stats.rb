@@ -12,4 +12,8 @@ class Stats
   def initialize(result_dir)
     @result_dir = result_dir
   end
+
+  def get_failure_rate
+
+  end
 end

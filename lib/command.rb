@@ -90,9 +90,11 @@ class Command
         $session.set_date(@params)
       when 'window'
         Window.new(@driver).switch_to(@params)
+      when 'tableClick'
+        Table.new(@driver, @params).click_item
       else
         # Unknown commands are reported.
-        $results.log("Error: Unable to find action '#{action}' (check for typos in the action :)")
+        $results.log("Error: Unable to find action '#{action}' (check for any typos in the command :)")
       end
     rescue => ex
       $results.failure(ex)

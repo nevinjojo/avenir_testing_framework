@@ -4,6 +4,7 @@ test New Fund 1.1
 description This test Makes a new fund instrument
 goto dev
 login dev_user1 dev_pass1
+date + 1
 screenshot
 menu instruments
 button new fund
@@ -12,7 +13,7 @@ menuInput category ETF
 textInput name fund name
 textInput short fund short
 textInput isin  fund isin
-textInput golive 20/20/20
+textInput golive date - 10 ignore-weekends
 button save
 sleep 2
 find button approve

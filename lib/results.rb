@@ -133,10 +133,23 @@ class Results
   end
 
   # Takes the screenshot of the webpage at time of calling the function.
-  # @param [String] message
-  def screenshot(message)
+  # @param [String] params - configuration of the screenshot
+  def screenshot(params)
     begin
-      @driver.save_screenshot("screenshots/#{message}.png")
+      filepath = "screenshots/#{params[0]}.png"
+      if params[-1] == "time" or params[-2] == "time"
+        filepath = "screenshots/#{params[0..-2].join(' ')}_#{DateTime.now.strftime("%d-%m-%Y_%H.%M")}.png"
+      end
+      if params[-1] == "full" or params[-2] == "full"
+        $results.log_action(params.join(' '))
+        @driver.execute_script("document.getElementsByTagName('html')[0].style['zoom'] = 0.7")
+        sleep 3
+        @driver.save_screenshot(filepath)
+        @driver.execute_script("document.getElementsByTagName('html')[0].style['zoom'] = 1")
+        $results.success
+      else
+        @driver.save_screenshot(filepath)
+      end
     rescue => ex
       $results.fail(message, ex)
     end
@@ -176,6 +189,6 @@ class Results
   # Adds an \end tag to the \end of the file
   def end_test
     $results.log("Test Analysis: #{$session.failure_count.to_s}/#{$session.action_count.to_s} test actions failed.")
-    $results.log("#### End of Test '#{$session.name}' ####")
+    $results.log("#### End of Test '#{$session.name}' ####\n")
   end
 end

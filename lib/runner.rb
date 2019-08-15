@@ -14,6 +14,7 @@ require_relative 'login'
 require_relative 'results'
 require_relative 'session'
 require_relative 'command'
+require_relative 'stats'
 
 class Runner
 
@@ -39,7 +40,7 @@ class Runner
   # Execute test script file(s) in the files array.
   # A new results file with the same name is created (with a timestamp at the \end).
   def execute_files
-    @files.each {|filename|
+    @files.each { |filename|
       if File.exist?(filename)
         $results = Results.new(@driver, @results_dir, filename.gsub('/', '.') + "_" + @time.strftime('%Y-%m-%d_%H.%M.%S') + ".txt")
         $results.log(filename)
@@ -91,8 +92,7 @@ class Runner
 
   # Generate stats from the Results file that is created by the framework.
   def get_test_stats
-    stats = Stats.new(@results_dir)
-    # TODO Add test stats feature
+    stats = Stats.new(@results_dir).get_failure_rate
+    #   TODO get stats from each results file
   end
-
 end

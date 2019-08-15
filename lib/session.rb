@@ -81,23 +81,59 @@ class Session
   def set_date(params)
     begin
       $results.log_action('date')
-      if @driver.find_element(:xpath, '/html/body/div[1]/div[4]/div[1]/div/p').displayed?
-        date_text = @driver.find_element(:xpath, '/html/body/div[1]/div[4]/div[1]/div/p').text
+      if @driver.find_element(:class, 'business-date').displayed?
+        date_text = @driver.find_element(:class, 'business-date').text
         date = Date.parse(date_text)
       end
       begin
         if params[0] == '+'
-          date += params[1].to_i
+          if params.include? "ignore-weekends"
+            date = add_business_days(date, params[1].to_i)
+          else
+            date += params[1].to_i
+          end
         elsif params[0] == '-'
-          date -= params[1].to_i
+          if params.include? "ignore-weekends"
+            date = subtract_business_days(date, params[1].to_i)
+          else
+            date -= params[1].to_i
+          end
         end
         @date = date.strftime('%d/%m/%y')
-        puts @date
+        $results.append(@date)
       rescue => ex
         $results.fail("date #{params.join(' ')}", ex)
       end
     rescue => ex
       $results.fail("date #{params.join(' ')}", ex)
     end
+  end
+
+  def add_business_days(date, num)
+    d = date
+    num.times do |i|
+      if d.friday?
+        d += 3
+      elsif d.saturday?
+        d += 2
+      else
+        d += 1
+      end
+    end
+    return d
+  end
+
+  def subtract_business_days(date, num)
+    d = date
+    num.times do |i|
+      if d.monday?
+        d -= 3
+      elsif d.sunday?
+        d -= 2
+      else
+        d -= 1
+      end
+    end
+    return d
   end
 end
