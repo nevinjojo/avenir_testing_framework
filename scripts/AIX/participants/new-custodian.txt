@@ -1,0 +1,329 @@
+test new custodian 01
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 01
+textInput short CUST01
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodian01@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST01
+search s_stat Ready
+button search
+tableClick short CUST01
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 02
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 02
+textInput short CUST02
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodian02@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST02
+search s_stat Ready
+button search
+tableClick short CUST02
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 03
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary 
+clickby text Custodian
+form admOrg
+textInput name Custodian 03
+textInput short CUST03
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodian03@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST03
+search s_stat Ready
+button search 
+tableClick short CUST03
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 04
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 04
+textInput short CUST04
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodian04@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST04
+search s_stat Ready
+button search
+tableClick short CUST04
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 05
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian 
+form admOrg
+textInput name Custodian 05
+textInput short CUST05
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodian05@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST05
+search s_stat Ready
+button search
+tableClick short CUST05
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 06 
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 06
+textInput short CUST06
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodian06@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST06
+search s_stat Ready
+button search
+tableClick short CUST06
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 07
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 07
+textInput short CUST07
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodian07@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST07
+search s_stat Ready
+button search
+tableClick short CUST07
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 08
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 08
+textInput short CUST08
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodian08@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST08
+search s_stat Ready
+button search
+tableClick short CUST08
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 09
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 09
+textInput short CUST09
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodian09@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST09
+search s_stat Ready
+button search 
+tableClick short CUST09
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 10
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 10
+textInput short CUST10
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodian10@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST10
+search s_stat Ready
+button search
+tableClick short CUST10
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout

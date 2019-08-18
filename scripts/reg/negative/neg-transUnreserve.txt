@@ -1,0 +1,72 @@
+test Transactions Unreserve Negative Test 01
+description leaving some fields blank
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new unreserve
+form admTrans
+textInput due date
+select2Input toAccountStr INVST01
+select2Input instrumentStr INST01
+textInput quantity 
+textInput tag test
+textInput toReference
+button save
+find textH1 View Reserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_time All
+search s_inst INST01
+search s_stat Ready
+button search
+tableClick Code INST01
+button approve
+find textH1 View Reserve
+sleep 2
+expect pass
+
+test Transactions Unreserve Negative Test 02
+description repeating actions multiple times in a row
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new unreserve
+button new unreserve
+button new unreserve
+form admTrans
+textInput due date
+select2Input toAccountStr INVST01
+select2Input toAccountStr INVST01
+select2Input instrumentStr INST01
+textInput quantity 100
+textInput quantity 100
+textInput tag test
+textInput toReference negative transaction unreserve 02
+button save
+find textH1 View Unreserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_time All
+search s_inst INST01
+search s_stat Ready
+button search
+tableClick Code INST01
+button approve
+find textH1 View Unlock
+sleep 2
+expect pass
+logout

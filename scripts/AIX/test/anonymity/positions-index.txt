@@ -1,0 +1,10 @@
+test Positions Index 01
+description positions index - broker view
+goto AIX
+login P1_BRKR1_user P1_BRKR1_pass
+menu positions
+search s_stat Any
+screenshot time full 
+find textH1 Manage Positions
+expect pass
+logout

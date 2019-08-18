@@ -1,0 +1,339 @@
+test New Instrument 21
+description New Instrument 21 fund
+goto Ethex
+login ethex_user1 ethex_pass1
+menu instruments
+button new fund
+form admInstrument
+menuInput category Fund
+textInput name Instrument 21
+textInput short INST21
+textInput isin INST21
+menuInput issuer ISS01
+button save
+sleep 2
+find textH1 View Fund
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu instruments
+form instrument
+textInput short INST21
+menuInput category Fund
+menuInput state Any
+button search
+sleep 5
+tableClick short INST21
+find textH1 View Fund
+button approve
+sleep 2
+expect pass
+logout
+
+test New Instrument 22
+description New Instrument 22 fund
+goto Ethex
+login ethex_user1 ethex_pass1
+menu instruments
+button new fund
+form admInstrument
+menuInput category Fund
+textInput name Instrument 22
+textInput short INST22
+textInput isin INST22
+menuInput issuer ISS02
+button save
+sleep 2
+find textH1 View Fund
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu instruments
+form instrument
+textInput short INST22
+menuInput category Fund
+menuInput state Draft
+button search
+sleep 5
+tableClick short INST22
+find textH1 View Fund
+button approve
+sleep 2
+expect pass
+logout
+
+test New Instrument 23
+description New Instrument 23 fund
+goto Ethex
+login ethex_user1 ethex_pass1
+menu instruments
+button new fund
+form admInstrument
+menuInput category Fund
+textInput name Instrument 23
+textInput short INST23
+textInput isin INST23
+menuInput issuer ISS03
+button save
+sleep 2
+find textH1 View Fund
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu instruments
+form instrument
+textInput short INST23
+menuInput category Fund
+menuInput state Draft
+button search
+sleep 5
+tableClick short INST23
+find textH1 View Fund
+button approve
+sleep 2
+expect pass
+logout
+
+test New Instrument 24
+description New Instrument 24 fund
+goto Ethex
+login ethex_user1 ethex_pass1
+menu instruments
+button new fund
+form admInstrument
+menuInput category Fund
+textInput name Instrument 24
+textInput short INST24
+textInput isin INST24
+menuInput issuer ISS04
+button save
+sleep 2
+find textH1 View Fund
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu instruments
+form instrument
+textInput short INST24
+menuInput state Draft
+menuInput category Fund
+button search
+sleep 5
+tableClick short INST24
+find textH1 View Fund
+button approve
+sleep 2
+expect pass
+logout
+
+test New Instrument 25
+description New Instrument 25 fund
+goto Ethex
+login ethex_user1 ethex_pass1
+menu instruments
+button new fund
+form admInstrument
+menuInput category Fund
+textInput name Instrument 25
+textInput short INST25
+textInput isin INST25
+menuInput issuer ISS05
+button save
+sleep 2
+find textH1 View Fund
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu instruments
+form instrument
+textInput short INST25
+menuInput state Draft
+menuInput category Fund
+button search
+sleep 5
+tableClick short INST25
+find textH1 View Fund
+button approve
+sleep 2
+expect pass
+logout
+
+test New Instrument 26
+description New Instrument 26 fund
+goto Ethex
+login ethex_user1 ethex_pass1
+menu instruments
+button new fund
+form admInstrument
+menuInput category Fund
+textInput name Instrument 26
+textInput short INST26
+textInput isin INST26
+menuInput issuer ISS06
+button save
+sleep 2
+find textH1 View Fund
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu instruments
+form instrument
+textInput short INST26
+menuInput category Fund
+menuInput state Draft
+button search
+sleep 5
+tableClick short INST26
+find textH1 View Fund
+button approve
+sleep 2
+expect pass
+logout
+
+test New Instrument 27
+description New Instrument 27 fund
+goto Ethex
+login ethex_user1 ethex_pass1
+menu instruments
+button new fund
+form admInstrument
+menuInput category Fund
+textInput name Instrument 27
+textInput short INST27
+textInput isin INST27
+menuInput issuer ISS07
+button save
+sleep 2
+find textH1 View Fund
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu instruments
+form instrument
+textInput short INST27
+menuInput category Fund
+menuInput state Draft
+button search
+sleep 5
+tableClick short INST27
+find textH1 View Fund
+button approve
+sleep 2
+expect pass
+logout
+
+test New Instrument 28
+description New Instrument 28 fund
+goto Ethex
+login ethex_user1 ethex_pass1
+menu instruments
+button new fund
+form admInstrument
+menuInput category Fund
+textInput name Instrument 28
+textInput short INST28
+textInput isin INST28
+menuInput issuer ISS08
+button save
+sleep 2
+find textH1 View Fund
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu instruments
+form instrument
+textInput short INST28
+menuInput category Fund
+menuInput state Draft
+button search
+sleep 5
+tableClick short INST28
+find textH1 View Fund
+button approve
+sleep 2
+expect pass
+logout
+
+test New Instrument 29
+description New Instrument 29 fund
+goto Ethex
+login ethex_user1 ethex_pass1
+menu instruments
+button new fund
+form admInstrument
+menuInput category Fund
+textInput name Instrument 29
+textInput short INST29
+textInput isin INST29
+menuInput issuer ISS09
+button save
+sleep 2
+find textH1 View Fund
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu instruments
+form instrument
+textInput short INST29
+menuInput category Fund
+menuInput state Draft
+button search
+sleep 5
+tableClick short INST29
+find textH1 View Fund
+button approve
+sleep 2
+expect pass
+logout
+
+test New Instrument 30
+description New Instrument 30 fund
+goto Ethex
+login ethex_user1 ethex_pass1
+menu instruments
+button new fund
+form admInstrument
+menuInput category Fund
+textInput name Instrument 30
+textInput short INST30
+textInput isin INST30
+menuInput issuer ISS10
+button save
+sleep 2
+find textH1 View Fund
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu instruments
+form instrument
+textInput short INST30
+menuInput category Fund
+menuInput state Draft
+button search
+sleep 5
+tableClick short INST30
+find textH1 View Fund
+button approve
+sleep 2
+expect pass
+logout

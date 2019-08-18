@@ -1,0 +1,129 @@
+test Instrument Negative Test 01
+description using symbols in name input
+goto testreg
+login testreg_user1 testreg_pass1
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name +#@%^&*!
+textInput short NTEST01
+textInput isin NTEST01
+menuInput currency USD
+button save
+sleep 2
+expect fail
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu instruments
+form instrument
+textInput short NTEST01
+menuInput state Draft
+button search
+tableClick short NTEST01
+find textH1 View Debt
+button approve
+sleep 2
+expect fail
+logout
+
+
+test Instrument Negative Test 02
+description Instrument Debt Negative Test 02
+goto testreg
+login testreg_user1 testreg_pass1
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name NTEST01
+textInput short !@#$%^
+textInput isin !@#$%^
+menuInput currency USD
+button save
+sleep 2
+expect fail
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu instruments
+form instrument
+textInput short !@#$%^
+menuInput state Draft
+button search
+tableClick short !@#$%^
+find textH1 View Debt
+button approve
+sleep 2
+expect fail
+logout
+
+test Instrument Negative Test 03
+description using code in name input
+goto testreg
+login testreg_user1 testreg_pass1
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name P<body onload="alert('Hello');"/>
+textInput short N-INST03
+textInput isin  N-INST03
+textInput ticker N-INST03
+menuInput issuer ISS03
+button save
+sleep 2
+find textH1 View Equity
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu instruments
+form instrument
+textInput short N-INST04
+menuInput state Draft
+button search
+tableClick short N-INST03
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test Instrument Negative Test 04
+description using code in name input
+goto testreg
+login testreg_user1 testreg_pass1
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name <p id="i"></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById("i").innerHTML=d.toLocaleTimeString();}</script>
+textInput short N-INST04
+textInput isin  N-INST04
+textInput ticker N-INST04
+menuInput issuer ISS04
+button save
+sleep 2
+find textH1 View Equity
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu instruments
+form instrument
+textInput short N-INST04
+menuInput state Draft
+button search
+tableClick short N-INST04
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+

@@ -1,0 +1,12 @@
+test Settlement View 01
+description settlement view - broker view
+# doesn't find element that doesn't exist, only screenshots screen
+goto AIX
+login P1_BRKR1_user P1_BRKR1_pass
+menu settlement
+sleep 2
+screenshot time full 
+sleep 2
+find textH1 Settlement Summary
+expect pass
+logout

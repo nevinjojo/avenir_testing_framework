@@ -1,0 +1,16 @@
+test Trade View
+description trade view - broker view
+goto AIX
+login P1_BRKR1_user P1_BRKR1_pass
+menu trades
+sleep 2
+search s_time All
+button search
+sleep 4
+clickby text PART01-1
+screenshot trade-view1 time
+find textH1 Buy Account
+find textH1 View Trade
+sleep 2
+expect pass
+logout

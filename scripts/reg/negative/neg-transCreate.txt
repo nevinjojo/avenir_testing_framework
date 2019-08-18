@@ -1,0 +1,139 @@
+test Transactions Create Negative Test 01
+description using a negative number in quantity field
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new create
+form admTrans
+textInput due date
+select2Input toAccountStr INVST01
+select2Input instrumentStr INST01
+textInput quantity -23
+textInput toReference Negative test 01
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_time All
+search s_inst INST01
+search s_stat Ready
+button search
+tableClick Code INST01
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test Transactions Create Negative Test 02
+description using accounts / instruments that don't exist
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new create
+form admTrans
+textInput due date
+select2Input toAccountStr ASDFGHJKL
+select2Input instrumentStr 12345
+textInput quantity 100
+textInput toReference Negative test 02
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_time All
+search s_inst 12345
+search s_stat Ready
+button search
+tableClick Code 12345
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test Transactions Create Negative Test 03
+description using an incorrect date
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new create
+form admTrans
+textInput due 365/65/99
+select2Input toAccountStr INVST01
+select2Input instrumentStr INST01
+textInput quantity 100
+textInput toReference Negative test 03
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_time All
+search s_inst INST01
+search s_stat Ready
+button search
+tableClick Code INST01
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test Transactions Create Negative Test 04
+description clicking approve button multiple times
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new create
+form admTrans
+textInput due date
+select2Input toAccountStr INVST02
+select2Input instrumentStr INST02
+textInput quantity 100
+textInput toReference Negative test 04
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_time All
+search s_inst INST02
+search s_stat Ready
+button search
+tableClick Code INST02
+button approve
+button approve
+button approve
+button approve
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout

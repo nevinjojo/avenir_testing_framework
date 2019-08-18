@@ -1,0 +1,181 @@
+test New Debt Instrument 01
+description Debt Instrument 01 - Reports download
+goto AIX
+login aix_user1 aix_pass1
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name Debt-INST1
+textInput short DTINST1
+textInput isin DTINST1
+menuInput currency USD
+menuInput issuer ISS01
+textInput ticker DTINST1
+button save
+sleep 2
+find textH1 View Debt
+button approve
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu instruments
+form instrument
+textInput short DTINST1
+menuInput state Any
+button search
+sleep 5
+tableClick short DTINST1
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Create
+sleep 4
+form admTrans
+textInput due date
+select2Input toAccountStr Individual One, Foreign
+textInput quantity 5,000
+textInput toReference transaction 1
+button save
+find textH1 View Create
+sleep 2
+button ready
+sleep 2
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu transactions
+search s_inst DTINST1
+search s_stat Ready
+sleep 4
+tableClick Code DTINST1
+button approve
+find textH1 View Create
+menu instruments
+form instrument
+textInput short DTINST1
+menuInput state Active
+button search
+sleep 4
+tableClick short DTINST1
+sleep 3
+clickby class btn btn-default dropdown-toggle
+clickby xpath /html/body/div/div[2]/div[4]/div/div/div[2]/ul/li[1]/a
+sleep 2 
+clickby xpath /html/body/div/div[2]/div[4]/div/a
+sleep 6
+find textH1 Transactions
+sleep 2
+menu instruments
+form instrument
+textInput short DTINST1
+menuInput state Active
+button search
+sleep 4
+tableClick short DTINST1
+sleep 3
+clickby class btn btn-default dropdown-toggle
+clickby text Holdings Report
+sleep 2
+clickby xpath /html/body/div/div[2]/div[4]/div/a
+sleep 6
+clickby text Individual One, Foreign
+sleep 4
+find textH1 Account Balances
+expect pass
+logout
+
+test New Debt Instrument 02
+description Debt Instrument 02 - Reports download
+goto AIX
+login aix_user1 aix_pass1
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name Debt-INST2
+textInput short DTINST2
+textInput isin DTINST2
+menuInput currency USD
+menuInput issuer ISS02
+textInput ticker DTINST2
+button save
+sleep 2
+find textH1 View Debt
+button approve
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu instruments
+form instrument
+textInput short DTINST2
+menuInput state Any
+button search
+sleep 5
+tableClick short DTINST2
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Create
+sleep 4
+form admTrans
+textInput due date
+select2Input toAccountStr Individual Two, Foreign
+textInput quantity 5,000
+textInput toReference transansaction 2
+button save
+find textH1 View Create
+sleep 2
+button ready
+sleep 2
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu transactions
+search s_inst DTINST2
+search s_stat Ready
+sleep 4
+tableClick Code DTINST2
+button approve
+find textH1 View Create
+menu instruments
+form instrument
+textInput short DTINST2
+menuInput state Active
+button search
+sleep 4
+tableClick short DTINST2
+sleep 3
+clickby class btn btn-default dropdown-toggle
+clickby xpath  /html/body/div/div[2]/div[4]/div/div/div[2]/ul/li[1]/a
+sleep 2 
+clickby xpath /html/body/div/div[2]/div[4]/div/a
+sleep 6
+find textH1 Transactions
+sleep 2
+menu instruments
+form instrument
+textInput short DTINST2
+menuInput state Active
+button search
+sleep 4
+tableClick short DTINST2
+sleep 3
+clickby class btn btn-default dropdown-toggle
+clickby text Holdings Report
+sleep 2
+clickby xpath /html/body/div/div[2]/div[4]/div/a
+sleep 6
+clickby text Individual Two, Foreign
+sleep 4
+find textH1 Account Balances
+expect pass
+logout

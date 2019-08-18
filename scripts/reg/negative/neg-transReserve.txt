@@ -1,0 +1,66 @@
+test Transactions Reserve Negative Test 01
+description using date that doesn't make sense
+goto testreg
+login testreg_user1 testreg_pass1
+menu transactions
+button new unlock
+form admTrans
+textInput due 01/12/1420
+select2Input toAccountStr INVST01
+select2Input instrumentStr INST01
+textInput quantity 100
+textInput tag test
+textInput toReference negative transaction reserve 01
+button save
+find textH1 View Reserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_time All
+search s_inst INST01
+search s_stat Ready
+button search
+tableClick Code INST01
+button approve
+find textH1 View Reserve
+sleep 2
+expect pass
+
+test Transactions Reserve Negative Test 02
+description random capitalisation in inputs
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new unlock
+form admTrans
+textInput due date
+select2Input toAccountStr inVSt01
+select2Input instrumentStr InSt01
+textInput quantity 100
+textInput tag tEST
+textInput toReference negATivE tRANSactioN rEseRVE 02
+button save
+find textH1 vIeW reSERVe
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_time ALl
+search s_inst iNSt01
+search s_stat ReaDy
+button search
+tableClick Code iNst01
+button approve
+find textH1 vIew ReServE
+sleep 2
+expect pass 

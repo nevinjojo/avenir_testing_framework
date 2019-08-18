@@ -1,0 +1,27 @@
+test Charges Report 01
+description charges report - oper
+goto AIX
+login aix_user1 aix_pass1
+date
+menu reports
+clickby text Charges Report
+form usrReport
+textInput from 01/01/2019
+textInput to date
+sleep 3
+button save
+sleep 20
+screenshot time full
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text PDF
+sleep 20
+screenshot time full
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text CSV
+sleep 10
+find textH1 Charges Report
+sleep 4
+expect pass
+logout

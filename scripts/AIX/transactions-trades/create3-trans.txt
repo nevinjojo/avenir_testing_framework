@@ -1,0 +1,177 @@
+test new create 2.2
+description creating a new create transaction 2.2
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART02-1
+select2Input instrumentStr INST21
+textInput quantity 21
+textInput toReference new create 2.2
+button save
+find textH1 View Create
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu transactions
+search s_inst INST21
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test new create 2.3
+description creating a new create transaction 2.3
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART04-1
+select2Input instrumentStr INST22
+textInput quantity 5,308
+textInput toReference new create 2.3
+button save
+find textH1 View Create
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu transactions
+search s_inst INST22
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test new create 2.4
+description creating a new create transaction 2.4
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART06-1
+select2Input instrumentStr INST23
+textInput quantity 23,132
+textInput toReference new create 2.4
+button save
+find textH1 View Create
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu transactions
+search s_inst INST23
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Create
+sleep 2
+expect pass 
+logout
+
+test new create 2.5
+description creating a new create transaction 2.5
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART08-1
+select2Input instrumentStr INST24
+textInput quantity 1,231
+textInput toReference new create 2.5
+button save
+find textH1 View Create
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu transactions
+search s_inst INST24
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test new create 2.6
+description creating a new create transaction 2.6
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART10-1
+select2Input instrumentStr INST25
+textInput quantity 9
+textInput toReference new create 2.6
+button save
+find textH1 View Create
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu transactions
+search s_inst INST25
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout

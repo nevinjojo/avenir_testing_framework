@@ -1,0 +1,29 @@
+  o# to test the new issuer feature of the system
+output new_issuer_results.txt
+
+test New Issuer 1.1
+description This test Makes a new issuer
+goto dev
+login dev_user1 dev_pass1
+menu issuers
+button new
+form admOrg
+textInput name bpltest
+textInput short bpl
+menuInput country "New Zealand"
+sleep 5
+button save
+sleep 2
+find button approve
+expect pass
+
+logout
+
+login dev_user2 dev_pass2
+menu issuers
+search name bpltest
+button search
+tableClick issuer bpl
+find textH1 View Issuer
+expect pass
+sleep 3

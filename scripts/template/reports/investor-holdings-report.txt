@@ -1,0 +1,25 @@
+test Investor Holdings as at Report
+description investor holdings as at report - oper
+goto
+login
+date
+menu reports
+clickby text Investor Holdings as at Report
+form usrReport
+textInput date date
+sleep 4
+button save
+sleep 15
+screenshot time full
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text PDF
+sleep 15
+screenshot time full
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text CSV
+sleep 10
+find textH1 Investor Holdings 
+expect pass
+logout

@@ -1,0 +1,94 @@
+# having only half stock needed
+
+test create transaction
+description create transaction - PART03
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART03
+select2Input instrumentStr INST09
+textInput quantity 2,500
+textInput toReference test transaction
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST09
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick Code INST09
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction
+description currency transactions - PART04
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART04-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 100,000,000
+textInput toReference test currency transaction
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test new trade
+description creating a new trade
+goto testreg
+login testreg_user1 testreg_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART03
+select2Input buyAccountStr PART04
+select2Input instrumentStr INST09
+textInput quantity 5,000
+textInput price 20,000
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+

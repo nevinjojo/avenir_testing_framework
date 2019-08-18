@@ -1,0 +1,16 @@
+# Balance Activity / Download Certificate
+
+goto settle_web
+login settleweb_user1 settleweb_pass1
+clickby class link-btn alt
+sleep 5
+clickby text Balance activity
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out

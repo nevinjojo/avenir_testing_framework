@@ -1,0 +1,184 @@
+test New Instrument 01 Equity
+description deleting equity instrument
+goto AIX
+login aix_user1 aix_pass1
+date
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name Instrument E Decline 01
+textInput short INSTE1
+textInput isin INSTE1
+menuInput currency EUR
+menuInput issuer ISS01
+textInput golive date
+textInput ticker INSTE1
+button save
+sleep 2
+find textH1 View Equity
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu instruments
+form instrument
+textInput short INSTE1
+menuInput state Draft
+button search
+sleep 5
+tableClick short INSTE1
+button delete
+find textH1 View Instruments
+sleep 2
+expect pass
+logout
+
+test New Instrument 02 Equity
+description deleting equity instrument
+goto AIX
+login aix_user1 aix_pass1
+date
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name Instrument E Decline 02
+textInput short INSTE2
+textInput isin INSTE2
+menuInput currency EUR
+menuInput issuer ISS02
+textInput golive date
+textInput ticker INSTE2
+button save
+sleep 2
+find textH1 View Equity
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu instruments
+form instrument
+textInput short INSTE2
+menuInput state Draft
+button search
+sleep 5
+tableClick short INSTE2
+button delete
+find textH1 View Instruments
+sleep 2
+expect pass
+logout
+
+test New Instrument 03 Equity
+description deleting equity instrument
+goto AIX
+login aix_user1 aix_pass1
+date
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name Instrument E Decline 03
+textInput short INSTE3
+textInput isin INSTE3
+menuInput currency EUR
+menuInput issuer ISS03
+textInput golive date
+textInput ticker INSTE3
+button save
+sleep 2
+find textH1 View Equity
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu instruments
+form instrument
+textInput short INSTE3
+menuInput state Draft
+button search
+sleep 5
+tableClick short INSTE3
+button delete
+find textH1 View Instruments
+sleep 2
+expect pass
+logout
+
+test New Instrument 04 Equity
+description deleting equity instrument
+goto AIX
+login aix_user1 aix_pass1
+date
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name Instrument E Decline 04
+textInput short INSTE4
+textInput isin INSTE4
+menuInput currency EUR
+menuInput issuer ISS04
+textInput golive date
+textInput ticker INSTE4
+button save
+sleep 2
+find textH1 View Equity
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu instruments
+form instruments
+textInput short INSTE4
+menuInput state Draft
+button search
+sleep 5
+tableClick short INSTE4
+button delete
+find textH1 View Instruments
+sleep 2
+expect pass
+logout
+
+test New Instrument 05 Equity
+description deleting equity instrument
+goto AIX
+login aix_user1 aix_pass1
+date
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name Instrument E Decline 05
+textInput short INSTE5
+textInput isin INSTE5
+menuInput currency EUR
+menuInput issuer ISS05
+textInput golive date
+textInput ticker INSTE5
+button save
+sleep 2
+find textH1 View Equity
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu instruments
+form instruments
+textInput short INSTE5
+menuInput state Draft
+button search
+sleep 5
+tableClick short INSTE5
+button delete
+find textH1 View Instruments
+sleep 2
+expect pass
+logout

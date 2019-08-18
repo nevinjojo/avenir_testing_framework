@@ -1,0 +1,14 @@
+test Account Balances 01
+description account balances - broker view
+goto AIX
+login P1_BRKR1_user P1_BRKR1_pass
+menu holders accounts
+sleep 3
+clickby text PART0
+clickby text Balances
+clickby text INST0
+clickby text More
+screenshot time full
+find textH1 Account Balances
+expect pass
+logout

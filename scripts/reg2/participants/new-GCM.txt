@@ -1,0 +1,339 @@
+test new GCM participant 01
+description creating a new GCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text GCM
+form admOrg
+textInput name GCM 01
+textInput short GCM1
+menuInput country New Zealand
+textInput phone +04 0800 743450
+textInput email GCM1@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part GCM1
+search s_stat Ready
+button search
+tableClick short GCM1
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new GCM participant 02
+description creating a new GCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text GCM
+form admOrg
+textInput name GCM 02
+textInput short GCM2
+menuInput country New Zealand
+textInput phone +04 0800 926342
+textInput email GCM2@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part GCM2
+search s_stat Ready
+button search
+tableClick short GCM2
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new GCM participant 03
+description creating a new GCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text GCM
+form admOrg
+textInput name GCM 03
+textInput short GCM3
+menuInput country New Zealand
+textInput phone +04 0800 982734
+textInput email GCM3@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part GCM3
+search s_stat Ready
+button search
+tableClick short GCM3
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new GCM participant 04
+description creating a new GCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text GCM
+form admOrg
+textInput name GCM 04
+textInput short GCM4
+menuInput country New Zealand
+textInput phone +04 0800 071230
+textInput email GCM4@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part GCM4
+search s_stat Ready
+button search
+tableClick short GCM4
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new GCM participant 05
+description creating a new GCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text GCM
+form admOrg
+textInput name GCM 05
+textInput short GCM5
+menuInput country New Zealand
+textInput phone +04 0800 893742
+textInput email GCM5@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part GCM5
+search s_stat Ready
+button search
+tableClick short GCM5
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new GCM particpant 06
+description creating a new GCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text GCM
+form admOrg
+textInput name GCM 06
+textInput short GCM6
+menuInput country New Zealand
+textInput phone +04 0800 731982
+textInput email GCM6@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part GCM6
+search s_stat Ready
+button search
+tableClick short GCM6
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new GCM participant 07
+description creating a new GCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text GCM
+form admOrg
+textInput name GCM 07
+textInput short GCM7
+menuInput country New Zealand
+textInput phone +04 0800 834212
+textInput email GCM7@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part GCM7
+search s_stat Ready
+button search
+tableClick short GCM7
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new GCM participant 08
+description creating a new GCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text GCM
+form admOrg
+textInput name GCM 08
+textInput short GCM8
+menuInput country New Zealand
+textInput phone +04 0800 209428
+textInput email GCM8@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part GCM8
+search s_stat Ready
+button search
+tableClick short GCM8
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new GCM participant 09
+description creating a new GCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text GCM
+form admOrg
+textInput name GCM 09
+textInput short GCM9
+menuInput country New Zealand
+textInput phone +04 0800 094278
+textInput email GCM9@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part GCM9
+search s_stat Ready
+button search
+tableClick short GCM9
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new GCM participant 10
+description creating a new GCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text GCM
+form admOrg
+textInput name GCM 10
+textInput short GCM10
+menuInput country New Zealand
+textInput phone +04 0800 893420
+textInput email GCM10@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part GCM10
+search s_stat Ready
+button search
+tableClick short GCM10
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout

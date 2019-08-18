@@ -1,0 +1,179 @@
+test New Participant Custodian 01
+description declining and deleting custodian participants
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian Delete 01
+textInput short CUSTD1
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodiand01@test.com
+button save
+sleep 2
+find button ready
+button ready
+find textH1 View Broker
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUSTD1
+search s_stat Ready
+button search
+sleep 4
+tableClick short CUSTD1
+button decline
+clickby id lnk-delete
+find textH1 Manage Participants
+sleep 2
+expect pass
+logout
+
+test New Participant Custodian 02
+description declining and deleting custodian participants
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian Delete 02
+textInput short CUSTD2
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodiand02@test.com
+button save
+sleep 2
+find button ready
+button ready
+find textH1 View Broker
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUSTD2
+search s_stat Ready
+button search
+sleep 4
+tableClick short CUSTD2
+button decline
+clickby id lnk-delete
+find textH1 Manage Participants
+sleep 2
+expect pass
+logout
+
+test New Participant Custodian 03
+description declining and deleting custodian participants
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian Delete 03
+textInput short CUSTD3
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodiand03@test.com
+button save
+sleep 2
+find button ready
+button ready
+find textH1 View Broker
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUSTD3
+search s_stat Ready
+button search
+sleep 4
+tableClick short CUSTD3
+button decline
+clickby id lnk-delete
+find textH1 Manage Participants
+sleep 2
+expect pass
+logout
+
+test New Participant Custodian 04
+description declining and deleting custodian participants
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian Delete 04
+textInput short CUSTD4
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodiand04@test.com
+button save
+sleep 2
+find button ready
+button ready
+find textH1 View Broker
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUSTD4
+search s_stat Ready
+button search
+sleep 4
+tableClick short CUSTD4
+button decline
+clickby id lnk-delete
+find textH1 Manage Participants
+sleep 2
+expect pass
+logout
+
+test New Participant Custodian 05
+description declining and deleting custodian participants
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian Delete 05
+textInput short CUSTD5
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodiand05@test.com
+button save
+sleep 2
+find button ready
+button ready
+find textH1 View Broker
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUSTD5
+search s_stat Ready
+button search
+sleep 4
+tableClick short CUSTD5
+button decline
+clickby id lnk-delete
+find textH1 Manage Participants
+sleep 2
+expect pass
+logout

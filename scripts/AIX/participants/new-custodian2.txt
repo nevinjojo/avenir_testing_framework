@@ -1,0 +1,349 @@
+test new custodian 11 - maker/checker off
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 11
+textInput short CUST11
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodian11@test.com
+checkerInput mkchktype_1
+checkerInput mkchktype_2
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST11
+search s_stat Ready
+button search
+tableClick short CUST11
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 12 - maker/checker off
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 12
+textInput short CUST12
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodian12@test.com
+checkerInput mkchktype_1
+checkerInput mkchktype_2
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST12
+search s_stat Ready
+button search
+tableClick short CUST12
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 13 - maker/checker off
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 13
+textInput short CUST13
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodian13@test.com
+checkerInput mkchktype_1
+checkerInput mkchktype_2
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST13
+search s_stat Ready
+button search
+tableClick short CUST13
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 14 - maker/checker off
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 14
+textInput short CUST14
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodian14@test.com
+checkerInput mkchktype_1
+checkerInput mkchktype_2
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST14
+search s_stat Ready
+button search
+tableClick short CUST14
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 15 - maker/checker off
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 15
+textInput short CUST15
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodian15@test.com
+checkerInput mkchktype_1
+checkerInput mkchktype_2
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST15
+search s_stat Ready
+button search
+tableClick short CUST15
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 16 - maker/checker off
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 16
+textInput short CUST16
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodian16@test.com
+checkerInput mkchktype_1
+checkerInput mkchktype_2
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST16
+search s_stat Ready
+button search 
+tableClick short CUST16
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 17 - maker/checker off
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 17
+textInput short CUST17
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodian17@test.com
+checkerInput mkchktype_1
+checkerInput mkchktype_2
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST17
+search s_stat Ready
+button search
+tableClick short CUST17
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 18 - maker/checker off
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 18
+textInput short CUST18
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodian18@test.com
+checkerInput mkchktype_1
+checkerInput mkchktype_2
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST18
+search s_stat Ready
+button search
+tableClick short CUST18
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 19 - maker/checker off
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 19
+textInput short CUST19
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodian19@test.com
+checkerInput mkchktype_1
+checkerInput mkchktype_2
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST19
+search s_stat Ready
+button search
+tableClick short CUST19
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 20 - maker/checker off
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 20
+textInput short CUST20
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email custodian20@test.com
+checkerInput mkchktype_1
+checkerInput mkchktype_2
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST20
+search s_stat Ready
+button search
+tableClick short CUST20
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout

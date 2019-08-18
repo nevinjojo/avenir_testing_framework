@@ -1,0 +1,92 @@
+test Suspend / Unsuspend Issuer User 01
+description suspending, unsuspending and deleting an issuer user
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS01
+button search
+tableClick name ISS01
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS-SU1
+textInput name Issuer Test
+textInput last Suspend 1
+textInput email issuer@test.com
+menuInput role Viewer
+button save
+sleep 2
+button approve
+sleep 2
+button suspend
+sleep 4
+button suspend
+sleep 4
+button suspend
+sleep 4
+clickby text Delete
+find textH1 View User
+expect pass
+logout
+
+test Suspend / Unsuspend Issuer User 02
+description suspending, unsuspending, and deleting an issuer user
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS02
+button search
+tableClick name ISS02
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS-SU2
+textInput name Issuer Test
+textInput last Suspend 2
+textInput email issuer@test.com
+menuInput role Operator
+button save
+sleep 2
+button approve
+sleep 2
+button suspend
+sleep 4
+button suspend
+sleep 4
+button suspend
+sleep 4
+clickby text Delete
+find textH1 View User
+expect pass
+logout
+
+test Suspend / Unsuspend Isuer User 03
+description suspending, unsuspending and deleting an issuer user
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS03
+button search
+tableClick name ISS03
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS-SU3
+textInput name Issuer Test
+textInput last Suspend 3
+textInput email issuer@test.com
+menuInput role Manager
+button save
+sleep 2
+button approve
+sleep 2
+button suspend
+sleep 4
+button suspend
+sleep 4
+button suspend
+sleep 4
+clickby text Delete
+find textH1 View User
+expect pass
+logout

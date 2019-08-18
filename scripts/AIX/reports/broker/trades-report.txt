@@ -1,0 +1,21 @@
+test Trades Report 01
+description trades report - broker view
+# not inputting accounts / instruments
+goto AIX
+login P1_BRKR1_user P1_BRKR1_pass
+menu reports
+clickby text Trades 2
+form usrReport
+textInput from 01/01/2019
+textInput to 02/04/2019
+sleep 3
+button save
+sleep 15
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text PDF
+sleep 15
+find textH1 Trades
+expect pass
+logout
+

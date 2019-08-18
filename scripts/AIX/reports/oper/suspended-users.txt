@@ -1,0 +1,21 @@
+test Suspended Users Report
+description suspended users report - oper
+goto AIX
+login aix_user1 aix_pass1
+menu reports
+clickby text Suspended Users
+button save
+sleep 15
+screenshot time full
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text PDF
+sleep 15
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text CSV
+sleep 10
+find textH1 Suspended Users
+sleep 2
+expect pass
+logout

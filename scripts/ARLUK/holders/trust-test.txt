@@ -1,0 +1,1087 @@
+test Trust Holder Test 01
+description using symbols in name input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name *&^%$#@!
+textInput address1 ADDRESS01
+textInput postcode 5028
+textInput phone +64 0800 838383
+textInput mobile +225668582
+textInput email test01@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 02
+description using symbols in address input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST TEST02
+textInput address1 !#)@#$*@#$(@#$#!
+textInput postcode 5028
+textInput phone +64 0800 838383
+textInput mobile +225668582
+textInput email test02@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 03
+description using symbols in postcode input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST TEST03
+textInput address1 ADDRESS03
+textInput postcode @!(#*!
+textInput phone +64 0800 838383
+textInput mobile +225668582
+textInput email test03@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 04
+description using symbols in phone input
+goto ARL_UK 
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST TEST04
+textInput address1 ADDRESS04
+textInput postcode 5028
+textInput phone !@#$%^&*(_+
+textInput mobile +64 0800 838383
+textInput email test04@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders 
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 05
+description using symbols in mobile input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST TEST05
+textInput address1 ADDRESS05
+textInput postcode 5028
+textInput phone +04 0800 838383
+textInput mobile !@#%$*&^$@*&
+textInput email test05@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 06
+description using symbols in email input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST TEST06
+textInput address1 ADDRESS06
+textInput postcode 5028
+textInput phone +04 0800 838383
+textInput mobile +225668582
+textInput email *^$@$%^*&^$@!#@+
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 07
+description using symbols in country input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST TEST07
+textInput address1 ADDRESS07
+textInput postcode 5028
+textInput phone +04 0800 838383
+textInput mobile +225668582
+textInput email test07@gmail.com
+menuInput country ^$#%@$@(#@@#$
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout 
+
+test Trust Holder Test 08
+description leaving name input blank
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name
+textInput address1 ADDRESS08
+textInput postcode 5028
+textInput phone +04 0800 838383
+textInput mobile +225668582
+textInput email test08@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 09
+description leaving address input blank
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST TEST09
+textInput address1
+textInput postcode 5028
+textInput phone +04 0800 838383
+textInput mobile +225668582
+textInput email test09@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 10
+description leaving country input blank
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust 
+form admOrg
+textInput name TRUST TEST10
+textInput address1 ADDRESS10
+textInput postcode 5028
+textInput phone +04 0800 838383
+textInput mobile +225668582
+textInput email test10@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 11
+description leaving all inputs blank
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name
+textInput address1
+textInput postcode
+textInput phone
+textInput mobile
+textInput email
+menuInput country 
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 12
+description using html code in name input 
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name P<body onload=“alert(‘Hello’);“/>
+textInput address1 ADDRESS12
+textInput postcode 5028
+textInput phone +64 0800 838383
+textInput mobile +225668582
+textInput email TEST12@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 13
+description using html code in address input 
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST TEST13
+textInput address1 P<body onload=“alert(‘Hello’);“/>
+textInput postcode 5028
+textInput phone +64 0800 838383
+textInput mobile +225668582
+textInput email TEST13@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK 
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 14
+description using html code in postcode input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust 
+form admOrg
+textInput name TRUST TEST14
+textInput address1 ADDRESS14
+textInput postcode P<body onload=“alert(‘Hello’);“/>
+textInput phone +64 0800 838383
+textInput mobile +225668582
+textInput email TEST14@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK 
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 15
+description using html code in phone input 
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST TEST15
+textInput address1 ADDRESS15
+textInput postcode 5028
+textInput phone P<body onload=“alert(‘Hello’);“/>
+textInput mobile +225668582
+textInput email TEST15@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 16
+description using html code in mobile input 
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust 
+form admOrg
+textInput name TRUST TEST16
+textInput address1 ADDRESS16
+textInput postcode 5028
+textInput phone +64 0800 838383
+textInput mobile P<body onload=“alert(‘Hello’);“/>
+textInput email TEST16@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK 
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 17
+description using html code in email input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST TEST17
+textInput address1 ADDRESS17
+textInput postcode 5028
+textInput phone +64 0800 838383
+textInput mobile +225668582
+textInput email P<body onload=“alert(‘Hello’);“/>
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 18
+description using html code in country input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST TEST18
+textInput address1 ADDRESS18
+textInput postcode 5028
+textInput phone +64 0800 838383
+textInput mobile +225668582
+textInput email TEST18@gmail.com
+menuInput country P<body onload=“alert(‘Hello’);“/>
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 19
+description using code in name input 
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput address1 ADDRESS19
+textInput postcode 5028
+textInput phone +64 0800 838383
+textInput mobile +225668582
+textInput email TEST19@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 20
+description using code in address input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST TEST20
+textInput address1 <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput postcode 5028
+textInput phone +64 0800 838383
+textInput mobile +225668582
+textInput email TEST20@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 21
+description using code in postcode input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST TEST21
+textInput address1 ADDRESS21
+textInput postcode <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput phone +64 0800 838383
+textInput mobile +225668582
+textInput email TEST21@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 22
+description using code in phone input 
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST TEST22
+textInput address1 ADDRESS22
+textInput postcode 5028
+textInput phone <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput mobile +225668582
+textInput email TEST22@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 23
+description using code in mobile input
+goto ARL_UK 
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST TEST23
+textInput address1 ADDRESS23
+textInput postcode 5028
+textInput phone +04 0800 838383
+textInput mobile <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput email TEST23@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 24
+description using code in email input 
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST TEST24
+textInput address1 ADDRESS24
+textInput postcode 5028
+textInput phone +04 0800 838383
+textInput mobile +225668582
+textInput email <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 25
+description using code in country input 
+goto ARL_UK 
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST TEST25
+textInput address1 ADDRESS25
+textInput postcode 5028
+textInput phone +04 0800 838383
+textInput mobile +225668582
+textInput email TEST25@gmail.com
+menuInput country <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 26
+description leaving @ symbol out of email input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust 
+form admOrg
+textInput name TRUST TEST26
+textInput address1 ADDRESS26
+textInput postcode 5028
+textInput phone +04 0800 838383
+textInput mobile +225668582
+textInput email TEST26gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 27
+description leaving "." out of email input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST TEST27
+textInput address1 ADDRESS27
+textInput postcode 5028
+textInput phone +04 0800 838383
+textInput mobile +225668582
+textInput email TEST27@gmailcom
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 28
+description using only numbers in name input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name 1231023254300
+textInput address1 ADDRESS28
+textInput postcode 5028
+textInput phone +04 0800 838383
+textInput mobile +225668582
+textInput email TEST28@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 29
+description using only numbers in address input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust 
+form admOrg
+textInput name TRUST TEST29
+textInput address1 2345353463009
+textInput postcode 5028
+textInput phone +04 0800 838383
+textInput mobile +225668582
+textInput email TEST29@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 30
+description using only letters in postcode input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST TEST30
+textInput address1 ADDRESS30
+textInput postcode ASdfGhiJKL
+textInput phone +04 0800 838383
+textInput mobile +225668582
+textInput email TEST30@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 31
+description using only letters in phone input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST TEST31
+textInput address1 ADDRESS31
+textInput postcode 5028
+textInput phone QwErTyUiOpLKj
+textInput mobile +225668582
+textInput email TEST31@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Trust Holder Test 32
+description using only letters in mobile input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST TEST32
+textInput address1 ADDRESS32
+textInput postcode 5028
+textInput phone +64 0800 838383
+textInput mobile MnBvCXZlKjgfdS
+textInput email TEST32@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout

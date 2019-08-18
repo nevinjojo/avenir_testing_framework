@@ -1,0 +1,204 @@
+test New Sell Order 01 Limit
+description New Sell Order 01 Limit - good until cancelled
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-sell-TEEQ
+sleep 2
+window 2
+form usrOrderSell
+menuInput trader Imhotep Trading Solutions
+menuInput orderType Limit
+checkerInput orderValid_2
+textInput quantity 2500
+textInput price 12,000
+find textH1 New Sell Order
+sleep 3
+button save
+sleep 6
+button confirm
+sleep 3
+window 1
+find textH1 Order Book
+sleep 2
+expect pass
+logout
+
+test Edit Sell Order 01 Limit
+description Edit Sell Order 01 Limit - good until cancelled
+goto trade
+login trade_user1 trade_pass1
+menu Orders
+sleep 4
+search s_stat Any
+search s_stat TEEQ
+search s_acct Imhotep Something I Forget
+search s_owner Imhotep Trading Solutions
+sleep 8
+clickby text ID
+sleep 5
+clickby text ID
+sleep 5
+clickby text TEEQ
+sleep 3
+find textH1 View Order
+# button edit
+# form usrOrderSell
+# textInput quantity 2,200
+# textInput price 11,800
+# button save
+# sleep 2
+# button confirm
+find textH1 View Order
+sleep 2
+expect pass
+logout
+
+test New Sell Order 02 Limit
+description New Sell Order 02 Limit - good until date
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-sell-TEEQ
+sleep 2
+window 2
+form usrOrderSell
+menuInput trader Imhotep Trading Solutions
+menuInput orderType Limit
+checkerInput orderValid_3
+sleep 2
+textInput endDate 30/05/19
+textInput quantity 60,000
+textInput price 100,500
+find textH1 New Sell Order
+sleep 3
+button save
+sleep 6
+button confirm
+sleep 3
+window 1
+find textH1 Order Book
+sleep 2
+expect pass
+logout
+
+test Edit Sell Order 02 Limit
+description Edit Sell Order 02 Limit - good until date
+goto trade
+login trade_user1 trade_pass1
+menu Orders
+sleep 4
+search s_stat Any
+search s_inst TEEQ
+search s_acct Imhotep Something I Forget
+search s_owner Imhotep Trading Solutions
+sleep 8
+clickby text ID
+sleep 5
+clickby text ID
+sleep 5
+clickby text TEEQ
+find textH1 View Order
+# button edit
+# form usrOrderBuy
+# textInput quantity 50,000
+# textInput price 120,000
+# find textH1 View Order
+# button save
+# sleep 2
+# button confirm
+find textH1 View Order
+expect pass
+logout
+
+test New Sell Order 03 Limit
+description New Sell Order 03 Limit - fill and kill
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-sell-TEEQ
+sleep 2
+window 2
+form usrOrderSell
+menuInput trader Imhotep Trading Solutions
+menuInput orderType Limit
+checkerInput orderValid_0
+textInput quantity 200
+textInput price 1,500
+find textH1 New Sell Order
+sleep 3
+button save
+sleep 6
+button confirm
+sleep 3
+window 1 
+find textH1 Order Book
+sleep 2
+expect pass
+logout
+
+test Edit Sell Order 03 Limit
+description Edit Sell Order 03 Limit - fill and kill
+goto trade
+login trade_user1 trade_pass1
+menu Orders
+sleep 4
+search s_stat Any
+search s_inst TEEQ
+search s_acct Imhotep Something I Forget
+search s_owner Imhotep Trading Solutions
+sleep 8
+clickby text ID
+sleep 5
+clickby text ID
+sleep 5
+clickby text TEEQ
+find textH1 View Order
+expect pass
+logout
+
+test New Sell Order 04 Limit
+description New Sell Order 04 Limit - fill or kill
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-sell-TEEQ
+sleep 2
+window 2
+form usrOrderSell
+menuInput trader Imhotep Trading Solutions
+menuInput orderType Limit
+checkerInput orderValid_1
+textInput quantity 50,321
+textInput price 300,000
+find textH1 New Sell Order
+sleep 3
+button save
+sleep 6
+button confirm
+sleep 3
+window 1
+find textH1 Order Book
+sleep 2
+expect pass
+logout
+
+test Edit Sell Order 04 Limit
+description Edit Sell Order 04 Limit - fill or kill
+goto trade
+login trade_user1 trade_pass1
+menu Orders
+sleep 4
+search s_stat Any
+search s_inst TEEQ
+search s_acct Imhotep
+search s_owner Imhotep Trading Solutions
+sleep 8
+clickby text ID
+sleep 5
+clickby text ID
+sleep 5
+clickby text TEEQ
+find textH1 View Order
+expect pass
+logout

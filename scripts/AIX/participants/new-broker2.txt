@@ -1,0 +1,349 @@
+test new participant 11 - maker/checker off
+description creating a new broker
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Participant 11
+textInput short PART11
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant11@test.com
+checkerInput mkchktype_1
+checkerInput mkchktype_2
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part PART11
+search s_stat Ready
+button search
+tableClick short PART11
+find textH1 View Broker
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 12 - maker/checker off
+description creating a new broker
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Participant 12
+textInput short PART12
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant12@test.com
+checkerInput mkchktype_1
+checkerInput mkchktype_2
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part PART12
+search s_stat Ready
+button search
+tableClick short PART12
+find textH1 View Broker
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 13 - maker/checker off
+description creating a new broker
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Participant 13
+textInput short PART13
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant13@test.com
+checkerInput mkchktype_1
+checkerInput mkchktype_2
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part PART13
+search s_stat Ready
+button search
+tableClick short PART13
+find textH1 View Broker
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 14 - maker/checker off
+description creating a new broker
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Participant 14
+textInput short PART14
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant14@test.com
+checkerInput mkchktype_1
+checkerInput mkchktype_2
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part PART14
+search s_stat Ready
+button search 
+tableClick short PART14
+find textH1 View Broker
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 15 - maker/checker off
+description creating a new broker
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Participant 15
+textInput short PART15
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant15@test.com
+checkerInput mkchktype_1
+checkerInput mkchktype_2
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part PART15
+search s_stat Ready
+button search
+tableClick short PART15
+find textH1 View Broker
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 16 - maker/checker off
+description creating a new broker
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Participant 16
+textInput short PART16
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant16@test.com
+checkerInput mkchktype_1
+checkerInput mkchktype_2
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part PART16
+search s_stat Ready
+button search
+tableClick short PART16
+find textH1 View Broker
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 17 - maker/checker off
+description creating a new broker
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Participant 17
+textInput short PART17
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant17@test.com
+checkerInput mkchktype_1
+checkerInput mkchktype_2
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part PART17
+search s_stat Ready
+button search
+tableClick short PART17
+find textH1 View Broker
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 18 - maker/checker off
+description creating a new broker
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Participant 18
+textInput short PART18
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant18@test.com
+checkerInput mkchktype_1
+checkerInput mkchktype_2
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part PART18
+search s_stat Ready
+button search
+tableClick short PART18
+find textH1 View Broker
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 19 - maker/checker off
+description creating a new broker
+goto AIX
+login aix_user1 aix_pass1
+menu participants 
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Participant 19
+textInput short PART19
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant19@test.com
+checkerInput mkchktype_1
+checkerInput mkchktype_2
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part PART19
+search s_stat Ready
+button search
+tableClick short PART19
+find textH1 View Broker
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 20 - maker/checker off
+description creating a new broker
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Participant 20
+textInput short PART20
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant20@test.com
+checkerInput mkchktype_1
+checkerInput mkchktype_2
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part PART20
+search s_stat Ready
+button search
+tableClick short PART20
+find textH1 View Broker
+button approve
+sleep 2
+expect pass
+logout

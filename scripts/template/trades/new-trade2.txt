@@ -1,0 +1,99 @@
+test new trade 1.2
+description creating a new trade 1.2
+goto
+login
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART02
+select2Input buyAccountStr PART01
+select2Input instrumentStr INST11
+textInput quantity 750
+textInput price 1200
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new trade 2.2
+description creating a new trade 2.2
+goto
+login
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART04
+select2Input buyAccountStr PART03
+select2Input instrumentStr INST12
+textInput quantity 3,000
+textInput price 4,580
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new trade 3.2
+description creating a new trade 3.2
+goto
+login
+menu trades
+button new 
+form usrTrade
+select2Input sellAccountStr PART06
+select2Input buyAccountStr PART05
+select2Input instrumentStr INST13
+textInput quantity 2,600
+textInput price 6,000
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new trade 4.2
+description creating a new trade 4.2
+goto
+login
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART08
+select2Input buyAccountStr PART07
+select2Input instrumentStr INST14
+textInput quantity 3,852
+textInput price 580
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new trade 5.2
+description creating a new trade 5.2
+goto
+login
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART10
+select2Input buyAccountStr PART09
+select2Input instrumentStr INST15
+textInput quantity 1,500
+textInput price 1,865
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout

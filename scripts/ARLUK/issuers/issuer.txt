@@ -1,0 +1,429 @@
+test New Issuer 01
+description New Issuer 01
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu issuers
+button new 
+form admOrg
+textInput name ISS01
+textInput short ISS01
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu issuers
+search s_part ISS01
+button search
+sleep 5
+tableClick name ISS01
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu issuers
+search s_part ISS01
+button search
+sleep 5
+tableClick name ISS01
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test New Issuer 02
+description New Issuer 02
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu issuers
+button new 
+form admOrg
+textInput name ISS02
+textInput short ISS02
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu issuers
+search s_part ISS02
+sleep 5
+button search
+tableClick name ISS02
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu issuers
+search s_part ISS02
+button search
+sleep 5
+tableClick name ISS02
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test New Issuer 03
+description New Issuer 03
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu issuers
+button new 
+form admOrg
+textInput name ISS03
+textInput short ISS03
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu issuers
+search s_part ISS03
+button search
+sleep 5
+tableClick name ISS03
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu issuers
+search s_part ISS03
+button search
+sleep 5
+tableClick name ISS03
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test New Issuer 04
+description New Issuer 04
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu issuers
+button new 
+form admOrg
+textInput name ISS04
+textInput short ISS04
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu issuers
+search s_part ISS04
+button search
+sleep 5
+tableClick name ISS04
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu issuers
+search s_part ISS04
+button search
+sleep 5
+tableClick name ISS04
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test New Issuer 05
+description New Issuer 05
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu issuers
+button new 
+form admOrg
+textInput name ISS05
+textInput short ISS05
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu issuers
+search s_part ISS05
+button search
+sleep 5
+tableClick name ISS05
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu issuers
+search s_part ISS05
+button search
+sleep 5
+tableClick name ISS05
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test New Issuer 06
+description New Issuer 06
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu issuers
+button new 
+form admOrg
+textInput name ISS06
+textInput short ISS06
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu issuers
+search s_part ISS06
+button search
+sleep 5
+tableClick name ISS06
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu issuers
+search s_part ISS06
+button search
+sleep 5
+tableClick name ISS06
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test New Issuer 07
+description New Issuer 07
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu issuers
+button new 
+form admOrg
+textInput name ISS07
+textInput short ISS07
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu issuers
+search s_part ISS07
+button search
+sleep 5
+tableClick name ISS07
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu issuers
+search s_part ISS07
+button search
+sleep 5
+tableClick name ISS07
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test New Issuer 08
+description New Issuer 08
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu issuers
+button new 
+form admOrg
+textInput name ISS08
+textInput short ISS08
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu issuers
+search s_part ISS08
+button search
+sleep 5
+tableClick name ISS08
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu issuers
+search s_part ISS08
+button search
+sleep 5
+tableClick name ISS08
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test New Issuer 09
+description New Issuer 09
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu issuers
+button new 
+form admOrg
+textInput name ISS09
+textInput short ISS09
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu issuers
+search s_part ISS09
+button search
+sleep 5
+tableClick name ISS09
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu issuers
+search s_part ISS09
+button search
+sleep 5
+tableClick name ISS09
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test New Issuer 10
+description New Issuer 10
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu issuers
+button new 
+form admOrg
+textInput name ISS10
+textInput short ISS10
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu issuers
+search s_part ISS10
+button search
+sleep 5
+tableClick name ISS10
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu issuers
+search s_part ISS10
+button search
+sleep 5
+tableClick name ISS10
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout

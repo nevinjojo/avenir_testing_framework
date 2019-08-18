@@ -1,0 +1,184 @@
+test new participant 01
+description creating a new participant
+goto csd.com
+login csd_user1 csd_pass1
+menu participants
+button new
+form admOrg
+textInput name Participant 1
+textInput short PART1
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant1@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu participants
+search short PART1
+search state Ready
+tableClick short PART1
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 02
+description creating a new participant
+goto csd.com
+login csd_user1 csd_pass1
+menu participants
+button new
+form admOrg
+textInput name Participant 2
+textInput short PART2
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant2@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu participants
+search short PART2
+search state Ready
+tableClick short PART2
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 03
+description creating a new participant
+goto csd.com
+login csd_user1 csd_pass1
+menu participants
+button new
+form admOrg
+textInput name Participant 3
+textInput short PART3
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant3@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu participants
+search short PART3
+search state Ready
+tableClick short PART3
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 04
+description creating a new participant
+goto csd.com
+login csd_user1 csd_pass1
+menu participants
+button new
+form admOrg
+textInput name Participant 4
+textInput short PART4
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant4@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu participants
+search short PART4
+search state Ready
+tableClick short PART4
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 05
+description using code in name input
+goto csd.com
+login csd_user1 csd_pass1
+menu participants
+button new
+form admOrg
+textInput name <p id="i"></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById("i").innerHTML=d.toLocaleTimeString();}</script>
+textInput short PART5
+menuInput country Nepal
+textInput phone +04 0800 838383
+textInput email participant5@test.com
+button save
+sleep 2
+find button ready
+button ready
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu participants
+search short PART5
+search state Ready
+tableClick short PART5
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 06
+description using html code in name input
+goto csd.com
+login csd_user1 csd_pass1
+menu participants
+button new
+form admOrg
+textInput name <img src="https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png" width="120" border="0" onload="window.lol&amp;&amp;lol()" data-atf="3">
+textInput short PART6
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant6@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu participants
+search short PART6
+search state Ready
+tableClick short PART6
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout

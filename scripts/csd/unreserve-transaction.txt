@@ -1,0 +1,314 @@
+test New Unreserve Transaction 1
+description new unreserve transaction 1
+goto csd.com
+login csd_user1 csd_pass1
+date
+menu transactions
+button new unreserve
+form admTrans
+textInput due date
+select2Input toAccountStr Investor 1
+select2Input instrumentStr Instrument1
+textInput quantity 25
+textInput tag test 1
+textInput toReference Unreserve 1
+button save
+find textH1 View Unreserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu transactions
+search s_time All
+search s_inst INST1
+search s_stat Ready
+sleep 5
+tableClick Code INST1
+button approve
+find textH1 View Unreserve
+sleep 2
+expect pass
+logout
+
+test New Unreserve Transaction 2
+description new unreserve transaction 2
+goto csd.com
+login csd_user1 csd_pass1
+date
+menu transactions
+button new unreserve
+form admTrans
+textInput due date
+select2Input toAccountStr Investor 2
+select2Input instrumentStr Instrument2
+textInput quantity 25
+textInput tag test 2
+textInput toReference Unreserve 2
+button save
+find textH1 View Unreserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu transactions
+search s_time All
+search s_inst INST2
+search s_stat Ready
+sleep 5
+tableClick Code INST2
+button approve
+find textH1 View Unreserve
+sleep 2
+expect pass
+logout
+
+test New Unreserve Transaction 3
+description new unreserve transaction 3
+goto csd.com
+login csd_user1 csd_pass1
+date
+menu transactions
+button new unreserve
+form admTrans
+textInput due date
+select2Input toAccountStr Investor 3
+select2Input instrumentStr Instrument3
+textInput quantity 25
+textInput tag test 3
+textInput toReference Unreserve 3
+button save
+find textH1 View Unreserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu transactions
+search s_time All
+search s_inst INST3
+search s_stat Ready
+sleep 5
+tableClick Code INST3
+button approve
+find textH1 View Unreserve
+sleep 2
+expect pass
+logout
+
+test New Unreserve Transaction 4
+description new unreserve transaction 4
+goto csd.com
+login csd_user1 csd_pass1
+date
+menu transactions
+button new unreserve
+form admTrans
+textInput due date
+select2Input toAccountStr 4, Investor
+select2Input instrumentStr Instrument4
+textInput quantity 25
+textInput tag test 4
+textInput toReference Unreserve 4
+button save
+find textH1 View Unreserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu transactions
+search s_time All
+search s_inst INST4
+search s_stat Ready
+sleep 5
+tableClick Code INST4
+button approve
+find textH1 View Unreserve
+sleep 2
+expect pass
+logout
+
+test New Unreserve Transaction 5
+description new unreserve transaction 5
+goto csd.com
+login csd_user1 csd_pass1
+date
+menu transactions
+button new unreserve
+form admTrans
+textInput due date
+select2Input toAccountStr 5, Investor
+select2Input instrumentStr Instrument5
+textInput quantity 25
+textInput tag test 5
+textInput toReference Unreserve 5
+button save
+find textH1 View Unreserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu transactions
+search s_time All
+search s_inst INST5
+search s_stat Ready
+sleep 5
+tableClick Code INST5
+button approve
+find textH1 View Unreserve
+sleep 2
+expect pass
+logout
+
+test New Unreserve Transaction 6
+description new unreserve transaction 6
+goto csd.com
+login csd_user1 csd_pass1
+date
+menu transactions
+button new unreserve
+form admTrans
+textInput due date
+select2Input toAccountStr 6, Investor
+select2Input instrumentStr Instrument6
+textInput quantity 25
+textInput tag test 6
+textInput toReference Unreserve 6
+button save
+find textH1 View Unreserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu transactions
+search s_time All
+search s_inst INST6
+search s_stat Ready
+sleep 5
+tableClick Code INST6
+button approve
+find textH1 View Unreserve
+sleep 2
+expect pass
+logout
+
+test New Unreserve Transaction 7
+description new unreserve transaction 7
+goto csd.com
+login csd_user1 csd_pass1
+date
+menu transactions
+button new unreserve
+form admTrans
+textInput due date
+select2Input toAccountStr Investor 7
+select2Input instrumentStr Instrument7
+textInput quantity 25
+textInput tag test 7
+textInput toReference Unreserve 7
+button save
+find textH1 View Unreserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu transactions
+search s_time All
+search s_inst INST7
+search s_stat Ready
+sleep 5
+tableClick Code INST7
+button approve
+find textH1 View Unreserve
+sleep 2
+expect pass
+logout
+
+test New Unreserve Transaction 8
+description new unreserve transaction 8
+goto csd.com
+login csd_user1 csd_pass1
+date
+menu transactions
+button new unreserve
+form admTrans
+textInput due date
+select2Input toAccountStr Investor 8
+select2Input instrumentStr Instrument8
+textInput quantity 25
+textInput tag test 8
+textInput toReference Unreserve 8
+button save
+find textH1 View Unreserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu transactions
+search s_time All
+search s_inst INST8
+search s_stat Ready
+sleep 5
+tableClick Code INST8
+button approve
+find textH1 View Unreserve
+sleep 2
+expect pass
+logout
+
+test New Unreserve Transaction 9
+description new unreserve transaction 9
+goto csd.com
+login csd_user1 csd_pass1
+date
+menu transactions
+button new unreserve
+form admTrans
+textInput due date
+select2Input toAccountStr Investor 9
+select2Input instrumentStr Instrument9
+textInput quantity 25
+textInput tag test 9
+textInput toReference Unreserve 9
+button save
+find textH1 View Unreserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu transactions
+search s_time All
+search s_inst INST9
+search s_stat Ready
+sleep 5
+tableClick Code INST9
+button approve
+find textH1 View Unreserve
+sleep 2
+expect pass
+logout

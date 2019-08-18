@@ -1,0 +1,160 @@
+test New Investor 01
+description New Investor 01 charity
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+button new company
+form admOrg
+textInput name CHARITY01
+textInput address1 ADDRRESS01
+textInput postcode 5083
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat All
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test New Investor 02
+description New Investor 02 charity
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+button new company
+form admOrg
+textInput name CHARITY02
+textInput address1 ADDRRESS02
+textInput postcode 5028
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat All
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test New Investor 03
+description New Investor 03 charity
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+button new company
+form admOrg
+textInput name CHARITY03
+textInput address1 ADDRRESS03
+textInput postcode 5066
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat All
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test New Investor 04
+description New Investor 04 charity
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+button new company
+form admOrg
+textInput name CHARITY04
+textInput address1 ADDRRESS04
+textInput postcode 5018
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat All
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test New Investor 05
+description New Investor 05 charity
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+button new company
+form admOrg
+textInput name CHARITY05
+textInput address1 ADDRRESS05
+textInput postcode 5011
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat All
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+

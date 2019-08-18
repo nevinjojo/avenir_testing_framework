@@ -1,0 +1,339 @@
+test create 01 transaction company
+description create transactions company
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new create
+form admTrans
+textInput due date
+select2Input toAccountStr INDIV01
+select2Input instrumentStr INST01
+textInput quantity 100
+sleep 3
+textInput toReference transaction01
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST01
+search s_stat Ready
+sleep 5
+tableClick Code INST01
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test create 02 transaction company
+description create transactions company
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new create
+form admTrans
+textInput due date
+select2Input toAccountStr INDIV02
+select2Input instrumentStr INST02
+textInput quantity 100
+sleep 3
+textInput toReference transaction02
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST02
+search s_stat Ready
+sleep 5
+tableClick Code INST02
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test create 03 transaction company
+description create transactions company
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new create
+form admTrans
+textInput due date
+select2Input toAccountStr INDIV03
+select2Input instrumentStr INST03
+textInput quantity 100
+sleep 3
+textInput toReference transaction03
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST03
+search s_stat Ready
+sleep 5
+tableClick Code INST03
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test create 04 transaction company
+description create transactions company
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new create
+form admTrans
+textInput due date
+select2Input toAccountStr INDIV04
+select2Input instrumentStr INST04
+textInput quantity 100
+sleep 3
+textInput toReference transaction04
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST04
+search s_stat Ready
+sleep 5
+tableClick Code INST04
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test create 05 transaction company
+description create transactions company
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new create
+form admTrans
+textInput due date
+select2Input toAccountStr INDIV05
+select2Input instrumentStr INST05
+textInput quantity 100
+sleep 3
+textInput toReference transaction05
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST05
+search s_stat Ready
+sleep 5
+tableClick Code INST05
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test create 06 transaction company
+description create transactions company
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new create
+form admTrans
+textInput due date
+select2Input toAccountStr INDIV06
+select2Input instrumentStr INST06
+textInput quantity 100
+sleep 3
+textInput toReference transaction06
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST06
+search s_stat Ready
+sleep 5
+tableClick Code INST06
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test create 07 transaction company
+description create transactions company
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new create
+form admTrans
+textInput due date
+select2Input toAccountStr INDIV07
+select2Input instrumentStr INST07
+textInput quantity 100
+sleep 3
+textInput toReference transaction07
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST07
+search s_stat Ready
+sleep 5
+tableClick Code INST07
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test create 08 transaction company
+description create transactions company
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new create
+form admTrans
+textInput due date
+select2Input toAccountStr INDIV08
+select2Input instrumentStr INST08
+textInput quantity 100
+sleep 3
+textInput toReference transaction08
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST08
+search s_stat Ready
+sleep 5
+tableClick Code INST08
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test create 09 transaction company
+description create transactions company
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new create
+form admTrans
+textInput due date
+select2Input toAccountStr INDIV09
+select2Input instrumentStr INST09
+textInput quantity 100
+sleep 3
+textInput toReference transaction09
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST09
+search s_stat Ready
+sleep 5
+tableClick Code INST09
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test create 10 transaction company	
+description create transactions company
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new create
+form admTrans
+textInput due date
+select2Input toAccountStr INDIV10
+select2Input instrumentStr INST10
+textInput quantity 100
+sleep 3
+textInput toReference transaction10
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST10
+search s_stat Ready
+sleep 5
+tableClick Code INST10
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout

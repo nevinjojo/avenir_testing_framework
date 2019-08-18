@@ -1,0 +1,18 @@
+test User Paul Blenkhorn
+description edit user details
+goto settle_web
+login settleweb_user6 settleweb_pass6
+menu My Details
+clickby class edit-detail
+form userUser
+textInput phone +642108343142
+textInput mobile +447590196370
+textInput email srt0@avenir-technology.com
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out

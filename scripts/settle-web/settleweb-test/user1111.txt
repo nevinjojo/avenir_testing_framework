@@ -1,0 +1,70 @@
+# single investment - User 1111
+
+test User1111
+description single investment
+goto settle_web
+login settleweb_user3 settleweb_pass3
+menu My Details
+button update
+form userUser
+textInput phone +642222223330
+textInput mobile +4475901963720
+textInput email srt@avenir-technology.com
+button save
+sleep 3
+button confirm
+find textH1 User Details
+expect pass
+clickby text Menu
+sleep 3
+clickby text Logout
+
+goto settle_web
+login settleweb_user3 settleweb_pass3
+menu My Details
+button psswrd
+form userPassword
+textInput _old_password Pa55word!
+textInput _new_password_enter_password test123
+textInput _new_password_confirm_password test123
+button cancel
+find textH1 User Details
+expect pass
+clickby text Menu
+sleep 3
+clickby text Logout
+
+goto settle_web
+login settleweb_user3 settleweb_pass3
+sleep 2
+clickby id hldr_link-000022185-1
+button update
+form userHolder
+textInput phone +442067816720
+textInput mobile +447590196372
+textInput email srt0@avenir-technology.com
+textInput address1 19 Hope Street
+textInput postcode 5028
+menuInput country New Zealand
+textInput bankaccount_sort_code 0423760
+textInput bankaccount_account 43384034
+button save
+sleep 3
+button confirm
+find textH1 Investor Details
+expect pass
+clickby text Menu
+sleep 3
+clickby text Logout
+
+# Balance Details / Download Certificate
+goto settle_web
+login settleweb_user3 settleweb_pass3
+clickby id bal_link-000022185-1-0
+button link
+sleep 3
+find textH1 Balance Details
+expect pass
+clickby text Menu
+sleep 3
+clickby text Logout

@@ -1,0 +1,27 @@
+# Update ID 000030231
+
+test Update ID 000030231
+description update investor details
+goto settle_web
+login settleweb_user2 settleweb_pass2
+clickby class fas fa-id-card fa-2x
+scrollto hldr-link-000030231
+clickby id hldr-link-000030231
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srt@avenir-technology.com
+textInput phone +4481247199
+textInput mobile +447960003700
+textInput address1 2 LANE RD
+textInput postcode 5018
+menuInput country Netherlands
+textInput bankaccount_sort_code 0893000
+textInput bankaccount_account 591873
+button save
+sleep 3
+button confirm
+find textH1 Update Investor Details
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out

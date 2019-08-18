@@ -1,0 +1,340 @@
+test new broker participant 01
+description creating a new broker participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text Broker
+form admOrg
+textInput name Broker 01
+textInput short BRKR1
+menuInput country New Zealand
+textInput phone +04 0800 283492
+textInput email broker01@test.com
+button save
+sleep 2 
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part BRKR1
+search s_stat Ready
+button search
+tableClick short BRKR1
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new broker participant 02
+description creating a new broker participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text Broker
+form admOrg
+textInput name Broker 02
+textInput short BRKR2
+menuInput country New Zealand
+textInput phone +04 0800 234234
+textInput email broker02@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part BRKR2
+search s_stat Ready
+button search
+tableClick short BRKR2
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new broker participant 03
+description creating a new broker participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text Broker
+form admOrg
+textInput name Broker 03
+textInput short BRKR3
+menuInput country New Zealand
+textInput phone +04 0800 289364
+textInput email broker03@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part BRKR3
+search s_stat Ready
+button search
+tableClick short BRKR3
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new broker participant 04
+description creating a new broker participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text Broker
+form admOrg
+textInput name Broker 04
+textInput short BRKR4
+menuInput country New Zealand
+textInput phone +04 0800 267457
+textInput email broker04@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part BRKR4
+search s_stat Ready
+button search
+tableClick short BRKR4
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new broker participant 05
+description creating a new broker participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text Broker
+form admOrg
+textInput name Broker 05
+textInput short BRKR5
+menuInput country New Zealand
+textInput phone +04 0800 234824
+textInput email broker05@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass 
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part BRKR5
+search s_stat Ready
+button search
+tableClick short BRKR5
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new broker particpant 06
+description creating a new broker participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text Broker
+form admOrg
+textInput name Broker 06
+textInput short BRKR6
+menuInput country New Zealand
+textInput phone +04 897 490682
+textInput email broker06@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part BRKR6
+search s_stat Ready
+button search
+tableClick short BRKR6
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new broker participant 07
+description creating a new broker participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text Broker
+form admOrg
+textInput name Broker 07
+textInput short BRKR7
+menuInput country New Zealand
+textInput phone +04 0800 129383
+textInput email broker07@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part BRKR7
+search s_stat Ready
+button search
+tableClick short BRKR7
+find textH1 View Particpant
+button approve
+sleep 2
+expect pass
+logout
+
+test new broker participant 08
+description creating a new broker participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text Broker
+form admOrg
+textInput name Broker 08
+textInput short BRKR8
+menuInput country New Zealand
+textInput phone +04 0800 129383
+textInput email broker08@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part BRKR8
+search s_stat Ready
+button search
+tableClick short BRKR8
+find textH1 View Particpant
+button approve
+sleep 2
+expect pass
+logout
+
+test new broker participant 09
+description creating a new broker participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text Broker
+form admOrg
+textInput name Broker 09
+textInput short BRKR9
+menuInput country New Zealand
+textInput phone +04 0800 293847
+textInput email broker09@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part BRKR9
+search s_stat Ready
+button search
+tableClick short BRKR9
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new broker participant 10
+description creating a new broker participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text Broker
+form admOrg
+textInput name Broker 10
+textInput short BRKR10
+menuInput country New Zealand
+textInput phone +04 0800 743450
+textInput email broker10@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part BRKR10
+search s_stat Ready
+button search
+tableClick short BRKR10
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+

@@ -1,0 +1,194 @@
+test Suspend / Unsuspend Issuer 01
+description suspending, unsuspending and deleting issuers
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name Issuer Suspend 01
+textInput short SISS1
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part SISS1
+button search
+sleep 5
+clickby text SISS1
+find textH1 View Issuer
+button approve
+sleep 2
+button suspend
+sleep 2
+button suspend
+sleep 2
+button suspend
+sleep 2
+button delete
+find textH1 Manage Participants
+expect pass
+logout
+
+test Suspend / Unsuspend Issuer 02
+description suspending, unsuspending and deleting issuers
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name Issuer Suspend 02
+textInput short SISS2
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part SISS2
+button search
+sleep 5
+clickby text SISS2
+find textH1 View Issuer
+button approve
+sleep 2
+button suspend
+sleep 2
+button suspend
+sleep 2
+button suspend
+sleep 2
+button delete
+find textH1 Manage Participants
+expect pass
+logout
+
+test Suspend / Unsuspend Issuer 03
+description suspending, unsuspending and deleting issuers
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name Issuer Suspend 03
+textInput short SISS3
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part SISS3
+button search
+sleep 5
+clickby text SISS3
+find textH1 View Issuer
+button approve
+sleep 2
+button suspend
+sleep 2
+button suspend
+sleep 2
+button suspend
+sleep 2
+button delete
+find textH1 Manage Participants
+expect pass
+logout
+
+test Suspend / Unsuspend Issuer 04
+description suspending, unsuspending and deleting issuers
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name Issuer Suspend 04
+textInput short SISS4
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part SISS4
+button search
+sleep 5
+clickby text SISS4
+find textH1 View Issuer
+button approve
+sleep 2
+button suspend
+sleep 2
+button suspend
+sleep 2
+button suspend
+sleep 2
+button delete
+find textH1 Manage Participants
+expect pass
+logout
+
+test Suspend / Unsuspend Issuer 05
+description suspending, unsuspending and deleting issuers
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name Issuer Suspend 05
+textInput short SISS5
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part SISS5
+button search
+sleep 5
+clickby text SISS5
+find textH1 View Issuer
+button approve
+sleep 2
+button suspend
+sleep 2
+button suspend
+sleep 2
+button suspend
+sleep 2
+button delete
+find textH1 Manage Participants
+expect pass
+logout

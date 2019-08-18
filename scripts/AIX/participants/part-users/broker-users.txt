@@ -1,0 +1,1320 @@
+test New Participant User 1 - PART01
+description creating a new participant user - PART01
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART01
+search s_stat Active
+button search
+tableClick short PART01
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART1-U1
+textInput name Participant-User
+textInput last One
+textInput email partU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 2 - PART01
+description creating a new participant user - PART01
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART01
+search s_stat Active
+button search
+tableClick short PART01
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART1-U2
+textInput name Participant-User
+textInput last Two
+textInput email partU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 1 - PART02
+description creating a new participant user - PART02
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART02
+search s_stat Active
+button search
+tableClick short PART02
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART2-U1
+textInput name Participant-User
+textInput last One
+textInput email partU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 2 - PART02
+description creating a new participant user - PART02
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART02
+search s_stat Active
+button search
+tableClick short PART02
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART2-U2
+textInput name Participant-User
+textInput last Two
+textInput email partU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 1 - PART03
+description creating a new participant user - PART03
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART03
+search s_stat Active
+button search
+tableClick short PART03
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART3-U1
+textInput name Participant-User
+textInput last One
+textInput email partU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 2 - PART03
+description creating a new participant user - PART03
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART03
+search s_stat Active
+button search
+tableClick short PART03
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART3-U2
+textInput name Participant-User
+textInput last Two
+textInput email partU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 1 - PART04
+description creating a new participant user - PART04
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART04
+search s_stat Active
+button search
+tableClick short PART04
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART4-U1
+textInput name Participant-User
+textInput last One
+textInput email partU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 2 - PART04
+description creating a new participant user - PART04
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART04
+search s_stat Active
+button search
+tableClick short PART04
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART4-U2
+textInput name Participant-User
+textInput last Two
+textInput email partU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 1 - PART05
+description creating a new participant user - PART05
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART05
+search s_stat Active
+button search
+tableClick short PART05
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART5-U1
+textInput name Participant-User
+textInput last One
+textInput email partU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 2 - PART05
+description creating a new participant user - PART05
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART05
+search s_stat Active
+button search
+tableClick short PART05
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART5-U2
+textInput name Participant-User
+textInput last Two
+textInput email partU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 1 - PART06
+description creating a new participant user - PART06
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART06
+search s_stat Active
+button search
+tableClick short PART06
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART6-U1
+textInput name Participant-User
+textInput last One
+textInput email partU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 2 - PART06
+description creating a new participant user - PART06
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART06
+search s_stat Active
+button search
+tableClick short PART06
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART6-U2
+textInput name Participant-User
+textInput last Two
+textInput email partU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 1 - PART07
+description creating a new participant user - PART07
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART07
+search s_stat Active
+button search
+tableClick short PART07
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART7-U1
+textInput name Participant-User
+textInput last One
+textInput email partU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 2 - PART07
+description creating a new participant user - PART07
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART07
+search s_stat Active
+button search
+tableClick short PART07
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART7-U2
+textInput name Participant-User
+textInput last Two
+textInput email partU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 1 - PART08
+description creating a new participant user - PART08
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART08
+search s_stat Active
+button search
+tableClick short PART08
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART8-U1
+textInput name Participant-User
+textInput last One
+textInput email partU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 2 - PART08
+description creating a new participant user - PART08
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART08
+search s_stat Active
+button search
+tableClick short PART08
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART8-U2
+textInput name Participant-User
+textInput last Two
+textInput email partU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 1 - PART09
+description creating a new participant user - PART09
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART09
+search s_stat Active
+button search
+tableClick short PART09
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART9-U1
+textInput name Participant-User
+textInput last One
+textInput email partU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 2 - PART09
+description creating a new participant user - PART09
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART09
+search s_stat Active
+button search
+tableClick short PART09
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART9-U2
+textInput name Participant-User
+textInput last Two
+textInput email partU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 1 - PART10
+description creating a new participant user - PART10
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART10
+search s_stat Active
+button search
+tableClick short PART10
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART10-U1
+textInput name Participant-User
+textInput last One
+textInput email partU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 2 - PART10
+description creating a new participant user - PART10
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART10
+search s_stat Active
+button search
+tableClick short PART10
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART10-U2
+textInput name Participant-User
+textInput last Two
+textInput email partU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 01 - PART11
+description creating a new participant user - PART11
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART11
+search s_stat Active
+button search
+tableClick short PART11
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART11-U1
+textInput name Participant-User
+textInput last One
+textInput email partU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 2 - PART11
+description creating a new participant user - PART11
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART11
+search s_stat Active
+button search
+tableClick short PART11
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART11-U2
+textInput name Participant-User
+textInput last Two
+textInput email partU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 1 - PART12
+description creating a new participant user - PART12
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART12
+search s_stat Active
+button search
+tableClick short PART12
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART12-U1
+textInput name Participant-User
+textInput last One
+textInput email partU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 2 - PART12
+description creating a new participant user - PART12
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART12
+search s_stat Active
+button search
+tableClick short PART12
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART12-U2
+textInput name Participant-User
+textInput last Two
+textInput email partU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 1 - PART13
+description creating a new participant user - PART13
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART13
+search s_stat Active
+button search
+tableClick short PART13
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART13-U1
+textInput name Participant-User
+textInput last One
+textInput email partU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 2 - PART13
+description creating a new participant user - PART13
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART13
+search s_stat Active
+button search
+tableClick short PART13
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART13-U2
+textInput name Participant-User
+textInput last Two
+textInput email partU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 1 - PART14
+description creating a new participant user - PART14
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART14
+search s_stat Active
+button search 
+tableClick short PART14
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART14-U1
+textInput name Participant-User
+textInput last One
+textInput email partU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 2 - PART14
+description creating a new participant user - PART14
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART14
+search s_stat Active
+button search
+tableClick short PART14
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART14-U2
+textInput name Participant-User
+textInput last Two
+textInput email partU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 1 - PART15
+description creating a new participant user - PART15
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART15
+search s_stat Active
+button search
+tableClick short PART15
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART15-U1
+textInput name Participant-User
+textInput last One
+textInput email partU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 2 - PART15
+description creating a new participant user - PART15
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART15
+search s_stat Active
+button search
+tableClick short PART15
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART15-U2
+textInput name Participant-User
+textInput last Two
+textInput email partU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 1 - PART16
+description creating a new participant user - PART16
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART16
+search s_stat Active
+button search
+tableClick short PART16
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART16-U1
+textInput name Participant-User
+textInput last One
+textInput email partU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 2 - PART16
+description creating a new participant user - PART16
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART16
+search s_stat Active
+button search
+tableClick short PART16
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART16-U2
+textInput name Participant-User
+textInput last Two
+textInput email partU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 1 - PART17
+description creating a new participant user - PART17
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART17
+search s_stat Active
+button search
+tableClick short PART17
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART17-U1
+textInput name Participant-User
+textInput last One
+textInput email partU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 2 - PART17
+description creating a new participant user - PART17
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART17
+search s_stat Active
+button search
+tableClick short PART17
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART17-U2
+textInput name Participant-User
+textInput last Two
+textInput email partU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 1 - PART18
+description creating a new participant user - PART18
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART18
+search s_stat Active
+button search
+tableClick short PART18
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART18-U1
+textInput name Participant-User
+textInput last One
+textInput email partU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 2 - PART18
+description creating a new participant user - PART18
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART18
+search s_stat Active
+button search
+tableClick short PART18
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART18-U2
+textInput name Participant-User
+textInput last Two
+textInput email partU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 1 - PART19
+description creating a new participant user - PART19
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART19
+search s_stat Active
+button search
+tableClick short PART19
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART19-U1
+textInput name Participant-User
+textInput last One
+textInput email partU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 2 - PART19
+description creating a new participant user - PART19
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART19
+search s_stat Active
+button search
+tableClick short PART19
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART19-U2
+textInput name Participant-User
+textInput last Two
+textInput email partU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 1 - PART20
+description creating a new participant user - PART20
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART20
+search s_stat Active
+button search
+tableClick short PART20
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART20-U1
+textInput name Participant-User
+textInput last One
+textInput email partU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 2 - PART20
+description creating a new participant user - PART20
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART20
+search s_stat Active
+button search
+tableClick short PART20
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART20-U2
+textInput name Participant-User
+textInput last Two
+textInput email partU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+

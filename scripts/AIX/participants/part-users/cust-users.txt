@@ -1,0 +1,1319 @@
+test New Custodian User 1 - CUST01
+description creating a new custodian user - CUST01
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST01
+search s_stat Active
+button search
+tableClick short CUST01
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST1-U1
+textInput name Custodian-User
+textInput last One
+textInput email custU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 2 - CUST01
+description creating a new custodian user - CUST01
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST01
+search s_stat Active
+button search
+tableClick short CUST01
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST1-U2
+textInput name Custodian-User
+textInput last Two
+textInput email custU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 1 - CUST02
+description creating a new custodian user - CUST02
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST02
+search s_stat Active
+button search
+tableClick short CUST02
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST2-U1
+textInput name Custodian-User
+textInput last One
+textInput email custU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 2 - CUST02
+description creating a new custodian user - CUST02
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST02
+search s_stat Active
+button search
+tableClick short CUST02
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST2-U2
+textInput name Custodian-User
+textInput last Two
+textInput email custU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 1 - CUST03
+description creating a new custodian user - CUST03
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST03
+search s_stat Active
+button search
+tableClick short CUST03
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST3-U1
+textInput name Custodian-User
+textInput last One
+textInput email custU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 2 - CUST03
+description creating a new custodian user - CUST03
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST03
+search s_stat Active
+button search
+tableClick short CUST03
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST3-U2
+textInput name Custodian-User
+textInput last Two
+textInput email custU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 1 - CUST04
+description creating a new custodian user - CUST04
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST04
+search s_stat Active
+button search
+tableClick short CUST04
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST4-U1
+textInput name Custodian-User
+textInput last One
+textInput email custU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 2 - CUST04
+description creating a new custodian user - CUST04
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST04
+search s_stat Active
+button search
+tableClick short CUST04
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST4-U2
+textInput name Custodian-User
+textInput last Two
+textInput email custU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 1 - CUST05
+description creating a new custodian user - CUST05
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST05
+search s_stat Active
+button search
+tableClick short CUST05
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST5-U1
+textInput name Custodian-User
+textInput last One
+textInput email custU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 2 - CUST05
+description creating a new custodian user - CUST05
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST05
+search s_stat Active
+button search
+tableClick short CUST05
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST5-U2
+textInput name Custodian-User
+textInput last Two
+textInput email custU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 1 - CUST06
+description creating a new custodian user - CUST06
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST06
+search s_stat Active
+button search
+tableClick short CUST06
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST6-U1
+textInput name Custodian-User
+textInput last One
+textInput email custU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 2 - CUST06
+description creating a new custodian user - CUST06
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST06
+search s_stat Active
+button search
+tableClick short CUST06
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST6-U2
+textInput name Custodian-User
+textInput last Two
+textInput email custU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 1 - CUST07
+description creating a new custodian user - CUST07
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST07
+search s_stat Active
+button search
+tableClick short CUST07
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST7-U1
+textInput name Custodian-User
+textInput last One
+textInput email custU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 2 - CUST07
+description creating a new custodian user - CUST07
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST07
+search s_stat Active
+button search
+tableClick short CUST07
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST7-U2
+textInput name Custodian-User
+textInput last Two
+textInput email custU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 1 - CUST08
+description creating a new custodian user - CUST08
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST08
+search s_stat Active
+button search
+tableClick short CUST08
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST8-U1
+textInput name Custodian-User
+textInput last One
+textInput email custU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 2 - CUST08
+description creating a new custodian user - CUST08
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST08
+search s_stat Active
+button search
+tableClick short CUST08
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST8-U2
+textInput name Custodian-User
+textInput last Two
+textInput email custU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 1 - CUST09
+description creating a new custodian user - CUST09
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST09
+search s_stat Active
+button search
+tableClick short CUST09
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST9-U1
+textInput name Custodian-User
+textInput last One
+textInput email custU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 2 - CUST09
+description creating a new custodian user - CUST09
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST09
+search s_stat Active
+button search
+tableClick short CUST09
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST9-U2
+textInput name Custodian-User
+textInput last Two
+textInput email custU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 1 - CUST10
+description creating a new custodian user - CUST10
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST10
+search s_stat Active
+button search
+tableClick short CUST10
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST10-U1
+textInput name Custodian-User
+textInput last One
+textInput email custU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 2 - CUST10
+description creating a new custodian user - CUST10
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST10
+search s_stat Active
+button search
+tableClick short CUST10
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST10-U2
+textInput name Custodian-User
+textInput last Two
+textInput email custU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 1 - CUST11
+description creating a new custodian user - CUST11
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST11
+search s_stat Active
+button search
+tableClick short CUST11
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST11-U1
+textInput name Custodian-User
+textInput last One
+textInput email custU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 2 - CUST11
+description creating a new custodian user - CUST11
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST11
+search s_stat Active
+button search
+tableClick short CUST11
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST11-U2
+textInput name Custodian-User
+textInput last Two
+textInput email custU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 1 - CUST12
+description creating a new custodian user - CUST12
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST12
+search s_stat Active
+button search
+tableClick short CUST12
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST12-U1
+textInput name Custodian-User
+textInput last One
+textInput email custU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 2 - CUST12
+description creating a new custodian user - CUST12
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST12
+search s_stat Active
+button search
+tableClick short CUST12
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST12-U2
+textInput name Custodian-User
+textInput last Two
+textInput email custU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 1 - CUST13
+description creating a new custodian user - CUST13
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST13
+search s_stat Active
+button search
+tableClick short CUST13
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST13-U1
+textInput name Custodian-User
+textInput last One
+textInput email custU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 2 - CUST13
+description creating a new custodian user - CUST13
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST13
+search s_stat Active
+button search
+tableClick short CUST13
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST13-U2
+textInput name Custodian-User
+textInput last Two
+textInput email custU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 1 - CUST14
+description creating a new custodian user - CUST14
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST14
+search s_stat Active
+button search
+tableClick short CUST14
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST14-U1
+textInput name Custodian-User
+textInput last One
+textInput email custU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 2 - CUST14
+description creating a new custodian user - CUST14
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST14
+search s_stat Active
+button search
+tableClick short CUST14
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST14-U2
+textInput name Custodian-User
+textInput last Two
+textInput email custU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 1 - CUST15
+description creating a new custodian user - CUST15
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST15
+search s_stat Active
+button search
+tableClick short CUST15
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST15-U1
+textInput name Custodian-User
+textInput last One
+textInput email custU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 2 - CUST15
+description creating a new custodian user - CUST15
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST15
+search s_stat Active
+button search
+tableClick short CUST15
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST15-U2
+textInput name Custodian-User
+textInput last Two
+textInput email custU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 1 - CUST16
+description creating a new custodian user - CUST16
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST16
+search s_stat Active
+button search
+tableClick short CUST16
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST16-U1
+textInput name Custodian-User
+textInput last One
+textInput email custU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 2 - CUST16
+description creating a new custodian user - CUST16
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST16
+search s_stat Active
+button search
+tableClick short CUST16
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST16-U2
+textInput name Custodian-User
+textInput last Two
+textInput email custU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 1 - CUST17
+description creating a new custodian user - CUST17
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST17
+search s_stat Active
+button search
+tableClick short CUST17
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST17-U1
+textInput name Custodian-User
+textInput last One
+textInput email custU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 2 - CUST17
+description creating a new custodian user - CUST17
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST17
+search s_stat Active
+button search
+tableClick short CUST17
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST17-U2
+textInput name Custodian-User
+textInput last Two
+textInput email custU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 1 - CUST18
+description creating a new custodian user - CUST18
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST18
+search s_stat Active
+button search
+tableClick short CUST18
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST18-U1
+textInput name Custodian-User
+textInput last One
+textInput email custU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 2 - CUST18
+description creating a new custodian user - CUST18
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST18
+search s_stat Active
+button search
+tableClick short CUST18
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST18-U2
+textInput name Custodian-User
+textInput last Two
+textInput email custU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 1 - CUST19
+description creating a new custodian user - CUST19
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST19
+search s_stat Active
+button search
+tableClick short CUST19
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST19-U1
+textInput name Custodian-User
+textInput last One
+textInput email custU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 2 - CUST19
+description creating a new custodian user - CUST19
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST19
+search s_stat Active
+button search
+tableClick short CUST19
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST19-U2
+textInput name Custodian-User
+textInput last Two
+textInput email custU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 1 - CUST20
+description creating a new custodian user - CUST20
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST20
+search s_stat Active
+button search
+tableClick short CUST20
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST20-U1
+textInput name Custodian-User
+textInput last One
+textInput email custU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Custodian User 2 - CUST20
+description creating a new custodian user - CUST20
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST20
+search s_stat Active
+button search
+tableClick short CUST20
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CUST20-U2
+textInput name Custodian-User
+textInput last Two
+textInput email custU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout

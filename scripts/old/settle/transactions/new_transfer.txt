@@ -1,0 +1,18 @@
+# to test the new transfer feature of the system
+
+test New Transfer 1.1
+description This test Makes a new transfer
+goto dev
+login dev_user1 dev_pass1
+menu transactions
+button new transfer
+form admTrans
+select2Input frAccountStr 000017739-003CFPT001 (SSI test 1)
+sleep 3
+select2Input toAccountStr REG-0004 (REG)
+select2Input instrumentStr HNX30 March Future (HNX30FMAR18)
+textInput quantity 20
+textInput due 02/03/2019
+button save
+find textH1 View Transfer 
+expect pass

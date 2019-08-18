@@ -1,0 +1,339 @@
+test New Instrument 11
+description New Instrument 11 equity
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name Instrument 11
+textInput short INST11
+textInput isin  INST11
+menuInput issuer ISS01
+button save
+sleep 2
+find textH1 View Equity
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu instruments
+form instrument
+textInput short INST11
+menuInput state Ready
+button search
+sleep 5
+tableClick short INST11
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test New Instrument 12
+description New Instrument 12 equity
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name Instrument 12
+textInput short INST12
+textInput isin  INST12
+menuInput issuer ISS02
+button save
+sleep 2
+find textH1 View Equity
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu instruments
+form instrument
+textInput short INST12
+menuInput state Ready
+button search
+sleep 5
+tableClick short INST12
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test New Instrument 13
+description New Instrument 13 equity
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name Instrument 13
+textInput short INST13
+textInput isin  INST13
+menuInput issuer ISS03
+button save
+sleep 2
+find textH1 View Equity
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu instruments
+form instrument
+textInput short INST13
+menuInput state Ready
+button search
+sleep 5
+tableClick short INST13
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test New Instrument 14
+description New Instrument 14 equity
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name Instrument 14
+textInput short INST14
+textInput isin  INST14
+menuInput issuer ISS04
+button save
+sleep 2
+find textH1 View Equity
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu instruments
+form instrument
+textInput short INST14
+menuInput state Ready
+button search
+sleep 5
+tableClick short INST14
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test New Instrument 15
+description New Instrument 15 equity
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name Instrument 15
+textInput short INST15
+textInput isin  INST15
+menuInput issuer ISS05
+button save
+sleep 2
+find textH1 View Equity
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu instruments
+form instrument
+textInput short INST15
+menuInput state Ready
+button search
+sleep 5
+tableClick short INST15
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test New Instrument 16
+description New Instrument 16 equity
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name Instrument 16
+textInput short INST16
+textInput isin  INST16
+menuInput issuer ISS06
+button save
+sleep 2
+find textH1 View Equity
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu instruments
+form instrument
+textInput short INST16
+menuInput state Ready
+button search
+sleep 5
+tableClick short INST16
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test New Instrument 17
+description New Instrument 17 equity
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name Instrument 17
+textInput short INST17
+textInput isin  INST17
+menuInput issuer ISS07
+button save
+sleep 2
+find textH1 View Equity
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu instruments
+form instrument
+textInput short INST17
+menuInput state Ready
+button search
+sleep 5
+tableClick short INST17
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test New Instrument 18
+description New Instrument 18 equity
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name Instrument 18
+textInput short INST18
+textInput isin  INST18
+menuInput issuer ISS08
+button save
+sleep 2
+find textH1 View Equity
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu instruments
+form instrument
+textInput short INST18
+menuInput state Ready
+button search
+sleep 5
+tableClick short INST18
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test New Instrument 19
+description New Instrument 19 equity
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name Instrument 19
+textInput short INST19
+textInput isin  INST19
+menuInput issuer ISS09
+button save
+sleep 2
+find textH1 View Equity
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu instruments
+form instrument
+textInput short INST19
+menuInput state Ready
+button search
+sleep 5
+tableClick short INST19
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test New Instrument 20
+description New Instrument 20 equity
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name Instrument 20
+textInput short INST20
+textInput isin  INST20
+menuInput issuer ISS10
+button save
+sleep 2
+find textH1 View Equity
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu instruments
+form instrument
+textInput short INST20
+menuInput state Ready
+button search
+sleep 5
+tableClick short INST20
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout

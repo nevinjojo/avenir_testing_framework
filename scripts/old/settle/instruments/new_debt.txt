@@ -1,0 +1,19 @@
+# to test the new debt feature of the system
+
+test New Debt 1.1
+description This test Makes a new debt instrument
+goto dev
+login dev_user1 dev_pass1
+
+menu instruments
+button new debt
+form admInstrument
+menuInput category "Fixed Rate" Bond
+textInput name debt name
+textInput short debt short
+textInput isin  debt isin
+textInput golive 20/20/20
+button save
+sleep 2
+find button approve
+expect pass

@@ -1,0 +1,474 @@
+test new issuer 01
+description creating a new issuer
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name Issuer A
+textInput short ISSUER1
+menuInput country New Zealand
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part ISSUER1
+tableClick issuer ISSUER1
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+
+test new issuer 02
+description creating a new issuer
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name Issuer B
+textInput short ISSUER2
+menuInput country New Zealand
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part ISSUER2
+tableClick issuer ISSUER2
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+
+test new issuer 03
+description creating a new issuer
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name Issuer C
+textInput short ISSUER3
+menuInput country New Zealand
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part ISSUER3
+tableClick issuer ISSUER3
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+
+test new issuer 04
+description creating a new issuer
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name Issuer D
+textInput short ISSUER4
+menuInput country New Zealand
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part ISSUER4
+tableClick issuer ISSUER4
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+
+test new issuer 05
+description creating a new issuer
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name Issuer E
+textInput short ISSUER5
+menuInput country New Zealand
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part ISSUER5
+tableClick issuer ISSUER5
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+
+test new issuer 06
+description creating a new issuer
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name Issuer F
+textInput short ISSUER6
+menuInput country New Zealand
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part ISSUER6
+tableClick issuer ISSUER6
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+
+test new issuer 07
+description creating a new issuer
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name Issuer G
+textInput short ISSUER7
+menuInput country New Zealand
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part ISSUER7
+tableClick issuer ISSUER7
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+
+test new issuer 08
+description creating a new issuer
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name Issuer H
+textInput short ISSUER8
+menuInput country New Zealand
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part ISSUER8
+tableClick issuer ISSUER8
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+
+test new issuer 09
+description creating a new issuer
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name Issuer I
+textInput short ISSUER9
+menuInput country New Zealand
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part ISSUER9
+tableClick issuer ISSUER9
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test new issuer 10
+description leaving inputs blank
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name
+textInput short
+menuInput country New Zealand
+sleep 5
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+
+test new issuer 11
+description creating the same issuer twice
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name Issuer 11
+textInput short N-ISSUER11
+menuInput country New Zealand
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part N-ISSUER11
+tableClick issuer N-ISSUER11
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name Issuer 11
+textInput short N-ISSUER11
+menuInput country New Zealand
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part N-ISSUER11
+tableClick issuer N-ISSUER11
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+
+test new issuer 12
+description leaving country input blank
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name Issuer 12
+textInput short N-ISSUER12
+menuInput country
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part N-ISSUER12
+tableClick issuer N-ISSUER12
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+
+test new issuer 13
+description using symbols in inputs 
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name *&^%$#
+textInput short !@#$%^
+menuInput country New Zealand
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part *&^%$#
+tableClick issuer !@#$%^
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test new issuer 14
+description leaving search input blank
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name Issuer 14
+textInput short N-ISSUER14
+menuInput country New Zealand
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part 
+tableClick issuer N-ISSUER14
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test new issuer 15
+description using code in name input
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name <p id="i"></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById("i").innerHTML=d.toLocaleTimeString();}</script>
+textInput short NISSUER15
+menuInput country New Zealand
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part NISSUER15
+tableClick issuer NISSUER15
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test new issuer 16
+description using html code in short input
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new 
+form admOrg
+textInput name Issuer 16
+textInput short P<body onload="alert('Hello');"/>
+menuInput country United Kingdom
+button save 
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part P<body onload="alert('Hello');"/>
+tableClick issuer P<body onload="alert('Hello');"/>
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout

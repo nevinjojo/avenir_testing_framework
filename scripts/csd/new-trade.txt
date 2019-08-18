@@ -1,0 +1,138 @@
+test new trade 01
+description creating a new trade 01
+goto csd.com
+login csd_user1 csd_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART1
+select2Input buyAccountStr PART2
+select2Input instrumentStr INST1
+textInput quantity 1500
+textInput price 1000
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new trade 02
+description creating a new trade 02
+goto csd.com
+login csd_user1 csd_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART2
+select2Input buyAccountStr PART3
+select2Input instrumentStr INST2
+textInput quantity 1500
+textInput price 1000
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new trade 03
+description creating a new trade 03
+goto csd.com
+login csd_user1 csd_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART3
+select2Input buyAccountStr PART4
+select2Input instrumentStr INST3
+textInput quantity 1500
+textInput price 1000
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new trade 04
+description creating a new trade 04
+goto csd.com
+login csd_user1 csd_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART4
+select2Input buyAccountStr PART1
+select2Input instrumentStr INST4
+textInput quantity 1500
+textInput price 1000
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new trade 05
+description using accounts that don't exist
+goto csd.com
+login csd_user1 csd_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr testest1
+select2Input buyAccountStr failtest1
+select2Input instrumentStr INST1
+textInput quantity 100
+textInput price 1000
+button save
+sleep 2
+expect pass
+logout
+
+test new trade 06
+description using negative price number
+goto csd.com
+login csd_user1 csd_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART4
+select2Input buyAccountStr PART2
+select2Input instrumentStr INST6
+textInput quantity 150
+textInput price -4234
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new trade 07
+description using negative quantity number
+goto csd.com
+login csd_user1 csd_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART2
+select2Input buyAccountStr PART3
+select2Input instrumentStr INST1
+textInput quantity -233
+textInput price 100
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+

@@ -1,0 +1,48 @@
+test Edit Instrument Details 01
+description Edit Instrument Details 01 equity
+goto testreg
+login testreg_user1 testreg_pass1
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name Avocado Toast
+textInput short AVO2
+textInput isin AVO 000222
+textInput ticker AVO2
+menuInput issuer ISS02
+button save
+sleep 2
+find textH1 View Equity
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu instruments
+form instrument
+textInput short AVO2
+menuInput state Draft
+button search
+tableClick short AVO2
+find textH1 View Equity
+button edit
+form admInstrument
+menuInput category Ordinary Share
+textInput name Avo on Toast
+textInput short AV02
+textInput ticker AV02
+menuInput issuer NISSUER15
+button save
+sleep 2
+form instrument
+textInput short AV02
+menuInput state Draft
+button search
+tableClick short AV02
+find textH1 View Equity
+button approve
+expect pass
+logout
+
+

@@ -1,0 +1,361 @@
+test New Bid Order Test 01
+description using symbols in trader input
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-buy-TEEQ
+sleep 2
+window 2
+form usrOrderBuy
+menuInput trader *&^%$#!#$%
+menuInput orderType Limit
+checkerInput orderValid_2
+textInput quantity 100
+textInput price 250
+find textH1 New Buy Order
+sleep 3
+button save
+sleep 4
+button confirm
+sleep 3
+window 1
+find textH1 Order Book
+sleep 2
+expect pass
+logout
+
+test New Bid Order Test 02
+description using symbols in order type input
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-buy-TEEQ
+sleep 2
+window 2
+form usrOrderBuy
+menuInput trader Imhotep Trading Solutions
+menuInput orderType @#@#%@*$@
+checkerInput orderValid_2
+textInput quantity 200
+textInput price 350
+find textH1 New Buy Order
+sleep 3
+button save
+sleep 4
+button confirm
+sleep 3
+window 1
+find textH1 Order Book
+sleep 2 
+expect pass
+logout
+
+test New Bid Order Test 03
+description using symbols in quantity input
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-buy-TEEQ
+sleep 2
+window 2
+form usrOrderBuy
+menuInput trader Imhotep Trading Solutions
+menuInput orderType Limit
+checkerInput orderValid_2
+textInput quantity *&^%$#@#$%
+textInput price 450
+find textH1 New Buy Order
+sleep 3
+button save
+sleep 4
+button confirm
+sleep 3
+window 1
+find textH1 Order Book
+sleep 2
+expect pass
+logout
+
+test New Bid Order Test 04
+description using symbols in price input
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-buy-TEEQ
+sleep 2
+window 2
+form usrOrderBuy
+menuInput trader Imhotep Trading Solutions
+menuInput orderType Limit
+checkerInput orderValid_2
+textInput quantity 400
+textInput price #@$(@&#$
+find textH1 New Buy Order
+sleep 3
+button save
+sleep 4
+button confirm
+sleep 3
+window 1
+find textH1 Order Book
+sleep 2
+expect pass
+logout
+
+test New Bid Order Test 05
+description using symbols in all inputs
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-buy-TEEQ
+sleep 2
+window 2
+form usrOrderBuy
+menuInput trader *@!$&(@$
+menuInput orderType #(%*@#@#!
+checkerInput orderValid_!@#(*!@#
+textInput quantity $@@#$%@
+textInput price #)@$
+find textH1 New Buy Order
+sleep 3
+button save
+sleep 4
+button confirm
+sleep 3
+window 1
+find textH1 Order Book
+sleep 2
+expect pass
+logout
+
+test New Bid Order Test 06
+description leaving trader input blank
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-buy-TEEQ
+sleep 2
+window 2
+form usrOrderBuy
+menuInput trader
+menuInput orderType Limit
+checkerInput orderValid_2
+textInput quantity 600
+textInput price 750
+find textH1 New Buy Order
+sleep 3
+button save
+sleep 4
+button confirm
+sleep 3
+window 1
+find textH1 Order Book
+sleep 2
+expect pass
+logout
+
+test New Bid Order Test 07
+description leaving order type input blank
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-buy-TEEQ
+sleep 2
+window 2
+form usrOrderBuy
+menuInput trader Imhotep Trading Solutions
+menuInput orderType
+checkerInput orderValid_2
+textInput quantity 700
+textInput price 850
+find textH1 New Buy Order
+sleep 3
+button save
+sleep 4
+button confirm
+sleep 3
+window 1
+find textH1 Order Book sleep 2
+expect pass
+logout
+
+test New Bid Order Test 08
+description leaving validity input blank
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-buy-TEEQ
+sleep 2
+window 2
+form usrOrderBuy
+menuInput trader Imhotep Trading Solutions
+menuInput orderType Limit
+checkerInput orderValid
+textInput quantity 800
+textInput price 950
+find textH1 New Sell Order
+sleep 3
+button save
+sleep 4
+button confirm
+sleep 3
+window 1
+find textH1 Order Book
+sleep 2
+expect pass
+logout
+
+test New Bid Order Test 09
+description leaving quantity input blank
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-buy-TEEQ
+sleep 2
+window 2
+form usrOrderBuy
+menuInput trader Imhotep Trading Solutions
+menuInput orderType Limit
+checkerInput orderValid_2
+textInput quantity
+textInput price 1500
+find textH1 New Buy Order
+sleep 3
+button save
+sleep 4
+button confirm
+sleep 3
+window 1
+find textH1 Order Book
+sleep 2
+expect pass
+logout
+
+test New Bid Order Test 10
+description leaving price input blank
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-buy-TEEQ
+sleep 2
+window 2
+form usrOrderBuy
+menuInput trade Imhotep Trading Solutions
+menuInput orderType Limit
+checkerInput orderValid
+textInput quantity 1000
+textInput price
+find textH1 New Sell Order
+sleep 3
+button save
+sleep 4
+button confirm 
+sleep 3
+window 1
+find textH1 Order Book
+sleep 2
+expect pass
+logout
+
+test New Bid Order Test 11
+description leaving all inputs blank
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-sell-TEEQ
+sleep 2
+window 2
+form usrOrderSell
+menuInput trader
+menuInput orderType
+checkerInput orderValid
+textInput quantity
+textInput price
+find textH1 New Sell Order
+sleep 3
+button save
+sleep 4
+button confirm
+sleep 3
+window 1
+find textH1 Order Book
+sleep 2
+expect pass
+logout
+
+test New Bid Order Test 12
+descriotion repeating actions multiple times in a row
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-buy-TEEQ
+button order-buy-TEEQ
+button order-buy-TEEQ
+sleep 2
+window 2
+form usrOrderSell
+menuInput trader Imhotep Trading Solutions
+menuInput trader Imhotep Trading Solutions
+menuInput orderType Limit
+checkerInput orderValid_2
+textInput quantity 100
+textInput price 100
+textInput price 100
+find textH1 New Sell Order
+button save
+button save
+button save
+sleep 3
+button confirm
+button confirm
+button confirm
+sleep 3
+window 1
+expect pass
+logout
+
+test New Bid Order Test 13
+description using a negative number in quantity input
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-buy-TEEQ
+sleep 2
+window 2
+form usrOrderBuy
+menuInput trader Imhotep Trading Solutions
+menuInput orderType Limit
+checkerInput orderValid_2
+textInput quantity -130
+textInput price 300
+find textH1 New Buy Order
+button save
+sleep 3
+button confirm
+sleep 3
+window 1
+expect pass
+logout
+
+test New Bid Order Test 14
+description using a negative number in price input
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-buy0TEEQ
+sleep 2
+window 2
+form usrOrderBuy
+menuInput trader Imhotep Trading Solutions
+menuInput orderType Limit
+checkerInput orderValid_2
+textInput quantity 140
+textInput price -400
+find textH1 New Buy Order
+button save
+sleep 3
+button confirm
+sleep 3
+window 1
+expect pass
+logout

@@ -1,0 +1,319 @@
+test New Holder 01
+description New Holder 01 company
+goto
+login
+menu Holders
+button new company
+form admOrg
+textInput name COMP01
+textInput address1 ADDRRESS01
+textInput email email01@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto
+login
+menu Holders
+search s_part saveID
+search s_stat All
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test New Holder 02
+description New Holder 02 company
+goto
+login
+menu Holders
+button new company
+form admOrg
+textInput name COMP02
+textInput address1 ADDRRESS02
+textInput email email02@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto
+login
+menu Holders
+search s_part saveID
+search s_stat All
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test New Holder 03
+description New Holder 03 company
+goto
+login
+menu Holders
+button new company
+form admOrg
+textInput name COMP03
+textInput address1 ADDRRESS03
+textInput email email03@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto
+login
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test New Holder 04
+description New Holder 04 company
+goto
+login
+menu Holders
+button new company
+form admOrg
+textInput name COMP04
+textInput address1 ADDRRESS04
+textInput email email04@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto
+login
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test New Holder 05
+description New Holder 05 company
+goto
+login
+menu Holders
+button new company
+form admOrg
+textInput name COMP05
+textInput address1 ADDRRESS05
+textInput email email05@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto
+login
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test New Holder 06
+description New Holder 06 company
+goto
+login
+menu Holders
+button new company
+form admOrg
+textInput name COMP06
+textInput address1 ADDRRESS06
+textInput email email06@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto
+login
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test New Holder 07
+description New Holder 07 company
+goto
+login
+menu Holders
+button new company
+form admOrg
+textInput name COMP07
+textInput address1 ADDRRESS06
+textInput email email07@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto
+login
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test New Holder 08
+description New Holder 08 company
+goto
+login
+menu Holders
+button new company
+form admOrg
+textInput name COMP08
+textInput address1 ADDRRESS08
+textInput email email08@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto
+login
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test New Holder 09
+description New Holder 09 company
+goto
+login
+menu Holders
+button new company
+form admOrg
+textInput name COMP09
+textInput address1 ADDRRESS09
+textInput email email09@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto
+login
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test New Holder 10
+description New Holder 10 company
+goto
+login
+menu Holders
+button new company
+form admOrg
+textInput name COMP10
+textInput address1 ADDRRESS10
+textInput email email10@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto
+login
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout

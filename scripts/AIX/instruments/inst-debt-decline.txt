@@ -1,0 +1,180 @@
+test New Instrument 01 Debt
+description deleting debt instrument draft
+goto AIX
+login aix_user1 aix_pass1
+date
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name Instrument Decline 01
+textInput short INSTD1
+textInput isin INSTD1
+menuInput currency USD
+menuInput issuer ISS01
+textInput golive date
+textInput ticker INSTD1
+button save
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu instruments
+form instrument
+textInput short INSTD1
+menuInput state Draft
+button search
+sleep 5
+tableClick short INSTD1
+button delete
+find textH1 View Instruments
+expect pass
+logout
+
+test New Instrument 02 Debt
+description deleting debt instrument draft
+goto AIX
+login aix_user1 aix_pass1
+date
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name Instrument Decline 02
+textInput short INSTD2
+textInput isin INSTD2
+menuInput currency USD
+menuInput issuer ISS02
+textInput golive date
+textInput ticker INSTD2
+button save
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu instruments
+form instrument
+textInput short INSTD2
+menuInput state Draft
+button search
+sleep 5
+tableClick short INSTD2
+button delete
+find textH1 View Instruments
+expect pass
+logout
+
+test New Instrument 03 Debt
+description deleting debt instrument draft
+goto AIX
+login aix_user1 aix_pass1
+date
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name Instrument Decline 03
+textInput short INSTD3
+textInput isin INSTD3
+menuInput currency USD
+menuInput issuer ISS03
+textInput golive date
+textInput ticker INSTD3
+button save
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu instruments
+form instrument
+textInput short INSTD3
+menuInput state Draft
+button search
+sleep 5
+tableClick short INSTD3
+button delete
+find textH1 View Instruments
+expect pass
+logout
+
+test New Instrument 04 Debt
+description deleting debt instrument draft
+goto AIX
+login aix_user1 aix_pass1
+date
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name Instrument Decline 04
+textInput short INSTD4
+textInput isin INSTD4
+menuInput currency USD
+menuInput issuer ISS04
+textInput golive date
+textInput ticker INSTD4
+button save
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu instruments
+form instrument
+textInput short INSTD4
+menuInput state Draft
+button search
+sleep 5
+tableClick short INSTD4
+button delete
+find textH1 View Instruments
+expect pass
+logout
+
+test New Instrument 05 Debt
+description deleting debt instrument draft
+goto AIX
+login aix_user1 aix_pass1
+date
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name Instrument Decline 05
+textInput short INSTD5
+textInput isin INSTD5
+menuInput currency USD
+menuInput issuer ISS05
+textInput golive date
+textInput ticker INSTD5
+button save
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu instruments
+form instrument
+textInput short INSTD5
+menuInput state Draft
+button search
+sleep 5
+tableClick short INSTD5
+button delete
+find textH1 View Instruments
+expect pass
+logout
+

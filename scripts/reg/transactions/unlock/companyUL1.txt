@@ -1,0 +1,67 @@
+test unlock 01 transaction company
+description unlock 01 transaction company
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new unlock
+form admTrans
+textInput due date
+select2Input toAccountStr INVST01
+select2Input instrumentStr INST01
+textInput quantity 50
+textInput tag test 1
+textInput toReference transaction unlock 01
+button save
+find textH1 View Unlock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST01
+search s_stat Ready
+tableWait
+tableClick Code INST01
+button approve
+find textH1 View Unlock
+sleep 2
+expect pass
+logout
+
+test unlock 01 transaction company
+description unlock 01 transaction company
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new unlock
+form admTrans
+textInput due date
+select2Input toAccountStr INVST01
+select2Input instrumentStr INST01
+textInput quantity 50
+textInput tag test 1
+textInput toReference transaction unlock 01
+button save
+find textH1 View Unlock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST01
+search s_stat Ready
+tableWait
+tableClick Code INST01
+button approve
+find textH1 View Unlock
+sleep 2
+expect pass
+logout

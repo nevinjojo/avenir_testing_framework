@@ -1,0 +1,112 @@
+test Broker Transfer Transaction 01
+description Broker Transfer Transaction 01
+goto AIX
+login P1_BRKR1_user P1_BRKR1_pass 
+date
+menu transactions
+clickby class btn btn-primary
+form usrTrans
+textInput due date
+select2Input frAccountStr PART01-1
+sleep 4
+select2Input toAccountStr PART01-2
+select2Input instrumentStr USD
+sleep 2
+textInput amount 500
+textInput frReference Transfer 01
+textInput toReference Transfer 01
+button save
+find textH1 View Transaction
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto AIX
+login P1_BRKR2_user P1_BRKR2_pass
+menu transactions
+search s_inst USD
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Transaction
+sleep 2
+expect pass
+logout
+
+test Broker Transfer Transaction 02
+description Broker Transfer Transaction 02
+goto AIX
+login P1_BRKR1_user P1_BRKR1_pass
+date
+menu transactions
+clickby class btn btn-primary
+form usrTrans
+textInput due date
+select2Input frAccountStr PART01-2
+sleep 4
+select2Input toAccountStr PART01-3
+select2Input instrumentStr USD
+sleep 2
+textInput amount 250
+textInput frReference Transfer 02
+textInput toReference Transfer 02
+button save
+find textH1 View Transaction
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto AIX
+login P1_BRKR2_user P1_BRKR2_pass
+date
+menu transactions
+search s_inst USD
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Transaction
+sleep 2
+expect pass
+logout
+
+test Broker Transfer Transaction 03
+description Broker Transfer Transaction 03
+goto AIX
+login P1_BRKR1_user P1_BRKR1_pass
+date
+menu transactions
+clickby class btn btn-primary
+form usrTrans
+textInput due date
+select2Input frAccountStr PART01-3
+sleep 4
+select2Input toAccountStr PART01-1
+select2Input instrumentStr USD
+sleep 2
+textInput amount 100
+textInput frReference Transfer 03
+textInput toReference Transfer 03
+button save
+find textH1 View Transaction
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto AIX
+login P1_BRKR2_user P1_BRKR2_pass
+date
+menu transactions
+search s_inst USD
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Transaction
+sleep 2
+expect pass
+logout

@@ -1,0 +1,108 @@
+# single investment - User 1100 
+
+# Edit User Details
+
+test User1100
+description single investment
+goto settle_web
+login settleweb_user1 settleweb_pass1
+menu My Details
+clickby class edit-detail
+form userUser
+textInput phone +6447203330
+textInput mobile +441830531802
+textInput email srt0@avenir-technology.com
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+# Edit Password 
+
+goto settle_web
+login settleweb_user1 settleweb_pass1
+menu My Details
+scrollto btn-password
+button password
+form userPassword
+textInput _old_password Pa55word!
+textInput _new_password_enter_password Test123!
+textInput _new_password_confirm_password Test123!
+button save
+sleep 10
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+goto settle_web
+login user1100 Test123!
+menu My Details
+scrollto btn-password
+button password
+form userPassword
+textInput _old_password Test123!
+textInput _new_password_enter_password Pa55word!
+textInput _new_password_confirm_password Pa55word!
+button save
+sleep 10
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+# Update Investor Details
+
+test Update ID 000025974
+description update investor details
+goto settle_web
+login settleweb_user1 settleweb_pass1
+clickby class fas fa-id-card fa-2x
+clickby id hldr-link-000025974
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srt@avenir-technology.com
+textInput phone +4481247199
+textInput mobile +447590196372
+textInput address1 20 Hope Street
+textInput postcode 5018
+menuInput country New Zealand
+textInput bankaccount_sort_code 0423760 
+textInput bankaccount_account 43384030
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+# Balance Activity / Download Certificate
+
+goto settle_web
+login settleweb_user1 settleweb_pass1
+clickby class link-btn alt
+sleep 5
+clickby text Balance activity
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+# Contact
+
+goto settle_web
+login settleweb_user1 settleweb_pass1
+menu Contact Us

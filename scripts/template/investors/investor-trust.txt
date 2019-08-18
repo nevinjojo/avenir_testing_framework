@@ -1,0 +1,349 @@
+test New Investor 01
+description New Investor 01 trust
+goto
+login
+menu Investors
+button new trust
+form admOrg
+textInput name TRUST01
+textInput address1 ADDRESS01
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email01@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto
+login
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test New Investor 02
+description New Investor 02 trust
+goto
+login
+menu Investors
+button new trust
+form admOrg
+textInput name TRUST02
+textInput address1 ADDRESS02
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email02@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto
+login
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test New Investor 03
+description New Investor 03 trust
+goto
+login
+menu Investors
+button new trust
+form admOrg
+textInput name TRUST03
+textInput address1 ADDRESS03
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email03@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto
+login 
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test New Investor 04
+description New Investor 04 trust
+goto
+login 
+menu Investors
+button new trust
+form admOrg
+textInput name TRUST04
+textInput address1 ADDRESS04
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email04@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto
+login
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test New Investor 05
+description New Investor 05 trust
+goto
+login 
+menu Investors
+button new trust
+form admOrg
+textInput name TRUST05
+textInput address1 ADDRESS05
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email05@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto
+login
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test New Investor 06
+description New Investor 06 trust
+goto
+login
+menu Investors
+button new trust
+form admOrg
+textInput name TRUST06
+textInput address1 ADDRESS06
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email06@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto
+login
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test New Investor 07
+description New Investor 07 trust
+goto
+login 
+menu Investors
+button new trust
+form admOrg
+textInput name TRUST07
+textInput address1 ADDRESS07
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email07@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto
+login 
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test New Investor 08
+description New Investor 08 trust
+goto
+login
+menu Investors
+button new trust
+form admOrg
+textInput name TRUST08
+textInput address1 ADDRESS08
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email08@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto
+login 
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test New Investor 09
+description New Investor 09 trust
+goto
+login
+menu Investors
+button new trust
+form admOrg
+textInput name TRUST09
+textInput address1 ADDRESS09
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email09@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto
+login
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test New Investor 10
+description New Investor 10 trust
+goto
+login
+menu Investors
+button new trust
+form admOrg
+textInput name TRUST10
+textInput address1 ADDRESS10
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email10@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto
+login
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout

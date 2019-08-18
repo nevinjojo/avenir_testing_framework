@@ -1,0 +1,109 @@
+# should fail
+test Transaction Test 3.1
+description locks / unlocks to a range of tags
+# create 150 to PART03-1
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART03-1
+select2Input instrumentStr INST03
+textInput quantity 150
+textInput toReference Transaction Test 3.1 
+button save
+sleep 2
+find textH1 View Create
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu transactions
+search s_inst INST03
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+# lock 150 - tag 3.1
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr PART03-1
+select2Input instrumentStr INST03
+textInput quantity 150
+textInput tag tag 3.1
+textInput toReference Transaction Test 3.1 
+button save
+find textH1 View Lock
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu transactions
+search s_inst INST03
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+# unlock 150 - tag: idontexist3.1
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+button new unlock 
+form admTrans
+textInput due date
+select2Input toAccountStr PART03-1
+select2Input instrumentStr INST03
+textInput quantity 150
+textInput tag idontexist3.1
+textInput toReference Transaction Test 3.1
+button save
+find textH1 View Unlock
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu transactions
+search s_inst INST03
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Unlock
+sleep 2
+expect pass
+logout
+
+

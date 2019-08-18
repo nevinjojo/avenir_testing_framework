@@ -1,0 +1,185 @@
+test New Debt Instrument 01
+description Debt Instrument 01 - Certificate Download Enabled
+goto Ethex
+login ethex_user1 ethex_pass1
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name Debt-INST01
+textInput short DTINST01
+textInput isin DTINST01
+menuInput currency USD
+checkerInput allowDownload
+menuInput issuer ISS01
+button save
+sleep 2
+find textH1 View Debt
+button approve
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+date
+menu instruments
+form instrument
+textInput short DTINST01
+menuInput state Any
+button search
+sleep 5
+tableClick short DTINST01
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Create
+sleep 4
+form admTrans
+textInput due date
+select2Input toAccountStr INDIV01
+textInput quantity 5,000
+textInput toReference transaction 1
+button save
+find textH1 View Create
+sleep 2
+button ready
+sleep 2
+expect pass
+logout
+
+goto Ethex
+login ethex_user1 ethex_pass1
+menu transactions
+search s_inst DTINST01
+search s_stat Ready
+sleep 4
+tableClick Code DTINST01
+button approve
+find textH1 View Create
+menu instruments
+form instrument
+textInput short DTINST01
+menuInput state Active
+button search
+sleep 4
+tableClick short DTINST01
+sleep 3
+clickby class btn btn-default dropdown-toggle
+clickby xpath /html/body/div/div[2]/div[4]/div/div/div[2]/ul/li[1]/a
+sleep 2 
+clickby xpath /html/body/div/div[2]/div[4]/div/a
+sleep 6
+find textH1 Transactions
+sleep 2
+menu instruments
+form instrument
+textInput short DTINST01
+menuInput state Active
+button search
+sleep 4
+tableClick short DTINST01
+sleep 3
+clickby class btn btn-default dropdown-toggle
+clickby text Holdings Report
+sleep 2
+clickby xpath /html/body/div/div[2]/div[4]/div/a
+sleep 6
+clickby text INDIV01
+sleep 3
+clickby id btn-cert
+sleep 4
+find textH1 Account Balances
+expect pass
+logout
+
+test New Debt Instrument 02
+description Debt Instrument 02 - Certificate Download Enabled
+goto Ethex
+login ethex_user1 ethex_pass1
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name Debt-INST02
+textInput short DTINST02
+textInput isin DTINST02
+menuInput currency USD
+checkerInput allowDownload
+menuInput issuer ISS02
+button save
+sleep 2
+find textH1 View Debt
+button approve
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+date
+menu instruments
+form instrument
+textInput short DTINST02
+menuInput state Any
+button search
+sleep 5
+tableClick short DTINST02
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Create
+sleep 4
+form admTrans
+textInput due date
+select2Input toAccountStr INDIV02
+textInput quantity 5,000
+textInput toReference transaction 2
+button save
+find textH1 View Create
+sleep 2
+button ready
+sleep 2
+expect pass
+logout
+
+goto Ethex
+login ethex_user1 ethex_pass1
+menu transactions
+search s_inst DTINST02
+search s_stat Ready
+sleep 4
+tableClick Code DTINST02
+button approve
+find textH1 View Create
+menu instruments
+form instrument
+textInput short DTINST02
+menuInput state Active
+button search
+sleep 4
+tableClick short DTINST02
+sleep 3
+clickby class btn btn-default dropdown-toggle
+clickby xpath /html/body/div/div[2]/div[4]/div/div/div[2]/ul/li[1]/a
+sleep 2 
+clickby xpath /html/body/div/div[2]/div[4]/div/a
+sleep 6
+find textH1 Transactions
+sleep 2
+menu instruments
+form instrument
+textInput short DTINST02
+menuInput state Active
+button search
+sleep 4
+tableClick short DTINST02
+sleep 3
+clickby class btn btn-default dropdown-toggle
+clickby text Holdings Report
+sleep 2
+clickby xpath /html/body/div/div[2]/div[4]/div/a
+sleep 6
+clickby text INDIV02
+sleep 3
+clickby id btn-cert
+sleep 4
+find textH1 Account Balances
+expect pass
+logout

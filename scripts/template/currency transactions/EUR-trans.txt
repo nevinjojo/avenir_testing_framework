@@ -1,0 +1,179 @@
+test currency transaction 01 EUR
+description create - participants 01
+goto
+login
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART01-1
+select2Input instrumentStr EUR
+sleep 3
+textInput amount 900,000
+textInput toReference currency transaction 01
+button save
+find textH1 View Create
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto
+login
+menu transactions
+search s_inst EUR
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction 02 EUR
+description create - participants 02
+goto
+login
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART03-1
+select2Input instrumentStr EUR
+sleep 3
+textInput amount 13,740,000
+textInput toReference currency transaction 02
+button save
+find textH1 View Create
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto
+login
+menu transactions
+search s_inst EUR
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction 03 EUR
+description create - participants 03
+goto
+login
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART05-1
+select2Input instrumentStr EUR
+sleep 3
+textInput amount 15,600,000
+textInput toReference currency transaction 03
+button save
+find textH1 View Create
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto
+login
+menu transactions
+search s_inst EUR
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction 04 EUR
+description create - participants 04
+goto
+login
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART07-1
+select2Input instrumentStr EUR
+sleep 3
+textInput amount 2,234,160
+textInput toReference currency transaction 04
+button save
+find textH1 View Create
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto
+login
+menu transactions
+search s_inst EUR
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction 05
+description create - participants 05
+goto
+login
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART09-1
+select2Input instrumentStr EUR
+sleep 3
+textInput amount 2,797,500
+textInput toReference currency transaction 05
+button save
+find textH1 View Create
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto
+login
+menu transactions
+search s_inst EUR
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout

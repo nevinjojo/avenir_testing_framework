@@ -1,0 +1,71 @@
+test Delete Ready for Approval - Investor
+description delete draft investors
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_stat Ready
+button search
+sleep 5
+clickby text New Zealand
+sleep 2
+button decline
+sleep 2
+find textH1 Manage Investors
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_stat Ready
+button search
+sleep 5
+clickby text New Zealand
+sleep 2
+button decline
+sleep 2
+find textH1 Manage Investors
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_stat Ready
+button search
+sleep 5
+clickby text New Zealand
+sleep 2
+button decline
+sleep 2
+find textH1 Manage Investors
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_stat Ready
+button search
+sleep 5
+clickby text United States
+sleep 2
+button decline
+sleep 2
+find textH1 Manage Investors
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_stat Ready
+button search
+sleep 5
+clickby text United States
+sleep 2
+button decline
+sleep 2
+find textH1 Manage Investors
+expect pass
+logout

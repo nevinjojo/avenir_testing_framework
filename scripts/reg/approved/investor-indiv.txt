@@ -1,0 +1,400 @@
+test New Investor 01
+description New Investor 01 individual
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+button new individual
+form admOrg
+textInput name INDIV01
+textInput last LAST01
+textInput suffix SUFFIX01
+textInput address1 ADDRESS01
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email01@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV654328
+menuInput idCountry New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass	
+logout
+
+test New Investor 02
+description New Investor 02 individual
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+button new individual
+form admOrg
+textInput name INDIV02
+textInput last LAST02
+textInput suffix SUFFIX02
+textInput address1 ADDRESS02
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email02@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV654328
+menuInput idCountry New Zealand
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass	
+logout
+
+test New Investor 03
+description New Investor 03 individual
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+button new individual
+form admOrg
+textInput name INDIV03
+textInput last LAST03
+textInput suffix SUFFIX03
+textInput address1 ADDRESS03
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email03@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV654328
+menuInput idCountry New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass	
+logout
+
+test New Investor 04
+description New Investor 04 individual
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+button new individual
+form admOrg
+textInput name INDIV04
+textInput last LAST04
+textInput suffix SUFFIX04
+textInput address1 ADDRESS04
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email04@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV654328
+menuInput idCountry New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass	
+logout
+
+test New Investor 05
+description New Investor 05 individual
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+button new individual
+form admOrg
+textInput name INDIV05
+textInput last LAST05
+textInput suffix SUFFIX05
+textInput address1 ADDRESS05
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email05@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV654328
+menuInput idCountry New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass	
+logout
+
+test New Investor 06
+description New Investor 06 individual
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+button new individual
+form admOrg
+textInput name INDIV06
+textInput last LAST06
+textInput suffix SUFFIX06
+textInput address1 ADDRESS06
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email06@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV654328
+menuInput idCountry New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass	
+logout
+
+test New Investor 07
+description New Investor 07 individual
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+button new individual
+form admOrg
+textInput name INDIV07
+textInput last LAST07
+textInput suffix SUFFIX07
+textInput address1 ADDRESS07
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email07@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV654328
+menuInput idCountry New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass	
+logout
+
+test New Investor 08
+description New Investor 08 individual
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+button new individual
+form admOrg
+textInput name INDIV08
+textInput last LAST08
+textInput suffix SUFFIX08
+textInput address1 ADDRESS08
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email08@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV654328
+menuInput idCountry New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass	
+logout
+
+test New Investor 09
+description New Investor 09 individual
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+button new individual
+form admOrg
+textInput name INDIV09
+textInput last LAST09
+textInput suffix SUFFIX09
+textInput address1 ADDRESS09
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email09@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV654328
+menuInput idCountry New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass	
+logout
+
+test New Investor 10
+description New Investor 10 individual
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+button new individual
+form admOrg
+textInput name INDIV10
+textInput last LAST10
+textInput suffix SUFFIX10
+textInput address1 ADDRESS10
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email10@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV654328
+menuInput idCountry New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass	
+logout

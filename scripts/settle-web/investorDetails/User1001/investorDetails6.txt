@@ -1,0 +1,28 @@
+# Update ID 000022842
+
+test Update ID 000022842
+description update investor details
+goto settle_web
+login settleweb_user2 settleweb_pass2
+clickby class fas fa-id-card fa-2x
+scrollto hldr-link-000022842
+clickby id hldr-link-000022842
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srt@avenir-technology.com
+textInput phone +0498708880
+textInput mobile +4225621333
+textInput address1 12 KING ST
+textInput address2 WELLINGTON
+textInput postcode EL0 BC0
+menuInput country Kenya
+textInput bankaccount_sort_code 0893111
+textInput bankaccount_account 83736721
+button save
+sleep 3
+button confirm
+find textH1 Update Investor Details
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out

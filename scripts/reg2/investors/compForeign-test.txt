@@ -1,0 +1,950 @@
+test Company Foreign Investor Test 01
+description using symbols in name input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-for
+form admOrg
+textInput name !@#$%^&*&^%$#
+textInput address1 3 Market Lane
+textInput postcode 6021
+textInput phone 04 897 0800
+menuInput country New Zealand
+textInput idNumber 39427482
+menuInput idCountry United States
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 02
+description using symbols in address input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-for
+form admOrg
+textInput name CF TEST02
+textInput address1 (*&^%$#@#$%
+textInput postcode 5028
+textInput phone 04 897 0800
+menuInput country New Zealand
+textInput idNumber 209342083
+menuInput idCountry United States
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 03
+description using symbols in postcode input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-for
+form admOrg
+textInput name CF TEST03
+textInput address1 3 Market Lane
+textInput postcode &%$#@
+textInput phone 04 0800 838383
+menuInput country New Zealand
+textInput idNumber 342948209
+menuInput idCountry United States
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 04
+description using symbols in phone input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-for
+form admOrg
+textInput name CF TEST04
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone 04 0800 838383
+menuInput country New Zealand
+textInput idNumber 1953685307
+menuInput idCountry United States
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 05
+description using symbols in country input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-for
+form admOrg
+textInput name CF TEST05
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone 04 897 0800
+menuInput country New Zealand
+textInput idNumber 930248234
+menuInput idCountry United States
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 06
+description using symbols in company number input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-for
+form admOrg
+textInput name CF TEST06
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone 04 897 0800
+menuInput country New Zealand
+textInput idNumber (&%@%^%$&^!
+menuInput idCountry United States
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 07
+description using symbols in ID country input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-for
+form admOrg
+textInput name CF TEST07
+textInput address1 3 Market Lane
+textInput postcode 5028
+menuInput country New Zealand
+textInput idNumber 239048200
+menuInput idCountry ^@#$^#%@#$&
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 08
+description leaving name input blank
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-for
+form admOrg
+textInput name 
+textInput address1 3 Market Lane
+textInput postcode 5028
+menuInput country New Zealand
+textInput idNumber 138249723294
+menuInput idCountry United States
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 09
+description leaving address input blank
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-for
+form admOrg
+textInput name CF TEST09
+textInput address1
+textInput postcode 5028
+menuInput country New Zealand
+textInput idNumber 92348293024
+menuInput idCountry United States
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 10
+description leaving country input blank
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-for
+form admOrg
+textInput name CF TEST10
+textInput address1 3 Market Lane
+textInput postcode 5028
+menuInput country
+textInput idNumber 249032482
+menuInput idCountry United States
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2 
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 11
+description leaving company number input blank
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-for
+form admOrg
+textInput name CF TEST11
+textInput address1 3 Market Lane
+textInput postcode 5028
+menuInput country New Zealand
+textInput idNumber 
+menuInput idCountry United Kingdom
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 12
+description leaving id country input blank
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-for
+form admOrg
+textInput name CF TEST12
+textInput address1 3 Market Lane 
+textInput postcode 5028
+menuInput country New Zealand
+textInput idNumber 23490823094
+menuInput idCountry United Kingdom
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat
+Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 13
+description leaving all inputs blank
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby lnk-com-for
+form admOrg
+textInput name
+textInput address1 
+textInput postcode 
+menuInput country
+textInput idNumber
+menuInput idCountry
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableCLick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 13
+description using html code in name input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby lnk-com-for
+form admOrg
+textInput name P<body onload=“alert(‘Hello’);“/>
+textInput address1 3 Market Lane
+textInput postcode 5028
+menuInput country New Zealand
+textInput idNumber 23042340234
+menuInput idCountry United States
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 14
+description using html code in address input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby lnk-com-for
+form admOrg
+textInput name CF TEST14
+textInput address1 P<body onload=“alert(‘Hello’);“/>
+textInput postcode 5028
+menuInput country New Zealand
+textInput idNumber 294023842
+menuInput idCountry United States 
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 15
+description using html code in postcode input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby lnk-com-for
+form admOrg
+textInput name CF TEST15
+textInput address1 3 Market Lane
+textInput postcode P<body onload=“alert(‘Hello’);“/>
+menuInput country New Zealand
+textInput idNumber 6756457367
+menuInput idCountry United States
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 16
+description using html code in country input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby lnk-com-for
+form admOrg
+textInput name CF TEST16
+textInput address1 3 Market Lane
+textInput postcode 5028
+menuInput country P<body onload=“alert(‘Hello’);“/>
+textInput idNumber 3256789098
+menuInput idCountry United States
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 17
+description using html code in company number input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby lnk-com-for
+form admOrg
+textInput name CF TEST17
+textInput address1 3 Market Lane
+textInput postcode 3049
+menuInput country New Zealand
+textInput idNumber P<body onload=“alert(‘Hello’);“/>
+menuInput idCountry United States
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 18
+description using html code in ID country input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby lnk-com-for
+form admOrg
+textInput name CF TEST18
+textInput address1 3 Market Lane
+textInput postcode 3940
+menuInput country New Zealand
+textInput idNumber 463798375
+menuInput idCountry United States
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 19
+description using code in name input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby lnk-com-for
+form admOrg
+textInput name <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput address1 3 Market Lane
+texInput postcode 5028
+menuInput country New Zealand
+textInput idNumber 9082342098
+menuInput idCountry United Kingdom
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 20
+description using code in address input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby lnk-com-for
+form admOrg
+textInput name CF TEST20
+textInput address1 <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country New Zealand
+textInput idNumber 2094230498
+menuInput idCountry United Kingdom
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 21
+description using code in postcode input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-for
+form admOrg
+textInput name CF TEST21
+textInput address1 3 Market Lane
+textInput postcode 6021
+textInput phone 04 0800 838383
+menuInput country New Zealand
+textInput idNumber 3049284200
+menuInput idCountry United Kingdom
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 22
+description using code in phone input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-for
+form admOrg
+textInput name CF TEST22
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+menuInput country New Zealand
+textInput idNumber 8972193871
+menuInput idCountry United States
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 23
+description using code in country input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CF TEST23
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone 04 897 0800
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput idNumber 284972492
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 24
+description using code in company number input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-for
+form admOrg
+textInput name CF TEST24
+textInput address1 66 Adelaide Rd
+textInput postcode 6021
+textInput phone 0800 838383
+menuInput country New Zealand
+textInput idNumber <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+menuInput idCountry United States
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Foreign Investor Test 25
+description using code in ID country input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-for
+form admOrg
+textInput name CF TEST25
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone 04 8970800
+menuInput country New Zealand
+textInput idNumber 39402483
+menuInput idCountry <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout

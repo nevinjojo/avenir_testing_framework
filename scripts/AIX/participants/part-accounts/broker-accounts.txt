@@ -1,0 +1,799 @@
+test Creating PART01-2
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART01
+button search
+tableClick short PART01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART01-3
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART01
+button search
+tableClick short PART01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART02-2
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART02
+button search
+tableClick short PART02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART02-3
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART02
+button search
+tableClick short PART02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART03-2
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART03
+button search
+tableClick short PART03
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART03-3
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART03
+button search
+tableClick short PART03
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART04-2
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART04
+button search
+tableClick short PART04
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART04-3
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART04
+button search
+tableClick short PART04
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART05-2
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART05
+button search
+tableClick short PART05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART05-3
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART05
+button search
+tableClick short PART05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART06-2
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART06
+button search
+tableClick short PART06
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART06-3
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART06
+button search
+tableClick short PART06
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART07-2
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART07
+button search
+tableClick short PART07
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART07-3
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART07
+button search
+tableClick short PART07
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART08-2
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART08
+button search
+tableClick short PART08
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART08-3
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART08
+button search
+tableClick short PART08
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART09-2
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART09
+button search
+tableClick short PART09
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART09-3
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART09
+button search
+tableClick short PART09
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART10-2
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART10
+button search
+tableClick short PART10
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART10-3
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART10
+button search
+tableClick short PART10
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART11-2
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART11
+button search
+tableClick short PART11
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART11-3
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART11
+button search
+tableClick short PART11
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART12-2
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART12
+button search
+tableClick short PART12
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART12-3
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART12
+button search
+tableClick short PART12
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART13-2
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART13
+button search
+tableClick short PART13
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART13-3
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART13
+button search
+tableClick short PART13
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART14-2
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART14
+button search
+tableClick short PART14
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART14-3
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART14
+button search
+tableClick short PART14
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART15-2
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART15
+button search
+tableClick short PART15
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART15-3
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART15
+button search
+tableClick short PART15
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART16-2
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART16
+button search
+tableClick short PART16
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART16-3
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART16
+button search
+tableClick short PART16
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART17-2
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART17
+button search
+tableClick short PART17
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART17-3
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART17
+button search
+tableClick short PART17
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART18-2
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART18
+button search
+tableClick short PART18
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART18-3
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART18
+button search
+tableClick short PART18
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART19-2
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART19
+button search
+tableClick short PART19
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART19-3
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART19
+button search
+tableClick short PART19
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART20-2
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART20
+button search
+tableClick short PART20
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART20-3
+description New Participant Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART20
+button search
+tableClick short PART20
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout

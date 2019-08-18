@@ -1,0 +1,339 @@
+test new DCM participant 01
+description creating a new DCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text DCM
+form admOrg
+textInput name DCM 01
+textInput short DCM1
+menuInput country New Zealand
+textInput phone +04 0800 743450
+textInput email DCM1@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part DCM1
+search s_stat Ready
+button search
+tableClick short DCM1
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new DCM participant 02
+description creating a new DCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text DCM
+form admOrg
+textInput name DCM 02
+textInput short DCM2
+menuInput country New Zealand
+textInput phone +04 0800 743450
+textInput email DCM2@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part DCM2
+search s_stat Ready
+button search
+tableClick short DCM2
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new DCM participant 03
+description creating a new DCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text DCM
+form admOrg
+textInput name DCM 03
+textInput short DCM3
+menuInput country New Zealand
+textInput phone +04 0800 743450
+textInput email DCM3@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part DCM3
+search s_stat Ready
+button search
+tableClick short DCM3
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new DCM participant 04
+description creating a new DCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text DCM
+form admOrg
+textInput name DCM 04
+textInput short DCM4
+menuInput country New Zealand
+textInput phone +04 0800 743450
+textInput email DCM4@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part DCM4
+search s_stat Ready
+button search
+tableClick short DCM4
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new DCM participant 05
+description creating a new DCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text DCM
+form admOrg
+textInput name DCM 05
+textInput short DCM5
+menuInput country New Zealand
+textInput phone +04 0800 743450
+textInput email DCM5@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part DCM5
+search s_stat Ready
+button search
+tableClick short DCM5
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new DCM participant 06
+description creating a new DCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text DCM
+form admOrg
+textInput name DCM 06
+textInput short DCM6
+menuInput country New Zealand
+textInput phone +04 0800 743450
+textInput email DCM6@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part DCM6
+search s_stat Ready
+button search
+tableClick short DCM6
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new DCM participant 07
+description creating a new DCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text DCM
+form admOrg
+textInput name DCM 07
+textInput short DCM7
+menuInput country New Zealand
+textInput phone +04 0800 743450
+textInput email DCM7@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part DCM7
+search s_stat Ready
+button search
+tableClick short DCM7
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new DCM participant 08
+description creating a new DCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text DCM
+form admOrg
+textInput name DCM 08
+textInput short DCM8
+menuInput country New Zealand
+textInput phone +04 0800 743450
+textInput email DCM8@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part DCM8
+search s_stat Ready
+button search
+tableClick short DCM8
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new DCM participant 09
+description creating a new DCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text DCM
+form admOrg
+textInput name DCM 09
+textInput short DCM9
+menuInput country New Zealand
+textInput phone +04 0800 743450
+textInput email DCM9@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part DCM9
+search s_stat Ready
+button search
+tableClick short DCM9
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new DCM participant 10
+description creating a new DCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text DCM
+form admOrg
+textInput name DCM 10
+textInput short DCM10
+menuInput country New Zealand
+textInput phone +04 0800 743450
+textInput email DCM10@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part DCM10
+search s_stat Ready
+button search
+tableClick short DCM10
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout

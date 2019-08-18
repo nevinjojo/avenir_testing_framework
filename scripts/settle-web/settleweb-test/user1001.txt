@@ -1,0 +1,488 @@
+# multiple investments - User1001
+
+# Edit User Details
+
+test User1001
+description multiple investments
+goto settle_web
+login settleweb_user2 settleweb_pass2
+menu My Details
+clickby class edit-detail
+form userUser
+textInput phone +642222223300
+textInput mobile +4475901963702
+textInput email srt@avenir-technology.com
+button save
+sleep 5
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+# Edit Password
+
+goto settle_web
+login settleweb_user2 settleweb_pass2
+menu My Details
+scrollto btn-password
+button password
+form userPassword
+textInput _old_password Pa55word!
+textInput _new_password_enter_password test123
+textInput _new_password_confirm_password test123
+button cancel
+sleep 2
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+# Edit ID 000004248
+
+goto settle_web
+login settleweb_user2 settleweb_pass2
+clickby class fas fa-id-card fa-2x
+scrollto hldr-link-000004248
+clickby id hldr-link-000004248
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srh@avenir-technology.com
+textInput phone +048970800
+textInput mobile +447590196372
+textInput address1 120 THE LANE
+textInput address2 PICCADILLY
+textInput address3 LONDON
+textInput postcode EL8 BC000
+menuInput country New Zealand
+textInput bankaccount_sort_code 022001
+textInput iban DE89 3704004405320134321
+textInput bankaccount_account 803736720
+checkerInput selectedHolders_0
+checkerInput selectedHolders_1
+checkerInput selectedHolders_2
+checkerInput selectedHolders_3
+checkerInput selectedHolders_4
+checkerInput selectedHolders_5
+checkerInput selectedHolders_6
+checkerInput selectedHolders_7
+checkerInput selectedHolders_8
+checkerInput selectedHolders_9
+checkerInput selectedHolders_10
+checkerInput selectedHolders_11
+sleep 5
+button save
+sleep 3
+button confirm
+find textH1 Hello, 
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+# Edit ID 000011403
+
+goto settle_web
+login settleweb_user2 settleweb_pass2
+clickby class fas fa-id-card fa-2x
+scrollto hldr-link-000011403
+clickby id hldr-link-000011403
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srhgmail@test.com
+textInput phone +045282354
+textInput mobile +0225668583
+textInput address1 3 MAYFAIR PLACE
+textInput address2 TAWA
+textInput address3 WELLINGTON
+textInput postcode 5028
+menuInput country New Zealand
+textInput bankaccount_sort_code 022002
+textInput iban DE89 370400440532013002
+textInput bankaccount_account 803736720
+button save
+sleep 3
+button confirm
+find textH1 Hello, 
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+# Edit ID 000001575
+
+goto settle_web
+login settleweb_user2 settleweb_pass2
+clickby class fas fa-id-card fa-2x
+scrollto hldr-link-000001575
+clickby id hldr-link-000001575
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srt@avenir-technology.com
+textInput phone +42222223300
+textInput mobile +4475901963700
+textInput address1 120 THE LANE
+textInput address2
+textInput address3
+textInput postcode EL8 BC3
+menuInput country New Zealand
+textInput bankaccount_sort_code 0893000
+textInput bankaccount_account 83736720
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+# Edit ID 000005022
+
+goto settle_web
+login settleweb_user2 settleweb_pass2
+clickby class fas fa-id-card fa-2x
+scrollto hldr-link-000005022
+clickby id hldr-link-000005022
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srt@avenir-technology.com
+textInput phone +42222223311
+textInput mobile +4412301963733
+textInput address1 90 THE LANE
+textInput address2
+textInput address3
+textInput postcode EL8 BC3
+menuInput country Finland
+textInput bankaccount_sort_code 0893000
+textInput bankaccount_account 83736720
+checkerInput selectedHolders_8
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+# Edit ID 000013266
+
+goto settle_web
+login settleweb_user2 settleweb_pass2
+clickby class fas fa-id-card fa-2x
+scrollto hldr-link-000013266
+clickby id hldr-link-000013266
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srt@avenir-technology.com
+textInput phone +42222223300
+textInput mobile +4475901963700
+textInput address1 120 THE LANE
+textInput postcode EL8 BC3
+menuInput country Fiji
+textInput bankaccount_sort_code 0893000
+textInput bankaccount_account 83736720
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+# Edit ID 000022842
+
+goto settle_web
+login settleweb_user2 settleweb_pass2
+clickby class fas fa-id-card fa-2x
+scrollto hldr-link-000022842
+clickby id hldr-link-000022842
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srt@avenir-technology.com
+textInput phone +0498708880
+textInput mobile +4225621333
+textInput address1 12 KING ST
+textInput address2 WELLINGTON
+textInput postcode EL0 BC0
+menuInput country Kenya
+textInput bankaccount_sort_code 0893111
+textInput bankaccount_account 83736721
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+# Edit ID 000024138
+
+goto settle_web
+login settleweb_user2 settleweb_pass2
+clickby class fas fa-id-card fa-2x
+scrollto hldr-link-000024138
+clickby id hldr-link-000024138
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srt0@avenir-technology.com
+textInput mobile +44759953700
+menuInput country Australia
+textInput bankaccount_sort_code 0893410
+textInput bankaccount_account 968230
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+# Edit ID 000027027
+
+goto settle_web
+login settleweb_user2 settleweb_pass2
+clickby class fas fa-id-card fa-2x
+scrollto hldr-link-000027027
+clickby id hldr-link-000027027
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email claire.oneil@avenir-technology.com
+textInput phone +42212323300
+textInput mobile +447123501963700
+textInput address1 120 THE LANE
+textInput postcode EL8 BC3
+menuInput country Nepal
+checkerInput selectedHolders_10
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+# Edit ID 000021744
+
+goto settle_web
+login settleweb_user2 settleweb_pass2
+clickby class fas fa-id-card fa-2x
+scrollto hldr-link-000021744
+clickby id hldr-link-000021744
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srt@avenir-technology.com
+textInput phone +4550003300
+textInput mobile +4442381723
+textInput address1 120 THE LANE
+textInput postcode EL8 BC3
+menuInput country Monaco
+textInput bankaccount_sort_code 0892222
+textInput bankaccount_account 838000
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+# Edit ID 000030231
+
+goto settle_web
+login settleweb_user2 settleweb_pass2
+clickby class fas fa-id-card fa-2x
+scrollto hldr-link-000030231
+clickby id hldr-link-000030231
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srt@avenir-technology.com
+textInput phone +4481247199
+textInput mobile +447960003700
+textInput address1 2 LANE RD
+textInput postcode 5018
+menuInput country Netherlands
+textInput bankaccount_sort_code 0893000
+textInput bankaccount_account 591873
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+# Edit ID 000028809
+
+goto settle_web
+login settleweb_user2 settleweb_pass2
+clickby class fas fa-id-card fa-2x
+scrollto hldr-link-000028809
+clickby id hldr-link-000028809
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srt@avenir-technology.com
+textInput phone +048970800
+textInput mobile +40220296902
+textInput address1 180 LAMBTON
+textInput address2 QUAY
+textInput address3 WELLINGTON
+textInput postcode 5002
+menuInput country Poland
+textInput bankaccount_sort_code 7654321
+textInput bankaccount_account 1234567
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+# Edit ID 000012159
+
+goto settle_web
+login settleweb_user2 settleweb_pass2
+clickby class fas fa-id-card fa-2x
+scrollto hldr-link-000012159
+clickby id hldr-link-000012159
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email siennahendrikxx@gmail.com
+textInput phone +42220023300
+textInput mobile +0214315244
+textInput address1 5 MAYFAIR PLACE
+textInput postcode 6023
+menuInput country Switzerland
+textInput bankaccount_sort_code 0893000
+textInput bankaccount_account 83736720
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+# Balance Activity / Download Certificate
+
+goto settle_web
+login settleweb_user2 settleweb_pass2
+scrollto bal-link-000011403-1-CCELE
+clickby id bal-link-000011403-1-CCELE
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+scrollto bal-link-000012159-1-WCES
+clickby id bal-link-000012159-1-WCES
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+scrollto bal-link-000013266-1-BHESW
+clickby id bal-link-000013266-1-BHESW
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+scrollto bal-link-000013266-2-BHESW
+clickby id bal-link-000013266-2-BHESW
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+scrollto bal-link-000001575-1-OPB1S
+clickby id bal-link-000001575-1-OPB1S
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+scrollto bal-link-000021744-1-BECW3D
+clickby id bal-link-000021744-1-BECW3D
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+scrollto bal-link-000022842-1-FWLW
+clickby id bal-link-000022842-1-FWLW
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+scrollto bal-link-000024138-1-LCCLW
+clickby id bal-link-000024138-1-LCCLW
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+scrollto bal-link-000024138-2-LCCLW
+clickby id bal-link-000024138-2-LCCLW
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+scrollto bal-link-000027027-1-THTB
+clickby id bal-link-000027027-1-THTB
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+scrollto bal-link-000028809-1-BEC20
+clickby id bal-link-000028809-1-BEC20
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+scrollto bal-link-000030231-1-BWCE22
+clickby id bal-link-000030231-1-BWCE22
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+scrollto bal-link-000004248-1-FFWSA
+clickby id bal-link-000004248-1-FFWSA
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+scrollto bal-link-000005022-2-GFBA
+clickby id bal-link-000005022-2-GFBA
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+scrollto bal-link-000005022-1-GFBD
+clickby id bal-link-000005022-1-GFBD
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+scrollto bal-link-000007947-1-PEC15
+clickby id bal-link-000007947-1-PEC15
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+scrollto bal-link-000007947-1-PEC16
+clickby id bal-link-000007947-1-PEC16
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out

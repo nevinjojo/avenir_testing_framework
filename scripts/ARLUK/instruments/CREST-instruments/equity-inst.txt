@@ -1,0 +1,99 @@
+test New CREST Instrument 01 - Equity
+description New CREST Instrument 01 - Equity
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name CREST Instrument E01
+checkerInput sync
+menuInput registrar Avenir Registrars Ltd (085 - UK)
+sleep 4
+textInput mraq 15/01/2019
+textInput short INSTEQUITY01
+textInput isin INSTEQUITY01
+menuInput issuer ISS01
+checkerInput sync
+checkerInput sync
+sleep 4
+button save
+sleep 2
+find textH1 View Equity
+clickby class btn btn-primary dropdown-toggle
+clickby text Monthly
+sleep 4
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu instruments
+form instrument
+textInput short INSTEQUITY01
+menuInput state Ready
+button search
+sleep 5
+tableClick short INSTEQUITY01
+sleep 2
+clickby class btn btn-primary dropdown-toggle
+clickby text Monthly
+sleep 4
+clickby id btn-mraq-date
+button approve
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+test New CREST Instrument 02 - Equity
+description New CREST Instrument 02 - Equity
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name CREST Instrument E02
+checkerInput sync
+menuInput registrar Avenir Registrars Ltd (087 - Ireland)
+sleep 4
+textInput mraq 15/01/2019
+textInput short INSTEQUITY02
+textInput isin INSTEQUITY02
+menuInput issuer ISS02
+checkerInput sync
+checkerInput sync
+sleep 4
+button save
+sleep 2
+find textH1 View Equity
+clickby class btn btn-primary dropdown-toggle
+clickby text Monthly
+sleep 4
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu instruments
+form instrument
+textInput short INSTEQUITY02
+menuInput state Ready
+button search
+sleep 5
+tableClick short INSTEQUITY02
+sleep 2
+clickby class btn btn-primary dropdown-toggle
+clickby text Monthly 
+sleep 4
+clickby id btn-mraq-date
+button approve
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+

@@ -1,0 +1,32 @@
+test Trades Report 01
+description trades report - oper
+goto
+login
+date
+menu reports
+clickby text Trades 2
+form usrReport
+textInput from 01/01/2019
+textInput to date
+# select2Input broker PART01
+# select2Input instrument INST01
+sleep 3
+button save
+sleep 15
+screenshot time full
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text PDF
+sleep 20
+screenshot time full
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text CSV
+sleep 10
+find textH1 Trades
+sleep 2
+expect pass
+logout
+
+
+

@@ -1,0 +1,420 @@
+test Creating ISS01-2
+description New Issuer Account
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+search s_part ISS01
+button search
+tableClick name ISS01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+textInput name Issuer Account 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS01-3
+description New Issuer Account
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+search s_part ISS01
+button search
+tableClick name ISS01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+textInput name Issuer Account 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS02-2
+description New Issuer Account
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+search s_part ISS02
+button search
+tableClick name ISS02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+textInput name Issuer Account 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS02-3
+description New Issuer Account
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+search s_part ISS02
+button search
+tableClick name ISS02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+textInput name Issuer Account 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS03-2
+description New Issuer Account
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+search s_part ISS03
+button search
+tableClick name ISS03
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+textInput name Issuer Account 2
+menuInput currency GBP
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS03-3
+description New Issuer Account
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+search s_part ISS03
+button search
+tableClick name ISS03
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+textInput name Issuer Account 3
+button save
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS04-2
+description New Issuer Account
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+search s_part ISS04
+button search
+tableClick name ISS04
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+textInput name Issuer Account 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS04-3
+description New Issuer Account
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+search s_part ISS04
+button search
+tableClick name ISS04
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+textInput name Issuer Account 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS05-2
+description New Issuer Account
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+search s_part ISS05
+button search
+tableClick name ISS05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+textInput name Issuer Account 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS05-3
+description New Issuer Account
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+search s_part ISS05
+button search
+tableClick name ISS05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+textInput name Issuer Account 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS06-2
+description New Issuer Account
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+search s_part ISS06
+button search
+tableClick name ISS06
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+textInput name Issuer Account 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS06-3
+description New Issuer Account
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+search s_part ISS06
+button search 
+tableClick name ISS06
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+textInput name Issuer Account 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS07-2
+description New Issuer Account
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+search s_part ISS07
+button search
+tableClick name ISS07
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+textInput name Issuer Account 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS07-3
+description New Issuer Account
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+search s_part ISS07
+button search
+tableClick name ISS07
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+textInput name Issuer Account 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS08-2
+description New Issuer Account
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+search s_part ISS08
+button search
+tableClick name ISS08
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+textInput name Issuer Account 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS08-3
+description New Issuer Account
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+search s_part ISS08
+button search
+tableClick name ISS08
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+textInput name Issuer Account 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS09-2
+description New Issuer Account
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+search s_part ISS09
+button search
+tableClick name ISS09
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+textInput name Issuer Account 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS09-3
+description New Issuer Account
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+search s_part ISS09
+button search
+tableClick name ISS09
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+textInput name Issuer Account 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS10-2
+description New Issuer Account
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+search s_part ISS10
+button search
+tableClick name ISS10
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+textInput name Issuer Account 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS10-3
+description New Issuer Account
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+search s_part ISS10
+button search
+tableClick name ISS10
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+textInput name Issuer Account 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout

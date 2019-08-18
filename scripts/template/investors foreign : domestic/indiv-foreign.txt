@@ -1,0 +1,84 @@
+test New Investor 01 Individual Foreign
+description New Investor 01 Individual Foreign
+goto 
+login _user1 _pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-ind-for
+form admOrg
+textInput name Foreign
+textInput last Individual One 
+textInput address1 742 Evergreen Terrace
+textInput address2 Springfield
+textInput postcode 1011
+textInput phone 04 0800 838383
+textInput mobile 0225668589
+textInput email foreign-indiv1@test.com
+menuInput country United States
+menuInput idType Passport
+textInput idNumber 987654321
+menuInput idCountry United States
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto 
+login _user2 _pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test New Investor 02 Individual Foreign
+description New Investor 02 Individual Foreign
+goto
+login _user1 _pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-ind-for
+form admOrg
+textInput name Foreign
+textInput last Individual Two
+textInput address1 1B Bottom Lane
+textInput postcode 1122
+textInput phone 04 5282354 
+textInput mobile 02212345678
+textInput email foreign-indiv2@test.com
+menuInput country Guatemala
+menuInput idType Driver License
+textInput idNumber DV00001
+menuInput idCountry Guatemala
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto 
+login _user2 _pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+

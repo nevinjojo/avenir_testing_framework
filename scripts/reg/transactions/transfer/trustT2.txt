@@ -1,0 +1,34 @@
+test transfer 02 transaction trust
+description transfer 02 transaction trust
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new transfer
+form admTrans
+textInput due date
+select2Input frAccountStr TRUST02
+select2Input toAccountStr INVST02
+select2Input instrumentStr INST02
+textInput quantity 100
+textInput frReference Transfer 1.2
+textInput toReference Transfer 1.2
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST02
+search s_stat Ready
+tableWait
+tableClick Code INST02
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout

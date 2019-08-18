@@ -1,0 +1,147 @@
+test transaction 01 transfer
+description transaction 01 transfer
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-trans
+form admTrans
+textInput due date
+select2Input frAccountStr Avenir Technology
+sleep 5
+select2Input toAccountStr Domestic Company 2
+select2Input instrumentStr INST01
+textInput quantity 100
+textInput frReference Transfer 1
+textInput toReference Transfer 1
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST01
+search s_stat Ready
+tableWait
+tableClick Code INST01
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test transaction 02 transfer
+description transaction 02 transfer
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-trans
+form admTrans
+textInput due date
+select2Input frAccountStr Foreign Company 1
+sleep 5
+select2Input toAccountStr Foreign Company 2
+select2Input instrumentStr INST02
+textInput quantity 100
+textInput frReference Transfer 2
+textInput toReference Transfer 2
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST02
+search s_stat Ready
+tableWait
+tableClick Code INST02
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test transaction 03 transfer
+description transaction 03 transfer
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-trans
+form admTrans
+textInput due date
+select2Input frAccountStr Hendrikx, Miss Sienna 
+sleep 5
+select2Input toAccountStr Individual Two, Domestic
+select2Input instrumentStr INST03
+textInput quantity 100
+textInput frReference Transfer 3
+textInput toReference Transfer 3
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST03
+search s_stat Ready
+tableWait
+tableClick Code INST03
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test transaction 04 transfer
+description transaction 04 transfer
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-trans
+form admTrans
+textInput due date
+select2Input frAccountStr Individual One, Foreign
+sleep 5
+select2Input toAccountStr Individual Two, Foreign
+select2Input instrumentStr INST04
+textInput quantity 100
+textInput frReference Transfer 4
+textInput toReference Transfer 4
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST04
+search s_stat Ready
+tableWait
+tableClick Code INST04
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout

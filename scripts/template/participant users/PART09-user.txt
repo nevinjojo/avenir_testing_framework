@@ -1,0 +1,65 @@
+test New Participant User 1 - PART09
+description creating a new participant user - PART09
+goto
+login
+menu participants
+search s_part PART09
+search s_stat Active
+button search
+tableClick short PART09
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART9-U1
+textInput name Participant-User
+textInput last One
+textInput email partU1@test.com
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Participant User 2 - PART09
+description creating a new participant user - PART09
+goto
+login
+menu participants
+search s_part PART09
+search s_stat Active
+button search
+tableClick short PART09
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username PART9-U2
+textInput name Participant-User
+textInput last Two
+textInput email partU2@test.com
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout

@@ -1,0 +1,33 @@
+test lock 09 transaction trust
+description lock 09 transaction trust
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr TRUST09
+select2Input instrumentStr INST09
+textInput quantity 100
+textInput tag test 9
+textInput toReference transaction lock 09
+button save
+find textH1 View Lock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST09
+search s_stat Ready
+tableWait
+tableClick Code INST09
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout

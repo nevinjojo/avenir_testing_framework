@@ -1,0 +1,16 @@
+test Adjustments Report
+description adjustments report - broker view
+goto AIX
+login P1_BRKR1_user P1_BRKR1_pass
+menu reports
+clickby text Adjustments Report
+sleep 4
+button save
+sleep 15
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text PDF
+sleep 15
+find textH1 Adjustments Report
+expect pass
+logout

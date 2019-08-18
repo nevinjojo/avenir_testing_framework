@@ -1,0 +1,153 @@
+test FDINST1 - Certificate Download 03
+description FDINST1 - Certificate Download 03
+goto
+login
+menu instruments
+date
+form instrument
+textInput short FDINST1
+menuInput category Fund
+menuInput state Any
+button search
+sleep 5
+tableClick short FDINST1
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Create
+sleep 4
+form admTrans
+textInput due date
+select2Input toAccountStr INDIV03
+textInput quantity 4,230
+textInput toReference cert download 03
+button save
+find textH1 View Create
+sleep 2
+button ready
+sleep 2
+expect pass
+logout
+
+goto
+login
+menu transactions
+search s_inst FDINST1
+search s_stat Ready
+sleep 4
+tableClick Code FDINST1
+button approve
+find textH1 View Create
+menu instruments
+form instrument
+textInput short FDINST1
+menuInput category Fund
+menuInput state Active
+button search
+sleep 4
+tableClick short FDINST1
+sleep 3
+clickby class btn btn-default dropdown-toggle
+clickby xpath /html/body/div/div[2]/div[4]/div/div/div[2]/ul/li[1]/a
+sleep 2
+clickby xpath /html/body/div/div[2]/div[4]/div/a
+sleep 6
+find textH1 Transactions
+sleep 2
+menu instruments
+form instrument
+textInput short FDINST1
+menuInput category Fund
+menuInput state Active
+button search
+sleep 4
+tableClick short FDINST1
+sleep 3
+clickby class btn btn-default dropdown-toggle
+clickby text Holdings Report
+sleep 2
+clickby xpath /html/body/div/div[2]/div[4]/div/a
+sleep 6
+clickby text LAST03
+sleep 3
+clickby id btn-cert
+sleep 4
+find textH1 Account Balances
+expect pass
+logout
+
+test FDINST2 - Certificate Download 03
+description FDINST2 - Certificate Download 03
+goto
+login
+menu instruments
+date
+form instrument
+textInput short FDINST2
+menuInput category Fund 
+menuInput state Any
+button search
+sleep 5
+tableClick short FDINST2
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Create
+sleep 4
+form admTrans
+textInput due date
+select2Input toAccountStr INDIV04
+textInput quantity 7,081
+textInput toReference cert download 03
+button save
+find textH1 View Create
+sleep 2
+button ready
+sleep 2
+expect pass
+logout
+
+goto
+login
+menu transactions
+search s_inst FDINST2
+search s_stat Ready
+sleep 4
+tableClick Code FDINST2
+button approve
+find textH1 View Create
+menu instruments
+form instrument
+textInput short FDINST2
+menuInput category Fund
+menuInput state Active
+button search
+sleep 4
+tableClick short FDINST2
+sleep 3
+clickby class btn btn-default dropdown-toggle
+clickby xpath /html/body/div/div[2]/div[4]/div/div/div[2]/ul/li[1]/a
+sleep 2
+clickby xpath /html/body/div/div[2]/div[4]/div/a
+sleep 6
+find textH1 Transactions
+sleep 2
+menu instruments
+form instrument
+textInput short FDINST2
+menuInput category Fund
+menuInput state Active
+button search
+sleep 4
+tableClick short FDINST2
+sleep 3
+clickby class btn btn-default dropdown-toggle
+clickby text Holdings Report
+sleep 2
+clickby xpath /html/body/div/div[2]/div[4]/div/a
+sleep 6
+clickby text LAST04
+sleep 3
+clickby id btn-cert
+sleep 4
+find textH1 Account Balances
+expect pass
+logout

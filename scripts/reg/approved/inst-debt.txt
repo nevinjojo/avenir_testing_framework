@@ -1,0 +1,350 @@
+test New Instrument 01
+description New Instrument 01 debt
+goto testreg
+login testreg_user1 testreg_pass1
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name Instrument 01
+textInput short INST01
+textInput isin INST01
+textInput ticker INST01
+menuInput currency USD
+menuInput issuer ISS01
+button save
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu instruments
+form instrument
+textInput short INST01
+menuInput state Draft
+button search
+sleep 5
+tableClick short INST01
+button approve
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+test New Instrument 02
+description New Instrument 02 debt
+goto testreg
+login testreg_user1 testreg_pass1
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name Instrument 02
+textInput short INST02
+textInput isin INST02
+menuInput currency USD
+textInput ticker INST02
+menuInput issuer ISS02
+button save
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu instruments
+form instrument
+textInput short INST02
+menuInput state Draft
+button search
+sleep 5
+tableClick short INST02
+button approve
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+test New Instrument 03
+description New Instrument 03 debt
+goto testreg
+login testreg_user1 testreg_pass1
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name Instrument 03
+textInput short INST03
+textInput isin INST03
+menuInput currency USD
+textInput ticker INST03
+menuInput issuer ISS03
+button save
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu instruments
+form instrument
+textInput short INST03
+menuInput state Draft
+button search
+sleep 5
+tableClick short INST03
+button approve
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+test New Instrument 04
+description New Instrument 04 debt
+goto testreg
+login testreg_user1 testreg_pass1
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name Instrument 04
+textInput short INST04
+textInput isin INST04
+menuInput currency USD
+textInput ticker INST04
+menuInput issuer ISS04
+button save
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu instruments
+form instrument
+textInput short INST04
+menuInput state Draft
+button search
+sleep 5
+tableClick short INST04
+button approve
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+test New Instrument 05
+description New Instrument 05 debt
+goto testreg
+login testreg_user1 testreg_pass1
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name Instrument 05
+textInput short INST05
+textInput isin INST05
+menuInput currency USD
+textInput ticker INST05
+menuInput issuer ISS05
+button save
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu instruments
+form instrument
+textInput short INST05
+menuInput state Draft
+button search
+sleep 5
+tableClick short INST05
+find textH1 View Debt
+button approve
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+test New Instrument 06
+description New Instrument 06 debt
+goto testreg
+login testreg_user1 testreg_pass1
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name Instrument 06
+textInput short INST06
+textInput isin INST06
+menuInput currency USD
+textInput ticker INST06
+menuInput issuer ISS06
+button save
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu instruments
+form instrument
+textInput short INST06
+menuInput state Draft
+button search
+sleep 5
+tableClick short INST06
+button approve
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+test New Instrument 07
+description New Instrument 07 debt
+goto testreg
+login testreg_user1 testreg_pass1
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name Instrument 07
+textInput short INST07
+textInput isin INST07
+menuInput currency USD
+textInput ticker INST07
+menuInput issuer ISS07
+button save
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu instruments
+form instrument
+textInput short INST07
+menuInput state Draft
+button search
+sleep 5
+tableClick short INST07
+button approve
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+test New Instrument 08
+description New Instrument 08 debt
+goto testreg
+login testreg_user1 testreg_pass1
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name Instrument 08
+textInput short INST08
+textInput isin INST08
+menuInput currency USD
+textInput ticker INST08
+menuInput issuer ISS08
+button save
+sleep 2
+find button approve
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu instruments
+form instrument
+textInput short INST08
+menuInput state Draft
+button search
+sleep 5
+tableClick short INST08
+button approve
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+test New Instrument 09
+description New Instrument 09 debt
+goto testreg
+login testreg_user1 testreg_pass1
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name Instrument 09
+textInput short INST09
+textInput isin INST09
+menuInput currency USD
+textInput ticker INST09
+menuInput issuer ISS09
+button save
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu instruments
+form instrument
+textInput short INST09
+menuInput state Draft
+button search
+sleep 5
+tableClick short INST09
+button approve
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+test New Instrument 10
+description New Instrument 10 debt
+goto testreg
+login testreg_user1 testreg_pass1
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name Instrument 10
+textInput short INST10
+textInput isin INST10
+menuInput currency USD
+textInput ticker INST10
+menuInput issuer ISS10
+button save
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu instruments
+form instrument
+textInput short INST10
+menuInput state Draft
+button search
+sleep 5
+tableClick short INST10
+button approve
+sleep 2
+find textH1 View Debt
+expect pass
+logout

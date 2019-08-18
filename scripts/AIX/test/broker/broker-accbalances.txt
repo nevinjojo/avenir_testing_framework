@@ -1,0 +1,41 @@
+test Broker Login - Account Balances 01
+description Broker Login - Account Balances - PART01-1
+goto AIX
+login P1_BRKR1_user P1_BRKR1_pass
+menu holders accounts
+tableClick Alias PART01-1
+sleep 2
+clickby id btn-balance
+screenshot time full 
+sleep 3
+find textH1 Account Balances
+expect pass
+logout
+
+test Broker Login - Account Balances 02
+description Broker Login - Account Balances - PART01-2
+goto AIX
+login P1_BRKR2_user P1_BRKR2_pass
+menu holders accounts
+tableClick Alias PART01-2
+sleep 2
+clickby id btn-balance
+screenshot time full 
+sleep 3
+find textH1 Account Balances
+expect pass
+logout
+
+test Broker Login - Account Balances 03
+description Broker Login - Account Balances - PART01-3
+goto AIX
+login P1_BRKR1_user P1_BRKR1_pass
+menu holders accounts
+tableClick Alias PART01-3
+sleep 2
+clickby id btn-balance
+screenshot time full 
+sleep 3
+find textH1 Account Balances
+expect pass
+logout

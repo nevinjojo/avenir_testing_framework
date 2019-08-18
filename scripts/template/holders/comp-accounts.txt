@@ -1,0 +1,381 @@
+test Creating COMP01 Account 2
+description New Holder Account
+goto
+login 
+menu Holders
+search s_part COMP01
+search s_stat Active
+sleep 4
+clickby text COMP01
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test COMP01 Account 3
+description New Holder Account
+goto
+login
+menu Holders
+search s_part COMP01
+search s_stat Active
+sleep 4
+clickby text COMP01
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test COMP02 Account 2
+description New Holder Account
+goto
+login 
+menu Holders
+search s_part COMP02
+search s_stat Active
+sleep 4
+clickby text COMP02
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test COMP02 Account 3
+description New Holder Account
+goto
+login
+menu Holders
+search s_part COMP02
+search s_stat Active
+sleep 4
+clickby text COMP02
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test COMP03 Account 2
+description New Holder Account
+goto
+login 
+menu Holders
+search s_part COMP03
+search s_stat Active
+sleep 4
+clickby text COMP03
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test COMP03 Account 3
+description New Holder Account
+goto
+login 
+menu Holders
+search s_part COMP03
+search s_stat Active
+sleep 4
+clickby text COMP03
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test COMP04 Account 2
+description New Holder Account
+goto 
+login 
+menu Holders
+search s_part COMP04
+search s_stat Active
+sleep 4
+clickby text COMP04
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test COMP04 Account 3
+description New Holder Account
+goto
+login 
+menu Holders
+search s_part COMP04
+search s_stat Active
+sleep 4
+clickby text COMP04
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test COMP05 Account 2
+description New Holder Account
+goto
+login 
+menu Holders
+search s_part COMP05
+search s_stat Active
+sleep 4
+clickby text COMP05
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test COMP05 Account 3
+description New Holder Account
+goto 
+login 
+menu Holders
+search s_part COMP05
+search s_stat Active
+sleep 4
+clickby text COMP05
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test COMP06 Account 2
+description New Holder Account
+goto 
+login 
+menu Holders
+search s_part COMP06
+search s_stat Active
+sleep 4
+clickby text COMP06
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test COMP06 Account 3
+description New Holder Account
+goto
+login
+menu Holders
+search s_part COMP06
+search s_stat Active
+sleep 4
+clickby text COMP06
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test COMP07 Account 2
+description New Holder Account
+goto 
+login 
+menu Holders
+search s_part COMP07
+search s_stat Active
+sleep 4
+clickby text COMP07
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test COMP07 Account 3
+description New Holder Account
+goto
+login
+menu Holders
+search s_part COMP07
+search s_stat Active
+sleep 4
+clickby text COMP07
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test COMP08 Account 2
+description New Holder Account
+goto
+login
+menu Holders
+search s_part COMP08
+search s_stat Active
+sleep 4
+clickby text COMP08
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test COMP08 Account 3
+description New Holder Account
+goto
+login 
+menu Holders
+search s_part COMP08
+search s_stat Active
+sleep 4
+clickby text COMP08
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test COMP09 Account 2
+description New Holder Account
+goto
+login 
+menu Holders
+search s_part COMP09
+search s_stat Active
+sleep 4
+clickby text COMP09
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test COMP09 Account 3
+description New Holder Account
+goto
+login 
+menu Holders
+search s_part COMP09
+search s_stat Active
+sleep 4
+clickby text COMP09
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test COMP10 Account 2
+description New Holder Account
+goto 
+login
+menu Holders
+search s_part COMP10
+search s_stat Active
+sleep 4
+clickby text COMP10
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test COMP10 Account 3
+description New Holder Account
+goto
+login
+menu Holders
+search s_part COMP10
+search s_stat Active
+sleep 4
+clickby text COMP10
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+

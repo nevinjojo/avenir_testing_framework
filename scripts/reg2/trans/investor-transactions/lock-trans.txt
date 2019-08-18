@@ -1,0 +1,273 @@
+test transaction 01 lock
+description transaction 01 lock
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr Avenir Technology
+select2Input instrumentStr INST01
+textInput quantity 25
+textInput tag test 1
+textInput toReference transaction lock 01
+button save
+find textH1 View Lock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST01
+search s_stat Ready
+sleep 5
+tableClick Code INST01
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test transaction 02 lock
+description transaction 02 lock
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr Domestic Company 2
+select2Input instrumentStr INST02
+textInput quantity 50
+textInput tag test 2
+textInput toReference transaction lock 03
+button save
+find textH1 View Lock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST02
+search s_stat Ready
+sleep 5
+tableClick Code INST02
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+
+test transaction 03 lock
+description transaction 03 lock
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr Foreign Company 1
+select2Input instrumentStr INST03
+textInput quantity 50
+textInput tag test 3
+textInput toReference transaction lock 03
+button save
+find textH1 View Lock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST03
+search s_stat Ready
+sleep 5
+tableClick Code INST03
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test transaction 04 lock
+description transaction 04 lock
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr Foreign Company 2
+select2Input instrumentStr INST04
+textInput quantity 50
+textInput tag test 4
+textInput toReference transaction lock 04
+button save
+find textH1 View Lock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST04
+search s_stat Ready
+sleep 5
+tableClick Code INST04
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test transaction 05 lock
+description transaction 05 lock
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr Hendrikx, Miss Sienna
+select2Input instrumentStr INST05
+textInput quantity 25
+textInput tag test 5
+textInput toReference transaction lock 05
+button save
+find textH1 View Lock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST05
+search s_stat Ready
+sleep 5
+tableClick Code INST05
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test transaction 06 lock
+description transaction 06 lock
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr Individual Two, Domestic
+select2Input instrumentStr INST06
+textInput quantity 50
+textInput tag test 6
+textInput toReference transaction lock 06
+button save
+find textH1 View Lock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST06
+search s_stat Ready
+sleep 5
+tableClick Code INST06
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test transaction 07 lock
+description transaction 07 lock
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr Individual One, Foreign
+select2Input instrumentStr INST07
+textInput quantity 25
+textInput tag test 7
+textInput toReference transaction lock 07
+button save
+find textH1 View Lock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST07
+search s_stat Ready
+sleep 5
+tableClick Code INST07
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test transaction 08 lock
+description transaction 08 lock
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr Individual Two, Foreign
+select2Input instrumentStr INST08
+textInput quantity 50
+textInput tag test 8
+textInput toReference transaction lock 08
+button save
+find textH1 View Lock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST08
+search s_stat Ready
+sleep 5
+tableClick Code INST08
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+

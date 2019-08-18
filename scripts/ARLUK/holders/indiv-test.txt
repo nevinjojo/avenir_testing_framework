@@ -1,0 +1,1354 @@
+test Individual Holder Test 01
+description using symbols in name input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+form admOrg
+textInput name !@#$%^&&)#$@
+textInput last TEST 01
+textInput suffix SUFFIX TEST 01
+textInput address1 ADDRESS01
+textInput postcode 5028
+textInput phone 0800 838383
+textInput mobile 0225668582
+textInput email TEST01@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV1239128
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 02
+description using symbols in last name input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders 
+button new individual
+form admOrg
+textInput name INDIV TEST02 
+textInput last @#($*@$$&
+textInput suffix TEST SUFFIX02
+textInput address1 ADDRESS02
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST02@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV3912831
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 03
+description using symbols in suffix input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual 
+textInput name INDIV TEST03
+textInput last TEST03
+textInput suffix !(@#*!$##@$
+textInput address1 ADDRESS03
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST03@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV12390182
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 04
+description using symbols in address input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name INDIV TEST04
+textInput last TEST04
+textInput suffix TEST SUFFIX04
+textInput address1 @#)!(%$@~
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST04@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV1239123
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 05
+description using symbols in postcode input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name INDIV TEST05
+textInput last TEST05
+textInput suffix TEST SUFFIX05
+textInput address1 ADDRESS05
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST05@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV94081230
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready 
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 06
+description using symbols in phone input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name INDIV TEST06
+textInput last TEST06
+textInput suffix TEST SUFFIX06
+textInput address1 ADDRESS06
+textInput postcode 5028
+textInput phone #@$@(#*@!@*#&! *!&#!
+textInput email TEST06@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV3910831
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 07
+description using symbols in email input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name INDIV TEST07
+textInput last TEST07
+textInput suffix TEST SUFFIX07
+textInput address1 ADDRESS07
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST07@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV1203193
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 08
+description using symbols in country input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name INDIV TEST08
+textInput last TEST08
+textInput suffix TEST SUFFIX08
+textInput address1 ADDRESS08
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST08@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV23098130
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 09
+description using symbols in idType input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name INDIV TEST09
+textInput last TEST09
+textInput suffix TEST SUFFIX09
+textInput address1 ADDRESS09
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST09@gmail.com
+menuInput country New Zealand
+menuInput idType #$@$)@(#$
+textInput idNumber DV34092843
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 10
+description using symbols in idNumber input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name INDIV TEST10
+textInput last TEST10
+textInput suffix TEST SUFFIX10
+textInput address1 ADDRESS10
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST10@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber !@(!*$#@!@#%$#*
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 11
+description using symbols in idCountry Input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name INDIV TEST11
+textInput last TEST11
+textInput suffix TEST SUFFIX11
+textInput address1 ADDRESS11
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST11@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV91238130
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 12
+description leaving name input blank
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name 
+textInput last TEST12
+textInput suffix TEST SUFFIX12
+textInput address1 ADDRESS12
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST12@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV09127313
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 13
+description leaving last name input blank
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name INDIV TEST13
+textInput last
+textInput suffix TEST SUFFIX13
+textInput address1 ADDRESS13
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST13@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV10293123
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 14
+description leaving address input blank
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name INDIV TEST14
+textInput last TEST14
+textInput suffix TEST SUFFIX14
+textInput address1
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST14@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV92317031
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 15
+description leaving country input blank 
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual 
+textInput name INDIV TEST15
+textInput last TEST15
+textInput suffix TEST SUFFIX15
+textInput address1 ADDRESS15
+textInput postcode 5028
+textInput phone 0800 8282882
+textInput email TEST15@gmail.com
+menuInput country
+menuInput idType Driver License
+textInput idNumber DV12098342
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK 
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 16
+description leaving identification inputs blank
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name INDIV TEST16
+textInput last TEST16
+textInput suffix TEST SUFFIX16
+textInput address1 ADDRESS16
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST16@gmail.com
+menuInput country New Zealand
+menuInput idType
+textInput idNumber
+menuInput idCountry
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 17
+description leaving all inputs blank
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name 
+textInput last 
+textInput suffix 
+textInput address1 
+textInput postcode 
+textInput phone 
+textInput email 
+menuInput country
+menuInput idType
+textInput idNumber
+menuInput idCountry
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 18
+description using html code in name input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name P<body onload=“alert(‘Hello’);“/>
+textInput last TEST18
+textInput suffix SUFFIX TEST18
+textInput address1 ADDRESS18
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST18@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV09482040
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 19
+description using html code in last input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name INDIV TEST19
+textInput last P<body onload=“alert(‘Hello’);“/>
+textInput suffix SUFFIX TEST19
+textInput address1 ADDRESS19
+textInput postcode 5028
+textInput phone 0800 8288228
+textInput email TEST19@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV09273130
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 20
+description using html code in suffix input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name INDIV TEST20
+textInput last TEST20
+textInput suffix P<body onload=“alert(‘Hello’);“/>
+textInput address1 ADDRESS20
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST20@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV19319310
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 21
+description using html code in address input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name INDIV TEST21
+textInput last TEST21
+textInput suffix SUFFIX TEST21
+textInput address1 P<body onload=“alert(‘Hello’);“/>
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST21@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV21323942
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 22
+description using html code in postcode input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name INDIV TEST22
+textInput last TEST22
+textInput suffix SUFFIX TEST22
+textInput address1 ADDRESS22
+textInput postcode 5028
+textInput phone 0800 828282
+textInput email TEST22@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV21391230
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 23
+description using html code in phone input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name INDIV TEST23
+textInput last TEST23
+textInput suffix SUFFIX TEST23
+textInput address1 ADDRESS23
+textInput postcode 5028
+textInput phone P<body onload=“alert(‘Hello’);“/>
+textInput email TEST23@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV34092842
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 24
+description using html code in email input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name INDIV TEST24
+textInput last TEST24
+textInput suffix SUFFIX TEST24
+textInput address1 ADDRESS24
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email P<body onload=“alert(‘Hello’);“/>
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV23910283
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 25
+description using html code in country input 
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name INDIV TEST25
+textInput last TEST25
+textInput suffix SUFFIX TEST25
+textInput address1 ADDRESS25
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST25@gmail.com
+menuInput country P<body onload=“alert(‘Hello’);“/>
+menuInput idType Driver License
+textInput idNumber DV20937123
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 26
+description using html code in idType input 
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual 
+textInput name INDIV TEST26
+textInput last TEST26
+textInput suffix SUFFIX TEST26
+textInput address1 ADDRESS26
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST26@gmail.com
+menuInput country New Zealand
+menuInput idType P<body onload=“alert(‘Hello’);“/>
+textInput idNumber DV9038139
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 27
+description using html code in idNumber input 
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual 
+textInput name INDIV TEST27
+textInput last TEST27
+textInput suffix SUFFIX TEST27
+textInput address1 ADDRESS27
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST27@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber P<body onload=“alert(‘Hello’);“/>
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 28
+description using html code in idCountry input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name INDIV TEST28
+textInput last TEST28
+textInput suffix SUFFIX TEST28
+textInput address1 ADDRESS28
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST28@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV20937139
+menuInput idCountry P<body onload=“alert(‘Hello’);“/>
+button save
+find textH1 View Holder
+sleep 2 
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 29
+description using code in name input
+goto ARL_UK 
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script> 
+textInput last TEST29
+textInput suffix SUFFIX TEST29
+textInput address1 ADDRESS29
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST29@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV237120931
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 30
+description using code in last name input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+form admOrg
+textInput name INDIV TEST30
+textInput last <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput suffix TEST SUFFIX30
+textInput address1 ADDRESS30
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST30@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 31
+description using code in suffix input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+form admOrg
+textInput name INDIV TEST31
+textInput last TEST31
+textInput suffix <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput address1 ADDRESS31
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST31@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV390482049
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 32
+description using code in address input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name INDIV TEST32
+textInput last TEST32
+textInput suffix TEST SUFFIX32
+textInput address1 <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput postcode 5028
+textInput phone 0800 828282
+textInput email TEST32@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV290283490
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 33
+description using code in postcode input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+form admOrg
+textInput name INDIV TEST33
+textInput last TEST33
+textInput suffix TEST SUFFIX33
+textInput address1 ADDRESS33
+textInput postcode <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput phone 0800 838383
+textInput email TEST33@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV3209482
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 34
+description using code in phone input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+form admOrg
+textInput name INDIV TEST34
+textInput last TEST34
+textInput suffix TEST SUFFIX34
+textInput address1 ADDRESS34
+textInput postcode 5028
+textInput phone <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput email TEST34@gmail.com
+menuInput country New Zealand
+menuInput idType Driver License
+textInput idNumber DV9083190
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 35
+description using code in email input 
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+form admOrg
+textInput name INDIV TEST35
+textInput last TEST35
+textInput suffix TEST SUFFIX35
+textInput address1 ADDRESS35
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+menuInput country New Zealand
+menuInput idType Drive License
+textInput idNumber DV30429404
+menuInput idCountry New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test Individual Holder Test 35
+description using code in country input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new individual
+textInput name INDIV TEST35
+textInput last TEST35
+textInput suffix TEST SUFFIX35
+textInput address1 ADDRESS35
+textInput postcode 5028
+textInput phone 0800 838383
+textInput email TEST35@gmail.com
+menuInput country New Zealand
+menuInput idType Drive License
+textInput idNumber DV932840
+menuInput idCountry 

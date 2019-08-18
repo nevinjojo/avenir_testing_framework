@@ -1,0 +1,18 @@
+# to test the new charity feature of the system
+
+test New Charity 1.1
+description This test Makes a new charity
+goTo dev
+login dev_user1 dev_pass1
+menu holder_accounts
+button new charity
+form admOrg
+textInput name charity name
+textInput address1 charity address
+textInput postcode 5011
+menuInput country Mali
+textInput idNumber 7372
+button save
+sleep 2
+find textH1 View Investor 
+expect pass

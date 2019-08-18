@@ -1,0 +1,1064 @@
+test Company Domestic Investor Test 01
+description using symbols in name input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name (*^%@!#%&%#
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country New Zealand
+textInput idNumber 660723247324 
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+# tableWait
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 02
+description using symbols in address input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST01
+textInput address1 !@#$%^*&^%$#$^
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country New Zealand
+textInput idNumber 231001375245
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 03
+description using symbols in postcode input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST03
+textInput address1 3 Market Lane
+textInput postcode &^%$#@%$@#
+textInput phone 04 0800 838383
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country New Zealand
+textInput idNumber 770623257390
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 04 
+description using symbols in phone input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST04
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone !@#$%*^%$
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country New Zealand
+textInput idNumber 340330423456
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 05
+description using symbols in email input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST05
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput email &^%$#@!%&*#.%@#$
+menuInput country New Zealand
+textInput idNumber 870707377775
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 06
+description using symbols in country input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST06
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country @^#@$&#$%
+textInput idNumber 260628336325
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 07
+description using symbols in company number input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST07
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country New Zealand
+textInput idNumber *&^%$#@@^%$^
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID 
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 08
+description leaving name input blank
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name 
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country New Zealand
+textInput idNumber 470427183058
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 09
+description leaving address input blank
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST09
+textInput address1
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country New Zealand
+textInput idNumber 260628336325
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 10
+description leaving country input blank
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST10
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country
+textInput idNumber 350825537544
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 11
+description leaving company number input blank
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST11
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country New Zealand
+textInput idNumber
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 12
+description leaving ID country input blank
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST12
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput email sienna.hendrikx@avenir-technoloy.com
+menuInput country New Zealand
+textInput idNumber 051124524630
+menuInput idCountry
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 13
+description leaving all inputs blank
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name
+textInput address1
+textInput postcode
+textInput phone
+textInput email
+menuInput country 
+textInput idNumber
+menuInput idCountry
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2 
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 14
+description using html code in name input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name P<body onload=“alert(‘Hello’);“/>
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country New Zealand
+textInput idNumber 031023234745
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 15
+description using html code in address input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST15
+textInput address1 P<body onload=“alert(‘Hello’);“/>
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country New Zealand
+textInput idNumber 540704339450
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 16
+description using html code in postcode input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST16
+textInput address1 3 Market Lane
+textInput postcode P<body onload=“alert(‘Hello’);“/>
+textInput phone 04 0800 838383
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country New Zealand
+textInput idNumber 630930542898
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 17
+description using html code in phone input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investros
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST17
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone P<body onload=“alert(‘Hello’);“/>
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country New Zealand
+textInput idNumber 720328259205
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor 
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 18
+description using html code in email input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST18
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput email P<body onload=“alert(‘Hello’);“/>
+menuInput country New Zealand
+textInput idNumber 691121324931
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 19
+description using html code in country input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST19
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country P<body onload=“alert(‘Hello’);“/>
+textInput idNumber 861021609840
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 20
+description using html code in company number input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST20
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country New Zealand
+textInput idNumber P<body onload=“alert(‘Hello’);“/>
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 21
+description using html code in ID country input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST21
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country New Zealand
+textInput idNumber 230424526316
+menuInput idCountry P<body onload=“alert(‘Hello’);“/>
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 22
+description using code in name input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country New Zealand
+textInput idNumber 231203400007
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor 23
+description using code in address input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST23
+textInput address <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country New Zealand
+textInput idNumber 841129352349
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor 24
+description using code in postcode input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST24
+textInput address1 3 Market Lane
+textInput postcode <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country New Zealand
+textInput idNumber 991231699993
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor 25
+description using code in email input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST25
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput email <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+menuInput country New Zealand
+textInput idNumber 480212423452
+menuInput idCountry Kazakhstan
+button save
+sleep 3 
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 26
+description using code in country input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST26
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput idNumber 850301356325
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID 
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout 
+
+test Company Domestic Investor Test 27
+description using code in id number input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST27
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country New Zealand
+textInput idNumber <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Company Domestic Investor Test 28
+description using code in ID Country input
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name CD TEST28
+textInput address1 3 Market Lane
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput email sienna.hendrikx@avenir-technology.com
+menuInput country New Zealand
+textInput idNumber 640825527392
+menuInput idCountry <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+

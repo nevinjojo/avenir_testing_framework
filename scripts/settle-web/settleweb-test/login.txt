@@ -1,0 +1,35 @@
+test Login Test 00
+description special characters / symbols
+goto settle_web
+textInput username !@#$%^&*(
+textInput password (*&^%$#@!
+button login
+expect fail
+sleep 3
+
+test Login Test 01
+description numbers
+goto settle_web
+textInput username 098765
+textInput password 123450
+button login
+expect fail
+sleep 3
+
+test Login Test 02
+description blank
+goto settle_web
+textInput username
+textInput password
+button login
+expect fail
+sleep 3
+
+test Login Test 03
+description random letters
+goto settle_web
+textInput username aAsDFGHjkL
+textInput password LkJhGFDsa
+button login
+expect fail
+sleep 3

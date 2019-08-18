@@ -1,0 +1,176 @@
+test new create 01
+description creating a new create transaction 01
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART01-1
+select2Input instrumentStr INST01
+textInput quantity 120
+textInput toReference new create 01
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST01
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick Code INST01
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test new create 02
+description creating a new create transaction 02
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART03-1
+select2Input instrumentStr INST02
+textInput quantity 1000
+textInput toReference new create 02
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST02
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick Code INST02
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test new create 03
+description creating a new create transaction 03
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART05-1
+select2Input instrumentStr INST03
+textInput quantity 450
+textInput toReference new create 03
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2  testreg_pass2
+menu transactions
+search s_inst INST03
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick Code INST03
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test new create 04
+description creating a new create transaction 04
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART07-1
+select2Input instrumentStr INST04
+textInput quantity 1000
+textInput toReference new create 04
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST04
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick Code INST04
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test new create 05
+description creating a new create transaction 05
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART09-1
+select2Input instrumentStr INST05
+textInput quantity 1500
+textInput toReference new create 05
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST05
+search s_stat Ready
+# tableWait
+sleep 4 
+tableClick Code INST05
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+

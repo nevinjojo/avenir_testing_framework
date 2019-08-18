@@ -1,0 +1,349 @@
+test transaction 01 create - participants
+description transaction 01 create - participants
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART01
+select2Input instrumentStr INST01
+textInput quantity 10,000
+textInput toReference participant transaction 1
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST01
+search s_stat Ready
+# tableWait
+sleep 3
+tableClick Code INST01
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test transaction 02 create
+description transaction 02 create - participants
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART02
+select2Input instrumentStr INST02
+textInput quantity 10,000
+textInput toReference participant transaction 2
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST02
+search s_stat Ready
+# tableWait
+sleep 3
+tableClick Code INST02
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test transaction 03 create
+description transaction 03 create - participants
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART03
+select2Input instrumentStr INST03
+textInput quantity 10,000
+textInput toReference participant transaction 3
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST03
+search s_stat Ready
+# tableWait
+sleep 3
+tableClick Code INST03
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test transaction 04 create
+description transaction 04 create - participants
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART04
+select2Input instrumentStr INST04
+textInput quantity 10,000
+textInput toReference participant transaction 4
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST04
+search s_stat Ready
+# tableWait
+sleep 3
+tableClick Code INST04
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test transaction 05 create
+description transaction 05 create - participants
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART05
+select2Input instrumentStr INST05
+textInput quantity 10,000
+textInput toReference participant transaction 5
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST05
+search s_stat Ready
+# tableWait
+sleep 3
+tableClick Code INST05
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test transaction 06 create
+description transaction 06 create - participants
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART06
+select2Input instrumentStr INST06
+textInput quantity 10,000
+textInput toReference participant transaction 6
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST06
+search s_stat Ready
+# tableWait
+sleep 3
+tableClick Code INST06
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test transaction 07 create
+description transaction 07 create - participants
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART07
+select2Input instrumentStr INST07
+textInput quantity 10,000
+textInput toReference participant transaction 7
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST07
+search s_stat Ready
+# tableWait
+sleep 3
+tableClick Code INST07
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test transaction 08 create
+description transaction 08 create - participants
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART08
+select2Input instrumentStr INST08
+textInput quantity 10,000
+textInput toReference participant transaction 8
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST08
+search s_stat Ready
+# tableWait
+sleep 3
+tableClick Code INST08
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test transaction 09 create
+description transaction 09 create - participants
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART09
+select2Input instrumentStr INST09
+textInput quantity 10,000
+textInput toReference participant transaction 9
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST09
+search s_stat Ready
+# tableWait
+sleep 3
+tableClick Code INST09
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test transaction 10 create
+description transaction 10 create - participants
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART10
+select2Input instrumentStr INST10
+textInput quantity 10,000
+textInput toReference participant transaction 10
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST10
+search s_stat Ready
+# tableWait
+sleep 3
+tableClick Code INST10
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout

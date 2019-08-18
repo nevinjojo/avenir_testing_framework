@@ -1,0 +1,359 @@
+test cash transaction 01 create
+description USD cash transaction 01
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART01-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 4,500
+textInput toReference cash transaction 1
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_part PART01-1
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick To PART01-1 
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test cash transaction 02 create
+description USD cash transaction 02
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART02-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 4,500
+textInput toReference cash transaction 2
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_part PART02-1
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick To PART02-1
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test cash transaction 03 create
+description USD cash transaction 03
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART03-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 4,500
+textInput toReference cash transaction 3
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_part PART03-1
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick To PART03-1
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test cash transaction 04 create
+description USD cash transaction 04
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART04-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 4,500
+textInput toReference cash transaction 4
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_part PART04-1
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick To PART04-1
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test cash transaction 05 create
+description USD cash transaction 05
+goto testreg
+login testreg_user1 testreg_pass1 
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART05-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 4,500
+textInput toReference cash transaction 5
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_part PART05-1
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick To PART05-1
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test cash transaction 06 create
+description USD cash transaction 06
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART06-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 4,500
+textInput toReference cash transaction 6
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_part PART06-1
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick To PART06-1
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test cash transaction 07 create
+description USD cash transaction 07
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART07-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 4,500
+textInput toReference cash transaction 7
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_part PART07-1
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick To PART07-1
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test cash transaction 08 create
+description USD cash transaction 08
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART08-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 4,500
+textInput toReference cash transaction 8
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_part PART08-1
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick To PART08-1
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test cash transaction 09 create
+description USD cash transaction 09
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART09-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 4,500
+textInput toReference cash transaction 9
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_part PART09-1
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick To PART09-1
+button approve
+find textH1 View Create
+sleep 2 
+expect pass
+logout
+
+test cash transaction 10 create
+description USD cash transaction 10
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART10-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 4,500
+textInput toReference cash transaction 10
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_part PART10-1
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick To PART10-1
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout

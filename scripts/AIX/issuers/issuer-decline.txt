@@ -1,0 +1,164 @@
+test Decline Issuer 01
+description declining and deleting issuers
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name ISSD01
+textInput short ISSD1
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part ISSD1
+button search
+sleep 5
+clickby text ISSD1
+find textH1 View Issuer
+button decline
+clickby id lnk-delete
+find textH1 Manage Issuers
+sleep 2
+expect pass
+logout
+
+test Decline Issuer 02
+description declining and deleting issuers
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name ISSD02
+textInput short ISSD2
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part ISSD2
+button search
+sleep 5
+clickby text ISSD2
+find textH1 View Issuer
+button decline
+clickby id lnk-delete
+find textH1 Manage Issuers
+sleep 2
+expect pass
+logout
+
+test Decline Issuer 03
+description declining and deleting issuers
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name ISSD03
+textInput short ISSD3
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part ISSD3
+button search
+sleep 5
+clickby text ISSD3
+find textH1 View Issuer
+button decline
+clickby id lnk-delete
+find textH1 Manage Issuers
+sleep 2
+expect pass
+logout
+
+test Decline Issuer 04
+description declining and deleting issuers
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name ISSD04
+textInput short ISSD4
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part ISSD4
+button search
+sleep 5
+clickby text ISSD4
+find textH1 View Issuer
+button decline
+clickby id lnk-delete
+find textH1 Manage Issuers
+sleep 2
+expect pass
+logout
+
+test Decline Issuer 05
+description declining and deleting issuers
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name ISSD05
+textInput short ISSD5
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part ISSD5
+button search
+sleep 5
+clickby text ISSD5
+find textH1 View Issuer
+button decline
+clickby id lnk-delete
+find textH1 Manage Issuers
+sleep 2
+expect pass
+logout

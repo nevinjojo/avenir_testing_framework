@@ -1,0 +1,11 @@
+# to test the new individual feature of the system
+
+test New Individual 1.1
+description This test Makes a new individual
+goto dev
+login dev_user1 dev_pass1
+menu holders
+search name LAST03, FIRST03
+search state All
+button search
+tableClick "Full Name" LAST03

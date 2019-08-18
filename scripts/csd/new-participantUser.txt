@@ -1,0 +1,266 @@
+test New User A - Participant 1
+description creating a new user - participant 1
+goto csd.com
+login csd_user1 csd_pass1
+menu participants
+search s_part PART1
+tableClick short PART1
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username UserA
+textInput name User
+textInput last A
+textInput email userA@test.com
+menuInput role Manager
+button save
+sleep 2
+button approve
+find textH1 View User
+expect pass
+logout
+
+test New User B - Participant 1
+description creating a new user - participant 1
+goto csd.com
+login csd_user1 csd_pass1
+menu participants
+search s_part PART1
+tableClick short PART1
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username UserB
+textInput name User
+textInput last B
+textInput email userB@test.com
+menuInput role Manager
+button save
+sleep 2
+button approve
+find textH1 View User
+expect pass
+logout
+
+test New User C - Participant 1
+description creating a new user - participant 1
+goto csd.com
+login csd_user1 csd_pass1
+menu participants
+search s_part PART1
+tableClick short PART1
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username UserC
+textInput name User
+textInput last C
+textInput email userC@test.com
+menuInput role Manager
+button save
+sleep 2
+button approve
+find textH1 View User
+expect pass
+logout
+
+
+test New User A - Participant 2
+description creating a new user - participant 2
+goto csd.com
+login csd_user1 csd_pass1
+menu participants
+search s_part PART2
+tableClick short PART2
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username User2A
+textInput name User
+textInput last 2A
+textInput email user2A@test.com
+menuInput role Manager
+button save
+sleep 2
+button approve
+find textH1 View User
+expect pass
+logout
+
+test New User B - Participant 2
+description creating a new user - participant 2
+goto csd.com
+login csd_user1 csd_pass1
+menu participants
+search s_part PART2
+tableClick short PART2
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username User2B
+textInput name User
+textInput last 2B
+textInput email user2B@test.com
+menuInput role Manager
+button save
+sleep 2
+button approve
+find textH1 View User
+expect pass
+logout
+
+test New User C - Participant 2
+description creating a new user - participant 2
+goto csd.com
+login csd_user1 csd_pass1
+menu participants
+search s_part PART2
+tableClick short PART2
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username User2C
+textInput name User
+textInput last 2C
+textInput email user2C@test.com
+menuInput role Manager
+button save
+sleep 2
+button approve
+find textH1 View User
+expect pass
+logout
+
+
+test New User A - Participant 3
+description creating a new user - participant 3
+goto csd.com
+login csd_user1 csd_pass1
+menu participants
+search s_part PART3
+tableClick short PART3
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username User3A
+textInput name User
+textInput last 3A
+textInput email user3A@test.com
+menuInput role Manager
+button save
+sleep 2
+button approve
+find textH1 View User
+expect pass
+logout
+
+test New User B - Participant 3
+description creating a new user - participant 3
+goto csd.com
+login csd_user1 csd_pass1
+menu participants
+search s_part PART3
+tableClick short PART3
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username User3B
+textInput name User
+textInput last 3B
+textInput email user3B@test.com
+menuInput role Manager
+button save
+sleep 2
+button approve
+find textH1 View User
+expect pass
+logout
+
+test New User C - Participant 3
+description creating a new user - participant 3
+goto csd.com
+login csd_user1 csd_pass1
+menu participants
+search s_part PART3
+tableClick short PART3
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username User3C
+textInput name User
+textInput last 3C
+textInput email user3C@test.com
+menuInput role Manager
+button save
+sleep 2
+button approve
+find textH1 View User
+expect pass
+logout
+
+test New User A - Participant 4
+description creating a new user - participant 4
+goto csd.com
+login csd_user1 csd_pass1
+menu participants
+search s_part PART4
+tableClick short PART4
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username User4A
+textInput name User
+textInput last 4A
+textInput email user4A@test.com
+menuInput role Manager
+button save
+sleep 2
+button approve
+find textH1 View User
+expect pass
+logout
+
+test New User B - Participant 4
+description creating a new user - participant 4
+goto csd.com
+login csd_user1 csd_pass1
+menu participants
+search s_part PART4
+tableClick short PART4
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username User4B
+textInput name User
+textInput last 4B
+textInput email user4B@test.com
+menuInput role Manager
+button save
+sleep 2
+button approve
+find textH1 View User
+expect pass
+logout
+
+test New User C - Participant 4
+description creating a new user - participant 4
+goto csd.com
+login csd_user1 csd_pass1
+menu participants
+search s_part PART4
+tableClick short PART4
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username User4C
+textInput name User
+textInput last 4C
+textInput email user4C@test.com
+menuInput role Manager
+button save
+sleep 2
+button approve
+find textH1 View User
+expect pass
+logout
+

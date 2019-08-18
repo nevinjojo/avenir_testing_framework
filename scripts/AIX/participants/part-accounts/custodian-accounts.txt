@@ -1,0 +1,759 @@
+test Creating CUST01-2
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST01
+tableClick short CUST01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST01-3
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST01
+tableClick short CUST01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST02-2
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST02
+tableClick short CUST02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST02-3
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST02
+tableClick short CUST02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST03-2
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST03
+tableClick short CUST03
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST03-3
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST03
+tableClick short CUST03
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST04-2
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST04
+tableClick short CUST04
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST04-3
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST04
+tableClick short CUST04
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST05-2
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST05
+tableClick short CUST05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST05-3
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST05
+tableClick short CUST05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST06-2
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST06
+tableClick short CUST06
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST06-3
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST06
+tableClick short CUST06
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST07-2
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST07
+tableClick short CUST07
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST07-3
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST07
+tableClick short CUST07
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST08-2
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST08
+tableClick short CUST08
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST08-3
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST08
+tableClick short CUST08
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST09-2
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST09
+tableClick short CUST09
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass 
+logout
+
+test Creating CUST09-3
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST09
+tableClick short CUST09
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST10-2
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST10
+tableClick short CUST10
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST10-3
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST10
+tableClick short CUST10
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST11-2
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST11
+tableClick short CUST11
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST11-3
+description
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST11
+tableClick short CUST11
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST12-2
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST12
+tableClick short CUST12
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST12-3
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST12
+tableClick short CUST12
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST13-2
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST13
+tableClick short CUST13
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST13-3
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST13
+tableClick short CUST13
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST14-2
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST14
+tableClick short CUST14
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST14-3
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST14
+tableClick short CUST14
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST15-2
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST15
+tableClick short CUST15
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST15-3
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST15
+tableClick short CUST15
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST16-2
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST16
+tableClick short CUST16
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST16-3
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST16
+tableClick short CUST16
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST17-2
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST17
+tableClick short CUST17
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST17-3
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST17
+tableClick short CUST17
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST18-2
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST18
+tableClick short CUST18
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST18-3
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST18
+tableClick short CUST18
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST19-2
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST19
+tableClick short CUST19
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST19-3
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST19
+tableClick short CUST19
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST20-2
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST20
+tableClick short CUST20
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CUST20-3
+description New Custodian Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST20
+tableClick short CUST20
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout

@@ -1,0 +1,153 @@
+test Negative Test - Update Investor Details 1
+description leaving all inputs except country blank
+goto settle_web
+login settleweb_user2 settleweb_pass2
+clickby class fas fa-id-card fa-2x
+scrollto hldr-link-000004248
+clickby id hldr-link-000004248
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email 
+textInput phone
+textInput mobile
+textInput address1
+textInput postcode 
+menuInput country New Zealand
+textInput bankaccount_sort_code 
+textInput iban
+textInput bankaccount_account
+sleep 3
+button save
+sleep 10
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Negative Test - Update Investor Details 2
+description using an email address that doesn't make sense
+goto settle_web
+login settleweb_user2 settleweb_pass2
+clickby class fas fa-id-card fa-2x
+scrollto hldr-link-000027027
+clickby id hldr-link-000027027
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email @@%#/#$%.com
+textInput phone +42212323300
+textInput mobile +447123501963700
+textInput address1 120 THE LANE
+textInput postcode EL8 BC3
+menuInput country Nepal
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Negative Test - Update Investor Details 3
+description using letters in phone / mobile inputs
+goto settle_web
+login settleweb_user1 settleweb_pass1
+clickby class fas fa-id-card fa-2x
+sleep 3
+clickby id hldr-link-000025974
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srt@avenir-technology.com
+textInput phone LkJHgFDSAp
+textInput mobile POIUYtreWq
+textInput address1 20 Hope Street
+textInput address3 BELFAST
+textInput postcode 5018
+menuInput country United Kingdom
+textInput bankaccount_sort_code 042376
+textInput bankaccount_account 43384030
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Negative Test - Update Investor Details 4
+description using symbols in Bank Account Details inputs
+goto settle_web
+login settleweb_user1 settleweb_pass1
+clickby class fas fa-id-card fa-2x
+clickby id hldr-link-000025974
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srt@avenir-technology.com
+textInput phone +4481247199
+textInput mobile +447590196372
+textInput address1 20 Hope Street
+textInput postcode 5018
+menuInput country New Zealand
+textInput bankaccount_sort_code *&!@$:'
+textInput bankaccount_account *^%$#@!~<.>
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Negative Test - Update Investor Details 5
+description using symbols in inputs
+goto settle_web
+login settleweb_user1 settleweb_pass1
+clickby class fas fa-id-card fa-2x
+clickby id hldr-link-000025974
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srt@avenir-technology.com
+textInput phone !(*%^$#@$^
+textInput mobile +447590196372
+textInput address1 ^%$#@!~
+textInput postcode !$%^&)*
+menuInput country New Zealand
+textInput bankaccount_sort_code 0423760
+textInput bankaccount_account 43384030
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Negative Test - Update Investor Details 6
+description using an address that doesn't make sense
+goto settle_web
+login settleweb_user1 settleweb_pass1
+clickby class fas fa-id-card fa-2x
+clickby id hldr-link-000025974
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srt@avenir-technology.com
+textInput phone +4481247199
+textInput mobile +447590196372
+textInput address1 +=!#% *&A2GHba!0
+textInput postcode @@@@
+menuInput country New Zealand
+textInput bankaccount_sort_code 0423760
+textInput bankaccount_account 43384030
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out

@@ -1,0 +1,13 @@
+test Checking Positions 01
+description Checking Positions 01
+goto testreg
+login testreg_user1 testreg_pass1
+menu positions
+sleep 4
+find textH1 Ready
+screenshot positions 1
+sleep 30
+expect pass
+logout
+
+

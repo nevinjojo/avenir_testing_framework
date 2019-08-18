@@ -1,0 +1,87 @@
+test New Investor 01 Individual Domestic
+description New Investor 01 Individual Domestic
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-ind-dom
+form admOrg
+textInput title Miss
+textInput name Sienna
+textInput last Hendrikx
+textInput address1 3 Market Lane
+textInput address2 Wellington
+textInput postcode 5028
+textInput phone 04 0800 838383
+textInput mobile 0225668589
+textInput email sienna@avenir-technology.com
+menuInput country New Zealand
+menuInput idType National ID Card
+textInput idNumber 850812612340 
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+# tableWait
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test New Investor 02 Individual Domestic
+description New Investor 02 Individual Domestic
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-ind-dom
+form admOrg
+textInput name Domestic
+textInput last Individual Two
+textInput address1 143 Featherston St
+textInput address2 Wellington
+textInput postcode 6011
+textInput phone 04 0800 838383
+textInput mobile 0225668589
+textInput email domestic-indiv2@test.com
+menuInput country United States
+menuInput idType National ID Card
+textInput idNumber 850812612330 
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+# tableWait
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+

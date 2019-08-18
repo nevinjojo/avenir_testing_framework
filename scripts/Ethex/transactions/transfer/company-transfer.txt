@@ -1,0 +1,359 @@
+test transfer 01 transaction company
+description transfer 01 transaction company
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new transfer
+form admTrans
+textInput due date
+select2Input frAccountStr INDIV01
+select2Input toAccountStr TRUST01
+select2Input instrumentStr INST01
+textInput quantity 100
+sleep 3
+textInput frReference Transfer 1.1
+textInput toReference Transfer 1.1
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST01
+search s_stat Ready
+sleep 5
+tableClick Code INST01
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test transfer 02 transaction company
+description transfer 02 transaction company
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new transfer
+form admTrans
+textInput due date
+select2Input frAccountStr INDIV02
+select2Input toAccountStr TRUST02
+select2Input instrumentStr INST02
+textInput quantity 100
+sleep 3
+textInput frReference Transfer 1.2
+textInput toReference Transfer 1.2
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST02
+search s_stat Ready
+sleep 5
+tableClick Code INST02
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test transfer 03 transaction company
+description transfer 03 transaction company
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new transfer
+form admTrans
+textInput due date
+select2Input frAccountStr INDIV03
+select2Input toAccountStr TRUST03
+select2Input instrumentStr INST03
+textInput quantity 100
+sleep 3
+textInput frReference Transfer 1.3
+textInput toReference Transfer 1.3
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST03
+search s_stat Ready
+sleep 5
+tableClick Code INST03
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test transfer 04 transaction company
+description transfer 04 transaction company
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new transfer
+form admTrans
+textInput due date
+select2Input frAccountStr INDIV04
+select2Input toAccountStr TRUST04
+select2Input instrumentStr INST04
+textInput quantity 100
+sleep 3
+textInput frReference Transfer 1.4
+textInput toReference Transfer 1.4
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST04
+search s_stat Ready
+sleep 5
+tableClick Code INST04
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test transfer 05 transaction company
+description transfer 05 transaction company
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new transfer
+form admTrans
+textInput due date
+select2Input frAccountStr INDIV05
+select2Input toAccountStr TRUST05
+select2Input instrumentStr INST05
+textInput quantity 100
+sleep 3
+textInput frReference Transfer 1.5
+textInput toReference Transfer 1.5
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST05
+search s_stat Ready
+sleep 5
+tableClick Code INST05
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test transfer 06 transaction company
+description transfer 06 transaction company
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new transfer
+form admTrans
+textInput due date
+select2Input frAccountStr INDIV06
+select2Input toAccountStr TRUST06
+select2Input instrumentStr INST06
+textInput quantity 100
+sleep 3
+textInput frReference Transfer 1.6
+textInput toReference Transfer 1.6
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST06
+search s_stat Ready
+sleep 5
+tableClick Code INST06
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test transfer 07 transaction company
+description transfer 07 transaction company
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new transfer
+form admTrans
+textInput due date
+select2Input frAccountStr INDIV07
+select2Input toAccountStr TRUST07
+select2Input instrumentStr INST07
+textInput quantity 100
+sleep 3
+textInput frReference Transfer 1.7
+textInput toReference Transfer 1.7
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST07
+search s_stat Ready
+sleep 5
+tableClick Code INST07
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test transfer 08 transaction company
+description transfer 08 transaction company
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new transfer
+form admTrans
+textInput due date
+select2Input frAccountStr INDIV08
+select2Input toAccountStr TRUST08
+select2Input instrumentStr INST08
+textInput quantity 100
+sleep 3
+textInput frReference Transfer 1.8
+textInput toReference Transfer 1.8
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST08
+search s_stat Ready
+sleep 5
+tableClick Code INST08
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test transfer 09 transaction company
+description transfer 09 transaction company
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new transfer
+form admTrans
+textInput due date
+select2Input frAccountStr INDIV09
+select2Input toAccountStr TRUST09
+select2Input instrumentStr INST09
+textInput quantity 100
+sleep 3
+textInput frReference Transfer 1.9
+textInput toReference Transfer 1.9
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST09
+search s_stat Ready
+sleep 5
+tableClick Code INST09
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test transfer 10 transaction company
+description transfer 10 transaction company
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new transfer
+form admTrans
+textInput due date
+select2Input frAccountStr INDIV10
+select2Input toAccountStr TRUST10
+select2Input instrumentStr INST10
+textInput quantity 100
+sleep 3
+textInput frReference Transfer 2.0
+textInput toReference Transfer 2.0
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST10
+search s_stat Ready
+sleep 5
+tableClick Code INST10
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout

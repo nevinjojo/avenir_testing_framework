@@ -1,0 +1,163 @@
+# to test the new underlying form of the system
+output new_underlying_results.txt
+
+test New Underlying 1.1 (with login) mini, phys
+description This test Makes a new underlying of type mini, physical
+goTo dev
+login dev_user1 dev_pass1
+menu instruments
+button new underlying
+form admUnderlying
+textInput name john smith
+textInput short 1234
+textInput ticker 1234
+menuInput category Mini
+menuInput settled Physical
+button save
+find button ready
+expect pass
+
+
+test New Underlying 1.2, mini, cash
+description This test Makes a new underlying of type mini, cash
+menu instruments
+button new underlying
+form admUnderlying 
+textInput name john smith
+textInput short test-mini-cash
+textInput ticker 1234
+menuInput category Mini
+menuInput settled Cash
+button save
+find button ready
+button ready
+expect pass
+
+test New Underlying 1.3, bond, cash
+description This test Makes a new underlying of type bond, cash
+menu instruments
+button new underlying
+form admUnderlying
+textInput name john smith
+textInput short test-bond-cash
+textInput ticker 1234
+menuInput category Bond
+menuInput settled Cash
+button save
+find button ready
+button ready
+expect pass
+
+test New Underlying 1.4, index, cash
+description This test Makes a new underlying of type index, cash
+menu instruments
+button new underlying
+form admUnderlying
+textInput name john smith
+textInput short test-index-cash
+textInput ticker 1234
+menuInput category Index
+menuInput settled Cash
+button save
+find button ready
+button ready
+expect pass
+
+test New Underlying 1.5, commodity, cash
+description This test Makes a new underlying for type commodity, cash
+menu instruments
+button new underlying
+form admUnderlying
+textInput name john smith
+textInput short test-comm-cash
+textInput ticker 1234
+menuInput category Commodity
+menuInput settled Cash
+button save
+find button ready
+button ready
+expect pass
+
+test New Underlying 2.1, bond, cash, fail short
+description This test Makes a new underlying with a very long short
+menu instruments
+button new underlying
+form admUnderlying
+textInput name john smith
+textInput short test-long-long-short-fail
+textInput ticker 1234
+menuInput category Bond
+menuInput settled Cash
+button save
+find button ready
+expect fail
+
+test New Underlying 2.2, bondxxx, cash, fail
+description This test Makes a new underlying with a non-existent category
+menu instruments
+button new underlying
+form admUnderlying
+textInput name john smith
+textInput short test-fail-cat
+textInput ticker 1234
+menuInput category Bondxxx
+menuInput settled Cash
+button save
+find button ready
+expect fail
+
+
+
+test New Underlying 2.3, bond, cash, ticker fail
+description This test Makes a new underlying with very long Ticker
+menu instruments
+button new underlying
+form admUnderlying
+textInput name john smith
+textInput short test-fail-tic
+textInput ticker 1234-long-long-ticker-fail
+menuInput category Bond
+menuInput settled Cash
+button save
+find button ready
+expect fail
+
+test New Underlying 2.4, bond, cash, very long name
+description This test Makes a new underlying with very long name
+menu instruments
+button new underlying
+form admUnderlying
+textInput name this is a very long name1 this is a very long name2 this is a very long name3 this is a very long name4
+textInput short test-fail-tic
+textInput ticker 1234-long-long-ticker-fail
+menuInput category Bond
+menuInput settled Cash
+button save
+find button ready
+expect fail
+
+test New Underlying 2.4, mini, cash - dup short
+description This test Makes a new underlying trying to duplicate a short
+menu instruments
+button new underlying
+form admUnderlying
+textInput name john smith V2
+textInput short test-mini-cash
+textInput ticker 1234
+menuInput category Mini
+menuInput settled Cash
+button save
+find button ready
+expect fail
+logout
+
+test Approve Underlying 3.1 
+description This test approves a new underlying created earlier
+login dev_user2 dev_pass2
+menu instruments
+search short AVENIR SHORT
+search state Draft
+button search
+tableClick short AVENIR SHORT
+find text AVENIR SHORT
+button ready

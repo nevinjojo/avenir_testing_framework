@@ -1,0 +1,96 @@
+test New Bid Order 01 Market - fill and kill
+description New Bid Order 01 Market - fill and kill
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-buy-TEEQ
+sleep 2
+window 2
+sleep 4
+form usrOrderBuy
+menuInput trader Imhotep Trading Solutions
+menuInput orderType Market
+checkerInput orderValid_0
+textInput quantity 13,500
+textInput ref Bid Order - Market
+find textH1 New Buy Order
+sleep 3
+button save
+sleep 3
+button confirm
+sleep 3
+window 1
+find textH1 Order Book
+sleep 2
+expect pass
+logout
+
+test Edit Bid Order 01 Market - fill and kill
+description Edit Bid Order 01 Market - fill and kill
+goto trade
+login trade_user1 trade_pass1
+menu Orders
+sleep 4
+search s_stat Any
+search s_inst TEEQ
+search s_acct Imhotep Something I Forget
+search s_owner Imhotep Trading Solutions
+sleep 4
+clickby text ID
+sleep 4
+clickby text ID
+sleep 4
+clickby text TEEQ
+find textH1 View Order
+sleep 2
+expect pass
+logout
+
+test New Bid Order 02 Market - fill or kill
+description New Bid Order 02 Market - fill or kill
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-buy-TEEQ
+sleep 2
+window 2
+sleep 6
+form usrOrderBuy
+menuInput trader Imhotep Trading Solutions
+menuInput orderType Market
+checkerInput orderValid_1
+textInput quantity 500
+textInput ref Bid Order - Market
+find textH1 New Buy Order
+sleep 3
+button save
+sleep 3
+button confirm
+sleep 3
+window 1
+find textH1 Order Book
+sleep 2
+expect pass
+logout
+
+test Edit Bid Order 02 Market - fill or kill
+description Edit Bid Order 02 Market - fill or kill
+goto trade
+login trade_user1 trade_pass1
+menu Orders
+sleep 4
+search s_stat Any
+search s_inst TEEQ
+search s_acct Imhotep Something I Forget
+search s_owner Imhotep Trading Solutions
+sleep 4
+clickby text ID
+sleep 4
+clickby text ID
+sleep 4
+clickby text TEEQ
+find textH1 View Order
+sleep 2
+expect pass
+logout
+

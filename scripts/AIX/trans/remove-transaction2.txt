@@ -1,0 +1,431 @@
+test transaction 02 remove
+description declining and deleting remove transactions
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-remove
+form admTrans
+textInput due date
+select2Input frAccountStr PART01-1
+select2Input instrumentStr INST01
+textInput quantity 2500
+textInput frReference From Reference 01
+button save
+find textH1 View Remove
+saveID
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu transactions
+search s_inst INST01
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button decline
+clickby id lnk-delete
+find textH1 Transactions
+sleep 2
+expect pass
+logout
+
+test transaction 02 remove
+description declining and deleting remove transactions
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-remove
+form admTrans
+textInput due date
+select2Input frAccountStr PART02-1
+select2Input instrumentStr INST02
+textInput quantity 2500
+textInput frReference From Reference 02
+button save
+find textH1 View Remove
+saveID
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu transactions
+search s_inst INST02
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button decline
+clickby id lnk-delete
+find textH1 Transactions
+sleep 2
+expect pass
+logout
+
+test transaction 03 remove
+description declining and deleting remove transactions
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-remove
+form admTrans
+textInput due date
+select2Input frAccountStr PART03-1
+select2Input instrumentStr INST03
+textInput quantity 2500
+textInput frReference From Reference 03
+button save
+find textH1 View Remove
+saveID
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu transactions
+search s_inst INST03
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button decline
+clickby id lnk-delete
+find textH1 Transactions
+sleep 2
+expect pass
+logout
+
+test transaction 04 remove
+description declining and deleting remove transactions
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-remove
+form admTrans
+textInput due date
+select2Input frAccountStr PART04-1
+select2Input instrumentStr INST04
+textInput quantity 2500
+textInput frReference From Reference 04
+button save
+find textH1 View Remove
+saveID
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu transactions
+search s_inst INST04
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button decline
+clickby id lnk-delete
+find textH1 Transactions
+sleep 2
+expect pass
+logout
+
+test transaction 05 remove
+description declining and deleting remove transactions
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-remove
+form admTrans
+textInput due date
+select2Input frAccountStr PART05-1
+select2Input instrumentStr INST05
+textInput quantity 2500
+textInput frReference From Reference 05
+button save
+find textH1 View Remove
+saveID
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu transactions
+search s_inst INST05
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button decline
+clickby id lnk-delete
+find textH1 Transactions
+sleep 2
+expect pass
+logout
+
+test transaction 06 remove
+description declining and deleting remove transactions
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-remove
+form admTrans
+textInput due date
+select2Input frAccountStr PART06-1
+select2Input instrumentStr INST06
+textInput quantity 2500
+textInput frReference From Reference 06
+button save
+find textH1 View Remove
+saveID
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu transactions
+search s_inst INST06
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button decline
+clickby id lnk-delete
+find textH1 Transactions
+sleep 2
+expect pass
+logout
+
+test transaction 05 remove
+description declining and deleting remove transactions
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-remove
+form admTrans
+textInput due date
+select2Input frAccountStr PART05-1
+select2Input instrumentStr INST05
+textInput quantity 2500
+textInput frReference From Reference 05
+button save
+find textH1 View Remove
+saveID
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu transactions
+search s_inst INST05
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button decline
+clickby id lnk-delete
+find textH1 Transactions
+sleep 2
+expect pass
+logout
+
+test transaction 06 remove
+description declining and deleting remove transactions
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-remove
+form admTrans
+textInput due date
+select2Input frAccountStr PART06-1
+select2Input instrumentStr INST06
+textInput quantity 2500
+textInput frReference From Reference 06
+button save
+find textH1 View Remove
+saveID
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu transactions
+search s_inst INST06
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button decline
+clickby id lnk-delete
+find textH1 Transactions
+sleep 2
+expect pass
+logout
+
+test transaction 07 remove
+description declining and deleting remove transactions
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-remove
+form admTrans
+textInput due date
+select2Input frAccountStr PART07-1
+select2Input instrumentStr INST07
+textInput quantity 2500
+textInput frReference From Reference 07
+button save
+find textH1 View Remove
+saveID
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu transactions
+search s_inst INST07
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button decline
+clickby id lnk-delete
+find textH1 Transactions
+sleep 2
+expect pass
+logout
+
+test transaction 08 remove
+description declining and deleting remove transactions
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-remove
+form admTrans
+textInput due date
+select2Input frAccountStr PART08-1
+select2Input instrumentStr INST08
+textInput quantity 2500
+textInput frReference From Reference 08
+button save
+find textH1 View Remove
+saveID
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu transactions
+search s_inst INST08
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button decline
+clickby id lnk-delete
+find textH1 Transactions
+sleep 2
+expect pass
+logout
+
+test transaction 09 remove
+description declining and deleting remove transactions
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-remove
+form admTrans
+textInput due date
+select2Input frAccountStr PART09-1
+select2Input instrumentStr INST09
+textInput quantity 2500
+textInput frReference From Reference 09
+button save
+find textH1 View Remove
+saveID
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu transactions
+search s_inst INST09
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button decline
+clickby id lnk-delete
+find textH1 Transactions
+sleep 2
+expect pass
+logout
+
+test transaction 10 remove
+description declining and deleting remove transactions
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-remove
+form admTrans
+textInput due date
+select2Input frAccountStr PART10-1
+select2Input instrumentStr INST10
+textInput quantity 2500
+textInput frReference From Reference 10
+button save
+find textH1 View Remove
+saveID
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu transactions
+search s_inst INST10
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button decline
+clickby id lnk-delete
+find textH1 Transactions
+sleep 2
+expect pass
+logout

@@ -1,0 +1,26 @@
+test settlement test 01
+description settlement day 01
+goto testreg
+login testreg_user1 testreg_pass1
+menu settlement management
+clickby class btn btn-primary btn-lg
+sleep 15
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu settlement management
+clickby class btn btn-primary btn-lg
+sleep 30
+find textH1 View Settlement Management
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu settlement management
+clickby class btn btn-primary btn-lg
+sleep 15
+find textH1 View Settlement Management
+expect pass
+logout

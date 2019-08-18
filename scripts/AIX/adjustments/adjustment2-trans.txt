@@ -1,0 +1,179 @@
+test Custodian 06 USD transaction 01
+description CUST06 USD transaction 01
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr CUST06
+select2Input instrumentStr USD
+sleep 3
+textInput amount 600,000
+textInput toReference CUST06 USD Trans
+button save
+find textH1 View Create
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test Custodian 07 USD transaction 02
+description CUST07 USD transaction 02
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr CUST07
+select2Input instrumentStr USD
+sleep 3 
+textInput amount 1,500,000
+textInput toReference CUST07 USD Trans
+button save
+find textH1 View Create
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test Custodian 08 USD transaction 03
+description CUST08 USD transaction 03
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr CUST08
+select2Input instrumentStr USD
+sleep 3
+textInput amount 4,400,000
+textInput toReference CUST08 USD Trans
+button save
+find textH1 View Create
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test Custodian 09 USD transaction 04
+description CUST09 USD transaction 04
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr CUST09
+select2Input instrumentStr USD
+sleep 3
+textInput amount 9,600,000
+textInput toReference CUST09 USD Trans
+button save
+find textH1 View Create
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test Custodian 10 USD transaction 05
+description CUST10 USD transaction 05
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr CUST10
+select2Input instrumentStr USD
+sleep 3
+textInput amount 16,800,000
+textInput toReference CUST10 USD Trans
+button save
+find textH1 View Create
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout

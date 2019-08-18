@@ -1,0 +1,18 @@
+test Participant Holdings as at Report
+description participant holdings as at report - oper
+goto AIX
+login aix_user1 aix_pass1
+menu reports
+clickby text Participant Holdings as at Report
+form usrReport
+textInput date 02/04/19
+sleep 4
+button save
+sleep 15
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text PDF
+sleep 15
+find textH1 Participant Holdings as at Report
+expect pass
+logout

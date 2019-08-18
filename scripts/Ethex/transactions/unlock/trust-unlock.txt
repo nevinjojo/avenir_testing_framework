@@ -1,0 +1,349 @@
+test unlock 01 transaction trust
+description unlock 01 transaction trust
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new unlock
+form admTrans
+textInput due date
+select2Input toAccountStr TRUST01
+select2Input instrumentStr INST01
+textInput quantity 100
+sleep 3
+textInput tag test 1
+textInput toReference transaction unlock 01
+button save
+find textH1 View Unlock
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST01
+search s_stat Ready
+sleep 5
+tableClick Code INST01
+button approve
+find textH1 View Unlock
+sleep 2
+expect pass
+logout
+
+test unlock 02 transaction trust
+description unlock 02 transaction trust
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new unlock
+form admTrans
+textInput due date
+select2Input toAccountStr TRUST02
+select2Input instrumentStr INST02
+textInput quantity 100
+sleep 3
+textInput tag test 2
+textInput toReference transaction unlock 02
+button save
+find textH1 View Unlock
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST02
+search s_stat Ready
+sleep 5
+tableClick Code INST02
+button approve
+find textH1 View Unlock
+sleep 2
+expect pass
+logout
+
+test unlock 03 transaction trust
+description unlock 03 transaction trust
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new unlock
+form admTrans
+textInput due date
+select2Input toAccountStr TRUST03
+select2Input instrumentStr INST03
+textInput quantity 100
+sleep 3
+textInput tag test 3
+textInput toReference transaction unlock 03
+button save
+find textH1 View Unlock
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST03
+search s_stat Ready
+sleep 5
+tableClick Code INST03
+button approve
+find textH1 View Unlock
+sleep 2
+expect pass
+logout
+
+test unlock 04 transaction trust
+description unlock 04 transaction trust
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new unlock
+form admTrans
+textInput due date
+select2Input toAccountStr TRUST04
+select2Input instrumentStr INST04
+textInput quantity 100
+sleep 3
+textInput tag test 4
+textInput toReference transaction unlock 04
+button save
+find textH1 View Unlock
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST04
+search s_stat Ready
+sleep 5
+tableClick Code INST04
+button approve
+find textH1 View Unlock
+sleep 2
+expect pass
+logout
+
+test unlock 05 transaction trust
+description unlock 05 transaction trust
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new unlock
+form admTrans
+textInput due date
+select2Input toAccountStr TRUST05
+select2Input instrumentStr INST05
+textInput quantity 100
+sleep 3
+textInput tag test 5
+textInput toReference transaction unlock 05
+button save
+find textH1 View Unlock
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST05
+search s_stat Ready
+sleep 5
+tableClick Code INST05
+button approve
+find textH1 View Unlock
+sleep 2
+expect pass
+logout
+
+test unlock 06 transaction trust
+description unlock 06 transaction trust
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new unlock
+form admTrans
+textInput due date
+select2Input toAccountStr TRUST06
+select2Input instrumentStr INST06
+textInput quantity 100
+sleep 3
+textInput tag test 6
+textInput toReference transaction unlock 06
+button save
+find textH1 View Unlock
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST06
+search s_stat Ready
+sleep 5
+tableClick Code INST06
+button approve
+find textH1 View Unlock
+sleep 2
+expect pass
+logout
+
+test unlock 07 transaction trust
+description unlock 07 transaction trust
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new unlock
+form admTrans
+textInput due date
+select2Input toAccountStr TRUST07
+select2Input instrumentStr INST07
+textInput quantity 100
+sleep 3
+textInput tag test 7
+textInput toReference transaction unlock 07
+button save
+find textH1 View Unlock
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST07
+search s_stat Ready
+sleep 5
+tableClick Code INST07
+button approve
+find textH1 View Unlock
+sleep 2
+expect pass
+logout
+
+test unlock 08 transaction trust
+description unlock 08 transaction trust
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new unlock
+form admTrans
+textInput due date
+select2Input toAccountStr TRUST08
+select2Input instrumentStr INST08
+textInput quantity 100
+sleep 3
+textInput tag test 8
+textInput toReference transaction unlock 08
+button save
+find textH1 View Unlock
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST08
+search s_stat Ready
+sleep 5
+tableClick Code INST08
+button approve
+find textH1 View Unlock
+sleep 2
+expect pass
+logout
+
+test unlock 09 transaction trust
+description unlock 09 transaction trust
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new unlock
+form admTrans
+textInput due date
+select2Input toAccountStr TRUST09
+select2Input instrumentStr INST09
+textInput quantity 100
+sleep 3
+textInput tag test 9
+textInput toReference transaction unlock 09
+button save
+find textH1 View Unlock
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST09
+search s_stat Ready
+sleep 5
+tableClick Code INST09
+button approve
+find textH1 View Unlock
+sleep 2
+expect pass
+logout
+
+test unlock 10 transaction trust
+description unlock 10 transaction trust
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new unlock
+form admTrans
+textInput due date
+select2Input toAccountStr TRUST10
+select2Input instrumentStr INST10
+textInput quantity 100
+sleep 3
+textInput tag test 10
+textInput toReference transaction unlock 10
+button save
+find textH1 View Unlock
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST10
+search s_stat Ready
+sleep 5
+tableClick Code INST10
+button approve
+find textH1 View Unlock
+sleep 2
+expect pass
+logout

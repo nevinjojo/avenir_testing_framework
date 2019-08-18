@@ -1,0 +1,118 @@
+test new issuer 01
+description creating a new issuer
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name Issuer A
+textInput short ISSUER1
+menuInput country New Zealand
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+sleep 2
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part ISSUER1
+tableClick short ISSUER1
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+
+test new issuer 02
+description creating a new issuer
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name Issuer B
+textInput short ISSUER2
+menuInput country New Zealand
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+sleep 2
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part ISSUER2
+tableClick short ISSUER2
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+
+test new issuer 03
+description creating a new issuer
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name Issuer C
+textInput short ISSUER3
+menuInput country New Zealand
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+sleep 2
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part ISSUER3
+tableClick short ISSUER3
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+
+test new issuer 04
+description creating a new issuer
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name Issuer D
+textInput short ISSUER4
+menuInput country New Zealand
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+sleep 2
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part ISSUER4
+tableClick short ISSUER4
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout

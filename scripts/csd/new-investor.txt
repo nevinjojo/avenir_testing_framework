@@ -1,0 +1,324 @@
+test new investor 01 - company
+description creating a new investor - company
+goto csd.com
+login csd_user1 csd_pass1
+menu investors
+button new company
+form admOrg
+textInput name Investor 1
+textInput address1 35-37 Cambridge Terrace
+textInput postcode 6011
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu investors
+search s_part Investor 1
+search stat All
+button search
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test new investor 02 - company
+description creating a new investor - company
+goto csd.com
+login csd_user1 csd_pass1
+menu investors
+button new company
+form admOrg
+textInput name Investor 2
+textInput address1 35-37 Cambridge Terrace
+textInput postcode 6011
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu investors
+search s_part Investor 2
+search stat All
+button search
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test new investor 03 - company
+description creating a new investor - company
+goto csd.com
+login csd_user1 csd_pass1
+menu investors
+button new company
+form admOrg
+textInput name Investor 3
+textInput address1 35-37 Cambridge Terrace
+textInput postcode 6011
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu investors
+search s_part Investor 3
+search stat All
+button search
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+
+test new investor 04 - individual 
+description creating a new investor - individual
+goto csd.com
+login csd_user1 csd_pass1
+menu investors
+button new individual
+form admOrg
+textInput name Investor
+textInput last 4
+textInput address1 35-37 Cambridge Terrace
+textInput postcode 6011
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu investors
+search s_part 4, investor
+search stat All
+button search
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test new investor 05 - individual 
+description creating a new investor - individual
+goto csd.com
+login csd_user1 csd_pass1
+menu investors
+button new individual
+form admOrg
+textInput name Investor
+textInput last 5
+textInput address1 35-37 Cambridge Terrace
+textInput postcode 6011
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu investors
+search s_part 5, investor
+search stat All
+button search
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test new investor 06 - individual 
+description creating a new investor - individual
+goto csd.com
+login csd_user1 csd_pass1
+menu investors
+button new individual
+form admOrg
+textInput name Investor
+textInput last 6
+textInput address1 35-37 Cambridge Terrace
+textInput postcode 6011
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu investors
+search s_part 6, investor
+search stat All
+button search
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test new investor 07 - trust
+description creating a new investor - trust
+goto csd.com
+login csd_user1 csd_pass1
+menu investors
+button new trust
+form admOrg
+textInput name Investor 7
+textInput address1 35-37 Cambridge Terrace
+textInput postcode 6011
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu investors
+search s_part Investor 7
+search stat All
+button search
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test new investor 08 - trust
+description creating a new investor - trust
+goto csd.com
+login csd_user1 csd_pass1
+menu investors
+button new trust
+form admOrg
+textInput name Investor 8
+textInput address1 35-37 Cambridge Terrace
+textInput postcode 6011
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu investors
+search s_part Investor 8
+search stat All
+button search
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test new investor 09 - trust
+description creating a new investor - trust
+goto csd.com
+login csd_user1 csd_pass1
+menu investors
+button new trust
+form admOrg
+textInput name Investor 9
+textInput address1 35-37 Cambridge Terrace
+textInput postcode 6011
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu investors
+search s_part Investor 9
+search stat All
+button search
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+
+test new investor 10 - company
+description creating a new investor - company
+goto csd.com
+login csd_user1 csd_pass1
+menu investors
+button new company
+form admOrg
+textInput name Investor 1
+textInput address1 35-37 Cambridge Terrace
+textInput postcode 6011
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu investors
+search s_part Investor 1
+search stat All
+button search
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout

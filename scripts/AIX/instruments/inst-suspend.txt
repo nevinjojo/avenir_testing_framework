@@ -1,0 +1,287 @@
+test Suspend / Unsuspend Instrument 01
+description suspending, unsuspending and deleting equity instrument
+goto AIX
+login aix_user1 aix_pass1
+date
+menu instruments
+button new equity
+form admInstrument
+textInput name Instrument Suspend 01
+textInput short INSTS1
+textInput isin INSTS1
+menuInput currency EUR
+menuInput issuer ISS01
+textInput golive date
+textInput ticker INSTS1
+button save
+sleep 2
+find textH1 View Equity
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu instruments
+form instrument
+textInput short INSTS1
+menuInput state Any
+button search
+sleep 2
+tableClick short INSTS1
+find textH1 View Equity
+button approve
+sleep 2
+button suspend
+sleep 4
+button suspend
+sleep 4
+button suspend
+sleep 4
+button delete
+sleep 2
+clickby class btn btn-danger btn-ok
+find textH1 Manage Instruments
+expect pass
+logout
+
+test Suspend / Unsuspend Instrument 02
+description suspending, unsuspending, and deleting equity instrument
+goto AIX
+login aix_user1 aix_pass1
+date
+menu instruments
+button new equity
+form admInstrument
+textInput name Instrument Suspend 02
+textInput short INSTS2
+textInput isin INSTS2
+menuInput currency EUR
+menuInput issuer ISS02
+textInput golive date
+textInput ticker INSTS2
+button save
+sleep 2
+find textH1 View Equity
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu instruments
+form instrument
+textInput short INSTS2
+menuInput state Any
+button search
+sleep 2
+tableClick short INSTS2
+find textH1 View Equity
+button approve
+sleep 2
+button suspend
+sleep 4
+button suspend
+sleep 4
+button suspend
+sleep 4
+button delete
+sleep 2
+clickby class btn btn-danger btn-ok
+find textH1 Manage Instruments
+expect pass
+logout
+
+test Suspend / Unsuspend Instrument 03
+description suspending, unsuspending and deleting debt instruments
+goto AIX
+login aix_user1 aix_pass1
+date
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name Instrument Suspend 03
+textInput short INSTS3
+textInput isin INSTS3
+menuInput currency USD
+menuInput issuer ISS03
+textInput golive date
+textInput ticker INSTS3
+button save
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu instruments
+form instrument
+textInput short INSTS3
+menuInput state Any
+button search
+sleep 2
+tableClick short INSTS3
+find textH1 View Debt
+button approve
+sleep 2
+button suspend
+sleep 4
+button suspend
+sleep 4
+button suspend
+sleep 4
+button delete
+sleep 2
+clickby class btn btn-danger btn-ok
+find textH1 Manage Instruments
+expect pass
+logout
+
+test Suspend / Unsuspend Instrument 04
+description suspending, unsuspending and deleting debt instruments
+goto AIX
+login aix_user1 aix_pass1
+date
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fixed Rate Bond
+textInput name Instrument Suspend 04
+textInput short INSTS4
+textInput isin INSTS4
+menuInput currency USD
+menuInput issuer ISS04
+textInput golive date
+textInput ticker INSTS4
+button save
+sleep 2
+find textH1 View Debt
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu instruments
+form instrument
+textInput short INSTS4
+menuInput state Any
+button search
+sleep 2
+tableClick short INSTS4
+find textH1 View Debt
+button approve
+sleep 2
+button suspend
+sleep 4
+button suspend
+sleep 4
+button suspend
+sleep 4
+button delete
+sleep 2
+clickby class btn btn-danger btn-ok
+find textH1 Manage Instruments
+expect pass
+logout
+
+test Suspend / Unsuspend Instrument 05
+description suspending, unsuspending and deleting fund instruments
+goto AIX
+login aix_user1 aix_pass1
+date
+menu instruments
+button new fund
+form admInstrument
+menuInput category Fund
+textInput name Instrument Suspend 05
+textInput short INSTS5
+textInput isin INSTS5
+menuInput currency GBP
+menuInput issuer ISS05
+textInput golive date
+textInput ticker INSTS5
+textInput fix INSTS5
+textInput mic INSTS5
+button save
+sleep 2
+find textH1 View Fund
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu instruments
+form instrument
+textInput short INSTS5
+menuInput category Fund
+menuInput state Any
+button search
+sleep 2
+tableClick short INSTS5
+find textH1 View Fund
+button approve
+sleep 2
+button suspend
+sleep 4
+button suspend
+sleep 4
+button suspend
+sleep 4
+button delete
+sleep 2
+clickby class btn btn-danger btn-ok
+find textH1 Manage Instruments
+expect pass
+logout
+
+test Suspend / Unsuspend Instrument 06
+description suspending, unsuspending and deleting fund instruments
+goto AIX
+login aix_user1 aix_pass1
+date
+menu instruments
+button new fund
+form admInstrument
+menuInput category Fund
+textInput name Instrument Suspend 06
+textInput short INSTS6
+textInput isin INSTS6
+menuInput currency GBP
+menuInput issuer ISS06
+textInput golive date
+textInput ticker INSTS6
+textInput fix INSTS6
+textInput mic INSTS6
+button save
+sleep 2
+find textH1 View Fund
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu instruments
+form instrument
+textInput short INSTS6
+menuInput category Fund
+menuInput state Any
+button search
+sleep 2
+tableClick short INSTS6
+find textH1 View Fund
+button approve
+sleep 2
+button suspend
+sleep 4
+button suspend
+sleep 4
+button suspend
+sleep 4
+button delete
+sleep 2
+clickby class btn btn-danger btn-ok
+find textH1 Manage Instruments
+expect pass
+logout
+
+

@@ -1,0 +1,160 @@
+test New Ask Order Negative Test 01
+description using symbols in inputs
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-sell-TEEQ
+sleep 2
+window 2
+form usrOrderSell
+menuInput trader !@#$%^&*
+menuInput orderType (*&^.?/
+checkerInput orderValid_2
+textInput quantity '":];{
+textInput price *&^%$@
+find textH1 New Sell Order
+button save
+sleep 3
+button confirm
+sleep 3
+window 1
+expect pass
+logout
+
+test New Ask Order Negative Test 02
+description repeating actions multiple times in a row
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-sell-TEEQ
+button order-sell-TEEQ
+button order-sell-TEEQ
+sleep 2
+window 2
+form usrOrderSell
+menuInput trader Imhotep Trading Solutions
+menuInput trader Imhotep Trading Solutions
+menuInput orderType Limit
+checkerInput orderValid_2
+textInput quantity 100
+textInput price 100
+textInput price 100
+find textH1 New Sell Order
+button save
+button save
+button save
+sleep 3
+button confirm
+button confirm
+button confirm
+sleep 3
+window 1
+expect pass
+logout
+
+test New Ask Order Negative Test 03
+description using a negative number in quantity input
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-sell-TEEQ
+sleep 2
+window 2
+form usrOrderSell
+menuInput trader Imhotep Trading Solutions
+menuInput orderType Limit
+checkerInput orderValid_2
+textInput quantity -1500
+textInput price 500
+saveID
+find textH1 New Sell Order
+button save
+sleep 3
+button confirm
+sleep 3
+window 1
+expect pass
+logout
+
+test Edit Ask Order Negative Test 03
+description Edit Ask Order Negative Test 03
+goto trade
+login trade_user1 trade_pass1
+menu Orders
+tableClick ID saveID
+find textH1 View Order
+button edit
+form usrOrderSell
+textInput quantity -2300
+button save
+sleep 2
+button confirm
+expect pass
+logout
+
+
+test New Ask Order Negative Test 04
+description using a negative number in price input
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-sell-TEEQ
+sleep 2
+window 2
+form usrOrderSell
+menuInput trader Imhotep Trading Solutions
+menuInput orderType Limit
+checkerInput orderValid_2
+textInput quantity 1000
+textInput price -2000
+saveID
+find textH1 New Sell Order
+button save
+sleep 3
+button confirm
+sleep 3
+window 1
+expect pass
+logout
+
+test Edit Ask Order Negative Test 04
+description Edit Ask Order Negative Test 04
+goto trade
+login trade_user1 trade_pass1
+menu Orders
+tableClick ID saveID
+find textH1 View Order
+button edit
+form usrOrderSell
+textInput price -1500
+button save
+sleep 2
+button confirm
+expect pass
+logout
+
+test New Ask Order Negative Test 05
+description leaving some * fields blank 
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-sell-TEEQ 
+sleep 2
+window 2
+form usrOrderSell
+menuInput trader Imhotep Trading Solutions
+menuInput orderType
+checkerInput orderValid_2
+textInput quantity
+textInput price 10
+find textH1 New Sell Order
+button save
+sleep 3
+button confirm
+sleep 3
+window 1
+sleep 4
+expect pass
+logout
+
+ 

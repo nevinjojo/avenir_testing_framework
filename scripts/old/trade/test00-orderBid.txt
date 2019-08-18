@@ -1,0 +1,43 @@
+test New Test00 Bid Order
+description New Test00 Bid Order
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEST00
+button order-buy-TEST00
+sleep 2
+window 2
+form usrOrderBuy
+menuInput trader Imhotep Trading Solutions
+menuInput orderType Limit
+checkerInput orderValid_2
+textInput quantity 100
+textInput price 1000
+# saveID
+button save
+sleep 6
+button confirm
+window 1
+find textH1 Order Book
+sleep 2
+expect pass
+logout
+
+# test Edit Test00 Bid Order
+# description Edit Test00 Bid Order
+# goto trade
+# login trade_user1 trade_pass1
+# menu Orders
+# tableClick ID saveID
+# find textH1 View Order
+# button edit
+# form usrOrderBuy
+# textInput quantity 10
+# textInput price 100
+# button save
+# sleep 2
+# button confirm
+# sleep 2
+# find textH1 View Order
+# expect pass
+# logout
+

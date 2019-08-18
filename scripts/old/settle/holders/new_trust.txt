@@ -1,0 +1,18 @@
+# to test the new trust feature of the system
+
+test New Trust 1.1
+description This test Makes a new trust
+goTo dev
+login dev_user1 dev_pass1
+menu investors
+button new trust
+form admOrg
+textInput name trust name
+textInput address1 trust address
+textInput postcode 5011
+menuInput country Belgium
+textInput idNumber 7564
+button save
+sleep 2
+find textH1 View Investor 
+expect pass

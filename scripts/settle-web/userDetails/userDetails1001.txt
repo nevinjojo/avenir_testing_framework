@@ -1,0 +1,39 @@
+# Edit User Details
+
+test User1001
+description edit user details
+goto settle_web
+login settleweb_user2 settleweb_pass2
+menu My Details
+clickby class edit-detail
+form userUser
+textInput phone +64472222002
+textInput mobile +441830531802
+textInput email srt0@avenir-technology.com
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test User1001
+description using html code in email input
+goto settle_web
+login settleweb_user2 settleweb_pass2
+menu My Details
+clickby class edit-detail
+form userUser
+textInput phone +64472222002
+textInput mobile +441830531802
+textInput email <img src="https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png" width="120" border="0" onload="window.lol&amp;&amp;lol()" data-atf="3">
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out

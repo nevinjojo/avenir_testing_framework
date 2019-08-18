@@ -1,0 +1,380 @@
+test Creating INDIV01 Account 2
+description New Holder Account
+goto
+login 
+menu Holders
+search s_part INDIV01
+search s_stat Active
+sleep 4
+clickby text INDIV01
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating INDIV01 Account 3
+description New Holder Account
+goto 
+login 
+menu Holders
+search s_part INDIV01
+search s_stat Active
+sleep 4
+clickby text INDIV01
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating INDIV02 Account 2
+description New Holder Account
+goto
+login 
+menu Holders
+search s_part INDIV02
+search s_stat Active
+sleep 4
+clickby text INVID02
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating INDIV02 Account 3
+description New Holder Account
+goto 
+login 
+menu Holders
+search s_part INDIV02
+search s_stat Active
+sleep 4
+clickby text INDIV02
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating INDIV03 Account 2
+description New Holder Account
+goto
+login 
+menu Holders
+search s_part INDIV03
+search s_stat Active
+sleep 4
+clickby text INDIV03
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating INDIV03 Account 3
+description New Holder Account
+goto
+login
+menu Holders
+search s_part INDIV03
+search s_stat Active
+sleep 4
+clickby text INDIV03
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating INDIV04 Account 2
+description New Holder Account
+goto
+login
+menu Holders
+search s_part INDIV04
+search s_stat Active
+sleep 4
+clickby text INDIV04
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating INDIV04 Account 3
+description New Holder Account
+goto
+login
+menu Holders
+search s_part INDIV04
+search s_stat Active
+sleep 4
+clickby text INDIV04
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating INDIV05 Account 2
+description New Holder Account
+goto
+login
+menu Holders
+search s_part INDIV05
+search s_stat Active
+sleep 4
+clickby text INDIV05
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating INDIV05 Account 3
+description New Holder Account
+goto
+login 
+menu Holders
+search s_part INDIV05
+search s_stat Active
+sleep 4
+clickby text INDIV05
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating INDIV06 Account 2
+description New Holder Account
+goto
+login
+menu Holders
+search s_part INDIV06
+search s_stat Active
+sleep 4
+clickby text INDIV06
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating INDIV06 Account 3
+description New Holder Account
+goto 
+login 
+menu Holders
+search s_part INDIV06
+search s_stat Active
+sleep 4
+clickby text INDIV06
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating INDIV07 Account 2
+description New Holder Account
+goto
+login 
+menu Holders
+search s_part INDIV07
+search s_stat Active
+sleep 4
+clickby text INDIV07
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating INDIV07 Account 3
+description New Holder Account
+goto
+login
+menu Holders
+search s_part INDIV07
+search s_stat Active
+sleep 4
+clickby text INDIV07
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating INDIV08 Account 2
+description New Holder Account
+goto 
+login
+menu Holders
+search s_part INDIV08
+search s_stat Active
+sleep 4
+clickby text INDIV08
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating INDIV08 Account 3
+description New Holder Account
+goto 
+login 
+menu Holders
+search s_part INDIV08
+search s_stat Active
+sleep 4
+clickby text INDIV08
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating INDIV09 Account 2
+description New Holder Account
+goto
+login
+menu Holders
+search s_part INDIV09
+search s_stat Active
+sleep 4
+clickby text INDIV09
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating INDIV09 Account 3
+description New Holder Account
+goto
+login
+menu Holders
+search s_part INDIV09
+search s_stat Active
+sleep 4
+clickby text INDIV09
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating INDIV10 Account 2
+description New Holder Account
+goto 
+login
+menu Holders
+search s_part INDIV10
+search s_stat Active
+sleep 4
+clickby text INDIV10
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating INDIV10 Account 3
+description New Holder Account
+goto 
+login
+menu Holders
+search s_part INDIV10
+search s_stat Active
+sleep 4
+clickby text INDIV10
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+

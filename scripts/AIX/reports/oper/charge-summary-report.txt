@@ -1,0 +1,22 @@
+test Charge Summary Report 01
+description charge summary report - oper
+goto AIX
+login aix_user1 aix_pass1
+menu reports
+clickby text Charge Summary Report
+button save
+sleep 15
+screenshot time full
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text PDF
+sleep 20
+screenshot time full
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text CSV
+sleep 10
+find textH1 Trades
+sleep 2
+expect pass
+logout

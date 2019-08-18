@@ -1,0 +1,349 @@
+test EUR currency transaction 01
+description create - company holder 01
+goto ARL_UK
+login uk_user_1 uk_pass_1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr COMP01
+select2Input instrumentStr EUR
+sleep 3
+textInput amount 10,000
+textInput toReference currency transaction 01
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu transactions
+search s_inst EUR
+search s_stat Ready
+sleep 4
+tableClick Code EUR
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test EUR currency transaction 02
+description create - company holder 02
+goto ARL_UK
+login uk_user_1 uk_pass_1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr COMP02
+select2Input instrumentStr EUR
+sleep 3
+textInput amount 10,000
+textInput toReference currency transaction 02
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu transactions
+search s_inst EUR
+search s_stat Ready
+sleep 4
+tableClick Code EUR
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test EUR currency transaction 03
+description create - company holder 03
+goto ARL_UK
+login uk_user_1 uk_pass_1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr COMP03
+select2Input instrumentStr EUR
+sleep 3
+textInput amount 10,000
+textInput toReference currency transaction 03
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu transactions
+search s_inst EUR
+search s_stat Ready
+sleep 4
+tableClick Code EUR
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test EUR currency transaction 04
+description create - company holder 04
+goto ARL_UK
+login uk_user_1 uk_pass_1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr COMP04
+select2Input instrumentStr EUR
+sleep 3
+textInput amount 10,000
+textInput toReference currency transaction 04
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu transactions
+search s_inst EUR
+search s_stat Ready
+sleep 4
+tableClick Code EUR
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test EUR currency transaction 05
+description create - company holder 05
+goto ARL_UK
+login uk_user_1 uk_pass_1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans 
+textInput due date
+select2Input toAccountStr COMP05
+select2Input instrumentStr EUR
+sleep 3
+textInput amount 10,000
+textInput toReference currency transaction 05
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu transactions
+search s_inst EUR
+search s_stat Ready
+sleep 4
+tableClick Code EUR
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test EUR currency transaction 06
+description create - company holder 06
+goto ARL_UK
+login uk_user_1 uk_pass_1
+date 
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr COMP06
+select2Input instrumentStr EUR
+sleep 3
+textInput amount 10,000
+textInput toReference currency transaction 06
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu transactions
+search s_inst EUR
+search s_stat Ready
+sleep 4
+tableClick Code EUR
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test EUR currency transaction 07
+description create - company holder 07
+goto ARL_UK
+login uk_user_1 uk_pass_1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr COMP07
+select2Input instrumentStr EUR
+sleep 3
+textInput amount 10,000
+textInput toReference currency transaction 07
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu transactions
+search s_inst EUR
+search s_stat Ready
+sleep 4
+tableClick Code EUR
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test EUR currency transaction 08
+description create - company holder 08
+goto ARL_UK
+login uk_user_1 uk_pass_1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr COMP08
+select2Input instrumentStr EUR
+sleep 3
+textInput amount 10,000
+textInput toReference currency transaction 08
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout 
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu transactions
+search s_inst EUR
+search s_stat Ready
+sleep 4
+tableClick Code EUR
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test EUR currency transaction 09
+description create - company holder 09
+goto ARL_UK
+login uk_user_1 uk_pass_1
+date
+menu transactions
+clickby id btn-new 
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr COMP09
+select2Input instrumentStr EUR
+sleep 3
+textInput amount 10,000
+textInput toReference currency transaction 09
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu transactions
+search s_inst EUR
+search s_stat Ready
+sleep 4
+tableClick Code EUR
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test EUR currency transaction 10
+description create - company holder 10
+goto ARL_UK
+login uk_user_1 uk_pass_1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr COMP10
+select2Input instrumentStr EUR
+sleep 3
+textInput amount 10,000
+textInput toReference currency transaction 10
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu transactions
+search s_inst EUR
+search s_stat Ready
+sleep 4
+tableClick Code EUR
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout

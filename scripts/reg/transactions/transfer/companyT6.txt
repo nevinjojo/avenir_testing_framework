@@ -1,0 +1,34 @@
+test transfer 06 transaction company
+description transfer 06 transaction company
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new transfer
+form admTrans
+textInput due date
+select2Input frAccountStr INVST06
+select2Input toAccountStr TRUST06
+select2Input instrumentStr INST06
+textInput quantity 100
+textInput frReference Transfer 1.6
+textInput toReference Transfer 1.6
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST06
+search s_stat Ready
+tableWait
+tableClick Code INST06
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout

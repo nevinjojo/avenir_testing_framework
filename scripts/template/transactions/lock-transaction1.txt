@@ -1,0 +1,349 @@
+test transaction 01 lock
+description transaction 01 lock
+goto
+login
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr PART01
+select2Input instrumentStr INST01
+textInput quantity 250
+textInput tag test 1
+textInput toReference transaction lock 01
+button save
+find textH1 View Lock
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto
+login
+menu transactions
+search s_inst INST01
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test transaction 02 lock
+description transaction 02 lock
+goto
+login
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr PART02
+select2Input instrumentStr INST02
+textInput quantity 250
+textInput tag test 2
+textInput toReference transaction lock 02
+button save
+find textH1 View Lock
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto
+login
+menu transactions
+search s_inst INST02
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test transaction 03 lock
+description transaction 03 lock
+goto
+login
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr PART03
+select2Input instrumentStr INST03
+textInput quantity 250
+textInput tag test 3
+textInput toReference transaction lock 03
+button save
+find textH1 View Lock
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto
+login
+menu transactions
+search s_inst INST03
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test transaction 04 lock
+description transaction 04 lock
+goto
+login
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr PART04
+select2Input instrumentStr INST04
+textInput quantity 250
+textInput tag test 4
+textInput toReference transaction lock 04
+button save
+find textH1 View Lock
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto
+login
+menu transactions
+search s_inst INST04
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test transaction 05 lock
+description transaction 05 lock
+goto
+login
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr PART05
+select2Input instrumentStr INST05
+textInput quantity 250
+textInput tag test 5
+textInput toReference transaction lock 05
+button save
+find textH1 View Lock
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto
+login
+menu transactions
+search s_inst INST05
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test transaction 06 lock
+description transaction 06 lock
+goto
+login
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr PART06
+select2Input instrumentStr INST06
+textInput quantity 250
+textInput tag test 6
+textInput toReference transaction lock 06
+button save
+find textH1 View Lock
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto
+login
+menu transactions
+search s_inst INST06
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test transaction 07 lock
+description transaction 07 lock
+goto
+login
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr PART07
+select2Input instrumentStr INST07
+textInput quantity 250
+textInput tag test 7
+textInput toReference transaction lock 07
+button save
+find textH1 View Lock
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto
+login
+menu transactions
+search s_inst INST07
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test transaction 08 lock
+description transaction 08 lock
+goto
+login
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr PART08
+select2Input instrumentStr INST08
+textInput quantity 250
+textInput tag test 8
+textInput toReference transaction lock 08
+button save
+find textH1 View Lock
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto
+login
+menu transactions
+search s_inst INST08
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test transaction 09 lock
+description transaction 09 lock
+goto
+login
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr PART09
+select2Input instrumentStr INST09
+textInput quantity 250
+textInput tag test 9
+textInput toReference transaction lock 09
+button save
+find textH1 View Lock
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto
+login
+menu transactions
+search s_inst INST09 
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test transaction 10 lock
+description transaction 10 lock
+goto
+login
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr PART10-2
+select2Input instrumentStr INST10
+textInput quantity 250
+textInput tag test 10
+textInput toReference transaction lock 10
+button save
+find textH1 View Lock
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto
+login
+menu transactions
+search s_inst INST10
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Lock 
+sleep 2
+expect pass
+logout

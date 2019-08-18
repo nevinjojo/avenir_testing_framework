@@ -1,0 +1,365 @@
+test transaction 01 transfer
+description transaction 01 transfer
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-trans
+form admTrans
+textInput due date
+select2Input frAccountStr PART01
+sleep 4
+select2Input toAccountStr PART02
+select2Input instrumentStr INST01
+textInput quantity 2500
+textInput frReference Transfer 1
+textInput toReference Transfer 1
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST01
+search s_stat Ready
+sleep 4
+tableClick Code INST01
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test transaction 02 transfer
+description transaction 02 transfer
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-trans
+form admTrans
+textInput due date
+select2Input frAccountStr PART02
+sleep 4
+select2Input toAccountStr PART03
+select2Input instrumentStr INST02
+textInput quantity 2500
+textInput frReference Transfer 2
+textInput toReference Transfer 2
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST02
+search s_stat Ready
+sleep 4
+tableClick Code INST02
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test transaction 03 transfer
+description transaction 03 transfer
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-trans
+form admTrans
+textInput due date
+select2Input frAccountStr PART03-1
+sleep 4
+select2Input toAccountStr PART04-1
+select2Input instrumentStr INST03
+textInput quantity 2500
+textInput frReference Transfer 3
+textInput toReference Transfer 3
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST03
+search s_stat Ready
+sleep 4
+tableClick Code INST03
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test transaction 04 transfer
+description transaction 04 transfer
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-trans
+form admTrans
+textInput due date
+select2Input frAccountStr PART04-1
+sleep 4
+select2Input toAccountStr PART05-1
+select2Input instrumentStr INST04
+textInput quantity 2500
+textInput frReference Transfer 4
+textInput toReference Transfer 4
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST04
+search s_stat Ready
+sleep 4
+tableClick Code INST04
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test transaction 05 transfer
+description transaction 05 transfer
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-trans
+form admTrans
+textInput due date
+select2Input frAccountStr PART05-1
+sleep 4
+select2Input toAccountStr PART06-1
+select2Input instrumentStr INST05
+textInput quantity 2500
+textInput frReference Transfer 5
+textInput toReference Transfer 5
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST05
+search s_stat Ready
+tableClick Code INST05
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test transaction 06 transfer
+description transaction 06 transfer
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-trans
+form admTrans
+textInput due date
+select2Input frAccountStr PART06-1
+sleep 4
+select2Input toAccountStr PART07-1
+select2Input instrumentStr INST06
+textInput quantity 2500
+textInput frReference Transfer 6
+textInput toReference Transfer 6
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST06
+search s_stat Ready
+sleep 4
+tableClick Code INST06
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test transaction 07 transfer
+description transaction 07 transfer
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-trans
+form admTrans
+textInput due date
+select2Input frAccountStr PART07-1
+sleep 4
+select2Input toAccountStr PART08-1
+select2Input instrumentStr INST07
+textInput quantity 2500
+textInput frReference Transfer 7
+textInput toReference Transfer 7
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST07
+search s_stat Ready
+sleep 4
+tableClick Code INST07
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test transaction 08 transfer
+description transaction 08 transfer
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-trans
+form admTrans
+textInput due date
+select2Input frAccountStr PART08-1
+sleep 4
+select2Input toAccountStr PART09-1
+select2Input instrumentStr INST08
+textInput quantity 2500
+textInput frReference Transfer 8
+textInput toReference Transfer 8
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST08
+search s_stat Ready
+tableClick Code INST08
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test transaction 09 transfer
+description transaction 09 transfer
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-trans
+form admTrans
+textInput due date
+select2Input frAccountStr PART09-1
+sleep 4
+select2Input toAccountStr PART10-1
+select2Input instrumentStr INST09
+textInput quantity 2500
+textInput frReference Transfer 9
+textInput toReference Transfer 9
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST09
+search s_stat Ready
+tableClick Code INST09
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test transaction 10 transfer
+description transaction 10 transfer
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-trans
+form admTrans
+textInput due date
+select2Input frAccountStr PART10-1
+sleep 4
+select2Input toAccountStr PART01-1
+select2Input instrumentStr INST10
+textInput quantity 2500
+textInput frReference Transfer 10
+textInput toReference Transfer 10
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST10
+search s_stat Ready
+tableClick Code INST10
+button approve
+find textH1 View Transfer 
+sleep 2
+expect pass
+logout

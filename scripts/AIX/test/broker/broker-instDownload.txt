@@ -1,0 +1,11 @@
+test Broker Login - Instrument Download
+description Broker Login - Instrument Download
+goto AIX
+login P1_BRKR1_user P1_BRKR1_pass
+menu instruments
+clickby text Download
+sleep 2
+find textH1 View Instruments
+expect pass
+logout
+

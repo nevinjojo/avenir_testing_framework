@@ -1,0 +1,19 @@
+# to test the new company feature of the system
+
+test New Company 1.1
+description This test Makes a new company
+goTo dev
+login dev_user1 dev_pass1
+menu holder_accounts
+button new company
+form admOrg
+textInput name company name
+textInput address1 company address
+menuInput country Anguilla
+textInput phone 63647373738
+menuInput idCountry Anguilla
+textInput idDate 21/10/2017
+button save
+sleep 2
+find textH1 View Investor 
+expect pass

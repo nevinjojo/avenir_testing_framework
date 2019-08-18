@@ -1,0 +1,96 @@
+test Update Investor Details Negative Test 01
+description leaving all inputs blank
+goto settle_web
+login settleweb_user1 settleweb_pass1
+clickby id hldr_link-000025974-1
+button update
+form userHolder
+textInput phone
+textInput mobile
+textInput email
+textInput address1
+textInput postcode
+menuInput country
+textInput bankaccount_sort_code
+textInput bankaccount_account
+button save
+sleep 3
+button confirm
+find textH1 Investor Details
+expect pass
+clickby text Menu
+sleep 3
+clickby text Logout
+
+test Update Investor Details Negative Test 02
+description using letters in inputs that should use numbers only
+goto settle_web
+login settleweb_user1 settleweb_pass1
+clickby id hldr_link-000025974-1
+button update
+form userHolder
+textInput phone asdfghjkl
+textInput mobile lkjhgfdsa
+textInput email srt@avenir-technology.com
+textInput address1 19 Hope Street
+button save
+sleep 3
+button confirm
+find textH1 Investor Details
+expect pass
+clickby text Menu
+sleep 3
+clickby text Logout
+
+test Update Investor Details Negative Test 03
+description using symbols in inputs
+goto settle_web
+login settleweb_user1 settleweb_pass1
+clickby id hldr_link-000025974-1
+button update
+form userHolder
+textInput phone +442067816720
+textInput mobile +447590196372
+textInput email srt0@avenir-technology.com
+textInput address1 (*&^%#@!
+textInput postcode %#@$%
+menuInput country New Zealand
+textInput bankaccount_sort_code ^%$@$#
+textInput bankaccount_account &@:?/
+button save
+sleep 3
+button confirm
+find textH1 Investor Details
+expect pass
+clickby text Menu
+sleep 3
+clickby text Logout
+
+test Update Investor Details Negative Test 04
+description clicking buttons multiple times in a row
+goto settle_web
+login settleweb_user1 settleweb_pass1
+clickby id hldr_link-000025974-1
+button update
+button update
+button update
+form userHolder
+textInput phone +442067816720
+textInput mobile +447590196372
+textInput email srt0@avenir-technology.com
+textInput address1 19 Hope Street
+textInput postcode 5028
+menuInput country New Zealand
+textInput bankaccount_sort_code 042760
+textInput bankaccount_account 43384034
+button save
+button save
+button save
+sleep 3
+button confirm
+button confirm
+find textH1 Investor Details
+expect pass
+clickby text Menu
+sleep 3
+clickby text Logout

@@ -1,0 +1,719 @@
+test New Issuer User 1 - ISS01
+description creating a new issuer user - ISS01
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS01
+button search
+tableClick name ISS01
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS1-U1
+textInput title issuer
+textInput name Issuer-User
+textInput last One
+textInput preferred issuer user one
+textInput email issU1@test.com
+textInput phone 0800 838383
+textInput mobile 022 566 8582
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Issuer User 2 - ISS01
+description creating a new issuer user - ISS01
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS01
+button search
+tableClick name ISS01
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS1-U2
+textInput title issuer
+textInput name Issuer-User
+textInput last Two
+textInput preferred issuer user two
+textInput email issU2@test.com
+textInput phone 0800 838383
+textInput mobile 022 566 8582
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Issuer User 1 - ISS02
+description creating a new issuer user - ISS02
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS02
+button search
+tableClick name ISS02
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS2-U1
+textInput title issuer
+textInput name Issuer-User
+textInput last One
+textInput preferred issuer user one
+textInput email issU1@test.com
+textInput phone 0800 838383
+textInput mobile 022 566 8582
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Issuer User 2 - ISS02
+description creating a new issuer user - ISS02
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS02
+button search
+tableClick name ISS02
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS2-U2
+textInput title issuer
+textInput name Issuer-User
+textInput last Two
+textInput preferred issuer user two
+textInput email issU2@test.com
+textInput phone 0800 838383
+textInput mobile 022 566 8582
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Issuer User 1 - ISS03
+description creating a new issuer user - ISS03
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS03
+button search
+tableClick name ISS03
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS3-U1
+textInput title issuer
+textInput name Issuer-User
+textInput last One
+textInput preferred issuer user one
+textInput email issU1@test.com
+textInput phone 0800 838383
+textInput mobile 022 566 8582
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Issuer User 2 - ISS03
+description creating a new issuer user - ISS03
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS03
+button search
+tableClick name ISS03
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS3-U2
+textInput title issuer
+textInput name Issuer-User
+textInput last Two
+textInput preferred issuer user two
+textInput email issU2@test.com
+textInput phone 0800 838383
+textInput mobile 022 566 8582
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Issuer User 1 - ISS04
+description creating a new issuer user - ISS04
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS04
+button search
+tableClick name ISS04
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS4-U1
+textInput title issuer
+textInput name Issuer-User
+textInput last One
+textInput preferred issuer user one
+textInput email issU1@test.com
+textInput phone 0800 838383
+textInput mobile 022 566 8582
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Issuer User 2 - ISS04
+description creating a new issuer user - ISS04
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS04
+button search
+tableClick name ISS04
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS4-U2
+textInput title issuer
+textInput name Issuer-User
+textInput last Two
+textInput preferred issuer user two
+textInput email issU2@test.com
+textInput phone 0800 838383
+textInput mobile 022 566 8582
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Issuer User 1 - ISS05
+description creating a new issuer user - ISS05
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS05
+button search
+tableClick name ISS05
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS5-U1
+textInput title issuer
+textInput name Issuer-User
+textInput last One
+textInput preferred issuer user one
+textInput email issU1@test.com
+textInput phone 0800 838383
+textInput mobile 022 566 8582
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Issuer User 2 - ISS05
+description creating a new issuer user - ISS05
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS05
+button search
+tableClick name ISS05
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS5-U2
+textInput title issuer
+textInput name Issuer-User
+textInput last Two
+textInput preferred issuer user two
+textInput email issU2@test.com
+textInput phone 0800 838383
+textInput mobile 022 566 8582
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Issuer User 1 - ISS06
+description creating a new issuer user - ISS06
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS06
+button search
+tableClick name ISS06
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS6-U1
+textInput title issuer
+textInput name Issuer-User
+textInput last One
+textInput preferred issuer user one
+textInput email issU1@test.com
+textInput phone 0800 838383
+textInput mobile 022 566 8582
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Issuer User 2 - ISS06
+description creating a new issuer user - ISS06
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS06
+button search
+tableClick name ISS06
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS6-U2
+textInput title issuer
+textInput name Issuer-User
+textInput last Two
+textInput preferred issuer user two
+textInput email issU2@test.com
+textInput phone 0800 838383
+textInput mobile 022 566 8582
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Issuer User 1 - ISS07
+description creating a new issuer user - ISS07
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS07
+button search
+tableClick name ISS07
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS07-U1
+textInput title issuer
+textInput name Issuer-User
+textInput last One
+textInput preferred issuer user one
+textInput email issU1@test.com
+textInput phone 0800 838383
+textInput mobile 022 566 8582
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Issuer User 2 - ISS07
+description creating a new issuer user - ISS07
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS07
+button search
+tableClick name ISS07
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS07-U2
+textInput title issuer
+textInput name Issuer-User
+textInput last Two
+textInput preferred issuer user two
+textInput email issU2@test.com
+textInput phone 0800 838383
+textInput mobile 022 566 8582
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Issuer User 1 - ISS08
+description creating a new issuer user ISS08
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS08
+button search
+tableClick name ISS08
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS08-U1
+textInput title issuer
+textInput name Issuer-User
+textInput last One
+textInput preferred issuer user one
+textInput email issU1@test.com
+textInput phone 0800 838383
+textInput mobile 022 566 8582
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Issuer User 2 - ISS08
+description creating a new issuer user ISS08
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS08
+button search
+tableClick name ISS08
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS08-U2
+textInput title issuer
+textInput name Issuer-User
+textInput last Two
+textInput preferred issuer user two
+textInput email issU2@test.com
+textInput phone 0800 838383
+textInput mobile 022 566 8582
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Issuer User 1 - ISS09
+description creating a new issuer user ISS09
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS09
+button search
+tableClick name ISS09
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS09-U1
+textInput title issuer
+textInput name Issuer-User
+textInput last One
+textInput preferred issuer user one
+textInput email issU1@test.com
+textInput phone 0800 838383
+textInput mobile 022 566 8582
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Issuer User 2 - ISS09
+description creating a new issuer user ISS09
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS09
+button search
+tableClick name ISS09
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS09-U2
+textInput title issuer
+textInput name Issuer-User
+textInput last Two
+textInput preferred issuer user two
+textInput email issU2@test.com
+textInput phone 0800 838383
+textInput mobile 022 566 8582
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Issuer User 1 - ISS10
+description creating a new issuer user ISS10
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS10
+button search
+tableClick name ISS10
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS10-U1
+textInput title issuer
+textInput name Issuer-User
+textInput last One
+textInput preferred issuer user one
+textInput email issU1@test.com
+textInput phone 0800 838383
+textInput mobile 022 566 8582
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New Issuer User 2 - ISS10
+description creating a new issuer user ISS10
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS10
+button search
+tableClick name ISS10
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username ISS10-U2
+textInput title issuer
+textInput name Issuer-User
+textInput last Two
+textInput preferred issuer user two
+textInput email issU2@test.com
+textInput phone 0800 838383
+textInput mobile 022 566 8582
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout

@@ -1,0 +1,303 @@
+test new test trade 1
+description using decimal number in price input
+goto testreg
+login testreg_user1 testreg_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART01
+select2Input buyAccountStr PART02
+select2Input instrumentStr INST01
+textInput quantity 100
+textInput price 450.50
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new test trade 2
+description using decimal number in quantity input
+goto testreg
+login testreg_user1 testreg_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART02
+select2Input buyAccountStr PART03
+select2Input instrumentStr INST02
+textInput quantity 1500.25
+textInput price 600
+button save
+sleep 2
+find textH1 View Trade
+button approve 
+sleep 2
+expect pass
+logout
+
+test new test trade 3
+description using negative number in price input
+goto testreg
+login testreg_user1 testreg_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART03
+select2Input buyAccountStr PART04
+select2Input instrumentStr INST03
+textInput quantity 150
+textInput price -555
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new test trade 4
+description using negative number in quantity input
+goto testreg
+login testreg_user1 testreg_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART04
+select2Input buyAccountStr PART05
+select2Input instrumentStr INST04
+textInput quantity -1400
+textInput price 5000
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new test trade 5
+description using symbols in quantity input
+goto testreg
+login testreg_user1 testreg_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART05
+select2Input buyAccountStr PART06
+select2Input instrumentStr INST05
+textInput quantity @!#$%&%#
+textInput price 300
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new test trade 6
+description using symbols in price input
+goto testreg
+login testreg_user1 testreg_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART06
+select2Input buyAccountStr PART07
+select2Input instrumentStr INST06
+textInput quantity 450
+textInput price %$#@!@$%
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2 
+expect pass
+logout
+
+test new test trade 7
+description using html code in quantity input
+goto testreg
+login testreg_user1 testreg_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART07
+select2Input buyAccountStr PART08
+select2Input instrumentStr INST07
+textInput quantity <img src=“https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+” width=“120" border=“0” onload=“window.lol&&lol()” data-atf=“3”>
+textInput price 300
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new test trade 8
+description using code in quantity input
+goto testreg
+login testreg_user1 testreg_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART08
+select2Input buyAccountStr PART09
+select2Input instrumentStr INST08
+textInput quantity P<body onload=“alert(‘Hello’);“/>
+textInput price 4000
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new test trade 9
+description using code in quantity input 2
+goto testreg
+login testreg_user1 testreg_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART09
+select2Input buyAccountStr PART10
+selectInput instrumentStr INST09
+textInput quantity <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput price 500
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new test trade 10
+description using html code in price input
+goto testreg
+login testreg_user1 testreg_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART10
+select2Input buyAccountStr PART01
+select2Input instrumentStr INST10
+textInput quantity 300
+textInput price <img src=“https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+” width=“120" border=“0” onload=“window.lol&&lol()” data-atf=“3”>
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new test trade 11
+description using code in price input
+goto testreg
+login testreg_user1 testreg_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART01
+select2Input buyAccountStr PART02
+select2Input instrumentStr INST01
+textInput quantity 100
+textInput price <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new test trade 12
+description using code in price input 2
+goto testreg
+login testreg_user1 testreg_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART02
+select2Input buyAccountStr PART03
+select2Input instrumentStr INST02
+textInput quantity 100
+textInput price P<body onload=“alert(‘Hello’);“/>
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new test trade 13
+description using instrument that doesn't exist
+goto testreg
+login testreg_user1 testreg_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART03
+select2Input buyAccountStr PART04
+select2Input instrumentStr tradeTest
+textInput quantity 100
+textInput price 100
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new test trade 14
+description using letters in price input
+goto testreg
+login testreg_user1 testreg_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART04
+select2Input buyAccountStr PART05
+select2Input instrumentStr INST05
+textInput quantity 300
+textInput price AsDfgHJkL
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new test trade 15
+description using letters in quantity input
+goto testreg
+login testreg_user1 testreg_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART05
+select2Input buyAccountStr PART06
+select2Input instrumentStr INST06
+textInput quantity QwERTyUiOp
+textInput price 5000
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout

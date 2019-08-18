@@ -1,0 +1,369 @@
+test New Issuer 01
+description New Issuer 01
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+button new 
+form admOrg
+textInput name ISS01
+textInput short ISS01
+textInput label ISS01
+textInput address1 1 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu issuers
+search s_part ISS01
+button search
+tableClick name ISS01
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test New Issuer 02
+description New Issuer 02
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+button new 
+form admOrg
+textInput name ISS02
+textInput short ISS02
+textInput label ISS02
+textInput address1 1 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu issuers
+search s_part ISS02
+button search
+tableClick name ISS02
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test New Issuer 03
+description New Issuer 03
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+button new 
+form admOrg
+textInput name ISS03
+textInput short ISS03
+textInput label ISS03
+textInput address1 1 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu issuers
+search s_part ISS03
+button search
+tableClick name ISS03
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test New Issuer 04
+description New Issuer 04
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+button new
+form admOrg
+textInput name ISS04
+textInput short ISS04
+textInput label ISS04
+textInput address1 1 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu issuers
+search s_part ISS04
+button search
+tableClick name ISS04
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test New Issuer 05
+description New Issuer 05
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+button new 
+form admOrg
+textInput name ISS05
+textInput short ISS05
+textInput label ISS05
+textInput address1 1 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu issuers
+search s_part ISS05
+button search
+tableClick name ISS05
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test New Issuer 06
+description New Issuer 06
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+button new 
+form admOrg
+textInput name ISS06
+textInput short ISS06
+textInput label ISS06
+textInput address1 1 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu issuers
+search s_part ISS06
+button search
+tableClick name ISS06
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test New Issuer 07
+description New Issuer 07
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+button new 
+form admOrg
+textInput name ISS07
+textInput short ISS07
+textInput label ISS07
+textInput address1 1 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu issuers
+search s_part ISS07
+button search
+tableClick name ISS07
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test New Issuer 08
+description New Issuer 08
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+button new 
+form admOrg
+textInput name ISS08
+textInput short ISS08
+textInput label ISS08
+textInput address1 1 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu issuers
+search s_part ISS08
+button search
+tableClick name ISS08
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test New Issuer 09
+description New Issuer 09
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+button new 
+form admOrg
+textInput name ISS09
+textInput short ISS09
+textInput label ISS09
+textInput address1 1 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu issuers
+search s_part ISS09
+button search
+tableClick name ISS09
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test New Issuer 10
+description New Issuer 10
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+menu issuers
+button new 
+form admOrg
+textInput name ISS10
+textInput short ISS10
+textInput label ISS10
+textInput address1 1 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu issuers
+search s_part ISS10
+button search
+tableClick name ISS10
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout

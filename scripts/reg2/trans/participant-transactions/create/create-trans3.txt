@@ -1,0 +1,33 @@
+test create transaction
+description create transaction - PART01
+goto testreg
+login testreg_user1 testreg_pass1
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART01
+select2Input instrumentStr INST10
+textInput quantity 1,100
+textInput toReference test transaction
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST01
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick Code INST01
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout

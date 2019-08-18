@@ -1,0 +1,273 @@
+# Balance Activity / Download Certificate
+
+test Balance Details / Download Certificate 1
+description balance details / download certificate 1
+goto settle_web
+login settleweb_user2 settleweb_pass2
+scrollto bal-link-000011403-1-CCELE
+clickby id bal-link-000011403-1-CCELE
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Balance Details / Download Certificate 2
+description balance details / download certificate 2
+goto settle_web
+login settleweb_user2 settleweb_pass2
+scrollto bal-link-000012159-1-WCES
+clickby id bal-link-000012159-1-WCES
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Balance Details / Download Certificate 3
+description balance details / download certificate 3
+goto settle_web
+login settleweb_user2 settleweb_pass2
+scrollto bal-link-000013266-1-BHESW
+clickby id bal-link-000013266-1-BHESW
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Balance Details / Download Certificate 4
+description balance details / download certificate 4
+goto settle_web
+login settleweb_user2 settleweb_pass2
+scrollto bal-link-000013266-2-BHESW
+clickby id bal-link-000013266-2-BHESW
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Balance Details / Download Certificate 5
+description balance details / download certificate 5
+goto settle_web
+login settleweb_user2 settleweb_pass2
+scrollto bal-link-000001575-1-OPB1S
+clickby id bal-link-000001575-1-OPB1S
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Balance Details / Download Certificate 6
+description balance details / download certificate 6
+goto settle_web
+login settleweb_user2 settleweb_pass2
+scrollto bal-link-000021744-1-BECW3D
+clickby id bal-link-000021744-1-BECW3D
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Balance Details / Download Certificate 7
+description balance details / download certificate 7
+goto settle_web
+login settleweb_user2 settleweb_pass2
+scrollto bal-link-000022842-1-FWLW
+clickby id bal-link-000022842-1-FWLW
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Balance Details / Download Certificate 8
+description balance details / download certificate 8
+goto settle_web
+login settleweb_user2 settleweb_pass2
+scrollto bal-link-000024138-1-LCCLW
+clickby id bal-link-000024138-1-LCCLW
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Balance Details / Download Certificate 9
+description balance details / download certificate 9
+goto settle_web
+login settleweb_user2 settleweb_pass2
+scrollto bal-link-000024138-2-LCCLW
+clickby id bal-link-000024138-2-LCCLW
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Balance Details / Download Certificate 10
+description balance details / download certificate 10
+goto settle_web
+login settleweb_user2 settleweb_pass2
+scrollto bal-link-000027027-1-THTB
+clickby id bal-link-000027027-1-THTB
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Balance Details / Download Certificate 11
+description balance details / download certificate 11
+goto settle_web
+login settleweb_user2 settleweb_pass2
+scrollto bal-link-000028809-1-BEC20
+clickby id bal-link-000028809-1-BEC20
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Balance Details / Download Certificate 12
+description balance details / download certificate 12
+goto settle_web
+login settleweb_user2 settleweb_pass2
+scrollto bal-link-000030231-1-BWCE22
+clickby id bal-link-000030231-1-BWCE22
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Balance Details / Download Certificate 13
+description balance details / download certificate 13
+goto settle_web
+login settleweb_user2 settleweb_pass2
+scrollto bal-link-000004248-1-FFWSA
+clickby id bal-link-000004248-1-FFWSA
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Balance Details / Download Certificate 14
+description balance details / download certificate 14
+goto settle_web
+login settleweb_user2 settleweb_pass2
+scrollto bal-link-000005022-2-GFBA
+clickby id bal-link-000005022-2-GFBA
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Balance Details / Download Certificate 15
+description balance details / download certificate 15
+goto settle_web
+login settleweb_user2 settleweb_pass2
+scrollto bal-link-000005022-1-GFBD
+clickby id bal-link-000005022-1-GFBD
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Balance Details / Download Certificate 16
+description balance details / download certificate 16
+goto settle_web
+login settleweb_user2 settleweb_pass2
+scrollto bal-link-000007947-1-PEC15
+clickby id bal-link-000007947-1-PEC15
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Balance Details / Download Certificate 17
+description balance details / download certificate 17
+goto settle_web
+login settleweb_user2 settleweb_pass2
+scrollto bal-link-000007947-1-PEC16
+clickby id bal-link-000007947-1-PEC16
+sleep 3
+clickby class link-btn alt
+sleep 5
+menu Dashboard
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out

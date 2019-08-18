@@ -1,0 +1,30 @@
+# Update ID 000005022
+
+test Update ID000005022
+description update investor details
+goto settle_web
+login settleweb_user2 settleweb_pass2
+clickby class fas fa-id-card fa-2x
+scrollto hldr-link-000005022
+clickby id hldr-link-000005022
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srt@avenir-technology.com
+textInput phone +42222223311
+textInput mobile +4412301963733
+textInput address1 90 THE LANE
+textInput address2
+textInput address3
+textInput postcode EL8 BC3
+menuInput country Finland
+textInput bankaccount_sort_code 0893000
+textInput bankaccount_account 83736720
+checkerInput selectedHolders_8
+button save
+sleep 3
+button confirm
+find textH1 Update Investor Details
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out

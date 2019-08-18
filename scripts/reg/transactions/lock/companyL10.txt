@@ -1,0 +1,33 @@
+test lock 10 transaction company
+description lock 10 transaction company
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr INVST10
+select2Input instrumentStr INST10
+textInput quantity 100
+textInput tag test 10
+textInput toReference transaction lock 10
+button save
+find textH1 View Lock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST10
+search s_stat Ready
+tableWait
+tableClick Code INST10
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout

@@ -1,0 +1,20 @@
+test Transactions Settled Report
+description transaction settled report - broker view
+# doesn't screenshot
+goto AIX
+login P1_BRKR1_user P1_BRKR1_pass
+menu reports
+sleep 4
+clickby text Transactions Settled
+sleep 3
+form usrReport
+textInput from 01/01/2019
+textInput to 02/04/2019
+sleep 5
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text PDF
+sleep 15
+find textH1 Trades
+expect pass
+logout

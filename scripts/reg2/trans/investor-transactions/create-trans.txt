@@ -1,0 +1,536 @@
+test transaction 01 create
+description transaction 01 create
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr Avenir Technology
+select2Input instrumentStr INST01
+textInput quantity 5000
+textInput toReference Avenir Technology Transaction
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST01
+search s_stat Ready
+tableWait
+tableClick Code INST01
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test transaction 02 create
+description transaction 02 create
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans 
+textInput due date
+select2Input toAccountStr Domestic Company 2
+select2Input instrumentStr INST02
+textInput quantity 5000
+textInput toReference Domestic Company Transaction
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST02
+search s_stat Ready
+tableWait
+tableClick Code INST02
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test transaction 03 create
+description transaction 03 create
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr Foreign Company 1
+select2Input instrumentStr INST03
+textInput quantity 5000
+textInput toReference Foreign Company Transaction
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST03
+search s_stat Ready
+tableWait
+tableClick Code INST03
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test transaction 04 create
+description transaction 04 create
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr Foreign Company 2
+select2Input instrumentStr INST04
+textInput quantity 5000
+textInput toReference Foreign Company Transaction
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST04
+search s_stat Ready
+tableWait
+tableClick Code INST04
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test transaction 05 create
+description transaction 05 create
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr Hendrikx, Miss Sienna
+select2Input instrumentStr INST05
+textInput quantity 5000
+textInput toReference Domestic Individual Transaction
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST05
+search s_stat Ready
+tableWait
+tableClick Code INST05
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test transaction 06 create
+description transaction 06 create
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr Individual Two, Domestic
+select2Input instrumentStr INST06
+textInput quantity 5000
+textInput toReference Domestic Individual Transaction
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST06
+search s_stat Ready
+tableWait
+tableClick Code INST06
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test transaction 07 create
+description transaction 07 create
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr Individual One, Foreign
+select2Input instrumentStr INST07
+textInput quantity 5000
+textInput toReference Foreign Individual Transaction
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST07
+search s_stat Ready
+tableWait
+tableClick Code INST07
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test transaction 08 create
+description transaction 08 create
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr Individual Two, Foreign
+select2Input instrumentStr INST08
+textInput quantity 5000
+textInput toReference Foreign Individual Transaction
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+test transaction 09 create
+description using decimal number in quantity input
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr Avenir Technology
+select2Input instrumentStr INST09
+textInput quantity 125.5
+textInput toReference Avenir Technology Transaction
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST09
+search s_stat Ready
+tableWait
+tableClick Code INST09
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test transaction 10 create
+description using negative number in quantity input
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr Domestic Company 2
+select2Input instrumentStr INST10
+textInput quantity -1000
+textInput toReference Domestic Company Transaction
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST10
+search s_stat Ready
+tableWait
+tableClick Code INST10
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test transaction 11 create
+description using symbols in quantity input
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr Foreign Company 1
+select2Input instrumentStr INST11
+textInput quantity !@#$%^&*
+textInput toReference Foreign Company Transaction
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST11
+search s_stat Ready
+tableWait
+tableClick Code INST11
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test transaction 12 create
+description using letters in quantity input
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr Foreign Company 2
+select2Input instrumentStr INST12
+textInput quantity ASdfGhiJkL
+textInput toReference Foreign Company 2
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions search s_inst INST12
+search s_stat Ready
+tableWait
+tableClick Code INST12
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test transaction 13 create
+description leaving quantity input empty
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccount Hendrikx, Miss Sienna
+select2Input instrumentStr INST13
+textInput quantity
+textInput toReference Domestic Individual Transaction
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST13
+search s_stat Ready
+tableWait
+tableClick Code INST13
+button approve
+find textH1 View Create
+sleep 2
+expect pass logout
+
+test transaction 14 create
+description clicking buttons multiple times in a row
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccount Individual Two, Domestic
+select2Input instrumentStr INST14
+textInput quantity 100
+textInput toReference Domestic Individual Transaction
+button save
+find textH1 View Create
+sleep 2
+button ready
+button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST14
+search s_stat Ready
+tableWait
+tableClick Code INST14
+button approve
+button approve
+button approve
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test transaction 15 create
+description using html code in reference input
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr Individual One, Foreign
+select2Input instrumentStr INST15
+textInput quantity 100
+textInput toReference <img src=“https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+” width=“120" border=“0” onload=“window.lol&&lol()” data-atf=“3”>
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions 
+search s_inst INST15
+search s_stat Ready
+tableWait
+tableClick Code INST15
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test transaction 16 create
+description using code in reference input
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr Individual Two, Foreign
+select2Input instrumentStr INST16
+textInput quantity 100
+textInput reference <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST16
+search s_stat Ready
+tableWait
+tableClick Code INST16
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+

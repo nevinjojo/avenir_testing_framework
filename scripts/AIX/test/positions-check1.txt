@@ -1,0 +1,13 @@
+test Checking Positions 01
+description Checking Positions 01
+goto AIX
+login aix_user1 aix_pass1
+menu positions
+sleep 4
+find textH1 Ready
+screenshot positions 1
+sleep 5
+expect pass
+logout
+
+

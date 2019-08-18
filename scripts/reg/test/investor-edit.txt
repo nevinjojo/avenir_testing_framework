@@ -1,0 +1,290 @@
+test Edit Investor Details 01
+description Edit Investor Details 01 company
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+button new company
+form admOrg
+textInput name Avenir Technology
+textInput address1 3 Market Lane
+textInput email test@avenir-technology.com
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search state All
+button search
+tableClick Investor saveID
+find textH1 View Investor
+clickby id lnk-edit
+# button edit
+# lnk-edit
+sleep 5
+textInput name avenir technology 2.0
+textInput address1 55 market lane
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+search s_part saveID
+search state All
+button search
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Edit Investor Details 02
+description Edit Investor Details 02 company
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+button new company
+form admOrg
+textInput name Apple
+textInput address1 1 Infinite Loop; Cupertino
+textInput address2 California
+textInput postcode CA 95014
+menuInput country United States
+button save
+sleep 4
+saveID
+button edit
+# btn-edit
+sleep 10
+textInput name Banana
+textInput address1 0 Infinite Loop; Cupertino
+textInput address2 Los Angeles
+textInput postcode LA 95014
+menuInput country United States
+button save
+find textH1 View Investor
+sleep 5
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+search s_part saveID
+search state All
+button search
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Edit Investor Details 03
+description Edit Investor Details 03 - individual
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+button new individual
+form admOrg
+textInput name Sienna
+textInput last Rose
+textInput address1 3 Mayfair Place
+textInput postcode 5028
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search state Ready
+button search
+tableClick Investor saveID
+find textH1 View Investor
+button edit
+textInput name Avocado
+textInput address1 0 Tawa, Wellington
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+search s_part saveID
+search state All
+button search
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Edit Investor Details 04
+description Edit Investor Details 04 - individual
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+button new individual
+form admOrg
+textInput name Sienna Rose
+textInput last Hendrikx
+textInput address1 1 Mayfair Place
+menuInput country New Zealand
+button save
+sleep 3
+saveID
+button edit
+sleep 10
+textInput name Sienna
+textInput last Rose
+button save
+find textH1 View Investor
+sleep 5
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+search s_part saveID
+search state All
+button search
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Edit Investor Details  05
+description Edit Investor Details 05
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+button new trust
+form admOrg
+textInput name Trust 1
+textInput address1 1 Address, Street
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search state All
+button search
+tableClick Investor saveID
+find textH1 View Investor
+button edit
+textInput name Trust 0
+textInput address1 0 Address, Street
+menuInput country United Kingdom
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+search s_part saveID
+search state All
+button search
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+
+test Edit Investor Details 06
+description Edit Investor Details 06 - individual
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+button new individual
+form admOrg
+textInput name Sienna
+textInput last Hendrikx
+textInput address1 test address 6
+menuInput country New Zealand
+button save
+find textH1 View Investor
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu Investors
+search s_part saveID
+search state All
+button search
+sleep 4
+tableClick Investor saveID
+find textH1 View Investor
+clickby id lnk-edit
+# button edit
+textInput preferred Sienna Rose
+button save
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu Investors
+search s_part saveID
+search state All
+button search
+tableClick Investor saveID
+find textH1 View Investor
+button approve
+sleep 2
+expect pass
+logout
+

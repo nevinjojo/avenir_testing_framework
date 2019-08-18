@@ -1,0 +1,329 @@
+test remove 01 transaction company
+description remove 01 transaction company
+goto ARL_UK
+login uk_user_1 uk_pass_1
+date
+menu transactions
+button new remove
+form admTrans
+textInput due date
+select2Input frAccountStr COMP01
+select2Input instrumentStr INST01
+textInput quantity 100
+textInput frReference From Reference 01
+button save
+find textH1 View Remove
+sleep 2
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu transactions
+search s_inst INST01
+search s_stat Ready
+sleep 4
+tableClick Code INST01
+button approve
+find textH1 View Remove
+sleep 2
+expect pass
+logout
+
+test remove 02 transaction company
+description remove 02 transaction company
+goto ARL_UK
+login uk_user_1 uk_pass_1
+date
+menu transactions
+button new remove
+form admTrans
+textInput due date
+select2Input frAccountStr COMP02
+select2Input instrumentStr INST02
+textInput quantity 100
+textInput frReference From Reference 02
+button save
+find textH1 View Remove
+sleep 2
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu transactions
+search s_inst INST02
+search s_stat Ready
+sleep 4
+tableClick Code INST02
+button approve
+find textH1 View Remove
+sleep 2
+expect pass
+logout
+
+test remove 03 transaction company
+description remove 03 transaction company
+goto ARL_UK
+login uk_user_1 uk_pass_1
+date
+menu transactions
+button new remove
+form admTrans
+textInput due date
+select2Input frAccountStr COMP03
+select2Input instrumentStr INST03
+textInput quantity 100
+textInput frReference From Reference 03
+button save
+find textH1 View Remove
+sleep 2
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu transactions
+search s_inst INST03
+search s_stat Ready
+sleep 4
+tableClick Code INST03
+button approve
+find textH1 View Remove
+sleep 2
+expect pass
+logout
+
+test remove 04 transaction company
+description remove 04 transaction company
+goto ARL_UK
+login uk_user_1 uk_pass_1
+date
+menu transactions
+button new remove
+form admTrans
+textInput due date
+select2Input frAccountStr COMP04
+select2Input instrumentStr INST04
+textInput quantity 100
+textInput frReference From Reference 04
+button save
+find textH1 View Remove
+sleep 2
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu transactions
+search s_inst INST04
+search s_stat Ready
+sleep 4
+tableClick Code INST04
+button approve
+find textH1 View Remove
+sleep 2
+expect pass
+logout
+
+test remove 05 transaction company
+description remove 05 transaction company
+goto ARL_UK
+login uk_user_1 uk_pass_1
+date
+menu transactions
+button new remove
+form admTrans
+textInput due date
+select2Input frAccountStr COMP05
+select2Input instrumentStr INST05
+textInput quantity 100
+textInput frReference From Reference 05
+button save
+find textH1 View Remove
+sleep 2
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu transactions
+search s_inst INST05
+search s_stat Ready
+sleep 4
+tableClick Code INST05
+button approve
+find textH1 View Remove
+sleep 2
+expect pass
+logout
+
+test remove 06 transaction company
+description remove 06 transaction company
+goto ARL_UK
+login uk_user_1 uk_pass_1
+date
+menu transactions
+button new remove
+form admTrans
+textInput due date
+select2Input frAccountStr COMP06
+select2Input instrumentStr INST06
+textInput quantity 100
+textInput frReference From Reference 06
+button save
+find textH1 View Remove
+sleep 2
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu transactions
+search s_inst INST06
+search s_stat Ready
+sleep 4
+tableClick Code INST06
+button approve
+find textH1 View Remove
+sleep 2
+expect pass
+logout
+
+test remove 07 transaction company
+description remove 07 transaction company
+goto ARL_UK
+login uk_user_1 uk_pass_1
+date
+menu transactions
+button new remove
+form admTrans
+textInput due date
+select2Input frAccountStr COMP07
+select2Input instrumentStr INST07
+textInput quantity 100
+textInput frReference From Reference 07
+button save
+find textH1 View Remove
+sleep 2
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu transactions
+search s_inst INST07
+search s_stat Ready
+sleep 4
+tableClick Code INST07
+button approve
+find textH1 View Remove
+sleep 2
+expect pass
+logout
+
+test remove 08 transaction company
+description remove 08 transaction company
+goto ARL_UK
+login uk_user_1 uk_pass_1
+date
+menu transactions
+button new remove
+form admTrans
+textInput due date
+select2Input frAccountStr COMP08
+select2Input instrumentStr INST08
+textInput quantity 100
+textInput frReference From Reference 08
+button save
+find textH1 View Remove
+sleep 2
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu transactions
+search s_inst INST08
+search s_stat Ready
+sleep 4
+tableClick Code INST08
+button approve
+find textH1 View Remove
+sleep 2
+expect pass
+logout
+
+test remove 09 transaction company
+description remove 09 transaction company
+goto ARL_UK
+login uk_user_1 uk_pass_1
+date
+menu transactions
+button new remove
+form admTrans
+textInput due date
+select2Input frAccountStr COMP09
+select2Input instrumentStr INST09
+textInput quantity 100
+textInput frReference From Reference 09
+button save
+find textH1 View Remove
+sleep 2
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu transactions
+search s_inst INST09
+search s_stat Ready
+sleep 4
+tableClick Code INST09
+button approve
+find textH1 View Remove
+sleep 2
+expect pass
+logout 
+
+test remove 10 transaction company
+description remove 10 transaction company
+goto ARL_UK
+login uk_user_1 uk_pass_1
+date
+menu transactions
+button new remove
+form admTrans
+textInput due date
+select2Input frAccountStr COMP10
+select2Input instrumentStr INST10
+textInput quantity 100
+textInput frReference From Reference 10
+button save
+find textH1 View Remove
+sleep 2
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu transactions
+search s_inst INST10
+search s_stat Ready
+sleep 4
+tableClick Code INST10
+button approve
+find textH1 View Remove
+sleep 2
+expect pass
+logout

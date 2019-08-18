@@ -1,0 +1,23 @@
+test Test Logout Command
+description Testing Logout Command
+goto trade
+login trade_user1 trade_pass1
+button order-menu-TEEQ
+button order-sell-TEEQ
+sleep 4
+window 2
+form usrOrderSell
+menuInput trader Imhotep Trading Solutions
+menuInput orderType Limit
+checkerInput orderValid_2
+textInput quantity 100
+textInput price 100
+button save
+sleep 2
+button confirm
+window 1
+find textH1 Order Book
+expect pass
+logout
+
+

@@ -1,0 +1,160 @@
+test Negative Issuer Test 01
+description leaving inputs blank
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name
+textInput short
+menuInput country New Zealand
+sleep 5
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+
+test Negative Issuer Test 02
+description creating the same issuer twice
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name Negative Issuer 2
+textInput short N-ISSUER2
+menuInput country New Zealand
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part N-ISSUER2
+tableClick issuer N-ISSUER2
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name Negative Issuer 2
+textInput short N-ISSUER2
+menuInput country New Zealand
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part N-ISSUER2
+tableClick issuer N-ISSUER2
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+
+test Negative Issuer Test 03
+description leaving country input blank
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name Negative Issuer 3
+textInput short N-ISSUER3
+menuInput country
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part N-ISSUER3
+tableClick issuer N-ISSUER3
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+
+test Negative Issuer Test 04
+description using symbols in inputs 
+# should fail but doesn't
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name *&^%$#
+textInput short !@#$%^
+menuInput country New Zealand
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part *&^%$#
+tableClick issuer !@#$%^
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test Negative Issuer Test 05
+description leaving search input blank
+goto csd.com
+login csd_user1 csd_pass1
+menu issuers
+button new
+form admOrg
+textInput name Negative Issuer 5
+textInput short N-ISSUER5
+menuInput country New Zealand
+button save
+sleep 2
+button ready
+find textH1 View Issuer
+expect pass
+logout
+
+goto csd.com
+login csd_user2 csd_pass2
+menu issuers
+search part 
+tableClick issuer N-ISSUER2
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+

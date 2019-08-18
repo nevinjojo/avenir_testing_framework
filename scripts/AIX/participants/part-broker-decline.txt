@@ -1,0 +1,174 @@
+test New Participant Broker 01
+description declining and deleting broker participants
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Broker Delete 01
+textInput short BRKRD1
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email brokerd01@test.com
+button save
+sleep 2
+find button ready
+button ready
+find textH1 View Broker
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part BRKRD1
+search s_stat Ready
+sleep 4
+tableClick short BRKRD1
+button decline
+clickby id lnk-delete
+find textH1 Manage Participants
+sleep 2
+expect pass
+logout
+
+test New Participant Broker 02
+description declining and deleting broker participants
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Broker Delete 02
+textInput short BRKRD2
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email brokerd02@test.com
+button save
+sleep 2
+find button ready
+button ready
+find textH1 View Broker
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part BRKRD2
+search s_stat Ready
+sleep 4
+tableClick short BRKRD2
+button decline
+clickby id lnk-delete
+find textH1 Manage Participants
+sleep 2
+expect pass
+logout
+
+test New Participant Broker 03
+description declining and deleting broker participants
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Broker Delete 03
+textInput short BRKRD3
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email brokerd03@test.com
+button save
+sleep 2
+find button ready
+button ready
+find textH1 View Broker
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part BRKRD3
+search s_stat Ready
+sleep 4
+tableClick short BRKRD3
+button decline
+clickby id lnk-delete
+find textH1 Manage Participants
+sleep 2
+expect pass
+logout
+
+test New Participant Broker 04
+description declining and deleting broker participants
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Broker Delete 04
+textInput short BRKRD4
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email brokerd04@test.com
+button save
+sleep 2
+find button ready
+button ready
+find textH1 View Broker
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+saerch s_part BRKRD4
+search s_stat Ready
+sleep 4
+tableClick short BRKRD4
+button decline
+clickby id lnk-delete
+find textH1 Manage Participants
+sleep 2
+expect pass
+logout
+
+test New Participant Broker 05
+description declining and deleting broker participants
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Broker Delete 05
+textInput short BRKRD5
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email brokerd05@test.com
+button save
+sleep 2
+find button ready
+button ready
+find textH1 View Broker
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part BRKRD5
+search s_stat Ready
+sleep 4
+tableClick short BRKRD5
+button decline
+clickby id lnk-delete
+find textH1 Manage Participants
+sleep 2
+expect pass
+logout

@@ -1,0 +1,21 @@
+# Edit User Details
+
+test User1111
+description edit user details
+goto settle_web
+login settleweb_user3 settleweb_pass3
+menu My Details
+clickby class edit-detail
+form userUser
+textInput phone +642223198730
+textInput mobile +44752901300
+textInput email srt0@avenir-technology.com
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+

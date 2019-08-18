@@ -1,0 +1,107 @@
+test currency USD transaction 01 remove
+description transaction 01 remove
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-remove
+form admTrans
+textInput due date
+select2Input frAccountStr PART01-2
+select2Input instrumentStr USD
+sleep 3
+textInput amount 250
+textInput frReference From Reference 01
+button save
+find textH1 View Remove
+saveID
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu transactions
+search s_inst USD
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Remove
+sleep 2
+expect pass
+logout
+
+test currency EUR transaction 01 remove
+description transaction 01 remove
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-remove
+form admTrans
+textInput due date
+select2Input frAccountStr PART02-2
+select2Input instrumentStr EUR
+sleep 3
+textInput amount 250
+textInput frReference From Reference 01
+button save
+find textH1 View Remove
+saveID
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu transactions
+search s_inst EUR
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Remove
+sleep 2
+expect pass
+logout
+
+test currency GBP transaction 01 remove
+description transaction 01 remove
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-remove
+form admTrans
+textInput due date
+select2Input frAccountStr PART03-2
+select2Input instrumentStr GBP
+sleep 3
+textInput amount 250
+textInput frReference From Reference 01
+button save
+find textH1 View Remove
+saveID
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu transactions
+search s_inst GBP
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Remove
+sleep 2
+expect pass
+logout

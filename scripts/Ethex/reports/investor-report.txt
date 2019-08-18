@@ -1,0 +1,15 @@
+test Investor Report
+description investor report - oper
+goto AIX
+login aix_user1 aix_pass1
+menu reports
+clickby text Investor Report
+button save
+sleep 15
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text PDF
+sleep 15
+find textH1 Investor Report
+expect pass
+logout

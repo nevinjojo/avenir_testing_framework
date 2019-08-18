@@ -1,0 +1,30 @@
+# Update ID 000011403
+
+test Update ID 000011403
+description update investor details
+goto settle_web
+login settleweb_user2 settleweb_pass2
+clickby class fas fa-id-card fa-2x
+scrollto hldr-link-000011403
+clickby id hldr-link-000011403
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srhgmail@test.com
+textInput phone +045282354
+textInput mobile +0225668583
+textInput address1 3 MAYFAIR PLACE
+textInput address2 TAWA
+textInput address3 WELLINGTON
+textInput postcode 5028
+menuInput country New Zealand
+textInput bankaccount_sort_code 022002
+textInput iban DE89 370400440532013002
+textInput bankaccount_account 803736720
+button save
+sleep 3
+button confirm
+find textH1 Update Investor Details
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out

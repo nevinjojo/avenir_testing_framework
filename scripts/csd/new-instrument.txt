@@ -1,0 +1,266 @@
+test new instrument 01
+description creating a new instrument
+goto csd.com
+login csd_user1 csd_pass1
+menu instruments
+button new equity
+form admInstrument
+textInput name Instrument1
+textInput short INST1
+textInput ticker instrument 1
+menuInput issuer ISSUER1 
+button save
+sleep 2
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test new instrument 02
+description creating a new instrument
+goto csd.com
+login csd_user1 csd_pass1
+menu instruments
+button new equity
+form admInstrument
+textInput name Instrument2
+textInput short INST2
+textInput ticker instrument 2
+menuInput issuer ISSUER2 
+button save
+sleep 2
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test new instrument 03
+description creating a new instrument
+goto csd.com
+login csd_user1 csd_pass1
+menu instruments
+button new equity
+form admInstrument
+textInput name Instrument3
+textInput short INST3
+textInput ticker instrument 3
+menuInput issuer ISSUER3 
+button save
+sleep 2
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test new instrument 04
+description creating a new instrument
+goto csd.com
+login csd_user1 csd_pass1
+menu instruments
+button new equity
+form admInstrument
+textInput name Instrument4
+textInput short INST4
+textInput ticker instrument 4
+menuInput issuer ISSUER4 
+button save
+sleep 2
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test new instrument 05
+description creating a new instrument
+goto csd.com
+login csd_user1 csd_pass1
+menu instruments
+button new equity
+form admInstrument
+textInput name Instrument5
+textInput short INST5
+textInput ticker instrument 5
+menuInput issuer ISSUER5
+button save
+sleep 2
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test new instrument 06
+description creating a new instrument
+goto csd.com
+login csd_user1 csd_pass1
+menu instruments
+button new equity
+form admInstrument
+textInput name Instrument6
+textInput short INST6
+textInput ticker instrument 6
+menuInput issuer ISSUER6
+button save
+sleep 2
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test new instrument 07
+description creating a new instrument
+goto csd.com
+login csd_user1 csd_pass1
+menu instruments
+button new equity
+form admInstrument
+textInput name Instrument7
+textInput short INST7
+textInput ticker instrument 7
+menuInput issuer ISSUER7
+button save
+sleep 2
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test new instrument 08
+description creating a new instrument
+goto csd.com
+login csd_user1 csd_pass1
+menu instruments
+button new equity
+form admInstrument
+textInput name Instrument8
+textInput short INST8
+textInput ticker instrument 8
+menuInput issuer ISSUER8
+button save
+sleep 2
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test new instrument 09
+description creating a new instrument
+goto csd.com
+login csd_user1 csd_pass1
+menu instruments
+button new equity
+form admInstrument
+textInput name Instrument9
+textInput short INST9
+textInput ticker instrument 9
+menuInput issuer ISSUER9
+button save
+sleep 2
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test new instrument 10
+description using symbols in short code and name inputs
+goto csd.com
+login csd_user1 csd_pass1
+menu instruments
+button new equity
+form admInstrument
+textInput name !@#$%^&*
+textInput short *&^%$#@!
+textInput ticker inst 10
+menuInput issuer ISSUER1
+button save
+sleep 2
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test new instrument 11
+description using an issuer that doesn't exist
+goto csd.com
+login csd_user1 csd_pass1
+menu instruments
+button new equity
+form admInstrument
+textInput name Inst11
+textInput short INST11
+textInput ticker inst 11
+menuInput issuer n-TEST
+button save
+sleep 2
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test new instrument 12
+description leaving inputs blank 
+goto csd.com
+login csd_user1 csd_pass1
+menu instruments
+button new equity
+form admInstrument
+textInput name 
+textInput short 
+textInput ticker inst 12
+menuInput issuer 
+button save
+sleep 2
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test new instrument 13
+description using html code in name input
+goto csd.com
+login csd_user1 csd_pass1
+menu instruments
+button new equity
+form admInstrument
+textInput name  P<body onload="alert('Hello');"/>    
+textInput short INST13
+textInput ticker inst 13
+menuInput issuer ISSUER4
+button save
+sleep 2
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test new instrument 14
+description using code in name input
+goto csd.com
+login csd_user1 csd_pass1
+menu instruments
+button new equity
+form admInstrument
+textInput name <p id="i"></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById("i").innerHTML=d.toLocaleTimeString();}</script>
+textInput short INST14
+textInput ticker instrument 14
+menuInput issuer ISSUER14
+button save
+sleep 2
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+

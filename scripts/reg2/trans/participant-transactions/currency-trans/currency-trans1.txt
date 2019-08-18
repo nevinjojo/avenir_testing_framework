@@ -1,0 +1,361 @@
+test currency transaction 01
+description create - participants 01
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART01-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 10,000
+textInput toReference currency transaction 01
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction 02
+description create - participants 02
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART02-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 10,000
+textInput toReference currency transaction 02
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction 03
+description create - participants 03
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART03-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 10,000
+textInput toReference currency transaction 03
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction 04
+description create - participants 04
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART04-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 10,000
+textInput toReference currency transaction 04
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction 05
+description create - participants 05
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART05-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 10,000
+textInput toReference currency transaction 05
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction 06
+description create - participants 06
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART06-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 10,000
+textInput toReference currency transaction 06
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction 07
+description create - participants 07
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART07-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 10,000
+textInput toReference currency transaction 07
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction 08
+description create - participants 08
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART08-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 10,000
+textInput toReference currency transaction 08
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction 09
+description create - participants 09
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART09-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 10,000
+textInput toReference currency transaction 09
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction 10
+description create - participants 10
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART10-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 10,000
+textInput toReference currency transaction 10
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+

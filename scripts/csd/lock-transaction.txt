@@ -1,0 +1,314 @@
+test New Lock Transaction - Investor 1 
+description new lock transaction - investor 1
+goto csd.com
+login csd_user1 csd_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr Investor 1
+select2Input instrumentStr Instrument1
+textInput quantity 25
+textInput tag test 1
+textInput toReference transaction lock 1
+button save
+find textH1 View Lock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login csd_user2 csd_pass2
+menu transactions
+search s_time All
+search s_inst INST1
+search s_stat Ready
+sleep 5
+tableClick Code INST1
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test New Lock Transaction - Investor 2 
+description new lock transaction - investor 2
+goto csd.com
+login csd_user1 csd_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr Investor 2
+select2Input instrumentStr Instrument2
+textInput quantity 25
+textInput tag test 2
+textInput toReference transaction lock 2
+button save
+find textH1 View Lock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login csd_user2 csd_pass2
+menu transactions
+search s_time All
+search s_inst INST2
+search s_stat Ready
+sleep 5
+tableClick Code INST2
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test New Lock Transaction - Investor 3 
+description new lock transaction - investor 3
+goto csd.com
+login csd_user1 csd_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr Investor 3
+select2Input instrumentStr Instrument3
+textInput quantity 25
+textInput tag test 3
+textInput toReference transaction lock 3
+button save
+find textH1 View Lock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login csd_user2 csd_pass2
+menu transactions
+search s_time All
+search s_inst INST3
+search s_stat Ready
+sleep 5
+tableClick Code INST3
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test New Lock Transaction - Investor 4
+description new lock transaction - investor 4
+goto csd.com
+login csd_user1 csd_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr 4, Investor
+select2Input instrumentStr Instrument4
+textInput quantity 25
+textInput tag test 4
+textInput toReference transaction lock 4
+button save
+find textH1 View Lock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login csd_user2 csd_pass2
+menu transactions
+search s_time All
+search s_time INST4
+search s_stat Ready
+sleep 5
+tableClick Code INST4
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test New Lock Transaction - Investor 5
+description new lock transaction - investor 5
+goto csd.com
+login csd_user1 csd_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr 5, Investor
+select2Input instrumentStr Instrument5
+textInput quantity 25
+textInput tag test 5
+textInput toReference transaction lock 5
+button save
+find textH1 View Lock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login csd_user2 csd_pass2
+menu transactions
+search s_time All
+search s_time INST5
+search s_stat Ready
+sleep 5
+tableClick Code INST5
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test New Lock Transaction - Investor 6
+description new lock transaction - investor 6
+goto csd.com
+login csd_user1 csd_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr 6, Investor
+select2Input instrumentStr Instrument6
+textInput quantity 25
+textInput tag test 6
+textInput toReference transaction lock 6
+button save
+find textH1 View Lock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login csd_user2 csd_pass2
+menu transactions
+search s_time All
+search s_time INST6
+search s_stat Ready
+sleep 5
+tableClick Code INST6
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test New Lock Transaction - Investor 7 
+description new lock transaction - investor 7
+goto csd.com
+login csd_user1 csd_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr Investor 7
+select2Input instrumentStr Instrument7
+textInput quantity 25
+textInput tag test 7
+textInput toReference transaction lock 7
+button save
+find textH1 View Lock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login csd_user2 csd_pass2
+menu transactions
+search s_time All
+search s_time INST7
+search s_stat Ready
+sleep 5
+tableClick Code INST7
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test New Lock Transaction - Investor 8 
+description new lock transaction - investor 8
+goto csd.com
+login csd_user1 csd_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr Investor 8
+select2Input instrumentStr Instrument8
+textInput quantity 25
+textInput tag test 8
+textInput toReference transaction lock 8
+button save
+find textH1 View Lock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login csd_user2 csd_pass2
+menu transactions
+search s_time All
+search s_time INST8
+search s_stat Ready
+sleep 5
+tableClick Code INST8
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test New Lock Transaction - Investor 9 
+description new lock transaction - investor 9
+goto csd.com
+login csd_user1 csd_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr Investor 9
+select2Input instrumentStr Instrument9
+textInput quantity 25
+textInput tag test 9
+textInput toReference transaction lock 9
+button save
+find textH1 View Lock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login csd_user2 csd_pass2
+menu transactions
+search s_time All
+search s_time INST9
+search s_stat Ready
+sleep 5
+tableClick Code INST9
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout

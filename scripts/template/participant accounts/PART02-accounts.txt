@@ -1,0 +1,41 @@
+test Creating PART02-2
+description New Participant Account
+goto
+login
+menu participants
+search s_part PART02
+tableClick short PART02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+menuInput currency EUR
+textInput alias PART02-2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating PART02-3
+description New Participant Account
+goto
+login
+menu participants
+search s_part PART02
+tableClick short PART02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+menuInput currency EUR
+textInput alias PART02-3
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout

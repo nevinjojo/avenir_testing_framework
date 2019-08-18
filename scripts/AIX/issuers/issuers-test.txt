@@ -1,0 +1,734 @@
+test Issuer Test 01
+description using symbols is name input
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name !@#$%^&*(
+textInput short TEST1
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part TEST1
+button search
+sleep 5
+tableClick name !@#$%^&*(
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part TEST1
+button search
+sleep 5
+tableClick name !@#$%^&*(
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test Issuer Test 02
+description using symbols in short input 
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name TEST2
+textInput short *&^%$#@!
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part TEST2
+button search
+sleep 5
+tableClick name TEST2
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part TEST2
+button search
+sleep 5
+tableClick name TEST2
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test Issuer Test 03
+description leaving name input blank
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name
+textInput short TEST3
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part TEST3
+button search
+sleep 5
+tableClick name TEST3
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part TEST3
+button search
+sleep 5
+tableClick name TEST3
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test Issuer Test 04
+description leaving short code input blank
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name TEST4
+textInput short 
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part TEST4
+button search
+sleep 5
+tableClick name TEST4
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part TEST4
+button search
+sleep 5
+tableClick name TEST4
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test Issuer Test 05
+description leaving country input blank
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name TEST5
+textInput short TEST5
+menuInput country 
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part TEST5
+button search
+sleep 5
+tableClick name TEST5
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part TEST5
+button search
+sleep 5
+tableClick name TEST5
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test Issuer Test 06
+description leaving all inputs blank
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name
+textInput short
+menuInput country
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part 
+button search
+sleep 5
+tableClick name 
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part
+button search
+sleep 5
+tableClick name
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test Issuer Test 07
+description using html code in name input
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name <img src=“https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+” width=“120" border=“0” onload=“window.lol&&lol()” data-atf=“3”>
+textInput short TEST7
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part TEST7
+button search
+sleep 5
+tableClick name TEST7
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part TEST7
+button search
+sleep 5
+tableClick name TEST7
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test Issuer Test 08
+description using html code in short input
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name TEST8
+textInput short <img src=“https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+” width=“120" border=“0” onload=“window.lol&&lol()” data-atf=“3”>
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part TEST8
+button search
+sleep 5
+tableClick name TEST8
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part TEST8
+button search
+sleep 5
+tableClick name TEST8
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test Issuer Test 09
+description using html code in country input 
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name TEST9
+textInput short TEST9
+menuInput country <img src=“https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+” width=“120" border=“0” onload=“window.lol&&lol()” data-atf=“3”>
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part TEST9
+button search
+sleep 5
+tableClick name TEST9
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part TEST9
+button search 
+sleep 5
+tableClick name TEST9
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test Issuer Test 10
+description using html code in name input 
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name P<body onload=“alert(‘Hello’);“/>
+textInput short TEST10
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part TEST10
+button search
+sleep 5
+tableClick name TEST10
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part TEST10
+button search 
+sleep 5
+tableClick name TEST10
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test Issuer Test 11
+description using html code in short code
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name TEST11
+textInput short P<body onload=“alert(‘Hello’);“/>
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part TEST11
+button search
+sleep 5
+tableClick name TEST11
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part TEST11
+button search
+sleep 5
+tableClick name TEST11
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+test Issuer Test 12
+description using html code in country input
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name TEST12
+textInput short TEST12
+menuInput country P<body onload=“alert(‘Hello’);“/>
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part TEST12
+button search
+sleep 5
+tableClick name TEST12
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part TEST12
+button search
+sleep 5
+tableClick name TEST12
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test Issuer Test 13
+description using numbers in country input
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name TEST13
+textInput short TEST13
+menuInput country 2389987654
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part TEST13
+button search
+sleep 5
+tableClick name TEST13
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part TEST13
+button search
+sleep 5
+tableClick name TEST13
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test Issuer Test 14
+description using numbers in name input
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name 98273432
+textInput short TEST14
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part TEST14
+button search
+sleep 5
+tableClick name TEST14
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part TEST14
+button search
+sleep 5
+tableClick name TEST14
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+test Issuer Test 15
+description using numbers in short input 
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name TEST15
+textInput short 492842
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part TEST15
+button search
+sleep 5
+tableClick name TEST15
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu isuers
+search s_part TEST15
+button search
+sleep 5
+tableClick name TEST15
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test Issuer Test 16
+description using Japanese characters in name input
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new 
+form admOrg
+textInput name テスト
+textInput short TEST16
+menuInput country Japan
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part テスト
+button search
+sleep 5
+tableClick name テスト
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part テスト
+button search
+sleep 5
+tableClick name テスト
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+test Issuer Test 17
+description using Japanese characters in short input
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name TEST17
+textInput short 別のテスト
+menuInput country Japan
+button save
+find button ready
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part 別のテスト
+button search
+sleep 5
+tableClick name 別のテスト
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part 別のテスト
+button search
+sleep 5
+tableClick name 別のテスト
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout

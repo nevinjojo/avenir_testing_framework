@@ -1,0 +1,105 @@
+# suspending account before creating trade
+
+test create transaction
+description create transaction - PART01
+goto testreg
+login testreg_user1 testreg_pass1
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART01
+select2Input instrumentStr INST10
+textInput quantity 1,100
+textInput toReference test transaction
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST01
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick Code INST01
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction
+description currency transactions - PART02
+goto testreg
+login testreg_user1 testreg_pass1
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART02-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 2,750,000
+textInput toReference test currency transaction
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+# tableWait
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test suspending account
+description suspending account
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+tableClick short PART01
+scrollto user-new-btn
+clickby text PART01-1
+sleep 2
+clickby id btn-suspend
+sleep 4 
+find textH1 View Account
+expect pass
+logout
+
+test new trade
+description creating a new trade
+goto testreg
+login testreg_user1 testreg_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART01
+select2Input buyAccountStr PART02
+select2Input instrumentStr INST10
+textInput quantity 1,100
+textInput price 2,500
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout

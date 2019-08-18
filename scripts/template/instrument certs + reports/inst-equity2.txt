@@ -1,0 +1,147 @@
+test EQINST1 - Certificate Download 02
+description EQINST1 - Certificate Download 02
+goto
+login
+date
+menu instruments
+form instrument
+textInput short EQINST1
+menuInput state Any
+button search
+sleep 5
+tableClick short EQINST1
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Create
+sleep 4
+form admTrans
+textInput due date
+select2Input toAccountStr INDIV02
+textInput quantity 4500
+textInput toReference cert download 02
+button save
+find textH1 View Create
+sleep 2
+button ready
+sleep 2
+expect pass
+logout
+
+goto
+login
+menu transactions
+search s_inst EQINST1
+search s_stat Ready
+sleep 4
+tableClick Code EQINST1
+button approve
+find textH1 View Create
+menu instruments
+form instrument
+textInput short EQINST1
+menuInput state Active
+button search
+sleep 4
+tableClick short EQINST1
+sleep 3
+clickby class btn btn-default dropdown-toggle
+clickby xpath /html/body/div/div[2]/div[4]/div/div/div[2]/ul/li[1]/a
+sleep 2
+clickby xpath /html/body/div/div[2]/div[4]/div/a
+sleep 6
+find textH1 Transactions
+sleep 2
+menu instruments
+form instrument
+textInput short EQINST1
+menuInput state Active
+button search
+sleep 4
+tableClick short EQINST1
+sleep 3
+clickby class btn btn-default dropdown-toggle
+clickby text Register of Members
+sleep 2
+clickby xpath /html/body/div/div[2]/div[4]/div/a
+sleep 6
+clickby text LAST02
+sleep 3
+clickby id btn-cert
+sleep 4
+find textH1 Account Balances
+expect pass
+logout
+
+test EQINST2 - Certificate Download 02
+description EQINST2 - Certificate Download 02
+goto
+login
+date
+menu instruments
+form instrument
+textInput short EQINST2
+menuInput state Any
+button search
+sleep 5
+tableClick short EQINST2
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Create
+sleep 4
+form admTrans
+textInput due date
+select2Input toAccountStr INDIV03
+textInput quantity 363
+textInput toReference cert download 03
+button save
+find textH1 View Create
+sleep 2
+button ready
+sleep 2
+expect pass
+logout
+
+goto
+login
+menu transactions
+search s_inst EQINST2
+search s_stat Ready
+sleep 4
+tableClick Code EQINST2
+button approve
+find textH1 View Create
+menu instruments
+form instrument
+textInput short EQINST2
+menuInput state Active
+button search
+sleep 4
+tableClick short EQINST2
+sleep 3
+clickby class btn btn-default dropdown-toggle
+clickby xpath /html/body/div/div[2]/div[4]/div/div/div[2]/ul/li[1]/a
+sleep 2
+clickby xpath /html/body/div/div[2]/div[4]/div/a
+sleep 6
+find textH1 Transactions
+sleep 2
+menu instruments
+form instrument
+textInput short EQINST2
+menuInput state Active
+button search
+sleep 4
+tableClick short EQINST2
+sleep 3
+clickby class btn btn-default dropdown-toggle
+clickby text Register of Members
+sleep 2
+clickby xpath /html/body/div/div[2]/div[4]/div/a
+sleep 6
+clickby text LAST03
+sleep 3
+clickby id btn-cert
+sleep 4
+find textH1 Account Balances
+expect pass
+logout

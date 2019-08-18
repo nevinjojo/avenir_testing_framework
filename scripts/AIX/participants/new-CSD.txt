@@ -1,0 +1,369 @@
+test new CSD 01
+description creating a new CSD
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text CSD
+form admOrg
+textInput name CSD01
+textInput short CSD01
+textInput address1 1 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CSD01
+search s_stat Ready
+button search
+tableClick short CSD01
+find textH1 View CSD
+button approve
+sleep 2
+expect pass
+logout
+
+test new CSD 02
+description creating a new CSD
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text CSD
+form admOrg
+textInput name CSD02
+textInput short CSD02
+textInput address1 1 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CSD02
+search s_stat Ready
+button search
+tableClick short CSD02
+find textH1 View CSD
+button approve
+sleep 2
+expect pass
+logout
+
+test new CSD 03
+description creating a new CSD
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text CSD
+form admOrg
+textInput name CSD03
+textInput short CSD03
+textInput address1 1 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CSD03
+search s_stat Ready
+button search
+tableClick short CSD03
+find textH1 View CSD
+button approve
+sleep 2
+expect pass
+logout
+
+test new CSD 04
+description creating a new CSD
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text CSD
+form admOrg
+textInput name CSD04
+textInput short CSD04
+textInput address1 1 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CSD04
+search s_stat Ready
+button search
+tableClick short CSD04
+find textH1 View CSD
+button approve
+sleep 2
+expect pass
+logout
+
+test new CSD 05
+description creating a new CSD
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text CSD
+form admOrg
+textInput name CSD05
+textInput short CSD05
+textInput address1 1 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CSD05
+search s_stat Ready
+button search
+tableClick short CSD05
+find textH1 View CSD
+button approve
+sleep 2
+expect pass
+logout
+
+test new CSD 06
+description creating a new CSD
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text CSD
+form admOrg
+textInput name CSD06
+textInput short CSD06
+textInput address1 1 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CSD06
+search s_stat Ready
+button search
+tableClick short CSD06
+find textH1 View CSD
+button approve
+sleep 2
+expect pass
+logout
+
+test new CSD 07
+description creating a new CSD
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text CSD
+form admOrg
+textInput name CSD07
+textInput short CSD07
+textInput address1 1 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CSD07
+search s_stat Ready
+button search
+tableClick short CSD07
+find textH1 View CSD
+button approve
+sleep 2
+expect pass
+logout
+
+test new CSD 08
+description creating a new CSD
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text CSD
+form admOrg
+textInput name CSD08
+textInput short CSD08
+textInput address1 1 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CSD08
+search s_stat Ready
+button search
+tableClick short CSD08
+find textH1 View CSD
+button approve
+sleep 2
+expect pass
+logout
+
+test new CSD 09
+description creating a new CSD
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text CSD
+form admOrg
+textInput name CSD09
+textInput short CSD09
+textInput address1 1 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir 
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CSD09
+search s_stat Ready
+button search
+tableClick short CSD09
+find textH1 View CSD
+button approve
+sleep 2
+expect pass
+logout
+
+test new CSD 10
+description creating a new CSD
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text CSD
+form admOrg
+textInput name CSD10
+textInput short CSD10
+textInput address1 1 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CSD10
+search s_stat Ready
+button search
+tableClick short CSD10
+find textH1 View CSD
+button approve
+sleep 2
+expect pass
+logout

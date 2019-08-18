@@ -1,0 +1,79 @@
+# Update Investor Details
+
+test Update ID 000022185
+description update investor details
+goto settle_web
+login settleweb_user1 settleweb_pass1
+clickby class fas fa-id-card fa-2x
+sleep 3
+clickby id hldr-link-000025974
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srt@avenir-technology.com
+textInput phone +442067816700
+textInput mobile +447590196370
+textInput address1 20 Hope Street
+textInput address3 BELFAST
+textInput postcode 5018
+menuInput country United Kingdom
+textInput bankaccount_sort_code 042376
+textInput bankaccount_account 43384030
+button save
+sleep 3
+button confirm
+find textH1 Update Investor Details
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Update ID 000022185
+description using html code in address1 input (more than 35 characters)
+goto settle_web
+login settleweb_user1 settleweb_pass1
+clickby class fas fa-id-card fa-2x
+sleep 3
+clickby id hldr-link-000025974
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srt@avenir-technology.com
+textInput phone +442067816700
+textInput mobile +447590196370
+textInput address1 <p id="i"></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById("i").innerHTML=d.toLocaleTimeString();}</script>
+textInput postcode 5018
+menuInput country United Kingdom
+textInput bankaccount_sort_code 042376
+textInput bankaccount_account 43384030
+button save
+sleep 3
+button confirm
+find textH1 Update Investor Details
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Update ID 000025974
+description using html code in address1 input (less than 35 characters)
+goto settle_web
+login settleweb_user1 settleweb_pass1
+clickby class fas fa-id-card fa-2x
+clickby id hldr-link-000025974
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srt@avenir-technology.com
+textInput phone +4481247199
+textInput mobile +447590196372
+textInput address1 P<body onload="alert('Hello');"/>
+textInput postcode 5018
+menuInput country New Zealand
+textInput bankaccount_sort_code 0423760
+textInput bankaccount_account 43384030
+button save
+sleep 3
+button confirm
+find textH1 Update Investor Details
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out

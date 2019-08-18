@@ -1,0 +1,31 @@
+# to test the new trade feature of the system
+
+test New Trade 1.1
+description This test Makes a new trade
+goTo dev
+login dev_user1 dev_pass1
+menu trades
+button new 
+form usrTrade
+textInput tradeId test
+checkerInput setting
+select2Input sellAccountStr 017179
+select2Input buyAccountStr b
+select2Input instrumentStr i
+textInput quantity 13
+textInput price 20
+textInput sellRef sellRef test
+textInput buyRef buyRef test
+button save
+sleep 3
+find textH1 View Trade 
+expect pass
+logout
+
+login dev_user2 dev_pass2
+menu trades
+search time All
+button search
+tableClick Code VN30F1802B
+find textH1 View Trade 
+expect pass

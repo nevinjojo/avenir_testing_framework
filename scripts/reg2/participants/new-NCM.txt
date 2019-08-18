@@ -1,0 +1,339 @@
+test new NCM participant 01
+description creating a new NCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text NCM
+form admOrg
+textInput name NCM 01
+textInput short NCM1
+menuInput country New Zealand
+textInput phone +04 0800 827304
+textInput email NCM01@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part NCM1
+search s_stat Ready
+button search
+tableClick short NCM1
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new NCM participant 02
+description creating a new NCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text NCM
+form admOrg
+textInput name NCM 02
+textInput short NCM2
+menuInput country New Zealand
+textInput phone +04 0800 928742
+textInput email NCM02@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part NCM2
+search s_stat Ready
+button search
+tableClick short NCM2
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new NCM participant 03
+description creating a new NCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text NCM
+form admOrg
+textInput name NCM 03
+textInput short NCM3
+menuInput country New Zealand
+textInput phone +04 0800 209742
+textInput email NCM03@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part NCM3
+search s_stat Ready
+button search
+tableClick short NCM3
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new NCM participant 04
+description creating a new NCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text NCM
+form admOrg
+textInput name NCM 04
+textInput short NCM4
+menuInput country New Zealand
+textInput phone +04 0800 209742
+textInput email NCM04@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part NCM4
+search s_stat Ready
+button search
+tableClick short NCM4
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new NCM participant 05
+description creating a new NCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text NCM
+form admOrg
+textInput name NCM 05
+textInput short NCM5
+menuInput country New Zealand
+textInput phone +04 0800 209742
+textInput email NCM05@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part NCM5
+search s_stat Ready
+button search
+tableClick short NCM5
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new NCM participant 06
+description creating a new NCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text NCM
+form admOrg
+textInput name NCM 06
+textInput short NCM6
+menuInput country New Zealand
+textInput phone +04 0800 209742
+textInput email NCM06@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part NCM6
+search s_stat Ready
+button search
+tableClick short NCM6
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new NCM participant 07
+description creating a new NCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text NCM
+form admOrg
+textInput name NCM 07
+textInput short NCM7
+menuInput country New Zealand
+textInput phone +04 0800 209742
+textInput email NCM07@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part NCM7
+search s_stat Ready
+button search
+tableClick short NCM7
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new NCM participant 08
+description creating a new NCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text NCM
+form admOrg
+textInput name NCM 08
+textInput short NCM8
+menuInput country New Zealand
+textInput phone +04 0800 209742
+textInput email NCM08@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part NCM8
+search s_stat Ready
+button search
+tableClick short NCM8
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new NCM participant 09
+description creating a new NCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text NCM
+form admOrg
+textInput name NCM 09
+textInput short NCM9
+menuInput country New Zealand
+textInput phone +04 0800 209742
+textInput email NCM09@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part NCM9
+search s_stat Ready
+button search
+tableClick short NCM9
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout
+
+test new NCM participant 10
+description creating a new NCM participant
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+clickby class btn btn-primary
+sleep 3
+clickby text NCM
+form admOrg
+textInput name NCM 10
+textInput short NCM10
+menuInput country New Zealand
+textInput phone +04 0800 209742
+textInput email NCM10@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu participants
+search s_part NCM10
+search s_stat Ready
+button search
+tableClick short NCM10
+find textH1 View Participant
+button approve
+sleep 2
+expect pass
+logout

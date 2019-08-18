@@ -1,0 +1,25 @@
+test New User 02
+description New Manager User 02
+goto testreg
+login testreg_user1 testreg_pass1
+usermenu my organisation
+goto testreg_newuser
+textInput user_username mngr
+textInput user_name mngr
+textInput user_last Manager
+textInput user_email mngr@irene.com
+menuInput user_role Manager
+button save
+find textH1 View User
+sleep 3
+button approve
+sleep 3
+button password
+form admUserPassword
+textInput password_password Password!1
+textInput password_confirm Password!1
+button save
+find textH1 View User
+sleep 3
+expect pass
+logout

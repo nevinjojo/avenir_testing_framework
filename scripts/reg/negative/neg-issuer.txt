@@ -1,0 +1,241 @@
+test Issuer Negative Test 01
+description using full stops and / in name input
+goto testreg
+login testreg_user1 testreg_pass1
+menu issuers
+button new
+form admOrg
+textInput name .//./././././
+textInput short NTEST01
+menuInput country New Zealand
+button save
+sleep 2
+button find ready
+expect fail
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1                    
+menu issuers
+search name .//./././././
+button search
+tableClick name .//./././././
+find textH1 View Issuer
+button ready
+sleep 2
+expect fail
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu issuers
+search name .//./././././
+button search
+tableClick name .//./././././
+find textH1 View Issuer
+button approve sleep 2
+expect fail
+logout
+
+# should fail, but passes
+
+test Issuer Negative Test 02
+description using numbers in name input
+goto testreg
+login testreg_user1 testreg_pass1
+menu issuers
+button new
+form admOrg
+textInput name 341248726489723642879134623874628964392786523123421
+textInput short NTEST02
+menuInput country New Zealand
+button save
+sleep 2
+find button ready
+expect fail
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu issuers
+search name 341248726489723642879134623874628964392786523123421
+button search
+tableClick name 341248726489723642879134623874628964392786523123421
+find textH1 View Issuer
+button ready
+sleep 2
+expect fail
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu issuers
+search name 341248726489723642879134623874628964392786523123421
+button search
+tableClick name 341248726489723642879134623874628964392786523123421
+find textH1 View Issuer
+button approve
+sleep 2
+expect fail
+logout
+
+test Issuer Negative Test 03
+description postcode and address that doesn't make sense 
+goto testreg
+login testreg_user1 testreg_pass1
+menu issuers
+button new
+form admOrg
+textInput name NTEST03
+textInput short NTEST03
+textInput address1 ././././././.
+textInput postcode 5863745674398567435689745698749054638094586
+menuInput country New Zealand
+button save
+sleep 2
+find button ready
+expect fail
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu issuers
+search name NTEST03
+button search
+tableClick name NTEST03
+find textH1 View Issuer
+button ready
+sleep 2
+expect fail
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu issuers
+search name NTEST03
+button search
+tableClick name NTEST03
+find textH1 View Issuer
+button approve
+sleep 2
+expect fail
+logout
+
+test Issuer Negative Test 04
+description creating the same issuer multiple times
+goto testreg
+login testreg_user1 testreg_pass1
+menu issuers
+button new 
+form admOrg
+textInput name NTEST04
+textInput short NTEST04
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu issuers
+search name NTEST04
+button search
+tableClick name NTEST04
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu issuers
+search name NTEST04
+button search
+tableClick name NTEST04
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu issuers
+button new 
+form admOrg
+textInput name NTEST04
+textInput short NTEST04
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu issuers
+search name NTEST04
+button search
+tableClick name NTEST04
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu issuers
+search name NTEST04
+button search
+tableClick name NTEST04
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu issuers
+button new 
+form admOrg
+textInput name NTEST04
+textInput short NTEST04
+menuInput country New Zealand
+button save
+find textH1 View Issuer
+sleep 2
+find button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu issuers
+search name NTEST04
+button search
+tableClick name NTEST04
+find textH1 View Issuer
+button ready
+sleep 2
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu issuers
+search name NTEST04
+button search
+tableClick name NTEST04
+find textH1 View Issuer
+button approve
+sleep 2
+expect pass
+logout

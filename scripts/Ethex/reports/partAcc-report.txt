@@ -1,0 +1,17 @@
+test Participants' Accounts Report
+description participants' accounts report - oper
+goto AIX
+login aix_user1 aix_pass1
+menu reports
+sleep 4
+clickby text Accounts for selected particpant. 
+sleep 4
+button save
+sleep 15
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text PDF
+sleep 15
+find textH1 Participants' Accounts Report
+expect pass
+logout

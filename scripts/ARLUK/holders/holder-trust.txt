@@ -1,0 +1,349 @@
+test New Holder 01
+description New Holder 01 trust
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST01
+textInput address1 ADDRESS01
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email01@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test New Holder 02
+description New Holder 02 trust
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST02
+textInput address1 ADDRESS02
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email02@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test New Holder 03
+description New Holder 03 trust
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST03
+textInput address1 ADDRESS03
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email03@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test New Holder 04
+description New Holder 04 trust
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST04
+textInput address1 ADDRESS04
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email04@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test New Holder 05
+description New Holder 05 trust
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST05
+textInput address1 ADDRESS05
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email05@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test New Holder 06
+description New Holder 06 trust
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST06
+textInput address1 ADDRESS06
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email06@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test New Holder 07
+description New Holder 07 trust
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST07
+textInput address1 ADDRESS07
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email07@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test New Holder 08
+description New Holder 08 trust
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST08
+textInput address1 ADDRESS08
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email08@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test New Holder 09
+description New Holder 09 trust
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST09
+textInput address1 ADDRESS09
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email09@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout
+
+test New Holder 10
+description New Holder 10 trust
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new trust
+form admOrg
+textInput name TRUST10
+textInput address1 ADDRESS10
+textInput postcode 0000
+textInput phone 0000000
+textInput mobile 0000000000
+textInput email email10@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+sleep 2
+expect pass
+logout

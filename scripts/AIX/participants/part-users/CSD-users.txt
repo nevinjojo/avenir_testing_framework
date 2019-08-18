@@ -1,0 +1,1062 @@
+test New CSD User 1 - CSD01
+description creating a new CSD user CSD01
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD01
+search s_stat Active
+button search
+tableClick short CSD01
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD1-U1
+textInput title CSD
+textInput name CSD-User
+textInput last One
+textInput preferred CSD1-U1
+textInput email CSDU1@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 2 - CSD01
+description creating a new CSD user CSD01
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD01
+search s_stat Active
+button search
+tableClick short CSD01
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD1-U2
+textInput title CSD
+textInput name CSD-User
+textInput last Two
+textInput preferred CSD1-U2
+textInput email CSDU2@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 3 - CSD01
+description creating a new CSD User CSD01
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD01
+search s_stat Active
+button search
+tableClick short CSD01
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD1-U3
+textInput title CSD
+textInput name CSD-User
+textInput last Three
+textInput preferred CSD1-U3
+textInput email CSDU3@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 22668582
+menuInput role Viewer
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 1 - CSD02
+description creating a new CSD User CSD02
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD02
+search s_stat Active
+button search
+tableClick short CSD02
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD2-U1
+textInput title CSD
+textInput name CSD-User
+textInput last One
+textInput preferred CSD2-U1
+textInput email CSDU1@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 2 - CSD02
+description creating a new CSD User CSD02
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD02
+search s_stat Active
+button search
+tableClick short CSD02
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD2-2
+textInput title CSD
+textInput name CSD-User
+textInput last Two
+textInput preferred CSD2-U2
+textInput email CSDU2@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 3 - CSD02
+description creating a new CSD User CSD02
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD02
+search s_stat Active
+button search
+tableClick short CSD02
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD2-U3
+textInput name CSD-User
+textInput last Three
+textInput preferred CSD2-U3
+textInput email CSDU3@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+menuInput role Viewer
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 1 - CSD03
+description creating a new CSD User CSD03
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD03
+search s_stat Active
+button search
+tableClick short CSD03
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD3-U1
+textInput name CSD-User
+textInput last One
+textInput preferred CSD3-U1
+textInput email CSDU1@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225669383
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 2 - CSD03
+description creating a new CSD User CSD03
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD03
+search s_stat Active
+button search
+tableClick short CSD03
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD3-U2
+textInput name CSD-User
+textInput last Two
+textInput preferred CSD3-U2
+textInput email CSDU2@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+sleep 2
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 3 - CSD03
+description creating a new CSD User CSD03
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD03
+search s_stat Active
+button search
+tableClick short CSD03
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD3-U3
+textInput name CSD-User
+textInput last Three
+textInput preferred CSD3-3
+textInput email CSDU3@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 1 - CSD04
+description creating a new CSD User - CSD04
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD04
+search s_stat Active
+button search
+tableClick short CSD04
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD4-U1
+textInput name CSD-User
+textInput last One
+textInput preferred CSD4-1
+textInput email CSDU1@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 2 - CSD04
+description creating a new CSD User - CSD04
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD04
+search s_stat Active
+button search
+tableClick short CSD04
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD4-U2
+textInput name CSD-User
+textInput last Two
+textInput preferred CSD4-2
+textInput email CSDU2@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668382
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 3 - CSD04
+description creating a new CSD User - CSD04
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD04
+search s_stat Active
+button search
+tableClick short CSD04
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD4-3
+textInput name CSD-User
+textInput last Three
+textInput preferred CSD4-3
+textInput email CSDU3@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+menuInput role Viewer
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 1 - CSD05
+description creating a new CSD User - CSD05
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD05
+search s_stat Active
+button search
+tableClick short CSD05
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD5-U1
+textInput name CSD-User
+textInput last One
+textInput preferred CSD5-1
+textInput email CSDU1@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 2 - CSD05
+description creating a new CSD User - CSD05
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD05
+search s_stat Active
+button search
+tableClick short CSD05
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD5-U2
+textInput name CSD-User
+textInput last Two
+textInput preferred CSD4-2
+textInput email CSDU2@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668382
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 3 - CSD05
+description creating a new CSD User - CSD05
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD05
+search s_stat Active
+button search
+tableClick short CSD05
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD5-3
+textInput name CSD-User
+textInput last Three
+textInput preferred CSD5-3
+textInput email CSDU3@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+menuInput role Viewer
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 1 - CSD06
+description creating a new CSD User - CSD04
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD06
+search s_stat Active
+button search
+tableClick short CSD06
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD6-U1
+textInput name CSD-User
+textInput last One
+textInput preferred CSD6-1
+textInput email CSDU1@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 2 - CSD06
+description creating a new CSD User - CSD06
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD06
+search s_stat Active
+button search
+tableClick short CSD06
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD6-U2
+textInput name CSD-User
+textInput last Two
+textInput preferred CSD6-2
+textInput email CSDU2@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668382
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 3 - CSD06
+description creating a new CSD User - CSD06
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD06
+search s_stat Active
+button search
+tableClick short CSD06
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD6-3
+textInput name CSD-User
+textInput last Three
+textInput preferred CSD6-3
+textInput email CSDU3@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+menuInput role Viewer
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 1 - CSD07
+description creating a new CSD User - CSD07
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD07
+search s_stat Active
+button search
+tableClick short CSD07
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD7-U1
+textInput name CSD-User
+textInput last One
+textInput preferred CSD7-1
+textInput email CSDU1@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 2 - CSD07
+description creating a new CSD User - CSD07
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD07
+search s_stat Active
+button search
+tableClick short CSD07
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD7-U2
+textInput name CSD-User
+textInput last Two
+textInput preferred CSD7-2
+textInput email CSDU2@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668382
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 3 - CSD07
+description creating a new CSD User - CSD07
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD07
+search s_stat Active
+button search
+tableClick short CSD07
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD7-3
+textInput name CSD-User
+textInput last Three
+textInput preferred CSD7-3
+textInput email CSDU3@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+menuInput role Viewer
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 1 - CSD08
+description creating a new CSD User - CSD08
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD08
+search s_stat Active
+button search
+tableClick short CSD08
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD8-U1
+textInput name CSD-User
+textInput last One
+textInput preferred CSD8-1
+textInput email CSDU1@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 2 - CSD08
+description creating a new CSD User - CSD08
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD08
+search s_stat Active
+button search
+tableClick short CSD08
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD8-U2
+textInput name CSD-User
+textInput last Two
+textInput preferred CSD8-2
+textInput email CSDU2@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668382
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 3 - CSD08
+description creating a new CSD User - CSD08
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD08
+search s_stat Active
+button search
+tableClick short CSD08
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD8-3
+textInput name CSD-User
+textInput last Three
+textInput preferred CSD8-3
+textInput email CSDU3@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+menuInput role Viewer
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 1 - CSD09
+description creating a new CSD User - CSD09
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD09
+search s_stat Active
+button search
+tableClick short CSD09
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD9-U1
+textInput name CSD-User
+textInput last One
+textInput preferred CSD9-1
+textInput email CSDU1@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 2 - CSD09
+description creating a new CSD User - CSD09
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD09
+search s_stat Active
+button search
+tableClick short CSD09
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD9-U2
+textInput name CSD-User
+textInput last Two
+textInput preferred CSD9-2
+textInput email CSDU2@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668382
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 3 - CSD09
+description creating a new CSD User - CSD09
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD09
+search s_stat Active
+button search
+tableClick short CSD09
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD9-3
+textInput name CSD-User
+textInput last Three
+textInput preferred CSD9-3
+textInput email CSDU3@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+menuInput role Viewer
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 1 - CSD10
+description creating a new CSD User - CSD10
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD10
+search s_stat Active
+button search
+tableClick short CSD10
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD10-U1
+textInput name CSD-User
+textInput last One
+textInput preferred CSD10-1
+textInput email CSDU1@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+menuInput role Operator
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 2 - CSD10
+description creating a new CSD User - CSD10
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD10
+search s_stat Active
+button search
+tableClick short CSD10
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD10-U2
+textInput name CSD-User
+textInput last Two
+textInput preferred CSD10-2
+textInput email CSDU2@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668382
+menuInput role Manager
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout
+
+test New CSD User 3 - CSD10
+description creating a new CSD User - CSD10
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD10
+search s_stat Active
+button search
+tableClick short CSD10
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username CSD10-3
+textInput name CSD-User
+textInput last Three
+textInput preferred CSD10-3
+textInput email CSDU3@test.com
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+menuInput role Viewer
+menuInput locale English (UK)
+menuInput timezone UTC+00:00 (UTC)
+button save
+find button approve
+button approve
+sleep 2
+clickby id btn-password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+expect pass
+logout

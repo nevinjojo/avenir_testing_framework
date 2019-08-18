@@ -1,0 +1,84 @@
+test Suspend / Unsuspend Issuer Account 01
+description suspending, unsuspending, and deleting an issuer account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS01
+button search
+tableClick name ISS01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short suspend1
+menuInput currency GBP
+button save
+sleep 2
+button approve
+sleep 2
+button suspend
+sleep 4
+button suspend
+sleep 4
+button suspend
+sleep 4
+clickby text Delete
+find textH1 View Account
+expect pass
+logout
+
+test Suspend / Unsuspend Issuer Account 02
+description suspending, unsuspending, and deleting an issuer account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS02
+button search
+tableClick name ISS02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short suspend2
+menuInput currency EUR
+button save
+sleep 2
+button approve
+sleep 2
+button suspend
+sleep 4
+button suspend
+sleep 4
+button suspend
+sleep 4
+clickby text Delete
+find textH1 View Account
+expect pass
+logout
+
+test Suspend / Unsuspend Issuer Account 03
+description suspending, unsuspending, and deleting an issuer account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS03
+button search
+tableClick name ISS03
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short suspend3
+menuInput currency USD
+button save
+sleep 2
+button approve
+sleep 2
+button suspend
+sleep 4
+button suspend 
+sleep 4
+button suspend
+sleep 4
+clickby text Delete
+find textH1 View Account
+expect pass
+logout
+

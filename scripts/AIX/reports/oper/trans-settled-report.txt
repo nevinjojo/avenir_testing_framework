@@ -1,0 +1,26 @@
+test Transactions Settled Report
+description transaction settled report - oper
+goto AIX
+login aix_user1 aix_pass1
+date
+menu reports
+clickby text Transactions Settled
+sleep 3
+form usrReport
+textInput from 01/01/2019
+textInput to date
+sleep 5
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text PDF
+sleep 15
+screenshot time full
+clickby class btn btn-primary dropdown-toggle
+sleep 10
+button save
+sleep 15
+screenshot time full
+find textH1 Transactions Settled
+sleep 2
+expect pass
+logout

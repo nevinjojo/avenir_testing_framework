@@ -1,0 +1,184 @@
+test New Instrument 31
+description New Instrument 31 equity
+goto AIX
+login aix_user1 aix_pass1
+date
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name Instrument 31
+textInput short INST31
+textInput isin INST31
+menuInput currency GBP
+menuInput issuer ISS01
+textInput golive date
+textInput ticker INST31
+button save
+sleep 2
+find textH1 View Equity
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu instruments
+form instrument
+textInput short INST31
+menuInput state Draft
+button search 
+sleep 4
+tableClick short INST31
+button approve
+sleep 2
+find textH1 View Equity
+expect pass
+logout
+
+test New Instrument 32
+description New Instrument 32 equity
+goto AIX
+login aix_user1 aix_pass1
+date
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name Instrument 32
+textInput short INST32
+textInput isin INST32
+menuInput currency GBP
+menuInput issuer ISS02
+textInput golive date
+textInput ticker INST32
+button save
+sleep 2
+find textH1 View Equity
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu instruments
+form instrument
+textInput short INST32
+menuInput state Draft
+button search
+sleep 4
+tableClick short INST32
+button approve
+sleep 2
+find textH1 View Equity
+expect pass
+logout
+
+test New Instrument 33
+description New Instrument 33 equity
+goto AIX
+login aix_user1 aix_pass1
+date
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name Instrument 33
+textInput short INST33
+textInput isin INST33
+menuInput currency GBP
+menuInput issuer ISS03
+textInput golive date
+textInput ticker INST33
+button save
+sleep 2
+find textH1 View Equity
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu instruments
+form instrument
+textInput short INST33
+menuInput state Draft
+button search 
+sleep 4
+tableClick short INST33
+button approve
+sleep 2
+find textH1 View Equity
+expect pass
+logout
+
+test New Instrument 34
+description New Instrument 34 equity
+goto AIX
+login aix_user1 aix_pass1
+date
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name Instrument 34
+textInput short INST34
+textInput isin INST34
+menuInput currency GBP
+menuInput issuer ISS04
+textInput golive date
+textInput ticker INST34
+button save
+sleep 2
+find textH1 View Equity
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu instruments
+form instrument
+textInput short INST34
+menuInput state Draft
+button search
+sleep 4
+tableClick short INST34
+button approve
+sleep 2
+find textH1 View Equity
+expect pass
+logout
+
+test New Instrument 35
+description New Instrument 35 equity
+goto AIX
+login aix_user1 aix_pass1
+date
+menu instruments
+button new equity
+form admInstrument
+menuInput category Ordinary Share
+textInput name Instrument 35
+textInput short INST35
+textInput isin INST35
+menuInput currency GBP
+menuInput issuer ISS05
+textInput golive date
+textInput ticker INST35
+button save
+sleep 2
+find textH1 View Equity
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu instruments
+form instrument
+textInput short INST35
+menuInput state Draft
+button search
+sleep 4
+tableClick short INST35
+button approve
+sleep 2
+find textH1 View Equity
+expect pass
+logout

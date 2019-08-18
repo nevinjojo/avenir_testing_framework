@@ -1,0 +1,349 @@
+test Reserve 01 transaction trust
+description Reserve transaction trust
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new reserve
+form admTrans
+textInput due date
+select2Input toAccountStr TRUST01
+select2Input instrumentStr INST01
+textInput quantity 100
+sleep 3
+textInput tag test 1
+textInput toReference Reserve01
+button save
+find textH1 View Reserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST01
+search s_stat Ready
+sleep 5
+tableClick Code INST01
+button approve
+find textH1 View Reserve
+sleep 2
+expect pass
+logout
+
+test Reserve 02 transaction trust
+description Reserve transaction trust
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new reserve
+form admTrans
+textInput due date
+select2Input toAccountStr TRUST02
+select2Input instrumentStr INST02
+textInput quantity 100
+sleep 3
+textInput tag test 2
+textInput toReference Reserve02
+button save
+find textH1 View Reserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST02
+search s_stat Ready
+sleep 5
+tableClick Code INST02
+button approve
+find textH1 View Reserve
+sleep 2
+expect pass
+logout
+
+test Reserve 03 transaction trust
+description Reserve transaction trust
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new reserve
+form admTrans
+textInput due date
+select2Input toAccountStr TRUST03
+select2Input instrumentStr INST03
+textInput quantity 100
+sleep 3
+textInput tag test 3
+textInput toReference Reserve03
+button save
+find textH1 View Reserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST03
+search s_stat Ready
+sleep 5
+tableClick Code INST03
+button approve
+find textH1 View Reserve
+sleep 2
+expect pass
+logout
+
+test Reserve 04 transaction trust
+description Reserve transaction trust
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new reserve
+form admTrans
+textInput due date
+select2Input toAccountStr TRUST04
+select2Input instrumentStr INST04
+textInput quantity 100
+sleep 3
+textInput tag test 4
+textInput toReference Reserve04
+button save
+find textH1 View Reserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST04
+search s_stat Ready
+sleep 5
+tableClick Code INST04
+button approve
+find textH1 View Reserve
+sleep 2
+expect pass
+logout
+
+test Reserve 05 transaction trust
+description Reserve transaction trust
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new reserve
+form admTrans
+textInput due date
+select2Input toAccountStr TRUST05
+select2Input instrumentStr INST05
+textInput quantity 100
+sleep 3
+textInput tag test 5
+textInput toReference Reserve05
+button save
+find textH1 View Reserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST05
+search s_stat Ready
+sleep 5
+tableClick Code INST05
+button approve
+find textH1 View Reserve
+sleep 2
+expect pass
+logout
+
+test Reserve 06 transaction trust
+description Reserve transaction trust
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new reserve
+form admTrans
+textInput due date
+select2Input toAccountStr TRUST06
+select2Input instrumentStr INST06
+textInput quantity 100
+sleep 3
+textInput tag test 6
+textInput toReference Reserve06
+button save
+find textH1 View Reserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST06
+search s_stat Ready
+sleep 5
+tableClick Code INST06
+button approve
+find textH1 View Reserve
+sleep 2
+expect pass
+logout
+
+test Reserve 07 transaction trust
+description Reserve transaction trust
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new reserve
+form admTrans
+textInput due date
+select2Input toAccountStr TRUST07
+select2Input instrumentStr INST07
+textInput quantity 100
+sleep 3
+textInput tag test 7
+textInput toReference Reserve07
+button save
+find textH1 View Reserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST07
+search s_stat Ready
+sleep 5
+tableClick Code INST07
+button approve
+find textH1 View Reserve
+sleep 2
+expect pass
+logout
+
+test Reserve 08 transaction trust
+description Reserve transaction trust
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new reserve
+form admTrans
+textInput due date
+select2Input toAccountStr TRUST08
+select2Input instrumentStr INST08
+textInput quantity 100
+sleep 3
+textInput tag test 8
+textInput toReference Reserve08
+button save
+find textH1 View Reserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST08
+search s_stat Ready
+sleep 5
+tableClick Code INST08
+button approve
+find textH1 View Reserve
+sleep 2
+expect pass
+logout
+
+test Reserve 09 transaction trust
+description Reserve transaction trust
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new reserve
+form admTrans
+textInput due date
+select2Input toAccountStr TRUST09
+select2Input instrumentStr INST09
+textInput quantity 100
+sleep 3
+textInput tag test 9
+textInput toReference Reserve09
+button save
+find textH1 View Reserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST09
+search s_stat Ready
+sleep 5
+tableClick Code INST09
+button approve
+find textH1 View Reserve
+sleep 2
+expect pass
+logout
+
+test Reserve 10 transaction trust
+description Reserve transaction trust
+goto Ethex
+login ethex_user1 ethex_pass1
+date
+menu transactions
+button new reserve
+form admTrans
+textInput due date
+select2Input toAccountStr TRUST10
+select2Input instrumentStr INST10
+textInput quantity 100
+sleep 3
+textInput tag test 10
+textInput toReference Reserve10
+button save
+find textH1 View Reserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto Ethex
+login ethex_user2 ethex_pass2
+menu transactions
+search s_inst INST10
+search s_stat Ready
+sleep 5
+tableClick Code INST10
+button approve
+find textH1 View Reserve
+sleep 2
+expect pass
+logout

@@ -1,0 +1,110 @@
+test new trade 01
+description creating a new trade 01
+goto AIX
+login aix_user1 aix_pass1
+menu trades
+button new
+form usrTrade
+checkerInput setting
+textInput tradeId XXX TRADE 01
+select2Input sellAccountStr PART01
+select2Input buyAccountStr PART02
+select2Input instrumentStr INST11
+textInput quantity 120
+textInput price 500
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new trade 02
+description creating a new trade 02
+goto AIX
+login aix_user1 aix_pass1
+menu trades
+button new
+form usrTrade
+checkerInput setting
+textInput tradeId XXX TRADE 02
+select2Input sellAccountStr PART03
+select2Input buyAccountStr PART04
+select2Input instrumentStr INST12
+textInput quantity 1000
+textInput price 150
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new trade 03
+description creating a new trade 03
+goto AIX
+login aix_user1 aix_pass1
+menu trades
+button new
+form usrTrade
+checkerInput setting
+textInput tradeId XXX TRADE 03
+select2Input sellAccountStr PART05
+select2Input buyAccountStr PART06
+select2Input instrumentStr INST13
+textInput quantity 450
+textInput price 1000
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new trade 04
+description creating a new trade 04
+goto AIX
+login aix_user1 aix_pass1
+menu trades
+button new
+form usrTrade
+checkerInput setting
+textInput tradeId XXX TRADE 04
+select2Input sellAccountStr PART07
+select2Input buyAccountStr PART08
+select2Input instrumentStr INST14
+textInput quantity 1000
+textInput price 2000
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test new trade 05
+description creating a new trade 05
+goto AIX
+login aix_user1 aix_pass1
+menu trades
+button new
+form usrTrade
+checkerInput setting
+textInput tradeId XXX TRADE 05
+select2Input sellAccountStr PART09
+select2Input buyAccountStr PART10
+select2Input instrumentStr INST15
+textInput quantity 1500
+textInput price 2000
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+

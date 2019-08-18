@@ -1,0 +1,110 @@
+# ADJ00000044
+test trade 1 - adjustment - reject 01
+description trade 1
+goto AIX
+login aix_user1 aix_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART05
+select2Input buyAccountStr PART06
+select2Input instrumentStr INST05
+textInput quantity 1,000
+textInput price 2,000
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+goto AIX
+login P6_BRKR1_user P6_BRKR1_pass
+date + 2 
+menu positions
+form s
+textInput to date
+sleep 5
+clickby text INST05
+clickby id btn-giveup
+form usrAdjustment
+textInput long 1,000
+menuInput org Custodian 15
+textInput reference adjustment1
+button save
+sleep 2
+button approve
+sleep 2
+find textH1 View Adjustment
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu adjustments
+clickby text CUST15
+button reject
+sleep 2
+find textH1 View Adjustment
+expect pass
+logout
+
+goto AIX
+login P6_BRKR1_user P6_BRKR1_pass
+menu adjustments
+clickby text CUST15
+button approve
+sleep 2
+find textH1 View Adjustment
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu adjustments 
+clickby text CUST15
+button accept
+sleep 2
+button save
+sleep 2
+button edit
+form usrAdjustment
+select2Input account CUST15-1
+button save
+sleep 2
+button reject
+find textH1 View Adjustment
+expect pass
+logout
+
+goto AIX
+login P6_BRKR1_user P6_BRKR1_pass
+menu adjustments
+clickby text CUST15
+sleep 2
+clickby text Edit
+form usrAdjustment
+sleep 2
+# select2Input org Custodian 01
+button save
+clickby text Edit
+button save
+sleep 2
+button approve
+find textH1 View Adjustment
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu adjustments
+# clickby text CUST01
+clickby text CUST15
+sleep 2
+button accept
+sleep 2
+button save
+sleep 2
+button approve
+sleep 15

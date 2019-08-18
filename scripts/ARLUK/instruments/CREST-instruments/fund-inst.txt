@@ -1,0 +1,99 @@
+test New CREST Instrument 01 - Fund
+description New CREST Instrument 01 - Fund
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu instruments
+button new equity 
+form admInstrument
+menuInput category Fund
+textInput name CREST Instrument F01
+checkerInput sync
+menuInput registrar Avenir Registrars Ltd (085 - UK)
+sleep 4
+textInput mraq 15/01/2019
+textInput short INSTFUND01
+textInput isin INSTFUND01
+menuInput currency USD
+menuInput issuer ISS01
+checkerInput sync
+checkerInput sync
+sleep 4
+button save
+sleep 2
+find textH1 View Debt
+clickby class btn btn-primary dropdown-toggle
+clickby text Monthly
+sleep 4
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu instruments
+form instrument
+textInput short INSTFUND01
+menuInput state Ready
+button search
+sleep 5
+tableClick short INSTFUND01
+sleep 2
+clickby class btn btn-primary dropdown-toggle
+clickby text Monthly
+sleep 4
+clickby id btn-mraq-date
+button approve
+sleep 2
+find textH1 View Fund
+expect pass
+logout
+
+test New CREST Instrument 02 - Fund
+description New CREST Instrument 02 - Fund
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu instruments
+button new debt
+form admInstrument
+menuInput category Fund
+textInput name CREST Instrument F02
+checkerInput sync
+menuInput registrar Avenir Registrars Ltd (087 - Ireland)
+sleep 4
+textInput mraq 15/01/2019
+textInput short INSTFUND02
+textInput isin INSTFUND02
+menuInput currency EUR
+menuInput issuer ISS01
+checkerInput sync
+checkerInput sync
+sleep 4
+button save
+sleep 2
+find textH1 View Debt
+clickby class btn btn-primary dropdown-toggle
+clickby text Daily
+sleep 4
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu instruments
+form instrument
+textInput short INSTFUND02
+menuInput state Ready
+button search
+sleep 5
+tableClick short INSTFUND02
+sleep 2
+clickby class btn btn-primary dropdown-toggle
+clickby text Daily
+sleep 4
+clickby id btn-mraq-date
+button approve
+sleep 2
+find textH1 View Debt
+expect pass
+logout

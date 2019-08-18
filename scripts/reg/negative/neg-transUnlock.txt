@@ -1,0 +1,105 @@
+test Transactions Unlock Negative Test 01
+description leaving some inputs blank
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new unlock
+form admTrans
+textInput due date
+select2Input toAccountStr INVST01
+select2Input instrumentStr
+textInput quantity
+textInput tag test 1
+textInput toReference negative transaction unlock 01
+sleep 10
+button save
+find textH1 View Unlock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_time All
+search s_inst INST01
+search s_stat Ready
+button search
+tableClick Code INST01
+button approve
+find textH1 View Unlock
+sleep 2
+expect pass
+logout
+
+test Transactions Unlock Negative Test 02
+description using symbols in tag and toReference inputs
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new unlock
+form admTrans
+textInput due date
+select2Input toAccountStr INVST01
+select2Input instrumentStr INST01
+textInput quantity 100
+textInput tag !#$%^%$
+textInput toReference (*&^%$
+button save
+find textH1 View Unlock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_time All
+search s_inst INST01
+search s_stat Ready
+button search
+tableClick Code INST01
+button approve
+find textH1 View Unlock
+sleep 2
+expect pass
+logout
+
+test Transactions Unlock Negative Test 03
+description using negative number in quantity input
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new unlock
+form admTrans
+textInput due date
+select2Input toAccountStr INVST01
+select2Input instrumentStr INST01
+textInput quantity -28
+textInput tag test
+textInput toReference negative transaction unlock 03
+button save
+find textH1 View Unlock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_time All
+search s_inst INST01
+search s_stat Ready
+button search
+tableClick Code INST01
+button approve
+find textH1 View Unlock
+sleep 2
+expect pass
+logout

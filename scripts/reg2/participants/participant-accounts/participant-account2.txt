@@ -1,0 +1,230 @@
+test Participant Account Test 01
+description creating account that already exists
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+search s_part PART01
+tableClick short PART01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+menuInput currency GBP
+textInput alias PART01-2
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Participant Account Test 02
+description using symbols in short input
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+search s_part PART01
+tableClick short PART01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount 
+textInput short !$%%$#&
+menuInput currency GBP
+textInput alias PART01-00
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Participant Account Test 03
+description using sybmols in currency input
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+search s_part PART01
+tableClick short PART01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 4
+menuInput currency (*&^%$#@!
+textInput alias PART01-4
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Participant Account Test 04
+description using symbols in alias
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+search s_part PART01
+tableClick short PART01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 5
+menuInput currency GBP
+textInput alias (*&^%$#@!
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Participant Account Test 05
+description using code in short input
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+search s_part PART01
+tableClick short PART01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short P<body onload=“alert(‘Hello’);“/>
+menuInput currency GBP
+textInput alias PART01-6
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Participant Account Test 06
+description creating duplicate of deleted account
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+search s_part PART01
+tableClick short PART01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 6
+menuInput currency GBP
+textInput alias PART01-6
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+search s_part PART01
+tableClick short PART01
+scrollto accounts-new-btn
+clickby text PART01-6
+clickby id btn-suspend
+sleep 5
+clickby id btn-delete
+sleep 5
+find textH1 View Participant
+sleep 2
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+search s_part PART01
+tableClick short PART01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 6
+menuInput currency GBP
+textInput alias PART01-6
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Participant Account Test 07
+description creating duplicate of suspended account
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+search s_part PART01
+tableClick short PART01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 7
+menuInput currency GBP
+textInput alias PART01-7
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+search s_part PART01
+tableClick short PART01
+scrollto accounts-new-btn
+clickby text PART01-7
+clickby id btn-suspend
+sleep 4
+find textH1 View Participant
+sleep 2
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+search s_part PART01
+tableClick short PART01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 7
+menuInput currency GBP
+textInput alias PART01-7
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Participant Account Test 08
+description
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+search s_part PART01
+tableClick short PART01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 8
+menuInput currency 
+textInput short 
+menuInput currency GBP
+textInput 

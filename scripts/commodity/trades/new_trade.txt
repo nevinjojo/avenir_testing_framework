@@ -1,0 +1,12 @@
+# to test the new trade feature of the system
+output new_trades_results.txt
+
+test New Trade 1.1
+description This test Makes a new trade
+goTo http://demo.avenir-technology.com/
+login iain.walker password
+goTo http://demo.avenir-technology.com/en_GB/trade/orderbook
+button new Sell
+form usrOrderSell
+select2Input warehouseReceipt 2
+sleep 5

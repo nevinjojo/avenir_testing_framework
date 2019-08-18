@@ -1,0 +1,24 @@
+test Participants' Accounts Report
+description participants' accounts report - oper
+goto
+login
+menu reports
+sleep 4
+clickby text Accounts Report
+sleep 4
+button save
+sleep 20
+screenshot time full
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text PDF
+sleep 20
+screenshot time full
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text CSV
+sleep 10
+find textH1 Participants' Accounts Report
+sleep 2
+expect pass
+logout

@@ -1,0 +1,450 @@
+test currency transaction test 01
+description using decimal number in amount input
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART01-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 100.78
+textInput toReference currency transaction test 01
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 3
+expect pass
+logout
+
+test currency transaction test 02
+description using symbols in amount input
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART02-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount !@#%$^&$#
+textInput toReference currency transaction test 02
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction test 03
+description using letters in amount input
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART03-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount ASdFGhijKl
+textInput toReference currency transaction test 03
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction test 04
+description using html code in amount input
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART04-1
+select2Input instrument USD
+sleep 3
+textInput amount <img src=“https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+” width=“120" border=“0” onload=“window.lol&&lol()” data-atf=“3”>
+textInput toReference currency transaction test 04
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction test 05
+description using html code in reference input
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART05-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 100
+textInput toReference <img src=“https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+” width=“120" border=“0” onload=“window.lol&&lol()” data-atf=“3”>
+button save
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+sleep 4 
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction test 06
+description using code in amount input 1
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART06-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount P<body onload=“alert(‘Hello’);“/>
+textInput toReference currency transaction test 06
+button save
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction test 07
+description using code in amount input 2
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART07-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput toReference currency transaction test 07
+button save
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction test 08
+description using code in reference input 1
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART08-1
+selectInput instrumentStr USD
+sleep 3
+textInput amount 100
+textInput toReference P<body onload=“alert(‘Hello’);“/>
+button save
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction test 09
+description using code in reference input 2
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART09-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 100
+textInput toReference <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+button save
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction test 10
+description using symbols in reference input
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART10-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 150
+textInput toReference !@%^^*&^%$#@&$$
+button save
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction test 11
+description leaving inputs blank
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr
+select2Input instrumentStr USD
+sleep 3
+textInput amount 
+textInput toReference
+button save
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction test 12
+description clicking buttons multiple times in a row
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART02-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 100
+textInput toReference currency transaction test 12
+button save
+button save
+button save
+button save
+button ready
+button ready
+button ready
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu transactions
+search s_inst USD
+search s_stat Ready
+sleep 4
+tableClick Code USD
+button approve
+button approve
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction test 13
+description using negative number in amount input
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART03-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount -1800
+textInput toReference currency transaction test 13
+button save
+find textH1 View Create
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+sleep 4
+tableClick Code USD
+button approve
+find textH1 View Create
+sleep 3
+expect pass
+logout

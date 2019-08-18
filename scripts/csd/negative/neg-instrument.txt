@@ -1,0 +1,75 @@
+test Negative Instrument Test 01
+description using symbols in short code and name inputs
+goto csd.com
+login csd_user1 csd_pass1
+menu instruments
+button new equity
+form admInstrument
+textInput name !@#$%^&*
+textInput short *&^%$#@!
+textInput ticker negative inst 1
+menuInput issuer ISSUER1
+button save
+sleep 2
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test Negative Instrument Test 02
+description using an issuer that doesn't exist
+goto csd.com
+login csd_user1 csd_pass1
+menu instruments
+button new equity
+form admInstrument
+textInput name negativeInst2
+textInput short N-INST2
+textInput ticker negative inst 2
+menuInput issuer n-TEST
+button save
+sleep 2
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test Negative Instrument Test 03
+description leaving inputs blank 
+goto csd.com
+login csd_user1 csd_pass1
+menu instruments
+button new equity
+form admInstrument
+textInput name 
+textInput short 
+textInput ticker negative inst 3
+menuInput issuer 
+button save
+sleep 2
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout
+
+test Negative Instrument Test 04
+description using 'spaces' in name input
+goto csd.com
+login csd_user1 csd_pass1
+menu instruments
+button new equity
+form admInstrument
+textInput name      
+textInput short N-INST4
+textInput ticker negative inst 4
+menuInput issuer ISSUER4
+button save
+sleep 2
+find textH1 View Equity
+button approve
+sleep 2
+expect pass
+logout

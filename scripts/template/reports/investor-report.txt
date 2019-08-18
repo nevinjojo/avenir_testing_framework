@@ -1,0 +1,23 @@
+test Investor Report
+description investor report - oper
+goto
+login
+menu reports
+clickby text Investor Report
+sleep 2
+button save
+sleep 15
+screenshot time full
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text PDF
+sleep 15
+screenshot time full
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text CSV
+sleep 10
+find textH1 Investor Report
+sleep 2
+expect pass
+logout

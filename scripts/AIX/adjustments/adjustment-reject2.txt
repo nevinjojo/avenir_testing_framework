@@ -1,0 +1,75 @@
+# ADJ00000045
+test trade 1 - adjustment - reject 01
+description trade 1
+goto AIX
+login aix_user1 aix_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART05
+select2Input buyAccountStr PART06
+select2Input instrumentStr INST02
+textInput quantity 1,000
+textInput price 2,000
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+goto AIX
+login P6_BRKR1_user P6_BRKR1_pass
+date + 2
+menu positions
+form s
+textInput to date
+sleep 5
+clickby text INST02
+clickby id btn-giveup
+form usrAdjustment
+textInput long 1,000
+textInput org Custodian 01
+textInput reference adjustment1
+button save
+sleep 2
+button approve
+sleep 2
+find textH1 View Adjustment
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu adjustments
+clickby text CUST01
+button reject
+sleep 2
+find textH1 View Adjustment
+expect pass
+logout
+
+goto AIX
+login P6_BRKR1_user P6_BRKR1_pass
+menu adjustments
+clickby text CUST01
+button approve
+sleep 2
+find textH1 View Adjustment
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu adjustments
+clickby text CUSDT01
+button accept
+sleep 2
+button save
+sleep 2
+button edit 
+form usrAdjustment
+select2Input account CUST01-2
+button save
+sleep 2

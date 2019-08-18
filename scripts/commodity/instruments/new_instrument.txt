@@ -1,0 +1,16 @@
+# to test the new instrument feature of the avenir demo system
+output new_instrument_results.txt 
+
+test New Instrument 1.1
+description This test Makes a new instrument in avenir demo
+goTo http://demo.avenir-technology.com/
+login iain.walker password
+sleep 3
+menu instruments
+button new
+form admInstrument
+textInput name nevn testing
+textInput short potatoes
+checkerInput instrumentGroups_5
+button save
+button delete

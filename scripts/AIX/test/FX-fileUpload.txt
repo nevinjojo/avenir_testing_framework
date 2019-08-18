@@ -1,0 +1,10 @@
+test FX Upload File Test 1
+description FX Upload File 1
+goto AIX
+login aix_user1 aix_pass1
+menu Prices
+sleep 2
+clickby text FX
+sleep 2
+button fx
+sleep 20

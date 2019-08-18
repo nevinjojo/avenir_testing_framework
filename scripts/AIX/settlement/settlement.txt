@@ -1,0 +1,26 @@
+test settlement test 01
+description settlement day 01
+goto AIX
+login aix_user1 aix_pass1
+menu settlement management
+clickby class btn btn-primary btn-lg
+sleep 30
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu settlement management
+clickby class btn btn-primary btn-lg
+sleep 35
+find textH1 Settlement Management
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu settlement management
+clickby class btn btn-primary btn-lg
+sleep 15
+find textH1 Settlement Management
+expect pass
+logout

@@ -1,0 +1,24 @@
+test New Manager User 01
+description New Manager User 01
+goto AIX
+login aix_user1 aix_pass1
+usermenu my organisation
+clickby id user-new-btn
+form user
+textInput username manager-user1
+textInput name Manager User
+textInput last 1
+textInput email manager-user1@avenir-technology.com
+menuInput role Manager
+button save
+sleep 2
+button approve
+button password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+sleep 3
+expect pass
+logout

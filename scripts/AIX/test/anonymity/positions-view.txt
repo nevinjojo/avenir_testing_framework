@@ -1,0 +1,14 @@
+test Positions View
+description positions view - broker view
+goto AIX
+login P1_BRKR1_user P1_BRKR1_pass
+menu positions
+search s_stat Any
+sleep 3
+clickby text PART
+sleep 4
+screenshot time full 
+sleep 4
+find textH1 View Position
+expect pass
+logout

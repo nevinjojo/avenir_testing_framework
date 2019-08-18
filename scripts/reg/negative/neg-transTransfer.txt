@@ -1,0 +1,133 @@
+test Transactions Transfer Negative Test 01
+description leaving all fields blank
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new transfer
+form admTrans
+textInput due
+select2Input frAccountStr 
+select2Input toAccountStr
+select2Input instrumentStr 
+textInput quantity
+textInput frReference
+textInput toReference
+sleep 5
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+test Transactions Transfer Negative Test 02
+description using irrelevant numbers and symbols in inputs
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new transfer
+form admTrans
+textInput due 12345
+select2Input frAccountStr 98765!@#
+select2Input toAccountStr (*&^5432
+select2Input instrumentStr $%#@1234
+textInput quantity ./";:123
+textInput frReference !@#$%^76543
+textInput toReference 9876%$#@!
+sleep 5
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_time All
+search s_inst $%#@1234
+search s_stat Ready
+button search
+tableClick Code $%#@1234
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test Transactions Transfer Negative Test 03
+description using irrelevant numbers in inputs
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new transfer
+form admTrans
+textInput due 12345
+select2Input frAccountStr 98765!@#
+select2Input toAccountStr (*&^5432
+select2Input instrumentStr $%#@1234
+textInput quantity ./";:123
+textInput frReference !@#$%^76543
+textInput toReference 9876%$#@!
+sleep 5
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_time All
+search s_inst $%#@1234
+search s_stat Ready
+button search
+tableClick Code $%#@1234
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+test Transactions Transfer Negative Test 04
+description using letters where there should be numbers
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new transfer
+form admTrans
+textInput due date
+select2Input frAccountStr INVST02
+select2Input toAccountStr TRUST01
+select2Input instrumentStr INST02
+textInput quantity ASDFGHJKL
+textInput frReference NTEST
+textInput toReference NTEST
+sleep 5
+button save
+find textH1 View Transfer
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_time All
+search s_inst INST02
+search s_stat Ready
+button search
+tableClick Code INST02
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout

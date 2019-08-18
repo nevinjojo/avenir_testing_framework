@@ -1,0 +1,155 @@
+test testing search state command - positions
+description testing search state command - positions
+goto testreg
+login testreg_user1 testreg_pass1
+menu positions
+sleep 3
+menuInput s_stat settled
+sleep 10
+find textH1 settled
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu positions
+sleep 3
+menuInput s_stat any
+sleep 10
+find textH1 any 
+expect pass
+logout
+
+test testing search state command - investors
+description testing search state command - investors
+goto testreg
+login testreg_user1 testreg_pass1
+menu investors
+sleep 3
+menuInput s_stat Active
+sleep 10
+find textH1 active
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu investors
+sleep 3
+menuInput s_stat Ready
+sleep 10
+find textH1 ready
+expect pass
+logout
+
+test testing search state command - instruments
+description testing search state command - instruments
+# passes
+goto testreg
+login testreg_user1 testreg_pass1
+menu instruments
+sleep 3
+menuInput instrument_state Any
+sleep 10
+find textH1 any
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu instruments
+sleep 3
+menuInput instrument_state Ready
+sleep 10
+find textH1 ready
+expect pass
+logout
+
+test testing search state command - participants
+description testing search state command - participants
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+sleep 3
+menuInput s_stat Active
+sleep 10
+find textH1 active
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu participants
+sleep 3
+menuInput s_stat Ready
+sleep 10
+find textH1 ready
+expect pass
+logout
+
+test testing search state command - users
+description testing search state command - users
+goto testreg
+login testreg_user1 testreg_pass1
+menu users
+sleep 3
+menuInput s_stat Draft
+sleep 10
+find textH1 draft
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu users
+sleep 3
+menuInput s_stat Ready
+sleep 10
+find textH1 ready
+expect pass
+logout
+
+test testing search state command - transactions
+description testing search state command - transactions
+goto testreg
+login testreg_user1 testreg_pass1
+menu transactions
+sleep 3
+menuInput s_stat Ready for Approval
+sleep 10
+find textH1 ready for approval
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu transactions
+sleep 3
+menuInput s_stat Settled
+sleep 10
+find textH1 settled
+expect pass
+logout
+
+test testing search state command - trade
+description testing search state command - trade
+# passes
+goto testreg
+login testreg_user1 testreg_pass1
+menu trades
+sleep 3
+menuInput s_stat Rejected
+sleep 10
+find textH1 rejected
+expect pass
+logout
+
+goto testreg
+login testreg_user1 testreg_pass1
+menu trades
+sleep 3
+menuInput s_stat Accepted
+sleep 10
+find textH1 accepted
+expect pass
+logout

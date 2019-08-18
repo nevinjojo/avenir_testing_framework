@@ -1,0 +1,27 @@
+# Update ID 000012159
+
+test Update ID 000012159
+description update investor details
+goto settle_web
+login settleweb_user2 settleweb_pass2
+clickby class fas fa-id-card fa-2x
+scrollto hldr-link-000012159
+clickby id hldr-link-000012159
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email siennahendrikxx@gmail.com
+textInput phone +42220023300
+textInput mobile +0214315244
+textInput address1 5 MAYFAIR PLACE
+textInput postcode 6023
+menuInput country Switzerland
+textInput bankaccount_sort_code 0893000
+textInput bankaccount_account 83736720
+button save
+sleep 3
+button confirm
+find textH1 Update Investor Details
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out

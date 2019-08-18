@@ -1,0 +1,419 @@
+test Creating CSD01-2
+description New CSD Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD01
+tableClick short CSD01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+textInput name CSD01-2
+menuInput currency GBP
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CSD01-3
+description New CSD Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD01
+tableClick short CSD01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+textInput name CSD01-3
+menuInput currency USD
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CSD02-2
+description New CSD Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD02
+tableClick short CSD02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+textInput name CSD02-2
+menuInput currency GBP
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CSD02-3
+description New CSD Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD02
+tableClick short CSD02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+textInput name CSD02-3
+menuInput currency USD
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CSD03-2
+description New CSD Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD03
+tableClick short CSD03
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+textInput name CSD03-2
+menuInput currency GBP
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CSD03-3
+description New CSD Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD03
+tableClick short CSD03
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+textInput name CSD03-3
+menuInput currency USD
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CSD04-2
+description New CSD Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD04
+tableClick short CSD04
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+textInput name CSD04-2
+menuInput currency GBP
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CSD04-3
+description New CSD Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD04
+tableClick short CSD04
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+textInput name CSD04-3
+menuInput currency USD
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CSD05-2
+description New CSD Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD05
+tableClick short CSD05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+textInput name CSD05-2
+menuInput currency GBP
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CSD05-3
+description New CSD Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD05
+tableClick short CSD05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+textInput name CSD05-3
+menuInput currency USD
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CSD06-2
+description New CSD Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD06
+tableClick short CSD06
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+textInput name CSD06-2
+menuInput currency GBP
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CSD06-3
+description New CSD Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD06
+tableClick short CSD06
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+textInput name CSD06-3
+menuInput currency USD
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CSD07-2
+description New CSD Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD07
+tableClick short CSD07
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+textInput name CSD07-2
+menuInput currency GBP
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CSD07-3
+description New CSD Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD07
+tableClick short CSD07
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+textInput name CSD07-3
+menuInput currency USD
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CSD08-2
+description New CSD Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD08
+tableClick short CSD08
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+textInput name CSD08-2
+menuInput currency GBP
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CSD08-3
+description New CSD Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD08
+tableClick short CSD08
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+textInput name CSD08-3
+menuInput currency USD
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CSD09-2
+description New CSD Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD09
+tableClick short CSD09
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+textInput name CSD09-2
+menuInput currency GBP
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CSD09-3
+description New CSD Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD09
+tableClick short CSD09
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+textInput name CSD09-3
+menuInput currency USD
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CSD10-2
+description New CSD Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD10
+tableClick short CSD10
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 2
+textInput name CSD10-2
+menuInput currency GBP
+button save
+sleep 3
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating CSD10-3
+description New CSD Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD10
+tableClick short CSD10
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short 3
+textInput name CSD10-3
+menuInput currency USD
+button save
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout

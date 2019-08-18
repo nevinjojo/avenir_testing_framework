@@ -1,0 +1,21 @@
+test Trades Report 01
+description trades report - broker view
+goto AIX
+login P1_BRKR1_user P1_BRKR1_pass
+menu reports
+sleep 4
+clickby text Trades 2
+form usrReport
+textInput from 01/01/2019
+textInput to 02/04/2019
+sleep 4
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text PDF
+sleep 15
+# scrollto lnk-cancel
+screenshot trades-report time
+find textH1 Trades
+expect pass
+logout
+

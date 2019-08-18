@@ -1,0 +1,25 @@
+# to test the new participant feature of the system
+output new_participant_results.txt
+
+test New Participant 1.1
+description This test Makes a new participant
+goto dev
+login dev_user1 dev_pass1
+menu participants
+button new
+form admOrg
+textInput name john doe
+textInput short shortinput
+textInput alias aliasinput
+menuInput orgType DCM
+textInput lei leiinput
+textInput registration registrationinput
+textInput bic bicinput
+textInput address1 testing
+textInput postcode 5011
+menuInput country New Zealand
+checkerInput mkchktype_1
+button save
+sleep 2
+find button approve
+expect pass

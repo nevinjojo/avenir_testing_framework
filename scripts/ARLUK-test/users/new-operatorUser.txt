@@ -1,0 +1,24 @@
+test New Operator User 01
+description New Operator User 01
+goto AIX
+login aix_user1 aix_pass1
+usermenu my organisation
+clickby id user-new-btn
+form user
+textInput username operator-user1
+textInput name Operator User
+textInput last 1
+textInput email operator-user1@avenir-technology.com
+menuInput role Operator
+button save
+sleep 2
+button approve
+button password
+form admUserPassword
+textInput password_password Password1!
+textInput password_confirm Password1!
+button save
+find textH1 View User
+sleep 3
+expect pass
+logout

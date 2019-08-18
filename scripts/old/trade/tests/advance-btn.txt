@@ -1,0 +1,22 @@
+test Force Progress Test, Advance button
+description Force Progress Test
+goto trade
+login trade_user1 trade_pass1
+menu Plans
+clickby text Trading
+sleep 2
+button advance
+sleep 15
+button advance
+sleep 15
+button advance
+sleep 15
+button advance
+sleep 15
+button advance
+sleep 15
+button advance
+sleep 4
+find textH1 View Plan
+expect pass
+logout

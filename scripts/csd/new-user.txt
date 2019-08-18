@@ -1,0 +1,27 @@
+test New CSD User
+description creating second csd user
+goto csd.com
+login csd_user1 csd_pass1
+usermenu my organisation
+scrollto user-new-btn
+clickby id user-new-btn
+form user
+textInput username csd2.com
+textInput name csd2
+textInput last .com
+textInput email CSD2@csd.com
+menuInput role Manager
+button save
+sleep 3
+button approve
+sleep 3
+button password
+form admUserPassword
+textInput password_password Password!1
+textInput password_confirm Password!1
+button save
+find textH1 View User
+sleep 3
+expect pass
+logout
+

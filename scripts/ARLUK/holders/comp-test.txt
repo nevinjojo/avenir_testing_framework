@@ -1,0 +1,588 @@
+test Company Holder Test 01
+description using symbols in name input 
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new company
+form admOrg
+textInput name !@#$%^(*&^%
+textInput address1 ADDRESS01
+textInput email test01@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat All
+sleep 4
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Company Holder Test 02
+description using symbols in address input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new company
+form admOrg
+textInput name COMP TEST02
+textInput address1 $@@$@#$&%^&%
+textInput email test02@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat All
+sleep 4
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Company Holder Test 03
+description using symbols in email input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new company
+form admOrg
+textInput name COMP TEST03
+textInput address1 ADDRESS03
+textInput email !@#$%$^&*^%$#
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat All
+sleep 4
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Company Holder Test 04
+description using symbols in country input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new company
+form admOrg
+textInput name COMP TEST04
+textInput address1 ADDRESS04
+textInput email TEST04@gmail.com
+menuInput country )(*&^%$#@!
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat All
+sleep 4
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Company Holder Test 05
+description leaving name input blank
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new company
+form admOrg
+textInput name
+textInput address1 ADDRESS05
+textInput email TEST05@gmail.com
+menuInput New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat All
+sleep 4
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Company Holder Test 06
+description leaving address input blank
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new company
+form admOrg
+textInput name COMP TEST06
+textInput address1 
+textInput email TEST06@gmail.com
+menuInput New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat All
+sleep 4
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Company Holder Test 07
+description leaving email input blank
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new company
+form admOrg
+textInput name COMP TEST07
+textInput address1 ADDRESS07
+textInput email
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID 
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat All
+sleep 4
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Company Holder Test 08
+description leaving country input blank
+goto ARL_UK 
+login uk_user_1 uk_pass_1
+menu Holders
+button new company
+form admOrg
+textInput name COMP TEST08
+textInput address1 ADDRESS08
+textInput email TEST08@gmail.com
+menuInput country
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat All
+sleep 4
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Company Holder Test 09
+description leaving all inputs blank
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new company
+form admOrg
+textInput name
+textInput address1
+textInput email
+menuInput country
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat All
+sleep 4
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Company Holder Test 10
+description using html code in name input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new company
+form admOrg
+textInput name P<body onload=“alert(‘Hello’);“/>
+textInput address1 ADDRESS10
+textInput email TEST10@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat All
+sleep 4
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Company Holder Test 11 
+description using html code in address input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new company
+form admOrg
+textInput name COMP TEST11
+textInput address1 P<body onload=“alert(‘Hello’);“/>
+textInput email TEST11@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2 
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat All
+sleep 4
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Company Holder Test 12
+description using html code in email input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new company
+form admOrg
+textInput name COMP TEST12
+textInput address1 ADDRESS12
+textInput email P<body onload=“alert(‘Hello’);“/>
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat All
+sleep 4
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Company Holder Test 13
+description using html code in country input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new company
+form admOrg
+textInput name COMP TEST13
+textInput address1 ADDRESS13
+textInput email TEST13@gmail.com
+menuInput country P<body onload=“alert(‘Hello’);“/>
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat All
+sleep 4
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Company Holder Test 14
+description using code in name input 
+goto ARL_UK 
+login uk_user_1 uk_pass_1
+menu Holders
+button new company
+form admOrg
+textInput name <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput address1 ADDRESS14
+textInput email TEST14@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat All
+sleep 4
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Company Holder Test 15
+description using code in address input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new company
+form admOrg
+textInput name COMP TEST15
+textInput address1 <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput email TEST15@gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat All
+sleep 4
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Company Holder Test 16
+description using code in email input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new company
+form admOrg
+textInput name COMP TEST16
+textInput address1 ADDRESS16
+textInput email <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat All
+sleep 4
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Company Holder Test 17
+description using code in country input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new company
+form admOrg
+textInput name COMP TEST17
+textInput address1 ADDRESS17
+textInput email TEST17@gmail.com
+menuInput country <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat All
+sleep 4
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Company Holder Test 18
+description leaving @ symbol out of email input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new company
+form admOrg
+textInput name COMP TEST18
+textInput address1 ADDRESS18
+textInput email TEST18gmail.com
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat All
+sleep 4
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout
+
+test Company Holder Test 19
+description leaving "." out of email input
+goto ARL_UK
+login uk_user_1 uk_pass_1
+menu Holders
+button new company
+form admOrg
+textInput name COMP TEST19
+textInput address1 ADDRESS19
+textInput email TEST19@gmailcom
+menuInput country New Zealand
+button save
+find textH1 View Holder
+sleep 2
+saveID
+button ready
+expect pass
+logout
+
+goto ARL_UK
+login uk_user_2 uk_pass_2
+menu Holders
+search s_part saveID
+search s_stat All
+sleep 4
+tableClick Holder saveID
+find textH1 View Holder
+button approve
+expect pass
+logout

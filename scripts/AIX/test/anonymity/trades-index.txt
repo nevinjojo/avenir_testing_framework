@@ -1,0 +1,11 @@
+test Trades Index 01
+description trades index - broker view
+goto AIX
+login P1_BRKR1_user P1_BRKR1_pass
+menu trades
+sleep 2
+screenshot trade-index time
+sleep 2
+find textH1 counterparty
+expect pass
+logout

@@ -1,0 +1,13 @@
+test Positions View 02
+description position view (settlement summary) - broker view
+goto AIX
+login P1_BRKR1_user P1_BRKR1_pass
+menu settlement
+sleep 2
+clickby text POS
+sleep 4
+screenshot time full
+sleep 2
+find textH1 View Position
+expect pass
+logout

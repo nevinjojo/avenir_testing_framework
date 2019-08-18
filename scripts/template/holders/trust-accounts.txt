@@ -1,0 +1,372 @@
+test Creating TRUST01 Account 2
+description New Holder Account
+goto
+login 
+menu Holders
+search s_part TRUST01
+search s_stat Active
+sleep 4
+clickby text TRUST01
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating TRUST01 Account 3
+description New Holder Account
+goto 
+login 
+menu Holders
+search s_part TRUST01
+search s_stat Active
+sleep 4
+clickby text TRUST01
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating TRUST02 Account 2
+description New Holder Account
+goto
+login 
+menu Holders
+search s_part TRUST02
+search s_stat Active
+sleep 4
+clickby text TRUST02
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating TRUST02 Account 3 
+description New Holder Account
+goto
+login 
+menu Holders
+search s_part TRUST02
+search s_stat Active
+sleep 4
+clickby text TRUST02
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating TRUST03 Account 2
+description New Holder Account
+goto 
+login 
+menu Holders
+search s_part TRUST03
+search s_stat Active
+sleep 4
+clickby text TRUST03
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating TRUST03 Account 3
+description New Holder Account
+goto 
+login 
+menu Holders
+search s_part TRUST03
+search s_stat Active
+sleep 4
+clickby text TRUST03
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating TRUST04 Account 2
+description New Holder Account
+goto
+login 
+menu Holders
+search s_part TRUST04
+search s_stat Active
+sleep 4
+clickby text TRUST04
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating TRUST04 Account 3
+description New Holder Account
+goto
+login 
+menu Holders
+search s_part TRUST04
+search s_stat Active
+sleep 4
+clickby text TRUST04
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating TRUST05 Account 2
+description New Holder Account
+goto 
+login 
+menu Holders
+search s_part TRUST05
+search s_stat Active
+sleep 4
+clickby text TRUST05
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating TRUST05 Account 3
+description New Holder Account
+goto 
+login 
+menu Holders
+search s_part TRUST05
+search s_stat Active
+sleep 4
+clickby text TRUST05
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating TRUST06 Account 2
+description New Holder Account
+goto 
+login 
+menu Holders
+search s_part TRUST06
+search s_stat Active
+sleep 4
+clickby text TRUST06
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating TRUST06 Account 3
+description New Holder Account
+goto 
+login
+menu Holders
+search s_part TRUST06
+search s_stat Active
+sleep 4
+clickby text TRUST06
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating TRUST07 Account 2
+description New Holder Account
+goto 
+login 
+menu Holders
+search s_part TRUST07
+search s_stat Active
+sleep 4
+clickby text TRUST07
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating TRUST07 Account 3
+description New Holder Account
+goto 
+login
+menu Holders
+search s_part TRUST07
+search s_stat Active
+sleep 4
+clickby text TRUST07
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating TRUST08 Account 2
+description New Holder Account
+goto 
+login
+menu Holders
+search s_part TRUST08
+search s_stat Active
+sleep 4
+clickby text TRUST08
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating TRUST08 Account 3
+description New Holder Account
+goto
+login
+menu Holders
+search s_part TRUST08
+search s_stat Active
+sleep 4
+clickby text TRUST08
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating TRUST09 Account 2
+description New Holder Account
+goto
+login 
+menu Holders
+search s_part TRUST09
+search s_stat Active
+sleep 4
+clickby text TRUST09
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating TRUST09 Account 3
+description New Holder Account
+goto 
+login 
+menu Holders
+search s_part TRUST09
+search s_stat Active
+sleep 4
+clickby text TRUST09
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating TRUST10 Account 2
+description New Holder Account
+goto 
+login 
+menu Holders
+search s_part TRUST10
+search s_stat Active
+sleep 4
+clickby text TRUST10
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating TRUST10 Account 3
+description New Holder Account
+goto 
+login 
+menu Holders
+search s_part TRUST10
+search s_stat Active
+sleep 4
+clickby text TRUST10
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+

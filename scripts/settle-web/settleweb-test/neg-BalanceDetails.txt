@@ -1,0 +1,17 @@
+test Balance Details Negative Test 01
+description Balance Details Negative Test 01
+goto settle_web
+login settleweb_user1 settleweb_pass1
+sleep 2
+clickby id bal_link-000025974-1-0
+button link
+button link
+button link
+button link
+button link
+sleep 3
+find textH1 Balance Details
+expect pass
+clickby text Menu
+sleep 3
+clickby text Logout

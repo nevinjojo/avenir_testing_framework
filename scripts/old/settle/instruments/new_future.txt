@@ -1,0 +1,25 @@
+# to test the new future feature of the system
+
+test New Future 1.1
+description This test Makes a new future instrument
+goto dev
+login dev_user1 dev_pass1
+
+menu instruments
+button new future
+form admInstrument
+textInput name Avenir Testing
+textInput short Avenir Short
+textInput isin  Avenir ISIN
+textInput ticker future ticker
+textInput fix future fix
+textInput mic future mic
+menuInput underlying 1234
+textInput golive 20/20/20
+textInput maturity 20/02/2019
+textInput settlement 10/02/2019
+textInput margin 3.4
+button save
+sleep 2
+find button approve
+expect pass

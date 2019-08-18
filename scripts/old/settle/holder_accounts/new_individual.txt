@@ -1,0 +1,28 @@
+# to test the new individual feature of the system
+
+test New Individual 1.1
+description This test Makes a new individual
+goTo dev
+login dev_user1 dev_pass1
+menu holder_accounts
+button new individual
+form admOrg
+textInput name NVN individual name
+textInput last individual last
+textInput address1 individual testing street
+textInput postcode 5011
+menuInput country Belgium
+menuInput owner Công ty Cổ phần Chứng khoán VNDirect
+button save
+sleep 3
+find textH1 View Investor 
+expect pass
+
+logout
+login dev_user2 dev_spass2
+menu investors 
+search name NVN test 1
+search state Draft
+button search
+find item
+expect pass

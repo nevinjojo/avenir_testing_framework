@@ -1,0 +1,16 @@
+test Participants' Accounts Report
+description participants' accounts report - broker view
+goto AIX
+login P1_BRKR1_user P1_BRKR1_pass
+menu reports
+clickby text Accounts for selected participant 
+sleep 4
+button save
+sleep 15
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text PDF
+sleep 15
+find textH1 Participants' Accounts Report
+expect pass
+logout

@@ -1,0 +1,18 @@
+test User Clea Alber
+description edit user details
+goto settle_web
+login settleweb_user5 settleweb_pass5
+menu My Details
+clickby class edit-detail
+form userUser
+textInput phone +447590196370
+textInput mobile +447590196300
+textInput email srt0@avenir-technology.com
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out

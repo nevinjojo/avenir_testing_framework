@@ -1,0 +1,384 @@
+test trade 1 - adjustment 01
+description trade 1 adjustment 01
+goto AIX
+login aix_user1 aix_pass1
+menu trades
+button new
+form usrTrade
+checkerInput setting
+textInput tradeId Adjustment 01
+select2Input sellAccountStr PART01
+select2Input buyAccountStr PART02
+select2Input instrumentStr INST01
+textInput quantity 1,500
+textInput price 3,500
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test adjustment 01 
+description give up / take up - adjustment 01
+goto AIX
+login P2_BRKR1_user P2_BRKR1_pass
+date + 2 ignore-weekends
+menu positions
+form s
+textInput to date
+sleep 5
+clickby text INST01
+clickby id btn-giveup
+form usrAdjustment
+textInput long 1,500
+menuInput org Custodian 01
+textInput reference adjustment1
+button save
+sleep 2
+button approve
+sleep 2
+find textH1 View Adjustment
+expect pass
+logout
+
+goto AIX
+login C1_BRKR1_user C1_BRKR1_pass
+menu adjustments
+clickby text CUST01
+button accept
+sleep 2
+form usrAdjustment
+select2Input account CUST01-1
+button save
+sleep 2
+button ready
+sleep 2
+find textH1 View Adjustment
+expect pass
+logout
+
+test adjustment 01 - PART02 - Net
+description PART02 - Net
+goto AIX
+login P2_BRKR1_user P2_BRKR1_pass
+date + 2 ignore-weekends
+menu positions
+form s
+textInput to date
+sleep 5
+clickby text INST01
+screenshot time full
+sleep 2
+find textH1 View Position
+expect pass
+logout
+
+test trade 2 - adjustment 02
+description trade 2 adjustment 02
+goto AIX
+login aix_user1 aix_pass1
+menu trades
+button new
+form usrTrade
+checkerInput setting
+textInput tradeId Adjustment 02
+select2Input sellAccountStr PART03
+select2Input buyAccountStr PART04
+select2Input instrumentStr INST02
+textInput quantity 2,500
+textInput price 5,000
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test adjustment 02
+description give up / take up - adjustment 02
+goto AIX
+login P4_BRKR1_user P4_BRKR1_pass
+date + 2 ignore-weekends
+menu positions
+form s
+textInput to date
+sleep 5
+clickby text INST02
+clickby id btn-giveup
+form usrAdjustment
+textInput long 2,500
+menuInput org Custodian 02
+textInput reference adjustment1
+button save
+sleep 2
+button approve
+sleep 2
+find textH1 View Adjustment
+expect pass
+logout
+
+goto AIX
+login C2_BRKR1_user C2_BRKR1_pass
+menu adjustments
+clickby text CUST02
+button accept
+sleep 2
+form usrAdjustment
+select2Input account CUST02-1
+button save
+sleep 2
+button ready
+sleep 2
+find textH1 View Adjustment
+expect pass
+logout
+
+test adjustment 02 - PART03 - Net
+description PART03 - Net
+goto AIX
+login P3_BRKR1_user P3_BRKR1_pass
+date + 2 ignore-weekends
+menu positions
+form s
+textInput to date
+sleep 5
+clickby text INST02
+screenshot time full
+sleep 2
+find textH1 View Position
+expect pass
+logout
+
+test trade 3 - adjustment 03
+description trade 3 adjustment 03
+goto AIX
+login aix_user1 aix_pass1
+menu trades
+button new
+form usrTrade
+checkerInput setting
+textInput tradeId Adjustment 03
+select2Input sellAccountStr PART05
+select2Input buyAccountStr PART06
+select2Input instrumentStr INST03
+textInput quantity 5,000
+textInput price 7,500
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test adjustment 03
+description give up / take up - adjustment 03
+goto AIX
+login P6_BRKR1_user P6_BRKR1_pass
+date + 2 ignore-weekends
+menu positions
+form s
+textInput to date
+sleep 5
+clickby text INST03
+clickby id btn-giveup
+form usrAdjustment
+textInput long 5,000
+menuInput org Custodian 03
+textInput reference adjustment3
+button save
+sleep 2
+button approve
+sleep 2
+find textH1 View Adjustment
+expect pass
+logout
+
+goto AIX
+login C3_BRKR1_user C3_BRKR1_pass
+menu adjustments
+clickby text CUST03
+button accept
+sleep 2
+form usrAdjustment
+select2Input account CUST03-1
+button save
+sleep 2
+button ready
+sleep 2
+find textH1 View Adjustment
+expect pass
+logout
+
+test adjustment 03 - PART04 - Net
+description PART06 - Net
+goto AIX
+login P6_BRKR1_user P6_BRKR1_pass
+date + 2 ignore-weekends
+menu positions
+form s
+textInput to date
+sleep 5
+clickby text INST03
+screenshot time full
+sleep 2
+find textH1 View Position
+expect pass
+logout
+
+test trade 4 - adjustment 04
+description trade 4 adjustment 04
+goto AIX
+login aix_user1 aix_pass1
+menu trades
+button new
+form usrTrade
+checkerInput setting
+textInput tradeId Adjustment 04
+select2Input sellAccountStr PART07
+select2Input buyAccountStr PART08
+select2Input instrumentStr INST04
+textInput quantity 150
+textInput price 1,000
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test adjustment 04
+description give up / take up - adjustment 04
+goto AIX
+login P8_BRKR1_user P8_BRKR1_pass
+date + 2 ignore-weekends
+menu positions
+form s
+textInput to date
+sleep 5
+clickby text INST04
+clickby id btn-giveup
+form usrAdjustment
+textInput long 150
+menuInput org Custodian 04
+textInput reference adjustment4
+button save
+sleep 2
+button approve
+sleep 2
+find textH1 View Adjustment
+expect pass
+logout
+
+goto AIX
+login C4_BRKR1_user C4_BRKR1_pass
+menu adjustments
+clickby text CUST04
+button accept
+sleep 2
+form usrAdjustment
+select2Input account CUST04-1
+button save
+sleep 2
+button ready
+sleep 2
+find textH1 View Adjustment
+expect pass
+logout
+
+test adjustment 04 - PART08 - Net
+description PART08 - Net
+goto AIX
+login P8_BRKR1_user P8_BRKR1_pass
+date + 2 ignore-weekends
+menu positions
+form s
+textInput to date
+sleep 5
+clickby text INST04
+screenshot time full
+sleep 2
+find textH1 View Position
+expect pass
+logout
+
+test trade 5 - adjustment 05
+description trade 5 adjustment 05
+goto AIX
+login aix_user1 aix_pass1
+menu trades
+button new
+form usrTrade
+checkerInput setting
+textInput tradeId Adjustment 05
+select2Input sellAccountStr PART09
+select2Input buyAccountStr PART10
+select2Input instrumentStr INST05
+textInput quantity 3,000
+textInput price 5,500
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test adjustment 05
+description give up / take up - adjustment 05
+goto AIX
+login P10_BRKR1_user P10_BRKR1_pass
+date + 2 ignore-weekends
+menu positions
+form s
+textInput to date
+sleep 5
+clickby text INST05
+clickby id btn-giveup
+form usrAdjustment
+textInput long 3,000
+menuInput org Custodian 05
+textInput reference adjustment5
+button save
+sleep 2
+button approve
+sleep 2
+find textH1 View Adjustment
+expect pass
+logout
+
+goto AIX
+login C5_BRKR1_user C5_BRKR1_pass
+menu adjustments
+clickby text CUST05
+button accept
+sleep 2
+form usrAdjustment
+select2Input account CUST05-1
+button save
+sleep 2
+button ready
+sleep 2
+find textH1 View Adjustment
+expect pass
+logout
+
+test adjustment 05 - PART10 - Net
+description PART10 - Net
+goto AIX
+login P10_BRKR1_user P10_BRKR1_pass
+date + 2 ignore-weekends
+menu positions
+form s
+textInput to date
+sleep 5
+clickby text INST05
+screenshot time full
+sleep 2
+find textH1 View Position
+expect pass
+logout

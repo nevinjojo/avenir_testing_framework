@@ -1,0 +1,16 @@
+test clearInput test 1
+description transactions clearInput s_inst
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST01
+sleep 15
+search s_stat Any
+clearInput s_inst
+sleep 15
+tableClick Code INST01
+find textH1 View Create
+sleep 2
+expect pass
+logout
+

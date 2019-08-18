@@ -1,0 +1,79 @@
+test Update User Details Negative Test 01
+description leaving all inputs blank
+goto settle_web
+login settleweb_user1 settleweb_pass1
+menu My Details
+button update
+form userUser
+textInput phone
+textInput mobile
+textInput email
+button save
+sleep 3
+button confirm
+find textH1 User Details
+expect pass
+clickby text Menu
+sleep 3
+clickby text Logout
+
+test Update User Details Negative Test 02
+description using symbols in inputs
+goto settle_web
+login settleweb_user1 settleweb_pass1
+menu My Details
+button update
+form userUser
+textInput phone %!@#$%^&
+textInput mobile (*&@%@!
+textInput email srt@avenir-technology.com
+button save
+sleep 3
+button confirm
+find textH1 User Details
+expect pass
+clickby text Menu
+sleep 3
+clickby text Logout
+
+test Update User Details Negative Test 03
+description repeating actions multiple times in a row
+goto settle_web
+login settleweb_user1 settleweb_pass1
+menu My Details
+button update
+form userUser
+textInput phone +642222223330
+textInput mobile +4475901963720
+textInput email srt@avenir-technology.com
+textInput email srt@avenir-technology.com
+textInput email srt@avenir-technology.com
+button save
+sleep 3
+button confirm
+button confirm
+button confirm
+find textH1 User Details
+expect pass
+clickby text Menu
+sleep 3
+clickby text Logout
+
+test Update User Details Negative Test 04
+description using letters in phone and mobile inputs
+goto settle_web
+login settleweb_user1 settleweb_pass1
+menu My Details
+button update
+form userUser
+textInput phone AsDFgHjkL 
+textInput mobile qwERtYuiOp
+textInput email srt@avenir-technology.com
+button save
+sleep 3
+button confirm
+find textH1 User Details
+expect pass
+clickby text Menu
+sleep 3
+clickby text Logout 

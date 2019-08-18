@@ -1,0 +1,60 @@
+# partial giveup/takeup - maker/checker off
+
+test trade 1 - adjustment 01
+description trade 1
+goto AIX
+login aix_user1 aix_pass1
+menu trades
+button new
+form usrTrade
+select2Input sellAccountStr PART11
+select2Input buyAccountStr PART12
+select2Input instrumentStr INST10
+textInput quantity 1,000
+textInput price 1,000
+button save
+sleep 2
+find textH1 View Trade
+button approve
+sleep 2
+expect pass
+logout
+
+test adjustment 01 - PART12U1
+description giveup / takeup - buy account (full amount)
+goto AIX
+login P12_BRKR1_user P12_BRKR1_pass
+date + 2 ignore-weekends
+menu positions
+form s
+textInput to date
+sleep 5
+clickby text INST10
+clickby id btn-giveup
+form usrAdjustment
+textInput long 750
+menuInput org Custodian 15
+textInput reference adjustment1
+button save
+sleep 2
+button approve
+sleep 2
+find textH1 View Adjustment
+expect pass
+logout
+
+goto AIX
+login C15_BRKR1_user C15_BRKR1_pass
+menu adjustments
+clickby text Pending
+button accept
+sleep 2
+form usrAdjustment
+select2Input account CUST15-1
+button save
+sleep 2
+button ready
+sleep 2
+find textH1 View Adjustment
+expect pass
+logout

@@ -1,0 +1,189 @@
+test Creating CHARITY01 Account 2
+description New Holder Account
+goto Ethex
+login ethex_user1 ethex_pass1
+menu Holders
+search s_part CHARITY01
+search s_stat Active
+sleep 4
+clickby text CHARITY01
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating CHARITY01 Account 3
+description New Holder Account
+goto Ethex
+login ethex_user1 ethex_pass1
+menu Holders
+search s_part CHARITY01
+search s_stat Active
+sleep 4
+clickby text CHARITY01
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating CHARITY02 Account 2
+description New Holder Account
+goto Ethex
+login ethex_user1 ethex_pass1
+menu Holders
+search s_part CHARITY02
+search s_stat Active
+sleep 4
+clickby text CHARITY02
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating CHARITY02 Account 3
+description New Holder Account
+goto Ethex
+login ethex_user1 ethex_pass1
+menu Holders
+search s_part CHARITY02
+search s_stat Active
+sleep 4
+clickby text CHARITY02
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating CHARITY03 Account 2
+description New Holder Account
+goto Ethex
+login ethex_user1 ethex_pass1
+menu Holders
+search s_part CHARITY03
+search s_stat Active
+sleep 4
+clickby text CHARITY03
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating CHARITY03 Account 3
+description New Holder Account
+goto Ethex
+login ethex_user1 ethex_pass1
+menu Holders
+search s_part CHARITY03
+search s_stat Active
+sleep 4
+clickby text CHARITY03
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating CHARITY04 Account 2
+description New Holder Account
+goto Ethex
+login ethex_user1 ethex_pass1
+menu Holders
+search s_part CHARITY04
+search s_stat Active
+sleep 4
+clickby text CHARITY04
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating CHARITY04 Account 3
+description New Holder Account
+goto Ethex
+login ethex_user1 ethex_pass1
+menu Holders
+search s_part CHARITY04
+search s_stat Active
+sleep 4
+clickby text CHARITY04
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating CHARITY05 Account 2
+description New Holder Account
+goto Ethex
+login ethex_user1 ethex_pass1
+menu Holders
+search s_part CHARITY05
+search s_stat Active
+sleep 4
+clickby text CHARITY05
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout
+
+test Creating CHARITY05 Account 3
+description New Holder Account
+goto Ethex
+login ethex_user1 ethex_pass1
+menu Holders
+search s_part CHARITY05
+search s_stat Active
+sleep 4
+clickby text CHARITY05
+sleep 2
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+sleep 2
+button save
+find textH1 View Account
+button approve
+expect pass
+logout

@@ -1,0 +1,307 @@
+test Decline Investor 01 Individual Domestic
+description declining and deleting individual domestic investors
+goto AIX
+login aix_user1 aix_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-ind-dom
+form admOrg
+textInput name Domestic
+textInput last Indiv Decline One
+textInput address1 3 Market Lane
+menuInput country New Zealand
+menuInput idType National ID Card
+textInput idNumber 981221239422
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button decline
+sleep 2
+button delete
+find textH1 Manage Investors
+sleep 2
+expect pass
+logout
+
+test Decline Investor 02 Individual Domestic
+description declining and deleting individual domestic investors
+goto AIX
+login aix_user1 aix_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-ind-dom
+form admOrg
+textInput name Domestic
+textInput last Indiv Decline Two
+textInput address1 2 Market Lane
+menuInput country New Zealand
+menuInput idType National ID Card
+textInput idNumber 981121428535
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button decline
+sleep 2
+button delete
+find textH1 Manage Investors
+sleep 2
+expect pass
+logout
+
+test Decline Investor 03 Individual Foreign
+description declining and deleting individual foreign investors
+goto AIX
+login aix_user1 aix_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-ind-for
+form admOrg
+textInput name Foreign
+textInput last Indiv Decline 03
+textInput address1 1 Market Lane
+menuInput country New Zealand
+menuInput idType National ID Card
+textInput idNumber 0009258372
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+tableClick Investor saveID
+find textH1 View Investor
+button decline
+sleep 2
+button delete
+find textH1 Manage Investors
+sleep 2
+expect pass
+logout
+
+test Decline Investor 04 Individual Foreign
+description declining and deleting individual foregin investors
+goto AIX
+login aix_user1 aix_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-ind-for
+form admOrg
+textInput name Foreign
+textInput last Indiv Decline 04
+textInput address1 4 Market Lane
+menuInput country New Zealand
+menuInput idType National ID Card
+textInput idNumber 0002391823
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+tableClick Investor saveID
+find textH1 View Investor
+button decline
+sleep 2
+button delete
+find textH1 Manage Investors
+sleep 2
+expect pass
+logout
+
+test Decline Investor 05 Company Domestic
+description declining and deleting company domestic investors
+goto AIX
+login aix_user1 aix_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name Domestic Company Decline 1
+textInput address1 5 Market Lane
+menuInput country New Zealand
+textInput idNumber 000342734249
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button decline
+sleep 2
+button delete
+find textH1 Manage Investors
+sleep 2
+expect pass
+logout
+
+test Decline Investor 06 Company Domestic
+description declining and deleting company domestic investors
+goto AIX
+login aix_user1 aix_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-dom
+form admOrg
+textInput name Domestic Company Decline 2
+textInput address1 6 Market Lane
+menuInput country New Zealand
+textInput idNumber 00023198371
+menuInput idCountry Kazakhstan
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button decline
+sleep 2
+button delete
+find textH1 Manage Investors
+sleep 2
+expect pass
+logout
+
+test Decline Investor 07 Company Foreign
+description declining and deleting company domestic investors
+goto AIX
+login aix_user1 aix_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-for
+form admOrg
+textInput name Foreign Company Decline 1
+textInput address1 7 Market Lane
+menuInput country New Zealand
+textInput idNumber 0002389472
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button decline
+sleep 2
+button delete
+find textH1 Manage Investors
+sleep 2
+expect pass
+logout
+
+test Decline Investor 08 Company Foreign
+description declining and deleting company domestic investors
+goto AIX
+login aix_user1 aix_pass1
+menu Investors
+clickby id btn-new
+clickby id lnk-com-for
+form admOrg
+textInput name Foreign Company Decline 2
+textInput address1 8 Market Lane 
+menuInput country New Zealand
+textInput idNumber 00029487342
+button save
+sleep 3
+button ready
+find textH1 View Investor
+sleep 2
+saveID
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu Investors
+search s_part saveID
+search s_stat Ready
+sleep 5
+tableClick Investor saveID
+find textH1 View Investor
+button decline
+sleep 2
+button delete
+find textH1 Manage Investors
+sleep 2
+expect pass
+logout
+
+

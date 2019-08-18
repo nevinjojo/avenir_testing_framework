@@ -1,0 +1,329 @@
+test new participant 01
+description creating a new participant
+goto ARL_NZ
+login nz_user_1 nz_pass_1
+menu participants
+clickby class btn btn-primary
+sleep 3
+form admOrg
+textInput name Participant 01
+textInput short PART01
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant01@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto ARL_NZ
+login nz_user_2 nz_pass_2
+menu participants
+search s_part PART01
+search s_stat Ready
+button search
+tableClick short PART01
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 02
+description creating a new participant
+goto ARL_NZ
+login nz_user_1 nz_pass_1
+menu participants
+clickby class btn btn-primary
+sleep 3
+form admOrg
+textInput name Participant 02
+textInput short PART02
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant02@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto ARL_NZ
+login nz_user_2 nz_pass_2
+menu participants
+search s_part PART02
+search s_stat Ready
+button search
+tableClick short PART02
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 03
+description creating a new participant
+goto ARL_NZ
+login nz_user_1 nz_pass_1
+menu participants
+clickby class btn btn-primary
+sleep 3
+form admOrg
+textInput name Participant 03
+textInput short PART03
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant03@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto ARL_NZ
+login nz_user_2 nz_pass_2
+menu participants
+search s_part PART03
+search s_stat Ready
+button search
+tableClick short PART03
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 04
+description creating a new participant
+goto ARL_NZ
+login nz_user_1 nz_pass_1
+menu participants
+clickby class btn btn-primary
+sleep 3
+form admOrg
+textInput name Participant 04
+textInput short PART04
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant04@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto ARL_NZ
+login nz_user_2 nz_pass_2
+menu participants
+search s_part PART04
+search s_stat Ready
+button search
+tableClick short PART04
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 05
+description creating a new participant
+goto ARL_NZ
+login nz_user_1 nz_pass_1
+menu participants
+clickby class btn btn-primary
+sleep 3
+form admOrg
+textInput name Participant 05
+textInput short PART05
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant05@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto ARL_NZ
+login nz_user_2 nz_pass_2
+menu participants
+search s_part PART05
+search s_stat Ready
+button search
+tableClick short PART05
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 06
+description creating a new participant
+goto ARL_NZ
+login nz_user_1 nz_pass_1
+menu participants
+clickby class btn btn-primary
+sleep 3
+form admOrg
+textInput name Participant 06
+textInput short PART06
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant06@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto ARL_NZ
+login nz_user_2 nz_pass_2
+menu participants
+search s_part PART06
+search s_stat Ready
+button search
+tableClick short PART06
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 07
+description creating a new participant
+goto ARL_NZ
+login nz_user_1 nz_pass_1
+menu participants
+clickby class btn btn-primary
+sleep 3
+form admOrg
+textInput name Participant 07
+textInput short PART07
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant07@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto ARL_NZ
+login nz_user_2 nz_pass_2
+menu participants
+search s_part PART07
+search s_stat Ready
+button search
+tableClick short PART07
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 08
+description creating a new participant
+goto ARL_NZ
+login nz_user_1 nz_pass_1
+menu participants
+clickby class btn btn-primary
+sleep 3
+form admOrg
+textInput name Participant 08
+textInput short PART08
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant08@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto ARL_NZ
+login nz_user_2 nz_pass_2
+menu participants
+search s_part PART08
+search s_stat Ready
+button search
+tableClick short PART08
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 09
+description creating a new participant
+goto ARL_NZ
+login nz_user_1 nz_pass_1
+menu participants
+clickby class btn btn-primary
+sleep 3
+form admOrg
+textInput name Participant 09
+textInput short PART09
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant09@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto ARL_NZ
+login nz_user_2 nz_pass_2
+menu participants
+search s_part PART09
+search s_stat Ready
+button search
+tableClick short PART09
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 10
+description creating a new participant
+goto ARL_NZ
+login nz_user_1 nz_pass_1
+menu participants
+clickby class btn btn-primary
+sleep 3
+form admOrg
+textInput name Participant 10
+textInput short PART10
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant10@test.com
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto ARL_NZ
+login nz_user_2 nz_pass_2
+menu participants
+search s_part PART10
+search s_stat Ready
+button search
+tableClick short PART10
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout

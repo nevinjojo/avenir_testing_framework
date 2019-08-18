@@ -1,0 +1,45 @@
+# Update ID 000004248
+
+test Update ID 000004248
+description updating investor details and applying to all other investors
+goto settle_web
+login settleweb_user2 settleweb_pass2
+clickby class fas fa-id-card fa-2x
+scrollto hldr-link-000004248
+clickby id hldr-link-000004248
+clickby class fas fa-edit fa-lg
+form userHolder
+textInput email srh@avenir-technology.com
+textInput phone +048970800
+textInput mobile +447590196372
+textInput address1 120 THE LANE
+textInput address2 PICCADILLY
+textInput address3 LONDON
+textInput postcode EL8 BC000
+menuInput country New Zealand
+textInput bankaccount_sort_code 022001
+textInput iban DE89 3704004405320134321
+textInput bankaccount_account 803736720
+checkerInput selectedHolders_0
+checkerInput selectedHolders_1
+checkerInput selectedHolders_2
+checkerInput selectedHolders_3
+checkerInput selectedHolders_4
+checkerInput selectedHolders_5
+checkerInput selectedHolders_6
+checkerInput selectedHolders_7
+checkerInput selectedHolders_8
+checkerInput selectedHolders_9
+checkerInput selectedHolders_10
+checkerInput selectedHolders_11
+sleep 3
+button save
+sleep 3
+button confirm
+find textH1 Update Investor Details
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+

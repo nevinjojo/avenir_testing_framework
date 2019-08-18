@@ -1,0 +1,79 @@
+# FAILURES AS EXPECTED
+# before running this test, lock account PART02-1
+test Transaction Test 1.1
+description Transfers to Locked Accounts
+goto AIX
+login aix_user1 aix_pass1
+# create transaction PART01-1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART01-1
+select2Input instrumentStr INST01
+textInput quantity 2500
+textInput toReference transaction test 1.1
+button save
+sleep 2
+find textH1 View Create
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu transactions
+search s_inst INST01
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+# transfer quantity from PART01-1 to PART02-1 (suspended)
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-trans
+form admTrans
+textInput due date
+select2Input frAccountStr PART01-1
+sleep 4
+select2Input toAccountStr PART02-1
+select2Input instrumentStr INST01
+textInput quantity 2500
+textInput frReference transaction test 1.1
+textInput toReference transaction test 1.1
+button save
+find textH1 View Transfer
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+date
+menu transactions
+search s_inst INST01
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Transfer
+sleep 2
+expect pass
+logout
+
+

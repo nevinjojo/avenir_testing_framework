@@ -1,0 +1,65 @@
+test Transactions Remove Negative Test 01
+description using instruments that don't exist
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new remove
+form admTrans
+textInput due date
+select2Input frAccountStr INVST01
+select2Input instrumentStr negativeINST01
+textInput quantity 100
+textInput tag test
+textInput frReference negative transaction remove 01
+button save
+find textH1 View Reserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_time All
+search s_inst negativeINST01
+search s_stat Ready
+button search
+tableClick Code negativeINST01
+button approve
+find textH1 View Reserve
+sleep 2
+expect pass
+
+test Transactions Remove Negative Test 02
+description using random numbers and letters in inputs
+goto testreg
+login testreg_user1 testreg_pass1
+menu transactions
+button new remove
+form admTrans
+textInput due 12wFD
+select2Input frAccountStr Asdfg986
+select2Input instrumentStr 33FSxfe7654
+textInput quantity BCZ32gr
+textInput tag LJg5fj21
+textInput frReference KJ346HGf6ds2
+button save
+find textH1 View Reserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_time All
+search s_inst 33FSxfe7654
+search s_stat Ready
+button search
+tableClick Code 33FSxfe7654
+button approve find textH1 View Reserve
+sleep 2
+expect pass

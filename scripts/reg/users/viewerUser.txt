@@ -1,0 +1,28 @@
+test New User 03
+description New Viewer User 03
+goto testreg
+login testreg_user1 testreg_pass1
+usermenu my organisation
+goto testreg_newuser
+textInput user_username reg3.com
+textInput user_name REG
+textInput user_last Manager
+textInput user_email REG3@reg.com
+textInput user_phone 0000000
+textInput user_mobile 0000000000
+menuInput user_role Viewer
+button save
+find textH1 View User
+sleep 3
+button approve
+sleep 3
+button password
+form admUserPassword
+textInput password_password Password!1
+textInput password_confirm Password!1
+button save
+find textH1 View User
+sleep 3
+expect pass
+logout
+

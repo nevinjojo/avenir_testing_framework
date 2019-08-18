@@ -1,0 +1,8 @@
+# Contact
+
+goto settle_web
+login settleweb_user1 settleweb_pass1
+menu Contact Us
+sleep 10
+find textH1 Contact us
+expect pass

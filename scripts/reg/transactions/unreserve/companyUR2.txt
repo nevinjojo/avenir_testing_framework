@@ -1,0 +1,67 @@
+test Unreserve 02 transaction company
+description Unreserve transaction company
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new unreserve
+form admTrans
+textInput due date
+select2Input toAccountStr INVST02
+select2Input instrumentStr INST02
+textInput quantity 1
+textInput tag test 2
+textInput toReference Reserve02
+button save
+find textH1 View Unreserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST02
+search s_stat Ready
+tableWait
+tableClick Code INST02
+button approve
+find textH1 View Unreserve
+sleep 2
+expect pass
+logout
+
+test Unreserve 02 transaction company
+description Unreserve transaction company
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new unreserve
+form admTrans
+textInput due date
+select2Input toAccountStr INVST02
+select2Input instrumentStr INST02
+textInput quantity 99
+textInput tag test 2
+textInput toReference Reserve02
+button save
+find textH1 View Unreserve
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_inst INST02
+search s_stat Ready
+tableWait
+tableClick Code INST02
+button approve
+find textH1 View Unreserve
+sleep 2
+expect pass
+logout

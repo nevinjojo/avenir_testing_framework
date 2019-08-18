@@ -1,0 +1,103 @@
+test Transactions Lock Negative Test 01
+description using a date that doesn't make sense
+goto testreg
+login testreg_user1 testreg_pass1
+menu transactions
+button new lock
+form admTrans
+textInput due 01/01/1100
+select2Input toAccountStr INVST01
+select2Input instrumentStr INST01
+textInput quantity 100
+textInput tag test 1
+textInput toReference negative transaction lock 01
+button save
+find textH1 View Lock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_time All
+search s_inst INST01
+search s_stat Ready
+button search
+tableClick Code INST01
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test Transactions Lock Negative Test 02
+description using accounts and instruments that don't exist
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr QWERTY90
+select2Input instrumentStr ZXCVBN11
+textInput quantity 100
+textInput tag test 1
+textInput toReference negative transaction lock 02
+button save
+find textH1 View Lock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_time All
+search s_inst LKJHGFD43
+search s_stat Ready
+button search
+tableClick Code AsDfgHj
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test Transactions Lock Negative Test 03
+description using a quantity too high for the account balance
+goto testreg
+login testreg_user1 testreg_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr INVST01
+select2Input instrumentStr INST01
+textInput quantity 999999
+textInput tag test 1
+textInput toReference negative transaction lock 03
+button save
+find textH1 View Lock
+sleep 2
+button ready
+expect pass
+logout
+
+goto testreg
+login testreg_user2 testreg_pass2
+menu transactions
+search s_time All
+search s_inst INST01
+search s_stat Ready
+button search
+tableClick Code INST01
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout

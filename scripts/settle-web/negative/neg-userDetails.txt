@@ -1,0 +1,76 @@
+test Negative Test - Edit User Details 1
+description using symbols in phone / mobile inputs
+goto settle_web
+login settleweb_user2 settleweb_pass2
+menu My Details
+clickby class edit-detail
+form userUser
+textInput phone !@#$%^&*(
+textInput mobile (*&^%$#@!~
+textInput email srt@avenir-technology.com
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Negative Test - Edit User Details 2
+description using symbols in email input
+goto settle_web
+login settleweb_user2 settleweb_pass2
+menu My Details
+clickby class edit-detail
+form userUser
+textInput phone +64472222002
+textInput mobile +441830531802
+textInput email !#@%&*(%@#$.
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Negative Test - Edit User Details 3
+description leaving all inputs blank
+goto settle_web
+login settleweb_user2 settleweb_pass2
+menu My Details
+clickby class edit-detail
+form userUser
+textInput phone
+textInput mobile
+textInput email
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
+test Negative Test - Edit User Details 4
+description using letters in phone / mobile inputs
+goto settle_web
+login settleweb_user2 settleweb_pass2
+menu My Details
+clickby class edit-detail
+form userUser
+textInput phone aSDFfghJkl
+textInput mobile QweERTyUio
+textInput email srt@avenir-technology.com
+button save
+sleep 3
+button confirm
+find textH1 Hello,
+expect pass
+clickby class hidden-xs
+sleep 3
+clickby text Sign out
+
