@@ -149,7 +149,7 @@ class Page
     end
   end
 
-  #Finds the id displayed for a particular object created in the system and saving the id to `temp_id` variable.
+  # Finds the id displayed for a particular object created in the system and saving the id to `temp_id` variable.
   def save_id(action)
     begin
       $results.log_action(action)
