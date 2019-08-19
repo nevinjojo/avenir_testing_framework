@@ -142,3 +142,19 @@ $ ./run -p scripts/testFile.txt
     - Select2 Text Fields
     - Login Button - Commodity
 
+### Troubleshooting
+
+If the test scripts created did not run properly, it could be because of the following reasons:
+
+- **Test scripts are old and had been run before:** some of the test scripts might had been run before and so the database might already have the same inputs saved (i.e. system not allowing duplicate inputs).
+    - **Solution:** update the test script with new values.
+- **The test script might contain unknown commands/ input types (or typos):** The framework ignores commands does not match the known commands. This might affect the commands that follows the typo command.
+    - **Solution:** Check for typos in the command
+    - Make sure that the commands such as `date + 2` have spaces between each parameter.
+    - Ensure that the command is entered in the order the table above specifies.
+- **The commands in main.rb might be using xpath instead of IDs:** This is because those elements does not have any IDs - can be fixed by adding IDs to those elements and changing the script command to look for IDs (more reliable)
+- **Server is taking too much time to load:** The only solution to this problem is to add explicit wait times to the commands in main.rb file. The framework already implements explicit wait times at places where it is necessary (**N.B.** don’t use sleep/ explicit waits unless required, or it will slow down the tests).
+
+For any other issues with the framework or suggestions on improving the framework, mention the current maintainer or create an issue.
+
+Happy Testing! 😎
