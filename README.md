@@ -157,4 +157,4 @@ If the test scripts created did not run properly, it could be because of the fol
 
 For any other issues with the framework or suggestions on improving the framework, mention the current maintainer or create an issue.
 
-Happy Testing! 😎
+**Happy Testing!** 😎

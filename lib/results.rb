@@ -115,10 +115,10 @@ class Results
 
   # Same as log method, but doesn't have a \n at the front.
   def info(message)
-    @logger.formatter = proc do |severity, datetime, _progname, msg|
+    @logger.formatter = proc do |_severity, _datetime, _progname, msg|
       "#{msg}"
     end
-    @writer.formatter = proc do |severity, datetime, _progname, msg|
+    @writer.formatter = proc do |_severity, _datetime, _progname, msg|
       "#{msg}"
     end
     @logger.info message
@@ -166,7 +166,7 @@ class Results
       (0..links.length - 1).each do |i|
         # Navigate to the Kaihu url and fetch the h4 string in the page.
         @driver.navigate.to($config['kaihu'])
-        h4 = @driver.find_element(:xpath, "//*[@id='heading#{i.to_s}']/h4/a").text
+        h4 = @driver.find_element(:xpath, "//*[@id='heading#{i}']/h4/a").text
         h4 = h4.split
         h4 = h4[0]
 
@@ -188,7 +188,7 @@ class Results
 
   # Adds an \end tag to the \end of the file
   def end_test
-    $results.log("Test Analysis: #{$session.failure_count.to_s}/#{$session.action_count.to_s} test actions failed.")
+    $results.log("Test Analysis: #{$session.failure_count}/#{$session.action_count} test actions failed.")
     $results.log("#### End of Test '#{$session.name}' ####\n")
   end
 end

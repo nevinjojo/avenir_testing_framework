@@ -72,7 +72,7 @@ class Table
           end
         }
          # If item is still nil, then it doesn't exist or could not be found
-         if item == nil
+         if item.nil?
            $results.append("Could Not Find '#{@params[1]}'")
          end
       end

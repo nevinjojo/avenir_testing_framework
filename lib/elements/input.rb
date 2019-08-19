@@ -42,7 +42,7 @@ class Input
 
       # If the parameter has time as a factor, then set the time
       if @params.include? 'time'
-        if @params[@params.index('time') + 1] != nil
+        if !@params[@params.index('time') + 1].nil?
           $session.set_time(@params[@params.index('time') + 1])
         else
           $session.set_time
