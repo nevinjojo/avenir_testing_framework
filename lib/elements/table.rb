@@ -51,8 +51,8 @@ class Table
       $session.wait_until(@driver.find_element(:xpath, '//*[@id="data"]/tbody/tr[1]').displayed?)
 
       col_num = head.index(@params[0]) # column number where element type is present
-      if col_num != nil
-        body = @driver.find_elements(:xpath, "//*[@id='data']/tbody/tr")  # child row values
+      unless col_num.nil?
+        body = @driver.find_elements(:xpath, "//*[@id='data']/tbody/tr") # child row values
         if body.length == 0
           puts "Table body is empty"
           $results.failure('tableClick')
@@ -71,10 +71,10 @@ class Table
             # Do nothing
           end
         }
-         # If item is still nil, then it doesn't exist or could not be found
-         if item.nil?
-           $results.append("Could Not Find '#{@params[1]}'")
-         end
+        # If item is still nil, then it doesn't exist or could not be found
+        if item.nil?
+          $results.append("Could Not Find '#{@params[1]}'")
+        end
       end
     rescue => ex
       $results.fail('tableClick', ex)

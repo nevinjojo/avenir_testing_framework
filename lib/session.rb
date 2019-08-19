@@ -129,7 +129,7 @@ class Session
   # Subtracts a specific number of days to a date (ignoring weekends) and returns it
   def subtract_business_days(date, num)
     d = date
-    num.times do |i|
+    num.times do |_i|
       if d.monday?
         d -= 3
       elsif d.sunday?
