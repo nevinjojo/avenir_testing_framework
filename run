@@ -5,7 +5,8 @@
 SCRIPT=${@: -1}
 BROWSER=''
 DIRECTORY=''
-while getopts "b:s:d:p" opt; do
+STATS_DIR=''
+while getopts "b:s:d:g:p" opt; do
   case $opt in
     b)
       BROWSER="$OPTARG"
@@ -19,6 +20,10 @@ while getopts "b:s:d:p" opt; do
       DIRECTORY="$OPTARG"
       # echo "-d $DIRECTORY was triggered!" >&2
       ;;
+    g)
+      STATS_DIR="$OPTARG"
+      # echo "-g $DIRECTORY was triggered!" >&2
+      ;;
     p)
       DIRECTORY="/Users/siennahendrikx/Dropbox\ \(Personal\)/test\ results/"
       # echo "-p $DIRECTORY was triggered!" >&2
@@ -28,6 +33,7 @@ while getopts "b:s:d:p" opt; do
       echo "-d path/to/results/directory"
       echo "-b chrome"
       echo "-s scripts/test.txt"
+      echo "-g path/to/results/directory   or -g current <-- (current/results/directory)"
       echo "-p <-- (sets directory to Dropbox)"
       exit 1;
       ;;
@@ -36,7 +42,13 @@ done
 if [ -z "$BROWSER" ]; then
     BROWSER="chrome"
 fi
+
 if [ -z "$DIRECTORY" ]; then
     DIRECTORY="results/"
 fi
-ruby main.rb $BROWSER $SCRIPT $DIRECTORY
+
+if [ -z "$STATS_DIR" ]; then
+    STATS_DIR="no_stats"
+fi
+
+ruby main.rb $BROWSER $SCRIPT $DIRECTORY $STATS_DIR

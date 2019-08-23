@@ -1,6 +1,8 @@
 results
 .DS_STORE
 screenshots
+stats.csv
 *.swp
 *.swo
 .idea
+coverage

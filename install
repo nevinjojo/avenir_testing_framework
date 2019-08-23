@@ -60,14 +60,16 @@ if [ ! -f "/usr/local/bin/chromedriver" ]; then
 fi
 
 # install selenium
+echo "Installing selenium webdriver gem"
+echo
+    sudo gem install selenium-webdriver -v 2.53.4
 
-COUNT=`/usr/local/bin/gem list | grep selenium | wc -l`
-if [ "${COUNT}" == 0 ]; then
-    echo "Installing selenium webdriver gem"
-    echo
-
-    /usr/local/bin/gem install selenium-webdriver -v 2.53.4
-fi
+# install Codacy Coverage and allow locally executed framework tests to be recorded in Codacy
+echo "Installing selenium webdriver gem"
+echo
+    sudo gem install codacy-coverage
+    export CODACY_PROJECT_TOKEN=7e4dfd7f11e5449096984c9ea67fe5dc
+    export CODACY_RUN_LOCAL=true
 
 echo "######################################################################"
 echo "Installation completed"

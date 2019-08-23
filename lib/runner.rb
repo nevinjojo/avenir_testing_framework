@@ -18,12 +18,13 @@ require_relative 'stats'
 
 class Runner
 
-  def initialize(driver, args, time, files, results_dir, login, session, config)
+  def initialize(driver, args, time, files, results_dir, stats_dir, login, session, config)
     @driver = driver
     @args = args
     @time = time
     @files = files
     @results_dir = results_dir
+    @stats_dir = stats_dir
     @login = login
     @session = session
     @config = config
@@ -31,10 +32,13 @@ class Runner
 
   # Main method that triggers the framework to run every script specified by the user.
   # Once the runner completes its functions, it will also terminate the WebDriver.
+  # If the user requested for stats from the
   def execute
     execute_files
     $session.terminate
-    get_test_stats
+    if @stats_dir != "no_stats"
+      get_test_stats(@stats_dir)
+    end
   end
 
   # Execute test script file(s) in the files array.
@@ -91,8 +95,12 @@ class Runner
   end
 
   # Generate stats from the Results file that is created by the framework.
-  def get_test_stats
-    stats = Stats.new(@results_dir).get_failure_rate
-    #   TODO get stats from each results file
+  def get_test_stats(stats_dir)
+    if stats_dir == "current"
+      # TODO: change current directory to new directory that is created during the session.
+      stats = Stats.new(@results_dir).get_failure_rate
+    else
+      stats = Stats.new(stats_dir).get_failure_rate
+    end
   end
 end

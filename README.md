@@ -16,6 +16,7 @@ $ ./install
 - Install Ruby
 - Install Chromedriver
 - Install Selenium WebDriver Ruby Gem (if not already installed)
+- Install Codacy Coverage to test framework coverage (You might need to sudo privilege for this)
 
 **Note:** If one of the installation filed, try manually installing them. Make sure that the version of the installation matches the version specified in `install` file.
 
