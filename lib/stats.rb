@@ -25,8 +25,8 @@ class Stats
         name, failure_count, total_actions = find_failure_rate(filename)
         if !name.nil? and !failure_count.nil? and !total_actions.nil?
           names.push(name)
-          failure_counts.push(failure_count)
-          total_actions_counts.push(total_actions)
+          failure_counts.push(failure_count.to_i)
+          total_actions_counts.push(total_actions.to_i)
         end
       end
     }
@@ -50,10 +50,17 @@ class Stats
 
   # Records the list of failure rates for each test result files in a csv file
   def record_failure_rates(names, failure_counts, total_actions_counts)
+    sum_failures = 0
+    sum_actions = 0
+    failure_counts.each { |f| sum_failures+=f}
+    total_actions_counts.each { |a| sum_actions+=a}
+    failure_rate = (sum_failures.to_f/sum_actions)*100
     CSV.open("stats.csv", "wb") do |csv|
       (0..names.length).each { |i|
         csv << [names[i], failure_counts[i], total_actions_counts[i]]
       }
+      csv << ['Total', sum_failures, sum_actions]
+      csv << ['Failure Rate', "#{failure_rate.round(2)}%"]
     end
   end
 end
