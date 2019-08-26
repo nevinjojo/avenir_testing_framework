@@ -89,7 +89,7 @@ class Runner
       str.shift(1)
       str.shift(1)
     else
-      str = line.split(' ')[1..-1]
+      str = line.split(/\s/)[1..-1]
     end
     str
   end
