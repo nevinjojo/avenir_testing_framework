@@ -37,6 +37,10 @@ class Runner
     execute_files
     $session.terminate
     if @stats_dir != "no_stats"
+      if @stats_dir == "current"
+        @stats_dir = $results.get_current_results_dir
+        puts "stats = #{@stats_dir}"
+      end
       get_test_stats(@stats_dir)
     end
   end

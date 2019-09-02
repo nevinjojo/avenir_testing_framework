@@ -43,6 +43,8 @@ class Args
   def get_stats_directory
     if ARGV[3].include? ".txt"
       files = [] << ARGV[3]
+    elsif ARGV[3].include? "current"
+      files = "current"
     else
       files = Dir.glob(ARGV[3] + "/**/*.txt")
     end

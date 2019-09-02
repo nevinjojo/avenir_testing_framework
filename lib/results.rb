@@ -7,6 +7,7 @@ require 'logger'
 
 # Handles the test script result reporting feature of the framework.
 class Results
+  attr_accessor :results_dir, :results_sub_dir
 
   # @param [WebDriver] driver - The driver that will be used during the process.
   # @param [File] file_name - Creates a file with the same name as the script.
@@ -190,5 +191,10 @@ class Results
   def end_test
     $results.log("Test Analysis: #{$session.failure_count}/#{$session.action_count} test actions failed.")
     $results.log("#### End of Test '#{$session.name}' ####\n")
+  end
+
+  # Returns the subdirectory where the results will be stored.
+  def get_current_results_dir
+    Dir.glob("#{$results.results_dir}#{$results.results_sub_dir}/**/*.txt")
   end
 end
