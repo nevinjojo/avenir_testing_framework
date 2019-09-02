@@ -86,6 +86,11 @@ $ ./run -g results/path/to/test/results/dir/ scripts/testFile.txt
 ```
 This will parse through a specific result file or a set of files in the given directory to find the name, failure count and action count in each file and record them in the `stats.csv` file for reporting.
 
+You can also get stats for the test that you are about to run by specifying `current` as the `-g` flag:
+ ```
+ $ ./run -g current scripts/testFile.txt
+ ```
+
 **Set results directory to Dropbox**
 This is so that the results can be accessed from multiple devices. You will need to check/change the path/to/dropbox in run file underneath -p option. 
 ```
