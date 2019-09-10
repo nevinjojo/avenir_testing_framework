@@ -96,7 +96,7 @@ class Command
         Table.new(@driver, @params).click_item
       else
         # Unknown commands are reported.
-        $results.log("Error: Unable to find action '#{action}' (check for any typos in the command :)")
+        $results.log("Error: Unable to find action '#{@action}' (check for any typos in the command :)")
       end
     rescue => ex
       $results.failure(ex)
