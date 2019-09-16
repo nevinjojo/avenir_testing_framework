@@ -1,0 +1,469 @@
+test Takeover Test 1
+description creating a new CA - Takeover 1, EA
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Takeover
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput record 15/09/2019
+textInput firstClose 15/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+textInput offeror test test test
+checkerInput electionApproval
+button save
+find textH1 View Takeover
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Takeover
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Takeover
+expect pass
+logout
+
+test Takeover Test 2
+description creating a new CA - Takeover 2, crest enabled, EA
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Takeover
+form admCA
+select2Input instrumentStr INST02
+textInput announcement date
+textInput record 15/09/2019
+textInput firstClose 15/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+textInput offeror test test test
+checkerInput electionApproval
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction AESN (ESA)
+button save
+find textH1 View Takeover
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST02
+search s_cacat Takeover
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST02
+button approve
+find textH1 View Takeover
+expect pass
+logout
+
+test Takeover Test 3
+description creating a new CA - Takeover 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Takeover
+form admCA
+select2Input instrumentStr INST03
+textInput announcement date
+textInput record 15/09/2019
+textInput firstClose 15/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+textInput offeror test test test
+button save
+find textH1 View Takeover
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST03
+search s_cacat Takeover
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST03
+button approve
+find textH1 View Takeover
+expect pass
+logout
+
+test Takeover Test 4
+description creating a new CA - Takeover 4, crest enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Takeover
+form admCA
+select2Input instrumentStr INST04
+textInput announcement date
+textInput record 15/09/2019
+textInput firstClose 15/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+textInput offeror test test test
+checkerInput srcType 
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction ACDN (MTM)
+button save
+find textH1 View Takeover
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST04
+search s_cacat Takeover
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST04
+button approve
+find textH1 View Takeover
+expect pass
+logout
+
+test Takeover Test 5
+description creating a new CA - Takeover 5, EA
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Takeover
+form admCA
+select2Input instrumentStr INST05
+textInput announcement date
+textInput record 15/09/2019
+textInput firstClose 15/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+textInput offeror test test test
+checkerInput electionApproval
+button save
+find textH1 View Takeover
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST05
+search s_cacat Takeover
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST05
+button approve
+find textH1 View Takeover
+expect pass
+logout
+
+test Takeover Test 6
+description creating a new CA - Takeover 6, crest enabled, EA
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Takeover
+form admCA
+select2Input instrumentStr INST06
+textInput announcement date
+textInput record 15/09/2019
+textInput firstClose 15/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+textInput offeror test test test
+checkerInput electionApproval
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction AFEN (TTE)
+button save
+find textH1 View Takeover
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST06
+search s_cacat Takeover
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST06
+button approve
+find textH1 View Takeover
+expect pass
+logout
+
+test Takeover Test 7
+description creating a new CA - Takeover 7
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Takeover
+form admCA
+select2Input instrumentStr INST07
+textInput announcement date
+textInput record 15/09/2019
+textInput firstClose 15/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+textInput offeror test test test
+button save
+find textH1 View Takeover
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST07
+search s_cacat Takeover
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST07
+button approve
+find textH1 View Takeover
+expect pass
+logout
+
+test Takeover Test 8
+description creating a new CA - Takeover 8, crest enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Takeover
+form admCA
+select2Input instrumentStr INST08
+textInput announcement date
+textInput record 15/09/2019
+textInput firstClose 15/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+textInput offeror test test test
+checkerInput srcType 
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction AUSN (USE)
+button save
+find textH1 View Takeover
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST08
+search s_cacat Takeover
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST08
+button approve
+find textH1 View Takeover
+expect pass
+logout
+
+test Takeover Test 9
+description creating a new CA - Takeover 9, EA
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Takeover
+form admCA
+select2Input instrumentStr INST09
+textInput announcement date
+textInput record 15/09/2019
+textInput firstClose 15/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+textInput offeror test test test
+checkerInput electionApproval
+button save
+find textH1 View Takeover
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST09
+search s_cacat Takeover
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST09
+button approve
+find textH1 View Takeover
+expect pass
+logout
+
+test Takeover Test 10
+description creating a new CA - Takeover 10, crest enabled, EA
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Takeover
+form admCA
+select2Input instrumentStr INST10
+textInput announcement date
+textInput record 15/09/2019
+textInput firstClose 15/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+textInput offeror test test test
+checkerInput electionApproval
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction AUSN (USE)
+button save
+find textH1 View Takeover
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST10
+search s_cacat Takeover
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST10
+button approve
+find textH1 View Takeover
+expect pass
+logout
+
+test Takeover Test 11
+description creating a new CA - Takeover 11
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Takeover
+form admCA
+select2Input instrumentStr INST11
+textInput announcement date
+textInput record 15/09/2019
+textInput firstClose 15/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+textInput offeror test test test
+button save
+find textH1 View Takeover
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST11
+search s_cacat Takeover
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST11
+button approve
+find textH1 View Takeover
+expect pass
+logout
+
+test Takeover Test 12
+description creating a new CA - Takeover 12, crest enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Takeover
+form admCA
+select2Input instrumentStr INST12
+textInput announcement date
+textInput record 15/09/2019
+textInput firstClose 15/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+textInput offeror test test test
+checkerInput srcType 
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction AUSN (USE)
+button save
+find textH1 View Takeover
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST12
+search s_cacat Takeover
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST12
+sleep 2
+button approve
+find textH1 View Takeover
+expect pass
+logout
+

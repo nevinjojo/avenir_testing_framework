@@ -23,11 +23,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST11
-menuInput state Draft
-button search
-sleep 5
+search s_part INST11
+search s_state Any
+sleep 2
 tableClick short INST11
 find textH1 View Equity
 button approve
@@ -60,11 +58,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST12
-menuInput state Draft
-button search
-sleep 5
+search s_part INST12
+search s_state Any
+sleep 2
 tableClick short INST12
 find textH1 View Equity
 button approve
@@ -97,11 +93,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST13
-menuInput state Draft
-button search
-sleep 5
+search s_part INST13
+search s_state Any
+sleep 2
 tableClick short INST13
 find textH1 View Equity
 button approve
@@ -134,11 +128,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST14
-menuInput state Draft
-button search
-sleep 5
+search s_part INST14
+search s_state Any
+sleep 2
 tableClick short INST14
 find textH1 View Equity
 button approve
@@ -171,11 +163,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST15
-menuInput state Draft
-button search
-sleep 5
+search s_part INST15
+search s_state Any
+sleep 2
 tableClick short INST15
 find textH1 View Equity
 button approve
@@ -208,11 +198,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST16
-menuInput state Draft
-button search
-sleep 5
+search s_part INST16
+search s_state Any
+sleep 2
 tableClick short INST16
 find textH1 View Equity
 button approve
@@ -245,11 +233,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST17
-menuInput state Draft
-button search
-sleep 5
+search s_part INST17
+search s_state Any
+sleep 2
 tableClick short INST17
 find textH1 View Equity
 button approve
@@ -282,11 +268,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST18
-menuInput state Draft
-button search
-sleep 5
+search s_part INST18
+search s_state Any
+sleep 2
 tableClick short INST18
 find textH1 View Equity
 button approve
@@ -319,11 +303,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST19
-menuInput state Draft
-button search
-sleep 5
+search s_part INST19
+search s_state Any
+sleep 2
 tableClick short INST19
 find textH1 View Equity
 button approve
@@ -356,11 +338,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST20
-menuInput state Draft
-button search
-sleep 5
+search s_part INST20
+search s_state Any
+sleep 2
 tableClick short INST20
 find textH1 View Equity
 button approve

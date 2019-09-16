@@ -1,0 +1,255 @@
+test New Bonus Test - Leaving Inputs Blank 1
+description creating a new CA - leaving instrument input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr 
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 25/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test - Leaving Inputs Blank 2
+description creating a new CA - leaving instrument input blank - Crest Enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus 
+form admCA
+select2Input instrumentStr
+textInput announcement
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 25/09/2019
+textInput description new bonus test
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test - Leaving Inputs Blank 3
+description creating a new CA - leaving announcement date blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 25/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test - Leaving Inputs Blank 4
+description creating a new CA - leaving announcement date blank - Crest Enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 25/09/2019
+textInput description new bonus test
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test - Leaving Inputs Blank 5
+description creating a new CA - leaving record date blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record
+textInput payment 25/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test - Leaving Inputs Blank 6
+description creating a new CA - leaving record date blank - Crest Enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record
+textInput payment 25/09/2019
+textInput description new bonus test
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test - Leaving Inputs Blank 7
+description creating a new CA - leaving payment date blank
+goto ARLUK_testing 
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment
+textInput description new bonus test
+button save
+find textH1 View Bonus 
+button ready 
+expect pass
+logout
+
+test New Bonus Test - Leaving Inputs Blank 8
+description creating a new CA - leaving payment date blank - Crest Enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment
+textInput description new bonus test
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test - Leaving Inputs Blank 9
+description creating a new CA - leaving description input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 25/09/2019
+textInput description
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test - Leaving Inputs Blank 10
+description creating a new CA - leaving description input blank - Crest Enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus 
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 25/09/2019
+textInput description
+checkerInput srcType
+menuInput srsChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test - Leaving Inputs Blank 11
+description creating a new CA - leaving receiving agent blank - Crest Enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 25/09/2019
+textInput description new bonus test
+checkerInput srcType
+menuInput srsChannel
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test - Leaving Inputs Blank 12
+description creating a new CA - leaving all inputs blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr
+textInput announcement
+textInput exDividend
+textInput record
+textInput payment
+textInput description
+checkerInput srcType
+menuInput srsChannel
+button save
+find textH1 View Bonus 
+button ready
+expect pass
+logout

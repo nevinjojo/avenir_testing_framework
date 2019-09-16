@@ -1,0 +1,203 @@
+test Transaction Tag Test - Create 01
+description create transaction to PART10-2 for tag test
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART10-2
+select2Input instrumentStr INST01
+textInput quantity 50
+textInput toReference transaction create 1
+button save
+find textH1 View Create
+saveID
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu transactions
+search s_inst INST01
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test Transaction Tag Test - Lock 01
+description lock transaction with (2) spaces in tag input
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr PART10-2
+select2Input instrumentStr INST01
+textInput quantity 50
+textInput tag space    x2
+textInput toReference transaction lock test 1
+button save
+find textH1 View Lock
+saveID
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu transactions
+search s_inst INST01
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test Transaction Tag Test - Unlock 01
+description unlock transaction with (1) space in tag input
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+button new unlock
+form admTrans
+textInput due date
+select2Input toAccountStr PART10-2
+select2Input instrumentStr INST01
+textInput quantity 50
+textInput tag space x2
+textInput toReference transaction unlock test 1
+button save
+find textH1 View Unlock
+saveID
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu transactions
+search s_inst INST01
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Unlock
+sleep 2
+expect pass
+logout
+
+test Transaction Tag Test - Create 02
+description create transaction to PART10-3 for tag test
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART10-3
+select2Input instrumentStr INST01
+textInput quantity 100
+textInput toReference transaction create 2
+button save
+find textH1 View Create
+saveID
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu transactions
+search s_inst INST01
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test Transaction Tag Test - Lock 02
+description lock transaction with (1) space in tag input
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+button new lock
+form admTrans
+textInput due date
+select2Input toAccountStr PART10-3
+select2Input instrumentStr INST01
+textInput quantity 100
+textInput tag space x3
+textInput toReference transaction create 2
+button save
+find textH1 View Lock
+saveID
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu transactions
+search s_inst INST01
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Lock
+sleep 2
+expect pass
+logout
+
+test Transaction Tag Test - Unlock 02
+description unlock transaction with (3) spaces in tag input
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+button new unlock
+form admTrans
+textInput due date
+select2Input toAccountStr PART10-3
+select2Input instrumentStr INST01
+textInput quantity 50
+textInput tag space   x3
+textInput toReference transaction unlock test 2
+button save
+find textH1 View Unlock
+saveID
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu transactions
+search s_inst INST01
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Unlock
+sleep 2
+expect pass
+logout

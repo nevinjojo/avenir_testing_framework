@@ -1,0 +1,375 @@
+test New Bonus Test 1 - using html code in inputs
+description creating a new CA bonus - using code in instrument input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 2 - using html code in inputs
+description creating a new CA bonus - using code in instrument input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 3 - using html code in inputs
+description creating a new CA bonus - using code in instrument input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr P<body onload=“alert(‘Hello’);“/>
+textInput announcement date 
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 4 - using html code in inputs
+description creating a new CA bonus - using code in announcement date input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 5 - using html code in inputs
+description creating a new CA bonus - using code in announcement date input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement <img src=“https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png(3 kB)
+https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+” width=“120" border=“0” onload=“window.lol&&lol()” data-atf=“3”>
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 6 - using html code in inputs
+description creating a new CA bonus - using code in announcement date input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1 
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement P<body onload=“alert(‘Hello’);“/>
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 7 - using html code in inputs
+description creating a new CA bonus - using code in record date 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus 
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput payment 26/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 8 - using hmtl code in inputs
+description creating a new CA bonus - using code in record date 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date <img src=“https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png(3 kB)
+https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+” width=“120" border=“0” onload=“window.lol&&lol()” data-atf=“3”>
+textInput payment 26/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 9 - using html code in inputs
+description creating a new CA bonus - using code in record date 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1 
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date  P<body onload=“alert(‘Hello’);“/>
+textInput payment 26/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 10 - using html code in inputs
+description creating a new CA bonus - using code in payment input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 11 - using html code in inputs
+description creating a new CA bonus - using code in payment input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1 
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment <img src=“https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png(3 kB)
+https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+” width=“120" border=“0” onload=“window.lol&&lol()” data-atf=“3”>
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 12 - using html code in inputs
+description creating a new CA bonus - using code in payment input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment P<body onload=“alert(‘Hello’);“/>
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 13 - using html code in inputs
+description creating a new CA bonus - using code in description input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 14 - using html code in inputs
+description creating a new CA bonus - using code in description input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description <img src=“https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png(3 kB)
+https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+” width=“120" border=“0” onload=“window.lol&&lol()” data-atf=“3”>
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 15 - using html code in inputs
+description creating a new CA bonus - using code in description input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description P<body onload=“alert(‘Hello’);“/>
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 16 - using html code in inputs
+description creating a new CA bonus - using code in receiving agent input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1 
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description new bonus test
+checkerInput srcType
+menuInput srcChannel <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script> 
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 17 - using html code in inputs
+description creating a new CA bonus - using code in receiving agent input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description new bonus test
+checkerInput srcType
+menuInput srcChannel <img src=“https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png(3 kB)
+https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+” width=“120" border=“0” onload=“window.lol&&lol()” data-atf=“3”>
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 18 - using html code in inputs
+description creating a new CA bonus - using code in receiving agent input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description new bonus test
+checkerInput srcType
+menuInput srcChannel P<body onload=“alert(‘Hello’);“/>
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout

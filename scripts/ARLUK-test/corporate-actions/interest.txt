@@ -1,0 +1,76 @@
+test Interest Test 1
+description creating a new CA - Interest 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Interest
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Interest
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Interest
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Interest
+expect pass
+logout
+
+test Interest Test 2
+description creating a new CA - Interest 2, crest enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Interest
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput srcType 
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Interest
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Interest
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Interest
+expect pass
+logout
+

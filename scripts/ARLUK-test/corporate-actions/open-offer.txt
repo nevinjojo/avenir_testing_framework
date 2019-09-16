@@ -1,0 +1,236 @@
+test Open Offer Test 1
+description creating a new CA - Open Offer 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Open Offer
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Open Offer
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Open Offer
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Open Offer
+expect pass
+logout
+
+test Open Offer Test 2
+description creating a new CA - Open Offer 2 EA
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Open Offer
+form admCA
+select2Input instrumentStr INST02
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput electionApproval
+button save
+find textH1 View Open Offer
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST02
+search s_cacat Open Offer
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST02
+button approve
+find textH1 View Open Offer
+expect pass
+logout
+
+test Open Offer Test 3
+description creating a new CA - Open Offer 3, crest enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Open Offer
+form admCA
+select2Input instrumentStr INST03
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput srcType 
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction AESN (ESA)
+button save
+find textH1 View Open Offer
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST03
+search s_cacat Open Offer
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST03
+button approve
+find textH1 View Open Offer
+expect pass
+logout
+
+test Open Offer Test 4
+description creating a new CA - Open Offer 4, crest enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Open Offer
+form admCA
+select2Input instrumentStr INST04
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput srcType 
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction ACDN (MTM)
+button save
+find textH1 View Open Offer
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST04
+search s_cacat Open Offer
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST04
+button approve
+find textH1 View Open Offer
+expect pass
+logout
+
+test Open Offer Test 5
+description creating a new CA - Open Offer 5, crest enabled, EA
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Open Offer
+form admCA
+select2Input instrumentStr INST05
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput electionApproval
+checkerInput srcType 
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction AFEN (TTE)
+button save
+find textH1 View Open Offer
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST05
+search s_cacat Open Offer
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST05
+button approve
+find textH1 View Open Offer
+expect pass
+logout
+
+test Open Offer Test 6
+description creating a new CA - Open Offer 6, crest enabled, EA
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Open Offer
+form admCA
+select2Input instrumentStr INST06
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput electionApproval
+checkerInput srcType 
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction AUSN (USE)
+button save
+find textH1 View Open Offer
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST06
+search s_cacat Open Offer
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST06
+button approve
+find textH1 View Open Offer
+expect pass
+logout

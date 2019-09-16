@@ -24,10 +24,11 @@ login aix_user2 aix_pass2
 menu participants
 search s_part BRKRD1
 search s_stat Ready
+button search
 sleep 4
 tableClick short BRKRD1
 button decline
-clickby id lnk-delete
+clickby id btn-delete
 find textH1 Manage Participants
 sleep 2
 expect pass
@@ -59,10 +60,11 @@ login aix_user2 aix_pass2
 menu participants
 search s_part BRKRD2
 search s_stat Ready
+button search
 sleep 4
 tableClick short BRKRD2
 button decline
-clickby id lnk-delete
+clickby id btn-delete
 find textH1 Manage Participants
 sleep 2
 expect pass
@@ -94,10 +96,11 @@ login aix_user2 aix_pass2
 menu participants
 search s_part BRKRD3
 search s_stat Ready
+button search
 sleep 4
 tableClick short BRKRD3
 button decline
-clickby id lnk-delete
+clickby id btn-delete
 find textH1 Manage Participants
 sleep 2
 expect pass
@@ -129,10 +132,11 @@ login aix_user2 aix_pass2
 menu participants
 saerch s_part BRKRD4
 search s_stat Ready
+button search
 sleep 4
 tableClick short BRKRD4
 button decline
-clickby id lnk-delete
+clickby id btn-delete
 find textH1 Manage Participants
 sleep 2
 expect pass
@@ -164,10 +168,11 @@ login aix_user2 aix_pass2
 menu participants
 search s_part BRKRD5
 search s_stat Ready
+button search
 sleep 4
 tableClick short BRKRD5
 button decline
-clickby id lnk-delete
+clickby id btn-delete
 find textH1 Manage Participants
 sleep 2
 expect pass

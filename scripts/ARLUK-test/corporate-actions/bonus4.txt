@@ -1,0 +1,123 @@
+test New Bonus Test 1 - symbols in inputs
+description creating a new CA bonus - symbols in announcement date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement !@#$^&*
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 25/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 2 - symbols in inputs
+description creating a new CA bonus - symbols in record date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record @*&^%$^#@!
+textInput payment 26/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 3 - symbols in inputs
+description creating a new CA bonus - symbols in payment date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment @$%*@(#%*
+textInput description new bonus test
+button save
+find textH1 View Bonus 
+button ready
+expect pass
+logout
+
+test New Bonus Test 4 - symbols in inputs
+description creating a new CA bonus - symbols in description input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1 
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description $@(!*#!(#!)~#%
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 5 - symbols in inputs
+description creating a new CA bonus - symbols in receiving agent input 
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description new bonus test
+checkerInput srcType
+menuInput srcChannel !%$@#$@#&@
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 6 - symbols in inputs
+description creating a new CA bonus - symbols in all inputs
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr !#$%^&^%$#@
+textInput announcement !@#$%^
+textInput exDividend !@#$%^
+textInput record (*&^%$#@!
+textInput payment !#^#@&%#@
+textInput description !$)(!@$)$*#)$%^$#%&
+checkerInput srcType
+menuInput srcChannel !)(!@)#(!$@
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout

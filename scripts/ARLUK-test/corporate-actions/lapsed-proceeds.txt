@@ -1,0 +1,74 @@
+test Lapsed Proceeds Test 1
+description creating a new CA - Lapsed Proceeds 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Lapsed Proceeds
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+button save
+sleep 11
+find textH1 View Lapsed Proceeds
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Lapsed Proceeds
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Lapsed Proceeds
+expect pass
+logout
+
+test Lapsed Proceeds Test 2
+description creating a new CA - Lapsed Proceeds 2, crest enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Lapsed Proceeds
+form admCA
+select2Input instrumentStr INST02
+textInput announcement date
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+checkerInput srcType 
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Lapsed Proceeds
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST02
+search s_cacat Lapsed Proceeds
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST02
+button approve
+find textH1 View Lapsed Proceeds
+expect pass
+logout
+
+

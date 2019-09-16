@@ -11,7 +11,7 @@ textInput due date
 select2Input toAccountStr PART02-1
 select2Input instrumentStr USD
 sleep 3
-textInput amount 60,000
+textInput amount 120,000
 textInput toReference currency transaction 01
 button save
 find textH1 View Create

@@ -1,0 +1,180 @@
+test Decrease Test 1 - Leaving Inputs Blank
+description leaving instrument input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr 
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 2 - Leaving Inputs Blank
+description leaving announcement input blank
+goto ARLUK_testing 
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST02
+textInput announcement 
+textInput exDividend 15/01/2019
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 3 - Leaving Inputs Blank
+description leaving ex date input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST03
+textInput announcement date
+textInput exDividend
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 4 - Leaving Inputs Blank
+description leaving record date input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST04
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 
+textInput payment 25/09/2019
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 5 - Leaving Inputs Blank
+description leaving payment date input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST05
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 20/09/2019
+textInput payment
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 6 - Leaving Inputs Blank
+description leaving description date input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST06
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 7 - Leaving Inputs Blank 
+description leaving receiving agent input blank
+goto ARLUK_testing 
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST07
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 20/09/2019
+textInput payment 25/09/2-10
+textInput description new CA test
+checkerInput srcType
+menuInput srcChannel 
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 8 - Leaving Inputs Blank
+description leaving all inputs blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr
+textInput announcement 
+textInput exDividend
+textInput record
+textInput payment
+textInput description
+checkerInput srcType
+menuInput srcChannel
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+

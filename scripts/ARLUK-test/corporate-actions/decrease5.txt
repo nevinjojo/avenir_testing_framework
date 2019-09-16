@@ -1,0 +1,539 @@
+test Decrease Test 1 - using html code in inputs
+description using code in instrument input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput agm date 
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 2 - using html code in inputs
+description using code in instrument input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 20/09/2019
+textInput agm date
+textInput payment 25/09/2019
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 3 - using html code in inputs
+description using code in instrument input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr P<body onload=“alert(‘Hello’);“/>
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 20/09/2019
+textInput agm date
+textInput payment 25/09/2019
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 4 - using html code in inputs
+description using code in announcement date input 1
+goto ARLUK_testing 
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST02
+textInput announcement <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput exDividend 15/01/2019
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 5 - using html code in inputs
+description using code in announcement date input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST02
+textInput announcement https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+textInput exDividend 15/01/2019
+textInput record 20/09/2019
+textInput agm date
+textInput payment 25/09/2019
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 6 - using html code in inputs
+description using code in announcement date input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST02
+textInput announcement P<body onload=“alert(‘Hello’);“/>
+textInput exDividend 15/01/2019
+textInput record 20/09/2019
+textInput agm date
+textInput payment 25/09/2019
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 7 - using html code in inputs
+description using code in ex date input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST03
+textInput announcement date
+textInput exDividend <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 8 - using html code in inputs
+description using code in ex date input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST03
+textInput announcement date 
+textInput exDividend https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 9 - using html code in inputs
+description using code in ex date input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST04
+textInput announcement date
+textInput exDividend P<body onload=“alert(‘Hello’);“/>
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 10 - using html code in inputs
+description using code in record date input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST05
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput payment 25/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 11 - using html code in inputs
+description using code in record date input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST05
+textInput announcement date 
+textInput exDividend 15/01/2019
+textInput record https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+textInput payment 25/09/2019
+textInput agm date
+textInput description new CA test 
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 12 - using html code in inputs
+description using code in record date input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST05
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record P<body onload=“alert(‘Hello’);“/>
+textInput payment 25/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 13 - using html code in inputs
+description using code in payment date input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease 
+form admCA
+select2Input instrumentStr INST06
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 20/09/2019
+textInput payment <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 14 - using html code in inputs 
+description using code in payment date input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST06
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 20/09/2019
+textInput payment https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+textInput agm date
+textInput descripton new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 15 - using html code in inputs
+description using code in payment date input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST06
+textInput record 20/09/2019
+textInput payment P<body onload=“alert(‘Hello’);“/>
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 16 - using html code in inputs
+description using code in description input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+meun corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST07
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput agm date
+textInput description <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 17 - using html code in inputs
+description using code in description input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST07
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput agm date
+textInput description https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+button save
+find textH1 View Decrease 
+button ready
+expect pass
+logout
+
+test Decrease Test 18 - using html code in inputs
+description using code in description input 3
+goto ARLUK_testing 
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST07
+textInput record 20//09/2019
+textInput payment 25/09/2019
+textInput agm date
+textInput description P<body onload=“alert(‘Hello’);“/>
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 19 - using html code in inputs
+description using code in agm date input 1
+goto ARLUK_testing 
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST08
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput agm <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 20 - using html code in inputs
+description using code in agm date input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST08
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput agm https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 21 - using html code in inputs
+description using code in agm date input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST08
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput agm P<body onload=“alert(‘Hello’);“/>
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 22 - using html code in inputs
+description using code in receiving agent input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST09
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput srcType
+menuInput srcChannel <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 23 - using html code in inputs
+description using code in receiving agent input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST10
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput srcType
+menuInput srcChannel https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+test Decrease Test 24 - using html code in inputs
+description using code in receiving agent input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST11
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput srcType
+menuInput srcChannel P<body onload=“alert(‘Hello’);“/>
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+

@@ -23,11 +23,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST01
-menuInput state Draft
-button search
-sleep 5
+search s_part INST01
+search s_state Any
+sleep 2
 tableClick short INST01
 button approve
 sleep 2
@@ -57,14 +55,13 @@ find textH1 View Debt
 expect pass
 logout
 
+
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST02
-menuInput state Draft
-button search
-sleep 5
+search s_part INST02
+search s_state Any
+sleep 2
 tableClick short INST02
 button approve
 sleep 2
@@ -97,11 +94,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST03
-menuInput state Draft
-button search
-sleep 5
+search s_part INST03
+search s_state Any
+sleep 2
 tableClick short INST03
 button approve
 sleep 2
@@ -134,11 +129,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST04
-menuInput state Draft
-button search
-sleep 5
+search s_part INST04
+search s_state Any
+sleep 2
 tableClick short INST04
 button approve
 sleep 2
@@ -171,11 +164,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST05
-menuInput state Draft
-button search
-sleep 5
+search s_part INST05
+search s_state Any
+sleep 2
 tableClick short INST05
 find textH1 View Debt
 button approve
@@ -209,11 +200,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST06
-menuInput state Draft
-button search
-sleep 5
+search s_part INST06
+search s_state Any
+sleep 2
 tableClick short INST06
 button approve
 sleep 2
@@ -246,11 +235,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST07
-menuInput state Draft
-button search
-sleep 5
+search s_part INST07
+search s_state Any
+sleep 2
 tableClick short INST07
 button approve
 sleep 2
@@ -283,11 +270,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST08
-menuInput state Draft
-button search
-sleep 5
+search s_part INST08
+search s_state Any
+sleep 2
 tableClick short INST08
 button approve
 sleep 2
@@ -320,11 +305,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST09
-menuInput state Draft
-button search
-sleep 5
+search s_part INST09
+search s_state Any
+sleep 2
 tableClick short INST09
 button approve
 sleep 2
@@ -357,11 +340,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST10
-menuInput state Draft
-button search
-sleep 5
+search s_part INST10
+search s_state Any
+sleep 2
 tableClick short INST10
 button approve
 sleep 2

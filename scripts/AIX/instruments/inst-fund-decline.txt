@@ -25,15 +25,12 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INSTF1
-menuInput category Fund
-menuInput state Any
-button search
-sleep 5
+search s_part INSTF1
+search s_state Any
+sleep 2
 tableClick short INSTF1
 button delete
-find textH1 View Instruments
+find textH1 Manage Instruments
 sleep 2
 expect pass
 logout
@@ -65,15 +62,12 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INSTF2
-menuInput category Fund
-menuInput state Any
-button search
-sleep 5
+search s_part INSTF2
+search s_state Any
+sleep 2
 tableClick short INSTF2
 button delete
-find textH1 View Instruments
+find textH1 Manage Instruments
 sleep 2
 expect pass
 logout
@@ -105,15 +99,12 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INSTF3
-menuInput category Fund
-menuInput state Any
-button search
-sleep 5
+search s_part INSTF3
+search s_state Any
+sleep 2
 tableClick short INSTF3
 button delete
-find textH1 View Instruments
+find textH1 Manage Instruments
 sleep 2
 expect pass
 logout
@@ -145,15 +136,12 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INSTF4
-menuInput category Fund
-menuInput state Any
-button search
-sleep 5
+search s_part INSTF4
+search s_state Any
+sleep 2
 tableClick short INSTF4
 button delete
-find textH1 View Instruments
+find textH1 Manage Instruments
 sleep 2
 expect pass
 logout
@@ -179,5 +167,18 @@ textInput mic INSTF5
 button save
 sleep 2
 find textH1 View Fund
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu instruments
+search s_part INSTF5
+search s_state Any
+sleep 2
+tableClick short INSTF5
+button delete
+find textH1 Manage Instruments
+sleep 2
 expect pass
 logout

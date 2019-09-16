@@ -1,0 +1,452 @@
+test Capital Repayment Test 1 - symbols in inputs
+description symbols in announcement date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement !@#$%^&*(
+textInput exDividend date
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Capital Repayment
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Capital Repayment
+expect pass
+logout
+
+test Capital Repayment Test 2 - symbols in inputs
+description symbols in announcement date input - crest enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement !@#$%^&*(
+textInput exDividend date
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Capital Repayment
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Capital Repayment
+expect pass
+logout
+
+test Capital Repayment Test 3 - symbols in inputs
+description symbols in ex date input
+goto ARLUK_testing 
+login ARLUK_user1 ARLUK_pass1
+date +1 
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend !@#$%^&*(
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Capital Repayment
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Capital Repayment
+expect pass
+logout
+
+test Capital Repayment Test 4 - symbols in inputs
+description symbols in ex date input - crest enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1 
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date 
+textInput exDividend !@#$^*(%^#
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Capital Repayment
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Capital Repayment
+expect pass
+logout
+
+test Capital Repayment Test 5 - symbols in inputs
+description symbols in record date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record !@#$%^&*
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Capital Repayment
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Capital Repayment
+expect pass
+logout
+
+test Capital Repayment Test 6 - symbols in inputs
+description symbols in record date input - crest enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record *&^%$#@!
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Capital Repayment
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Capital Repayment
+expect pass
+logout
+
+test Capital Repayment Test 7 - symbols in inputs
+description symbols in agm date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput agm !#$%@#$^
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Capital Repayment
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Capital Repayment
+expect pass
+logout
+
+test Capital Repayment Test 8 - symbols in inputs
+description symbols in agm date input - crest enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1 
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput agm !@#$%^&*(
+textInput description new CA test
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Capital Repayment
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Capital Repayment
+expect pass
+logout
+
+test Capital Repayment Test 9 - symbols in inputs
+description symbols in description input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1 
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput agm date
+textInput description !@#@%&*$
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Capital Repayment
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Capital Repayment
+expect pass
+logout
+
+test Capital Repayment Test 10 - symbols in inputs
+description symbols in description input - crest enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST011
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput agm date
+textInput description @(*!)#!_$
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Capital Repayment
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Capital Repayment
+expect pass
+logout
+
+test Capital Repayment Test 11 - symbols in inputs
+description symbols in all inputs
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1 
+menu corporate actions
+clickby class btn btn-primary dropdowm-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr !#$@#%^@
+textInput announcement $%@#^@%
+textInput exDividend %@#$%#%
+textInput record #%@#^%%
+textInput agm @!$%#@$%^
+textInput description @$%!#%!@
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Capital Repayment
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Capital Repayment
+expect pass
+logout
+
+test Capital Repayment Test 12 - symbols in inputs
+description symbols in all inputs - crest enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr $!@)$(@!#(
+textInput announcement !@#!@$)%$#
+textInput exDividend #!(#)!@$#!
+textInput record !$!@#@!
+textInput agm $!@#!@#
+textInput description !$!#$@%@
+checkerInput srcType
+textInput srcChannel !#$)!#!@#!
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Capital Repayment
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Capital Repayment
+expect pass
+logout
+
+

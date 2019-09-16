@@ -1,0 +1,305 @@
+test New Bonus Test 1 - letters in number / date inputs
+description creating a new CA bonus - LC letters in announcement input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement asdfghjkl
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 2 - letters in number / date inputs
+description creating a new CA bonus - UC letters in announcement input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement ASDFGHJKL
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 3 - letters in number / date inputs
+description creating a new CA bonus - MXD letters in announcement input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement aSdFgHjKl
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 4 - letters in number / date inputs
+description creating a new CA bonus - LC letters in record input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record asdfghjkl
+textInput payment 26/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 5 - letters in number / date inputs
+description creating a new CA bonus - UC letters in record input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record ASDFGHJKL
+textInput payment 26/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 6 - letters in number / date inputs
+description creating a new CA bonus - MXD letters in record input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record aSdfGhJkL
+textInput payment 26/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 7 - letters in number / date inputs
+description creating a new CA bonus - LC letters in payment input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment asdfghjkl
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 8 - letters in number / date inputs
+description creating a new CA bonus - UC letters in payment input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment ASDFGHJKL
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 9 - letters in number / date inputs
+description creating a new CA bonus - MXD letters in payment input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment aSdFgHjKL
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 10 - letters in number / date inputs
+description creating a new CA bonus - LC letters in instrument input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr asdfghjkl
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 11 - letters in number / date inputs
+description creating a new CA bonus - UC letters in instrument input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr ASDFGHJKL
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 12 - letters in number / date inputs
+description creating a new CA bonus - MXD letters in instrument input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr AsDFgHjKL
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description new bonus test
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 13 - letters in number / date inputs
+description creating a new CA bonus - LC letters in receiving agent input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description new bonus test
+checkerInput srcType
+menuInput srcChannel asdfghjkl
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 14 - letters in number / date inputs
+description creating a new CA bonus - UC letters in receiving agent inputs
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description new bonus test
+checkerInput srcType
+menuInput srcChannel ASDFGHJKL
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+test New Bonus Test 15 - letters in number / date inputs
+description creating a new CA bonus - MXD letters in receiving agent inputs
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1 
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 26/09/2019
+textInput description new bonus test
+checkerInput srcType
+menuInput srcChannel aSdFgHJkl
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout

@@ -1,0 +1,585 @@
+test Call Payment Test 1 - symbols in inputs
+description creating a new CA - using code in instrument input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+checkerInput electionApproval
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 2 - symbols in inputs
+description creating a new CA - using code in instrument input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+checkerInput electionApproval
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 3 - symbols in inputs
+description creating a new CA - using code in instrument input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr P<body onload=“alert(‘Hello’);“/>
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+checkerInput electionApproval
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 4 - symbols in inputs
+description creating a new CA - using code in ex date input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr INST01 
+textInput announcement date
+textInput exDividend <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script> 
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+checkerInput electionApproval
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 5 - symbols in inputs
+description creating a new CA - using code in ex date input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+checkerInput electionApproval
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 6 - symbols in inputs
+description creating a new CA - using code in ex date input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend P<body onload=“alert(‘Hello’);“/>
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+checkerInput electionApproval
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 7 - symbols in inputs
+description creating a new CA - using code in last acceptance date and time input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput acceptance <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput payment 30/09/2019
+textInput description new CA test
+checkerInput electionApproval
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 8 - symbols in inputs
+description creating a new CA - using code in last acceptance date and time input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput acceptance https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+textInput payment 30/09/2019
+textInput description new CA test
+checkerInput electionApproval
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 9 - symbols in inputs
+description creating a new CA - using code in last acceptance date and time input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput acceptance P<body onload=“alert(‘Hello’);“/>
+textInput payment 30/09/2019
+textInput description new CA test
+checkerInput electionApproval
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 10 - symbols in inputs
+description creating a new CA - using code in announcement input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput exDividend date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+checkerInput electionApproval
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 11 - symbols in inputs
+description creating a new CA - using code in announcement input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+textInput exDividend date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+checkerInput electionApproval
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 12 - symbols in inputs
+description creating a new CA - using code in announcement input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement P<body onload=“alert(‘Hello’);“/>
+textInput exDividend date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+checkerInput electionApproval
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 13 - symbols in inputs
+description creating a new CA - using code in record input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script> 
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+checkerInput electionApproval
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 13 - symbols in inputs
+description creating a new CA - using code in record input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+checkerInput electionApproval
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 13 - symbols in inputs
+description creating a new CA - using code in record input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record P<body onload=“alert(‘Hello’);“/>
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+checkerInput electionApproval
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 14 - symbols in inputs
+description creating a new CA - using code in payment input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput description new CA test
+checkerInput electionApproval
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 15 - symbols in inputs
+description creating a new CA - using code in payment input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+textInput description new CA test
+checkerInput electionApproval
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 16 - symbols in inputs
+description creating a new CA - using code in payment input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment P<body onload=“alert(‘Hello’);“/>
+textInput description new CA test
+checkerInput electionApproval
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 17 - symbols in inputs
+description creating a new CA - using code in description input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput description <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+checkerInput electionApproval
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 18 - symbols in inputs
+description creating a new CA - using code in description input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput description https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+checkerInput electionApproval
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 19 - symbols in inputs
+description creating a new CA - using code in description input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput description P<body onload=“alert(‘Hello’);“/>
+checkerInput electionApproval
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 20 - symbols in inputs
+description creating a new CA - using code in receiving agent input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr INST01
+textInput exDividend date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+checkerInput electionApproval
+checkerInput srcType
+menuInput srcChannel <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script> 
+menuInput electionTransaction AESN (ESA)
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 21 - symbols in inputs
+description creating a new CA - using code in receiving agent input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+checkerInput electionApproval
+checkerInput srcType
+menuInput srcChannel <img src=“https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png(3 kB)
+https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+” width=“120" border=“0” onload=“window.lol&&lol()” data-atf=“3”>
+menuInput electionTransaction AESN (ESA)
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout
+
+test Call Payment Test 22 - symbols in inputs
+description creating a new CA - using code in receiving agent input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Call Payment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput description new CA test
+checkerInput electionApproval
+checkerInput srcType
+menuInput srcChannel P<body onload=“alert(‘Hello’);“/>
+menuInput electionTransaction AESN (ESA)
+button save
+find textH1 View Call Payment
+button ready
+expect pass
+logout

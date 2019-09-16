@@ -1,0 +1,591 @@
+test Meeting Announcement Test 01 - Extraordinary General Meeting
+description creating a new CA - Meeting Announcement 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Meeting Announcement
+form admCA
+select2Input instrumentStr INST01
+textInput record 25/09/2019
+textInput acceptance 25/09/2019
+textInput payment 01/10/2019
+menuInput meetingType Extraordinary General Meeting
+textInput description Meeting details description
+textInput location Meeting details location
+textInput narrative http://arluk-test.avenir.tech/
+textInput ratioHolding 25
+textInput ratioEntitlement 50
+button save
+find textH1 View Meeting Announcement
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Meeting Announcement
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Meeting Announcement
+expect pass
+logout
+
+test Meeting Announcement Test 02 - Extraordinary General Meeting
+description creating a new CA - Meeting Announcement 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Meeting Announcement
+form admCA
+select2Input instrumentStr INST02
+textInput record 25/09/2019
+textInput acceptance 25/09/2019
+textInput payment 01/10/2019
+menuInput meetingType Extraordinary General Meeting
+textInput description Meeting details description
+textInput location Meeting details location
+textInput narrative http://arluk-test.avenir.tech/
+textInput ratioHolding 25
+textInput ratioEntitlement 50
+checkerInput allowFor
+button save
+find textH1 View Meeting Announcement
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST02
+search s_cacat Meeting Announcement
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST02
+button approve
+find textH1 View Meeting Announcement
+expect pass
+logout
+
+test Meeting Announcement Test 03 - Extraordinary General Meeting
+description creating a new CA - Meeting Announcement 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Meeting Announcement
+form admCA
+select2Input instrumentStr INST03
+textInput record 25/09/2019
+textInput acceptance 25/09/2019
+textInput payment 01/10/2019
+menuInput meetingType Extraordinary General Meeting
+textInput description Meeting details description
+textInput location Meeting details location
+textInput narrative http://arluk-test.avenir.tech/
+textInput ratioHolding 25
+textInput ratioEntitlement 50
+checkerInput allowAgainst
+button save
+find textH1 View Meeting Announcement
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST03
+search s_cacat Meeting Announcement
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST03
+button approve
+find textH1 View Meeting Announcement
+expect pass
+logout
+
+test Meeting Announcement Test 04 - Extraordinary General Meeting
+description creating a new CA - Meeting Announcement 4
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Meeting Announcement
+form admCA
+select2Input instrumentStr INST04
+textInput record 25/09/2019
+textInput acceptance 25/09/2019
+textInput payment 01/10/2019
+menuInput meetingType Extraordinary General Meeting
+textInput description Meeting details description
+textInput location Meeting details location
+textInput narrative http://arluk-test.avenir.tech/
+textInput ratioHolding 25
+textInput ratioEntitlement 50
+checkerInput allowwithheld
+button save
+find textH1 View Meeting Announcement
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST04
+search s_cacat Meeting Announcement
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST04
+button approve
+find textH1 View Meeting Announcement
+expect pass
+logout
+
+test Meeting Announcement Test 05 - Extraordinary General Meeting
+description creating a new CA - Meeting Announcement 5
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Meeting Announcement
+form admCA
+select2Input instrumentStr INST05
+textInput record 25/09/2019
+textInput acceptance 25/09/2019
+textInput payment 01/10/2019
+menuInput meetingType Extraordinary General Meeting
+textInput description Meeting details description
+textInput location Meeting details location
+textInput narrative http://arluk-test.avenir.tech/
+textInput ratioHolding 25
+textInput ratioEntitlement 50
+checkerInput allowwithheld
+button save
+find textH1 View Meeting Announcement
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST05
+search s_cacat Meeting Announcement
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST05
+button approve
+find textH1 View Meeting Announcement
+expect pass
+logout
+
+test Meeting Announcement Test 06 - Extraordinary General Meeting
+description creating a new CA - Meeting Announcement 6
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Meeting Announcement
+form admCA
+select2Input instrumentStr INST06
+textInput record 25/09/2019
+textInput acceptance 25/09/2019
+textInput payment 01/10/2019
+menuInput meetingType Extraordinary General Meeting
+textInput description Meeting details description
+textInput location Meeting details location
+textInput narrative http://arluk-test.avenir.tech/
+textInput ratioHolding 25
+textInput ratioEntitlement 50
+checkerInput allowDiscretionary
+button save
+find textH1 View Meeting Announcement
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST06
+search s_cacat Meeting Announcement
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST06
+button approve
+find textH1 View Meeting Announcement
+expect pass
+logout
+
+test Meeting Announcement Test 07 - Extraordinary General Meeting
+description creating a new CA - Meeting Announcement 7 - all checkerInputs
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Meeting Announcement
+form admCA
+select2Input instrumentStr INST07
+textInput record 25/09/2019
+textInput acceptance 25/09/2019
+textInput payment 01/10/2019
+menuInput meetingType Extraordinary General Meeting
+textInput description Meeting details description
+textInput location Meeting details location
+textInput narrative http://arluk-test.avenir.tech/
+textInput ratioHolding 25
+textInput ratioEntitlement 50
+checkerInput allowFor
+checkerInput allowAgainst
+checkerInput allowwithheld
+checkerInput allowDiscretionary
+button save
+find textH1 View Meeting Announcement
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST07
+search s_cacat Meeting Announcement
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST07
+button approve
+find textH1 View Meeting Announcement
+expect pass
+logout
+
+test Meeting Announcement Test 08 - Extraordinary General Meeting
+description creating a new CA - Meeting Announcement 8 - CREST
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Meeting Announcement
+form admCA
+select2Input instrumentStr INST01
+textInput record 25/09/2019
+textInput acceptance 25/09/2019
+textInput payment 01/10/2019
+menuInput meetingType Extraordinary General Meeting
+textInput description Meeting details description
+textInput location Meeting details location
+textInput narrative http://arluk-test.avenir.tech/
+textInput ratioHolding 25
+textInput ratioEntitlement 50
+checkerInput srcType 
+menuInput srcChannel Avenir Registrar UK (R085)
+button save
+find textH1 View Meeting Announcement
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Meeting Announcement
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Meeting Announcement
+expect pass
+logout
+
+test Meeting Announcement Test 09 - Extraordinary General Meeting
+description creating a new CA - Meeting Announcement 9 - CREST
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Meeting Announcement
+form admCA
+select2Input instrumentStr INST02
+textInput record 25/09/2019
+textInput acceptance 25/09/2019
+textInput payment 01/10/2019
+menuInput meetingType Extraordinary General Meeting
+textInput description Meeting details description
+textInput location Meeting details location
+textInput narrative http://arluk-test.avenir.tech/
+textInput ratioHolding 25
+textInput ratioEntitlement 50
+checkerInput allowFor
+checkerInput srcType 
+menuInput srcChannel Avenir Registrar IE (R087)
+button save
+find textH1 View Meeting Announcement
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST02
+search s_cacat Meeting Announcement
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST02
+button approve
+find textH1 View Meeting Announcement
+expect pass
+logout
+
+test Meeting Announcement Test 10 - Extraordinary General Meeting
+description creating a new CA - Meeting Announcement 10 - CREST
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Meeting Announcement
+form admCA
+select2Input instrumentStr INST03
+textInput record 25/09/2019
+textInput acceptance 25/09/2019
+textInput payment 01/10/2019
+menuInput meetingType Extraordinary General Meeting
+textInput description Meeting details description
+textInput location Meeting details location
+textInput narrative http://arluk-test.avenir.tech/
+textInput ratioHolding 25
+textInput ratioEntitlement 50
+checkerInput allowAgainst
+checkerInput srcType 
+menuInput srcChannel Avenir Registrar UK (R085)
+button save
+find textH1 View Meeting Announcement
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST03
+search s_cacat Meeting Announcement
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST03
+button approve
+find textH1 View Meeting Announcement
+expect pass
+logout
+
+test Meeting Announcement Test 11 - Extraordinary General Meeting
+description creating a new CA - Meeting Announcement 11 - CREST
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Meeting Announcement
+form admCA
+select2Input instrumentStr INST04
+textInput record 25/09/2019
+textInput acceptance 25/09/2019
+textInput payment 01/10/2019
+menuInput meetingType Extraordinary General Meeting
+textInput description Meeting details description
+textInput location Meeting details location
+textInput narrative http://arluk-test.avenir.tech/
+textInput ratioHolding 25
+textInput ratioEntitlement 50
+checkerInput allowwithheld
+checkerInput srcType 
+menuInput srcChannel Avenir Registrar IE (R087)
+button save
+find textH1 View Meeting Announcement
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST04
+search s_cacat Meeting Announcement
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST04
+button approve
+find textH1 View Meeting Announcement
+expect pass
+logout
+
+test Meeting Announcement Test 12 - Extraordinary General Meeting
+description creating a new CA - Meeting Announcement 12 - CREST
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Meeting Announcement
+form admCA
+select2Input instrumentStr INST05
+textInput record 25/09/2019
+textInput acceptance 25/09/2019
+textInput payment 01/10/2019
+menuInput meetingType Extraordinary General Meeting
+textInput description Meeting details description
+textInput location Meeting details location
+textInput narrative http://arluk-test.avenir.tech/
+textInput ratioHolding 25
+textInput ratioEntitlement 50
+checkerInput allowwithheld
+checkerInput srcType 
+menuInput srcChannel Avenir Registrar UK (R085)
+button save
+find textH1 View Meeting Announcement
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST05
+search s_cacat Meeting Announcement
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST05
+button approve
+find textH1 View Meeting Announcement
+expect pass
+logout
+
+test Meeting Announcement Test 13 - Extraordinary General Meeting
+description creating a new CA - Meeting Announcement 13 - CREST
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Meeting Announcement
+form admCA
+select2Input instrumentStr INST06
+textInput record 25/09/2019
+textInput acceptance 25/09/2019
+textInput payment 01/10/2019
+menuInput meetingType Extraordinary General Meeting
+textInput description Meeting details description
+textInput location Meeting details location
+textInput narrative http://arluk-test.avenir.tech/
+textInput ratioHolding 25
+textInput ratioEntitlement 50
+checkerInput allowDiscretionary
+checkerInput srcType 
+menuInput srcChannel Avenir Registrar IE (R087)
+button save
+find textH1 View Meeting Announcement
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST06
+search s_cacat Meeting Announcement
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST06
+button approve
+find textH1 View Meeting Announcement
+expect pass
+logout
+
+test Meeting Announcement Test 14 - Extraordinary General Meeting
+description creating a new CA - Meeting Announcement 14 - all checkerInputs - CREST
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Meeting Announcement
+form admCA
+select2Input instrumentStr INST06
+textInput record 25/09/2019
+textInput acceptance 25/09/2019
+textInput payment 01/10/2019
+menuInput meetingType Extraordinary General Meeting
+textInput description Meeting details description
+textInput location Meeting details location
+textInput narrative http://arluk-test.avenir.tech/
+textInput ratioHolding 25
+textInput ratioEntitlement 50
+checkerInput allowFor
+checkerInput allowAgainst
+checkerInput allowwithheld
+checkerInput allowDiscretionary
+checkerInput srcType 
+menuInput srcChannel Avenir Registrar UK (R085)
+button save
+find textH1 View Meeting Announcement
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST06
+search s_cacat Meeting Announcement
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST06
+button approve
+find textH1 View Meeting Announcement
+expect pass
+logout

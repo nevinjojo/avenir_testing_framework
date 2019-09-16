@@ -56,7 +56,7 @@ textInput last Indiv Suspend Two
 textInput address1 1 Market Lane
 menuInput country New Zealand
 menuInput idType National ID Card
-textInput idNumber 981121436506
+textInput idNumber 991231639246
 menuInput idCountry Kazakhstan
 button save
 sleep 3

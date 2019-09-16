@@ -1,6 +1,7 @@
-#Avenir Testing 
-#Home page class
-#
+######################################################################
+# Home - Child class that holds functions and elements the home page has.
+# Author: Nevin Jojo
+######################################################################
 
 #following is the requirement for testing
 require_relative 'page'

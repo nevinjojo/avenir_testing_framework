@@ -4,6 +4,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST01
+button search
 tableClick short CUST01
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -23,6 +24,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST01
+button search
 tableClick short CUST01
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -42,6 +44,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST02
+button search
 tableClick short CUST02
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -61,6 +64,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST02
+button search
 tableClick short CUST02
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -80,6 +84,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST03
+button search
 tableClick short CUST03
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -99,6 +104,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST03
+button search
 tableClick short CUST03
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -118,6 +124,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST04
+button search
 tableClick short CUST04
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -137,6 +144,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST04
+button search
 tableClick short CUST04
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -156,6 +164,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST05
+button search
 tableClick short CUST05
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -175,6 +184,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST05
+button search
 tableClick short CUST05
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -194,6 +204,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST06
+button search
 tableClick short CUST06
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -213,6 +224,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST06
+button search
 tableClick short CUST06
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -232,6 +244,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST07
+button search
 tableClick short CUST07
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -251,6 +264,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST07
+button search
 tableClick short CUST07
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -270,6 +284,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST08
+button search
 tableClick short CUST08
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -289,6 +304,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST08
+button search
 tableClick short CUST08
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -308,6 +324,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST09
+button search
 tableClick short CUST09
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -327,6 +344,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST09
+button search
 tableClick short CUST09
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -346,6 +364,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST10
+button search
 tableClick short CUST10
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -365,6 +384,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST10
+button search
 tableClick short CUST10
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -384,6 +404,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST11
+button search
 tableClick short CUST11
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -403,6 +424,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST11
+button search
 tableClick short CUST11
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -422,6 +444,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST12
+button search
 tableClick short CUST12
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -441,6 +464,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST12
+button search
 tableClick short CUST12
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -460,6 +484,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST13
+button search
 tableClick short CUST13
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -479,6 +504,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST13
+button search
 tableClick short CUST13
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -498,6 +524,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST14
+button search
 tableClick short CUST14
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -517,6 +544,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST14
+button search
 tableClick short CUST14
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -536,6 +564,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST15
+button search
 tableClick short CUST15
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -555,6 +584,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST15
+button search
 tableClick short CUST15
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -574,6 +604,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST16
+button search
 tableClick short CUST16
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -593,6 +624,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST16
+button search
 tableClick short CUST16
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -612,6 +644,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST17
+button search
 tableClick short CUST17
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -631,6 +664,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST17
+button search
 tableClick short CUST17
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -650,6 +684,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST18
+button search
 tableClick short CUST18
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -669,6 +704,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST18
+button search
 tableClick short CUST18
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -688,6 +724,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST19
+button search
 tableClick short CUST19
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -707,6 +744,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST19
+button search
 tableClick short CUST19
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -726,6 +764,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST20
+button search
 tableClick short CUST20
 scrollto accounts-new-btn
 clickby id accounts-new-btn
@@ -745,6 +784,7 @@ goto AIX
 login aix_user1 aix_pass1
 menu participants
 search s_part CUST20
+button search
 tableClick short CUST20
 scrollto accounts-new-btn
 clickby id accounts-new-btn

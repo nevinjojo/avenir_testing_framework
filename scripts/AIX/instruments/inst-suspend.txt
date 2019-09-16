@@ -22,10 +22,8 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INSTS1
-menuInput state Any
-button search
+search s_part INSTS1
+search s_state Any
 sleep 2
 tableClick short INSTS1
 find textH1 View Equity
@@ -68,10 +66,8 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INSTS2
-menuInput state Any
-button search
+search s_part INSTS2
+search s_state Any
 sleep 2
 tableClick short INSTS2
 find textH1 View Equity
@@ -115,10 +111,8 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INSTS3
-menuInput state Any
-button search
+search s_part INSTS3
+search s_state Any
 sleep 2
 tableClick short INSTS3
 find textH1 View Debt
@@ -162,10 +156,8 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INSTS4
-menuInput state Any
-button search
+search s_part INSTS4
+search s_state Any
 sleep 2
 tableClick short INSTS4
 find textH1 View Debt
@@ -211,11 +203,8 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INSTS5
-menuInput category Fund
-menuInput state Any
-button search
+search s_part INSTS5
+search s_state Any
 sleep 2
 tableClick short INSTS5
 find textH1 View Fund
@@ -261,11 +250,8 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INSTS6
-menuInput category Fund
-menuInput state Any
-button search
+search s_part INSTS6
+search s_state Any
 sleep 2
 tableClick short INSTS6
 find textH1 View Fund

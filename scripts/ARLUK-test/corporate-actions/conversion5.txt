@@ -1,0 +1,851 @@
+test Conversion Test 1 - using html code in inputs
+description using code in instrument input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+menuInput caType Mandatory
+textInput announcement date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput electionApproval
+checkerInput fractional
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 2 - using html code in inputs
+description using code in instrument input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+menuInput caType Mandatory
+textInput announcement date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput electionApproval
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction AFEN (TTE)
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST02
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST02
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 3 - using html code in inputs
+description using code in instrument input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr P<body onload=“alert(‘Hello’);“/>
+menuInput caType Mandatory
+textInput announcement date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST03
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST03
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 4 - using html code in inputs
+description using code in announcement date input 1 
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST04
+menuInput caType Mandatory
+textInput announcement <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput fractional
+checkerInput srcType 
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction AUSN (USE)
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST04
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST04
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 5 - using html code in inputs
+description using code in announcement date input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST05
+menuInput caType Voluntary
+textInput announcement https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput electionApproval
+checkerInput fractional
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST05
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST05
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 6 - using html code in inputs
+description using code in announcement date input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST06
+menuInput caType Voluntary
+textInput announcement P<body onload=“alert(‘Hello’);“/>
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput electionApproval
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction AFEN (TTE)
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST06
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST06
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 7 - using html code in inputs
+description using code in record date input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST07
+menuInput caType Voluntary
+textInput announcement date
+textInput record <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput fractional
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST07
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST07
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 8 - using html code in inputs
+description using code in record date input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST08
+menuInput caType Voluntary
+textInput announcement date
+textInput record https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput srcType 
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction AUSN (USE)
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST08
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST08
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 9 - using html code in inputs
+description using code in record date input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST09
+menuInput caType Mandatory with Options
+textInput announcement date
+textInput record P<body onload=“alert(‘Hello’);“/>
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput fractional
+checkerInput electionApproval
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST09
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST09
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 10 - using html code in inputs
+description using code in acceptance input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST10
+menuInput caType Mandatory with Options
+textInput announcement date
+textInput record 15/09/2019
+textInput acceptance <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput electionApproval
+checkerInput fractional
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction AFEN (TTE)
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST10
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST10
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 11 - using html code in inputs
+description using code in acceptance date input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST11
+menuInput caType Mandatory with Options
+textInput announcement date
+textInput record 15/09/2019
+textInput acceptance https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST11
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST11
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 12 - using html code in inputs
+description using code in acceptance date input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST12
+menuInput caType Mandatory with Options
+textInput announcement date
+textInput record 15/09/2019
+textInput acceptance P<body onload=“alert(‘Hello’);“/>
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput fractional
+checkerInput srcType 
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST12
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST12
+sleep 2
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 13 - using html code in inputs
+description using code in payment date input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST01
+menuInput caType Mandatory
+textInput announcement date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput agm date
+textInput description new CA test
+checkerInput electionApproval
+checkerInput fractional
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 14 - using html code in inputs
+description using code in payment date input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST02
+menuInput caType Mandatory
+textInput announcement date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+textInput agm date
+textInput description new CA test
+checkerInput electionApproval
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction AFEN (TTE)
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST02
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST02
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 15 - using html code in inputs
+description using code in payment date input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST03
+menuInput caType Mandatory
+textInput announcement date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment P<body onload=“alert(‘Hello’);“/>
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST03
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST03
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 16 - using html in code in inputs
+description using code in agm date input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST04
+menuInput caType Mandatory
+textInput announcement date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+textInput description new CA test
+checkerInput fractional
+checkerInput srcType 
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction AUSN (USE)
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST04
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST04
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 17 - using html code in inputs
+description using code in agm date input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST05
+menuInput caType Voluntary
+textInput announcement date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+textInput description new CA test
+checkerInput electionApproval
+checkerInput fractional
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST05
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST05
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 18 - using html code in inputs
+description using code in agm date input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST06
+menuInput caType Voluntary
+textInput announcement date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm P<body onload=“alert(‘Hello’);“/>
+textInput description new CA test
+checkerInput electionApproval
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction AFEN (TTE)
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST06
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST06
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 19 - using html code in inputs
+description using code in description input 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST07
+menuInput caType Voluntary
+textInput announcement date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description <p id=“i”></p><script>var s=setInterval(T, 999);function T(){var d=new Date();document.getElementById(“i”).innerHTML=d.toLocaleTimeString();}</script>
+checkerInput fractional
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST07
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST07
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 20 - using html code in inputs
+description using code in description input 2
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST08
+menuInput caType Voluntary
+textInput announcement date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description https://www.google.ru/logos/doodles/2018/teachers-day-2018-multiple-countries-6618844691955712-s.png
+checkerInput srcType 
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction AUSN (USE)
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST08
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST08
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 21 - using html code in inputs
+description using code in description input 3
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST09
+menuInput caType Mandatory with Options
+textInput announcement date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description P<body onload=“alert(‘Hello’);“/>
+checkerInput fractional
+checkerInput electionApproval
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST09
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST09
+button approve
+find textH1 View Conversion
+expect pass
+logout
+

@@ -21,7 +21,6 @@ logout
 
 goto AIX
 login aix_user2 aix_pass2
-date
 menu transactions
 search s_inst INST01
 search s_stat Ready
@@ -56,7 +55,6 @@ logout
 
 goto AIX
 login aix_user2 aix_pass2
-date
 menu transactions
 search s_inst INST02
 search s_stat Ready
@@ -91,7 +89,6 @@ logout
 
 goto AIX
 login aix_user2 aix_pass2
-date
 menu transactions
 search s_inst INST03
 search s_stat Ready
@@ -126,7 +123,6 @@ logout
 
 goto AIX
 login aix_user2 aix_pass2
-date
 menu transactions
 search s_inst INST04
 search s_stat Ready
@@ -161,7 +157,6 @@ logout
 
 goto AIX
 login aix_user2 aix_pass2
-date
 menu transactions
 search s_inst INST05
 search s_stat Ready
@@ -196,7 +191,6 @@ logout
 
 goto AIX
 login aix_user2 aix_pass2
-date
 menu transactions
 search s_inst INST06
 search s_stat Ready
@@ -231,7 +225,6 @@ logout
 
 goto AIX
 login aix_user2 aix_pass2
-date
 menu transactions
 search s_inst INST07
 search s_stat Ready
@@ -266,7 +259,6 @@ logout
 
 goto AIX
 login aix_user2 aix_pass2
-date
 menu transactions
 search s_inst INST08
 search s_stat Ready
@@ -301,7 +293,6 @@ logout
 
 goto AIX
 login aix_user2 aix_pass2
-date
 menu transactions
 search s_inst INST09
 search s_stat Ready
@@ -336,7 +327,6 @@ logout
 
 goto AIX
 login aix_user2 aix_pass2
-date
 menu transactions
 search s_inst INST10
 search s_stat Ready

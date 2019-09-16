@@ -28,7 +28,7 @@ button search
 sleep 4
 tableClick short CUSTD1
 button decline
-clickby id lnk-delete
+clickby id btn-delete
 find textH1 Manage Participants
 sleep 2
 expect pass
@@ -64,7 +64,7 @@ button search
 sleep 4
 tableClick short CUSTD2
 button decline
-clickby id lnk-delete
+clickby id btn-delete
 find textH1 Manage Participants
 sleep 2
 expect pass
@@ -100,7 +100,7 @@ button search
 sleep 4
 tableClick short CUSTD3
 button decline
-clickby id lnk-delete
+clickby id btn-delete
 find textH1 Manage Participants
 sleep 2
 expect pass
@@ -136,7 +136,7 @@ button search
 sleep 4
 tableClick short CUSTD4
 button decline
-clickby id lnk-delete
+clickby id btn-delete
 find textH1 Manage Participants
 sleep 2
 expect pass
@@ -172,7 +172,7 @@ button search
 sleep 4
 tableClick short CUSTD5
 button decline
-clickby id lnk-delete
+clickby id btn-delete
 find textH1 Manage Participants
 sleep 2
 expect pass

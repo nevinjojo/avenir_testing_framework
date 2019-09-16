@@ -23,11 +23,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST31
-menuInput state Draft
-button search 
-sleep 4
+search s_part INST31
+search s_state Any
+sleep 2
 tableClick short INST31
 button approve
 sleep 2
@@ -60,11 +58,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST32
-menuInput state Draft
-button search
-sleep 4
+search s_part INST32
+search s_state Any
+sleep 2
 tableClick short INST32
 button approve
 sleep 2
@@ -97,11 +93,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST33
-menuInput state Draft
-button search 
-sleep 4
+search s_part INST33
+search s_state Any
+sleep 2
 tableClick short INST33
 button approve
 sleep 2
@@ -134,11 +128,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST34
-menuInput state Draft
-button search
-sleep 4
+search s_part INST34
+search s_state Any
+sleep 2
 tableClick short INST34
 button approve
 sleep 2
@@ -171,11 +163,9 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INST35
-menuInput state Draft
-button search
-sleep 4
+search s_part INST35
+search s_state Any
+sleep 2
 tableClick short INST35
 button approve
 sleep 2

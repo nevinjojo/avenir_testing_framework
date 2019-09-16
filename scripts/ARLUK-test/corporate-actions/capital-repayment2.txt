@@ -1,0 +1,337 @@
+test Capital Repayment Test - Leaving Inputs Blank 1
+description leaving instrument input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1 
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr
+textInput announcement date 
+textInput exDividend date
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - Leaving Inputs Blank 2
+description leaving instrument input blank - crest enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - Leaving Inputs Blank 3
+description leaving announcement date input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement
+textInput exDividend date
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - Leaving Inputs Blank 4
+description leaving announcement date input blank - crest enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement 
+textInput exDividend date
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - Leaving Inputs Blank 5
+description leaving ex date input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Capital Repayment 
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - Leaving Inputs Blank 6
+description leaving ex date input blank - crest enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - Leaving Inputs Blank 7
+description leaving record date input blank 
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - Leaving Inputs Blank 8
+description leaving record date input blank - crest enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1 
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - Leaving Inputs Blank 9
+description leaving payment date input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput payment
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - Leaving Inputs Blank 10
+description leaving payment date input blank - crest enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput payment
+textInput agm date
+textInput description new CA test
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find texTH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - Leaving Inputs Blank 11
+description leaving description input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - Leaving Inputs Blank 12
+description leaving description input blank - crest enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment test - Leaving Inputs Blank 13
+description leaving receiving agent input blank - crest enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1 
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput srcType
+menuInput srcChannel 
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment test - Leaving Inputs Blank 14
+description leaving all inputs blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr
+textInput announcement
+textInput exDividend
+textInput record
+textInput payment
+textInput agm
+textInput description
+checkerInput srcType
+menuInput srcChannel
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout

@@ -21,7 +21,7 @@ logout
 
 goto AIX
 login P6_BRKR1_user P6_BRKR1_pass
-date + 2
+date + 2 ignore-weekends
 menu positions
 form s
 textInput to date
@@ -30,7 +30,7 @@ clickby text INST02
 clickby id btn-giveup
 form usrAdjustment
 textInput long 1,000
-textInput org Custodian 01
+menuInput org Custodian 01
 textInput reference adjustment1
 button save
 sleep 2

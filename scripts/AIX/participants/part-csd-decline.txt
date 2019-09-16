@@ -1,0 +1,174 @@
+test Decline Participant CSD 01
+description declining and deleting CSD participants
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text CSD
+form admOrg
+textInput name CSD Delete 01
+textInput short CSDD1
+menuInput country New Zealand
+button save
+sleep 2
+find button ready
+button ready
+find textH1 View Broker
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CSDD1
+search s_stat Ready
+button search
+sleep 4
+tableClick short CSDD1
+clickby id btn-decline
+sleep 2
+button delete
+find textH1 Manage Participants
+sleep 2
+expect pass
+logout
+
+test Decline Participant CSD 02
+description declining and deleting CSD participants
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text CSD
+form admOrg
+textInput name CSD Delete 02
+textInput short CSDD2
+menuInput country New Zealand
+button save
+sleep 2
+find button ready
+button ready
+find textH1 View Broker
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CSDD2
+search s_stat Ready
+button search
+sleep 4
+tableClick short CSDD2
+clickby id btn-decline
+sleep 2
+button delete
+find textH1 Manage Participants
+sleep 2
+expect pass
+logout
+
+test Decline Participant CSD 03
+description declining and deleting CSD participants
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text CSD
+form admOrg
+textInput name CSD Delete 03
+textInput short CSDD3
+menuInput country New Zealand
+button save
+sleep 2
+find button ready
+button ready
+find textH1 View Broker
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CSDD3
+search s_stat Ready
+button search
+sleep 4
+tableClick short CSDD3
+clickby id btn-decline
+sleep 2
+button delete
+find textH1 Manage Participants
+sleep 2
+expect pass
+logout
+
+test Decline Participant CSD 04
+description declining and deleting CSD participants
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text CSD
+form admOrg
+textInput name CSD Delete 04
+textInput short CSDD4
+menuInput country New Zealand
+button save
+sleep 2
+find button ready
+button ready
+find textH1 View Broker
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CSDD4
+search s_stat Ready
+button search
+sleep 4
+tableClick short CSDD4
+clickby id btn-decline
+sleep 2
+button delete
+find textH1 Manage Participants
+sleep 2
+expect pass
+logout
+
+test Decline Participant CSD 05
+description declining and deleting CSD participants
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text CSD
+form admOrg
+textInput name CSD Delete 05
+textInput short CSDD5
+menuInput country New Zealand
+button save
+sleep 2
+find button ready
+find textH1 View Broker
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CSDD5
+search s_stat Ready
+button search
+sleep 4
+tableClick short CSDD5
+clickby id btn-decline
+sleep 2
+button delete
+find textH1 Manage Participants
+sleep 2
+expect pass
+logout
+

@@ -1,0 +1,417 @@
+test Capital Repayment Test - letters in number / date inputs
+description LC letters in announcement input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1 
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement asdfghjkl
+textInput exDividend date
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - letters in number / date inputs
+description UC letters in announcement input 
+goto ARLUK_testing 
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST02
+textInput announcement ASDFGHJKL
+textInput exDividend date
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - letters in number / date inputs
+description MXD letters in announcement input
+goto ARLUK_testing 
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST03
+textInput announcement AsDfGHjKL
+textInput exDividend date
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - letters in number / date inputs
+description LC letters in ex date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend asdfghjkl
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - letters in number / date inputs
+description UC letters in ex date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST02
+textInput announcement date
+textInput exDividend ASDFGHJKL
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - letters in number / date inputs
+description MXD letters in ex date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST03
+textInput announcement date
+textInput exDividend asDfgHJkL
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - letters in number / date inputs
+description LC letters in record date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record asdfghjkl
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - letters in number / date inputs
+description UC letters in record date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST02
+textInput announcement date
+textInput exDividend date
+textInput record ASDFGHJKL
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - letters in number / date inputs
+description MXD letters in record date input 
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST03
+textInput announcement date
+textInput exDividend date
+textInput record asDfgHjkL
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - letters in number / date inputs
+description LC letters in payment date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput payment asdfghjkl
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - letters in number / date inputs
+description UC letters in payment date input
+goto ARLUK_testing 
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST02
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput payment ASDFGHJKL
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - letters in number / date inputs
+description MXD letters in payment date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST03
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput payment asDFgHjKL
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - letters in number / date inputs
+description LC letters in agm date input
+goto ARLUK_testing 
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm asdfghjkl
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - letters in number / date inputs
+description UC letters in agm date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1 
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST02
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm ASDFGHJKL
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - letters in number / date inputs
+description MXD letters in agm date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST03
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput payment 30/09/2019
+textInput agm asDfGHjKL
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - letters in number / date inputs
+description LC letters in all number / date inputs
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST01
+textInput announcement asdfghjkl
+textInput exDividend asdfghjkl
+textInput record asdfgjkl
+textInput payment asdfghjkl
+textInput agm asdfghjkl
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - letters in number / date inputs
+description UC letters in all number / date inputs
+goto ARLUK_testing 
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST02
+textInput announcement ASDFGHJKL	
+textInput exDividend ASDFGHJKL
+textInput record ASDFGHJKL
+textInput payment ASDFGJKL
+textInput agm ASDFGHJKL
+textInput description new CA test 
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+test Capital Repayment Test - letters in number / date inputs
+description MXD letters in all number / date inputs 
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1 
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Capital Repayment
+form admCA
+select2Input instrumentStr INST03
+textInput announcement aSDfGHjKl
+textInput exDividend AsdFGhJkL
+textInput announcement aSDfgHHjkL
+textInput exDividend AsdDFGHjkl
+textInput record asDfgHHjkL
+textInput payment aSDfgHjJKL
+textInput agm AsdFGhKl
+textInput description new CA test
+button save
+find textH1 View Capital Repayment
+button ready
+expect pass
+logout
+
+

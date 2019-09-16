@@ -24,11 +24,8 @@ goto AIX
 login aix_user2 aix_pass2
 date
 menu instruments
-form instrument
-textInput short FDINST1
-menuInput category Fund
-menuInput state Any
-button search
+search s_part FDINST1
+search s_state Any
 sleep 5
 tableClick short FDINST1
 clickby class btn btn-primary dropdown-toggle
@@ -58,11 +55,8 @@ tableClick Code FDINST1
 button approve
 find textH1 View Create
 menu instruments
-form instrument
-textInput short FDINST1
-menuInput category Fund
-menuInput state Active
-button search
+search s_part FDINST1
+search s_state Any
 sleep 4
 tableClick short FDINST1
 sleep 3
@@ -74,7 +68,8 @@ sleep 6
 find textH1 Transactions
 sleep 2
 menu instruments
-form instrument
+search s_part FDINST1
+search s_state Any
 textInput short FDINST1
 sleep 3
 tableClick short FDINST1
@@ -116,11 +111,8 @@ goto AIX
 login aix_user2 aix_pass2
 date
 menu instruments
-form instrument
-textInput short FDINST2
-menuInput category Fund
-menuInput state Any
-button search
+search s_part FDINST2
+search s_state Any
 sleep 5
 tableClick short FDINST2
 clickby class btn btn-primary dropdown-toggle
@@ -150,11 +142,8 @@ tableClick Code FDINST2
 button approve
 find textH1 View Create
 menu instruments
-form instrument
-textInput short FDINST2
-menuInput category Fund
-menuInput state Active
-button search
+search s_part FDINST2
+search s_state Any
 sleep 4
 tableClick short FDINST2
 sleep 3
@@ -166,11 +155,8 @@ sleep 6
 find textH1 Transactions
 sleep 2
 menu instruments
-form instrument
-textInput short FDINST2
-menuInput category Fund
-menuInput state Active
-button search
+search s_part FDINST2
+search s_state Any
 sleep 4
 tableClick short FDINST2
 sleep 3

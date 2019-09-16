@@ -23,14 +23,12 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INSTD1
-menuInput state Draft
-button search
-sleep 5
+search s_part INSTD1
+search s_state Any
+sleep 2
 tableClick short INSTD1
 button delete
-find textH1 View Instruments
+find textH1 Manage Instruments
 expect pass
 logout
 
@@ -59,14 +57,12 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INSTD2
-menuInput state Draft
-button search
-sleep 5
+search s_part INSTD2
+search s_state Any
+sleep 2
 tableClick short INSTD2
 button delete
-find textH1 View Instruments
+find textH1 Manage Instruments
 expect pass
 logout
 
@@ -95,14 +91,12 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INSTD3
-menuInput state Draft
-button search
-sleep 5
+search s_part INSTD3
+search s_state Any
+sleep 2
 tableClick short INSTD3
 button delete
-find textH1 View Instruments
+find textH1 Manage Instruments
 expect pass
 logout
 
@@ -131,14 +125,12 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INSTD4
-menuInput state Draft
-button search
-sleep 5
+search s_part INSTD4
+search s_state Any
+sleep 2
 tableClick short INSTD4
 button delete
-find textH1 View Instruments
+find textH1 Manage Instruments
 expect pass
 logout
 
@@ -167,14 +159,12 @@ logout
 goto AIX
 login aix_user2 aix_pass2
 menu instruments
-form instrument
-textInput short INSTD5
-menuInput state Draft
-button search
-sleep 5
+search s_part INSTD5
+search s_state Any
+sleep 2
 tableClick short INSTD5
 button delete
-find textH1 View Instruments
+find textH1 Manage Instruments
 expect pass
 logout
 

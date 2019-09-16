@@ -23,10 +23,8 @@ goto AIX
 login aix_user2 aix_pass2
 date
 menu instruments
-form instrument
-textInput short DTINST1
-menuInput state Any
-button search
+search s_part DTINST1
+search s_state Any
 sleep 5
 tableClick short DTINST1
 clickby class btn btn-primary dropdown-toggle
@@ -56,10 +54,8 @@ tableClick Code DTINST1
 button approve
 find textH1 View Create
 menu instruments
-form instrument
-textInput short DTINST1
-menuInput state Active
-button search
+search s_part DTINST1
+search s_state Active
 sleep 4
 tableClick short DTINST1
 sleep 3
@@ -71,10 +67,8 @@ sleep 6
 find textH1 Transactions
 sleep 2
 menu instruments
-form instrument
-textInput short DTINST1
-menuInput state Active
-button search
+search s_part DTINST1
+search s_state Active
 sleep 4
 tableClick short DTINST1
 sleep 3
@@ -114,10 +108,8 @@ goto AIX
 login aix_user2 aix_pass2
 date
 menu instruments
-form instrument
-textInput short DTINST2
-menuInput state Any
-button search
+search s_part DTINST2
+search s_state Any
 sleep 5
 tableClick short DTINST2
 clickby class btn btn-primary dropdown-toggle
@@ -147,25 +139,21 @@ tableClick Code DTINST2
 button approve
 find textH1 View Create
 menu instruments
-form instrument
-textInput short DTINST2
-menuInput state Active
-button search
+search s_part DTINST2
+search s_state Active
 sleep 4
 tableClick short DTINST2
 sleep 3
 clickby class btn btn-default dropdown-toggle
-clickby xpath  /html/body/div/div[2]/div[4]/div/div/div[2]/ul/li[1]/a
+clickby xpath /html/body/div/div[2]/div[4]/div/div/div[2]/ul/li[1]/a
 sleep 2 
 clickby xpath /html/body/div/div[2]/div[4]/div/a
 sleep 6
 find textH1 Transactions
 sleep 2
 menu instruments
-form instrument
-textInput short DTINST2
-menuInput state Active
-button search
+search s_part DTINST2
+search s_state Active
 sleep 4
 tableClick short DTINST2
 sleep 3

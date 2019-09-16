@@ -25,7 +25,7 @@ while getopts "b:s:d:g:p" opt; do
       # echo "-g $DIRECTORY was triggered!" >&2
       ;;
     p)
-      DIRECTORY="/Users/siennahendrikx/Dropbox\ \(Personal\)/test\ results/"
+      DIRECTORY="/Users/siennahendrikx/Dropbox (Personal)/test results/"
       # echo "-p $DIRECTORY was triggered!" >&2
       ;;
     \?)
@@ -51,4 +51,4 @@ if [ -z "$STATS_DIR" ]; then
     STATS_DIR="no_stats"
 fi
 
-ruby main.rb $BROWSER $SCRIPT $DIRECTORY $STATS_DIR
+ruby main.rb $BROWSER $SCRIPT "$DIRECTORY" $STATS_DIR

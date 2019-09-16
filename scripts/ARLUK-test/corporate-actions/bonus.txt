@@ -1,0 +1,90 @@
+test New Bonus Test 1
+description creating a new corporate action - bonus 1
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST01
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 25/09/2019
+textInput description new bonus test
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+find textH1 New CA Benefit
+form admCAOption
+menuInput benefitType Stock
+select2Input instrumentStr INST01
+textInput stockRatioHolding 25
+textInput stockRatioEntitlement 25
+menuInput direction Debit
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Bonus
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Bonus
+expect pass
+logout
+
+test New Bonus Test 2
+description creating a new corporate action - bonus 2 crest enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+button new bonus
+form admCA
+select2Input instrumentStr INST02
+textInput announcement date
+textInput exDividend 01/01/2019
+textInput record date
+textInput payment 25/09/2019
+textInput description new bonus test
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+find textH1 New CA Benefit
+form admCAOption
+menuInput benefitType Stock
+select2Input instrumentStr INST02
+textInput stockRatioHolding 25
+textInput stockRatioEntitlement 25
+menuInput direction Credit
+button save
+find textH1 View Bonus
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST02
+search s_cacat Bonus
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST02
+button approve
+find textH1 View Bonus
+expect pass
+logout
+

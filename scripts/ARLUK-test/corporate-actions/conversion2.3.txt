@@ -1,0 +1,474 @@
+test Conversion Test 1 - Leaving Inputs Blank
+description creating a new CA - leaving announcement date input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST01
+menuInput caType Mandatory
+textInput announcement
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput electionApproval
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 2 - Leaving Inputs Blank
+description creating a new CA - leaving announcement date input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST02
+menuInput caType Mandatory
+textInput announcement
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput electionApproval
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST02
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST02
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 3 - Leaving Inputs Blank
+description creating a new CA - leaving announcement date input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST03
+menuInput caType Mandatory
+textInput announcement
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST03
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST03
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 4 - Leaving Inputs Blank
+description creating a new CA - leaving announcement date input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST04
+menuInput caType Mandatory
+textInput announcement
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput srcType 
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST04
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST04
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 5 - Leaving Inputs Blank
+description creating a new CA - leaving announcement date input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST05
+menuInput caType Voluntary
+textInput announcement
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput electionApproval
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST05
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST05
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 6 - Leaving Inputs Blank
+description creating a new CA - leaving announcement date input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST06
+menuInput caType Voluntary
+textInput announcement
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput electionApproval
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST06
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST06
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 7 - Leaving Inputs Blank
+description creating a new CA - leaving announcement date input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST07
+menuInput caType Voluntary
+textInput announcement
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST07
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST07
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 8 - Leaving Inputs Blank
+description creating a new CA - leaving announcement date input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST08
+menuInput caType Voluntary
+textInput announcement
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput srcType 
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST08
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST08
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 9 - Leaving Inputs Blank
+description creating a new CA - leaving announcement date input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST09
+menuInput caType Mandatory with Options
+textInput announcement
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput electionApproval
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST09
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST09
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 10 - Leaving Inputs Blank
+description creating a new CA - leaving announcement date input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST10
+menuInput caType Mandatory with Options
+textInput announcement
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput electionApproval
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST10
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST10
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 11 - Leaving Inputs Blank
+description creating a new CA - leaving announcement date input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST11
+menuInput caType Mandatory with Options
+textInput announcement
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST11
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST11
+button approve
+find textH1 View Conversion
+expect pass
+logout
+
+test Conversion Test 12 - Leaving Inputs Blank
+description creating a new CA - leaving announcement date input blank
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Conversion
+form admCA
+select2Input instrumentStr INST12
+menuInput caType Mandatory with Options
+textInput announcement
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput srcType 
+menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+find textH1 View Conversion
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST12
+search s_cacat Conversion
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST12
+sleep 2
+button approve
+find textH1 View Conversion
+expect pass
+logout

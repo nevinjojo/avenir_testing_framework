@@ -1,5 +1,0 @@
-test Custodian 13 USD transaction 01
-description CUST13 USD transaction 01
-goto AIX
-login aix_user1 aix_pass1
-date

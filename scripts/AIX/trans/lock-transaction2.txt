@@ -10,7 +10,7 @@ textInput due date
 select2Input toAccountStr PART01
 select2Input instrumentStr INST01
 textInput quantity 250
-textInput tag test 1
+textInput tag test1
 textInput toReference transaction lock 01
 button save
 find textH1 View Lock
@@ -45,7 +45,7 @@ textInput due date
 select2Input toAccountStr PART02
 select2Input instrumentStr INST02
 textInput quantity 250
-textInput tag test 2
+textInput tag test2
 textInput toReference transaction lock 02
 button save
 find textH1 View Lock
@@ -80,7 +80,7 @@ textInput due date
 select2Input toAccountStr PART03
 select2Input instrumentStr INST03
 textInput quantity 250
-textInput tag test 3
+textInput tag test3
 textInput toReference transaction lock 03
 button save
 find textH1 View Lock
@@ -115,7 +115,7 @@ textInput due date
 select2Input toAccountStr PART04
 select2Input instrumentStr INST04
 textInput quantity 250
-textInput tag test 4
+textInput tag test4
 textInput toReference transaction lock 04
 button save
 find textH1 View Lock
@@ -149,7 +149,7 @@ textInput due date
 select2Input toAccountStr PART05
 select2Input instrumentStr INST05
 textInput quantity 250
-textInput tag test 5
+textInput tag test5
 textInput toReference transaction lock 05
 button save
 find textH1 View Lock
@@ -183,7 +183,7 @@ textInput due date
 select2Input toAccountStr PART06
 select2Input instrumentStr INST06
 textInput quantity 250
-textInput tag test 6
+textInput tag test6
 textInput toReference transaction lock 06
 button save
 find textH1 View Lock
@@ -217,7 +217,7 @@ textInput due date
 select2Input toAccountStr PART07
 select2Input instrumentStr INST07
 textInput quantity 250
-textInput tag test 7
+textInput tag test7
 textInput toReference transaction lock 07
 button save
 find textH1 View Lock
@@ -251,7 +251,7 @@ textInput due date
 select2Input toAccountStr PART08
 select2Input instrumentStr INST08
 textInput quantity 250
-textInput tag test 8
+textInput tag test8
 textInput toReference transaction lock 08
 button save
 find textH1 View Lock
@@ -285,7 +285,7 @@ textInput due date
 select2Input toAccountStr PART09
 select2Input instrumentStr INST09
 textInput quantity 250
-textInput tag test 9
+textInput tag test9
 textInput toReference transaction lock 09
 button save
 find textH1 View Lock
@@ -319,7 +319,7 @@ textInput due date
 select2Input toAccountStr PART10-2
 select2Input instrumentStr INST10
 textInput quantity 250
-textInput tag test 10
+textInput tag test10
 textInput toReference transaction lock 10
 button save
 find textH1 View Lock

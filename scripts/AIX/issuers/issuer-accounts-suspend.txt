@@ -22,7 +22,7 @@ sleep 4
 button suspend
 sleep 4
 clickby text Delete
-find textH1 View Account
+find textH1 View Issuer
 expect pass
 logout
 
@@ -78,7 +78,7 @@ sleep 4
 button suspend
 sleep 4
 clickby text Delete
-find textH1 View Account
+find textH1 View Issuer
 expect pass
 logout
 

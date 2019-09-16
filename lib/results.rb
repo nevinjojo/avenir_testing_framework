@@ -4,6 +4,7 @@
 ######################################################################
 
 require 'logger'
+require 'fileutils'
 
 # Handles the test script result reporting feature of the framework.
 class Results
@@ -34,9 +35,14 @@ class Results
   # Creates a new directory within the results directory with a timestamp as name (if it already doesn't exist).
   # All results files will be stored in this new directory.
   def mkdir
-    dir = "test_results_#{Time.now.strftime('%Y-%m-%d_%H.%M.%S')}"
-    Dir.mkdir("#{@results_dir}/#{dir}") unless File.exists?("#{@results_dir}/#{dir}")
-    return dir
+    begin
+      dir = "test_results_#{Time.now.strftime('%Y-%m-%d_%H.%M.%S')}"
+      FileUtils.mkdir_p("#{@results_dir}/#{dir}")
+      # Dir.mkdir("#{@results_dir}/#{dir}")
+      return dir
+    rescue => ex
+      puts ex
+    end
   end
 
   # Sets the writer and logger objects to have a formatter that includes \n in the beginning of the line.

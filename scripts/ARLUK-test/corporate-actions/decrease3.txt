@@ -1,0 +1,432 @@
+test Decrease Test 1 - letters in number / date inputs
+description LC letters in announcement date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +2
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST01
+textInput announcement asdfghjkl
+textInput exDividend 15/01/2019
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Decrease
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Decrease
+expect pass
+logout
+
+test Decrease Test 2 - letters in number / date inputs
+description UC letters in announcement date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST02
+textInput announcement ASDFGHJKL
+textInput exDividend 15/01/2019
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST02
+search s_cacat Decrease
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST02
+button approve
+find textH1 View Decrease
+expect pass
+logout
+
+test Decrease Test 3 - letters in number / date inputs
+description MXD letters in announcement date input
+goto ARLUK_testing 
+login ARLUK_user1 ARLUK_pass1
+date +1 
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST03
+textInput announcement aSDFghjKl
+textInput exDividend 15/01/2019
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST03
+search s_cacat Decrease
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST03
+button approve
+find textH1 View Decrease
+expect pass
+logout
+
+test Decrease Test 4 - letters in number / date inputs
+description LC letters in ex date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST04
+textInput announcement date
+textInput exDividend asdfghjkl
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST04
+search s_cacat Decrease
+search s_stat Any
+button search 
+sleep 2
+tableClick Code INST04
+button approve
+find textH1 View Decrease
+expect pass
+logout
+
+test Decrease Test 5 - letters in number / date inputs
+description UC letters in ex date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST05
+textInput announcement date
+textInput exDividend ASDFGHJKL
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST05
+search s_cacat Decrease
+search s_stat Any
+button search 
+sleep 2
+tableClick Code INST05
+button approve
+find textH1 View Decrease
+expect pass
+logout
+
+test Decrease Test 6 - letters in number / date inputs
+description MXD letters in ex date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2 
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST06
+textInput announcement date
+textInput exDividend asDfGHjKL
+textInput record 20/09/2019
+textInput payment 25/09/2019
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST06
+search s_cacat Decrease
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST06
+button approve
+find textH1 View Decrease
+expect pass
+logout
+
+test Decrease Test 7 - letters in number / date inputs
+description LC letters in record date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST07
+textInput announcement date 
+textInput exDividend 15/01/2019
+textInput record asdfghjkl
+textInput payment 25/09/2019
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST07
+search s_cacat Decrease
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST07
+button approve
+find textH1 View Decrease
+expect pass
+logout
+
+test Decrease Test 8 - letters in number / date inputs
+description UC letters in record date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST08
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record ASDFGHJKL
+textInput payment 25/09/2019
+textInput description new CA test
+button save
+find textH1 View Decrease 
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST08
+search s_cacat Decrease
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST08
+button approve
+find textH1 View Decrease
+expect pass
+logout
+
+test Decrease Test 9 - letters in number / date inputs
+description MXD letters in record date input 
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST09
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record aSdFGhjKL
+textInput payment 25/09/2019
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST09 
+search s_cacat Decrease
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST09
+button approve
+find textH1 View Decrease
+expect pass
+logout
+
+test Decrease Test 10 - letters in number / date inputs
+description LC letters in payment date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST10
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 20/09/2019
+textInput payment asdfghjkl
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST10
+search s_cacat Decrease
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST10
+button approve
+find textH1 View Decrease
+expect pass
+logout
+
+test Decrease Test 11 - letters in number / date inputs
+description UC letters in payment date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST11
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 20/09/2019
+textInput payment ASDFGHJKL
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST11
+search s_cacat Decrease
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST11
+button approve
+find textH1 View Decrease
+expect pass
+logout
+
+test Decrease Test 12 - letters in number / date inputs
+description MXD letters in payment date input
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Decrease
+form admCA
+select2Input instrumentStr INST12
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 20/09/2019
+textInput payment asDFgHjKl
+textInput description new CA test
+button save
+find textH1 View Decrease
+button ready
+expect pass
+logout
+
+goto ARLUK_testing 
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST12
+search s_cacat Decrease
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST12
+button approve
+find textH1 View Decrease
+expect pass
+logout
+

@@ -21,7 +21,7 @@ logout
 
 goto AIX
 login P6_BRKR1_user P6_BRKR1_pass
-date + 2 
+date + 2 ignore-weekends
 menu positions
 form s
 textInput to date
