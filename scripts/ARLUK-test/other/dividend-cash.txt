@@ -1,12 +1,12 @@
-test New Partial Redemption Test 1
-description creating a new corporate action - Partial Redemption 1
+test Cash Dividend Test 1
+description creating a new CA - Cash Dividend 1
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
-date +1
+date +2
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
-clickby text Partial Redemption
+clickby text Cash Dividend
 form admCA
 select2Input instrumentStr INST01
 textInput announcement date
@@ -16,16 +16,7 @@ textInput payment 30/09/2019
 textInput agm date
 textInput description new CA test
 button save
-clickby class btn btn-primary btn-xs
-sleep 3
-form admCAOption
-menuInput benefitType Cash
-sleep 2
-select2Input currencyStr USD
-textInput cashRatio 10
-menuInput direction Credit
-button save
-find textH1 View Partial Redemption
+find textH1 View Cash Dividend
 button ready
 expect pass
 logout
@@ -34,25 +25,25 @@ goto ARLUK_testing
 login ARLUK_user2 ARLUK_pass2
 menu corporate actions
 search s_inst INST01
-search s_cacat Partial Redemption
+search s_cacat Cash Dividend
 search s_stat Any
 button search
 sleep 2
 tableClick Code INST01
 button approve
-find textH1 View Partial Redemption
+find textH1 View Cash Dividend
 expect pass
 logout
 
-test New Partial Redemption Test 2
-description creating a new corporate action - Partial Redemption 2 crest enabled
+test Cash Dividend Test 2
+description creating a new CA - Cash Dividend 2, crest enabled
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
-date +1
+date +2
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
-clickby text Partial Redemption
+clickby text Cash Dividend
 form admCA
 select2Input instrumentStr INST02
 textInput announcement date
@@ -61,19 +52,10 @@ textInput record 15/09/2019
 textInput payment 30/09/2019
 textInput agm date
 textInput description new CA test
-checkerInput srcType
+checkerInput srcType 
 menuInput srcChannel Avenir Receiving Agent (RA20)
 button save
-clickby class btn btn-primary btn-xs
-sleep 3
-form admCAOption
-menuInput benefitType Cash
-sleep 2
-select2Input currencyStr EUR
-textInput cashRatio 20
-menuInput direction Debit
-button save
-find textH1 View Partial Redemption
+find textH1 View Cash Dividend
 button ready
 expect pass
 logout
@@ -82,14 +64,12 @@ goto ARLUK_testing
 login ARLUK_user2 ARLUK_pass2
 menu corporate actions
 search s_inst INST02
-search s_cacat Partial Redemption
+search s_cacat Cash Dividend
 search s_stat Any
 button search
 sleep 2
 tableClick Code INST02
 button approve
-find textH1 View Partial Redemption
+find textH1 View Cash Dividend
 expect pass
 logout
-
-

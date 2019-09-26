@@ -1,14 +1,14 @@
-test Call Payment Test - Leaving Inputs Blank 1
-description creating a new CA - leaving instrument input blank
+test Call Payment Test 1 - benefit stock
+description creating a new CA - call payment 1, EA
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
-date +1
+date
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
 clickby text Call Payment
 form admCA
-select2Input instrumentStr
+select2Input instrumentStr INST01
 textInput announcement date
 textInput exDividend date
 textInput record 15/09/2019
@@ -17,16 +17,42 @@ textInput payment 30/09/2019
 textInput description new CA test
 checkerInput electionApproval
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST01
+textInput stockRatioHolding 10
+textInput stockRatioEntitlement 10
+menuInput direction Credit
+menuInput benefitStatus Enabled
+checkerInput defaultBenefit
+button save
 find textH1 View Call Payment
 button ready
 expect pass
 logout
 
-test Call Payment Test - Leaving Inputs Blank 2
-description creating a new CA - leaving ex date input blank
 goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST01
+search s_cacat Call Payment
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST01
+button approve
+find textH1 View Call Payment
+expect pass
+logout
+
+test Call Payment Test 2 - benefit stock
+description creating a new CA - call payment 2, crest, EA
+goto ARLUK_testing 
 login ARLUK_user1 ARLUK_pass1
-date +1
+date
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
@@ -34,23 +60,55 @@ clickby text Call Payment
 form admCA
 select2Input instrumentStr INST02
 textInput announcement date
-textInput exDividend
+textInput exDividend date
 textInput record 15/09/2019
 textInput acceptance 25/09/2019
 textInput payment 30/09/2019
 textInput description new CA test
 checkerInput electionApproval
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction AESN (ESA)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST02
+textInput stockRatioHolding 20
+textInput stockRatioEntitlement 20
+menuInput direction Debit
+menuInput benefitStatus Disabled, Elections Valid
+checkerInput defaultBenefit
+checkerInput escrowCheck
+textInput escrowShort CPTESTS2
+textInput escrowName Call Payment Test Stock 2
 button save
 find textH1 View Call Payment
 button ready
 expect pass
 logout
 
-test Call Payment Test - Leaving Inputs Blank 3
-description creating a new CA - leaving last acceptance date and time inputs blank
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST02
+search s_cacat Call Payment
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST02
+button approve
+find textH1 View Call Payment
+expect pass
+logout
+
+test Call Payment Test 3 - benefit stock
+description creating a new CA - call payment 3
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
-date +1
+date
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
@@ -60,44 +118,99 @@ select2Input instrumentStr INST03
 textInput announcement date
 textInput exDividend date
 textInput record 15/09/2019
-textInput acceptance
+textInput acceptance 25/09/2019
 textInput payment 30/09/2019
 textInput description new CA test
-checkerInput electionApproval
 button save
-find textH1 View Call Payment
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST03
+textInput stockRatioHolding 30
+textInput stockRatioEntitlement 30
+menuInput direction Credit
+menuInput benefitStatus Disabled, Elections Invalid
+button save
+find textH1 View Call PAyment
 button ready
 expect pass
 logout
 
-test Call Payment Test - Leaving Inputs Blank 4
-description creating a new CA - leaving announcement date input blank
-goto ARLUK_testing 
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST03
+search s_cacat Call Payment
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST03
+button approve
+find textH1 View Call Payment
+expect pass
+logout
+
+test Call Payment Test 4 - benefit stock
+description creating a new CA - call payment 4, crest
+goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
-date +1
+date
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
 clickby text Call Payment
 form admCA
 select2Input instrumentStr INST04
-textInput announcement
-textInput exDividend 01/01/2019
-textInput record date
-textInput payment 25/09/2019
+textInput announcement date
+textInput exDividend date
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
 textInput description new CA test
-checkerInput electionApproval
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction ACDN (MTM)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST04
+textInput stockRatioHolding 40
+textInput stockRatioEntitlement 40
+menuInput direction Debit
+menuInput benefitStatus Enabled
+checkerInput escrowCheck
+textInput escrowShort CPTESTS4
+textInput escrowName Call Payment Test Stock 4
 button save
 find textH1 View Call Payment
 button ready
 expect pass
 logout
 
-test Call Payment Test - Leaving Inputs Blank 5
-description creating a new CA - leaving record date input blank
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST04
+search s_cacat Call Payment
+search s_stat Any
+button search 
+sleep 2
+tableClick Code INST04
+button approve
+find textH1 View Call Payment
+expect pass
+logout
+
+test Call Payment Test 5 - benefit stock
+description creating a new CA - call payment 5, crest
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
-date +1
+date
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
@@ -106,115 +219,29 @@ form admCA
 select2Input instrumentStr INST05
 textInput announcement date
 textInput exDividend date
-textInput record
-textInput acceptance 25/09/2019
-textInput payment 30/09/2019
-textInput description new CA test
-checkerInput electionApproval
-button save
-find textH1 View Call Payment
-button ready
-expect pass
-logout
-
-test Call Payment Test - Leaving Inputs Blank 6
-description creating a new CA - leaving payment date input blank
-goto ARLUK_testing
-login ARLUK_user1 ARLUK_pass1
-date +1 
-menu corporate actions
-clickby class btn btn-primary dropdown-toggle
-sleep 2
-clickby text Call Payment
-form admCA
-select2Input instrumentStr INST06
-textInput announcement date
-textInput exDividend date
-textInput record 15/09/2019
-textInput acceptance 25/09/2019
-textInput payment
-textInput description new CA test
-checkerInput electionApproval
-button save
-find textH1 View Call Payment
-button ready
-expect pass
-logout
-
-test Call Payment Test - Leaving Inputs Blank 7
-description creating a new CA - leaving description input blank
-goto ARLUK_testing
-login ARLUK_user1 ARLUK_pass1
-date +1
-menu corporate actions
-clickby class btn btn-primary dropdown-toggle
-sleep 2
-clickby text Call Payment
-form admCA
-select2Input instrumentStr INST07
-textInput announcement date
-textInput exDividend date
-textInput record 15/09/2019
-textInput acceptance 25/09/2019
-textInput payment 30/09/2019
-textInput description
-checkerInput electionApproval
-button save
-find textH1 View Call Payment
-button ready
-expect pass
-logout
-
-test Call Payment Test - Leaving Inputs Blank 8
-description creating a new CA - leaving receiving agent input blank
-goto ARLUK_testing
-login ARLUK_user1 ARLUK_pass1
-date +1
-menu corporate actions
-clickby class btn btn-primary dropdown-toggle
-sleep 2
-clickby text Call Payment
-form admCA 
-select2Input instrumentStr INST08
-textInput announcement date
-textInput exDividend date
 textInput record 15/09/2019
 textInput acceptance 25/09/2019
 textInput payment 30/09/2019
 textInput description new CA test
-checkerInput electionApproval
 checkerInput srcType
-menuInput srcChannel 
-menuInput electionTransaction AESN (ESA)
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction AFEN (TTE)
 button save
 find textH1 View Call Payment
 button ready
 expect pass
 logout
 
-test Call Payment Test - Leaving Inputs Blank 9
-description creating a new CA - leaving all inputs blank
 goto ARLUK_testing
-login ARLUK_user1 ARLUK_pass1
-date +1
+login ARLUK_user2 ARLUK_pass2
 menu corporate actions
-clickby class btn btn-primary dropdown-toggle
+search s_inst INST05
+search s_cacat Call Payment
+search s_stat Any
+button search
 sleep 2
-clickby text Call Payment
-form admCA
-select2Input instrumentStr 
-textInput announcement
-textInput exDividend
-textInput record 
-textInput acceptance
-textInput payment 
-textInput description
-checkerInput electionApproval
-checkerInput srcType
-menuInput srcChannel
-menuInput electionTransaction
-button save
+tableClick Code INST05
+button approve
 find textH1 View Call Payment
-button ready
 expect pass
 logout

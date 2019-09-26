@@ -9,8 +9,8 @@ checkerInput setting
 select2Input sellAccountStr PART01
 select2Input buyAccountStr PART02
 select2Input instrumentStr INST01
-textInput quantity 120
-textInput price 500
+textInput quantity 12
+textInput price 50
 button save
 sleep 2
 find textH1 View Trade
@@ -30,8 +30,8 @@ checkerInput setting
 select2Input sellAccountStr PART03
 select2Input buyAccountStr PART04
 select2Input instrumentStr INST02
-textInput quantity 1000
-textInput price 150
+textInput quantity 100
+textInput price 15
 button save
 sleep 2
 find textH1 View Trade
@@ -51,8 +51,8 @@ checkerInput setting
 select2Input sellAccountStr PART05
 select2Input buyAccountStr PART06
 select2Input instrumentStr INST03
-textInput quantity 450
-textInput price 1000
+textInput quantity 45
+textInput price 100
 button save
 sleep 2
 find textH1 View Trade
@@ -72,8 +72,8 @@ checkerInput setting
 select2Input sellAccountStr PART07
 select2Input buyAccountStr PART08
 select2Input instrumentStr INST04
-textInput quantity 1000
-textInput price 2000
+textInput quantity 100
+textInput price 200
 button save
 sleep 2
 find textH1 View Trade
@@ -93,8 +93,8 @@ checkerInput setting
 select2Input sellAccountStr PART09
 select2Input buyAccountStr PART10
 select2Input instrumentStr INST05
-textInput quantity 1500
-textInput price 2000
+textInput quantity 150
+textInput price 200
 button save
 sleep 2
 find textH1 View Trade

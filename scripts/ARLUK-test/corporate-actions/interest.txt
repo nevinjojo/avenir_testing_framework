@@ -1,8 +1,8 @@
-test Interest Test 1
+test Interest Test 1 - benefit, gross
 description creating a new CA - Interest 1
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
-date +2
+date
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
@@ -15,6 +15,18 @@ textInput record 15/09/2019
 textInput payment 30/09/2019
 textInput agm date
 textInput description new CA test
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr USD
+textInput cashRatio 10
+select2Input defaultCurrStr USD
+textInput taxRate 5.0
+checkerInput gross_0
+menuInput direction Credit
 button save
 find textH1 View Interest
 button ready
@@ -35,11 +47,11 @@ find textH1 View Interest
 expect pass
 logout
 
-test Interest Test 2
+test Interest Test 2 - benefit, gross
 description creating a new CA - Interest 2, crest enabled
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
-date +2
+date
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
@@ -54,6 +66,18 @@ textInput agm date
 textInput description new CA test
 checkerInput srcType 
 menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr EUR
+textInput cashRatio 10
+select2Input defaultCurrStr GBP
+textInput taxRate 5.0
+checkerInput gross_0
+menuInput direction Debit
 button save
 find textH1 View Interest
 button ready

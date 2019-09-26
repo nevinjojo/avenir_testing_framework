@@ -11,11 +11,22 @@ form admCA
 select2Input instrumentStr INST03
 textInput announcement date
 textInput exDividend date
-textInput record 15/09/2019
-textInput acceptance 25/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput agm date
 textInput description new CA test
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr USD
+textInput cashRatio 10
+menuInput direction Credit
+menuInput benefitStatus Enabled
+checkerInput defaultBenefit
 button save
 find textH1 View Subscription
 button ready
@@ -49,13 +60,27 @@ form admCA
 select2Input instrumentStr INST04
 textInput announcement date
 textInput exDividend date
-textInput record 15/09/2019
-textInput acceptance 25/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput agm date
 textInput description new CA test
 checkerInput srcType 
 menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr EUR
+textInput cashRatio 10
+menuInput direction Debit
+menuInput benefitStatus Disabled, Elections Valid
+checkerInput defaultBenefit
+checkerInput escrowCheck
+textInput escrowShort SBTEST2
+textInput escrowName Subscription Test 02
 button save
 find textH1 View Subscription
 button ready
@@ -89,11 +114,21 @@ form admCA
 select2Input instrumentStr INST06
 textInput announcement date
 textInput exDividend date
-textInput record 15/09/2019
-textInput acceptance 25/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput agm date
 textInput description new CA test
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr GBP
+textInput cashRatio 30
+menuInput direction Credit
+menuInput benefitStatus Disabled, Elections Invalid
 button save
 find textH1 View Subscription
 button ready
@@ -127,13 +162,26 @@ form admCA
 select2Input instrumentStr INST09
 textInput announcement date
 textInput exDividend date
-textInput record 15/09/2019
-textInput acceptance 25/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput agm date
 textInput description new CA test
 checkerInput srcType 
 menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr GBP
+textInput cashRatio 10
+menuInput direction Debit
+menuInput benefitStatus Enabled
+checkerInput escrowCheck
+textInput escrowShort SBTEST4
+textInput escrowName Subscription Test 04
 button save
 find textH1 View Subscription
 button ready

@@ -134,6 +134,8 @@ $ ./run -p scripts/testFile.txt
 | `findAndScreenshot` | `n/a` | Finds element looking for and screenshot it. **Note:** This command is configured specific to the 'screenshot' project |
 | `window` | `window 2` or `window new` | Creates a new browser window or change window to the other open browser window/tab |
 | `tableClick` | `tableClick Investor saveID` | Clicks on an element in a particular column based on column name and row value |
+| `set` | `set varName varValue` | Sets a value to a new/existing instance variable |
+| `get` | `get varName` | Gets the value of an instance variable, or record failure |
 
 **NB1:** There are more options for each command that has not been specified in the table above. You can find them by reading the documentation for the framework in `lib/commands.rb`.
 

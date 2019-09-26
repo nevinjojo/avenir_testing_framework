@@ -47,7 +47,7 @@ textInput due date
 select2Input toAccountStr PART03-1
 select2Input instrumentStr GBP
 sleep 3
-textInput amount 23,105,724
+textInput amount 230,550
 textInput toReference currency transaciton 02
 button save
 find textH1 View Create
@@ -83,7 +83,7 @@ textInput due date
 select2Input toAccountStr PART05-1
 select2Input instrumentStr GBP
 sleep 3
-textInput amount 693,960,000
+textInput amount 6,939,000
 textInput toReference currency transaction 03
 button save
 find textH1 View Create
@@ -119,7 +119,7 @@ textInput due date
 select2Input toAccountStr PART07-1
 select2Input instrumentStr GBP
 sleep 3
-textInput amount 15,159,765
+textInput amount 151,413
 textInput toReference currency transaction 04
 button save
 find textH1 View Create

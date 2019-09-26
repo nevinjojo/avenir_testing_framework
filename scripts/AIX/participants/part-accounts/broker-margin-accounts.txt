@@ -1,0 +1,721 @@
+test Creating PART01-A
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART01
+button search
+tableClick short PART01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTA
+textInput name PART01-A
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART01-A2
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART01
+button search
+tableClick short PART01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTA2
+textInput name PART01-A2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART01-A3
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART01
+button search
+tableClick short PART01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTA3
+textInput name PART01-A3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART02-B
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART02
+button search
+tableClick short PART02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTB
+textInput name PART02-B
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART02-B2
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART02
+button search
+tableClick short PART02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTB2
+textInput name PART02-B2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART02-B3
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART02
+button search
+tableClick short PART02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTB3
+textInput name PART02-B3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART03-C
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART03
+button search
+tableClick short PART03
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTC
+textInput name PART03-C
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART03-C2
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART03
+button search
+tableClick short PART03
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTC2
+textInput name PART03-C2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART03-C3
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART03
+button search
+tableClick short PART03
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTC3
+textInput name PART03-C3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART04-D
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART04
+button search
+tableClick short PART04
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTD
+textInput name PART04-D
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART04-D2
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART04
+button search
+tableClick short PART04
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTD2
+textInput name PART04-D2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART04-D3
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART04
+button search
+tableClick short PART04
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTD3
+textInput name PART04-D3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART05-E
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART05
+button search
+tableClick short PART05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTE
+textInput name PART05-E
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART05-E2
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART05
+button search
+tableClick short PART05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTE2
+textInput name PART05-E2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART05-E3
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART05
+button search
+tableClick short PART05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTE3
+textInput name PART05-E3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART06-F
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART06
+button search
+tableClick short PART06
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTF
+textInput name PART06-F
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART06-F2
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART06
+button search
+tableClick short PART06
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTF2
+textInput name PART06-F2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART06-F3
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART06
+button search
+tableClick short PART06
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTF3
+textInput name PART06-F3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART07-G
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART07
+button search
+tableClick short PART07
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTG
+textInput name PART07-G
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART07-G2
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART07
+button search
+tableClick short PART07
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTG2
+textInput name PART07-G2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART07-G3
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART07
+button search
+tableClick short PART07
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTG3
+textInput name PART07-G3
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART08-H
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART08
+button search
+tableClick short PART08
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTH
+textInput name PART08-H
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART08-H2
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART08
+button search
+tableClick short PART08
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTH2
+textInput name PART08-H2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART08-H3
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART08
+button search
+tableClick short PART08
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTH3
+textInput name PART08-H3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART09-I
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART09
+button search
+tableClick short PART09
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTI
+textInput name PART09-I
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART09-I2
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART09
+button search
+tableClick short PART09
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTI2
+textInput name PART09-I2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART09-I3
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART09
+button search
+tableClick short PART09
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTI3
+textInput name PART09-I3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART10-J
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART10
+button search
+tableClick short PART10
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTJ
+textInput name PART10-J
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART10-J2
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART10
+button search
+tableClick short PART10
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTJ2
+textInput name PART10-J2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating PART10-J3
+description New Broker Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part PART10
+button search
+tableClick short PART10
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short PARTJ3
+textInput name PART10-J3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+

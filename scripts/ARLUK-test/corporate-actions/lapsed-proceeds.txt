@@ -1,8 +1,8 @@
-test Lapsed Proceeds Test 1
+test Lapsed Proceeds Test 1 - benefit cash
 description creating a new CA - Lapsed Proceeds 1
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
-date +2
+date
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
@@ -14,7 +14,15 @@ textInput record 15/09/2019
 textInput payment 30/09/2019
 textInput description new CA test
 button save
-sleep 11
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr USD
+textInput cashRatio 10
+menuInput direction Credit
+button save
 find textH1 View Lapsed Proceeds
 button ready
 expect pass
@@ -34,7 +42,7 @@ find textH1 View Lapsed Proceeds
 expect pass
 logout
 
-test Lapsed Proceeds Test 2
+test Lapsed Proceeds Test 2 - benefit cash
 description creating a new CA - Lapsed Proceeds 2, crest enabled
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
@@ -49,8 +57,17 @@ textInput announcement date
 textInput record 15/09/2019
 textInput payment 30/09/2019
 textInput description new CA test
-checkerInput srcType 
+checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr EUR
+textInput cashRatio 20
+menuInput direction Debit
 button save
 find textH1 View Lapsed Proceeds
 button ready
@@ -70,5 +87,3 @@ button approve
 find textH1 View Lapsed Proceeds
 expect pass
 logout
-
-

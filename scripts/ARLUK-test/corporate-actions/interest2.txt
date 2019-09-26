@@ -1,32 +1,34 @@
-test Rights Issue Test 1
-description creating a new CA - Rights Issue 1
+test Interest Test 1 - benefit, net
+description creating a new CA - Interest 1
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
-date +1
+date
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
-clickby text Rights Issue
+clickby text Interest
 form admCA
-select2Input instrumentStr INST03
+select2Input instrumentStr INST01
 textInput announcement date
 textInput exDividend 15/01/2019
-textInput record 20/09/2019
-textInput payment 25/09/2019
+textInput record 15/09/2019
+textInput payment 30/09/2019
 textInput agm date
 textInput description new CA test
 button save
 clickby class btn btn-primary btn-xs
 sleep 3
 form admCAOption
-menuInput benefitType Stock
+menuInput benefitType Cash
 sleep 2
-select2Input instrumentStr INST03
-textInput stockRatioHolding 10
-textInput stockRatioEntitlement 10
-menuInput direction Credit
+select2Input currencyStr EUR
+textInput cashRatio 10
+select2Input defaultCurrStr EUR
+textInput taxRate 3.5
+checkerInput gross_1
+menuInput direction Debit
 button save
-find textH1 View Rights Issue
+find textH1 View Interest
 button ready
 expect pass
 logout
@@ -34,48 +36,50 @@ logout
 goto ARLUK_testing
 login ARLUK_user2 ARLUK_pass2
 menu corporate actions
-search s_inst INST03
-search s_cacat Rights Issue
+search s_inst INST01
+search s_cacat Interest
 search s_stat Any
 button search
 sleep 2
-tableClick Code INST03
+tableClick Code INST01
 button approve
-find textH1 View Rights Issue
+find textH1 View Interest
 expect pass
 logout
 
-test Rights Issue Test 2
-description creating a new CA - Rights Issue 2, crest enabled
+test Interest Test 2 - benefit net
+description creating a new CA - Interest 2
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
-date +1
+date
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
-clickby text Rights Issue
+clickby text Interest
 form admCA
-select2Input instrumentStr INST04
+select2Input instrumentStr INST02
 textInput announcement date
 textInput exDividend 15/01/2019
-textInput record 20/09/2019
-textInput payment 25/09/2019
+textInput record 15/09/2019
+textInput payment 30/09/2019
 textInput agm date
 textInput description new CA test
-checkerInput srcType 
+checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
 button save
 clickby class btn btn-primary btn-xs
 sleep 3
 form admCAOption
-menuInput benefitType Stock
+menuInput benefitType Cash
 sleep 2
-select2Input instrumentStr INST04
-textInput stockRatioHolding 20
-textInput stockRatioEntitlement 20
-menuInput direction Debit
+select2Input currencyStr GBP
+textInput cashRatio 10
+select2Input defaultCurrStr USD
+textInput taxRate 20
+checkerInput gross_1
+menuInput direction Credit
 button save
-find textH1 View Rights Issue
+find textH1 View Interest
 button ready
 expect pass
 logout
@@ -83,14 +87,14 @@ logout
 goto ARLUK_testing
 login ARLUK_user2 ARLUK_pass2
 menu corporate actions
-search s_inst INST04
-search s_cacat Rights Issue
+search s_inst INST02
+search s_cacat Interest
 search s_stat Any
 button search
 sleep 2
-tableClick Code INST04
+tableClick Code INST02
 button approve
-find textH1 View Rights Issue
+find textH1 View Interest
 expect pass
 logout
 

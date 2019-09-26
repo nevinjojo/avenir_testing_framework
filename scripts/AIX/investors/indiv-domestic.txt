@@ -6,10 +6,14 @@ menu Investors
 clickby id btn-new
 clickby id lnk-ind-dom
 form admOrg
+textInput title Mr
 textInput name Domestic
 textInput last Individual One
 textInput address1 3 Market Lane
 textInput address2 Wellington
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 BizDojo
 textInput postcode 5028
 textInput phone 04 0800 838383
 textInput mobile 0225668589
@@ -48,10 +52,14 @@ menu Investors
 clickby id btn-new
 clickby id lnk-ind-dom
 form admOrg
+textInput title Mrs
 textInput name Domestic
 textInput last Individual Two
 textInput address1 143 Featherston St
 textInput address2 Wellington
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 BizDojo
 textInput postcode 6011
 textInput phone 04 0800 838383
 textInput mobile 0225668589

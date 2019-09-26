@@ -16,6 +16,16 @@ textInput payment 30/09/2019
 textInput agm date
 textInput description new CA test
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST01
+textInput stockRatioHolding 10
+textInput stockRatioEntitlement 10
+menuInput direction Credit 
+button save
 find textH1 View Open Offer
 button ready
 expect pass
@@ -53,6 +63,16 @@ textInput payment 30/09/2019
 textInput agm date
 textInput description new CA test
 checkerInput electionApproval
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST02
+textInput stockRatioHolding 10
+textInput stockRatioEntitlement 10
+menuInput direction Debit
 button save
 find textH1 View Open Offer
 button ready
@@ -94,6 +114,16 @@ checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
 menuInput electionTransaction AESN (ESA)
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST03
+textInput stockRatioHolding 10
+textInput stockRatioEntitlement 10
+menuInput direction Credit
+button save
 find textH1 View Open Offer
 button ready
 expect pass
@@ -133,6 +163,16 @@ textInput description new CA test
 checkerInput srcType 
 menuInput srcChannel Avenir Receiving Agent (RA20)
 menuInput electionTransaction ACDN (MTM)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST04
+textInput stockRatioHolding 10
+textInput stockRatioEntitlement 10
+menuInput direction Debit
 button save
 find textH1 View Open Offer
 button ready
@@ -175,6 +215,16 @@ checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
 menuInput electionTransaction AFEN (TTE)
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST05
+textInput stockRatioHolding 10
+textInput stockRatioEntitlement 10
+menuInput direction Credit
+button save
 find textH1 View Open Offer
 button ready
 expect pass
@@ -215,6 +265,16 @@ checkerInput electionApproval
 checkerInput srcType 
 menuInput srcChannel Avenir Receiving Agent (RA20)
 menuInput electionTransaction AUSN (USE)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST06
+textInput stockRatioHolding 10
+textInput stockRatioEntitlement 10
+menuInput direction Debit
 button save
 find textH1 View Open Offer
 button ready

@@ -76,8 +76,8 @@ textInput tradeId XXX TRADE 04
 select2Input sellAccountStr PART07
 select2Input buyAccountStr PART08
 select2Input instrumentStr INST14
-textInput quantity 1000
-textInput price 2000
+textInput quantity 100
+textInput price 200
 button save
 sleep 2
 find textH1 View Trade
@@ -98,8 +98,8 @@ textInput tradeId XXX TRADE 05
 select2Input sellAccountStr PART09
 select2Input buyAccountStr PART10
 select2Input instrumentStr INST15
-textInput quantity 1500
-textInput price 2000
+textInput quantity 150
+textInput price 200
 button save
 sleep 2
 find textH1 View Trade

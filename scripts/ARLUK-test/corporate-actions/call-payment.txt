@@ -1,8 +1,8 @@
-test Call Payment Test 1
+test Call Payment Test 1 - benefit cash
 description creating a new CA - call payment 1,EA
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
-date +3
+date
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
@@ -16,6 +16,17 @@ textInput acceptance 25/09/2019
 textInput payment 30/09/2019
 textInput description new CA test
 checkerInput electionApproval
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr USD
+textInput cashRatio 10
+menuInput direction Credit
+menuInput benefitStatus Enabled
+checkerInput defaultBenefit
 button save
 find textH1 View Call Payment
 button ready
@@ -36,11 +47,11 @@ find textH1 View Call Payment
 expect pass
 logout
 
-test Call Payment Test 2
+test Call Payment Test 2 - benefit cash
 description creating a new CA - call payment 2, crest enabled, EA
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
-date +1
+date
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
@@ -57,6 +68,20 @@ checkerInput electionApproval
 checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
 menuInput electionTransaction AESN (ESA)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr EUR
+textInput cashRatio 10
+menuInput direction Debit
+menuInput benefitStatus Disabled, Elections Valid
+checkerInput defaultBenefit
+checkerInput escrowCheck
+textInput escrowShort CPTEST2
+textInput escrowName Call Payment Test 02
 button save
 find textH1 View Call Payment
 button ready
@@ -77,11 +102,11 @@ find textH1 View Call Payment
 expect pass
 logout
 
-test Call Payment Test 3
+test Call Payment Test 3 - benefit cash
 description creating a new CA - call payment 3
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
-date +1
+date
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
@@ -94,6 +119,16 @@ textInput record 15/09/2019
 textInput acceptance 25/09/2019
 textInput payment 30/09/2019
 textInput description new CA test
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr GBP
+textInput cashRatio 10
+menuInput direction Credit
+menuInput benefitStatus Disabled, Elections Invalid
 button save
 find textH1 View Call Payment
 button ready
@@ -114,11 +149,11 @@ find textH1 View Call Payment
 expect pass
 logout
 
-test Call Payment Test 4
+test Call Payment Test 4 - benefit cash
 description creating a new CA - call payment 4, crest enabled
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
-date +1
+date
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
@@ -134,6 +169,19 @@ textInput description new CA test
 checkerInput srcType 
 menuInput srcChannel Avenir Receiving Agent (RA20)
 menuInput electionTransaction ACDN (MTM)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr USD
+textInput cashRatio 10
+menuInput direction Debit
+menuInput benefitStatus Enabled
+checkerInput escrowCheck
+textInput escrowShort CPTEST4
+textInput escrowName Call Payment Test 04
 button save
 find textH1 View Call Payment
 button ready
@@ -154,11 +202,11 @@ find textH1 View Call Payment
 expect pass
 logout
 
-test Call Payment Test 5
+test Call Payment Test 5 - benefit cash
 description creating a new CA - call payment 5, crest enabled
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
-date +1
+date
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
@@ -174,6 +222,19 @@ textInput description new CA test
 checkerInput srcType 
 menuInput srcChannel Avenir Receiving Agent (RA20)
 menuInput electionTransaction AFEN (TTE)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr EUR
+textInput cashRatio 10
+menuInput direction Credit
+menuInput benefitStatus Disabled, Elections Valid
+checkerInput escrowCheck
+textInput escrowShort CPTEST5
+textInput escrowName Call Payment Test 05
 button save
 find textH1 View Call Payment
 button ready

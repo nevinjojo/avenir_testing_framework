@@ -119,7 +119,7 @@ textInput due date
 select2Input toAccountStr PART08-1
 select2Input instrumentStr EUR
 sleep 3
-textInput amount 2,000,000
+textInput amount 20,000
 textInput toReference currency transaction 04
 button save
 find textH1 View Create
@@ -155,7 +155,7 @@ textInput due date
 select2Input toAccountStr PART10-1
 select2Input instrumentStr EUR
 sleep 3
-textInput amount 3,000,000
+textInput amount 30,000
 textInput toReference currency transaction 05
 button save
 find textH1 View Create

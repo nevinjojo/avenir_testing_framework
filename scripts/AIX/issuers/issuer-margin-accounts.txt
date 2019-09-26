@@ -1,0 +1,743 @@
+test Creating ISS01-A
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS01
+button search
+tableClick name ISS01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short A
+textInput name Issuer Account A
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS01-A2
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS01
+button search
+tableClick name ISS01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short A2
+textInput name Issuer Account A2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS01-A3
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS01
+button search
+tableClick name ISS01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short A3
+textInput name Issuer Account A3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS02-B
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS02
+button search
+tableClick name ISS02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short B
+textInput name Issuer Account B
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating ISS02-B2
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS02
+button search
+tableClick name ISS02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short B2
+textInput name Issuer Account B2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating ISS02-B3
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS02
+button search
+tableClick name ISS02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short B3
+textInput name Issuer Account B3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating ISS03-C
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS03
+button search
+tableClick name ISS03
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short C
+textInput name Issuer Account C
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS03-C2
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS03
+button search
+tableClick name ISS03
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short C2
+textInput name Issuer Account C2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS03-C3
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS03
+button search
+tableClick name ISS03
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short C3
+textInput name Issuer Account C3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS04-D
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS04
+button search
+tableClick name ISS04
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short D
+textInput name Issuer Account D
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS04-D2
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS04
+button search
+tableClick name ISS04
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short D2
+textInput name Issuer Account D2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS04-D3
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS04
+button search
+tableClick name ISS04
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short D3
+textInput name Issuer Account D3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Create ISS05-E
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS05
+button search
+tableClick name ISS05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short E
+textInput name Issuer Account E
+menuInput currency EUR
+button save
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Create ISS05-E2
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS05
+button search
+tableClick name ISS05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short E2
+textInput name Issuer Account E2
+menuInput currency USD
+button save
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Create ISS05-E3
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS05
+button search
+tableClick name ISS05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short E3
+textInput name Issuer Account E3
+menuInput currency GBP
+button save
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS06-F
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS06
+button search
+tableClick name ISS06
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short F
+textInput name Issuer Account F
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS06-F2
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS06
+button search
+tableClick name ISS06
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short F2
+textInput name Issuer Account F2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS06-F3
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS06
+button search
+tableClick name ISS06
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short F3
+textInput name Issuer Account F3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS07-G
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS07
+button search
+tableClick name ISS07
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short G
+textInput name Issuer Account G
+menuInput currency Eur
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS07-G2
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS07
+button search
+tableClick name ISS07
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short G2
+textInput name Issuer Account G2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS07-G3
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS07
+button search
+tableClick name ISS07
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short G3
+textInput name Issuer Account G3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS08-H
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS08
+button search
+tableClick name ISS08
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short H
+textInput name Issuer Account H
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS08-H2
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS08
+button search
+tableClick name ISS08
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short H2
+textInput name Issuer Account H2
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS8-H3
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS08
+button search
+tableClick name ISS08
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short H3
+textInput name Issuer Account H3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS09-I
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS09
+button search 
+tableClick name ISS09
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short I
+textInput name Issuer Account I
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS09-I2
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS09
+button search
+tableClick name ISS09
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short I2
+textInput name Issuer Account I2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS09-I3
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS09
+button search
+tableClick name ISS09
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short I3
+textInput name Issuer Account I3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS10-J
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS10
+button search
+tableClick name ISS10
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short J
+textInput name Issuer Account J
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS10-J2
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS10
+button search
+tableClick name ISS10
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short J2
+textInput name Issuer Account J2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout
+
+test Creating ISS10-J3
+description New Issuer Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part ISS10
+button search
+tableClick name ISS10
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short J3
+textInput name Issuer Account J3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+sleep 2
+expect pass
+logout

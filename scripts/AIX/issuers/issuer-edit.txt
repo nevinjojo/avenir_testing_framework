@@ -1,0 +1,194 @@
+test Create + Edit Issuer
+description testing edit issuer button
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name EDISS01
+textInput short EDISS01
+textInput lei HZSN7FQBPO5IEWYIGC72
+textInput registration 18472638402748270
+textInput address1 3 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+sleep 2
+button edit
+form admOrg
+textInput name EDISS1
+textInput short EDISS1
+menuInput country United Kingdom
+button save
+find textH1 Manage Issuers
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part EDISS1
+button search
+sleep 3
+tableClick name EDISS1
+find textH1 View Issuer
+button edit
+form admOrg
+textInput name EDITEST1
+textInput short EDITEST1
+menuInput country United States
+button save
+sleep 4
+search s_part EDITEST1
+button search
+sleep 3
+tableClick name EDITEST1
+sleep 4
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part EDITEST1
+button search 
+tableClick name EDITEST1
+find textH1 View Issuer
+button approve
+expect pass
+logout
+
+test Create + Edit Issuer 2
+description testing edit issuer button 2
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new
+form admOrg
+textInput name EDISS02
+textInput short EDISS02
+textInput lei HZSN7FQBPO5IEWYIGC72
+textInput registration 18472638402748270
+textInput address1 3 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+sleep 2
+button edit
+form admOrg
+textInput name EDISS2
+textInput short EDISS2
+menuInput country United States
+button save
+find textH1 Manage Issuers
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part EDISS2
+button search
+sleep 3
+tableClick name EDISS2
+find textH1 View Issuer
+button edit
+form admOrg
+textInput name EDITEST2
+textInput short EDITEST2
+menuInput country New Zealand
+button save
+sleep 4
+search s_part EDITEST2
+button search
+sleep 2
+tableClick name EDITEST2
+sleep 4
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part EDITEST2
+button search
+tableClick name EDITEST2
+find textH1 View Issuer
+button approve
+expect pass
+logout
+
+test Create + Edit Issuer 3
+description testing edit issuer button
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+button new 
+form admOrg
+textInput name EDISS03
+textInput short EDISS03
+textInput lei HZSN7FQBPO5IEWYIGC00
+textInput registration 18472638402748278
+textInput address1 17 Tory Street
+textInput address2 Bizdojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+button save
+sleep 2
+button edit
+form admOrg
+textInput name EDISS3
+textInput short EDISS3
+menuInput country United Kingdom
+button save
+find textH1 Manage Issuers
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu issuers
+search s_part EDISS3
+button search
+sleep 3
+tableClick name EDISS3
+find textH1 View Issuer
+button edit
+form admOrg
+textInput name EDITEST3
+textInput short EDITEST3
+menuInput country New Zealand
+button save
+sleep 4
+search s_part EDITEST3
+button search
+sleep 3
+tableClick name EDITEST3
+sleep 4
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user1 aix_pass1
+menu issuers
+search s_part EDITEST3
+button search
+tableClick name EDITEST3
+find textH1 View Issuer
+button approve
+expect pass
+logout

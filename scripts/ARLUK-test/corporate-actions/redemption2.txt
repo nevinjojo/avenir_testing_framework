@@ -1,37 +1,35 @@
-test Scheme of Arrangement Test 1 - benefit cash
-description creating a new CA - Scheme of Arrangement 1, EA
+test Redemption Test 1 - benefit stock
+description creating a new CA - Redemption 1, EA
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
-date +1
+date +1 
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
-clickby text Scheme of Arrangement
+clickby text Redemption 2
 form admCA
 select2Input instrumentStr INST01
 menuInput caType Mandatory
-textInput announcement date 
-textInput exDividend date
-textInput record 15/11/2019
-textInput acceptance 25/11/2019
-textInput payment 30/11/2019
-textInput cashPayment 30/11/2019
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
 textInput agm date
-textInput schemeEffective 30/11/2019
 textInput description new CA test
 checkerInput electionApproval
-checkerInput fractional
 button save
 clickby class btn btn-primary btn-xs
 sleep 3
 form admCAOption
-menuInput benefitType Cash
+menuInput benefitType Stock
 sleep 2
-select2Input currencyStr USD
-textInput cashRatio 10
+select2Input instrumentStr INST01
+textInput stockRatioHolding 10
+textInput stockRatioEntitlement 10
 menuInput direction Credit
 button save
-find textH1 View Scheme of Arrangement
+find textH1 View Redemption
 button ready
 expect pass
 logout
@@ -40,246 +38,34 @@ goto ARLUK_testing
 login ARLUK_user2 ARLUK_pass2
 menu corporate actions
 search s_inst INST01
-search s_cacat Scheme of Arrangement
+search s_cacat Redemption
 search s_stat Any
 button search
 sleep 2
 tableClick Code INST01
 button approve
-find textH1 View Scheme of Arrangement
+find textH1 View Redemption
 expect pass
 logout
 
-test Scheme of Arrangement Test 2 - benefit cash
-description creating a new CA - Scheme of Arrangement 2, crest enabled, EA
+test Redemption Test 2 - benefit stock
+description creating a new CA - Redemption 2, crest enabled, EA
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
 date +1
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
-clickby text Scheme of Arrangement
+clickby text Redemption 2
 form admCA
 select2Input instrumentStr INST02
 menuInput caType Mandatory
-textInput announcement date 
-textInput exDividend date
-textInput record 15/11/2019
-textInput acceptance 25/11/2019
-textInput payment 30/11/2019
-textInput cashPayment 30/11/2019
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
 textInput agm date
-textInput schemeEffective 30/11/2019
-textInput description new CA test
-checkerInput electionApproval
-checkerInput srcType
-menuInput srcChannel Avenir Receiving Agent (RA20)
-menuInput electionTransaction AESN (ESA)
-button save
-clickby class btn btn-primary btn-xs
-sleep 3
-form admCAOption
-menuInput benefitType Cash
-sleep 2
-select2Input currencyStr GBP
-textInput cashRatio 20
-menuInput direction Debit
-button save
-find textH1 View Scheme of Arrangement
-button ready
-expect pass
-logout
-
-goto ARLUK_testing
-login ARLUK_user2 ARLUK_pass2
-menu corporate actions
-search s_inst INST02
-search s_cacat Scheme of Arrangement
-search s_stat Any
-button search
-sleep 2
-tableClick Code INST02
-button approve
-find textH1 View Scheme of Arrangement
-expect pass
-logout
-
-test Scheme of Arrangement Test 3 - benefit cash
-description creating a new CA - Scheme of Arrangement 3
-goto ARLUK_testing
-login ARLUK_user1 ARLUK_pass1
-date +1
-menu corporate actions
-clickby class btn btn-primary dropdown-toggle
-sleep 2
-clickby text Scheme of Arrangement
-form admCA
-select2Input instrumentStr INST03
-menuInput caType Mandatory
-textInput announcement date 
-textInput exDividend date
-textInput record 15/11/2019
-textInput acceptance 25/11/2019
-textInput payment 30/11/2019
-textInput cashPayment 30/11/2019
-textInput agm date
-textInput schemeEffective 30/11/2019
-textInput description new CA test
-button save
-clickby class btn btn-primary btn-xs
-sleep 3
-form admCAOption
-menuInput benefitType Cash
-sleep 2
-select2Input currencyStr EUR
-textInput cashRatio 30
-menuInput direction Credit
-button save
-find textH1 View Scheme of Arrangement
-button ready
-expect pass
-logout
-
-goto ARLUK_testing
-login ARLUK_user2 ARLUK_pass2
-menu corporate actions
-search s_inst INST03
-search s_cacat Scheme of Arrangement
-search s_stat Any
-button search
-sleep 2
-tableClick Code INST03
-button approve
-find textH1 View Scheme of Arrangement
-expect pass
-logout
-
-test Scheme of Arrangement Test 4 - benefit cash
-description creating a new CA - Scheme of Arrangement 4, crest enabled
-goto ARLUK_testing
-login ARLUK_user1 ARLUK_pass1
-date +1
-menu corporate actions
-clickby class btn btn-primary dropdown-toggle
-sleep 2
-clickby text Scheme of Arrangement
-form admCA
-select2Input instrumentStr INST04
-menuInput caType Mandatory
-textInput announcement date 
-textInput exDividend date
-textInput record 15/11/2019
-textInput acceptance 25/11/2019
-textInput payment 30/11/2019
-textInput cashPayment 30/11/2019
-textInput agm date
-textInput schemeEffective 30/09/2019
-textInput description new CA test
-checkerInput fractional
-checkerInput srcType 
-menuInput srcChannel Avenir Receiving Agent (RA20)
-menuInput electionTransaction ACDN (MTM)
-button save
-clickby class btn btn-primary btn-xs
-sleep 3
-form admCAOption
-menuInput benefitType Cash
-sleep 2
-select2Input currencyStr USD
-textInput cashRatio 40
-menuInput direction Debit
-button save
-find textH1 View Scheme of Arrangement
-button ready
-expect pass
-logout
-
-goto ARLUK_testing
-login ARLUK_user2 ARLUK_pass2
-menu corporate actions
-search s_inst INST04
-search s_cacat Scheme of Arrangement
-search s_stat Any
-button search
-sleep 2
-tableClick Code INST04
-button approve
-find textH1 View Scheme of Arrangement
-expect pass
-logout
-
-test Scheme of Arrangement Test 5 - benefit cash
-description creating a new CA - Scheme of Arrangement 5, EA
-goto ARLUK_testing
-login ARLUK_user1 ARLUK_pass1
-date +1
-menu corporate actions
-clickby class btn btn-primary dropdown-toggle
-sleep 2
-clickby text Scheme of Arrangement
-form admCA
-select2Input instrumentStr INST05
-menuInput caType Voluntary
-textInput announcement date 
-textInput exDividend date
-textInput record 15/11/2019
-textInput acceptance 25/11/2019
-textInput payment 30/11/2019
-textInput cashPayment 30/11/2019
-textInput agm date
-textInput schemeEffective 30/09/2019
-textInput description new CA test
-checkerInput electionApproval
-checkerInput fractional
-button save
-clickby class btn btn-primary btn-xs
-sleep 3
-form admCAOption
-menuInput benefitType Cash
-sleep 2
-select2Input currencyStr GBP
-textInput cashRatio 50
-menuInput direction Credit
-button save
-find textH1 View Scheme of Arrangement
-button ready
-expect pass
-logout
-
-goto ARLUK_testing
-login ARLUK_user2 ARLUK_pass2
-menu corporate actions
-search s_inst INST05
-search s_cacat Scheme of Arrangement
-search s_stat Any
-button search
-sleep 2
-tableClick Code INST05
-button approve
-find textH1 View Scheme of Arrangement
-expect pass
-logout
-
-test Scheme of Arrangement Test 6 - benefit cash
-description creating a new CA - Scheme of Arrangement 6, crest enabled, EA
-goto ARLUK_testing
-login ARLUK_user1 ARLUK_pass1
-date +1
-menu corporate actions
-clickby class btn btn-primary dropdown-toggle
-sleep 2
-clickby text Scheme of Arrangement
-form admCA
-select2Input instrumentStr INST06
-menuInput caType Voluntary
-textInput announcement date 
-textInput exDividend date
-textInput record 15/11/2019
-textInput acceptance 25/11/2019
-textInput payment 30/11/2019
-textInput cashPayment 30/11/2019
-textInput agm date
-textInput schemeEffective 30/09/2019
 textInput description new CA test
 checkerInput electionApproval
 checkerInput srcType
@@ -289,13 +75,14 @@ button save
 clickby class btn btn-primary btn-xs
 sleep 3
 form admCAOption
-menuInput benefitType Cash
+menuInput benefitType Stock
 sleep 2
-select2Input currencyStr EUR
-textInput cashRatio 60
+select2Input instrumentStr INST02
+textInput stockRatioHolding 20
+textInput stockRatioEntitlement 20
 menuInput direction Debit
 button save
-find textH1 View Scheme of Arrangement
+find textH1 View Redemption
 button ready
 expect pass
 logout
@@ -303,50 +90,252 @@ logout
 goto ARLUK_testing
 login ARLUK_user2 ARLUK_pass2
 menu corporate actions
-search s_inst INST06
-search s_cacat Scheme of Arrangement
+search s_inst INST02
+search s_cacat Redemption
 search s_stat Any
 button search
 sleep 2
-tableClick Code INST06
+tableClick Code INST02
 button approve
-find textH1 View Scheme of Arrangement
+find textH1 View Redemption
 expect pass
 logout
 
-test Scheme of Arrangement Test 7 - benefit cash
-description creating a new CA - Scheme of Arrangement 7
+test Redemption Test 3 - benefit stock
+description creating a new CA - Redemption 3
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
 date +1
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
-clickby text Scheme of Arrangement
+clickby text Redemption 2
 form admCA
-select2Input instrumentStr INST07
-menuInput caType Voluntary
-textInput announcement date 
-textInput exDividend date
-textInput record 15/11/2019
-textInput acceptance 25/11/2019
-textInput payment 30/11/2019
-textInput cashPayment 30/11/2019
+select2Input instrumentStr INST03
+menuInput caType Mandatory
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
 textInput agm date
-textInput schemeEffective 30/09/2019
 textInput description new CA test
-checkerInput fractional
 button save
 clickby class btn btn-primary btn-xs
 sleep 3
 form admCAOption
-menuInput benefitType Cash
-sleep  2
-select2Input currencyStr GBP
-textInput cashRatio 70
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST03
+textInput stockRatioHolding 30
+textInput stockRatioEntitlement 30
 menuInput direction Credit
 button save
-find textH1 View Scheme of Arrangement
+find text1 View Redemption
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST03
+search s_cacat Redemption
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST03
+button approve
+find textH1 View Redemption
+expect pass
+logout
+
+test Redemption Test 4 - benefit stock
+description creating a new CA - Redemption 4, crest enabled
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Redemption 2
+form admCA
+select2Input instrumentStr INST04
+menuInput caType Mandatory
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction AUSN (USE)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST04
+textInput stockRatioHolding 40
+textInput stockRatioEntitlement 40
+menuInput direction Debit
+button save
+find textH1 View Redemption
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST04
+search s_cacat Redemption
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST04
+button approve
+find textH1 View Redemption
+expect pass
+logout
+
+test Redemption Test 5 - benefit stock
+description creating a new CA - Redemption 5, EA
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Redemption 2
+form admCA
+select2Input instrumentStr INST05
+menuInput caType Voluntary
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput electionApproval
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST05
+textInput stockRatioHolding 50
+textInput stockRatioEntitlement 50
+menuInput direction Credit
+button save
+find textH1 View Redemption
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST05
+search s_cacat Redemption
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST05
+button approve
+find textH1 View Redemption
+expect pass
+logout
+
+test Redemption Test 6 - benefit stock
+description creating a new CA - Redemption 6, crest enabled, EA
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Redemption 2
+form admCA
+select2Input instrumentStr INST06
+menuInput caType Voluntary
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+checkerInput electionApproval
+checkerInput srcType
+menuInput srcChannel Avenir Receiving Agent (RA20)
+menuInput electionTransaction AFEN (TTE)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST06
+textInput stockRatioHolding 60
+textInput stockRatioEntitlement 60
+menuInput direction Debit
+button save
+find textH1 View Redemption
+button ready
+expect pass
+logout
+
+goto ARLUK_testing
+login ARLUK_user2 ARLUK_pass2
+menu corporate actions
+search s_inst INST06 
+search s_cacat Redemption
+search s_stat Any
+button search
+sleep 2
+tableClick Code INST06
+button approve
+find textH1 View Redemption
+expect pass
+logout
+
+test Redemption Test 7 - benefit stock
+description creating a new CA - Redemption 7
+goto ARLUK_testing
+login ARLUK_user1 ARLUK_pass1
+date +1
+menu corporate actions
+clickby class btn btn-primary dropdown-toggle
+sleep 2
+clickby text Redemption 2
+form admCA
+select2Input instrumentStr INST07
+menuInput caType Voluntary 
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
+textInput agm date
+textInput description new CA test
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST07
+textInput stockRatioHolding 70
+textInput stockRatioEntitlement 70
+menuInput direction Credit
+button save
+find textH1 View Redemption
 button ready
 expect pass
 logout
@@ -355,52 +344,50 @@ goto ARLUK_testing
 login ARLUK_user2 ARLUK_pass2
 menu corporate actions
 search s_inst INST07
-search s_cacat Scheme of Arrangement
+search s_cacat Redemption
 search s_stat Any
 button search
 sleep 2
 tableClick Code INST07
 button approve
-find textH1 View Scheme of Arrangement
+find textH1 View Redemption
 expect pass
 logout
 
-test Scheme of Arrangement Test 8 - benefit cash
-description creating a new CA - Scheme of Arrangement 8, crest enabled
+test Redemption Test 8 - benefit stock
+description creating a new CA - Redemption 8, crest enabled
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
 date +1
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
-clickby text Scheme of Arrangement
+clickby text Redemption 2
 form admCA
 select2Input instrumentStr INST08
 menuInput caType Voluntary
-textInput announcement date 
-textInput exDividend date
-textInput record 15/11/2019
-textInput acceptance 25/11/2019
-textInput payment 30/11/2019
-textInput cashPayment 30/11/2019
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
 textInput agm date
-textInput schemeEffective 30/09/2019
 textInput description new CA test
-checkerInput fractional
-checkerInput srcType 
+checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
 menuInput electionTransaction AUSN (USE)
 button save
 clickby class btn btn-primary btn-xs
 sleep 3
 form admCAOption
-menuInput benefitType Cash
+menuInput benefitType Stock
 sleep 2
-select2Input currencyStr EUR
-textInput cashRatio 80
+select2Input instrumentStr INST01
+textInput stockRatioHolding 80
+textInput stockRatioEntitlement 80
 menuInput direction Debit
 button save
-find textH1 View Scheme of Arrangement
+find textH1 View Redemption
 button ready
 expect pass
 logout
@@ -409,49 +396,48 @@ goto ARLUK_testing
 login ARLUK_user2 ARLUK_pass2
 menu corporate actions
 search s_inst INST08
-search s_cacat Scheme of Arrangement
+search s_cacat Redemption
 search s_stat Any
 button search
 sleep 2
 tableClick Code INST08
 button approve
-find textH1 View Scheme of Arrangement
+find textH1 View Redemption
 expect pass
 logout
 
-test Scheme of Arrangement Test 9 - benefit cash
-description creating a new CA - Scheme of Arrangement 9, EA
+test Redemption Test 9 - benefit stock
+description creating a new CA - Redemption 9, EA
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
 date +1
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
-clickby text Scheme of Arrangement
+clickby text Redemption 2
 form admCA
 select2Input instrumentStr INST09
 menuInput caType Mandatory with Options
-textInput announcement date 
-textInput exDividend date
-textInput record 15/11/2019
-textInput acceptance 25/11/2019
-textInput payment 30/11/2019
-textInput cashPayment 30/11/2019
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
 textInput agm date
-textInput schemeEffective 30/09/2019
 textInput description new CA test
-checkerInput electionApproval
+checkerInput electionApproval 
 button save
 clickby class btn btn-primary btn-xs
 sleep 3
 form admCAOption
-menuInput benefitType Cash
+menuInput benefitType Stock
 sleep 2
-select2Input currencyStr GBP
-textInput cashRatio 90
+select2Input instrumentStr INST09
+textInput stockRatioHolding 90
+textInput stockRatioEntitlement 90
 menuInput direction Credit
 button save
-find textH1 View Scheme of Arrangement
+find textH1 View Redemption
 button ready
 expect pass
 logout
@@ -460,103 +446,100 @@ goto ARLUK_testing
 login ARLUK_user2 ARLUK_pass2
 menu corporate actions
 search s_inst INST09
-search s_cacat Scheme of Arrangement
+search s_cacat Redemption
 search s_stat Any
 button search
 sleep 2
 tableClick Code INST09
 button approve
-find textH1 View Scheme of Arrangement
+find textH1 View Redemption
 expect pass
 logout
 
-test Scheme of Arrangement Test 10 - benefit cash
-description creating a new CA - Scheme of Arrangement 10, crest enabled, EA
+test Redemption Test 10 - benefit stock
+description creating a new CA - Redemption 10, crest enabled, EA
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
-date +1
+date +1 
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
-clickby text Scheme of Arrangement
+clickby text Redemption 2
 form admCA
 select2Input instrumentStr INST10
 menuInput caType Mandatory with Options
-textInput announcement date 
-textInput exDividend date
-textInput record 15/11/2019
-textInput acceptance 25/11/2019
-textInput payment 30/11/2019
-textInput cashPayment 30/11/2019
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
 textInput agm date
-textInput schemeEffective 30/09/2019
 textInput description new CA test
-checkerInput fractional
 checkerInput electionApproval
 checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
-menuInput electionTransaction AUSN (USE)
+menuInput electionTransaction AFEN (TTE)
 button save
 clickby class btn btn-primary btn-xs
 sleep 3
 form admCAOption
-menuInput benefitType Cash
+menuInput benefitType Stock
 sleep 2
-select2Input currencyStr USD
-textInput cashRatio 100
-menuInput direction Debit
+select2Input instrumentStr INST10
+textInput stockRatioHolding 10
+textInput stockRatioEntitlement 10
+menuInput direction Credit
 button save
-find textH1 View Scheme of Arrangement
+find textH1 View Redemption
 button ready
 expect pass
 logout
 
-goto ARLUK_testing
+goto ARLUK_testing 
 login ARLUK_user2 ARLUK_pass2
 menu corporate actions
 search s_inst INST10
-search s_cacat Scheme of Arrangement
+search s_cacat Redemption
 search s_stat Any
 button search
 sleep 2
 tableClick Code INST10
 button approve
-find textH1 View Scheme of Arrangement
+find textH1 View Redemption
 expect pass
 logout
 
-test Scheme of Arrangement Test 11 - benefit cash
-description creating a new CA - Scheme of Arrangement 11
+test Redemption Test 11 - benefit stock
+description creating a new CA - Redemption 11
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
 date +1
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
-clickby text Scheme of Arrangement
+clickby text Redemption 2
 form admCA
 select2Input instrumentStr INST11
 menuInput caType Mandatory with Options
-textInput announcement date 
-textInput exDividend date
-textInput record 15/11/2019
-textInput acceptance 25/11/2019
-textInput payment 30/11/2019
-textInput cashPayment 30/11/2019
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
 textInput agm date
-textInput schemeEffective 30/09/2019
 textInput description new CA test
 button save
 clickby class btn btn-primary btn-xs
 sleep 3
 form admCAOption
-menuInput benefitType Cash
+menuInput benefitType Stock
 sleep 2
-select2Input currencyStr GBP
-textInput cashRatio 10
-menuInput direction Credit
+select2Input instrumentStr INST11
+textInput stockRatioHolding 20
+textInput stockRatioEntitlement 20
+menuInput direction Debit
 button save
-find textH1 View Scheme of Arrangement
+find text1 View Redemption
 button ready
 expect pass
 logout
@@ -565,52 +548,50 @@ goto ARLUK_testing
 login ARLUK_user2 ARLUK_pass2
 menu corporate actions
 search s_inst INST11
-search s_cacat Scheme of Arrangement
+search s_cacat Redemption
 search s_stat Any
 button search
 sleep 2
 tableClick Code INST11
 button approve
-find textH1 View Scheme of Arrangement
+find textH1 View Redemption
 expect pass
 logout
 
-test Scheme of Arrangement Test 12 - benefit cash
-description creating a new CA - Scheme of Arrangement 12, crest enabled
+test Redemption Test 12 - benefit stock
+description creating a new CA - Redemption 12
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
 date +1
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
-clickby text Scheme of Arrangement
+clickby text Redemption 2
 form admCA
 select2Input instrumentStr INST12
 menuInput caType Mandatory with Options
-textInput announcement date 
-textInput exDividend date
-textInput record 15/11/2019
-textInput acceptance 25/11/2019
-textInput payment 30/11/2019
-textInput cashPayment 30/11/2019
+textInput announcement date
+textInput exDividend 15/01/2019
+textInput record 15/09/2019
+textInput acceptance 25/09/2019
+textInput payment 30/09/2019
 textInput agm date
-textInput schemeEffective 30/09/2019
 textInput description new CA test
-checkerInput fractional
-checkerInput srcType 
+checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
 menuInput electionTransaction AUSN (USE)
 button save
 clickby class btn btn-primary btn-xs
 sleep 3
 form admCAOption
-menuInput benefitType Cash
+menuInput benefitType Stock
 sleep 2
-select2Input currencyStr EUR
-textInput cashRatio 20
-menuInput direction Debit
+select2Input instrumentStr INST12
+textInput stockRatioHolding 30
+textInput stockRatioEntitlement 30
+menuInput direction Credit
 button save
-find textH1 View Scheme of Arrangement
+find textH1 View Redemption
 button ready
 expect pass
 logout
@@ -619,13 +600,12 @@ goto ARLUK_testing
 login ARLUK_user2 ARLUK_pass2
 menu corporate actions
 search s_inst INST12
-search s_cacat Scheme of Arrangement
+search s_cacat Redemption
 search s_stat Any
 button search
 sleep 2
 tableClick Code INST12
-sleep 2
 button approve
-find textH1 View Scheme of Arrangement
+find textH1 View Redemption
 expect pass
 logout

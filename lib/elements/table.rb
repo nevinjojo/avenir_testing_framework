@@ -18,6 +18,7 @@ class Table
   # Returns a true /if a button with a particular id is displayed, and vice-versa.
   def content_displayed?
     begin
+      $session.wait_until(@driver.find_element(:xpath, '//*[@id="data"]/tbody/tr/td[3]').displayed?)
       if @driver.find_element(:xpath, '//*[@id="data"]/tbody/tr/td[3]').displayed?
         true
       end

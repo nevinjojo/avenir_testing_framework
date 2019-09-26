@@ -1,5 +1,5 @@
-test new trade 1.2
-description creating a new trade 1.2
+test new trade 1
+description creating a new trade 1
 goto AIX
 login aix_user1 aix_pass1
 menu trades
@@ -9,8 +9,8 @@ checkerInput setting
 select2Input sellAccountStr PART02
 select2Input buyAccountStr PART01
 select2Input instrumentStr INST11
-textInput quantity 750
-textInput price 1200
+textInput quantity 75
+textInput price 120
 button save
 sleep 2
 find textH1 View Trade
@@ -19,8 +19,8 @@ sleep 2
 expect pass
 logout
 
-test new trade 2.2
-description creating a new trade 2.2
+test new trade 2
+description creating a new trade 2
 goto AIX
 login aix_user1 aix_pass1
 menu trades
@@ -30,8 +30,8 @@ checkerInput setting
 select2Input sellAccountStr PART04
 select2Input buyAccountStr PART03
 select2Input instrumentStr INST12
-textInput quantity 3,000
-textInput price 4,580
+textInput quantity 300
+textInput price 458
 button save
 sleep 2
 find textH1 View Trade
@@ -40,8 +40,8 @@ sleep 2
 expect pass
 logout
 
-test new trade 3.2
-description creating a new trade 3.2
+test new trade 3
+description creating a new trade 3
 goto AIX
 login aix_user1 aix_pass1
 menu trades
@@ -51,8 +51,8 @@ checkerInput setting
 select2Input sellAccountStr PART06
 select2Input buyAccountStr PART05
 select2Input instrumentStr INST13
-textInput quantity 2,600
-textInput price 6,000
+textInput quantity 260
+textInput price 600
 button save
 sleep 2
 find textH1 View Trade
@@ -61,8 +61,8 @@ sleep 2
 expect pass
 logout
 
-test new trade 4.2
-description creating a new trade 4.2
+test new trade 4
+description creating a new trade 4
 goto AIX
 login aix_user1 aix_pass1
 menu trades
@@ -72,8 +72,8 @@ checkerInput setting
 select2Input sellAccountStr PART08
 select2Input buyAccountStr PART07
 select2Input instrumentStr INST14
-textInput quantity 3,852
-textInput price 580
+textInput quantity 385
+textInput price 58
 button save
 sleep 2
 find textH1 View Trade
@@ -82,8 +82,8 @@ sleep 2
 expect pass
 logout
 
-test new trade 5.2
-description creating a new trade 5.2
+test new trade 5
+description creating a new trade 5
 goto AIX
 login aix_user1 aix_pass1
 menu trades
@@ -93,8 +93,8 @@ checkerInput setting
 select2Input sellAccountStr PART10
 select2Input buyAccountStr PART09
 select2Input instrumentStr INST15
-textInput quantity 1,500
-textInput price 1,865
+textInput quantity 150
+textInput price 186
 button save
 sleep 2
 find textH1 View Trade

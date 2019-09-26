@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ..
+
 echo
 echo AIX - trade / transactions / settlement
 echo
@@ -22,7 +24,7 @@ echo
 # ./run -p scripts/AIX/transactions-trades/create2-trans.txt
 # ./run -p scripts/AIX/transactions-trades/EUR-trans.txt
 
- # ./run -p scripts/AIX/transactions-trades/new-trade2.txt
+# ./run -p scripts/AIX/transactions-trades/new-trade2.txt
 
 # roll BD
 
@@ -77,7 +79,7 @@ echo
 
 # roll BD
 
-./run -p scripts/AIX/settlement/settlement.txt
+# ./run -p scripts/AIX/settlement/settlement.txt
 
 # roll BD
 

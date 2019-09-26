@@ -1,15 +1,11 @@
-test New Bonus Test 1
-description creating a new corporate action - bonus 1
-goto ARLUK_testing
-login ARLUK_user1 ARLUK_pass1
-date +1
-menu corporate actions
-button new bonus
-form admCA
-select2Input instrumentStr INST01
-textInput announcement date
-textInput exDividend 01/01/2019
-textInput record date
-textInput payment 25/09/2019
-textInput description new bonus test\nnew bonus testnew bonus test\n
-sleep 3
+test New Instrument 21
+description New Instrument 21 fund
+goto AIX
+login aix_user1 aix_pass1
+date
+set varName potato
+menu instruments
+button new fund
+form admInstrument
+menuInput category Fund
+textInput name varName

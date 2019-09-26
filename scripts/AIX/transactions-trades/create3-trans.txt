@@ -1,5 +1,5 @@
-test new create 2.2
-description creating a new create transaction 2.2
+test new create 1
+description creating a new create transaction 1
 goto AIX
 login aix_user1 aix_pass1
 date
@@ -11,7 +11,7 @@ textInput due date
 select2Input toAccountStr PART02-1
 select2Input instrumentStr INST21
 textInput quantity 21
-textInput toReference new create 2.2
+textInput toReference new create 1
 button save
 find textH1 View Create
 saveID
@@ -33,8 +33,8 @@ sleep 2
 expect pass
 logout
 
-test new create 2.3
-description creating a new create transaction 2.3
+test new create 2
+description creating a new create transaction 2
 goto AIX
 login aix_user1 aix_pass1
 date
@@ -45,7 +45,7 @@ form admTrans
 textInput due date
 select2Input toAccountStr PART04-1
 select2Input instrumentStr INST22
-textInput quantity 5,308
+textInput quantity 530
 textInput toReference new create 2.3
 button save
 find textH1 View Create
@@ -68,8 +68,8 @@ sleep 2
 expect pass
 logout
 
-test new create 2.4
-description creating a new create transaction 2.4
+test new create 3
+description creating a new create transaction 3
 goto AIX
 login aix_user1 aix_pass1
 date
@@ -80,7 +80,7 @@ form admTrans
 textInput due date
 select2Input toAccountStr PART06-1
 select2Input instrumentStr INST23
-textInput quantity 23,132
+textInput quantity 2,313
 textInput toReference new create 2.4
 button save
 find textH1 View Create
@@ -104,8 +104,8 @@ sleep 2
 expect pass 
 logout
 
-test new create 2.5
-description creating a new create transaction 2.5
+test new create 4
+description creating a new create transaction 4
 goto AIX
 login aix_user1 aix_pass1
 date
@@ -116,7 +116,7 @@ form admTrans
 textInput due date
 select2Input toAccountStr PART08-1
 select2Input instrumentStr INST24
-textInput quantity 1,231
+textInput quantity 123
 textInput toReference new create 2.5
 button save
 find textH1 View Create
@@ -140,8 +140,8 @@ sleep 2
 expect pass
 logout
 
-test new create 2.6
-description creating a new create transaction 2.6
+test new create 5
+description creating a new create transaction 5
 goto AIX
 login aix_user1 aix_pass1
 date

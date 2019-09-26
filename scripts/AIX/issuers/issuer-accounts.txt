@@ -15,6 +15,9 @@ menuInput currency GBP
 button save
 sleep 3
 button approve
+clickby id btn-copy
+sleep 2
+button approve
 find textH1 View Account
 sleep 2
 expect pass
@@ -163,8 +166,8 @@ tableClick name ISS04
 scrollto accounts-new-btn
 clickby id accounts-new-btn
 form admAccount
-textInput short 3
-textInput name Issuer Account 3
+textInput short 4
+textInput name Issuer Account 4
 menuInput currency USD
 button save
 sleep 3

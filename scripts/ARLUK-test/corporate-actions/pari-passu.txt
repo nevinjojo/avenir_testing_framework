@@ -14,6 +14,14 @@ textInput record 15/09/2019
 textInput payment 30/09/2019
 textInput description new CA test
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST01
+menuInput direction Credit
+button save
 find textH1 View Pari Passu
 button ready
 expect pass
@@ -51,6 +59,14 @@ textInput description new CA test
 checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST02
+menuInput direction Credit
+button save
 find textH1 View Pari Passu
 button ready
 expect pass
@@ -85,6 +101,14 @@ textInput announcement date
 textInput record 15/09/2019
 textInput payment 30/09/2019
 textInput description new CA test
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST03
+menuInput direction Credit
 button save
 find textH1 View Pari Passu
 button ready
@@ -123,6 +147,14 @@ textInput description new CA test
 checkerInput srcType 
 menuInput srcChannel Avenir Receiving Agent (RA20)
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST04
+menuInput direction Debit
+button save
 find textH1 View Pari Passu
 button ready
 expect pass
@@ -160,6 +192,14 @@ textInput description new CA test
 checkerInput srcType 
 menuInput srcChannel Avenir Receiving Agent (RA20)
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST05
+menuInput direction Debit
+button save
 find textH1 View Pari Passu
 button ready
 expect pass
@@ -196,6 +236,14 @@ textInput payment 30/09/2019
 textInput description new CA test
 checkerInput srcType 
 menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST06
+menuInput direction Credit
 button save
 find textH1 View Pari Passu
 button ready

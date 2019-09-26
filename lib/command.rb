@@ -94,10 +94,34 @@ class Command
         Window.new(@driver).switch_to(@params)
       when 'tableClick'
         Table.new(@driver, @params).click_item
+      when 'set'
+        set_var(@params)
+      when 'get'
+        get_var(@params)
       else
         # Unknown commands are reported.
         $results.log("Error: Unable to find action '#{@action}' (check for any typos in the command :)")
       end
+    rescue => ex
+      $results.failure(ex)
+    end
+  end
+
+  def set_var(params)
+    begin
+      $results.log_action('set')
+      $session.instance_variable_set("@#{params[0]}", "#{params[1]}")
+      $results.append($session.instance_variable_get("@#{params[0]}"))
+    rescue => ex
+      $results.failure(ex)
+    end
+  end
+
+  def get_var(params)
+    begin
+      $results.log_action('get')
+      $results.append($session.instance_variable_get("@#{params[0]}"))
+      return $session.instance_variable_get("@#{params[0]}")
     rescue => ex
       $results.failure(ex)
     end
@@ -136,6 +160,7 @@ class Command
     begin
       $results.log_action(@action)
       $login.login($config[@params[0]], $config[@params[1]])
+      $session.wait_until(@driver.find_element(:class, 'business-date').displayed?)
       $results.success
     rescue => ex
       $results.fail(@action, ex)

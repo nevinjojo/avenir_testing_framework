@@ -10,12 +10,22 @@ clickby text Takeover
 form admCA
 select2Input instrumentStr INST01
 textInput announcement date
-textInput record 15/09/2019
-textInput firstClose 15/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 textInput offeror test test test
 checkerInput electionApproval
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr USD
+textInput cashRatio 10
+menuInput direction Credit
+menuInput benefitStatus Enabled
 button save
 find textH1 View Takeover
 button ready
@@ -48,15 +58,27 @@ clickby text Takeover
 form admCA
 select2Input instrumentStr INST02
 textInput announcement date
-textInput record 15/09/2019
-textInput firstClose 15/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 textInput offeror test test test
 checkerInput electionApproval
 checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
-menuInput electionTransaction AESN (ESA)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr EUR
+textInput cashRatio 10
+menuInput direction Debit
+menuInput benefitStatus Disabled, Elections Valid
+checkerInput escrowCheck
+textInput escrowShort TKTEST2
+textInput escrowName Subscription Test 02
 button save
 find textH1 View Takeover
 button ready
@@ -89,11 +111,21 @@ clickby text Takeover
 form admCA
 select2Input instrumentStr INST03
 textInput announcement date
-textInput record 15/09/2019
-textInput firstClose 15/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 textInput offeror test test test
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr GBP
+textInput cashRatio 30
+menuInput direcion Credit
+menuInput benefitStatus Disabled, Elections Invalid
 button save
 find textH1 View Takeover
 button ready
@@ -126,14 +158,26 @@ clickby text Takeover
 form admCA
 select2Input instrumentStr INST04
 textInput announcement date
-textInput record 15/09/2019
-textInput firstClose 15/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 textInput offeror test test test
 checkerInput srcType 
 menuInput srcChannel Avenir Receiving Agent (RA20)
-menuInput electionTransaction ACDN (MTM)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr GBP
+textInput cashRatio 10
+menuInput direction Debit
+menuInput benefitStatus Enabled
+checkerInput escrowCheck
+textInput escrowShort TKTEST4
+textInput escrowName Takeover Test 04
 button save
 find textH1 View Takeover
 button ready
@@ -166,12 +210,22 @@ clickby text Takeover
 form admCA
 select2Input instrumentStr INST05
 textInput announcement date
-textInput record 15/09/2019
-textInput firstClose 15/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 textInput offeror test test test
 checkerInput electionApproval
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr USD
+textInput cashRatio 10
+menuInput direction Debit
+menuInput benefitStatus Disabled, Elections Valid
 button save
 find textH1 View Takeover
 button ready
@@ -204,15 +258,27 @@ clickby text Takeover
 form admCA
 select2Input instrumentStr INST06
 textInput announcement date
-textInput record 15/09/2019
-textInput firstClose 15/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 textInput offeror test test test
 checkerInput electionApproval
 checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
-menuInput electionTransaction AFEN (TTE)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr GBP
+textInput cashRatio 10
+menuInput direction Credit
+menuInput benefitStatus Disabled, Elections Invalid
+checkerInput escrowCheck
+textInput escrowShort TKTEST6
+textInput escrowName Subscription Test 06
 button save
 find textH1 View Takeover
 button ready
@@ -245,11 +311,24 @@ clickby text Takeover
 form admCA
 select2Input instrumentStr INST07
 textInput announcement date
-textInput record 15/09/2019
-textInput firstClose 15/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 textInput offeror test test test
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr USD
+textInput cashRatio 10
+menuInput direction Credit
+menuInput benefitStatus Enabled
+checkerInput escrowCheck
+textInput escrowShort TKTEST7
+textInput escrowName Takeover Test 07
 button save
 find textH1 View Takeover
 button ready
@@ -282,14 +361,27 @@ clickby text Takeover
 form admCA
 select2Input instrumentStr INST08
 textInput announcement date
-textInput record 15/09/2019
-textInput firstClose 15/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 textInput offeror test test test
 checkerInput srcType 
 menuInput srcChannel Avenir Receiving Agent (RA20)
-menuInput electionTransaction AUSN (USE)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr EUR
+textInput cashRatio 10
+menuInput direction Debit
+menuInput benefitStatus Disabled Elections Invalid
+checkerInput defaultBenefit
+checkerInput escrowCheck
+textInput escrowShort TKTEST8
+textInput escowName Takeover Test 08
 button save
 find textH1 View Takeover
 button ready
@@ -322,12 +414,22 @@ clickby text Takeover
 form admCA
 select2Input instrumentStr INST09
 textInput announcement date
-textInput record 15/09/2019
-textInput firstClose 15/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 textInput offeror test test test
 checkerInput electionApproval
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr GBP
+textInput cashRatio 10
+menuInput direction Credit
+menuInput benefitStatus Enabled
 button save
 find textH1 View Takeover
 button ready
@@ -360,15 +462,28 @@ clickby text Takeover
 form admCA
 select2Input instrumentStr INST10
 textInput announcement date
-textInput record 15/09/2019
-textInput firstClose 15/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 textInput offeror test test test
 checkerInput electionApproval
 checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
-menuInput electionTransaction AUSN (USE)
+button save
+clickby btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr USD
+textInput cashRatio 10
+menuInput direction Debit
+menuInput benefitStatus Enabled
+checkerInput defaultBenefit
+checkerInput escrowCheck
+textInput escrowShort TKTEST10
+textInput escrowName Takeover Test 10
 button save
 find textH1 View Takeover
 button ready
@@ -401,11 +516,25 @@ clickby text Takeover
 form admCA
 select2Input instrumentStr INST11
 textInput announcement date
-textInput record 15/09/2019
-textInput firstClose 15/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 textInput offeror test test test
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr EUR
+textInput cashRatio 20
+menuInput direction Credit
+menuInput benefitStatus Disabled, Elections Valid
+checkerInput defaultBenefit
+checkerInput escrowCheck
+textInput escrowShort TKTEST11
+textInput escrowName Takeover Test 11
 button save
 find textH1 View Takeover
 button ready
@@ -438,14 +567,26 @@ clickby text Takeover
 form admCA
 select2Input instrumentStr INST12
 textInput announcement date
-textInput record 15/09/2019
-textInput firstClose 15/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 textInput offeror test test test
 checkerInput srcType 
 menuInput srcChannel Avenir Receiving Agent (RA20)
-menuInput electionTransaction AUSN (USE)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr GBP
+textInput cashRatio 30
+menuInput benefitStatus Disabled, Elections Invalid
+checkerInput defaultBenefit
+checkerInput escrowCheck
+textInput escrowShort TKTEST12
+textInput escrowName Takeover Test 12
 button save
 find textH1 View Takeover
 button ready

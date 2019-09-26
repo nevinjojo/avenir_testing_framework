@@ -11,9 +11,9 @@ form admCA
 select2Input instrumentStr INST01
 textInput announcement date 
 textInput exDividend date
-textInput record 15/09/2019
-textInput acceptance 25/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 checkerInput electionApproval
 button save
@@ -49,9 +49,9 @@ form admCA
 select2Input instrumentStr INST02
 textInput announcement date 
 textInput exDividend date
-textInput record 15/09/2019
-textInput acceptance 25/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 checkerInput electionApproval
 checkerInput srcType
@@ -90,9 +90,9 @@ form admCA
 select2Input instrumentStr INST03
 textInput announcement date 
 textInput exDividend date
-textInput record 15/09/2019
-textInput acceptance 25/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 button save
 find textH1 View Tender Offer
@@ -127,9 +127,9 @@ form admCA
 select2Input instrumentStr INST04
 textInput announcement date 
 textInput exDividend date
-textInput record 15/09/2019
-textInput acceptance 25/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 checkerInput srcType 
 menuInput srcChannel Avenir Receiving Agent (RA20)
@@ -167,9 +167,9 @@ form admCA
 select2Input instrumentStr INST05
 textInput announcement date 
 textInput exDividend date
-textInput record 15/09/2019
-textInput acceptance 25/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 checkerInput electionApproval
 button save
@@ -205,9 +205,9 @@ form admCA
 select2Input instrumentStr INST06
 textInput announcement date 
 textInput exDividend date
-textInput record 15/09/2019
-textInput acceptance 25/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 checkerInput electionApproval
 checkerInput srcType
@@ -246,9 +246,9 @@ form admCA
 select2Input instrumentStr INST07
 textInput announcement date 
 textInput exDividend date
-textInput record 15/09/2019
-textInput acceptance 25/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 button save
 find textH1 View Tender Offer
@@ -283,9 +283,9 @@ form admCA
 select2Input instrumentStr INST08
 textInput announcement date 
 textInput exDividend date
-textInput record 15/09/2019
-textInput acceptance 25/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 checkerInput srcType 
 menuInput srcChannel Avenir Receiving Agent (RA20)
@@ -323,9 +323,9 @@ form admCA
 select2Input instrumentStr INST09
 textInput announcement date 
 textInput exDividend date
-textInput record 15/09/2019
-textInput acceptance 25/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 checkerInput electionApproval
 button save
@@ -361,9 +361,9 @@ form admCA
 select2Input instrumentStr INST10
 textInput announcement date 
 textInput exDividend date
-textInput record 15/09/2019
-textInput acceptance 25/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 checkerInput electionApproval
 checkerInput srcType
@@ -402,9 +402,9 @@ form admCA
 select2Input instrumentStr INST11
 textInput announcement date 
 textInput exDividend date
-textInput record 15/09/2019
-textInput acceptance 25/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 button save
 find textH1 View Tender Offer
@@ -439,9 +439,9 @@ form admCA
 select2Input instrumentStr INST12
 textInput announcement date 
 textInput exDividend date
-textInput record 15/09/2019
-textInput acceptance 25/09/2019
-textInput payment 30/09/2019
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput description new CA test
 checkerInput srcType 
 menuInput srcChannel Avenir Receiving Agent (RA20)

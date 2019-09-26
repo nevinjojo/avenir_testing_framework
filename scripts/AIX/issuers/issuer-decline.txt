@@ -25,7 +25,6 @@ sleep 5
 clickby text ISSD1
 find textH1 View Issuer
 button decline
-sleep 2
 clickby id btn-delete
 find textH1 Manage Issuers
 sleep 2
@@ -59,7 +58,6 @@ sleep 5
 clickby text ISSD2
 find textH1 View Issuer
 button decline
-sleep 2
 clickby id btn-delete
 find textH1 Manage Issuers
 sleep 2
@@ -93,7 +91,6 @@ sleep 5
 clickby text ISSD3
 find textH1 View Issuer
 button decline
-sleep 2
 clickby id btn-delete
 find textH1 Manage Issuers
 sleep 2
@@ -127,7 +124,6 @@ sleep 5
 clickby text ISSD4
 find textH1 View Issuer
 button decline
-sleep 2
 clickby id btn-delete
 find textH1 Manage Issuers
 sleep 2
@@ -161,7 +157,6 @@ sleep 5
 clickby text ISSD5
 find textH1 View Issuer
 button decline
-sleep 2
 clickby id btn-delete
 find textH1 Manage Issuers
 sleep 2

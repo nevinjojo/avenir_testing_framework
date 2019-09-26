@@ -1,0 +1,44 @@
+test transaction 01 transfer PART01-1
+description checking transaction states
+goto AIX
+login P1_BRKR1_user P1_BRKR1_pass
+date
+menu transactions
+clickby text Transfer
+form usrTrans
+textInput due date
+select2Input frAccountStr PART01-1
+select2Input toAccountStr PART01-2
+select2Input instrumentStr INST01
+textInput quantity 25
+textInput frReference Transfer 1
+textInput toReference Transfer 1
+button save
+find textH1 View Transaction 
+saveID
+expect pass
+logout
+
+goto AIX
+login P1_BRKR1_user P2_BRKR1_pass
+date
+menu transactions
+search s_inst INST01
+sleep 4
+tableClick ID saveID
+button ready
+find textH1 View Transaction
+expect pass
+logout
+
+goto AIX
+login P1_BRKR2_user P1_BRKR2_pass
+date
+menu transactions
+search s_inst INST01
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Transaction
+expect pass
+logout

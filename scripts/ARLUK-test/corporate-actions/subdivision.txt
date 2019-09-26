@@ -16,6 +16,16 @@ textInput payment 30/09/2019
 textInput agm date
 textInput description new CA test
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST03
+textInput stockRatioHolding 10
+textInput stockRatioEntitlement 10
+menuInput direction Credit
+button save
 find textH1 View Subdivision
 button ready
 expect pass
@@ -55,6 +65,16 @@ textInput description new CA test
 checkerInput srcType 
 menuInput srcChannel Avenir Receiving Agent (RA20)
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST04
+textInput stockRatioHolding 50
+textInput stockRatioEntitlement 50
+menuInput direction Debit
+button save
 find textH1 View Subdivision
 button ready
 expect pass
@@ -92,6 +112,16 @@ textInput payment 30/09/2019
 textInput agm date
 textInput description new CA test
 checkerInput fractional
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST06
+textInput stockRatioHolding 60
+textInput stockRatioEntitlement 60
+menuInput direction Credit
 button save
 find textH1 View Subdivision
 button ready
@@ -132,6 +162,16 @@ textInput description new CA test
 checkerInput fractional
 checkerInput srcType 
 menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST09
+textInput stockRatioHolding 90
+textInput stockRatioEntitlement 90
+menuInput direction Debit
 button save
 find textH1 View Subdivision
 button ready

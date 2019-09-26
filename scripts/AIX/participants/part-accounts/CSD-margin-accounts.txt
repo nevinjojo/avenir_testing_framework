@@ -1,0 +1,719 @@
+test Creating CSD01-A
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD01
+button search
+tableClick short CSD01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDA
+textInput name CSD01-A
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD01-A2
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD01
+button search
+tableClick short CSD01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDA2
+textInput name CSD01-A2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD01-A3
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD01
+button search
+tableClick short CSD01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDA3
+textInput name CSD01-A3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2 
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD02-B
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD02
+button search
+tableClick short CSD02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDB
+textInput name CSD02-B
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD02-B2
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD02
+button search
+tableClick short CSD02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDB2
+textInput name CSD02-B2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD02-B3
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD02
+button search
+tableClick short CSD02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDB3
+textInput name CSD02-B3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD03-C
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD03
+button search
+tableClick short CSD03
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDC
+textInput name CSD03-C
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD03-C2
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD03
+button search
+tableClick short CSD03
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDC2
+textInput name CSD03-C2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD03-C3
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD03
+button search
+tableClick short CSD03
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDC3
+textInput name CSD03-C3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD04-D
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD04
+button search
+tableClick short CSD04
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDD
+textInput name CSD04-D
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD04-D2
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD04 
+button search
+tableClick short CSD04
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDD2
+textInput name CSD04-D2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD04-D3
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD04
+button search
+tableClick short CSD04
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDD3
+textInput name CSD04-D3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD05-E
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD05
+button search
+tableClick short CSD05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDE
+textInput name CSD05-E
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD05-E2
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD05
+button search
+tableClick short CSD05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDE2
+textInput name CSD05-E2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout 
+
+test Creating CSD05-E3
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD05
+button search
+tableClick short CSD05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDE3
+textInput name CSD05-E3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD06-F
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD06
+button search
+tableClick short CSD06
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDF
+textInput name CSD06-F
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD06-F2
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD06
+button search
+tableClick short CSD06
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDF2
+textInput name CSD06-F2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD06-F3
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD06
+button search
+tableClick short CSD06
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDF3
+textInput name CSD06-F3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD07-G
+description New CSD Account - New Margin Account 
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD07
+button search
+tableClick short CSD07
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDG
+textInput name CSD07-G
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD07-G2
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD07
+button search
+tableClick short CSD07
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDG2
+textInput name CSD07-G2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD07-G3
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD07
+button search
+tableClick short CSD07
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDG3
+textInput name CSD07-G3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD08-H
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD08
+button search
+tableClick short CSD08
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDH
+textInput name CSD08-H
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account 
+expect pass
+logout
+
+test Creating CSD08-H2
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD08
+button search
+tableClick short CSD08
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDH2
+textInput name CSD08-H2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD08-H3
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD08
+button search 
+tableClick short CSD08
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDH3
+textInput name CSD08-H3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD09-I
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD09
+button search
+tableClick short CSD09
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDI
+textInput name CSD09-I
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD09-I2
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD09
+button search
+tableClick short CSD09
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDI2
+textInput name CSD09-I2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD09-I3
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD09
+button search
+tableClick short CSD09
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDI3
+textInput name CSD09-I3 
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD10-J
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD10
+button search
+tableClick short CSD10
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDJ
+textInput name CSD10-J
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD10-J2
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD10
+button search
+tableClick short CSD10
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDJ2
+textInput name CSD10-J2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CSD10-J3
+description New CSD Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CSD10
+button search
+tableClick short CSD10
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CSDJ3
+textInput name CSD10-J3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout

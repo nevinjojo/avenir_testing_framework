@@ -19,6 +19,16 @@ textInput description new CA test
 checkerInput electionApproval
 checkerInput fractional
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST01
+textInput stockRatioHolding 10
+textInput stockRatioEntitlement 10
+menuInput direction Credit
+button save
 find textH1 View Conversion
 button ready
 expect pass
@@ -61,6 +71,16 @@ checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
 menuInput electionTransaction AFEN (TTE)
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST02
+textInput stockRatioHolding 20
+textInput stockRatioEntitlement 20
+menuInput direction Credit
+button save
 find textH1 View Conversion
 button ready
 expect pass
@@ -98,6 +118,16 @@ textInput acceptance 25/09/2019
 textInput payment 30/09/2019
 textInput agm date
 textInput description new CA test
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST03
+textInput stockRatioHolding 30
+textInput stockRatioEntitlement 30
+menuInput direction Debit
 button save
 find textH1 View Conversion
 button ready
@@ -141,6 +171,16 @@ checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
 menuInput electionTransaction AUSN (USE)
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST04
+textInput stockRatioHolding 40
+textInput stockRatioEntitlement 40
+menuInput direction Credit
+button save
 find textH1 View Conversion
 button ready
 expect pass
@@ -180,6 +220,16 @@ textInput agm date
 textInput description new CA test
 checkerInput electionApproval
 checkerInput fractional
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST05
+textInput stockRatioHolding 50
+textInput stockRatioEntitlement 50
+menuInput direction Debit
 button save
 find textH1 View Conversion
 button ready
@@ -223,6 +273,16 @@ checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
 menuInput electionTransaction AFEN (TTE)
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST06
+textInput stockRatioHolding 60
+textInput stockRatioEntitlement 60
+menuInput direction Credit
+button save
 find textH1 View Conversion
 button ready
 expect pass
@@ -261,6 +321,16 @@ textInput payment 30/09/2019
 textInput agm date
 textInput description new CA test
 checkerInput fractional
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST07
+textInput stockRatioHolding 70
+textInput stockRatioEntitlement 70
+menuInput direction Debit
 button save
 find textH1 View Conversion
 button ready
@@ -303,6 +373,16 @@ checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
 menuInput electionTransaction AUSN (USE)
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST08
+textInput stockRatioHolding 80
+textInput stockRatioEntitlement 80
+menuInput direction Credit
+button save
 find textH1 View Conversion
 button ready
 expect pass
@@ -342,6 +422,16 @@ textInput agm date
 textInput description new CA test
 checkerInput fractional
 checkerInput electionApproval
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST09
+textInput stockRatioHolding 90
+textInput stockRatioEntitlement 90
+menuInput direction Debit
 button save
 find textH1 View Conversion
 button ready
@@ -386,6 +476,16 @@ checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
 menuInput electionTransaction AFEN (TTE)
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST10
+textInput stockRatioHolding 10
+textInput stockRatioEntitlement 10
+menuInput direction Credit
+button save
 find textH1 View Conversion
 button ready
 expect pass
@@ -423,6 +523,16 @@ textInput acceptance 25/09/2019
 textInput payment 30/09/2019
 textInput agm date
 textInput description new CA test
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST11
+textInput stockRatioHolding 11
+textInput stockRatioEntitlement 11
+menuInput direction Debit
 button save
 find textH1 View Conversion
 button ready
@@ -464,6 +574,16 @@ textInput description new CA test
 checkerInput fractional
 checkerInput srcType 
 menuInput srcChannel Avenir Receiving Agent (RA20)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Stock
+sleep 2
+select2Input instrumentStr INST12
+textInput stockRatioHolding 20
+textInput stockRatioEntitlement 20
+menuInput direction Credit
 button save
 find textH1 View Conversion
 button ready

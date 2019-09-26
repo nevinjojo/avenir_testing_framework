@@ -1,18 +1,19 @@
-test Decrease Test 1
-description creating a new CA - Decrease 1
+test Subscription Test 1 - benefit stock
+description creating a new CA - Subscription 1
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
-date +2
+date
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
-clickby text Decrease
+clickby text Subscription 
 form admCA
 select2Input instrumentStr INST01
 textInput announcement date
-textInput exDividend 15/01/2019
-textInput record 20/09/2019
-textInput payment 25/09/2019
+textInput exDividend date
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput agm date
 textInput description new CA test
 button save
@@ -25,8 +26,9 @@ select2Input instrumentStr INST01
 textInput stockRatioHolding 10
 textInput stockRatioEntitlement 10
 menuInput direction Credit
+menuInput benefitStatus Enabled
 button save
-find textH1 View Decrease
+find textH1 View Subscription
 button ready
 expect pass
 logout
@@ -35,31 +37,32 @@ goto ARLUK_testing
 login ARLUK_user2 ARLUK_pass2
 menu corporate actions
 search s_inst INST01
-search s_cacat Decrease
+search s_cacat Subscription
 search s_stat Any
 button search
 sleep 2
 tableClick Code INST01
 button approve
-find textH1 View Decrease
+find textH1 View Subscription
 expect pass
 logout
 
-test Decrease Test 2
-description creating a new CA - Decrease 2, crest enabled
+test Subscription Test 2 - benefit stock
+description creating a new CA - Subscription 2, crest enabled
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
-date +2
+date
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
-clickby text Decrease
+clickby text Subscription
 form admCA
 select2Input instrumentStr INST02
-textInput announcement date
-textInput exDividend 15/01/2019
-textInput record 20/09/2019
-textInput payment 25/09/2019
+textInput announcement date 
+textInput exDividend date
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput agm date
 textInput description new CA test
 checkerInput srcType 
@@ -73,9 +76,13 @@ sleep 2
 select2Input instrumentStr INST02
 textInput stockRatioHolding 20
 textInput stockRatioEntitlement 20
-menuInput direction Debit
+menuInput direction Credit
+menuInput benefitStatus Enabled
+checkerInput escrowCheck
+textInput escrowShort SBTESTS2
+textInput escrowName Subscription Test Stock 2
 button save
-find textH1 View Decrease
+find textH1 View Subscription
 button ready
 expect pass
 logout
@@ -84,34 +91,34 @@ goto ARLUK_testing
 login ARLUK_user2 ARLUK_pass2
 menu corporate actions
 search s_inst INST02
-search s_cacat Decrease
+search s_cacat Subscription
 search s_stat Any
 button search
 sleep 2
 tableClick Code INST02
 button approve
-find textH1 View Decrease
+find textH1 View Subscription
 expect pass
 logout
 
-test Decrease Test 3
-description creating a new CA - Decrease 3, fractional
+test Subscription Test 3 - benefit stock
+description creating a new CA - Subscription 3
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
-date +2
+date 
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
-clickby text Decrease
+clickby text Subscription
 form admCA
 select2Input instrumentStr INST03
 textInput announcement date
-textInput exDividend 15/01/2019
-textInput record 20/09/2019
-textInput payment 25/09/2019
+textInput exDividend date
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput agm date
 textInput description new CA test
-checkerInput fractional
 button save
 clickby class btn btn-primary btn-xs
 sleep 3
@@ -119,11 +126,12 @@ form admCAOption
 menuInput benefitType Stock
 sleep 2
 select2Input instrumentStr INST03
-textInput stockRatioHolding 30
-textInput stockRatioEntitlement 30
+textInput stockRatioHolding 10
+textInput stockRatioEntitlement 10
 menuInput direction Credit
+menuInput benefitStatus Enabled
 button save
-find textH1 View Decrease
+find textH1 View Subscription
 button ready
 expect pass
 logout
@@ -132,34 +140,34 @@ goto ARLUK_testing
 login ARLUK_user2 ARLUK_pass2
 menu corporate actions
 search s_inst INST03
-search s_cacat Decrease
+search s_cacat Subscription
 search s_stat Any
 button search
 sleep 2
 tableClick Code INST03
 button approve
-find textH1 View Decrease
+find textH1 View Subscription
 expect pass
 logout
 
-test Decrease Test 4
-description creating a new CA - Decrease 4, fractional, crest
+test Subscription Test 4 - benefit stock
+description creating a new CA - Subscription 4, crest enabled
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
-date +2
+date
 menu corporate actions
 clickby class btn btn-primary dropdown-toggle
 sleep 2
-clickby text Decrease
+clickby text Subscription
 form admCA
 select2Input instrumentStr INST04
-textInput announcement date
-textInput exDividend 15/01/2019
-textInput record 20/09/2019
-textInput payment 25/09/2019
+textInput announcement date 
+textInput exDividend date
+textInput record 15/11/2019
+textInput acceptance 25/11/2019
+textInput payment 30/11/2019
 textInput agm date
 textInput description new CA test
-checkerInput fractional
 checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
 button save
@@ -172,18 +180,12 @@ select2Input instrumentStr INST04
 textInput stockRatioHolding 40
 textInput stockRatioEntitlement 40
 menuInput direction Debit
+menuInput benefitStatus Enabled
+checkerInput escrowCheck
+textInput escrowShort SBTESTS4
+textInput escrowName Subscription Test Stock 4
 button save
-clickby class btn btn-primary btn-xs
-sleep 3
-form admCAOption
-menuInput benefitType Stock
-sleep 2
-select2Input instrumentStr INST04
-textInput stockRatioHolding 40
-textInput stockRatioEntitlement 40
-menuInput direction Debit
-button save
-find textH1 View Decrease
+find textH1 View Subscription
 button ready
 expect pass
 logout
@@ -192,12 +194,14 @@ goto ARLUK_testing
 login ARLUK_user2 ARLUK_pass2
 menu corporate actions
 search s_inst INST04
-search s_cacat Decrease
+search s_cacat Subscription
 search s_stat Any
 button search
 sleep 2
 tableClick Code INST04
 button approve
-find textH1 View Decrease
+find textH1 View Subscription
 expect pass
 logout
+
+

@@ -124,6 +124,7 @@ class Button
   # @param [Object] id - id of the button element searched for
   def displayed?(id)
     begin
+      $session.wait_until(@driver.find_element(:id, "btn-" + id).displayed?)
       if @driver.find_element(:id, "btn-" + id).displayed?
         true
       end

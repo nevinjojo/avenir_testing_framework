@@ -1,0 +1,791 @@
+test Creating CUST01-A
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST01
+button search
+tableClick short CUST01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTA
+textInput name CUST01-A
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST01-A2
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST01
+button search
+tableClick short CUST01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTA2
+textInput name CUST01-A2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST01-A3
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST01
+button search 
+tableClick short CUST01
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTA3
+textInput name CUST01-A3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST02-B
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST02
+button search
+tableClick short CUST02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTB
+textInput name CUST02-B
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST02-B2
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST02
+button search
+tableClick short CUST02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTB2
+textInput name CUST02-B2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST02-B3
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST02
+button search
+tableClick short CUST02
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTB3
+textInput name CUST02-B3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST03-C
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST03
+button search
+tableClick short CUST03
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTC
+textInput name CUST03-C
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST03-C2
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST03
+button search
+tableClick short CUST03
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTC2
+textInput name CUST03-C2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST03-C3
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST03
+button search
+tableClick short CUST03
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTC3
+textInput name CUST03-C3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST04-D
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST04
+button search
+tableClick short CUST04
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTD
+textInput name CUST04-D
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST04-D2
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST04
+button search 
+tableClick short CUST04
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTD2
+textInput name CUST04-D2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST04-D3
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST04
+button search
+tableClick short CUST04
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTD3
+textInput name CUST04-D3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST05-E
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST05
+button search
+tableClick short CUST05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTE
+textInput name CUST05-E
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST05-E2
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST05
+button search
+tableClick short CUST05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTE2
+textInput name CUST05-E2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST05-E3
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST05
+button search
+tableClick short CUST05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTE3
+textInput name CUST05-E3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST05-F
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST05
+button search
+tableClick short CUST05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTF
+textInput name CUST05-F
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST05-F2
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST05
+button search
+tableClick short CUST05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTF2
+textInput name CUST05-F2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST05-F3
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST05
+button search
+tableClick short CUST05
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTF3
+textInput name CUST05-F3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST06-G
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST06
+button search
+tableClick short CUST06
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTG
+textInput name CUST06-G
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST06-G2
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST06
+button search
+tableClick short CUST06
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTG2
+textInput name CUST06-G2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST06-G3
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST06
+button search
+tableClick short CUST06
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTG3
+textInput name CUST06-G3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST07-H
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST07
+button search
+tableClick short CUST07
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTH
+textInput name CUST07-H
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST07-H2
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST07
+button search
+tableClick short CUST07
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTH2
+textInput name CUST07-H2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST07-H3 
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST07
+button search
+tableClick short CUST07
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTH3
+textInput name CUST07-H3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST08-I
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST08
+button search
+tableClick short CUST08
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTI
+textInput name CUST08-I
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST08-I2
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST08
+button search
+tableClick short CUST08
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTI2
+textInput name CUST08-I2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST08-I3
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST08
+button search
+tableClick short CUST08
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTI3
+textInput name CUST08-I3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST09-J
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST09
+button search
+tableClick short CUST09
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTJ
+textInput name CUST09-J
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST09-J2
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST09
+button search
+tableClick short CUST09
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTJ2
+textInput name CUST09-J2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST09-J3
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST09
+button search
+tableClick short CUST09
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTJ3
+textInput name CUST09-J3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST10-K
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST10
+button search 
+tableClick short CUST10
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTK
+textInput name CUST10-K
+menuInput currency EUR
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST10-K2
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST10
+button search
+tableClick short CUST10
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTK2
+textInput name CUST10-K2
+menuInput currency USD
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout
+
+test Creating CUST10-K3
+description New Custodian Account - New Margin Account
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+search s_part CUST10
+button search
+tableClick short CUST10
+scrollto accounts-new-btn
+clickby id accounts-new-btn
+form admAccount
+textInput short CUSTK3
+textInput name CUST10-K3
+menuInput currency GBP
+button save
+sleep 2
+button approve
+clickby id btn-copy
+sleep 2
+button approve
+find textH1 View Account
+expect pass
+logout 

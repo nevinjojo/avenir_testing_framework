@@ -1,5 +1,5 @@
-test new create 1.2
-description creating a new create transaction 1.2
+test new create 1
+description creating a new create transaction 1
 goto AIX
 login aix_user1 aix_pass1
 date
@@ -10,7 +10,7 @@ form admTrans
 textInput due date
 select2Input toAccountStr PART02-1
 select2Input instrumentStr INST11
-textInput quantity 750
+textInput quantity 75
 textInput toReference new create 1.2
 button save
 find textH1 View Create
@@ -33,8 +33,8 @@ sleep 2
 expect pass
 logout
 
-test new create 1.3
-description creating a new create transaction 1.3
+test new create 2
+description creating a new create transaction 2
 goto AIX
 login aix_user1 aix_pass1
 date
@@ -45,7 +45,7 @@ form admTrans
 textInput due date
 select2Input toAccountStr PART04-1
 select2Input instrumentStr INST12
-textInput quantity 3,000
+textInput quantity 300
 textInput toReference new create 1.3
 button save
 find textH1 View Create
@@ -68,8 +68,8 @@ sleep 2
 expect pass
 logout
 
-test new create 1.4
-description creating a new create transaction 1.4
+test new create 3
+description creating a new create transaction 3
 goto AIX
 login aix_user1 aix_pass1
 date
@@ -80,7 +80,7 @@ form admTrans
 textInput due date
 select2Input toAccountStr PART06-1
 select2Input instrumentStr INST13
-textInput quantity 2,600
+textInput quantity 260
 textInput toReference new create 1.4
 button save
 find textH1 View Create
@@ -103,8 +103,8 @@ sleep 2
 expect pass
 logout
 
-test new create 1.5
-description creating a new create transaction 1.5
+test new create 4
+description creating a new create transaction 4
 goto AIX
 login aix_user1 aix_pass1
 date
@@ -115,7 +115,7 @@ form admTrans
 textInput due date
 select2Input toAccountStr PART08-1
 select2Input instrumentStr INST14
-textInput quantity 3,852
+textInput quantity 385
 textInput toReference new create 1.5
 button save
 find textH1 View Create
@@ -138,8 +138,8 @@ sleep 2
 expect pass
 logout
 
-test new create 1.6
-description creating a new create transaction 1.6
+test new create 5
+description creating a new create transaction 5
 goto AIX
 login aix_user1 aix_pass1
 date
@@ -150,7 +150,7 @@ form admTrans
 textInput due date
 select2Input toAccountStr PART10-1
 select2Input instrumentStr INST15
-textInput quantity 1,500
+textInput quantity 150
 textInput toReference new create 1.6
 button save
 find textH1 View Create

@@ -1,4 +1,4 @@
-test Redemption Test 1
+test Redemption Test 1 - benefit cash
 description creating a new CA - Redemption 1, EA
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
@@ -19,6 +19,15 @@ textInput agm date
 textInput description new CA test
 checkerInput electionApproval
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr USD
+textInput cashRatio 10
+menuInput direction Credit
+button save
 find textH1 View Redemption
 button ready
 expect pass
@@ -38,7 +47,7 @@ find textH1 View Redemption
 expect pass
 logout
 
-test Redemption Test 2
+test Redemption Test 2 - benefit cash
 description creating a new CA - Redemption 2, crest enabled, EA
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
@@ -62,6 +71,15 @@ checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
 menuInput electionTransaction AFEN (TTE)
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr EUR
+textInput cashRatio 20
+menuInput direction Debit
+button save
 find textH1 View Redemption
 button ready
 expect pass
@@ -81,7 +99,7 @@ find textH1 View Redemption
 expect pass
 logout
 
-test Redemption Test 3
+test Redemption Test 3 - benefit cash
 description creating a new CA - Redemption 3
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
@@ -100,6 +118,15 @@ textInput acceptance 25/09/2019
 textInput payment 30/09/2019
 textInput agm date
 textInput description new CA test
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr GBP
+textInput cashRatio 30
+menuInput direction Credit
 button save
 find textH1 View Redemption
 button ready
@@ -120,7 +147,7 @@ find textH1 View Redemption
 expect pass
 logout
 
-test Redemption Test 4
+test Redemption Test 4 - benefit cash
 description creating a new CA - Redemption 4, crest enabled
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
@@ -143,6 +170,15 @@ checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
 menuInput electionTransaction AUSN (USE)
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr USD
+textInput cashRatio 40
+menuInput direction Debit
+button save
 find textH1 View Redemption
 button ready
 expect pass
@@ -162,7 +198,7 @@ find textH1 View Redemption
 expect pass
 logout
 
-test Redemption Test 5
+test Redemption Test 5 - benefit cash
 description creating a new CA - Redemption 5, EA
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
@@ -183,6 +219,15 @@ textInput agm date
 textInput description new CA test
 checkerInput electionApproval
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr GBP
+textInput cashRatio 50
+menuInput direction Cash
+button save
 find textH1 View Redemption
 button ready
 expect pass
@@ -202,7 +247,7 @@ find textH1 View Redemption
 expect pass
 logout
 
-test Redemption Test 6
+test Redemption Test 6 - benefit cash
 description creating a new CA - Redemption 6, crest enabled, EA
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
@@ -226,6 +271,15 @@ checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
 menuInput electionTransaction AFEN (TTE)
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr EUR
+textInput cashRatio 60
+menuInput direction Debit
+button save
 find textH1 View Redemption
 button ready
 expect pass
@@ -245,7 +299,7 @@ find textH1 View Redemption
 expect pass
 logout
 
-test Redemption Test 7
+test Redemption Test 7 - benefit cash
 description creating a new CA - Redemption 7
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
@@ -264,6 +318,15 @@ textInput acceptance 25/09/2019
 textInput payment 30/09/2019
 textInput agm date
 textInput description new CA test
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr USD
+textInput cashRatio 70
+menuInput direction Credit
 button save
 find textH1 View Redemption
 button ready
@@ -284,7 +347,7 @@ find textH1 View Redemption
 expect pass
 logout
 
-test Redemption Test 8
+test Redemption Test 8 - benefit cash
 description creating a new CA - Redemption 8, crest enabled
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
@@ -307,6 +370,15 @@ checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
 menuInput electionTransaction AUSN (USE)
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr GBP
+textInput cashRatio 80
+menuInput direction Debit
+button save
 find textH1 View Redemption
 button ready
 expect pass
@@ -326,7 +398,7 @@ find textH1 View Redemption
 expect pass
 logout
 
-test Redemption Test 9
+test Redemption Test 9 - benefit cash
 description creating a new CA - Redemption 9, EA
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
@@ -347,6 +419,15 @@ textInput agm date
 textInput description new CA test
 checkerInput electionApproval
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr EUR
+textInput cashRatio 90
+menuInput direction Credit
+button save
 find textH1 View Redemption
 button ready
 expect pass
@@ -366,7 +447,7 @@ find textH1 View Redemption
 expect pass
 logout
 
-test Redemption Test 10
+test Redemption Test 10 - benefit cash
 description creating a new CA - Redemption 10, crest enabled, EA
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
@@ -390,6 +471,15 @@ checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
 menuInput electionTransaction AFEN (TTE)
 button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr USD
+textInput cashRatio 100
+menuInput direction Debit
+button save
 find textH1 View Redemption
 button ready
 expect pass
@@ -409,7 +499,7 @@ find textH1 View Redemption
 expect pass
 logout
 
-test Redemption Test 11
+test Redemption Test 11 - benefit cash
 description creating a new CA - Redemption 11
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
@@ -428,6 +518,15 @@ textInput acceptance 25/09/2019
 textInput payment 30/09/2019
 textInput agm date
 textInput description new CA test
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr GBP
+textInput cashRatio 10
+menuInput direction Credit
 button save
 find textH1 View Redemption
 button ready
@@ -448,7 +547,7 @@ find textH1 View Redemption
 expect pass
 logout
 
-test Redemption Test 12
+test Redemption Test 12 - benefit cash
 description creating a new CA - Redemption 12, crest enabled
 goto ARLUK_testing
 login ARLUK_user1 ARLUK_pass1
@@ -470,6 +569,15 @@ textInput description new CA test
 checkerInput srcType
 menuInput srcChannel Avenir Receiving Agent (RA20)
 menuInput electionTransaction AUSN (USE)
+button save
+clickby class btn btn-primary btn-xs
+sleep 3
+form admCAOption
+menuInput benefitType Cash
+sleep 2
+select2Input currencyStr EUR
+textInput cashRatio 20
+menuInput direction Debit
 button save
 find textH1 View Redemption
 button ready

@@ -15,7 +15,6 @@ textInput description new bonus test
 button save
 clickby class btn btn-primary btn-xs
 sleep 3
-find textH1 New CA Benefit
 form admCAOption
 menuInput benefitType Stock
 select2Input instrumentStr INST01
@@ -61,7 +60,6 @@ menuInput srcChannel Avenir Receiving Agent (RA20)
 button save
 clickby class btn btn-primary btn-xs
 sleep 3
-find textH1 New CA Benefit
 form admCAOption
 menuInput benefitType Stock
 select2Input instrumentStr INST02
