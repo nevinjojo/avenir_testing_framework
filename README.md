@@ -1,7 +1,7 @@
 ## Avenir Testing Framework 2.0
 New and Updated Testing Framework for User Interface Testing at Avenir Tech!
 
-**Current Maintainer:** [@nevinjojo](https://github.com/nevinjojo)
+**Developed by:** [@nevinjojo](https://github.com/nevinjojo)
 
 ### Installation
 You can install the framework by executing the `install` file in the root directory:
