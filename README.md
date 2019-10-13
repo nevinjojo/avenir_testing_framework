@@ -121,7 +121,7 @@ $ ./run -p scripts/testFile.txt
 | `menuInput` | `menuInput country New Zealand` | Clicks on the element `New Zealand` in the field with id `country`  |
 | `select2Input` | `select2Input instrumentStr USD` | Enters the text `USD` to field with id `instrumentStr` |
 | `checkerinput` | `checkerinput saveInstr` | Check/Uncheck the checker element with id `saveInstr` |
-| `clear_input` | `clear_input instrumentStr` | Clears the textField with id `instrumentStr` |
+| `clearInput` | `clearInput instrumentStr` | Clears the textField with id `instrumentStr` |
 | `tableWait` | `tableWait` | Waits until the Data Processing text appears and then disappears  |
 | `find` | `find button save` or `find textH1 View Create` | Finds the element in the webpage |
 | `scrollto` | `scrollto user-new-btn` | Scrolls the view to include the position of a specific element in the page (by id). |
