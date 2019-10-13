@@ -169,6 +169,7 @@ If the test scripts created did not run properly, it could be because of the fol
     - Ensure that the command is entered in the order the table above specifies.
 - **The commands in main.rb might be using xpath instead of IDs:** This is because those elements does not have any IDs - can be fixed by adding IDs to those elements and changing the script command to look for IDs (more reliable)
 - **Server is taking too much time to load:** The only solution to this problem is to add explicit wait times to the commands in main.rb file. The framework already implements explicit wait times at places where it is necessary (**N.B.** don’t use sleep/ explicit waits unless required, or it will slow down the tests).
+- **Browser window is not wide enough:** While testing, if the browser window size is not wide enough, the system will adjust its view to be mobile-friendly resulting in minimising certain elements. This means that the testing framework might not be able to find these elements. Therefore, while testing it is best to keep the browser full-width so that all elements are visible during testing.
 
 For any other issues with the framework or suggestions on improving the framework, mention the current maintainer or create an issue.
 
