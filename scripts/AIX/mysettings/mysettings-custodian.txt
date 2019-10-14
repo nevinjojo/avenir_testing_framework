@@ -1,0 +1,31 @@
+test My Settings - CSD 01
+description testing edit details + change password
+goto AIX
+login aix_user1 aix_pass1
+usermenu my settings
+clickby text Edit Details
+form usrUserDetails
+textInput title TEST
+textInput name CSD-user
+textInput last one
+textInput preferred Operator
+textInput phone +04 0800 232323
+textInput mobile +64 225668582
+menuInput locale English (NZ)
+menuInput timezone UTC+00:00 (London)
+button save
+sleep 2
+clickby text Edit Details
+sleep 2
+clickby text Change Password
+form usrUser Password
+sleep 2
+textInput password_password Password1!
+textInput password_confirm Password1!
+sleep 2
+clickby id btn-save
+sleep 2
+clickby text Change Password
+find textH1 My Settings
+expect pass
+logout

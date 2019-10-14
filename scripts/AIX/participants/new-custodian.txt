@@ -8,8 +8,19 @@ clickby text Custodian
 form admOrg
 textInput name Custodian 01
 textInput short CUST01
+textInput label CUST01
+textInput lei HZSN3FQBO05UDWGVC21
+textInput registration 142843235386284771
+textInput bic ABCD0001
+textInput address1 20 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
 menuInput country New Zealand
 textInput phone +04 0800 838383
+textInput mobile +64 225668382
 textInput email custodian01@test.com
 button save
 sleep 2
@@ -41,8 +52,19 @@ clickby text Custodian
 form admOrg
 textInput name Custodian 02
 textInput short CUST02
+textInput label CUST02
+textInput lei HZSN3FQBO05UDWGVC22
+textInput registration 29482940375933118
+textInput bic ABCD0002
+textInput address1 3 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
 menuInput country New Zealand
 textInput phone +04 0800 838383
+textInput mobile +64 225668582
 textInput email custodian02@test.com
 button save
 sleep 2
@@ -74,8 +96,19 @@ clickby text Custodian
 form admOrg
 textInput name Custodian 03
 textInput short CUST03
+textInput label CUST03
+textInput lei HZSN3FQBO05UDWGVC34
+textInput registration 293023927593524993
+textInput bic ABCD0003
+textInput address1 50 Tory Street 
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
 menuInput country New Zealand
 textInput phone +04 0800 838383
+textInput mobile 0225668582
 textInput email custodian03@test.com
 button save
 sleep 2
@@ -107,8 +140,18 @@ clickby text Custodian
 form admOrg
 textInput name Custodian 04
 textInput short CUST04
+textInput label CUST04
+textInput lei HZSN3FQBO05UDWGVC21
+textInput registration 18472638402748002
+textInput bic ABCD0004
+textInput address1 32 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
 menuInput country New Zealand
 textInput phone +04 0800 838383
+textInput mobile 0225668823
 textInput email custodian04@test.com
 button save
 sleep 2
@@ -140,8 +183,19 @@ clickby text Custodian
 form admOrg
 textInput name Custodian 05
 textInput short CUST05
+textInput label CUST05
+textInput lei HZSN3FQBO05UDWGVC21
+textInput registration 18472638402748008
+textInput bic ABCD0005
+textInput address1 25 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
 menuInput country New Zealand
 textInput phone +04 0800 838383
+textInput mobile +64 225668318
 textInput email custodian05@test.com
 button save
 sleep 2
@@ -173,8 +227,19 @@ clickby text Custodian
 form admOrg
 textInput name Custodian 06
 textInput short CUST06
+textInput label CUST06
+textInput lei HZSN3FQBO05UDWGVC21
+textInput registration 184726384027480231
+textInput bic ABCD0006
+textInput address1 60 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6021
 menuInput country New Zealand
 textInput phone +04 0800 838383
+textInput mobile +64 225668482
 textInput email custodian06@test.com
 button save
 sleep 2
@@ -206,8 +271,19 @@ clickby text Custodian
 form admOrg
 textInput name Custodian 07
 textInput short CUST07
+textInput label CUST07
+textInput lei HZSN3FQBO05UDWGVC21
+textInput registration 18472638402748001
+textInput bic ABCD0007
+textInput address1 30 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
 menuInput country New Zealand
 textInput phone +04 0800 838383
+textInput mobile +64 225668582
 textInput email custodian07@test.com
 button save
 sleep 2
@@ -239,8 +315,19 @@ clickby text Custodian
 form admOrg
 textInput name Custodian 08
 textInput short CUST08
+textInput label CUST08
+textInput lei HZSN3FQBO05UDWGVC21
+textInput registration 18472638402748001
+textInput bic ABCD0008
+textInput address1 50 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
 menuInput country New Zealand
 textInput phone +04 0800 838383
+textInput mobile +64 225668383
 textInput email custodian08@test.com
 button save
 sleep 2
@@ -272,6 +359,16 @@ clickby text Custodian
 form admOrg
 textInput name Custodian 09
 textInput short CUST09
+textInput label CUST09
+textInput lei HZDF3JGKS234JFXWFBR21
+textInput registration 8305947603850385331
+textInput bic ABCD0009
+textInput address1 20 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
 menuInput country New Zealand
 textInput phone +04 0800 838383
 textInput email custodian09@test.com
@@ -305,8 +402,19 @@ clickby text Custodian
 form admOrg
 textInput name Custodian 10
 textInput short CUST10
+textInput label CUST10
+textInput lei HSNZ3FHSN39UVNSSFG25
+textInput registration 1305947603850385331
+textInput bic ABCD0010
+textInput address1 30 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
 menuInput country New Zealand
 textInput phone +04 0800 838383
+textInput mobile 0225668582
 textInput email custodian10@test.com
 button save
 sleep 2

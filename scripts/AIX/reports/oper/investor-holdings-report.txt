@@ -19,7 +19,7 @@ screenshot time full
 clickby class btn btn-primary dropdown-toggle
 sleep 2
 clickby text CSV
-sleep 10
+sleep 20
 find textH1 Investor Holdings 
 expect pass
 logout

@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Results - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+  var index_rel_prefix = "./";
+</script>
+
+<script src="./js/navigation.js" defer></script>
+<script src="./js/search.js" defer></script>
+<script src="./js/search_index.js" defer></script>
+<script src="./js/searcher.js" defer></script>
+<script src="./js/darkfish.js" defer></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link">Object
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-append">#append</a>
+    
+    <li ><a href="#method-i-end_test">#end_test</a>
+    
+    <li ><a href="#method-i-fail">#fail</a>
+    
+    <li ><a href="#method-i-failure">#failure</a>
+    
+    <li ><a href="#method-i-find_and_screenshot">#find_and_screenshot</a>
+    
+    <li ><a href="#method-i-format_to_new_ine">#format_to_new_ine</a>
+    
+    <li ><a href="#method-i-get_current_results_dir">#get_current_results_dir</a>
+    
+    <li ><a href="#method-i-info">#info</a>
+    
+    <li ><a href="#method-i-log">#log</a>
+    
+    <li ><a href="#method-i-log_action">#log_action</a>
+    
+    <li ><a href="#method-i-mkdir">#mkdir</a>
+    
+    <li ><a href="#method-i-print">#print</a>
+    
+    <li ><a href="#method-i-screenshot">#screenshot</a>
+    
+    <li ><a href="#method-i-success">#success</a>
+    
+    <li ><a href="#method-i-write">#write</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Results">
+  <h1 id="class-Results" class="class">
+    class Results
+  </h1>
+
+  <section class="description">
+    
+<p>Handles the test script result reporting feature of the framework.</p>
+
+  </section>
+
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <section class="attribute-method-details" class="method-section">
+      <header>
+        <h3>Attributes</h3>
+      </header>
+
+      
+      <div id="attribute-i-results_dir" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">results_dir</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-results_sub_dir" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">results_sub_dir</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section>
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(driver, result_dir, file_name)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>@param [WebDriver] driver - The driver that will be used during the process. @param [File] file_name - Creates a file with the same name as the script.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/results.rb, line 15</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">driver</span>, <span class="ruby-identifier">result_dir</span>, <span class="ruby-identifier">file_name</span>)
+  <span class="ruby-ivar">@driver</span> = <span class="ruby-identifier">driver</span>
+  <span class="ruby-ivar">@results_dir</span> = <span class="ruby-identifier">result_dir</span>
+  <span class="ruby-ivar">@results_sub_dir</span> = <span class="ruby-identifier">mkdir</span>
+  <span class="ruby-ivar">@file</span> = <span class="ruby-identifier">file_name</span>
+  <span class="ruby-comment"># Logger configurations</span>
+  <span class="ruby-ivar">@logger</span> = <span class="ruby-constant">Logger</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">STDOUT</span>)
+  <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">level</span> = <span class="ruby-constant">Logger</span><span class="ruby-operator">::</span><span class="ruby-constant">DEBUG</span>
+  <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">datetime_format</span> = <span class="ruby-string">&#39;%d-%m-%Y %H:%M:%S&#39;</span>
+  <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">formatter</span> = <span class="ruby-identifier">proc</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">severity</span>, <span class="ruby-identifier">datetime</span>, <span class="ruby-identifier">_progname</span>, <span class="ruby-identifier">msg</span><span class="ruby-operator">|</span>
+    <span class="ruby-node">&quot;\n#{msg}&quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-comment"># Writer configurations</span>
+  <span class="ruby-ivar">@writer</span> = <span class="ruby-constant">Logger</span>.<span class="ruby-identifier">new</span> <span class="ruby-node">&quot;#{@results_dir}#{@results_sub_dir}/#{@file}&quot;</span>
+  <span class="ruby-ivar">@writer</span>.<span class="ruby-identifier">level</span> = <span class="ruby-constant">Logger</span><span class="ruby-operator">::</span><span class="ruby-constant">DEBUG</span>
+  <span class="ruby-ivar">@writer</span>.<span class="ruby-identifier">formatter</span> = <span class="ruby-identifier">proc</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">severity</span>, <span class="ruby-identifier">datetime</span>, <span class="ruby-identifier">_progname</span>, <span class="ruby-identifier">msg</span><span class="ruby-operator">|</span>
+    <span class="ruby-node">&quot;\n#{msg}&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-append" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">append</span><span
+            class="method-args">(message)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Appends to the end of the file and console. @param [String] message</p>
+          
+          
+
+          
+          <div class="method-source-code" id="append-source">
+            <pre><span class="ruby-comment"># File lib/results.rb, line 75</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">append</span>(<span class="ruby-identifier">message</span>)
+  <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">formatter</span> = <span class="ruby-identifier">proc</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">severity</span>, <span class="ruby-identifier">datetime</span>, <span class="ruby-identifier">_progname</span>, <span class="ruby-identifier">msg</span><span class="ruby-operator">|</span>
+    <span class="ruby-node">&quot; #{msg}&quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@writer</span>.<span class="ruby-identifier">formatter</span> = <span class="ruby-identifier">proc</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">severity</span>, <span class="ruby-identifier">datetime</span>, <span class="ruby-identifier">_progname</span>, <span class="ruby-identifier">msg</span><span class="ruby-operator">|</span>
+    <span class="ruby-node">&quot; #{msg}&quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">info</span> <span class="ruby-identifier">message</span>
+  <span class="ruby-ivar">@writer</span>.<span class="ruby-identifier">info</span> <span class="ruby-identifier">message</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-end_test" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">end_test</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Adds an end tag to the end of the file</p>
+          
+          
+
+          
+          <div class="method-source-code" id="end_test-source">
+            <pre><span class="ruby-comment"># File lib/results.rb, line 197</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">end_test</span>
+  <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">log</span>(<span class="ruby-node">&quot;Test Analysis: #{$session.failure_count}/#{$session.action_count} test actions failed.&quot;</span>)
+  <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">log</span>(<span class="ruby-node">&quot;#### End of Test &#39;#{$session.name}&#39; ####\n&quot;</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-fail" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">fail</span><span
+            class="method-args">(action, exception = nil)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Increment failure count, take screenshot and report failure</p>
+          
+          
+
+          
+          <div class="method-source-code" id="fail-source">
+            <pre><span class="ruby-comment"># File lib/results.rb, line 136</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">fail</span>(<span class="ruby-identifier">action</span>, <span class="ruby-identifier">exception</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">$session</span>.<span class="ruby-identifier">failure_count</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+  <span class="ruby-identifier">screenshot</span>(<span class="ruby-identifier">action</span>)
+  <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">failure</span>(<span class="ruby-identifier">exception</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-failure" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">failure</span><span
+            class="method-args">(exception = nil)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Prints failure to the end of the log.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="failure-source">
+            <pre><span class="ruby-comment"># File lib/results.rb, line 111</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">failure</span>(<span class="ruby-identifier">exception</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">formatter</span> = <span class="ruby-identifier">proc</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">severity</span>, <span class="ruby-identifier">datetime</span>, <span class="ruby-identifier">_progname</span>, <span class="ruby-identifier">msg</span><span class="ruby-operator">|</span>
+    <span class="ruby-node">&quot; #{msg}&quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@writer</span>.<span class="ruby-identifier">formatter</span> = <span class="ruby-identifier">proc</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">severity</span>, <span class="ruby-identifier">datetime</span>, <span class="ruby-identifier">_progname</span>, <span class="ruby-identifier">msg</span><span class="ruby-operator">|</span>
+    <span class="ruby-node">&quot; #{msg}&quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">output</span> = <span class="ruby-identifier">exception</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Exception</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">format</span>(<span class="ruby-string">&#39;FAILURE: &quot;%s&quot; %s : line %s&#39;</span>, <span class="ruby-identifier">exception</span>.<span class="ruby-identifier">message</span>.<span class="ruby-identifier">split</span>(<span class="ruby-regexp">/\n/</span>)[<span class="ruby-value">0</span>], <span class="ruby-identifier">exception</span>.<span class="ruby-identifier">backtrace</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">split</span>(<span class="ruby-string">&quot;:&quot;</span>).<span class="ruby-identifier">last</span>, <span class="ruby-identifier">exception</span>.<span class="ruby-identifier">backtrace</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">split</span>(<span class="ruby-string">&quot;:&quot;</span>)[<span class="ruby-value">-2</span>]) <span class="ruby-operator">:</span> <span class="ruby-string">&#39;FAILURE&#39;</span>
+  <span class="ruby-ivar">@writer</span>.<span class="ruby-identifier">error</span> <span class="ruby-identifier">output</span>
+  <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">error</span> <span class="ruby-identifier">output</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-find_and_screenshot" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">find_and_screenshot</span><span
+            class="method-args">(params)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Finds element looking for and screenshot it Note: This is an action that was specifically made for handling the screenshot project.</p>
+
+<pre>The command might not function as expected in other projects due to the nature of the calls that
+are made within this function.</pre>
+          
+          
+
+          
+          <div class="method-source-code" id="find_and_screenshot-source">
+            <pre><span class="ruby-comment"># File lib/results.rb, line 169</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">find_and_screenshot</span>(<span class="ruby-identifier">params</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">log_action</span>(<span class="ruby-node">&quot;findAndScreenshot(#{params.join(&#39; &#39;)}&quot;</span>)
+    <span class="ruby-identifier">links</span> = <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_elements</span>(<span class="ruby-value">:xpath</span>, <span class="ruby-string">&#39;//*[@id=&quot;accordion&quot;]/div&#39;</span>)
+    (<span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-identifier">links</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+      <span class="ruby-comment"># Navigate to the Kaihu url and fetch the h4 string in the page.</span>
+      <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">navigate</span>.<span class="ruby-identifier">to</span>(<span class="ruby-identifier">$config</span>[<span class="ruby-string">&#39;kaihu&#39;</span>])
+      <span class="ruby-identifier">h4</span> = <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:xpath</span>, <span class="ruby-node">&quot;//*[@id=&#39;heading#{i}&#39;]/h4/a&quot;</span>).<span class="ruby-identifier">text</span>
+      <span class="ruby-identifier">h4</span> = <span class="ruby-identifier">h4</span>.<span class="ruby-identifier">split</span>
+      <span class="ruby-identifier">h4</span> = <span class="ruby-identifier">h4</span>[<span class="ruby-value">0</span>]
+
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">h4</span>.<span class="ruby-identifier">include?</span> <span class="ruby-string">&#39;/&#39;</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-identifier">h4</span> <span class="ruby-operator">+</span> <span class="ruby-string">&#39; - &#39;</span>
+        <span class="ruby-comment"># Navigate to the new url using the h4 fetched before and take a screenshot</span>
+        <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">navigate</span>.<span class="ruby-identifier">to</span>(<span class="ruby-identifier">$config</span>[<span class="ruby-string">&#39;testreg&#39;</span>])
+        <span class="ruby-identifier">$login</span>.<span class="ruby-identifier">login</span>(<span class="ruby-identifier">$config</span>[<span class="ruby-string">&#39;testreg_user1&#39;</span>], <span class="ruby-identifier">$config</span>[<span class="ruby-string">&#39;testreg_pass1&#39;</span>])
+        <span class="ruby-identifier">new_link</span> = <span class="ruby-string">&#39;http://irene.avenir.tech/en_GB&#39;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">h4</span>
+        <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">navigate</span>.<span class="ruby-identifier">to</span>(<span class="ruby-identifier">new_link</span>)
+        <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">save_screenshot</span>(<span class="ruby-string">&quot;screenshots/&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;irene_&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">h4</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-string">&quot;/&quot;</span>) <span class="ruby-operator">+</span> <span class="ruby-string">&quot;.png&quot;</span>)
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">success</span>
+  <span class="ruby-keyword">rescue</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-identifier">ex</span>
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">fail</span>(<span class="ruby-string">&#39;findAndScreenshot&#39;</span>, <span class="ruby-identifier">ex</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-format_to_new_ine" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">format_to_new_ine</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Sets the writer and logger objects to have a formatter that includes n in the beginning of the line.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="format_to_new_ine-source">
+            <pre><span class="ruby-comment"># File lib/results.rb, line 49</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">format_to_new_ine</span>
+  <span class="ruby-ivar">@writer</span>.<span class="ruby-identifier">formatter</span> = <span class="ruby-identifier">proc</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">severity</span>, <span class="ruby-identifier">datetime</span>, <span class="ruby-identifier">_progname</span>, <span class="ruby-identifier">msg</span><span class="ruby-operator">|</span>
+    <span class="ruby-node">&quot;\n#{msg}&quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">formatter</span> = <span class="ruby-identifier">proc</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">severity</span>, <span class="ruby-identifier">datetime</span>, <span class="ruby-identifier">_progname</span>, <span class="ruby-identifier">msg</span><span class="ruby-operator">|</span>
+    <span class="ruby-node">&quot;\n#{msg}&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-get_current_results_dir" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_current_results_dir</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the subdirectory where the results will be stored.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="get_current_results_dir-source">
+            <pre><span class="ruby-comment"># File lib/results.rb, line 203</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_current_results_dir</span>
+  <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">glob</span>(<span class="ruby-node">&quot;#{$results.results_dir}#{$results.results_sub_dir}/**/*.txt&quot;</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-info" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">info</span><span
+            class="method-args">(message)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Same as log method, but doesn&#39;t have a n at the front.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="info-source">
+            <pre><span class="ruby-comment"># File lib/results.rb, line 124</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">info</span>(<span class="ruby-identifier">message</span>)
+  <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">formatter</span> = <span class="ruby-identifier">proc</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">_severity</span>, <span class="ruby-identifier">_datetime</span>, <span class="ruby-identifier">_progname</span>, <span class="ruby-identifier">msg</span><span class="ruby-operator">|</span>
+    <span class="ruby-node">&quot;#{msg}&quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@writer</span>.<span class="ruby-identifier">formatter</span> = <span class="ruby-identifier">proc</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">_severity</span>, <span class="ruby-identifier">_datetime</span>, <span class="ruby-identifier">_progname</span>, <span class="ruby-identifier">msg</span><span class="ruby-operator">|</span>
+    <span class="ruby-node">&quot;#{msg}&quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">info</span> <span class="ruby-identifier">message</span>
+  <span class="ruby-ivar">@writer</span>.<span class="ruby-identifier">info</span> <span class="ruby-identifier">message</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-log" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">log</span><span
+            class="method-args">(message)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Writes to the file and prints on the console. The log will be printed on a new line (unlike append method). @param [String] message</p>
+          
+          
+
+          
+          <div class="method-source-code" id="log-source">
+            <pre><span class="ruby-comment"># File lib/results.rb, line 67</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">log</span>(<span class="ruby-identifier">message</span>)
+  <span class="ruby-identifier">format_to_new_ine</span>
+  <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">info</span> <span class="ruby-identifier">message</span>
+  <span class="ruby-ivar">@writer</span>.<span class="ruby-identifier">info</span> <span class="ruby-identifier">message</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-log_action" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">log_action</span><span
+            class="method-args">(message)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>`log_action` performs the same function as `log` but adds a `:` at the end. @param [String] message</p>
+          
+          
+
+          
+          <div class="method-source-code" id="log_action-source">
+            <pre><span class="ruby-comment"># File lib/results.rb, line 60</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">log_action</span>(<span class="ruby-identifier">message</span>)
+  <span class="ruby-identifier">log</span>(<span class="ruby-identifier">message</span> <span class="ruby-operator">+</span> <span class="ruby-string">&#39;:&#39;</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-mkdir" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">mkdir</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Creates a new directory within the results directory with a timestamp as name (if it already doesn&#39;t exist). All results files will be stored in this new directory.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="mkdir-source">
+            <pre><span class="ruby-comment"># File lib/results.rb, line 37</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">mkdir</span>
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">dir</span> = <span class="ruby-node">&quot;test_results_#{Time.now.strftime(&#39;%Y-%m-%d&#39;)}&quot;</span>
+    <span class="ruby-constant">FileUtils</span>.<span class="ruby-identifier">mkdir_p</span>(<span class="ruby-node">&quot;#{@results_dir}/#{dir}&quot;</span>)
+    <span class="ruby-comment"># Dir.mkdir(&quot;#{@results_dir}/#{dir}&quot;)</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">dir</span>
+  <span class="ruby-keyword">rescue</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-identifier">ex</span>
+    <span class="ruby-identifier">puts</span> <span class="ruby-identifier">ex</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-print" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">print</span><span
+            class="method-args">(message)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Only prints to the console. @param [String] message</p>
+          
+          
+
+          
+          <div class="method-source-code" id="print-source">
+            <pre><span class="ruby-comment"># File lib/results.rb, line 94</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">print</span>(<span class="ruby-identifier">message</span>)
+  <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">info</span> <span class="ruby-identifier">message</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-screenshot" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">screenshot</span><span
+            class="method-args">(params)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Takes the screenshot of the webpage at time of calling the function. @param [String] params - configuration of the screenshot</p>
+          
+          
+
+          
+          <div class="method-source-code" id="screenshot-source">
+            <pre><span class="ruby-comment"># File lib/results.rb, line 144</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">screenshot</span>(<span class="ruby-identifier">params</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">filepath</span> = <span class="ruby-node">&quot;screenshots/#{params[0]}.png&quot;</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">-1</span>] <span class="ruby-operator">==</span> <span class="ruby-string">&quot;time&quot;</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">-2</span>] <span class="ruby-operator">==</span> <span class="ruby-string">&quot;time&quot;</span>
+      <span class="ruby-identifier">filepath</span> = <span class="ruby-node">&quot;screenshots/#{params[0..-2].join(&#39; &#39;)}_#{DateTime.now.strftime(&quot;%d-%m-%Y_%H.%M&quot;)}.png&quot;</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">-1</span>] <span class="ruby-operator">==</span> <span class="ruby-string">&quot;full&quot;</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">-2</span>] <span class="ruby-operator">==</span> <span class="ruby-string">&quot;full&quot;</span>
+      <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">log_action</span>(<span class="ruby-identifier">params</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">&#39; &#39;</span>))
+      <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">execute_script</span>(<span class="ruby-string">&quot;document.getElementsByTagName(&#39;html&#39;)[0].style[&#39;zoom&#39;] = 0.7&quot;</span>)
+      <span class="ruby-identifier">sleep</span> <span class="ruby-value">3</span>
+      <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">save_screenshot</span>(<span class="ruby-identifier">filepath</span>)
+      <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">execute_script</span>(<span class="ruby-string">&quot;document.getElementsByTagName(&#39;html&#39;)[0].style[&#39;zoom&#39;] = 1&quot;</span>)
+      <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">success</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">save_screenshot</span>(<span class="ruby-identifier">filepath</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">rescue</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-identifier">ex</span>
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">fail</span>(<span class="ruby-identifier">message</span>, <span class="ruby-identifier">ex</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-success" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">success</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Prints success to the end of the log.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="success-source">
+            <pre><span class="ruby-comment"># File lib/results.rb, line 99</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">success</span>
+  <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">formatter</span> = <span class="ruby-identifier">proc</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">severity</span>, <span class="ruby-identifier">datetime</span>, <span class="ruby-identifier">_progname</span>, <span class="ruby-identifier">msg</span><span class="ruby-operator">|</span>
+    <span class="ruby-node">&quot; #{msg}&quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@writer</span>.<span class="ruby-identifier">formatter</span> = <span class="ruby-identifier">proc</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">severity</span>, <span class="ruby-identifier">datetime</span>, <span class="ruby-identifier">_progname</span>, <span class="ruby-identifier">msg</span><span class="ruby-operator">|</span>
+    <span class="ruby-node">&quot; #{msg}&quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">info</span> <span class="ruby-string">&#39;SUCCESS&#39;</span>
+  <span class="ruby-ivar">@writer</span>.<span class="ruby-identifier">info</span> <span class="ruby-string">&#39;SUCCESS&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-write" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">write</span><span
+            class="method-args">(message)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Only writes to a file. @param [String] message</p>
+          
+          
+
+          
+          <div class="method-source-code" id="write-source">
+            <pre><span class="ruby-comment"># File lib/results.rb, line 88</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">write</span>(<span class="ruby-identifier">message</span>)
+  <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">info</span> <span class="ruby-identifier">message</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.2.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

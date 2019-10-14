@@ -1,5 +1,5 @@
-test settlement test 01
-description settlement day 01
+test settlement test
+description testing settlement management screen buttons
 goto AIX
 login aix_user1 aix_pass1
 menu settlement management

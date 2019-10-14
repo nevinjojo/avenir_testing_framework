@@ -6,10 +6,14 @@ menu Investors
 clickby id btn-new
 clickby id lnk-ind-for
 form admOrg
+textInput title Mr
 textInput name Foreign
 textInput last Individual One 
 textInput address1 742 Evergreen Terrace
 textInput address2 Springfield
+textInput address3 Bizdojo
+textInput address4 Avenir
+textInput address5 Technology
 textInput postcode 1011
 textInput phone 04 0800 838383
 textInput mobile 0225668589
@@ -48,9 +52,14 @@ menu Investors
 clickby id btn-new
 clickby id lnk-ind-for
 form admOrg
+textInput title Mrs
 textInput name Foreign
 textInput last Individual Two
 textInput address1 1B Bottom Lane
+textInput address2 Bizdojo
+textInput address3 Avenir 
+textInput address4 Technology
+textInput address5 AIX
 textInput postcode 1122
 textInput phone 04 5282354 
 textInput mobile 02212345678
@@ -80,5 +89,3 @@ button approve
 sleep 2
 expect pass
 logout
-
-

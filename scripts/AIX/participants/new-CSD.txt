@@ -8,6 +8,10 @@ clickby text CSD
 form admOrg
 textInput name CSD01
 textInput short CSD01
+textInput label CSD01
+textInput lei HZSN3FQBO05UDWGVC09
+textInput registration 18472638402799001
+textInput bic ABCD0001
 textInput address1 1 Market Lane
 textInput address2 BizDojo
 textInput address3 Avenir
@@ -15,6 +19,9 @@ textInput address4 Technology
 textInput address5 Wellington
 textInput postcode 6011
 menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668482
+textInput email CSD01@test.com
 button save
 sleep 2
 find button ready
@@ -45,6 +52,10 @@ clickby text CSD
 form admOrg
 textInput name CSD02
 textInput short CSD02
+textInput label CSD02
+textInput lei MZSN3FSHR34RFSVGR54
+textInput registration 18472638402799001
+textInput bic ABCD0002
 textInput address1 1 Market Lane
 textInput address2 BizDojo
 textInput address3 Avenir
@@ -52,6 +63,9 @@ textInput address4 Technology
 textInput address5 Wellington
 textInput postcode 6011
 menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email CSD02@test.com
 button save
 sleep 2
 find button ready
@@ -82,6 +96,10 @@ clickby text CSD
 form admOrg
 textInput name CSD03
 textInput short CSD03
+textInput label CSD03
+textInput lei HSZF2JFCF23JGCSGEC21
+textInput registration 45586279146624935446
+textInput bic ABCD0003
 textInput address1 1 Market Lane
 textInput address2 BizDojo
 textInput address3 Avenir
@@ -89,6 +107,9 @@ textInput address4 Technology
 textInput address5 Wellington
 textInput postcode 6011
 menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email CSD03@test.com
 button save
 sleep 2
 find button ready
@@ -119,6 +140,10 @@ clickby text CSD
 form admOrg
 textInput name CSD04
 textInput short CSD04
+textInput label CSD04
+textInput lei HSZF2JFCF23JGCSGEC21
+textInput registration 18472638402748001
+textInput bic ABCD0004
 textInput address1 1 Market Lane
 textInput address2 BizDojo
 textInput address3 Avenir
@@ -126,6 +151,9 @@ textInput address4 Technology
 textInput address5 Wellington
 textInput postcode 6011
 menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email CSD04@test.com
 button save
 sleep 2
 find button ready
@@ -156,6 +184,10 @@ clickby text CSD
 form admOrg
 textInput name CSD05
 textInput short CSD05
+textInput label CSD05
+textInput lei HSZF2JFCF23JGCSGEC21
+textInput registration 18472638402748001
+textInput bic ABCD0005
 textInput address1 1 Market Lane
 textInput address2 BizDojo
 textInput address3 Avenir
@@ -163,6 +195,9 @@ textInput address4 Technology
 textInput address5 Wellington
 textInput postcode 6011
 menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email CSD05@test.com
 button save
 sleep 2
 find button ready
@@ -193,6 +228,10 @@ clickby text CSD
 form admOrg
 textInput name CSD06
 textInput short CSD06
+textInput label CSD06
+textInput lei HSZF2JFCF23JGCSGEC21
+textInput registration 18472638402748001
+textInput bic ABCD0006
 textInput address1 1 Market Lane
 textInput address2 BizDojo
 textInput address3 Avenir
@@ -200,6 +239,9 @@ textInput address4 Technology
 textInput address5 Wellington
 textInput postcode 6011
 menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email CSD06@test.com
 button save
 sleep 2
 find button ready
@@ -230,6 +272,10 @@ clickby text CSD
 form admOrg
 textInput name CSD07
 textInput short CSD07
+textInput label CSD07
+textInput lei HSZF2JFCF23JGCSGEC21
+textInput registration 18472638402748001
+textInput bic ABCD0007
 textInput address1 1 Market Lane
 textInput address2 BizDojo
 textInput address3 Avenir
@@ -237,6 +283,9 @@ textInput address4 Technology
 textInput address5 Wellington
 textInput postcode 6011
 menuInput country New Zealand
+textInput phone +04 0800 848484
+textInput mobile +64 225668582
+textInput email CSD07@test.com
 button save
 sleep 2
 find button ready
@@ -267,6 +316,10 @@ clickby text CSD
 form admOrg
 textInput name CSD08
 textInput short CSD08
+textInput label CSD08
+textInput lei HSZF2JFCF23JGCSGEC21
+textInput registration 18472638402748001
+textInput bic ABCD0008
 textInput address1 1 Market Lane
 textInput address2 BizDojo
 textInput address3 Avenir
@@ -274,6 +327,9 @@ textInput address4 Technology
 textInput address5 Wellington
 textInput postcode 6011
 menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email CSD08@test.com
 button save
 sleep 2
 find button ready
@@ -304,6 +360,10 @@ clickby text CSD
 form admOrg
 textInput name CSD09
 textInput short CSD09
+textInput label CSD09
+textInput lei HSZF2JFCF23JGCSGEC21
+textInput registration 18472638402748001
+textInput bic ABCD0009
 textInput address1 1 Market Lane
 textInput address2 BizDojo
 textInput address3 Avenir 
@@ -311,6 +371,9 @@ textInput address4 Technology
 textInput address5 Wellington
 textInput postcode 6011
 menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email CSD09@test.com
 button save
 sleep 2
 find button ready
@@ -341,6 +404,10 @@ clickby text CSD
 form admOrg
 textInput name CSD10
 textInput short CSD10
+textInput label CSD10
+textInput lei HSZF2JFCF23JGCSGEC21
+textInput registration 18472638402748001
+textInput bic ABCD0010
 textInput address1 1 Market Lane
 textInput address2 BizDojo
 textInput address3 Avenir
@@ -348,6 +415,9 @@ textInput address4 Technology
 textInput address5 Wellington
 textInput postcode 6011
 menuInput country New Zealand
+textInput phone +04 0800 838833
+textInput mobile +64 225668582
+textInput email CSD10@test.com
 button save
 sleep 2
 find button ready

@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Page - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+  var index_rel_prefix = "./";
+</script>
+
+<script src="./js/navigation.js" defer></script>
+<script src="./js/search.js" defer></script>
+<script src="./js/search_index.js" defer></script>
+<script src="./js/searcher.js" defer></script>
+<script src="./js/darkfish.js" defer></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link">Object
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-click_by">#click_by</a>
+    
+    <li ><a href="#method-i-go_back">#go_back</a>
+    
+    <li ><a href="#method-i-go_to">#go_to</a>
+    
+    <li ><a href="#method-i-home">#home</a>
+    
+    <li ><a href="#method-i-id_present-3F">#id_present?</a>
+    
+    <li ><a href="#method-i-menu">#menu</a>
+    
+    <li ><a href="#method-i-menu_item">#menu_item</a>
+    
+    <li ><a href="#method-i-navbar_brand">#navbar_brand</a>
+    
+    <li ><a href="#method-i-navbar_date">#navbar_date</a>
+    
+    <li ><a href="#method-i-navbar_text">#navbar_text</a>
+    
+    <li ><a href="#method-i-previous">#previous</a>
+    
+    <li ><a href="#method-i-save_id">#save_id</a>
+    
+    <li ><a href="#method-i-scroll_to">#scroll_to</a>
+    
+    <li ><a href="#method-i-smart_split">#smart_split</a>
+    
+    <li ><a href="#method-i-user_menu">#user_menu</a>
+    
+    <li ><a href="#method-i-user_menu_item">#user_menu_item</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Page">
+  <h1 id="class-Page" class="class">
+    class Page
+  </h1>
+
+  <section class="description">
+    
+<p>Elements that</p>
+
+  </section>
+
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(driver)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>@param [WebDriver] driver - The driver that will be used during the process.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/page/page.rb, line 12</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span>(<span class="ruby-identifier">driver</span>)
+  <span class="ruby-ivar">@driver</span> = <span class="ruby-identifier">driver</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-click_by" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">click_by</span><span
+            class="method-args">(params)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Clicks on the first element found by one of several search criteria. The element to be clicked could be found using its id, text, class, or xpath The element will only be clicked if it is displayed, else it fails</p>
+
+<p>references to the element: id - clicks by id of the element class - clicks by the list of classes that are applied to the element text - clicks by the text within element. If there are multiple similar text, specify which one to choose using the last argument</p>
+
+<p>Note: quotations in xpath is not supported for this function (i.e. //*[@id=“data”]). This is because other arguments such as text could have quotations which are usually removed.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="click_by-source">
+            <pre><span class="ruby-comment"># File lib/page/page.rb, line 203</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">click_by</span>(<span class="ruby-identifier">params</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">log_action</span>(<span class="ruby-node">&quot;clickby #{params[0]}&quot;</span>)
+    <span class="ruby-keyword">case</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">0</span>]
+    <span class="ruby-keyword">when</span> <span class="ruby-string">&#39;id&#39;</span>
+      <span class="ruby-identifier">element</span> = <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:id</span>, <span class="ruby-identifier">params</span>[<span class="ruby-value">1</span>])
+    <span class="ruby-keyword">when</span> <span class="ruby-string">&#39;class&#39;</span>
+      <span class="ruby-identifier">element</span> = <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:css</span>, <span class="ruby-identifier">params</span>[<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">-1</span>].<span class="ruby-identifier">join</span>(<span class="ruby-string">&#39;.&#39;</span>).<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">/(^(?!\.)|\.{2,})/</span>, <span class="ruby-string">&#39;.&#39;</span>))
+    <span class="ruby-keyword">when</span> <span class="ruby-string">&#39;text&#39;</span>
+      <span class="ruby-comment"># find the element that matches the text specified in the script. If there are two elements, then choose the one specified in the script as the last argument.</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">-1</span>].<span class="ruby-identifier">match</span>(<span class="ruby-regexp">/\A-?\d+\Z/</span>)
+        <span class="ruby-identifier">elements</span> = <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_elements</span>(<span class="ruby-value">:xpath</span>, <span class="ruby-string">&quot;//*[contains(text(), &#39;&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">-2</span>].<span class="ruby-identifier">join</span>(<span class="ruby-string">&#39; &#39;</span>) <span class="ruby-operator">+</span> <span class="ruby-string">&quot;&#39;)]&quot;</span>)
+        <span class="ruby-identifier">element</span> = <span class="ruby-identifier">elements</span>[<span class="ruby-identifier">params</span>[<span class="ruby-value">-1</span>].<span class="ruby-identifier">to_i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>]
+        <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">execute_script</span>(<span class="ruby-string">&quot;arguments[0].click();&quot;</span>, <span class="ruby-identifier">element</span>)
+        <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">success</span>
+        <span class="ruby-keyword">return</span>
+      <span class="ruby-keyword">else</span> <span class="ruby-comment"># Otherwise, click on the text that contains the whole text</span>
+        <span class="ruby-identifier">element</span> = <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:xpath</span>, <span class="ruby-string">&quot;//*[contains(text(), &#39;&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">-1</span>].<span class="ruby-identifier">join</span>(<span class="ruby-string">&quot; &quot;</span>) <span class="ruby-operator">+</span> <span class="ruby-string">&quot;&#39;)]&quot;</span>)
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-string">&#39;xpath&#39;</span>
+      <span class="ruby-identifier">xpath</span> = <span class="ruby-identifier">params</span>[<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">-1</span>].<span class="ruby-identifier">join</span>(<span class="ruby-string">&#39;&#39;</span>)
+      <span class="ruby-identifier">element</span> = <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:xpath</span>, <span class="ruby-identifier">xpath</span>)
+    <span class="ruby-keyword">end</span>
+
+    <span class="ruby-comment">#Once the element is found, check \if it is displayed on the screen and then click it.</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">element</span>.<span class="ruby-identifier">displayed?</span>
+      <span class="ruby-identifier">element</span>.<span class="ruby-identifier">click</span>
+      <span class="ruby-identifier">$session</span>.<span class="ruby-identifier">success</span> = <span class="ruby-keyword">true</span>
+      <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">success</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">$session</span>.<span class="ruby-identifier">success</span> = <span class="ruby-keyword">false</span>
+      <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">fail</span>(<span class="ruby-node">&quot;clickby #{params.join(&#39; &#39;)}&quot;</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">rescue</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-identifier">ex</span>
+    <span class="ruby-identifier">$session</span>.<span class="ruby-identifier">success</span> = <span class="ruby-keyword">false</span>
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">fail</span>(<span class="ruby-node">&quot;clickby #{params[0]}&quot;</span>, <span class="ruby-identifier">ex</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-go_back" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">go_back</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Navigates back to the page driver was before.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="go_back-source">
+            <pre><span class="ruby-comment"># File lib/page/page.rb, line 259</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">go_back</span>
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">log_action</span>(<span class="ruby-string">&#39;back&#39;</span>)
+    <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">navigate</span>.<span class="ruby-identifier">back</span>
+    <span class="ruby-comment">#wait for the new page to load</span>
+    <span class="ruby-identifier">$session</span>.<span class="ruby-identifier">wait_for_stale</span>
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">success</span>
+  <span class="ruby-keyword">rescue</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-identifier">ex</span>
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">failure</span>(<span class="ruby-identifier">ex</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-go_to" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">go_to</span><span
+            class="method-args">(params)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Navigates to a particular url that is stored in the yaml file.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="go_to-source">
+            <pre><span class="ruby-comment"># File lib/page/page.rb, line 248</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">go_to</span>(<span class="ruby-identifier">params</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">log_action</span>(<span class="ruby-string">&#39;goto&#39;</span>)
+    <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">navigate</span>.<span class="ruby-identifier">to</span>(<span class="ruby-identifier">$config</span>[<span class="ruby-identifier">params</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">&#39; &#39;</span>)])
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">success</span>
+  <span class="ruby-keyword">rescue</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-identifier">ex</span>
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">fail</span>(<span class="ruby-string">&#39;goto&#39;</span>, <span class="ruby-identifier">ex</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-home" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">home</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the &#39;home&#39; link and navigates the website to the home page. @return [Selenium_Element] <a href="Home.html"><code>Home</code></a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="home-source">
+            <pre><span class="ruby-comment"># File lib/page/page.rb, line 28</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">home</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:link_text</span>, <span class="ruby-string">&#39;Home&#39;</span>).<span class="ruby-identifier">displayed?</span>
+    <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:link_text</span>, <span class="ruby-string">&#39;Home&#39;</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">info</span>(<span class="ruby-string">&quot;Cannot find Home link&quot;</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-id_present-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">id_present?</span><span
+            class="method-args">(item)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Checks the validity of the id provided. @param [String] item</p>
+          
+          
+
+          
+          <div class="method-source-code" id="id_present-3F-source">
+            <pre><span class="ruby-comment"># File lib/page/page.rb, line 18</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">id_present?</span>(<span class="ruby-identifier">item</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:id</span>, <span class="ruby-identifier">item</span>).<span class="ruby-identifier">displayed?</span>
+  <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Selenium</span><span class="ruby-operator">::</span><span class="ruby-constant">WebDriver</span><span class="ruby-operator">::</span><span class="ruby-constant">Error</span><span class="ruby-operator">::</span><span class="ruby-constant">NoSuchElementError</span>
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">info</span>(<span class="ruby-string">&quot;Cannot find id / id does not exist&quot;</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-menu" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">menu</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the &#39;Menu&#39; button on the current page. @return [Selenium_Element] Menu</p>
+          
+          
+
+          
+          <div class="method-source-code" id="menu-source">
+            <pre><span class="ruby-comment"># File lib/page/page.rb, line 48</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">menu</span>
+  <span class="ruby-comment"># Click on either Menu link or hamburger button based on the screen size.</span>
+  <span class="ruby-comment"># Note: `toggle` for normal web support, `toggler` for settle web, boot4 support</span>
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:class</span>, <span class="ruby-string">&#39;navbar-toggle&#39;</span>).<span class="ruby-identifier">displayed?</span>
+      <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:id</span>, <span class="ruby-string">&#39;main-menu&#39;</span>).<span class="ruby-identifier">displayed?</span>
+        <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:class</span>, <span class="ruby-string">&#39;navbar-toggle&#39;</span>).<span class="ruby-identifier">click</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Selenium</span><span class="ruby-operator">::</span><span class="ruby-constant">WebDriver</span><span class="ruby-operator">::</span><span class="ruby-constant">Error</span><span class="ruby-operator">::</span><span class="ruby-constant">NoSuchElementError</span>
+    <span class="ruby-comment"># If this button isn&#39;t visible, try `toggler`</span>
+    <span class="ruby-keyword">begin</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:class</span>, <span class="ruby-string">&#39;navbar-toggler&#39;</span>).<span class="ruby-identifier">displayed?</span>
+        <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:id</span>, <span class="ruby-string">&#39;main-menu&#39;</span>).<span class="ruby-identifier">displayed?</span>
+          <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:class</span>, <span class="ruby-string">&#39;navbar-toggle&#39;</span>).<span class="ruby-identifier">click</span>
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Selenium</span><span class="ruby-operator">::</span><span class="ruby-constant">WebDriver</span><span class="ruby-operator">::</span><span class="ruby-constant">Error</span><span class="ruby-operator">::</span><span class="ruby-constant">NoSuchElementError</span>
+      <span class="ruby-comment"># Do nothing; if this button isn&#39;t visible, don&#39;t panic...</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:id</span>, <span class="ruby-string">&#39;main-menu&#39;</span>).<span class="ruby-identifier">displayed?</span>
+      <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:id</span>, <span class="ruby-string">&#39;main-menu&#39;</span>)
+    <span class="ruby-keyword">elsif</span> <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:link_text</span>, <span class="ruby-string">&#39;Menu&#39;</span>).<span class="ruby-identifier">displayed?</span>
+      <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:link_text</span>, <span class="ruby-string">&#39;Menu&#39;</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Selenium</span><span class="ruby-operator">::</span><span class="ruby-constant">WebDriver</span><span class="ruby-operator">::</span><span class="ruby-constant">Error</span><span class="ruby-operator">::</span><span class="ruby-constant">NoSuchElementError</span>
+    <span class="ruby-identifier">menus</span> = <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_elements</span>(<span class="ruby-value">:class</span>, <span class="ruby-string">&#39;dropdown-toggle&#39;</span>)
+    <span class="ruby-identifier">menus</span>[<span class="ruby-value">0</span>]
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-menu_item" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">menu_item</span><span
+            class="method-args">(item)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the particular menu item link on current page. @return [Selenium_Element] Menu_Item</p>
+          
+          
+
+          
+          <div class="method-source-code" id="menu_item-source">
+            <pre><span class="ruby-comment"># File lib/page/page.rb, line 84</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">menu_item</span>(<span class="ruby-identifier">item</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:id</span>, <span class="ruby-string">&#39;menu&#39;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">item</span>).<span class="ruby-identifier">displayed?</span>
+  <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Selenium</span><span class="ruby-operator">::</span><span class="ruby-constant">WebDriver</span><span class="ruby-operator">::</span><span class="ruby-constant">Error</span><span class="ruby-operator">::</span><span class="ruby-constant">NoSuchElementError</span>
+    <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:link_text</span>, <span class="ruby-identifier">item</span>.<span class="ruby-identifier">split</span>.<span class="ruby-identifier">map</span>(<span class="ruby-operator">&amp;</span><span class="ruby-value">:capitalize</span>).<span class="ruby-identifier">join</span>(<span class="ruby-string">&#39; &#39;</span>))
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-navbar_brand" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">navbar_brand</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the navbar brand element. @return [Selenium_Element] navbar-brand</p>
+          
+          
+
+          
+          <div class="method-source-code" id="navbar_brand-source">
+            <pre><span class="ruby-comment"># File lib/page/page.rb, line 118</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">navbar_brand</span>
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:class</span>, <span class="ruby-string">&#39;navbar-brand&#39;</span>).<span class="ruby-identifier">displayed?</span>
+      <span class="ruby-keyword">return</span> <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:class</span>, <span class="ruby-string">&#39;navbar-brand&#39;</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Selenium</span><span class="ruby-operator">::</span><span class="ruby-constant">WebDriver</span><span class="ruby-operator">::</span><span class="ruby-constant">Error</span><span class="ruby-operator">::</span><span class="ruby-constant">NoSuchElementError</span>
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">info</span>(<span class="ruby-string">&quot;Cannot find navbar brand&quot;</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-navbar_date" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">navbar_date</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the navbar date element. @return [Selenium_Element] navbar-date</p>
+          
+          
+
+          
+          <div class="method-source-code" id="navbar_date-source">
+            <pre><span class="ruby-comment"># File lib/page/page.rb, line 142</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">navbar_date</span>
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:class</span>, <span class="ruby-string">&#39;business-date pull-right&#39;</span>).<span class="ruby-identifier">displayed?</span>
+      <span class="ruby-keyword">return</span> <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:class</span>, <span class="ruby-string">&#39;business-date pull-right&#39;</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Selenium</span><span class="ruby-operator">::</span><span class="ruby-constant">WebDriver</span><span class="ruby-operator">::</span><span class="ruby-constant">Error</span><span class="ruby-operator">::</span><span class="ruby-constant">NoSuchElementError</span>
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">info</span>(<span class="ruby-string">&quot;Cannot find navbar date&quot;</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-navbar_text" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">navbar_text</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the navbar text element. @return [Selenium_Element] navbar-text</p>
+          
+          
+
+          
+          <div class="method-source-code" id="navbar_text-source">
+            <pre><span class="ruby-comment"># File lib/page/page.rb, line 130</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">navbar_text</span>
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:class</span>, <span class="ruby-string">&#39;navbar-text&#39;</span>).<span class="ruby-identifier">displayed?</span>
+      <span class="ruby-keyword">return</span> <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:class</span>, <span class="ruby-string">&#39;navbar-text&#39;</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Selenium</span><span class="ruby-operator">::</span><span class="ruby-constant">WebDriver</span><span class="ruby-operator">::</span><span class="ruby-constant">Error</span><span class="ruby-operator">::</span><span class="ruby-constant">NoSuchElementError</span>
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">info</span>(<span class="ruby-string">&quot;Cannot find navbar text&quot;</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-previous" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">previous</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the &#39;previous&#39; link and navigates the website to the previous page. @return [Selenium_Element] <a href="Home.html"><code>Home</code></a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="previous-source">
+            <pre><span class="ruby-comment"># File lib/page/page.rb, line 38</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">previous</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:link_text</span>, <span class="ruby-string">&#39;Previous&#39;</span>).<span class="ruby-identifier">displayed?</span>
+    <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:link_text</span>, <span class="ruby-string">&#39;Previous&#39;</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">info</span>(<span class="ruby-string">&quot;Cannot find Previous link&quot;</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-save_id" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">save_id</span><span
+            class="method-args">(action)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Finds the id displayed for a particular object created in the system and saving the id to `temp_id` variable.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="save_id-source">
+            <pre><span class="ruby-comment"># File lib/page/page.rb, line 153</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">save_id</span>(<span class="ruby-identifier">action</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">log_action</span>(<span class="ruby-identifier">action</span>)
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:css</span>, <span class="ruby-string">&#39;h1 &gt; small&#39;</span>)
+      <span class="ruby-identifier">h1_string</span> = <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:css</span>, <span class="ruby-string">&#39;h1 &gt; small&#39;</span>).<span class="ruby-identifier">attribute</span>(<span class="ruby-string">&#39;innerText&#39;</span>)
+      <span class="ruby-identifier">extracted_id</span> = <span class="ruby-identifier">h1_string</span>[<span class="ruby-regexp">/\(([^()]*)\)/</span>] <span class="ruby-comment"># Fetch the string inside the brackets</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">extracted_id</span>.<span class="ruby-identifier">nil?</span>
+        <span class="ruby-identifier">extracted_id</span> = <span class="ruby-identifier">h1_string</span>
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">h1_string</span>.<span class="ruby-identifier">include?</span> <span class="ruby-string">&#39;)&#39;</span>
+        <span class="ruby-identifier">h1_string</span> = <span class="ruby-identifier">extracted_id</span>[<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">-1</span>].<span class="ruby-identifier">chomp</span>(<span class="ruby-string">&#39;)&#39;</span>)
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">h1_string</span>.<span class="ruby-identifier">include?</span> <span class="ruby-string">&#39;(&#39;</span>
+        <span class="ruby-identifier">h1_string</span> = <span class="ruby-identifier">h1_string</span>.<span class="ruby-identifier">split</span>(<span class="ruby-regexp">/\(([^()]*)\)/</span>)
+        <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">success</span>
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-identifier">$session</span>.<span class="ruby-identifier">temp_id</span> = <span class="ruby-identifier">h1_string</span>
+      <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">append</span>(<span class="ruby-identifier">$session</span>.<span class="ruby-identifier">temp_id</span>)
+      <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">success</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">rescue</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-identifier">ex</span>
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">info</span>(<span class="ruby-node">&quot;#{ex.class}: #{ex.message}&quot;</span>)
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">fail</span>(<span class="ruby-identifier">action</span>, <span class="ruby-identifier">ex</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-scroll_to" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">scroll_to</span><span
+            class="method-args">(params)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Scrolls the view to include the position of a specific element in the page (by id). The target element must be &#39;visible&#39; in the sense that you could normally see it if you scrolled to it.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="scroll_to-source">
+            <pre><span class="ruby-comment"># File lib/page/page.rb, line 181</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">scroll_to</span>(<span class="ruby-identifier">params</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">log_action</span>(<span class="ruby-string">&#39;scrollto&#39;</span>)
+    <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:id</span>, <span class="ruby-identifier">params</span>[<span class="ruby-value">0</span>]).<span class="ruby-identifier">location_once_scrolled_into_view</span>
+    <span class="ruby-identifier">$session</span>.<span class="ruby-identifier">success</span> = <span class="ruby-keyword">true</span>
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">success</span>
+  <span class="ruby-keyword">rescue</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-identifier">ex</span>
+    <span class="ruby-identifier">$session</span>.<span class="ruby-identifier">success</span> = <span class="ruby-keyword">false</span>
+    <span class="ruby-identifier">$results</span>.<span class="ruby-identifier">fail</span>(<span class="ruby-node">&quot;scrollto (#{params.join(&#39; &#39;)})&quot;</span>, <span class="ruby-identifier">ex</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-smart_split" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">smart_split</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="smart_split-source">
+            <pre><span class="ruby-comment"># File lib/page/page.rb, line 242</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">smart_split</span>
+  <span class="ruby-identifier">sa</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">split</span>(<span class="ruby-regexp">/&quot;/</span>).<span class="ruby-identifier">collect</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">x</span>.<span class="ruby-identifier">strip</span>}
+  <span class="ruby-keyword">return</span> (<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-identifier">sa</span>.<span class="ruby-identifier">length</span>).<span class="ruby-identifier">zip</span>(<span class="ruby-identifier">sa</span>).<span class="ruby-identifier">collect</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">i</span>, <span class="ruby-identifier">x</span><span class="ruby-operator">|</span> (<span class="ruby-identifier">i</span> <span class="ruby-operator">&amp;</span> <span class="ruby-value">1</span>).<span class="ruby-identifier">zero?</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">x</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">x</span>.<span class="ruby-identifier">split</span>}.<span class="ruby-identifier">flatten</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-user_menu" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">user_menu</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the user menu button on current page. @return [Selenium_Element] User_Menu</p>
+          
+          
+
+          
+          <div class="method-source-code" id="user_menu-source">
+            <pre><span class="ruby-comment"># File lib/page/page.rb, line 94</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">user_menu</span>
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:id</span>, <span class="ruby-string">&#39;user-menu&#39;</span>).<span class="ruby-identifier">displayed?</span>
+      <span class="ruby-keyword">return</span> <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:id</span>, <span class="ruby-string">&#39;user-menu&#39;</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Selenium</span><span class="ruby-operator">::</span><span class="ruby-constant">WebDriver</span><span class="ruby-operator">::</span><span class="ruby-constant">Error</span><span class="ruby-operator">::</span><span class="ruby-constant">NoSuchElementError</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:class</span>, <span class="ruby-string">&#39;navbar-toggle&#39;</span>).<span class="ruby-identifier">displayed?</span>
+      <span class="ruby-keyword">return</span> <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:class</span>, <span class="ruby-string">&#39;navbar-toggle&#39;</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-user_menu_item" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">user_menu_item</span><span
+            class="method-args">(item)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns the particular user menu item link on current page. @return [Selenium_Element] User_Menu_Item</p>
+          
+          
+
+          
+          <div class="method-source-code" id="user_menu_item-source">
+            <pre><span class="ruby-comment"># File lib/page/page.rb, line 108</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">user_menu_item</span>(<span class="ruby-identifier">item</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:id</span>, <span class="ruby-string">&#39;user_menu&#39;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">item</span>).<span class="ruby-identifier">displayed?</span>
+  <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Selenium</span><span class="ruby-operator">::</span><span class="ruby-constant">WebDriver</span><span class="ruby-operator">::</span><span class="ruby-constant">Error</span><span class="ruby-operator">::</span><span class="ruby-constant">NoSuchElementError</span>
+    <span class="ruby-ivar">@driver</span>.<span class="ruby-identifier">find_element</span>(<span class="ruby-value">:link_text</span>, <span class="ruby-identifier">item</span>.<span class="ruby-identifier">split</span>.<span class="ruby-identifier">map</span>(<span class="ruby-operator">&amp;</span><span class="ruby-value">:capitalize</span>).<span class="ruby-identifier">join</span>(<span class="ruby-string">&#39; &#39;</span>))
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.2.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

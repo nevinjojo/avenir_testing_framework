@@ -1,0 +1,450 @@
+test new participant 21 - maker/checker adjustments
+description creating a new broker
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Participant 21
+textInput short PART21
+textInput label PART21
+textInput lei HZSN3FQBO05UDWGVC21
+textInput registration 18472638402748001
+textInput bic ABCD0001
+textInput address1 50 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email participant21@test.com
+checkerInput mkchktype_0
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part PART21
+search s_stat Ready
+button search
+tableClick short PART21
+find textH1 View Broker
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 22 - maker / checker adjustments
+description creating a new broker
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Participant 22
+textInput short PART22
+textInput label PART22
+textInput lei HZSN2FSQNO34UDWGBN21
+textInput registration 1934153405356002
+textInput bic ABCD0002
+textInput address1 10 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+textInput phone +04 0800 828282
+textInput mobile +64 225668582
+textInput email participant22@test.com
+checkerInput mkchktype_0
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part PART22
+search s_stat Ready
+button search
+tableClick short PART22
+find textH1 View Broker
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 23 - maker / checker adjustments
+description creating a new broker
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Participant 23
+textInput short PART23
+textInput label PART23
+textInput lei HZSN1GSQNO25UDWGBN21
+textInput registration 1290131239423451
+textInput bic ABCD0003
+textInput address1 3 Tory Street
+textInput address2 BizDojo 
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email participant23@test.com
+checkerInput mkchktype_0
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part PART23
+search s_stat Ready
+button search
+tableClick short PART23
+find textH1 View Broker
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 24 - maker / checker adjustments
+description creating a new broker
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Participant 24
+textInput short PART24
+textInput label PART24
+textInput lei HZSN1GSQNO25UDWFBN21
+textInput registration 1230435039486032
+textInput bic ABCD0004
+textInput address1 10 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+textInput phone +04 0800 838338
+textInput mobile +64 225668582
+textInput email participant24@test.com
+checkerInput mkchktype_0
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part PART24
+search s_stat Ready
+button search
+tableClick short PART24
+find textH1 View Broker
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 25 - maker / checker adjustments
+description creating a new broker
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Participant 25
+textInput short PART25
+textInput label PART25
+textInput lei HZSN1GSQN026UDWFBN21
+textInput registration 2242052342342342
+textInput bic ABCD0005
+textInput address1 32 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email participant25@test.com
+checkerInput mkchktype_0
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part PART25
+search s_stat Ready
+button search
+tableClick short PART25
+find textH1 View Broker
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 26 - maker / checker adjustments
+description creating a new broker
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Participant 26
+textInput short PART26
+textInput label PART26
+textInput lei HZSN1GSQN025UDWFNM21
+textInput registration 2131905823403258
+textInput bic ABCD0006
+textInput address1 57 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email participant26@test.com
+checkerInput mkchktype_0
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part PART26
+search s_stat Ready
+button search 
+tableClick short PART26
+find textH1 View Broker
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 27 - maker / checker adjustments
+description creating a new broker
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Participant 27
+textInput short PART27
+textInput label PART27
+textInput lei HZSN1FSQN943UDWBND21
+textInput registration 2310293003214246
+textInput bic ABCD0007
+textInput address1 2 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email participant27@test.com
+checkerInput mkchktype_0
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part PART27
+search s_stat Ready
+button search
+tableClick short PART27
+find textH1 View Broker
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 28 - maker / checker adjustments
+description creating a new broker
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg 
+textInput name Participant 28
+textInput short PART28
+textInput label PART28
+textInput lei HZSN1FSHR193UDWBND21
+textInput registration 2318923420132582
+textInput bic ABCD0008
+textInput address1 30 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email participant28@test.com
+checkerInput mkchktype_0
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part PART28
+search s_stat Ready
+button search
+tableClick short PART28
+find textH1 View Broker
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 29 - maker / checekr adjustments
+description creating a new broker
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Participant 29
+textInput short PART29
+textInput label PART29
+textInput lei HZSN2FSHR103UDWBNZ21
+textInput registration 2334239048248572
+textInput bic ABCD0009
+textInput address1 25 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email participant29@test.com
+checkerInput mkchktype_0
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part PART29
+search s_stat Ready
+button search
+tableClick short PART29
+find textH1 View Broker
+button approve
+sleep 2
+expect pass
+logout
+
+test new participant 30 - maker / checker adjustments
+description creating a new broker
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Broker
+form admOrg
+textInput name Participant 30
+textInput short PART30
+textInput label PART30
+textInput lei HZSN2FSHR103UDWBNZ23
+textInput registration 9301823012303843
+textInput bic ABCD0010
+textInput address1 3 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668482
+textInput email participant30@test.com
+checkerInput mkchktype_0
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part PART30
+search s_stat Ready
+button search
+tableClick short PART30
+find textH1 View Broker
+button approve
+sleep 2
+expect pass
+logout
+

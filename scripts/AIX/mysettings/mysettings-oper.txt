@@ -1,0 +1,31 @@
+test My Settings - Oper
+description testing edit details + change password
+goto AIX
+login aix_user1 aix_pass1
+usermenu my settings
+clickby text Edit Details
+form usrUserDetails
+textInput title TEST
+textInput name SYSTEM
+textInput last OPER
+textInput preferred Operator
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+menuInput locale English (NZ)
+menuInput timezone UTC+00:00 (London)
+button save
+sleep 2
+clickby text Edit Details
+sleep 2
+clickby text Change Password
+form usrUserPassword
+sleep 2
+textInput password_password Password1!
+textInput password_confirm Password1!
+sleep 2
+clickby id btn-save
+sleep 2
+clickby text Change Password
+find textH1 My Settings
+expect pass
+logout

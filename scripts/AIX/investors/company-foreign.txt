@@ -9,12 +9,16 @@ form admOrg
 textInput name Foreign Company 1
 textInput address1 66 Adelaide Rd
 textInput address2 Newtown
-textInput address3 Wellington 
+textInput address3 Wellington
+textInput address4 Avenir
+textInput address5 Technology
 textInput postcode 6021
 textInput phone 0800 838383
+textInput mobile 02130294302
 menuInput country New Zealand
 textInput idNumber 19581958
 menuInput idCountry United States
+textInput idDate 21/08/1997
 button save
 sleep 3
 button ready
@@ -49,11 +53,15 @@ textInput name Foreign Company 2
 textInput address1 35-37 Cambridge Terrace
 textInput address2 Te Aro
 textInput address3 Wellington 
+textInput address4 Avenir
+textInput address5 Technology
 textInput postcode 6011
 textInput phone +048025826
+textInput mobile 0226779253
 menuInput country New Zealand
 textInput idNumber 19601960
 menuInput idCountry United States
+textInput idDate 11/11/2003
 button save
 sleep 3
 button ready

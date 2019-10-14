@@ -31,7 +31,7 @@ sleep 4
 tableClick ID saveID
 button decline
 clickby id lnk-delete
-find textH1 View Transactions
+find textH1 Transactions
 sleep 2
 expect pass
 logout
@@ -297,7 +297,7 @@ sleep 4
 tableClick ID saveID
 button decline
 clickby id lnk-delete
-find textH1 View Transfer
+find textH1 View Transactions
 sleep 2
 expect pass
 logout

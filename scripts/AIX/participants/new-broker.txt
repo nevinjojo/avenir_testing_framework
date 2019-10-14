@@ -8,8 +8,19 @@ clickby text Broker
 form admOrg
 textInput name Participant 01
 textInput short PART01
+textInput label PART01
+textInput lei HZSN3FQBO05UDWGVC21
+textInput registration 18472638402748001
+textInput bic ABCD0001
+textInput address1 62 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011 
 menuInput country New Zealand
 textInput phone +04 0800 838383
+textInput mobile +64 225668582
 textInput email participant01@test.com
 button save
 sleep 2
@@ -41,7 +52,20 @@ clickby text Broker
 form admOrg
 textInput name Participant 02
 textInput short PART02
+textInput label PART02
+textInput lei JZSF2JFBE23NFAWESC23
+textInput registration 3102392310342312
+textInput bic ABCD0002
+textInput address1 25 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
 menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email participant02@test.com
 button save
 sleep 2
 find button ready
@@ -72,7 +96,20 @@ clickby text Broker
 form admOrg
 textInput name Participant 03
 textInput short PART03
+textInput label PART03
+textInput lei JASF3FSAD34GDSFVESC24
+textInput registration 234329422132319
+textInput bic ABCD0003
+textInput address1 30 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
 menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email participant03@test.com
 button save
 sleep 2
 find button ready
@@ -103,7 +140,20 @@ clickby text Broker
 form admOrg
 textInput name Participant 04
 textInput short PART04
+textInput label PART04
+textInput lei SDFD2FSCF65JHGRTGRG53
+textInput registration 239034209443249
+textInput bic ABCD0004
+textInput address1 20 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
 menuInput country New Zealand
+textInput phone +04 0800 828282
+textInput mobile +64 225668582
+textInput email participant04@test.com
 button save
 sleep 2
 find button ready
@@ -134,7 +184,19 @@ clickby text Broker
 form admOrg
 textInput name Participant 05
 textInput short PART05
+textInput label PART05
+textInput lei SADAJ3FD3GDSNF032GDC34
+textInput registration 12391394234223913035
+textInput bic ABCD0005
+textInput address1 40 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
 menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668483
 button save
 sleep 2
 find button ready
@@ -165,7 +227,19 @@ clickby text Broker
 form admOrg
 textInput name Participant 06
 textInput short PART06
+textInput label PART06
+textInput lei HDSM3GSFB53GRSCGE21
+textInput registration 21391524923465424
+textInput bic ABCD0006
+textInput address1 21 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
 menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
 button save
 sleep 2
 find button ready
@@ -196,7 +270,19 @@ clickby text Broker
 form admOrg
 textInput name Participant 07
 textInput short PART07
+textInput label PART07
+textInput lei HZSN3JCDH03JGDEHV32
+textInput registration 26467543726478546244
+textInput bic ABCD0007
+textInput address1 50 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
 menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
 button save
 sleep 2
 find button ready
@@ -227,7 +313,20 @@ clickby text Broker
 form admOrg
 textInput name Participant 08
 textInput short PART08
+textInput label PART08
+textInput lei HZSN3FQBO05UDWGVC21
+textInput registration 18472638402748001
+textInput bic ABCD0008
+textInput address1 50 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
 menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email participant08@test.com
 button save
 sleep 2
 find button ready
@@ -258,7 +357,19 @@ clickby text Broker
 form admOrg
 textInput name Participant 09
 textInput short PART09
+textInput label PART09
+textInput lei HZSN3FQBO05UDWGVC21
+textInput registration 18472638402748001
+textInput bic ABCD0009
+textInput address1 50 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
 menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput email participant09@test.com
 button save
 sleep 2
 find button ready
@@ -289,7 +400,20 @@ clickby text Broker
 form admOrg
 textInput name Participant 10
 textInput short PART10
+textInput label PART10
+textInput lei HZSN3FQBO05UDWGVC21
+textInput registration 18472638402748001
+textInput bic ABCD0010
+textInput address1 30 Tory Street 
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
 menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668384
+textInput email participant10@test.com
 button save
 sleep 2
 find button ready

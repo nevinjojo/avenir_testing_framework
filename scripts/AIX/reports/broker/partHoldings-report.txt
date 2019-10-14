@@ -2,10 +2,12 @@ test Participant Holdings as at Report
 description participant holdings as at report - broker view
 goto AIX
 login P1_BRKR1_user P1_BRKR1_pass
+date
 menu reports
 clickby text Participant Holdings as at Report
 form usrReport
-textInput date 01/04/19
+textInput date date
+clickby text Parameters
 sleep 2
 button save
 sleep 15

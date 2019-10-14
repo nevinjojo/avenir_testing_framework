@@ -45,7 +45,7 @@ form admTrans
 textInput due date
 select2Input toAccountStr PART04-1
 select2Input instrumentStr INST22
-textInput quantity 530
+textInput quantity 508
 textInput toReference new create 2.3
 button save
 find textH1 View Create
@@ -80,7 +80,7 @@ form admTrans
 textInput due date
 select2Input toAccountStr PART06-1
 select2Input instrumentStr INST23
-textInput quantity 2,313
+textInput quantity 23
 textInput toReference new create 2.4
 button save
 find textH1 View Create
@@ -116,7 +116,7 @@ form admTrans
 textInput due date
 select2Input toAccountStr PART08-1
 select2Input instrumentStr INST24
-textInput quantity 123
+textInput quantity 12
 textInput toReference new create 2.5
 button save
 find textH1 View Create

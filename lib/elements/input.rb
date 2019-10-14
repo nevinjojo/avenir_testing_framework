@@ -111,8 +111,9 @@ class Input
       # Input text to select2Input
       @driver.find_element(:class, 'select2-search__field').send_keys(@params[1..-1].join(' '))
       sleep 1 # This sleep is required for the server to return inputs to be selected
-      $session.wait_until(@driver.find_elements(:class, 'select2-results__option--highlighted').size == 1)
-      @driver.find_element(:class, 'select2-results__option--highlighted').click
+      #$session.wait_until(@driver.find_elements(:class, 'select2-results__option--highlighted').size == 1)
+      t = @driver.find_elements(:class, 'select2-results__option')
+      t[0].click
       $results.success
     rescue => ex
       @driver.switch_to.active_element.send_keys(:escape)

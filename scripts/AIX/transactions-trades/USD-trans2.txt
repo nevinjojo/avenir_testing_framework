@@ -1,0 +1,108 @@
+test currency transaction 01 USD
+description currency transaction 01 USD
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART02-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 10,000
+textInput toReference currency transaction 01
+button save
+find textH1 View Create
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction 02 USD
+description currency transaction 02 USD
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART04-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 50,000
+textInput toReference currency transaction 02
+button save
+find textH1 View Create
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+
+test currency transaction 03 USD
+description currency transaction 03 USD
+goto AIX
+login aix_user1 aix_pass1
+date
+menu transactions
+clickby id btn-new
+clickby id btn-new-create
+form admTrans
+textInput due date
+select2Input toAccountStr PART06-1
+select2Input instrumentStr USD
+sleep 3
+textInput amount 41,000
+textInput toReference currency transaction 03
+button save
+find textH1 View Create
+saveID
+sleep 2
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu transactions
+search s_inst USD
+search s_stat Ready
+sleep 4
+tableClick ID saveID
+button approve
+find textH1 View Create
+sleep 2
+expect pass
+logout
+

@@ -18,7 +18,7 @@ class Session
     @temp_id = ''
     @failure_count = 0
     @action_count = 0
-    @wait = Selenium::WebDriver::Wait.new(:timeout => 5)
+    @wait = Selenium::WebDriver::Wait.new(:timeout => 15)
   end
 
   # Resets the parameter to start a new session for a new test environment.

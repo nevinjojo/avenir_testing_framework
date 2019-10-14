@@ -9,6 +9,8 @@ form admOrg
 textInput title Mr
 textInput name Domestic
 textInput last Individual One
+textInput suffix TEST
+textInput dob 15/01/1950
 textInput address1 3 Market Lane
 textInput address2 Wellington
 textInput address3 Avenir
@@ -55,6 +57,8 @@ form admOrg
 textInput title Mrs
 textInput name Domestic
 textInput last Individual Two
+textInput suffix TEST
+textInput dob 11/11/2000
 textInput address1 143 Featherston St
 textInput address2 Wellington
 textInput address3 Avenir

@@ -8,6 +8,10 @@ clickby id lnk-com-dom
 form admOrg
 textInput name Avenir Technology
 textInput address1 3 Market Lane
+textInput address2 Wellington
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 BizDojo
 textInput postcode 5028
 textInput phone 04 0800 838383
 textInput mobile 0225668589
@@ -15,6 +19,7 @@ textInput email srt@avenir-tecnology.com
 menuInput country United Kingdom
 textInput idNumber 850812612340
 menuInput idCountry Kazakhstan
+textInput idDate 15/01/2000
 button save
 sleep 3
 button ready
@@ -47,6 +52,10 @@ clickby id lnk-com-dom
 form admOrg
 textInput name Domestic Company 2
 textInput address1 3 Bell Street
+textInput address2 Wellington
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 BizDojo
 textInput postcode 2208
 textInput phone +992345143211
 textInput mobile 02142983470
@@ -54,6 +63,7 @@ textInput email domesticcompany2@test.com
 menuInput country United States
 textInput idNumber 850812612340
 menuInput idCountry Kazakhstan
+textInput idDate 15/01/2000
 button save
 sleep 3
 button ready

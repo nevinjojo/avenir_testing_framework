@@ -36,7 +36,7 @@ class Results
   # All results files will be stored in this new directory.
   def mkdir
     begin
-      dir = "test_results_#{Time.now.strftime('%Y-%m-%d_%H.%M.%S')}"
+      dir = "test_results_#{Time.now.strftime('%Y-%m-%d')}"
       FileUtils.mkdir_p("#{@results_dir}/#{dir}")
       # Dir.mkdir("#{@results_dir}/#{dir}")
       return dir

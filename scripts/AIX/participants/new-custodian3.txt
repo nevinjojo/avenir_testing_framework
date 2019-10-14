@@ -1,0 +1,440 @@
+test new custodian 21 - maker / checker adjustments
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary 
+clickby text Custodian
+form admOrg
+textInput name Custodian 21
+textInput short CUST21
+textInput label CUST21
+textInput lei HZSN3FQBo05UDWGVC21
+textInput registration 184752394200143
+textInput bic ABCD0001
+textInput address1 602 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email custodian21@test.com
+checkerInput mkchktype_0
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST21
+search s_stat Ready
+button search
+tableClick short CUST21
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 22 - maker / checker adjustments
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 22
+textInput short CUST22
+textInput lei HZSN3FQBO05UDWGGVS1
+textInput registration 18472639402748001
+textInput bic ABCD0002
+textInput address1 14A Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email custodian22@test.com
+checkerInput mkchktype_0
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST22
+search s_stat Ready
+button search
+tableClick short CUST22
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 23 - maker / checker adjustments
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary 
+clickby text Custodian
+form admOrg
+textInput name Custodian 23
+textInput short CUST23
+textInput lei HZSN3FQBI04UDWGGVS1
+textInput registration 18482639402748001
+textInput bic ABCD0003
+textInput address1 109 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email custodian23@test.com
+checkerInput mkchktype_0
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST23
+search s_stat Ready
+button search
+tableClick short CUST23
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 24 - maker / checker adjustments
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 24
+textInput short CUST24
+textInput lei HZSN3FABI03UDWGGB21
+textInput registration 1893234092440394
+textInput bic ABCD0004
+textInput address1 223 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email custodian24@test.com
+checkerInput mkchktype_0
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST24
+search s_stat Ready
+button search
+tableClick short CUST24
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 25 - maker / checker adjustments
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 25
+textInput short CUST25
+textInput lei HZSN3FABI03UDWGGB21
+textInput registration 1923423049139320
+textInput bic ABCD0005
+textInput address1 30/C Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+textInput phone +04 0800 848484
+textInput mobile +64 225668582
+textInput email custodian25@test.com
+checkerInput mkchktype_0
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST25
+search s_stat Ready
+button search
+tableClick short CUST25
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 26 - maker / checker adjustments
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 26
+textInput short CUST26
+textInput lei HZSN3FABI04JDWGGB23
+textInput registration 4203942345329142
+textInput bic ABCD0006
+textInput address1 2/3 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+textInput phone +04 0800 848383
+textInput mobile +64 225668582
+textInput email custodian26@test.com
+checkerInput mkchktype_0
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST26
+search s_stat Ready
+button search
+tableClick short CUST26
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 27 - maker / checker adjustments
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 27
+textInput short CUST27
+textInput lei HZSN4FAB103JGSNRGFW3
+textInput registration 1305827492823432
+textInput bic ABCD0007
+textInput address1 205 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email custodian27@test.com
+checkerInput mkchktype_0
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST27
+search s_stat Ready
+button search
+tableClick short CUST27
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 28 - maker / checker adjustments
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian 
+form admOrg
+textInput name Custodian 28
+textInput short CUST28
+textInput lei HZSN4GSB103JHDNTHFW3
+textInput registration 2310324982739271
+textInput bic ABCD0008
+textInput address1 160 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+textInput phone +04 0800 848484
+textInput mobile +64 225668582
+textInput email custodian28@test.com
+checkerInput mkchktype_0
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST28
+search s_stat Ready
+button search
+tableClick short CUST28
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 29 - maker / checker adjustments
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 29
+textInput short CUST29
+textInput lei HZSN3GJD103JFNWNFJ32
+textInput registration 2343098240962459
+textInput bic ABCD0009
+textInput address1 2 Market Lane
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+textInput phone +04 0800 883838
+textInput mobile +64 225668582
+textInput email custodian29@test.com
+checkerInput mkchktype_0
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST29
+search s_stat Ready
+button search
+tableClick short CUST29
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout
+
+test new custodian 30 - maker / checker adjustments
+description creating a new custodian
+goto AIX
+login aix_user1 aix_pass1
+menu participants
+clickby class btn btn-primary
+clickby text Custodian
+form admOrg
+textInput name Custodian 30
+textInput short CUST30
+textInput lei HZSN3GBA320DFSN34
+textInput registration 213987193109334
+textInput bic ABCD0010
+textInput address1 402 Tory Street
+textInput address2 BizDojo
+textInput address3 Avenir
+textInput address4 Technology
+textInput address5 Wellington
+textInput postcode 6011
+menuInput country New Zealand
+textInput phone +04 0800 838383
+textInput mobile +64 225668582
+textInput email custodian30@test.com
+checkerInput mkchktype_0
+button save
+sleep 2
+find button ready
+button ready
+expect pass
+logout
+
+goto AIX
+login aix_user2 aix_pass2
+menu participants
+search s_part CUST30
+search s_stat Ready
+button search
+tableClick short CUST30
+find textH1 View Custodian
+button approve
+sleep 2
+expect pass
+logout

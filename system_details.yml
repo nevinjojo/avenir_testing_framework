@@ -1,8 +1,3 @@
-######################################################################
-# Avenir Environment details
-# Author: Nevin Jojo
-######################################################################
-
 #Dev/Settle environment details
 dev: http://avenir:avenirrules@dev.avenir-technology.com/
 dev_user1: ccp01
@@ -82,7 +77,7 @@ settleweb_pass5: Pa55word!
 settleweb_user6: paul.blenkhorn@googlemail.com
 settleweb_pass6: Pa55word!
 
-#Aix environment details
+#AIX environment details
 AIX: http://35.156.75.22
 aix_user1: oper
 aix_pass1: password
@@ -96,8 +91,42 @@ manager_pass1: Password1!
 operator_user1: operator-user1
 operator_pass1: Password1!
 
-viewer_user1: viewer-user1
+viewer_user1: viewer-user1 
 viewer_pass1: Password1!
+
+# ARLUK environment details
+ARL_UK: http://avenir:avenirrules@migrate.avenir-registrars.co.uk/
+uk_user_1: claire.oneill@avenir-technology.com
+uk_pass_1: Pa55word!
+
+uk_user_2: oper
+uk_pass_2: password
+
+# ARLNZ environment details
+ARL_NZ: http://avenir:avenirrules@migrate.avenir-registrars.co.nz
+nz_user_1: claire.oneill@avenir-technology.com
+nz_pass_1: Pa55word!
+
+nz_user_2: oper
+nz_pass_2: password
+
+# Ethex environment details
+Ethex: http://ethex.avenir.tech/
+ethex_user1: ccp.com
+ethex_pass1: password
+
+ethex_user2: claire@atl
+ethex_pass2: Pa55word!
+
+# ARLUK testing enviroment details
+ARLUK_testing: http://arluk-test.avenir.tech/
+ARLUK_user1: oper
+ARLUK_pass1: password
+
+ARLUK_user2: manager
+ARLUK_pass2: password
+
+# AIX broker logins
 
 P1_BRKR1_user: PART1-U1
 P1_BRKR1_pass: Password1!
@@ -340,35 +369,3 @@ C20_BRKR1_pass: Password1!
 
 C20_BRKR2_user: CUST20-U2
 C20_BRKR2_pass: Password1!
-
-# ARLUK environment details
-ARL_UK: http://avenir:avenirrules@migrate.avenir-registrars.co.uk/
-uk_user_1: claire.oneill@avenir-technology.com
-uk_pass_1: Pa55word!
-
-uk_user_2: oper
-uk_pass_2: password
-
-# ARLNZ environment details
-ARL_NZ: http://avenir:avenirrules@migrate.avenir-registrars.co.nz
-nz_user_1: claire.oneill@avenir-technology.com
-nz_pass_1: Pa55word!
-
-nz_user_2: oper
-nz_pass_2: password
-
-# Ethex environment details
-Ethex: http://ethex.avenir.tech/
-ethex_user1: ccp.com
-ethex_pass1: password
-
-ethex_user2: claire@atl
-ethex_pass2: Pa55word!
-
-# ARLUK testing enviroment details
-ARLUK_testing: http://arluk-test.avenir.tech/
-ARLUK_user1: oper
-ARLUK_pass1: password
-
-ARLUK_user2: manager
-ARLUK_pass2: password
